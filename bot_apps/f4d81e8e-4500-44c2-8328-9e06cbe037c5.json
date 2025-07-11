@@ -1,0 +1,3612 @@
+{
+  "manifestVersion": "1.20",
+  "id": "f4d81e8e-4500-44c2-8328-9e06cbe037c5",
+  "version": "2.0.5",
+  "name": "Smartsheet",
+  "accentColor": "#3b6793",
+  "amsSellerAccountId": 21245870,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Find out what I can do for you",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "I can start sending Smartsheet requests, notifications, and reminders directly in Microsoft Teams as soon as you allow access.",
+              "title": "Register"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "You’ve successfully unregistered. If you change your mind, you can register at any time by sending me a message.",
+              "title": "Unregister"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+      "isNotificationOnly": false,
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Productivity",
+    "ProjectManagement",
+    "WorkflowAndBusinessManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Smartsheet",
+  "developerUrl": "https://help.smartsheet.com/articles/2476201",
+  "elementRelationshipSet": {
+    "mutualDependencies": [],
+    "oneWayDependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+            "name": "bots"
+          }
+        ],
+        "element": {
+          "id": "smartsheet-compose-extension",
+          "name": "composeExtensions"
+        }
+      }
+    ]
+  },
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://msteams.smartsheet.com",
+      "context": [
+        "channelTab",
+        "privateChatTab"
+      ],
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "0aeebae7-281e-423e-a9ad-75d69256e32f",
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Test command to run query",
+          "fetchTask": false,
+          "id": "recents",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search for recent Smartsheet assets",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchQuery",
+              "title": "Search Query"
+            }
+          ],
+          "title": "Recents",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Test command to run query",
+          "fetchTask": false,
+          "id": "sheets",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search for sheets",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "sheets",
+              "title": "Sheets"
+            }
+          ],
+          "title": "Sheets",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Test command to run query",
+          "fetchTask": false,
+          "id": "sights",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search for dashboards",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "dashboards",
+              "title": "Dashboards"
+            }
+          ],
+          "title": "Dashboards",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Test command to run query",
+          "fetchTask": false,
+          "id": "reports",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search for reports",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "reports",
+              "title": "Reports"
+            }
+          ],
+          "title": "Reports",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Test command to run query",
+          "fetchTask": false,
+          "id": "rows",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search for rows",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "rows",
+              "title": "Rows"
+            }
+          ],
+          "title": "Rows",
+          "type": "query"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "fetchTask": true,
+          "id": "feedback",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Send us feedback",
+          "type": "action"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "fetchTask": true,
+          "id": "video",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Help",
+          "type": "action"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Sign out from authenticated services.",
+          "fetchTask": true,
+          "id": "SignOutCommand",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Sign out",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "id": "smartsheet-compose-extension",
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "app.smartsheet.com"
+            ],
+            "supportsAnonymousAccess": false
+          }
+        }
+      ],
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "languageTag": "en-us",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_largeimage.png",
+  "lastUpdatedAt": "2025-07-09T18:19:10.493571+00:00",
+  "longDescription": "With Smartsheet for Microsoft Teams, you can:\n1. Send Notifications to a Teams Channel - Set Smartsheet notifications to be automatically sent to a Teams channel, so you can see changes in Smartsheet and take action on tasks right away.\n\n2. Receive Reminders as Direct Messages - Receive Smartsheet notifications and reminders as direct messages, review and submit Smartsheet update requests, and review and approve Smartsheet approval requests without leaving Teams.\n\n3. Add Smartsheet \"Tabs\" within a Teams Channel - Add Smartsheet sheets, dashboards, and reports as ‘Tabs’ within a Team channel, to bring conversations together with a current view of projects - while providing a central location where teams can work more effectively.\n\nSign Up: https://app.smartsheet.com/b/signup \nGet Started: https://help.smartsheet.com/learning-track/level-1-get-started \nHelp: https://help.smartsheet.com/ \nContact Us: https://www.smartsheet.com/contact",
+  "mpnId": "4568690",
+  "officeAssetId": "WA104380975",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.smartsheet.com/privacy",
+  "publisherDocsUrl": "https://help.smartsheet.com/articles/2476201-integrate-smartsheet-with-microsoft-teams",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Turn Conversations into Action with Smartsheet and Microsoft Teams",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_smallimage.png",
+  "staticTabs": [],
+  "systemVersion": "2025071018545610",
+  "termsOfUseUrl": "https://www.smartsheet.com/user-agreement",
+  "validDomains": [
+    "app.smartsheet.com",
+    "api.smartsheet.com",
+    "*.smartsheet.com",
+    "token.botframework.com",
+    "fc9fs8lc1i.execute-api.us-west-2.amazonaws.com",
+    "tabs-api.msteams.smartsheet.com",
+    "msteams.smartsheet.com"
+  ],
+  "videoUrl": "https://youtu.be/6eR_NtxWHZ0",
+  "webApplicationInfo": {
+    "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+    "resource": "api://msteams.smartsheet.com/botid-c68947ae-a07f-44ce-9a13-7b559251731d"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en-us",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "pt",
+    "ru"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.20",
+      "id": "f4d81e8e-4500-44c2-8328-9e06cbe037c5",
+      "version": "2.0.5",
+      "name": "Smartsheet",
+      "accentColor": "#3b6793",
+      "amsSellerAccountId": 21245870,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Find out what I can do for you",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "I can start sending Smartsheet requests, notifications, and reminders directly in Microsoft Teams as soon as you allow access.",
+                  "title": "Register"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "You’ve successfully unregistered. If you change your mind, you can register at any time by sending me a message.",
+                  "title": "Unregister"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity",
+        "ProjectManagement",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Smartsheet",
+      "developerUrl": "https://help.smartsheet.com/articles/2476201",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams.smartsheet.com",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "0aeebae7-281e-423e-a9ad-75d69256e32f",
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "recents",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for recent Smartsheet assets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Recents",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sheets",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for sheets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sheets",
+                  "title": "Sheets"
+                }
+              ],
+              "title": "Sheets",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sights",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for dashboards",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "dashboards",
+                  "title": "Dashboards"
+                }
+              ],
+              "title": "Dashboards",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "reports",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for reports",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "reports",
+                  "title": "Reports"
+                }
+              ],
+              "title": "Reports",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "rows",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for rows",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "rows",
+                  "title": "Rows"
+                }
+              ],
+              "title": "Rows",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "feedback",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Send us feedback",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "video",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Help",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Sign out from authenticated services.",
+              "fetchTask": true,
+              "id": "SignOutCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Sign out",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "id": "smartsheet-compose-extension",
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "app.smartsheet.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_largeimage.png",
+      "lastUpdatedAt": "2025-07-09T18:19:10.493571+00:00",
+      "longDescription": "Mit Smartsheet für Teams können Sie:\n1. Benachrichtigungen an einen Teams-Kanal senden – Lassen Sie Smartsheet-Benachrichtigungen automatisch an Teams-Kanäle senden, damit Sie Änderungen in Smartsheet sehen und sofort Maßnahmen für Aufgaben ergreifen können.\n\n2. Erinnerungen als Direktnachrichten erhalten – Erhalten Sie Smartsheet-Benachrichtigungen und -Erinnerungen als Direktnachrichten, überprüfen und schicken Sie Smartsheet-Aktualisierungsanforderungen ab, und überprüfen und genehmigen Sie Smartsheet-Genehmigungsanforderungen, ohne Teams zu beenden.\n\n3. Smartsheet-„Tabs“ innerhalb eines Teams-Kanal hinzufügen – Fügen Sie Sheets, Dashboards und Berichte aus Smartsheet als 'Tabs' innerhalb eines Teams-Kanals hinzu, damit Teams besser miteinander kommunizieren können, einen aktuellen Überblick über Projekte erhalten und ihnen ein zentraler Ort zur Verfügung gestellt wird, an dem sie effektiver zusammenarbeiten können.\n\nAnmelden: https://app.smartsheet.com/b/signup \nErste Schritte: https://help.smartsheet.com/learning-track/level-1-get-started \nHilfe: https://help.smartsheet.com/ \nKontakt: https://www.smartsheet.com/contact",
+      "mpnId": "4568690",
+      "officeAssetId": "WA104380975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.smartsheet.com/privacy",
+      "publisherDocsUrl": "https://help.smartsheet.com/articles/2476201-integrate-smartsheet-with-microsoft-teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Gespräche in Handlungen umsetzen mit Smartsheet und Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_smallimage.png",
+      "staticTabs": [],
+      "systemVersion": "2025071018545610",
+      "termsOfUseUrl": "https://www.smartsheet.com/user-agreement",
+      "validDomains": [
+        "app.smartsheet.com",
+        "api.smartsheet.com",
+        "*.smartsheet.com",
+        "token.botframework.com",
+        "fc9fs8lc1i.execute-api.us-west-2.amazonaws.com",
+        "tabs-api.msteams.smartsheet.com",
+        "msteams.smartsheet.com"
+      ],
+      "videoUrl": "https://youtu.be/6eR_NtxWHZ0",
+      "webApplicationInfo": {
+        "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+        "resource": "api://msteams.smartsheet.com/botid-c68947ae-a07f-44ce-9a13-7b559251731d"
+      }
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "f4d81e8e-4500-44c2-8328-9e06cbe037c5",
+      "version": "2.0.5",
+      "name": "Smartsheet",
+      "accentColor": "#3b6793",
+      "amsSellerAccountId": 21245870,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Find out what I can do for you",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "I can start sending Smartsheet requests, notifications, and reminders directly in Microsoft Teams as soon as you allow access.",
+                  "title": "Register"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "You’ve successfully unregistered. If you change your mind, you can register at any time by sending me a message.",
+                  "title": "Unregister"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity",
+        "ProjectManagement",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Smartsheet",
+      "developerUrl": "https://help.smartsheet.com/articles/2476201",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams.smartsheet.com",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "0aeebae7-281e-423e-a9ad-75d69256e32f",
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "recents",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for recent Smartsheet assets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Recents",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sheets",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for sheets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sheets",
+                  "title": "Sheets"
+                }
+              ],
+              "title": "Sheets",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sights",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for dashboards",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "dashboards",
+                  "title": "Dashboards"
+                }
+              ],
+              "title": "Dashboards",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "reports",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for reports",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "reports",
+                  "title": "Reports"
+                }
+              ],
+              "title": "Reports",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "rows",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for rows",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "rows",
+                  "title": "Rows"
+                }
+              ],
+              "title": "Rows",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "feedback",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Send us feedback",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "video",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Help",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Sign out from authenticated services.",
+              "fetchTask": true,
+              "id": "SignOutCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Sign out",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "id": "smartsheet-compose-extension",
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "app.smartsheet.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_largeimage.png",
+      "lastUpdatedAt": "2025-07-09T18:19:10.493571+00:00",
+      "longDescription": "Con Smartsheet para Teams, puede hacer lo siguiente:\n1. Enviar notificaciones a un canal de Teams: Configure las notificaciones de Smartsheet para que se envíen de manera automática a un canal de Teams, de modo que pueda ver los cambios en Smartsheet y tomar medidas en las tareas de inmediato.\n\n2. Recibir recordatorios como mensajes directos: Reciba notificaciones y recordatorios de Smartsheet como mensajes directos, revise y envíe solicitudes de actualización de Smartsheet, y revise y apruebe solicitudes de aprobación de Smartsheet sin salir de Teams.\n\n3. Agregar \"Fichas\" de Smartsheet dentro de un canal de Teams: Agregue hojas, paneles e informes de Smartsheet como \"Fichas\" dentro de un canal de Teams, para unir las conversaciones con una vista actual de los proyectos, al mismo tiempo que proporciona una ubicación central donde los equipos pueden trabajar con más eficacia.\n\nRegistrarse: https://app.smartsheet.com/b/signup \nEmpezar: https://help.smartsheet.com/learning-track/level-1-get-started \nAyuda: https://help.smartsheet.com/ \nContáctenos: https://www.smartsheet.com/contact",
+      "mpnId": "4568690",
+      "officeAssetId": "WA104380975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.smartsheet.com/privacy",
+      "publisherDocsUrl": "https://help.smartsheet.com/articles/2476201-integrate-smartsheet-with-microsoft-teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Convierta las conversaciones en acción con Smartsheet y Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_smallimage.png",
+      "staticTabs": [],
+      "systemVersion": "2025071018545610",
+      "termsOfUseUrl": "https://www.smartsheet.com/user-agreement",
+      "validDomains": [
+        "app.smartsheet.com",
+        "api.smartsheet.com",
+        "*.smartsheet.com",
+        "token.botframework.com",
+        "fc9fs8lc1i.execute-api.us-west-2.amazonaws.com",
+        "tabs-api.msteams.smartsheet.com",
+        "msteams.smartsheet.com"
+      ],
+      "videoUrl": "https://youtu.be/6eR_NtxWHZ0",
+      "webApplicationInfo": {
+        "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+        "resource": "api://msteams.smartsheet.com/botid-c68947ae-a07f-44ce-9a13-7b559251731d"
+      }
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "f4d81e8e-4500-44c2-8328-9e06cbe037c5",
+      "version": "2.0.5",
+      "name": "Smartsheet",
+      "accentColor": "#3b6793",
+      "amsSellerAccountId": 21245870,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Find out what I can do for you",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "I can start sending Smartsheet requests, notifications, and reminders directly in Microsoft Teams as soon as you allow access.",
+                  "title": "Register"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "You’ve successfully unregistered. If you change your mind, you can register at any time by sending me a message.",
+                  "title": "Unregister"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity",
+        "ProjectManagement",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Smartsheet",
+      "developerUrl": "https://help.smartsheet.com/articles/2476201",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams.smartsheet.com",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "0aeebae7-281e-423e-a9ad-75d69256e32f",
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "recents",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for recent Smartsheet assets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Recents",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sheets",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for sheets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sheets",
+                  "title": "Sheets"
+                }
+              ],
+              "title": "Sheets",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sights",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for dashboards",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "dashboards",
+                  "title": "Dashboards"
+                }
+              ],
+              "title": "Dashboards",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "reports",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for reports",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "reports",
+                  "title": "Reports"
+                }
+              ],
+              "title": "Reports",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "rows",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for rows",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "rows",
+                  "title": "Rows"
+                }
+              ],
+              "title": "Rows",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "feedback",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Send us feedback",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "video",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Help",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Sign out from authenticated services.",
+              "fetchTask": true,
+              "id": "SignOutCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Sign out",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "id": "smartsheet-compose-extension",
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "app.smartsheet.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_largeimage.png",
+      "lastUpdatedAt": "2025-07-09T18:19:10.493571+00:00",
+      "longDescription": "Avec Smartsheet pour Teams, vous pouvez :\n1. Envoyer des notifications à un canal Teams – Configurer les notifications de Smartsheet pour qu’elles soient automatiquement envoyées à un canal Teams, afin que vous puissiez voir les changements dans Smartsheet et prendre rapidement les mesures appropriées concernant les tâches.\n\n2. Recevoir des rappels sous forme de messages directs – Recevoir les notifications et les rappels de Smartsheet sous forme de messages directs, examiner et soumettre les demandes d’actualisation de Smartsheet, et examiner et approuver les demandes d’approbation de Smartsheet sans quitter Teams.\n\n3. Ajouter Smartsheet aux « onglets » d’un canal Teams – Ajouter des feuilles, des tableaux de bord et des rapports Smartsheet en tant qu’« onglets » dans un canal Teams, pour rassembler les conversations avec une vue actuelle des projets, tout en fournissant un emplacement central où les équipes peuvent travailler plus efficacement.\n\nS’inscrire : https://app.smartsheet.com/b/signup\nPremiers pas : https://help.smartsheet.com/learning-track/level-1-get-started\nAide : https://help.smartsheet.com/\nContactez-nous : https://www.smartsheet.com/contact",
+      "mpnId": "4568690",
+      "officeAssetId": "WA104380975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.smartsheet.com/privacy",
+      "publisherDocsUrl": "https://help.smartsheet.com/articles/2476201-integrate-smartsheet-with-microsoft-teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Transformez vos conversations en actions avec Smartsheet et Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_smallimage.png",
+      "staticTabs": [],
+      "systemVersion": "2025071018545610",
+      "termsOfUseUrl": "https://www.smartsheet.com/user-agreement",
+      "validDomains": [
+        "app.smartsheet.com",
+        "api.smartsheet.com",
+        "*.smartsheet.com",
+        "token.botframework.com",
+        "fc9fs8lc1i.execute-api.us-west-2.amazonaws.com",
+        "tabs-api.msteams.smartsheet.com",
+        "msteams.smartsheet.com"
+      ],
+      "videoUrl": "https://youtu.be/6eR_NtxWHZ0",
+      "webApplicationInfo": {
+        "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+        "resource": "api://msteams.smartsheet.com/botid-c68947ae-a07f-44ce-9a13-7b559251731d"
+      }
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "f4d81e8e-4500-44c2-8328-9e06cbe037c5",
+      "version": "2.0.5",
+      "name": "Smartsheet",
+      "accentColor": "#3b6793",
+      "amsSellerAccountId": 21245870,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Find out what I can do for you",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "I can start sending Smartsheet requests, notifications, and reminders directly in Microsoft Teams as soon as you allow access.",
+                  "title": "Register"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "You’ve successfully unregistered. If you change your mind, you can register at any time by sending me a message.",
+                  "title": "Unregister"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity",
+        "ProjectManagement",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Smartsheet",
+      "developerUrl": "https://help.smartsheet.com/articles/2476201",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams.smartsheet.com",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "0aeebae7-281e-423e-a9ad-75d69256e32f",
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "recents",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for recent Smartsheet assets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Recents",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sheets",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for sheets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sheets",
+                  "title": "Sheets"
+                }
+              ],
+              "title": "Sheets",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sights",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for dashboards",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "dashboards",
+                  "title": "Dashboards"
+                }
+              ],
+              "title": "Dashboards",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "reports",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for reports",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "reports",
+                  "title": "Reports"
+                }
+              ],
+              "title": "Reports",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "rows",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for rows",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "rows",
+                  "title": "Rows"
+                }
+              ],
+              "title": "Rows",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "feedback",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Send us feedback",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "video",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Help",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Sign out from authenticated services.",
+              "fetchTask": true,
+              "id": "SignOutCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Sign out",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "id": "smartsheet-compose-extension",
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "app.smartsheet.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_largeimage.png",
+      "lastUpdatedAt": "2025-07-09T18:19:10.493571+00:00",
+      "longDescription": "Con Smartsheet for Teams, puoi:\n1. Inviare notifiche su un canale Teams - Imposta le notifiche Smartsheet in modo che vengano inviate automaticamente a un canale Teams, potrai quindi visualizzare le modifiche in Smartsheet e intraprendere immediatamente un'azione.\n\n2. Ricevere promemoria come messaggi diretti - Ricevi le notifiche e i promemoria Smartsheet come messaggi diretti, riesamina e inoltra le richieste di aggiornamento Smartsheet o controlla e conferma le richieste di approvazione Smartsheet senza uscire da Teams.\n\n3. Aggiungere le \"schede\" Smartsheet a un canale Teams - Aggiungi i fogli, i pannelli di controllo e i report Smartsheet come \"schede\" in un canale Teams, in modo che i team possano tenere riunite tutte le conversazioni in un'unica vista dei progetti e avere una posizione centralizzata in cui lavorare con maggiore efficienza.\n\nIscriviti: https://app.smartsheet.com/b/signup \nInizia: https://help.smartsheet.com/learning-track/level-1-get-started \nGuida: https://help.smartsheet.com/ \nContattaci: https://www.smartsheet.com/contact",
+      "mpnId": "4568690",
+      "officeAssetId": "WA104380975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.smartsheet.com/privacy",
+      "publisherDocsUrl": "https://help.smartsheet.com/articles/2476201-integrate-smartsheet-with-microsoft-teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Trasforma le conversazioni in azioni con Smartsheet e Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_smallimage.png",
+      "staticTabs": [],
+      "systemVersion": "2025071018545610",
+      "termsOfUseUrl": "https://www.smartsheet.com/user-agreement",
+      "validDomains": [
+        "app.smartsheet.com",
+        "api.smartsheet.com",
+        "*.smartsheet.com",
+        "token.botframework.com",
+        "fc9fs8lc1i.execute-api.us-west-2.amazonaws.com",
+        "tabs-api.msteams.smartsheet.com",
+        "msteams.smartsheet.com"
+      ],
+      "videoUrl": "https://youtu.be/6eR_NtxWHZ0",
+      "webApplicationInfo": {
+        "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+        "resource": "api://msteams.smartsheet.com/botid-c68947ae-a07f-44ce-9a13-7b559251731d"
+      }
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "f4d81e8e-4500-44c2-8328-9e06cbe037c5",
+      "version": "2.0.5",
+      "name": "Smartsheet",
+      "accentColor": "#3b6793",
+      "amsSellerAccountId": 21245870,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Find out what I can do for you",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "I can start sending Smartsheet requests, notifications, and reminders directly in Microsoft Teams as soon as you allow access.",
+                  "title": "Register"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "You’ve successfully unregistered. If you change your mind, you can register at any time by sending me a message.",
+                  "title": "Unregister"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity",
+        "ProjectManagement",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Smartsheet",
+      "developerUrl": "https://help.smartsheet.com/articles/2476201",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams.smartsheet.com",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "0aeebae7-281e-423e-a9ad-75d69256e32f",
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "recents",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for recent Smartsheet assets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Recents",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sheets",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for sheets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sheets",
+                  "title": "Sheets"
+                }
+              ],
+              "title": "Sheets",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sights",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for dashboards",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "dashboards",
+                  "title": "Dashboards"
+                }
+              ],
+              "title": "Dashboards",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "reports",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for reports",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "reports",
+                  "title": "Reports"
+                }
+              ],
+              "title": "Reports",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "rows",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for rows",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "rows",
+                  "title": "Rows"
+                }
+              ],
+              "title": "Rows",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "feedback",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Send us feedback",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "video",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Help",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Sign out from authenticated services.",
+              "fetchTask": true,
+              "id": "SignOutCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Sign out",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "id": "smartsheet-compose-extension",
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "app.smartsheet.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "ja",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_largeimage.png",
+      "lastUpdatedAt": "2025-07-09T18:19:10.493571+00:00",
+      "longDescription": "Smartsheet for Teams では、以下を実行できます:\n1. 通知を Teams チャネルに送信 - Smartsheet の通知が Teams チャネルへ自動的に送信されるように設定することで、Smartsheet での変更を直ちに確認してタスクに必要なアクションをすばやく実行することが可能です。\n\n2. リマインダーをダイレクト メッセージとして受信 - Smartsheet の通知とリマインダーをダイレクト メッセージとして受信することで、Smartsheet 更新リクエストの確認や送信および Smartsheet 承認リクエストの確認や承認を Teams から直接実行することが可能です。\n\n3. Smartsheet を Teams チャネル内の「タブ」に追加 - Smartsheet のシート、ダッシュボード、およびレポートを Teams チャネル内の「タブ」として追加することで、チームはプロジェクトの現在の状況を把握しながら会話を進め、1 か所でより効率的に作業することが可能です。\n\nサインアップ: https://app.smartsheet.com/b/signup \nはじめに: https://help.smartsheet.com/ja/learning-track/level-1-get-started \nヘルプ: https://help.smartsheet.com/ja \nお問い合わせ: https://jp.smartsheet.com/contact",
+      "mpnId": "4568690",
+      "officeAssetId": "WA104380975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.smartsheet.com/privacy",
+      "publisherDocsUrl": "https://help.smartsheet.com/articles/2476201-integrate-smartsheet-with-microsoft-teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Smartsheet と Microsoft Teams で会話をアクションに",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_smallimage.png",
+      "staticTabs": [],
+      "systemVersion": "2025071018545610",
+      "termsOfUseUrl": "https://www.smartsheet.com/user-agreement",
+      "validDomains": [
+        "app.smartsheet.com",
+        "api.smartsheet.com",
+        "*.smartsheet.com",
+        "token.botframework.com",
+        "fc9fs8lc1i.execute-api.us-west-2.amazonaws.com",
+        "tabs-api.msteams.smartsheet.com",
+        "msteams.smartsheet.com"
+      ],
+      "videoUrl": "https://youtu.be/6eR_NtxWHZ0",
+      "webApplicationInfo": {
+        "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+        "resource": "api://msteams.smartsheet.com/botid-c68947ae-a07f-44ce-9a13-7b559251731d"
+      }
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "f4d81e8e-4500-44c2-8328-9e06cbe037c5",
+      "version": "2.0.5",
+      "name": "Smartsheet",
+      "accentColor": "#3b6793",
+      "amsSellerAccountId": 21245870,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Find out what I can do for you",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "I can start sending Smartsheet requests, notifications, and reminders directly in Microsoft Teams as soon as you allow access.",
+                  "title": "Register"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "You’ve successfully unregistered. If you change your mind, you can register at any time by sending me a message.",
+                  "title": "Unregister"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity",
+        "ProjectManagement",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Smartsheet",
+      "developerUrl": "https://help.smartsheet.com/articles/2476201",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams.smartsheet.com",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "0aeebae7-281e-423e-a9ad-75d69256e32f",
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "recents",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for recent Smartsheet assets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Recents",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sheets",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for sheets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sheets",
+                  "title": "Sheets"
+                }
+              ],
+              "title": "Sheets",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sights",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for dashboards",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "dashboards",
+                  "title": "Dashboards"
+                }
+              ],
+              "title": "Dashboards",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "reports",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for reports",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "reports",
+                  "title": "Reports"
+                }
+              ],
+              "title": "Reports",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "rows",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for rows",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "rows",
+                  "title": "Rows"
+                }
+              ],
+              "title": "Rows",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "feedback",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Send us feedback",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "video",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Help",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Sign out from authenticated services.",
+              "fetchTask": true,
+              "id": "SignOutCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Sign out",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "id": "smartsheet-compose-extension",
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "app.smartsheet.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_largeimage.png",
+      "lastUpdatedAt": "2025-07-09T18:19:10.493571+00:00",
+      "longDescription": "Com o Smartsheet para Teams, você pode:\n1. Enviar notificações para um canal do Teams - defina as notificações do Smartsheet para serem enviadas automaticamente para um canal do Teams, para que você possa ver as alterações no Smartsheet e tomar providências imediatas nas tarefas.\n\n2. Receber lembretes como mensagens diretas - receba notificações e lembretes do Smartsheet como mensagens diretas, analise e envie solicitações de atualização do Smartsheet e analise e aprove solicitações de aprovação do Smartsheet sem sair do Teams.\n\n3. Adicionar \"Guias\" do Smartsheet em um canal do Teams - adicione planilhas, painéis e relatórios do Smartsheet como \"Guias\" em um canal do Teams, para reunir conversas com uma visão atual dos projetos ao mesmo tempo em que fornece um local central onde as equipes podem trabalhar de forma mais proveitosa.\n\nInscreva-se: https://app.smartsheet.com/b/signup\nIntrodução: https://help.smartsheet.com/learning-track/level-1-get-started\nAjuda: https://help.smartsheet.com/ \nFale conosco: https://www.smartsheet.com/contact",
+      "mpnId": "4568690",
+      "officeAssetId": "WA104380975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.smartsheet.com/privacy",
+      "publisherDocsUrl": "https://help.smartsheet.com/articles/2476201-integrate-smartsheet-with-microsoft-teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Faça suas Conversas virarem Ação com Smartsheet e Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_smallimage.png",
+      "staticTabs": [],
+      "systemVersion": "2025071018545610",
+      "termsOfUseUrl": "https://www.smartsheet.com/user-agreement",
+      "validDomains": [
+        "app.smartsheet.com",
+        "api.smartsheet.com",
+        "*.smartsheet.com",
+        "token.botframework.com",
+        "fc9fs8lc1i.execute-api.us-west-2.amazonaws.com",
+        "tabs-api.msteams.smartsheet.com",
+        "msteams.smartsheet.com"
+      ],
+      "videoUrl": "https://youtu.be/6eR_NtxWHZ0",
+      "webApplicationInfo": {
+        "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+        "resource": "api://msteams.smartsheet.com/botid-c68947ae-a07f-44ce-9a13-7b559251731d"
+      }
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "f4d81e8e-4500-44c2-8328-9e06cbe037c5",
+      "version": "2.0.5",
+      "name": "Smartsheet",
+      "accentColor": "#3b6793",
+      "amsSellerAccountId": 21245870,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Find out what I can do for you",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "I can start sending Smartsheet requests, notifications, and reminders directly in Microsoft Teams as soon as you allow access.",
+                  "title": "Register"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "You’ve successfully unregistered. If you change your mind, you can register at any time by sending me a message.",
+                  "title": "Unregister"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity",
+        "ProjectManagement",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Smartsheet",
+      "developerUrl": "https://help.smartsheet.com/articles/2476201",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams.smartsheet.com",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "0aeebae7-281e-423e-a9ad-75d69256e32f",
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "recents",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for recent Smartsheet assets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Recents",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sheets",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for sheets",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sheets",
+                  "title": "Sheets"
+                }
+              ],
+              "title": "Sheets",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "sights",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for dashboards",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "dashboards",
+                  "title": "Dashboards"
+                }
+              ],
+              "title": "Dashboards",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "reports",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for reports",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "reports",
+                  "title": "Reports"
+                }
+              ],
+              "title": "Reports",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": false,
+              "id": "rows",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for rows",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "rows",
+                  "title": "Rows"
+                }
+              ],
+              "title": "Rows",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "feedback",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Send us feedback",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "fetchTask": true,
+              "id": "video",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Help",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Sign out from authenticated services.",
+              "fetchTask": true,
+              "id": "SignOutCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Sign out",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "id": "smartsheet-compose-extension",
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "app.smartsheet.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "ru",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_largeimage.png",
+      "lastUpdatedAt": "2025-07-09T18:19:10.493571+00:00",
+      "longDescription": "Smartsheet для Teams предоставляет следующие возможности.\n1. Отправка уведомлений в канал Teams. Настройте автоматическую отправку уведомлений Smartsheet в канал Teams, чтобы сразу же видеть изменения в Smartsheet и предпринимать действия по соответствующим задачам.\n\n2. Получение напоминаний в виде прямых сообщений. Получайте уведомления и напоминания Smartsheet в виде прямых сообщений, просматривайте и отправляйте запросы на изменение Smartsheet, а также просматривайте и одобряйте запросы на утверждение Smartsheet, не выходя из Teams.\n\n3. Добавление вкладок Smartsheet в канал Teams. Добавляйте таблицы, панели мониторинга и отчёты Smartsheet в качестве вкладок в канал Teams, чтобы создать централизованное место, где рабочие группы могут объединять обсуждения с текущим представлением проектов и выполнять задачи более эффективно.\n\nЗарегистрироваться: https://app.smartsheet.com/b/signup \nНачать работу: https://help.smartsheet.com/learning-track/level-1-get-started \nСправка: https://help.smartsheet.com/ \nСвяжитесь с нами: https://www.smartsheet.com/contact",
+      "mpnId": "4568690",
+      "officeAssetId": "WA104380975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.smartsheet.com/privacy",
+      "publisherDocsUrl": "https://help.smartsheet.com/articles/2476201-integrate-smartsheet-with-microsoft-teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Превращайте слова в действия, используя Smartsheet и Microsoft Teams вместе",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f4d81e8e-4500-44c2-8328-9e06cbe037c5/2025071018545610/f4d81e8e-4500-44c2-8328-9e06cbe037c5_smallimage.png",
+      "staticTabs": [],
+      "systemVersion": "2025071018545610",
+      "termsOfUseUrl": "https://www.smartsheet.com/user-agreement",
+      "validDomains": [
+        "app.smartsheet.com",
+        "api.smartsheet.com",
+        "*.smartsheet.com",
+        "token.botframework.com",
+        "fc9fs8lc1i.execute-api.us-west-2.amazonaws.com",
+        "tabs-api.msteams.smartsheet.com",
+        "msteams.smartsheet.com"
+      ],
+      "videoUrl": "https://youtu.be/6eR_NtxWHZ0",
+      "webApplicationInfo": {
+        "id": "c68947ae-a07f-44ce-9a13-7b559251731d",
+        "resource": "api://msteams.smartsheet.com/botid-c68947ae-a07f-44ce-9a13-7b559251731d"
+      }
+    }
+  ]
+}

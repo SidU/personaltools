@@ -1,0 +1,271 @@
+{
+  "manifestVersion": "1.12",
+  "id": "bcbe1927-113b-49a0-9ee6-57e245e4761c",
+  "version": "1.14",
+  "name": "SmartGift for Business",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 87275710,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "TeamsAppInstallation.Read.Group",
+          "type": "Application"
+        },
+        {
+          "name": "Chat.Manage.Chat",
+          "type": "Application"
+        },
+        {
+          "name": "ChatMember.Read.Chat",
+          "type": "Application"
+        },
+        {
+          "name": "ChatMessage.Read.Chat",
+          "type": "Application"
+        },
+        {
+          "name": "TeamMember.Read.Group",
+          "type": "Application"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "See how you can use SmartGift for Business app in teams.",
+              "title": "How it works?"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "See how you can use SmartGift for Business app in teams.",
+              "title": "How it works?"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "See how you can use SmartGift for Business app in teams.",
+              "title": "How it works?"
+            }
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "75871d17-78d1-4a71-928c-3a85fde537f3",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "HumanResourcesAndRecruiting",
+    "SalesAndMarketing"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultGroupCapability": {
+    "groupchat": "bot",
+    "meetings": "bot",
+    "team": "bot"
+  },
+  "developerName": "1-800-Flowers.com, Inc.",
+  "developerUrl": "https://www.1800flowers.com/",
+  "industries": [
+    "Retail"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "75871d17-78d1-4a71-928c-3a85fde537f3",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Command to run action to send a recognition",
+          "fetchTask": true,
+          "id": "Sender",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Send a recognition",
+          "type": "action"
+        },
+        {
+          "context": [
+            "commandBox"
+          ],
+          "description": "Command to run action to sign in",
+          "fetchTask": true,
+          "id": "SignIn",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Sign in",
+          "type": "action"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Command to run action to sign out",
+          "fetchTask": true,
+          "id": "Logout",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Sign out",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "employee gifts",
+    "team gifts",
+    "business gifts"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/bcbe1927-113b-49a0-9ee6-57e245e4761c/2025071115464126/bcbe1927-113b-49a0-9ee6-57e245e4761c_largeimage.png",
+  "lastUpdatedAt": "2024-07-19T09:31:45.8630948+00:00",
+  "longDescription": "With SmartGift® for Business, anyone can create and send multi-item gift collections from which recipients can choose their favorite. It’s a great way to send multiple gifts to multiple people, all with different tastes – all at once, all in the same app. \nAfter you have downloaded the SmartGift® for Business app, you can:\n\n• Send group gifts directly from your calendar in just 2 clicks.\n\n• Customize and save gifting preferences (including payment method, gift collection, and message) to expedite future gift sends. \n\n• Send recipients gift collections with a personalized message, from which they can choose their favorite item.\n\n• Offer treats, chocolates, bouquets, plants, and even customized company swag.\n\n• Pay by credit card, or from your 1-800-Flowers.com Business account \n\n• Use the SmartGift® for Business app tabs to send gifts associated with calendar events (and to set gifting preferences), or use the app to send gifts directly in a chat or channel message extension\n\nIn order to use this app, you need to have an active SmartGift for Business account.\n\n Click [here to sign up and get started.](https://1800flowers.smartgift.com/dashboard/sign-up) If you have any questions, feel free to [contact us](https://www.1800flowers.com/contact-us) anytime. \n\n This bot is only available for us in U.S. and Canada.\n\nBy using SmartGift for Business, you agree to the 1-800-Flowers.com, Inc. [privacy notice](https://www.1800flowers.com/About-Us-Privacy-Policy) and [terms of use](https://www.1800flowers.com/About-Us-Terms-of-Use). \nBy continuing, you understand and agree that the contents of this chat may be recorded by us or by third parties working with us, and used as described in the aforementioned privacy notice. If you do not agree, please do not use our chat feature.",
+  "mpnId": "6822439",
+  "officeAssetId": "WA200006941",
+  "permissions": [],
+  "privacyUrl": "https://www.1800flowers.com/About-Us-Privacy-Policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/bcbe1927-113b-49a0-9ee6-57e245e4761c/2025071115464126/bcbe1927-113b-49a0-9ee6-57e245e4761c_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/bcbe1927-113b-49a0-9ee6-57e245e4761c/2025071115464126/bcbe1927-113b-49a0-9ee6-57e245e4761c_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/bcbe1927-113b-49a0-9ee6-57e245e4761c/2025071115464126/bcbe1927-113b-49a0-9ee6-57e245e4761c_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/bcbe1927-113b-49a0-9ee6-57e245e4761c/2025071115464126/bcbe1927-113b-49a0-9ee6-57e245e4761c_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/bcbe1927-113b-49a0-9ee6-57e245e4761c/2025071115464126/bcbe1927-113b-49a0-9ee6-57e245e4761c_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Celebrate employees and teams with thoughtful, empowering gifts.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/bcbe1927-113b-49a0-9ee6-57e245e4761c/2025071115464126/bcbe1927-113b-49a0-9ee6-57e245e4761c_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://api.smartgift.com/microsoft-teams-bot-service/static/tabs/index.html#/dashboard",
+      "entityId": "index0",
+      "name": "Dashboard",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://api.smartgift.com/microsoft-teams-bot-service/static/tabs/index.html#/dashboard"
+    },
+    {
+      "contentUrl": "https://api.smartgift.com/microsoft-teams-bot-service/static/tabs/index.html#/calendar",
+      "entityId": "index1",
+      "name": "Calendar",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://api.smartgift.com/microsoft-teams-bot-service/static/tabs/index.html#/calendar"
+    },
+    {
+      "contentUrl": "https://api.smartgift.com/microsoft-teams-bot-service/static/tabs/index.html#/settings",
+      "entityId": "index2",
+      "name": "Settings",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://api.smartgift.com/microsoft-teams-bot-service/static/tabs/index.html#/settings"
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115464126",
+  "termsOfUseUrl": "https://www.1800flowers.com/About-Us-Terms-of-Use",
+  "validDomains": [
+    "api.smartgift.com",
+    "cdn.heroengage.com",
+    "cdn1.1800flowers.com",
+    "smartgift.com"
+  ],
+  "videoUrl": "https://vimeo.com/978388968",
+  "webApplicationInfo": {
+    "id": "75871d17-78d1-4a71-928c-3a85fde537f3",
+    "resource": "api://1800flowers.com/75871d17-78d1-4a71-928c-3a85fde537f3"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": []
+}

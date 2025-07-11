@@ -1,0 +1,1515 @@
+{
+  "manifestVersion": "1.20",
+  "id": "d718fbf7-be13-4b88-99ef-bbba4e726f7e",
+  "version": "1.8.5",
+  "name": "Matter",
+  "accentColor": "#4f52b1",
+  "activities": {
+    "activityTypes": [
+      {
+        "description": "App's installation notification",
+        "templateText": "Give your first Kudos 🎉",
+        "type": "appInstalled"
+      },
+      {
+        "description": "Notify user of app updates",
+        "templateText": "Check this out 👀",
+        "type": "generic"
+      },
+      {
+        "description": "Recap of feedback friday",
+        "templateText": "{cadence} 15m ⏰",
+        "type": "feedbackFridayRecap"
+      }
+    ]
+  },
+  "amsSellerAccountId": 80931970,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "TeamsActivity.Send.Group",
+          "type": "Application"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Show available actions",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "a4e36993-186b-45be-8425-dc2ecf4469c9",
+      "isNotificationOnly": false,
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "HumanResourcesAndRecruiting",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultInstallScope": "personal",
+  "developerName": "MatterApp inc.",
+  "developerUrl": "https://matterapp.com",
+  "devicePermissions": [
+    "Notifications"
+  ],
+  "elementRelationshipSet": {
+    "mutualDependencies": [],
+    "oneWayDependencies": []
+  },
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "a4e36993-186b-45be-8425-dc2ecf4469c9",
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Search for a kudos type, e.g., 'Thank you' or 'Amazing job'",
+          "fetchTask": false,
+          "id": "searchKudos",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "See available kudos types or filter by a specific kudos type",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "type",
+              "semanticDescription": "Enter a kudos type like 'Thank you' or 'Amazing job' or 'all' to see all kudos types. Returns kudos type list, not kudos given by users.",
+              "title": "Kudos type"
+            },
+            {
+              "description": "Return kudos given or received by user or whole team",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "kudosSent",
+              "semanticDescription": "Returns a list of kudos given or received. When used with type parameter, filters kudos by type",
+              "title": "Kudos given or received"
+            },
+            {
+              "description": "Filter kudos by date range",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "dateFilter",
+              "semanticDescription": "Enter colon separated from/to dates in format YYYY-MM-DD:YYYY-MM-DD to filter kudos by date",
+              "title": "Kudos given/received by date"
+            },
+            {
+              "description": "Filter kudos by giver or receiver name",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "person",
+              "semanticDescription": "Enter 'giver' or 'receiver' followed by ':' and name/email of giver/receiver ex 'giver:John Doe' or 'receiver:dmitry@a.com",
+              "title": "Kudos by giver/receiver name"
+            },
+            {
+              "description": "See top kudos givers and receivers",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "leaderboard",
+              "semanticDescription": "Generate a leaderboard of kudos givers and receivers, pass along 'type' parameter to filter by kudos type",
+              "title": "Generate kudos leaderboard"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Matter show me kudos types"
+            },
+            {
+              "text": "Matter show me kudos given by John Doe"
+            },
+            {
+              "text": "Matter generate a leaderboard of top kudos givers and receivers"
+            }
+          ],
+          "semanticDescription": "Search for a kudos type, see kudos given or received by user or whole team or generate kudos leaderboard",
+          "title": "Kudos",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Search for a coin balances of a user or whole team",
+          "fetchTask": false,
+          "id": "searchCoins",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Enter a user name or email to see coin balance of a user",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "user",
+              "semanticDescription": "Enter a user name or email to see coin balance of a user, unredeemed coins and coins spent",
+              "title": "Coin Balance of a user"
+            },
+            {
+              "description": "Enter a team name to see coin balance, unredeemed coins and coins spent of whole team",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "team",
+              "semanticDescription": "Enter a team name to see coin balance, unredeemed coins and coins spent of whole team",
+              "title": "Coin Balance of whole team"
+            },
+            {
+              "description": "See coin reset date for a team",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "resetDate",
+              "semanticDescription": "Pass 'true' to return next coin reset date for a team",
+              "title": "Coin reset date"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Matter Show me my coin balance"
+            },
+            {
+              "text": "Matter Show me a coin balance of my team"
+            },
+            {
+              "text": "Matter When is the next coin reset date for my team?"
+            }
+          ],
+          "semanticDescription": "Search for a coin balances of a user or whole team, see unredeemed coins and coins reset date for a team",
+          "title": "Coins",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Search for a reward or user's reward redemption history",
+          "fetchTask": false,
+          "id": "searchRewards",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Enter a reward name to filter by reward title or brand",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "title",
+              "semanticDescription": "Returns a description of the reward, its brand and cost in coins, not reward requests",
+              "title": "Reward title"
+            },
+            {
+              "description": "Filter users reward requests by status",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "status",
+              "semanticDescription": "Enter request status (pending, approved, rejected or all) to see reward requests by status",
+              "title": "Get reward requests by status"
+            },
+            {
+              "description": "Filter reward requests by team name or id",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "team",
+              "semanticDescription": "Enter team name, id or 'all' to see reward requests by team",
+              "title": "Get reward requests by team"
+            },
+            {
+              "description": "Filter reward requests by user name or email",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "user",
+              "semanticDescription": "Enter a user name or email or 'all' to see reward requests history, for my requests enter 'my'",
+              "title": "See reward requests by user"
+            },
+            {
+              "description": "Filter reward requests by date range",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "dateFilter",
+              "semanticDescription": "Enter a colon separated from/to dates in format YYYY-MM-DD to filter reward requests history",
+              "title": "Reward requests history filter"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Matter show me pending reward requests"
+            },
+            {
+              "text": "Matter show me reward requests by team"
+            },
+            {
+              "text": "Matter show me all reward titles"
+            }
+          ],
+          "semanticDescription": "Search for a reward or user's reward redemption history, see reward requests by status, team, user or date range",
+          "title": "Rewards",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Search for birthdays and work anniversaries",
+          "fetchTask": false,
+          "id": "searchCelebrations",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Celebrations happening in a specific month",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "month",
+              "semanticDescription": "Enter a month to filter celebrations by month, e.g., 'January'",
+              "title": "Search by month"
+            },
+            {
+              "description": "filter celebrations by date range",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "dateFilter",
+              "semanticDescription": "Enter a colon separated range (from:to) in format YYYY-MM-DD to filter celebrations by date range",
+              "title": "Search by date range"
+            },
+            {
+              "description": "See who didn't add celebration dates",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "missing",
+              "semanticDescription": "Pass 'birthdays' or 'anniversaries' or 'all' to see users with no celebrations",
+              "title": "Users with no celebrations"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Matter show me users with no birthdays"
+            },
+            {
+              "text": "Matter show me users with no anniversaries"
+            },
+            {
+              "text": "Matter show me this month’s celebrations"
+            }
+          ],
+          "semanticDescription": "Search for birthdays and work anniversaries, see celebrations by month, date range or users with no celebrations",
+          "title": "Celebrations",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Search for surveys, survey results and analytics",
+          "fetchTask": false,
+          "id": "searchSurveys",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Show survey results by survey name, eg 'Survey 1' or 'Pulse'",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "name",
+              "semanticDescription": "Enter a survey name to see survey results, for pulse survey results enter 'pulse' or 'eNPS' to see eNPS score",
+              "title": "Survey results"
+            },
+            {
+              "description": "Filter survey results by date range",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "dateFilter",
+              "semanticDescription": "Enter a colon separated range (from:to) in format YYYY-MM-DD to filter survey responses by date range",
+              "title": "Search by date range"
+            },
+            {
+              "description": "filter survey results by team name or id",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "team",
+              "semanticDescription": "Enter team name, id or 'all' to see survey results by team",
+              "title": "Get survey results by team"
+            },
+            {
+              "description": "Filter survey results by user name or email",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "user",
+              "semanticDescription": "Enter a user name or email or 'all' to see survey results per user.",
+              "title": "See individual responses"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Matter Show me results for the last pulse survey"
+            },
+            {
+              "text": "Matter what are the biggest areas of improvement based on the pulse survey results"
+            },
+            {
+              "text": "Matter What is my current eNPS score?"
+            }
+          ],
+          "semanticDescription": "Search for surveys, survey results and analytics, see survey results by survey name, date range, team or user",
+          "title": "Surveys",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Give Kudos to a team member",
+          "fetchTask": true,
+          "id": "giveKudos",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Receiver name or email",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "giveTo",
+              "semanticDescription": "Enter a user name or email to give kudos to",
+              "title": "Give to"
+            },
+            {
+              "description": "Select kudos type",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "type",
+              "semanticDescription": "Available kudos type from your company list ex 'Thank you' or 'Amazing job'",
+              "title": "Kudos type"
+            },
+            {
+              "description": "Kudos message",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "message",
+              "semanticDescription": "Enter a message to give kudos, 300 characters max",
+              "title": "Kudos message"
+            },
+            {
+              "description": "Add coins to the kudos",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "coins",
+              "semanticDescription": "Enter a number of coins to give with kudos, the amount can't exceed your balance",
+              "title": "Add coins"
+            },
+            {
+              "description": "Select visibility of kudos",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "visibility",
+              "semanticDescription": "Public kudos are visible to everyone, private kudos are visible only to the giver and receiver and are sent via DM",
+              "title": "Visibility"
+            }
+          ],
+          "semanticDescription": "Give Kudos to a team member by selecting a kudos type, adding a message and coins",
+          "taskInfo": {
+            "height": "medium",
+            "title": "Give Kudos",
+            "url": "https://web.matterapp.com/msteams/task/giveKudosExtension",
+            "width": "medium"
+          },
+          "title": "Give Kudos",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "employee recognition",
+    "company rewards",
+    "team kudos feedback"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d718fbf7-be13-4b88-99ef-bbba4e726f7e/2025071115254348/d718fbf7-be13-4b88-99ef-bbba4e726f7e_largeimage.png",
+  "lastUpdatedAt": "2025-04-08T11:36:19.1392427+00:00",
+  "longDescription": "Increase employee engagement with peer-to-peer kudos recognition based on company values, save time by automating global gift card delivery and birthdays/anniversaries, and 10x your response rate with pulse and custom surveys.\n\n**What you can do with Matter:**\n\n- 🎉 **Start Feedback Friday**! — Automatic, customizable notifications centered around a day where your company is encouraged to give peer-to-peer recognition with kudos and feedback.\n\n- 🙌 **Celebrate wins together with Kudos**! — Choose from 9 templates or create your own custom kudos to share company values, company jokes, and more. \n\n- 🎁 **Increase recognition with Rewards**! — Add Matter coins to kudos, surveys, and feedback to show extra appreciation. Redeem coins for gift cards, custom company rewards, donations, and more.\n\n- 🥳 **Never miss a Celebration**! — Automatically send birthday and work anniversary messages with/without rewards for everyone to see and celebrate.\n\n- 📋 **10x your response rate with Custom Surveys**! — Automate and send surveys, get real-time feedback, view powerful analytics, and offer rewards.\n\n- 📈 **Gather feedback with Pulse + eNPS Surveys**! — Transform your organization into a champion of diversity, equity, inclusion, and belonging. Gather real-time, continuous feedback and insights.\n\n- 🎨 **Put Company Values front and center**! — Make people feel more connected to the company and each other with company value kudos templates.\n\n- 📊 **Answer culture questions with Analytics**! — Leverage kudos, rewards, and feedback activity to identify engagement insights and trends.\n\n**Use Matter with Microsoft 365 Copilot:**\n\nMatter has integrations with Microsoft Teams, Outlook, and now Copilot, which helps teams leverage simple, natural language prompts to get where they want to go, faster. Try these prompts:\n\n- \"Matter, generate a leaderboard of top kudos givers and receivers.\"\n\n- \"Matter, what celebrations are coming next month?\"\n\n- \"Matter, what is my company's current eNPS.\"\n\n**What companies are saying about Matter:**\n\n- \"Our company’s culture & morale changed overnight! In under 2 months, we’ve had over 2,000 kudos sent and 80%+ engagement across all employees. Matter has motivated people to participate like no other software we have ever used.\" — Jeff Hagel, President | [Customer Story](https://matterapp.com/customer-stories/mcinnis-holloway?utm_source=microsoft-teams&utm_medium=referral&utm_campaign=partner-center)\n\n- \"I love how easy it is for employees to recognize each other with kudos. Matter has boosted morale, increased employee engagement, and it's now a strong presence in our company culture.\" — Michael Margolese, Senior Human Resources Manager | [Customer Story](https://matterapp.com/customer-stories/trend-hunter?utm_source=microsoft-teams&utm_medium=referral&utm_campaign=partner-center)\n\n- \"Matter helps our employees feel more valued, rewarded, and recognized. It’s a very fun and easy-to-use platform that has created a positive experience and engagement for our people while also helping to reinforce our core values daily.\" — Taylor Rapp, Director of People & Culture | [Customer Story](https://matterapp.com/customer-stories/true-classic?utm_source=microsoft-teams&utm_medium=referral&utm_campaign=partner-center)\n\n**Get Started:**\n\n- [Try Matter for Free](https://matterapp.com/?utm_source=teams-app-directory&utm_medium=referral&utm_campaign=bio)! — *Matter has a 14-day free trial with unlimited access to all features.*\n\n- Want more info? Watch the [Matter demo video](https://matterapp.com/demo?utm_source=teams-app-directory&utm_medium=referral&utm_campaign=bio) or [schedule a demo](https://schedule.matterapp.com/campaign/demo?utm_source=teams-app-directory&utm_medium=referral&utm_campaign=partner-center).\n\n**Have Questions or Feedback?**\n\nEmail us at [hello@matterapp.com](mailto:hello@matterapp.com) or message us at [@MatterApp](https://twitter.com/MatterApp).\n\nMatter supports Microsoft Teams and Outlook.",
+  "mpnId": "6609481",
+  "officeAssetId": "WA200004554",
+  "permissions": [],
+  "privacyUrl": "https://matterapp.com/legal/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d718fbf7-be13-4b88-99ef-bbba4e726f7e/2025071115254348/d718fbf7-be13-4b88-99ef-bbba4e726f7e_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d718fbf7-be13-4b88-99ef-bbba4e726f7e/2025071115254348/d718fbf7-be13-4b88-99ef-bbba4e726f7e_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d718fbf7-be13-4b88-99ef-bbba4e726f7e/2025071115254348/d718fbf7-be13-4b88-99ef-bbba4e726f7e_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d718fbf7-be13-4b88-99ef-bbba4e726f7e/2025071115254348/d718fbf7-be13-4b88-99ef-bbba4e726f7e_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d718fbf7-be13-4b88-99ef-bbba4e726f7e/2025071115254348/d718fbf7-be13-4b88-99ef-bbba4e726f7e_screenshot/4.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Employee Recognition, Rewards, Surveys, and Celebrations where you work!",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d718fbf7-be13-4b88-99ef-bbba4e726f7e/2025071115254348/d718fbf7-be13-4b88-99ef-bbba4e726f7e_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://web.matterapp.com/msteams/welcome",
+      "context": [
+        "personalTab"
+      ],
+      "entityId": "matterTab",
+      "name": "Home",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://web.matterapp.com/msteams/tab",
+      "context": [
+        "channelTab"
+      ],
+      "entityId": "matterTeamTab",
+      "name": "Matter",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115254348",
+  "termsOfUseUrl": "https://matterapp.com/legal/terms-of-service",
+  "validDomains": [
+    "token.botframework.com",
+    "api.matterapp.com",
+    "web.matterapp.com"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=6qbEzBIs-Mk",
+  "webApplicationInfo": {
+    "id": "a4e36993-186b-45be-8425-dc2ecf4469c9",
+    "resource": "api://web.matterapp.com/a4e36993-186b-45be-8425-dc2ecf4469c9"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": []
+}

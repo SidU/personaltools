@@ -1,0 +1,1598 @@
+{
+  "manifestVersion": "1.17",
+  "id": "083ec417-c8e7-49a0-b74a-cfca24e9c04d",
+  "version": "1.9.1",
+  "name": "BHV Alarm",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 89644840,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "TeamsActivity.Send.User",
+          "type": "Application"
+        },
+        {
+          "name": "CameraStream.Read.User",
+          "type": "Delegated"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "1f018ad7-cb20-4af9-a56d-6c4c5002343e",
+      "isNotificationOnly": true,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ITAdmin",
+    "Productivity",
+    "Utilities"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultGroupCapability": {},
+  "developerName": "FindwhereBV",
+  "developerUrl": "https://www.findwhere.com",
+  "devicePermissions": [
+    "Geolocation",
+    "Media",
+    "Notifications"
+  ],
+  "industries": [
+    "Other"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "BHV Alarm",
+    "Findwhere Emergency Response",
+    "BHV Alert"
+  ],
+  "languageTag": "en-us",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_largeimage.png",
+  "lastUpdatedAt": "2025-05-07T04:32:51.8517494+00:00",
+  "longDescription": "Findwhere is a platform specializing in emergency response (ER). It offers tools for real-time monitoring, location-based services, and rapid emergency communication. This enables companies to quickly respond to emergencies, track employees' safety, and ensure compliance with safety regulations. BHV Alarm enhances the efficiency and safety of ER operations.\n\nApp requires an active account and if you do not have active account then reach out to us at 'info@findwhere.com'.\n\nContact us: info@findwhere.com",
+  "mpnId": "6917507",
+  "officeAssetId": "WA200008028",
+  "permissions": [],
+  "privacyUrl": "https://www.findwhere.com/privacy-verklaring/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Use BHV Alarm for your ER organization and employees.",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://findwhere-bhv-alert.web.app",
+      "entityId": "14a0d044-be90-49a4-921e-56104c9d9a90",
+      "name": "Home",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://www.findwhere.com"
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071114071575",
+  "termsOfUseUrl": "https://www.findwhere.com/Algemene_Voorwaarden_Findwhere_B.V.pdf",
+  "validDomains": [
+    "findwhere-bot20240715103023.azurewebsites.net"
+  ],
+  "videoUrl": "https://youtu.be/_iJ_XpCP3nw",
+  "webApplicationInfo": {
+    "id": "1f018ad7-cb20-4af9-a56d-6c4c5002343e",
+    "resource": "https://notapplicable"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en-us",
+    "fr",
+    "es",
+    "nl",
+    "de"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.17",
+      "id": "083ec417-c8e7-49a0-b74a-cfca24e9c04d",
+      "version": "1.9.1",
+      "name": "BHV Alarm",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 89644840,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "TeamsActivity.Send.User",
+              "type": "Application"
+            },
+            {
+              "name": "CameraStream.Read.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "1f018ad7-cb20-4af9-a56d-6c4c5002343e",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultGroupCapability": {},
+      "developerName": "FindwhereBV",
+      "developerUrl": "https://www.findwhere.com",
+      "devicePermissions": [
+        "Geolocation",
+        "Media",
+        "Notifications"
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "BHV Alarm",
+        "Findwhere Emergency Response",
+        "BHV Alert"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_largeimage.png",
+      "lastUpdatedAt": "2025-05-07T04:32:51.8517494+00:00",
+      "longDescription": "Findwhere ist eine Plattform, die auf Notfallreaktionen (ER) spezialisiert ist. Sie bietet Tools für Echtzeitüberwachung, standortbasierte Dienste und schnelle Notfallkommunikation. Dies ermöglicht es Unternehmen, schnell auf Notfälle zu reagieren, die Sicherheit der Mitarbeiter zu überwachen und die Einhaltung von Sicherheitsvorschriften sicherzustellen. BHV Alarm verbessert die Effizienz und Sicherheit von ER-Operationen.  Für die App ist ein aktives Konto erforderlich. Wenn Sie kein aktives Konto haben, wenden Sie sich bitte an uns unter „info@findwhere.com“.  Kontaktieren Sie uns: info@findwhere.com",
+      "mpnId": "6917507",
+      "officeAssetId": "WA200008028",
+      "permissions": [],
+      "privacyUrl": "https://www.findwhere.com/privacy-verklaring/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Verwenden Sie BHV Alarm für Ihre Notaufnahmeorganisation und Ihre Mitarbeiter.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://findwhere-bhv-alert.web.app",
+          "entityId": "14a0d044-be90-49a4-921e-56104c9d9a90",
+          "name": "Heim",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://www.findwhere.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114071575",
+      "termsOfUseUrl": "https://www.findwhere.com/Algemene_Voorwaarden_Findwhere_B.V.pdf",
+      "validDomains": [
+        "findwhere-bot20240715103023.azurewebsites.net"
+      ],
+      "videoUrl": "https://youtu.be/_iJ_XpCP3nw",
+      "webApplicationInfo": {
+        "id": "1f018ad7-cb20-4af9-a56d-6c4c5002343e",
+        "resource": "https://notapplicable"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "083ec417-c8e7-49a0-b74a-cfca24e9c04d",
+      "version": "1.9.1",
+      "name": "BHV Alarm",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 89644840,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "TeamsActivity.Send.User",
+              "type": "Application"
+            },
+            {
+              "name": "CameraStream.Read.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "1f018ad7-cb20-4af9-a56d-6c4c5002343e",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultGroupCapability": {},
+      "developerName": "FindwhereBV",
+      "developerUrl": "https://www.findwhere.com",
+      "devicePermissions": [
+        "Geolocation",
+        "Media",
+        "Notifications"
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "BHV Alarm",
+        "Findwhere Emergency Response",
+        "BHV Alert"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_largeimage.png",
+      "lastUpdatedAt": "2025-05-07T04:32:51.8517494+00:00",
+      "longDescription": "Findwhere es una plataforma especializada en respuesta a emergencias (ER). Ofrece herramientas de monitoreo en tiempo real, servicios basados ​​en la ubicación y comunicación rápida de emergencias. Esto permite a las empresas responder rápidamente a las emergencias, monitorear la seguridad de los empleados y garantizar el cumplimiento de las normas de seguridad. BHV Alarm mejora la eficiencia y la seguridad de las operaciones de ER.  La aplicación requiere una cuenta activa y, si no tiene una cuenta activa, comuníquese con nosotros a 'info@findwhere.com'.  Contáctenos: info@findwhere.com",
+      "mpnId": "6917507",
+      "officeAssetId": "WA200008028",
+      "permissions": [],
+      "privacyUrl": "https://www.findwhere.com/privacy-verklaring/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Utilice BHV Alarm para su organización de urgencias y sus empleados.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://findwhere-bhv-alert.web.app",
+          "entityId": "14a0d044-be90-49a4-921e-56104c9d9a90",
+          "name": "Hogar",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://www.findwhere.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114071575",
+      "termsOfUseUrl": "https://www.findwhere.com/Algemene_Voorwaarden_Findwhere_B.V.pdf",
+      "validDomains": [
+        "findwhere-bot20240715103023.azurewebsites.net"
+      ],
+      "videoUrl": "https://youtu.be/_iJ_XpCP3nw",
+      "webApplicationInfo": {
+        "id": "1f018ad7-cb20-4af9-a56d-6c4c5002343e",
+        "resource": "https://notapplicable"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "083ec417-c8e7-49a0-b74a-cfca24e9c04d",
+      "version": "1.9.1",
+      "name": "BHV Alarm",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 89644840,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "TeamsActivity.Send.User",
+              "type": "Application"
+            },
+            {
+              "name": "CameraStream.Read.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "1f018ad7-cb20-4af9-a56d-6c4c5002343e",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultGroupCapability": {},
+      "developerName": "FindwhereBV",
+      "developerUrl": "https://www.findwhere.com",
+      "devicePermissions": [
+        "Geolocation",
+        "Media",
+        "Notifications"
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "BHV Alarm",
+        "Findwhere Emergency Response",
+        "BHV Alert"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_largeimage.png",
+      "lastUpdatedAt": "2025-05-07T04:32:51.8517494+00:00",
+      "longDescription": "Findwhere est une plateforme spécialisée dans les interventions d'urgence. Elle propose des outils de surveillance en temps réel, des services basés sur la localisation et une communication d'urgence rapide. Cela permet aux entreprises de réagir rapidement aux urgences, de suivre la sécurité des employés et de garantir le respect des réglementations de sécurité. BHV Alarm améliore l'efficacité et la sécurité des opérations d'urgence.  L'application nécessite un compte actif et si vous n'avez pas de compte actif, contactez-nous à l'adresse 'info@findwhere.com'.  Contactez-nous : info@findwhere.com",
+      "mpnId": "6917507",
+      "officeAssetId": "WA200008028",
+      "permissions": [],
+      "privacyUrl": "https://www.findwhere.com/privacy-verklaring/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Utilisez BHV Alarm pour votre organisation des urgences et vos employés.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://findwhere-bhv-alert.web.app",
+          "entityId": "14a0d044-be90-49a4-921e-56104c9d9a90",
+          "name": "Maison",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://www.findwhere.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114071575",
+      "termsOfUseUrl": "https://www.findwhere.com/Algemene_Voorwaarden_Findwhere_B.V.pdf",
+      "validDomains": [
+        "findwhere-bot20240715103023.azurewebsites.net"
+      ],
+      "videoUrl": "https://youtu.be/_iJ_XpCP3nw",
+      "webApplicationInfo": {
+        "id": "1f018ad7-cb20-4af9-a56d-6c4c5002343e",
+        "resource": "https://notapplicable"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "083ec417-c8e7-49a0-b74a-cfca24e9c04d",
+      "version": "1.9.1",
+      "name": "BHV Alarm",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 89644840,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "TeamsActivity.Send.User",
+              "type": "Application"
+            },
+            {
+              "name": "CameraStream.Read.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "1f018ad7-cb20-4af9-a56d-6c4c5002343e",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultGroupCapability": {},
+      "developerName": "FindwhereBV",
+      "developerUrl": "https://www.findwhere.com",
+      "devicePermissions": [
+        "Geolocation",
+        "Media",
+        "Notifications"
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "BHV Alarm",
+        "Findwhere Emergency Response",
+        "BHV Alert"
+      ],
+      "languageTag": "nl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_largeimage.png",
+      "lastUpdatedAt": "2025-05-07T04:32:51.8517494+00:00",
+      "longDescription": "Findwhere is een platform dat gespecialiseerd is in noodhulp (ER). Het biedt tools voor realtime monitoring, locatiegebaseerde diensten en snelle noodcommunicatie. Dit stelt bedrijven in staat om snel te reageren op noodgevallen, de veiligheid van werknemers te volgen en naleving van veiligheidsvoorschriften te garanderen. BHV Alarm verbetert de efficiëntie en veiligheid van ER-activiteiten.  De app vereist een actief account en als u geen actief account hebt, neem dan contact met ons op via 'info@findwhere.com'.  Neem contact met ons op: info@findwhere.com",
+      "mpnId": "6917507",
+      "officeAssetId": "WA200008028",
+      "permissions": [],
+      "privacyUrl": "https://www.findwhere.com/privacy-verklaring/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Gebruik BHV Alarm voor uw SEH-organisatie en medewerkers.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/083ec417-c8e7-49a0-b74a-cfca24e9c04d/2025071114071575/083ec417-c8e7-49a0-b74a-cfca24e9c04d_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://findwhere-bhv-alert.web.app",
+          "entityId": "14a0d044-be90-49a4-921e-56104c9d9a90",
+          "name": "Thuis",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://www.findwhere.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114071575",
+      "termsOfUseUrl": "https://www.findwhere.com/Algemene_Voorwaarden_Findwhere_B.V.pdf",
+      "validDomains": [
+        "findwhere-bot20240715103023.azurewebsites.net"
+      ],
+      "videoUrl": "https://youtu.be/_iJ_XpCP3nw",
+      "webApplicationInfo": {
+        "id": "1f018ad7-cb20-4af9-a56d-6c4c5002343e",
+        "resource": "https://notapplicable"
+      }
+    }
+  ]
+}

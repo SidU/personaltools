@@ -1,0 +1,367 @@
+{
+  "manifestVersion": "1.17",
+  "id": "d2a1ed44-6cca-44d2-9b9c-1c9c1d597093",
+  "version": "4.2.0",
+  "name": "Sift",
+  "accentColor": "#60269E",
+  "amsSellerAccountId": 73346530,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Shows help information",
+              "title": "Help"
+            },
+            {
+              "description": "Sign into Sift's bot and message extensions",
+              "title": "Sign in"
+            },
+            {
+              "description": "Sign out of Sift's bot and message extensions",
+              "title": "Sign out"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "d2a1ed44-6cca-44d2-9b9c-1c9c1d597093",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor",
+    "developerUrl",
+    "privacyUrl",
+    "termsOfUseUrl"
+  ],
+  "connectors": [],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Sift",
+  "developerUrl": "https://www.justsift.com",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://app.justsift.com/teams-meeting-configure.html",
+      "context": [
+        "meetingSidePanel"
+      ],
+      "scopes": [
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "d2a1ed44-6cca-44d2-9b9c-1c9c1d597093",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Search across your organization by anything",
+          "fetchTask": false,
+          "id": "searchPeopleByParametersMessageExtension",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "What are you looking for?",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchTerm",
+              "title": "Search Term"
+            },
+            {
+              "description": "A skill or interest to search for",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "skillOrInterest",
+              "semanticDescription": "A skill or interest to search for such as a personal interest, a professional skill, an ability, or a professional area of expertise.",
+              "title": "Skills/Interests"
+            },
+            {
+              "description": "A location to search for",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "location",
+              "semanticDescription": "Any location based search parameter such as a city, state, country, or office building",
+              "title": "Location"
+            },
+            {
+              "description": "An organization level to search for",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "org",
+              "semanticDescription": "An orginization level such as company, team, or department",
+              "title": "Organization Level"
+            },
+            {
+              "description": "A job title to search for",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "jobTitle",
+              "semanticDescription": "A job title, job role, or position name to search for",
+              "title": "Job Title"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Sift search for someone in the Marketing department who can help me with PowerPoint"
+            },
+            {
+              "text": "Sift find someone who likes playing Basketball"
+            },
+            {
+              "text": "Sift search for a Software Engineer on the Technology team"
+            }
+          ],
+          "semanticDescription": "Search for people you work with by name, job title, location, skills, interests, department, company, contact information, education, or work experience. The search will return either a list of suggested search filters, or a list of people.",
+          "title": "Sift People Search",
+          "type": "query"
+        },
+        {
+          "context": [
+            "commandBox"
+          ],
+          "description": "Search across your organization by anything",
+          "fetchTask": false,
+          "id": "searchMessageExtension",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "The term to search for",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchTerm",
+              "title": "Search Term"
+            }
+          ],
+          "title": "Sift Search",
+          "type": "query"
+        },
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Find a Sift profile from a message",
+          "fetchTask": true,
+          "id": "findProfileMessageExtension",
+          "initialRun": false,
+          "title": "Find Profile",
+          "type": "action"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Sign out of the Sift bot and search extension",
+          "fetchTask": true,
+          "id": "SignOutCommand",
+          "initialRun": false,
+          "title": "Sign Out",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Profile",
+    "Org Chart",
+    "Directory"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093/2025071112321175/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093_largeimage.png",
+  "lastUpdatedAt": "2025-05-08T21:22:59.1506255+00:00",
+  "longDescription": "Rich and interactive org chart, profile, and instant search to foster connection and collaboration for your organization's people across Microsoft 365 apps such as Microsoft Teams and Outlook. \n\n* View extensive profiles of attendees during a Teams meeting\n* Quickly find others to collaborate with through Sift's integration to Copilot for Microsoft 365. Try asking Copilot something like \"Sift search for someone skilled in PowerPoint\"\n* Access Sift's dynamic profile pages, advanced org chart, and full employee directory right in Teams and Outlook\n* Use the command bar or message compose area to find profiles or perform people searches across dozens of attributes\n* Send Sift profiles or searches to others through adaptive preview cards\n\n\n**Getting Started**\n\nSift is intended to be used by your entire organization, not individually. To get your company started with Sift, and view your company's full org chart and employee profiles within Microsoft 365, please purchase through the subscription link above.\n\nTo purchase Sift, click the subscription button above and you will receive an email with credentials to set up your account.\n\n\n**What is Sift?**\n\nSift enables organizations to tap into the unlimited potential of their talent pool, rise to any challenge and realize the power of their people. Democratize people data and foster instant connections with the right experts. \n\n\nAs your organization grows, it can become harder for team members to know who their colleagues are, what they do, and how to connect with them. Sift is a powerfully simple people directory that links to rich, customizable profiles that go far beyond job titles. Get a full 360° view of each member of your organization:\n\n* Dynamic employee profiles that collect education, work history, skills and more\n* Integrates directly with your existing HR and IT data systems to ensure data accuracy\n* Intuitive search and filtering to find the experts you need faster\n* One system to connect your entire workforce, building bridges between silos\n\n\nSift brings data from your HCM, Identity Management, and other systems into one easy to use, easy to discover place for your end-users to leverage. Sift allows you to aggregate data from different systems in a single employee profile, ensuring the right data from the right systems is available for your people to use:\n\n* Prebuilt connectors for Azure Active Directory and an LDAP agent allow real-time connections with identity systems.\n* Robust and flexible SFTP workflows allow flexibility for any system integration.\n* Collect and update attributes like skills, experience, education, or cell phone number directly from your end-users via their Sift profiles.\n* It’s your data, use it! Put your aggregated people data to work in your internal systems via the Sift API.\n* Families of Companies can aggregate data from across disparate entities into a single employee directory, even if they are on separate HR, IT, and SSO systems.\n\n**Get Started**\n\n[Learn More and Get Started Today](https://www.justsift.com)",
+  "mpnId": "6108515",
+  "officeAssetId": "WA200002545",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.justsift.com/privacy-policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093/2025071112321175/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093/2025071112321175/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093/2025071112321175/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093_screenshot/2.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093/2025071112321175/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093/2025071112321175/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093_screenshot/4.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Find, discover, and connect with your organization's people",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093/2025071112321175/d2a1ed44-6cca-44d2-9b9c-1c9c1d597093_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://app.justsift.com",
+      "entityId": "search",
+      "name": "Search",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://app.justsift.com/orgchart",
+      "entityId": "org-chart",
+      "name": "Org Chart",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://app.justsift.com/search",
+      "entityId": "directory",
+      "name": "Directory",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://app.justsift.com/search/user/explore",
+      "entityId": "analytics",
+      "name": "Analytics",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://app.justsift.com/profile",
+      "entityId": "my-profile",
+      "name": "My Profile",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://app.justsift.com/lists",
+      "entityId": "lists",
+      "name": "Lists",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://app.justsift.com/integrations/ms-teams/meetings-panel",
+      "context": [
+        "meetingSidePanel",
+        "meetingChatTab"
+      ],
+      "entityId": "meeting-panel",
+      "name": "Sift",
+      "scopes": [
+        "groupChat"
+      ]
+    }
+  ],
+  "subscriptionOffer": {
+    "isEligibleForAzureBenefits": true,
+    "offerId": "siftllc1588010953332.sift"
+  },
+  "systemVersion": "2025071112321175",
+  "termsOfUseUrl": "https://www.justsift.com/sift-msteams-eula",
+  "validDomains": [
+    "msteams.justsift.com",
+    "token.botframework.com",
+    "*.justsift.com",
+    "app.justsift.com"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=DlsfLv3oSAU",
+  "webApplicationInfo": {
+    "id": "d2a1ed44-6cca-44d2-9b9c-1c9c1d597093",
+    "resource": "https://notapplicable"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": []
+}

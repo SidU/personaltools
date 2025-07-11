@@ -1,0 +1,121 @@
+{
+  "manifestVersion": "1.16",
+  "id": "265e0bc0-758c-4785-9086-8e6c287d97fd",
+  "version": "1.2.9",
+  "name": "NTTPCサポートAI",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 85826890,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "ChatMessageReadReceipt.Read.Chat",
+          "type": "Application"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "ヘルプを表示します",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "11cc3d09-bd90-4caa-ba0f-303318291bc1",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "ITAdmin",
+    "Utilities"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "株式会社NTTPCコミュニケーションズ",
+  "developerUrl": "https://www.nttpc.co.jp/",
+  "galleryTabs": [],
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "inputExtensions": [],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "サポートAI",
+    "NTTPC",
+    "NTTPCサポートAI"
+  ],
+  "languageTag": "ja",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/265e0bc0-758c-4785-9086-8e6c287d97fd/2025071112065189/265e0bc0-758c-4785-9086-8e6c287d97fd_largeimage.png",
+  "lastUpdatedAt": "2024-12-11T15:45:55.6221686+00:00",
+  "longDescription": "NTTPCサポートAIはNTTPCコミュニケーションズ（NTTPC）のAIチャットボットサービスです。\n本アプリでは、一般的な事項に関するAIへの相談や会話を行うことができるほか、AIから定期的にイベントや連絡先の確認などの通知を受け取ったり、お困りごとのヒアリングを受けることができます。\n本アプリでは以下の点に生成AIが活用されています。\n- ユーザーの入力に対して回答を生成すること\n本アプリで利用可能な言語は日本語のみとなります。\n本アプリをご利用いただくにはNTTPCから案内する認証コードを登録いただく必要があります。\n本アプリに関するご質問、認証コードについてのお問い合わせ、生成AIの不適切な回答のご報告はNTTPC担当者、もしくはお問い合わせフォームよりお問い合わせください。\n[問い合わせフォーム](https://forms.office.com/r/ZMiNvhRefx)",
+  "officeAssetId": "WA200007875",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.nttpc.co.jp/company/effort/privacy.html",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/265e0bc0-758c-4785-9086-8e6c287d97fd/2025071112065189/265e0bc0-758c-4785-9086-8e6c287d97fd_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/265e0bc0-758c-4785-9086-8e6c287d97fd/2025071112065189/265e0bc0-758c-4785-9086-8e6c287d97fd_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/265e0bc0-758c-4785-9086-8e6c287d97fd/2025071112065189/265e0bc0-758c-4785-9086-8e6c287d97fd_screenshot/2.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "AIを通じたコミュニケーション窓口や情報の提供",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/265e0bc0-758c-4785-9086-8e6c287d97fd/2025071112065189/265e0bc0-758c-4785-9086-8e6c287d97fd_smallimage.png",
+  "staticTabs": [],
+  "systemVersion": "2025071112065189",
+  "termsOfUseUrl": "https://www.nttpc.co.jp/support/term/pdf/ai_chatbot_trial_kiyaku.pdf",
+  "validDomains": [],
+  "webApplicationInfo": {
+    "id": "11cc3d09-bd90-4caa-ba0f-303318291bc1",
+    "resource": "https://example"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "ja"
+  ],
+  "localizedDefinitions": []
+}

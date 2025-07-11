@@ -1,0 +1,150 @@
+{
+  "manifestVersion": "1.14",
+  "id": "5af0d33a-7df2-4817-a1ff-e3bce7cf796a",
+  "version": "1.0.2",
+  "name": "Ruxie",
+  "accentColor": "#E9E9E9",
+  "amsSellerAccountId": 71223260,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "Member.Read.Group",
+          "type": "Application"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Explains what Ruxie can do",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Explains what Ruxie can do",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "f3c8de72-63a8-47a7-ae7f-936bbdc3c964",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ITAdmin",
+    "Productivity",
+    "WorkflowAndBusinessManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Expel, Inc.",
+  "developerUrl": "https://expel.com/",
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "expel",
+    "Expel"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5af0d33a-7df2-4817-a1ff-e3bce7cf796a/2025071113260825/5af0d33a-7df2-4817-a1ff-e3bce7cf796a_largeimage.png",
+  "lastUpdatedAt": "2022-11-07T15:24:18.7070391+00:00",
+  "longDescription": "Meet Ruxie. \n\nExpel wants you to focus on what matters, and we’re in the business of making space so you can do more of what you love. Whether it’s automating investigative tasks, prioritizing and enriching alerts, adding business context, preparing alerts for further (I.e. human) investigation, or communicating with customers around investigations and remediation actions, Ruxie is always at the ready. \n\nWith Ruxie, we combine the technology of intelligent automation with the capabilities of our analyst team in order to provide you with the most informed and comprehensive detection and response strategy.\n\nInterested in hearing from Ruxie? Just sign up for a service subscription at Expel.com. Any questions? Contact sales@expel.com.   \n\nTo setup Ruxie, log into Workbench and go to Settings > My Organization > Integrations to configure this integration under Teams. Enter the channel id and service url, save it, then switch to the Notifications tab and subscribe to the desired Teams notifications.\n\nStay informed with relevant notifications and communicate with the Expel team via the Ruxie Microsoft Teams app.  \n\nMore questions and/or help with Ruxie? Contact your engagement manager at em@expel.com.",
+  "mpnId": "6234151",
+  "officeAssetId": "WA200002519",
+  "permissions": [],
+  "privacyUrl": "https://expel.com/notices/?tms",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5af0d33a-7df2-4817-a1ff-e3bce7cf796a/2025071113260825/5af0d33a-7df2-4817-a1ff-e3bce7cf796a_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5af0d33a-7df2-4817-a1ff-e3bce7cf796a/2025071113260825/5af0d33a-7df2-4817-a1ff-e3bce7cf796a_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5af0d33a-7df2-4817-a1ff-e3bce7cf796a/2025071113260825/5af0d33a-7df2-4817-a1ff-e3bce7cf796a_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5af0d33a-7df2-4817-a1ff-e3bce7cf796a/2025071113260825/5af0d33a-7df2-4817-a1ff-e3bce7cf796a_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Ruxie enables you to receive notifications and communicate with the Expel team.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5af0d33a-7df2-4817-a1ff-e3bce7cf796a/2025071113260825/5af0d33a-7df2-4817-a1ff-e3bce7cf796a_smallimage.png",
+  "systemVersion": "2025071113260825",
+  "termsOfUseUrl": "https://expel.com/for-customers/terms-of-use/",
+  "validDomains": [
+    "*.expel.io",
+    "*.expel.com"
+  ],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": []
+}

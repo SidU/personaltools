@@ -1,0 +1,1271 @@
+{
+  "manifestVersion": "1.17",
+  "id": "b6bdf576-4561-4587-8600-cd79c4523361",
+  "version": "1.4.4",
+  "name": "Ask Legal",
+  "accentColor": "#FFFFFF",
+  "activities": {
+    "activityTypes": [
+      {
+        "description": "When a request is created on my behalf",
+        "templateText": "{message}",
+        "type": "requestOnBehalfOfMe"
+      },
+      {
+        "description": "When a request is shared with me",
+        "templateText": "{message}",
+        "type": "requestSharedWithMe"
+      },
+      {
+        "description": "If the request status changed",
+        "templateText": "{message}",
+        "type": "requestStatusChange"
+      },
+      {
+        "description": "If the 'Currently with' status changed",
+        "templateText": "{message}",
+        "type": "requestCurrentlyWith"
+      }
+    ]
+  },
+  "amsSellerAccountId": 86281670,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "98d872e7-4061-4bb2-a434-2e29ca50d505",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "HumanResourcesAndRecruiting",
+    "Productivity",
+    "WorkflowAndBusinessManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "LexisNexis®",
+  "developerUrl": "https://www.lexisnexis.com",
+  "galleryTabs": [],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "98d872e7-4061-4bb2-a434-2e29ca50d505",
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Search through company policies from legal documents in your local SharePoint documents.",
+          "fetchTask": false,
+          "id": "policyQuery",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Enter search terms for internal documents and policies",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchQuery",
+              "semanticDescription": "Search terms for internal documents and policies. This could be keywords in the document or phrases.",
+              "title": "Internal Document Search"
+            },
+            {
+              "description": "Enter the author of the document or policy",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "author",
+              "semanticDescription": "The author's first name, last name or user id as specified for the document. For example, Jane Doe. Ask Legal for documents written by Jane Doe. Ask Legal for documents by Jane Doe. Ask Legal for documents authored by Jane Doe. Ask Legal for documents where Jane Doe is the author.",
+              "title": "Author"
+            },
+            {
+              "description": "Enter the title of the document or policy",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "title",
+              "semanticDescription": "The title of the document or policy. For example, 'Gifts and Hospitality Policy'. The document title might include a file extension, such as '.pdf' or '.docx'. This phrase could be a partial match of the document title.",
+              "title": "Document Title"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Ask Legal for documents written by <author> involving <searchQuery>."
+            },
+            {
+              "text": "Ask Legal for documents that mention <searchQuery>."
+            },
+            {
+              "text": "Ask Legal for the document <title> that mention <searchQuery>."
+            }
+          ],
+          "semanticDescription": "Search through company policies from legal documents in your local SharePoint documents. Here are some sample questions: Is there a UK freelance author contract template? When should I use a nondisclosure agreement? Are modifications of our standard NDAs allowed? Who is considered an intermediary under RELX's antibribery policy? What is the FCPA? Does CASL apply to emails originating in countries other than Canada? Can an employee that previously worked for a competitor use former colleagues as a source of information about the competitor? What competitor information can be discussed with a potential customer during negotiations? How should IT employees respond to a dawn raid? Can a raffle be used for marketing purposes? What are the opt-out requirements for marketing emails? What information is covered by the CCPA? How do I do a data protection impact assessment? Where can I get the 2021 Amendment to the Lexis subscription plan regarding the removal of Dockets in the Courtlink migration? How do I request legal review for the right to use a publication as an eBook? How do I use netdocs? How do I access CounselLink? What is a Third Party Security Application Questionnaire? What is a TPSAQ? Do our law firm vendors `have to undergo a TPSAQ? How do I request a TPSAQ to get a law firm approved as a vendor? Where do I find a MLEX Subscription Agreement for Brazil? What are the standard terms and conditions for a MLEX Subscription Agreement? Is it possible to amend the LN Pacific Author Agreement if the Author requests a change to our general terms? What is the contracting process for Nexis Solutions? What is the minimum threshold for legal to review a customer contract for Nexis Solutions? How do you add a customer's affiliates to the customer's master agreement for global Nexis Solutions? Where do I find the LN agreement for the distribution of print products in Singapore? Can I agree to a most favoured nation clause in a customer contract in Hong Kong? Are political contributions to government officials prohibited by antibribery policies? Is there a template for marketing emails to customers? Whom do I contact in Canada for questions about discussions with competitors? What is the standard term for our author agreements? What country's law applies in LN reseller agreements in Singapore? Our outside law firms required to be approved as vendors? Should I copy LN documents requested by a government official if the official personally appears in our London office? Is a consultant necessary for gathering benchmarking data about a competitor? May employees use company computers for personal reasons? What types of documents are considered business records? When should an employee report potential misconduct? Can I post about my work on social media? What is the Confidential Information of LexisNexis? Are there exceptions to CASL? Does the company meet the quality management standards for ISO 9001:2015 certification? What return policy is offered within the terms and conditions of the purchase order? What criteria are applied to determine whether a patent application should be filed for a product design? Does the HIPAA privacy rule apply to any of the information we store? Are there OSHA guidelines concerning COVID and returning to the office? What incentives can be given for product development activities? What are the policy limits for giving gifts? what is the limit for gifts for purchasing ln products? what is the gifting and hospitality guidelines for reporting gifts? how should i report a gift? who should i report a gift to? how large should a gift be to report? when should i report a gift? do gifts have to be reported? what is our company policy on employees taking unscheduled leave? what is the policy on using copyrighted materials? why is there a right to terminate for convenience in your online research template contract? else see clause 6.3. can this clause be deleted? where can i find the supplier code of conduct? what are relx's tax principles? how do i access legal cube? when negotiating with a customer, can i ask about a competitor's winning price? can i ask about competitors' pricing? who should review consulting agreements? who must sign an acquisition agreement? what is the purpose of canada's anti-spam legislation? who is liable for a case violation? what causes can invalidate an nda? what is the purpose of canada anti-spam legislation? can i gather information about a competitor's products? who has the authority to sign purchase contracts? who can sign a contract? should multiple notices of ownership be included when multiple trademarks are used? how should trademarks be used? can i give a third party a gift? what is the monetary threshold for giving a gift to a third party? what do i need to do when gathering competitive intelligence? can you provide some guidance on how to gather competitive intelligence? how can i interact with a competitor?",
+          "title": "Internal Documents",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Keyword search for legal requests in your company's Ask Legal data. These will be keywords in the description of the request.",
+          "fetchTask": false,
+          "id": "matterQuery",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Enter request description keywords",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchQuery",
+              "semanticDescription": "Keywords in the description of the request or the matter. This could also contain phrases.",
+              "title": "Request Description Keyword"
+            },
+            {
+              "choices": [
+                {
+                  "title": "General Request",
+                  "value": "1"
+                },
+                {
+                  "title": "Contract",
+                  "value": "12"
+                },
+                {
+                  "title": "Cybersecurity and Data Privacy",
+                  "value": "3"
+                },
+                {
+                  "title": "Finance",
+                  "value": "4"
+                },
+                {
+                  "title": "HR & Employment",
+                  "value": "5"
+                },
+                {
+                  "title": "Intellectual Property",
+                  "value": "6"
+                },
+                {
+                  "title": "Litigation",
+                  "value": "7"
+                },
+                {
+                  "title": "Product Development",
+                  "value": "8"
+                },
+                {
+                  "title": "Real Estate and M&A",
+                  "value": "9"
+                },
+                {
+                  "title": "Other",
+                  "value": "10"
+                }
+              ],
+              "description": "Enter the type of the request",
+              "inputType": "choiceset",
+              "isRequired": false,
+              "name": "requestType",
+              "semanticDescription": "The type of the request as selected from predefined values in the input form. Acceptable values are: General Request, Contract, Cybersecurity and Data Privacy, Finance, HR & Employment, Intellectual Property, Litigation, Product Development, Real Estate and M&A, Other. Show me all requests of type General Request. Show me all requests of type Contract. Show me all requests of type Cybersecurity and Data Privacy. Show me all requests of type Finance. Show me all requests of type HR & Employment. Show me all requests of type Intellectual Property. Show me all requests of type Litigation. Show me all requests of type Product Development. Show me all requests of type Real Estate and M&A. Show me all requests of type Other. Show my requests of type General Request. Show my requests of type Contract. Show my requests of type Cybersecurity and Data Privacy. Show my requests of type Finance. Show my requests of type HR & Employment. Show my requests of type Intellectual Property. Show my requests of type Litigation. Show my requests of type Product Development. Show my requests of type Real Estate and M&A. Show my requests of type Other. Show requests of type General Request. Show requests of type Contract. Show requests of type Cybersecurity and Data Privacy. Show requests of type Finance. Show requests of type HR & Employment. Show requests of type Intellectual Property. Show requests of type Litigation. Show requests of type Product Development. Show requests of type Real Estate and M&A. Show requests of type Other.",
+              "title": "Request Type"
+            },
+            {
+              "choices": [
+                {
+                  "title": "New",
+                  "value": "1"
+                },
+                {
+                  "title": "In Progress",
+                  "value": "2"
+                },
+                {
+                  "title": "On Hold",
+                  "value": "3"
+                },
+                {
+                  "title": "Completed",
+                  "value": "4"
+                }
+              ],
+              "description": "Enter the status of the request",
+              "inputType": "choiceset",
+              "isRequired": false,
+              "name": "status",
+              "semanticDescription": "The status of the request. This is a fixed set of values. Acceptable values are: New, In Progress, On Hold, Completed. Show me all requests in the New status. Show me all requests in the In Progress status. Show me all requests in the On Hold status. Show me all requests in the Completed status. Show my requests in the New status. Show my requests in the In Progress status. Show my requests in the On Hold status. Show my requests in the Completed status. Show requests in the New status. Show requests in the In Progress status. Show requests in the On Hold status. Show requests in the Completed status. Show new requests. Show requests in progress. Show requests on hold. Show completed requests. Show requets with the status New. Show requests with the status In Progress. Show requests with the status On Hold. Show requests with the status Completed.",
+              "title": "Status"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Ask Legal for my request involving <searchQuery>?"
+            },
+            {
+              "text": "Ask Legal for my requests with type <requestType> that mention <searchQuery>?"
+            },
+            {
+              "text": "Ask Legal for all my requests in <status> status that mention <searchQuery>."
+            }
+          ],
+          "semanticDescription": "Keyword search for legal requests and legal matters in your company's Ask Legal data. These will be keywords in the description of the request or the matter. Here are some sample queries: Tell me about my request involving party ABC. What is the status of my request involving contract changes?",
+          "title": "Requests",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "counsel",
+    "ask counsel",
+    "matter"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b6bdf576-4561-4587-8600-cd79c4523361/2025071115095419/b6bdf576-4561-4587-8600-cd79c4523361_largeimage.png",
+  "lastUpdatedAt": "2024-12-18T20:21:57.8813397+00:00",
+  "longDescription": "See what's happening with your legal requests in real-time with Ask Legal. \n\n  Ask Legal grants you transparency into the progress of your legal requests as they occur. With its smooth and clear submission process, you'll never need to worry about missing critical details or locating a missing file again. \n\n   **Simplified Submission**\n* Ask Legal's simple portal guides you through the process of contacting your legal department, ensuring that important details are captured, and that the right attorney receives and can begin working on it as soon as possible. \n**Request Portal**\n* A common storage for all requests past and present gives you live updates about major events on your current requests and easy access to those past. \n**Central Communication**\n* Using Microsoft Teams chats for communication and SharePoint for file storage, all material related to a request is available at the click of a button. \n**Microsoft 365 Copilot Integration**\n* Add Ask Legal as an agent for Microsoft Copilot to ask questions about your requests or policy documents. \n**Access Throughout Microsoft 365**\n* Open anywhere using Microsoft 365 support.  \n**Get Started**\n* Ask Legal requires a subscription from LexisNexis®. [Contact us](https://www.lexisnexis.com/en-us/products/lexis-connect.page#contact) for details.",
+  "mpnId": "6774066",
+  "officeAssetId": "WA200006929",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.lexisnexis.com/en-us/terms/privacy-policy.page",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b6bdf576-4561-4587-8600-cd79c4523361/2025071115095419/b6bdf576-4561-4587-8600-cd79c4523361_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b6bdf576-4561-4587-8600-cd79c4523361/2025071115095419/b6bdf576-4561-4587-8600-cd79c4523361_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b6bdf576-4561-4587-8600-cd79c4523361/2025071115095419/b6bdf576-4561-4587-8600-cd79c4523361_screenshot/2.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b6bdf576-4561-4587-8600-cd79c4523361/2025071115095419/b6bdf576-4561-4587-8600-cd79c4523361_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b6bdf576-4561-4587-8600-cd79c4523361/2025071115095419/b6bdf576-4561-4587-8600-cd79c4523361_screenshot/4.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "The Ask Legal is for employees to submit legal requests.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b6bdf576-4561-4587-8600-cd79c4523361/2025071115095419/b6bdf576-4561-4587-8600-cd79c4523361_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://pdc1c-lia-matters-app.lexisnexisazapi.com/requestor",
+      "entityId": "requestor",
+      "name": "Requests",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://pdc1c-lia-matters-app.lexisnexisazapi.com/requestor"
+    }
+  ],
+  "systemVersion": "2025071115095419",
+  "termsOfUseUrl": "https://www.lexisnexis.com/en-us/terms/general/default.page",
+  "validDomains": [
+    "pdc1c-lia-matters-app.lexisnexisazapi.com",
+    "pdc1c-lia-matters-auth.lexisnexisazapi.com",
+    "pdc1c-lia-matters-api.lexisnexisazapi.com",
+    "token.botframework.com",
+    "*.lexisnexis.com"
+  ],
+  "webApplicationInfo": {
+    "id": "98d872e7-4061-4bb2-a434-2e29ca50d505",
+    "resource": "api://pdc1c-lia-matters-app.lexisnexisazapi.com/botid-98d872e7-4061-4bb2-a434-2e29ca50d505"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": []
+}

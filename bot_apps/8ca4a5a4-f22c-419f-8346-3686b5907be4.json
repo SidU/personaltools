@@ -1,0 +1,188 @@
+{
+  "manifestVersion": "1.9",
+  "id": "8ca4a5a4-f22c-419f-8346-3686b5907be4",
+  "version": "3.4.6",
+  "name": "MobileCare",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 74023400,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "To display help instruction enter the following",
+              "title": "help"
+            },
+            {
+              "description": "Gives instructions about how to use the chat bot",
+              "title": "hi"
+            },
+            {
+              "description": "Signin to MobileCare",
+              "title": "signin"
+            },
+            {
+              "description": "signout from MobileCare",
+              "title": "signout"
+            },
+            {
+              "description": "Search for a given care team member enter",
+              "title": "staff <name>"
+            },
+            {
+              "description": "Search for a given patient enter",
+              "title": "patient <name>"
+            },
+            {
+              "description": "Search for a given patient by MRN # enter",
+              "title": "patient <MRN>"
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "id": "2709e020-0cf0-4fce-9f4a-872369b5f55e",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "groupChat",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "CustomerAndContactManagement",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "developerName": "Agnity.",
+  "developerUrl": "https://agnityglobal.com/healthcare/mobilecare-powered-by-microsoft/",
+  "industries": [
+    "HealthCareAndLifeSciences"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "2709e020-0cf0-4fce-9f4a-872369b5f55e",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Search for patients in MobileCare platform.",
+          "fetchTask": false,
+          "id": "searchQuery",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Your search query",
+              "inputType": "text",
+              "name": "searchQuery",
+              "title": "Search Query"
+            }
+          ],
+          "title": "Search",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "MobileCare Teams",
+    "Telehealth",
+    "Clinical Communication"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8ca4a5a4-f22c-419f-8346-3686b5907be4/2025071112140018/8ca4a5a4-f22c-419f-8346-3686b5907be4_largeimage.png",
+  "lastUpdatedAt": "2022-11-18T20:58:26.478949+00:00",
+  "longDescription": "MobileCare, a “Clinical Decision Support Tool”, is a suite of clinical communication and collaboration products on a single, secure cloud-based platform – Microsoft Team\n   MobileCare provides patient medical data and care team contact information through an integration with your healthcare facility’s EHR/EMR system.\n   Together, these capabilities provide:\n   - More efficient communication and collaboration\n  - Faster decision-making and response times\n  - Enhanced workflows for the care team\n   All of these benefits – plus the added ability for the care team to connect with patients remotely – lead to improved outcomes and more satisfied patients and clinicians\n   Please contact **mobilecare@agnity.com** requesting MobileCare service account or a demo account to try out the service. ",
+  "officeAssetId": "WA200004848",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://agnityglobal.com/privacy-policy/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8ca4a5a4-f22c-419f-8346-3686b5907be4/2025071112140018/8ca4a5a4-f22c-419f-8346-3686b5907be4_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8ca4a5a4-f22c-419f-8346-3686b5907be4/2025071112140018/8ca4a5a4-f22c-419f-8346-3686b5907be4_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8ca4a5a4-f22c-419f-8346-3686b5907be4/2025071112140018/8ca4a5a4-f22c-419f-8346-3686b5907be4_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8ca4a5a4-f22c-419f-8346-3686b5907be4/2025071112140018/8ca4a5a4-f22c-419f-8346-3686b5907be4_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8ca4a5a4-f22c-419f-8346-3686b5907be4/2025071112140018/8ca4a5a4-f22c-419f-8346-3686b5907be4_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "MobileCare, is a clinical communication and collaboration product.",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8ca4a5a4-f22c-419f-8346-3686b5907be4/2025071112140018/8ca4a5a4-f22c-419f-8346-3686b5907be4_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://mobilecareagni062c48tab.z13.web.core.windows.net/?appId={appid}",
+      "entityId": "patients",
+      "name": "Patients",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://agnityglobal.com/"
+    },
+    {
+      "contentUrl": "https://mobilecareagni062c48tab.z13.web.core.windows.net/#/staff?appId={appid}",
+      "entityId": "staff",
+      "name": "Care Team",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://agnityglobal.com/"
+    }
+  ],
+  "systemVersion": "2025071112140018",
+  "termsOfUseUrl": "https://mobilecareagni062c48tab.z13.web.core.windows.net/TermsOfUseAccepted.html",
+  "validDomains": [
+    "mobile-care-proxy.herokuapp.com",
+    "mobilecareagni062c48tab.z13.web.core.windows.net"
+  ],
+  "webApplicationInfo": {
+    "id": "4b0a3af6-187a-435f-8c76-6972e946316c",
+    "resource": "api://mobilecareagni062c48tab.z13.web.core.windows.net/botid-2709e020-0cf0-4fce-9f4a-872369b5f55e"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": []
+}

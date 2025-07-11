@@ -1,0 +1,115 @@
+{
+  "manifestVersion": "1.8",
+  "id": "66861a6d-b1ca-439b-8c0d-a9644e5d3340",
+  "version": "1.0.0",
+  "name": "KARTE",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 73174850,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "利用するために必要な情報を登録します。api_keyとaccess_tokenとbot_idが必須です。",
+              "title": "setup"
+            },
+            {
+              "description": "登録されている情報を削除します。実行するには -y が必須です。",
+              "title": "teardown"
+            },
+            {
+              "description": "コマンドのガイドを表示します。",
+              "title": "help"
+            },
+            {
+              "description": "KARTEのeventを発生することができます。",
+              "title": "event"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "66861a6d-b1ca-439b-8c0d-a9644e5d3340",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "SalesAndMarketing"
+  ],
+  "creatorId": "",
+  "developerName": "PLAID, Inc.",
+  "developerUrl": "https://karte.io/",
+  "industries": [
+    "Other"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Talk",
+    "Chat",
+    "KARTE"
+  ],
+  "languageTag": "ja",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/66861a6d-b1ca-439b-8c0d-a9644e5d3340/2025071114070021/66861a6d-b1ca-439b-8c0d-a9644e5d3340_largeimage.png",
+  "lastUpdatedAt": "2020-12-28T04:08:45.209886+00:00",
+  "longDescription": "[KARTE](https://karte.io/) はウェブサイトの閲覧者やモバイルアプリのユーザーのエクスペリエンスを高めるカスタマーエクスペリエンス (CX) プラットフォームです。\n本アプリをインストールすることで、[KARTE Talk](https://karte.io/product/talk/)の会話内容をTeamsに連携することができます。またエンドユーザーへ返信やKARTEのイベントを発生させることも可能となります。\nご利用するにはKARTE Talkの契約が前提となりますのでご注意ください。契約に関することは[こちら](https://karte.io/enterprise/)からお問い合わせください。\nなお、インストール後の初期セットアップは[こちらのガイド](https://support.karte.io/post/2vyIaHJP8VYsY8kteGVMRj)をご参照ください。",
+  "mpnId": "6167729",
+  "officeAssetId": "WA200002480",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://karte.io/karte-policy.html",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/66861a6d-b1ca-439b-8c0d-a9644e5d3340/2025071114070021/66861a6d-b1ca-439b-8c0d-a9644e5d3340_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/66861a6d-b1ca-439b-8c0d-a9644e5d3340/2025071114070021/66861a6d-b1ca-439b-8c0d-a9644e5d3340_screenshot/1.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "KARTE Talk の顧客に対して Microsoft Teams からサポートすることができます",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/66861a6d-b1ca-439b-8c0d-a9644e5d3340/2025071114070021/66861a6d-b1ca-439b-8c0d-a9644e5d3340_smallimage.png",
+  "systemVersion": "2025071114070021",
+  "termsOfUseUrl": "https://karte.io/legal/terms-of-use.html",
+  "validDomains": [],
+  "videoUrl": "https://www.youtube.com/watch?v=h0kDekZFaSU",
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "ja"
+  ],
+  "localizedDefinitions": []
+}

@@ -1,0 +1,126 @@
+{
+  "manifestVersion": "1.12",
+  "id": "182ae476-dee8-4ed0-b44f-ac52ccc46cb5",
+  "version": "1.6.7",
+  "name": "Sidekick",
+  "accentColor": "#1606c7",
+  "amsSellerAccountId": 85338200,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "ChannelSettings.Read.Group",
+          "type": "Application"
+        },
+        {
+          "name": "ChannelMessage.Send.Group",
+          "type": "Application"
+        },
+        {
+          "name": "TeamMember.Read.Group",
+          "type": "Application"
+        },
+        {
+          "name": "ChatMessage.Send.Chat",
+          "type": "Application"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "afa0ea96-372b-4b15-9796-c5aef0469b4c",
+      "isNotificationOnly": true,
+      "scopes": [
+        "team",
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ITAdmin"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor",
+    "developerUrl",
+    "privacyUrl",
+    "termsOfUseUrl"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultGroupCapability": {
+    "team": "bot"
+  },
+  "developerName": "XOPS",
+  "developerUrl": "https://www.xops.io/",
+  "devicePermissions": [
+    "Notifications"
+  ],
+  "industries": [
+    "Other"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "notifications",
+    "automation"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/182ae476-dee8-4ed0-b44f-ac52ccc46cb5/2025071115015674/182ae476-dee8-4ed0-b44f-ac52ccc46cb5_largeimage.png",
+  "lastUpdatedAt": "2023-10-11T05:08:37.6358845+00:00",
+  "longDescription": "**Description:**\n\nThe companion app to the XOPS Control Center, XOPS Sidekick gives your employees contextual notifications through Microsoft Teams channels from the XOPS platform delivering Autonomous IT. Your Sidekick gives you a heads-up on what you need to pay attention to and takes care of the rest.\n\n**Features:**\n\n- Receive notifications on various process statuses and results to have visibility on successful or failed data uploads, exports, error logging, and more.\n\n- Check on the status of service requests\n\n- Facilitate automated flows for runbooks\n\nIn order to use this app, your company administrator needs to have XperiencOps provide authorization against a runbook license that uses Microsoft Teams notifications. Please contact your XperiencOps Customer Support Manager for any assistance. For any other issues, please visit our support page at [https://www.xops.io/support](https://www.xops.io/support)",
+  "mpnId": "6776106",
+  "officeAssetId": "WA200006103",
+  "permissions": [],
+  "privacyUrl": "https://www.xops.io/privacy-policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/182ae476-dee8-4ed0-b44f-ac52ccc46cb5/2025071115015674/182ae476-dee8-4ed0-b44f-ac52ccc46cb5_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/182ae476-dee8-4ed0-b44f-ac52ccc46cb5/2025071115015674/182ae476-dee8-4ed0-b44f-ac52ccc46cb5_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/182ae476-dee8-4ed0-b44f-ac52ccc46cb5/2025071115015674/182ae476-dee8-4ed0-b44f-ac52ccc46cb5_screenshot/2.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "m365Certified"
+  },
+  "shortDescription": "An automated employee engagement app to deliver notifications in real-time.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/182ae476-dee8-4ed0-b44f-ac52ccc46cb5/2025071115015674/182ae476-dee8-4ed0-b44f-ac52ccc46cb5_smallimage.png",
+  "systemVersion": "2025071115015674",
+  "termsOfUseUrl": "https://www.xops.io/terms-of-services",
+  "validDomains": [],
+  "webApplicationInfo": {
+    "id": "afa0ea96-372b-4b15-9796-c5aef0469b4c",
+    "resource": "https://notapplicable"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": []
+}

@@ -1,0 +1,2363 @@
+{
+  "manifestVersion": "1.11",
+  "id": "e9fa584e-b65b-4569-8de3-3feeb534d78c",
+  "version": "1.2.6",
+  "name": "GoTo Resolve",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 14073140,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Need some help?",
+              "title": "help"
+            },
+            {
+              "description": "Sign In to GoTo Resolve",
+              "title": "sign in"
+            },
+            {
+              "description": "Sign Out from GoTo Resolve",
+              "title": "sign out"
+            },
+            {
+              "description": "Create a ticket",
+              "title": "create ticket"
+            },
+            {
+              "description": "See how your channels are mapped with triage teams and helpdesk services.",
+              "title": "view service links"
+            },
+            {
+              "description": "Unlink the current GoTo Resolve account from this Teams account.",
+              "title": "unlink account"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Need some help?",
+              "title": "help"
+            },
+            {
+              "description": "Sign In to GoTo Resolve",
+              "title": "sign in"
+            },
+            {
+              "description": "Sign Out from GoTo Resolve",
+              "title": "sign out"
+            },
+            {
+              "description": "Create a ticket",
+              "title": "create ticket"
+            }
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Need some help?",
+              "title": "help"
+            },
+            {
+              "description": "Map this channel to a service category configured in GoTo Resolve HelpDesk.",
+              "title": "link channel"
+            },
+            {
+              "description": "Remove service category mapping for this channel.",
+              "title": "unlink channel"
+            },
+            {
+              "description": "See how your channels are mapped with triage teams and helpdesk services.",
+              "title": "view service links"
+            },
+            {
+              "description": "Unlink the current GoTo Resolve account from this Teams account.",
+              "title": "unlink account"
+            },
+            {
+              "description": "Create a ticket",
+              "title": "create ticket"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "groupChat",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "ITAdmin",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "GoTo Inc",
+  "developerUrl": "https://www.goto.com/",
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "message"
+          ],
+          "description": "Create Ticket",
+          "fetchTask": true,
+          "id": "createticket",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "taskInfo": {
+            "height": "480",
+            "title": "web",
+            "url": "https://cloverleaf.console.gotoresolve.com/views/ticket/v1/msteams/CreateTicketView",
+            "width": "500"
+          },
+          "title": "Create Ticket",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "GoToResolve",
+    "LogMeIn",
+    "GoTo"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_largeimage.png",
+  "lastUpdatedAt": "2023-05-22T10:18:06.2306308+00:00",
+  "longDescription": "GoTo Resolve is an all-in-one IT management suite purpose-built for today's IT support challenges. It brings together world class remote access & support with conversational ticketing to help you receive requests, triage problems, and fix issues quicker.\n\nEvery IT team, helpdesk agent, and support request is different, which is why GoTo Resolve is built to meet the needs of each organization and problem, with support for all systems.\n\n**GoTo Resolve Microsoft Teams app**\n\nEmployees can easily submit, review, and follow-up on tickets, while agents can receive, manage and comment on tickets directly from Microsoft Teams. Then move from request to resolution with the ability to start a remote support session right from Microsoft Teams, eliminating headaches and delays in solving issues.\n\nYou or your account admin needs an active GoTo Resolve license to use this app. No license yet? [Get one here](https://www.goto.com/it-management/resolve/try).",
+  "officeAssetId": "WA200003473",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.goto.com/company/legal/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/2.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Streamline employee requests and resolutions with GoTo Resolve + Microsoft Teams",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_smallimage.png",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}",
+      "entityId": "mytickets",
+      "name": "My Tickets",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}"
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115391493",
+  "termsOfUseUrl": "https://www.goto.com/company/legal/terms-and-conditions",
+  "validDomains": [
+    "cdn.console.gotoresolve.com",
+    "cloverleaf.console.gotoresolve.com",
+    "cloverleaf-afr.console.gotoresolve.com",
+    "authentication.logmeininc.com"
+  ],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "es"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.11",
+      "id": "e9fa584e-b65b-4569-8de3-3feeb534d78c",
+      "version": "1.2.6",
+      "name": "GoTo Resolve",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 14073140,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Sie brauchen Hilfe?",
+                  "title": "Hilfe"
+                },
+                {
+                  "description": "Bei GoTo Resolve anmelden",
+                  "title": "anmelden"
+                },
+                {
+                  "description": "Von GoTo Resolve abmelden",
+                  "title": "abmelden"
+                },
+                {
+                  "description": "Ticket erstellen",
+                  "title": "Ticket erstellen"
+                },
+                {
+                  "description": "Selektierungsteams und Helpdesk-Services für die Kanäle anzeigen.",
+                  "title": "Serviceverknüpfungen anzeigen"
+                },
+                {
+                  "description": "Verknüpfung des aktuellen GoTo-Resolve-Kontos mit diesem Teams-Konto aufheben.",
+                  "title": "Kontoverknüpfung aufheben"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Sie brauchen Hilfe?",
+                  "title": "Hilfe"
+                },
+                {
+                  "description": "Bei GoTo Resolve anmelden",
+                  "title": "anmelden"
+                },
+                {
+                  "description": "Von GoTo Resolve abmelden",
+                  "title": "abmelden"
+                },
+                {
+                  "description": "Ticket erstellen",
+                  "title": "Ticket erstellen"
+                }
+              ],
+              "scopes": [
+                "groupChat"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Sie brauchen Hilfe?",
+                  "title": "Hilfe"
+                },
+                {
+                  "description": "Diesen Kanal einer in GoTo Resolve HelpDesk konfigurierten Servicekategorie zuordnen.",
+                  "title": "Kanal verknüpfen"
+                },
+                {
+                  "description": "Zuordnung der Servicekategorie zu diesem Kanal entfernen.",
+                  "title": "Kanalverknüpfung aufheben"
+                },
+                {
+                  "description": "Selektierungsteams und Helpdesk-Services für die Kanäle anzeigen.",
+                  "title": "Serviceverknüpfungen anzeigen"
+                },
+                {
+                  "description": "Verknüpfung des aktuellen GoTo-Resolve-Kontos mit diesem Teams-Konto aufheben.",
+                  "title": "Kontoverknüpfung aufheben"
+                },
+                {
+                  "description": "Ticket erstellen",
+                  "title": "Ticket erstellen"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "GoTo Inc",
+      "developerUrl": "https://www.goto.com/",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Ticket erstellen",
+              "fetchTask": true,
+              "id": "createticket",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Ticket erstellen",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "Ticket erstellen"
+                }
+              ],
+              "taskInfo": {
+                "height": "480",
+                "title": "Ticket erstellen",
+                "url": "https://cloverleaf.console.gotoresolve.com/views/ticket/v1/msteams/CreateTicketView",
+                "width": "500"
+              },
+              "title": "Ticket erstellen",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "GoToResolve",
+        "LogMeIn",
+        "GoTo"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_largeimage.png",
+      "lastUpdatedAt": "2023-05-22T10:18:06.2306308+00:00",
+      "longDescription": "GoTo Resolve ist eine Komplettlösung für das IT-Management, die speziell für die heutigen Herausforderungen im IT-Support entwickelt wurde. Sie vereint erstklassigen Remotezugriff und -support mit einem dialogorientierten Ticketsystem, sodass Sie Anfragen direkt erhalten und Probleme rascher diagnostizieren und beheben können.\n\nJedes IT-Team, jeder Helpdesk-Techniker und jedes Supportanliegen ist anders. Daher wurde GoTo Resolve für die Anforderungen aller Unternehmen und Probleme konzipiert und ist mit allen Systemen kompatibel.\n\n**Microsoft-Teams-App von GoTo Resolve**\n\nIhre Mitarbeiter können direkt in Microsoft Teams Tickets einreichen, überprüfen und diesbezüglich nachfragen. Die Techniker können nicht nur Tickets erhalten, verwalten und kommentieren, sondern auch von Microsoft Teams aus Remotesupportsitzungen starten, um Anfragen schneller abzuschließen. Es gibt keine Verzögerungen oder Reibungspunkte bei der Problemlösung.\n\nFür Sie oder Ihren Kontoadministrator ist eine aktive GoTo-Resolve-Lizenz erforderlich, um diese App zu verwenden. Noch keine Lizenz? [Hier erhalten Sie diese.](https://www.goto.com/it-management/resolve/try)",
+      "officeAssetId": "WA200003473",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.goto.com/company/legal/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Einfachere Anfragenverwaltung und Problemlösung mit GoTo Resolve + MS Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}",
+          "entityId": "mytickets",
+          "name": "Meine Tickets",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115391493",
+      "termsOfUseUrl": "https://www.goto.com/company/legal/terms-and-conditions",
+      "validDomains": [
+        "cdn.console.gotoresolve.com",
+        "cloverleaf.console.gotoresolve.com",
+        "cloverleaf-afr.console.gotoresolve.com",
+        "authentication.logmeininc.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "e9fa584e-b65b-4569-8de3-3feeb534d78c",
+      "version": "1.2.6",
+      "name": "GoTo Resolve",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 14073140,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "¿Necesita ayuda?",
+                  "title": "ayuda"
+                },
+                {
+                  "description": "Iniciar sesión en GoTo Resolve",
+                  "title": "iniciar sesión"
+                },
+                {
+                  "description": "Cerrar sesión en GoTo Resolve",
+                  "title": "cerrar sesión"
+                },
+                {
+                  "description": "Crear ticket",
+                  "title": "crear ticket"
+                },
+                {
+                  "description": "Consulte la asignación de los canales a equipos de evaluación y servicios de soporte técnico.",
+                  "title": "ver enlaces de servicio"
+                },
+                {
+                  "description": "Desenlace la cuenta de GoTo Resolve actual de esta cuenta de Teams.",
+                  "title": "desenlazar cuenta"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "¿Necesita ayuda?",
+                  "title": "ayuda"
+                },
+                {
+                  "description": "Iniciar sesión en GoTo Resolve",
+                  "title": "iniciar sesión"
+                },
+                {
+                  "description": "Cerrar sesión en GoTo Resolve",
+                  "title": "cerrar sesión"
+                },
+                {
+                  "description": "Crear ticket",
+                  "title": "crear ticket"
+                }
+              ],
+              "scopes": [
+                "groupChat"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "¿Necesita ayuda?",
+                  "title": "ayuda"
+                },
+                {
+                  "description": "Asigna este canal a una categoría de servicio configurada en GoTo Resolve HelpDesk.",
+                  "title": "enlazar canal"
+                },
+                {
+                  "description": "Quita la asignación de categoría de servicio de este canal.",
+                  "title": "desenlazar canal"
+                },
+                {
+                  "description": "Consulte la asignación de los canales a equipos de evaluación y servicios de soporte técnico.",
+                  "title": "ver enlaces de servicio"
+                },
+                {
+                  "description": "Desenlace la cuenta de GoTo Resolve actual de esta cuenta de Teams.",
+                  "title": "desenlazar cuenta"
+                },
+                {
+                  "description": "Crear ticket",
+                  "title": "crear ticket"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "GoTo Inc",
+      "developerUrl": "https://www.goto.com/",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Crear ticket",
+              "fetchTask": true,
+              "id": "createticket",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Crear ticket",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "Crear ticket"
+                }
+              ],
+              "taskInfo": {
+                "height": "480",
+                "title": "Crear ticket",
+                "url": "https://cloverleaf.console.gotoresolve.com/views/ticket/v1/msteams/CreateTicketView",
+                "width": "500"
+              },
+              "title": "Crear ticket",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "GoToResolve",
+        "LogMeIn",
+        "GoTo"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_largeimage.png",
+      "lastUpdatedAt": "2023-05-22T10:18:06.2306308+00:00",
+      "longDescription": "GoTo Resolve es una solución integral de gestión de TI pensada para resolver los retos que plantea la asistencia de TI actual. Combina acceso y asistencia remotos de primer nivel con tickets conversacionales para ayudarle a recibir solicitudes, realizar el triaje de problemas y corregir los fallos en menos tiempo.\n\nCada equipo de TI, agente del servicio de soporte y solicitud de asistencia son distintos, y por ello GoTo Resolve se ha creado para cumplir las necesidades de cada organización y problema, con compatibilidad con todos los sistemas.\n\n**GoTo Resolve y la aplicación de Microsoft Teams**\n\nLos empleados pueden enviar, revisar y realizar el seguimiento con facilidad de los tickets, mientras que los agentes pueden recibir, gestionar y comentar los tickets directamente desde Microsoft Teams, para después pasar de la solicitud hasta la resolución con la capacidad de iniciar una sesión de asistencia remota directamente desde Microsoft Teams, lo que elimina las complicaciones y los retrasos en la resolución.\n\nUsted o el administrador de su cuenta necesitan una licencia de GoTo Resolve activa para usar esta aplicación. ¿Todavía no tiene una licencia? [Hágase con una aquí.](https://www.goto.com/it-management/resolve/try)",
+      "officeAssetId": "WA200003473",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.goto.com/company/legal/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Agilice las peticiones y resoluciones de empleados con GoTo Resolve + MS Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}",
+          "entityId": "mytickets",
+          "name": "Mis tickets",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115391493",
+      "termsOfUseUrl": "https://www.goto.com/company/legal/terms-and-conditions",
+      "validDomains": [
+        "cdn.console.gotoresolve.com",
+        "cloverleaf.console.gotoresolve.com",
+        "cloverleaf-afr.console.gotoresolve.com",
+        "authentication.logmeininc.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "e9fa584e-b65b-4569-8de3-3feeb534d78c",
+      "version": "1.2.6",
+      "name": "GoTo Resolve",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 14073140,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Besoin d’aide ?",
+                  "title": "aide"
+                },
+                {
+                  "description": "Connexion à GoTo Resolve",
+                  "title": "connexion"
+                },
+                {
+                  "description": "Déconnexion de GoTo Resolve",
+                  "title": "déconnexion"
+                },
+                {
+                  "description": "Créer un ticket",
+                  "title": "créer un ticket"
+                },
+                {
+                  "description": "Voir comment vos canaux sont attribués aux équipes de triage et aux services de bureaux d’assistance.",
+                  "title": "afficher les liens de service"
+                },
+                {
+                  "description": "Dissocier le compte GoTo Resolve actuel de ce compte Teams.",
+                  "title": "dissocier le compte"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Besoin d’aide ?",
+                  "title": "aide"
+                },
+                {
+                  "description": "Connexion à GoTo Resolve",
+                  "title": "connexion"
+                },
+                {
+                  "description": "Déconnexion de GoTo Resolve",
+                  "title": "déconnexion"
+                },
+                {
+                  "description": "Créer un ticket",
+                  "title": "créer un ticket"
+                }
+              ],
+              "scopes": [
+                "groupChat"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Besoin d’aide ?",
+                  "title": "aide"
+                },
+                {
+                  "description": "Associer ce canal à une catégorie de service configurée dans GoTo Resolve HelpDesk.",
+                  "title": "associer le canal"
+                },
+                {
+                  "description": "Supprimer l’association à la catégorie de service pour ce canal.",
+                  "title": "dissocier le canal"
+                },
+                {
+                  "description": "Voir comment vos canaux sont attribués aux équipes de triage et aux services de bureaux d’assistance.",
+                  "title": "afficher les liens de service"
+                },
+                {
+                  "description": "Dissocier le compte GoTo Resolve actuel de ce compte Teams.",
+                  "title": "dissocier le compte"
+                },
+                {
+                  "description": "Créer un ticket",
+                  "title": "créer un ticket"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "GoTo Inc",
+      "developerUrl": "https://www.goto.com/",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Créer un ticket",
+              "fetchTask": true,
+              "id": "createticket",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Créer un ticket",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "Créer un ticket"
+                }
+              ],
+              "taskInfo": {
+                "height": "480",
+                "title": "Créer un ticket",
+                "url": "https://cloverleaf.console.gotoresolve.com/views/ticket/v1/msteams/CreateTicketView",
+                "width": "500"
+              },
+              "title": "Créer un ticket",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "GoToResolve",
+        "LogMeIn",
+        "GoTo"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_largeimage.png",
+      "lastUpdatedAt": "2023-05-22T10:18:06.2306308+00:00",
+      "longDescription": "GoTo Resolve est une suite de gestion informatique tout-en-un conçue sur mesure pour répondre aux défis d’assistance informatique d’aujourd’hui. Il rapproche l’assistance et l’accès à distance de classe mondiale d’un système de gestion de tickets conversationnel pour vous aider à recevoir des demandes, à répartir les questions en catégories et à résoudre les problèmes plus vite.\n\nChaque équipe informatique, agent d’assistance et chaque demande sont différents, c’est pourquoi GoTo Resolve est conçu pour répondre aux besoins et au problème de chaque organisation, et prend en charge tous les systèmes.\n\n**Application GoTo Resolve pour Microsoft Teams**\n\nLes salariés peuvent facilement proposer, consulter et suivre des tickets, alors que les agents peuvent recevoir, gérer et commenter des tickets directement depuis Microsoft Teams. Passez ensuite de la demande à sa résolution avec la possibilité de démarrer une session d’assistance directement depuis Microsoft Teams, pour éliminer les maux de tête et les retards dans la résolution des problèmes.\n\nVous ou votre administrateur de compte avez besoin d’une licence GoTo Resolve active pour utiliser cette application. Pas encore de licence ? [Obtenez-en une ici.](https://www.goto.com/it-management/resolve/try)",
+      "officeAssetId": "WA200003473",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.goto.com/company/legal/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Rationalisez les demandes des salariés et les résolutions avec GoTo Resolve.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}",
+          "entityId": "mytickets",
+          "name": "Mes tickets",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115391493",
+      "termsOfUseUrl": "https://www.goto.com/company/legal/terms-and-conditions",
+      "validDomains": [
+        "cdn.console.gotoresolve.com",
+        "cloverleaf.console.gotoresolve.com",
+        "cloverleaf-afr.console.gotoresolve.com",
+        "authentication.logmeininc.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "e9fa584e-b65b-4569-8de3-3feeb534d78c",
+      "version": "1.2.6",
+      "name": "GoTo Resolve",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 14073140,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Hai bisogno di aiuto?",
+                  "title": "guida"
+                },
+                {
+                  "description": "Accedi a GoTo Resolve",
+                  "title": "accedi"
+                },
+                {
+                  "description": "Disconnnettiti da GoTo Resolve",
+                  "title": "disconnettiti"
+                },
+                {
+                  "description": "Crea ticket",
+                  "title": "crea ticket"
+                },
+                {
+                  "description": "Vedi l’assegnazione dei canali ai team di triage e ai servizi helpdesk.",
+                  "title": "mostra collegamenti servizi"
+                },
+                {
+                  "description": "Scollega l’account GoTo Resolve corrente da questo account Teams.",
+                  "title": "scollega account"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Hai bisogno di aiuto?",
+                  "title": "guida"
+                },
+                {
+                  "description": "Accedi a GoTo Resolve",
+                  "title": "accedi"
+                },
+                {
+                  "description": "Disconnnettiti da GoTo Resolve",
+                  "title": "disconnettiti"
+                },
+                {
+                  "description": "Crea ticket",
+                  "title": "crea ticket"
+                }
+              ],
+              "scopes": [
+                "groupChat"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Hai bisogno di aiuto?",
+                  "title": "guida"
+                },
+                {
+                  "description": "Assegna questo canale a una categoria di servizi configurata in GoTo Resolve HelpDesk.",
+                  "title": "collega canale"
+                },
+                {
+                  "description": "Rimuovi l’assegnazione della categoria di servizi a questo canale.",
+                  "title": "scollega canale"
+                },
+                {
+                  "description": "Vedi l’assegnazione dei canali ai team di triage e ai servizi helpdesk.",
+                  "title": "mostra collegamenti servizi"
+                },
+                {
+                  "description": "Scollega l’account GoTo Resolve corrente da questo account Teams.",
+                  "title": "scollega account"
+                },
+                {
+                  "description": "Crea ticket",
+                  "title": "crea ticket"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "GoTo Inc",
+      "developerUrl": "https://www.goto.com/",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Crea ticket",
+              "fetchTask": true,
+              "id": "createticket",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Crea ticket",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "Crea ticket"
+                }
+              ],
+              "taskInfo": {
+                "height": "480",
+                "title": "Crea ticket",
+                "url": "https://cloverleaf.console.gotoresolve.com/views/ticket/v1/msteams/CreateTicketView",
+                "width": "500"
+              },
+              "title": "Crea ticket",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "GoToResolve",
+        "LogMeIn",
+        "GoTo"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_largeimage.png",
+      "lastUpdatedAt": "2023-05-22T10:18:06.2306308+00:00",
+      "longDescription": "GoTo Resolve è una soluzione di gestione IT completa, realizzata appositamente per rispondere alle sfide odierne del supporto IT. Combina una soluzione di supporto e accesso remoto di prima classe con il ticketing conversazionale, per consentire di ricevere richieste, valutare i problemi e risolverli più rapidamente.\n\nI team IT, gli agenti di helpdesk e le richieste di supporto sono tutti diversi, ed è per questo che GoTo Resolve è realizzato per soddisfare le esigenze di ogni organizzazione e situazione, con supporto per tutti i sistemi.\n\n**App GoTo Resolve per Microsoft Teams**\n\nI dipendenti possono facilmente inviare ticket, esaminarli e darvi seguito, mentre gli agenti possono ricevere, gestire e commentare i ticket direttamente da Microsoft Teams. Possono quindi passare dalla richiesta alla soluzione con la possibilità di avviare una sessione di supporto remoto direttamente da Microsoft Teams, eliminando complicazioni e ritardi nella risoluzione dei problemi.\n\nPer usare questa app, tu o l’amministratore del tuo account dovete disporre di una licenza attiva di GoTo Resolve. Ancora non disponi di una licenza? [Ottienine una qui.](https://www.goto.com/it-management/resolve/try)",
+      "officeAssetId": "WA200003473",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.goto.com/company/legal/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Semplifica le richieste dei dipendenti e la risoluzione dei problemi con GTRe",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}",
+          "entityId": "mytickets",
+          "name": "I miei ticket",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115391493",
+      "termsOfUseUrl": "https://www.goto.com/company/legal/terms-and-conditions",
+      "validDomains": [
+        "cdn.console.gotoresolve.com",
+        "cloverleaf.console.gotoresolve.com",
+        "cloverleaf-afr.console.gotoresolve.com",
+        "authentication.logmeininc.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "e9fa584e-b65b-4569-8de3-3feeb534d78c",
+      "version": "1.2.6",
+      "name": "GoTo Resolve",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 14073140,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Precisa de ajuda?",
+                  "title": "ajuda"
+                },
+                {
+                  "description": "Efetue login no GoTo Resolve",
+                  "title": "efetuar login"
+                },
+                {
+                  "description": "Saia do GoTo Resolve",
+                  "title": "sair"
+                },
+                {
+                  "description": "Criar ticket",
+                  "title": "criar ticket"
+                },
+                {
+                  "description": "Veja como seus canais são mapeados com equipes de triagem e serviços de helpdesk.",
+                  "title": "ver links de serviço"
+                },
+                {
+                  "description": "Desvincule a conta GoTo Resolve atual desta conta Teams.",
+                  "title": "desvincular conta"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Precisa de ajuda?",
+                  "title": "ajuda"
+                },
+                {
+                  "description": "Efetue login no GoTo Resolve",
+                  "title": "efetuar login"
+                },
+                {
+                  "description": "Saia do GoTo Resolve",
+                  "title": "sair"
+                },
+                {
+                  "description": "Criar ticket",
+                  "title": "criar ticket"
+                }
+              ],
+              "scopes": [
+                "groupChat"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Precisa de ajuda?",
+                  "title": "ajuda"
+                },
+                {
+                  "description": "Associe este canal a uma categoria de serviço configurada no GoTo Resolve HelpDesk.",
+                  "title": "vincular canal"
+                },
+                {
+                  "description": "Remova a associação da categoria de serviço com este canal.",
+                  "title": "desvincular canal"
+                },
+                {
+                  "description": "Veja como seus canais são mapeados com equipes de triagem e serviços de helpdesk.",
+                  "title": "ver links de serviço"
+                },
+                {
+                  "description": "Desvincule a conta GoTo Resolve atual desta conta Teams.",
+                  "title": "desvincular conta"
+                },
+                {
+                  "description": "Criar ticket",
+                  "title": "criar ticket"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "GoTo Inc",
+      "developerUrl": "https://www.goto.com/",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "c37b11ed-9ee6-42ed-80bd-789d7569cbd1",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Criar ticket",
+              "fetchTask": true,
+              "id": "createticket",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Criar ticket",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "Criar ticket"
+                }
+              ],
+              "taskInfo": {
+                "height": "480",
+                "title": "Criar ticket",
+                "url": "https://cloverleaf.console.gotoresolve.com/views/ticket/v1/msteams/CreateTicketView",
+                "width": "500"
+              },
+              "title": "Criar ticket",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "GoToResolve",
+        "LogMeIn",
+        "GoTo"
+      ],
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_largeimage.png",
+      "lastUpdatedAt": "2023-05-22T10:18:06.2306308+00:00",
+      "longDescription": "O GoTo Resolve é uma suíte multifuncional de gerenciamento de TI criada especificamente para lidar com os desafios atuais do suporte de TI. Ela combina acesso remoto de primeira classe e suporte com tickets conversacionais para ajudar você a receber solicitações, fazer a triagem de problemas e solucioná-los com mais agilidade.\n\nCada equipe de TI, agente de suporte e solicitação de suporte é diferente, por isso o GoTo Resolve foi desenvolvido para atender às necessidades de cada organização e problema, com suporte para todos os sistemas.\n\n**Aplicativo GoTo Resolve para Microsoft Teams**\n\nOs funcionários podem enviar, consultar e acompanhar o andamento dos tickets com facilidade, e os agentes podem receber, gerenciar e deixar comentários nos tickets usando o Microsoft Teams. Eles podem passar da solicitação para a solução com a possibilidade de iniciar uma sessão de suporte remoto no próprio Microsoft Teams, eliminando complicações e atrasos na resolução de problemas.\n\nVocê ou o administrador da sua conta precisam de uma licença GoTo Resolve ativa para usar este aplicativo. Ainda não tem uma licença? [Clique aqui e garanta a sua.](https://www.goto.com/it-management/resolve/try)",
+      "officeAssetId": "WA200003473",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.goto.com/company/legal/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Otimize as solicitações dos funcionários e a resolução de problemas com GTRe.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e9fa584e-b65b-4569-8de3-3feeb534d78c/2025071115391493/e9fa584e-b65b-4569-8de3-3feeb534d78c_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}",
+          "entityId": "mytickets",
+          "name": "Meus tickets",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://cdn.console.gotoresolve.com/teams-ui/MyTickets.html?version=1.0&tenant={tid}&theme={theme}&userObjectId={userObjectId}&locale={locale}&userPrincipalName={userPrincipalName}&loginHint={loginHint}"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115391493",
+      "termsOfUseUrl": "https://www.goto.com/company/legal/terms-and-conditions",
+      "validDomains": [
+        "cdn.console.gotoresolve.com",
+        "cloverleaf.console.gotoresolve.com",
+        "cloverleaf-afr.console.gotoresolve.com",
+        "authentication.logmeininc.com"
+      ]
+    }
+  ]
+}
