@@ -1,0 +1,2753 @@
+{
+  "manifestVersion": "1.17",
+  "id": "a79e783f-bd43-506c-ac03-563d8719bcf7",
+  "version": "1.0.34",
+  "name": "TeamViewer",
+  "accentColor": "#F9F9FA",
+  "amsSellerAccountId": 71562510,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+      "isNotificationOnly": true,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "ITAdmin",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "TeamViewer",
+  "developerUrl": "https://www.teamviewer.com",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://msteams-integration.teamviewer.com/tabs/config?locale={locale}&theme={theme}&entityId={entityId}&tid={tid}",
+      "context": [
+        "channelTab",
+        "meetingSidePanel",
+        "meetingDetailsTab",
+        "meetingChatTab"
+      ],
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "HealthCareAndLifeSciences",
+    "Manufacturing"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Remote Control or Augmented Reality connection",
+          "fetchTask": true,
+          "id": "Connect",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "taskInfo": {
+            "height": "medium",
+            "title": "Remote control",
+            "url": "https://msteams-integration.teamviewer.com/connect",
+            "width": "medium"
+          },
+          "title": "Connect",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Search for TeamViewer devices",
+          "fetchTask": false,
+          "id": "searchDevices",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Name of the device to find TeamViewer devices",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "nameOfDevice",
+              "semanticDescription": "Full name or partial name of the devices, computers or servers to search for.",
+              "title": "Name of device"
+            },
+            {
+              "description": "Status of the device.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "deviceStatus",
+              "semanticDescription": "Status of the device. Acceptable values are: online and offline.",
+              "title": "Device Status"
+            },
+            {
+              "description": "The earliest date to search for devices that are offline.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "offlineStartDate",
+              "semanticDescription": "This parameter specifies the start date from which the filter should begin searching for devices that are offline. It defines the earliest point in time for the search range. It only applies to offline devices.",
+              "title": "Offline since start date"
+            },
+            {
+              "description": "The latest date to search for devices that are offline.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "offlineEndDate",
+              "semanticDescription": "This parameter specifies the end date up to which the filter should search for devices that are offline. It defines the latest point in time for the search range. It only applies to offline devices.",
+              "title": "Offline since end date"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Show TeamViewer managed devices that are online"
+            },
+            {
+              "text": "Show me a list of TeamViewer devices that have been offline for two months"
+            },
+            {
+              "text": "List the TeamViewer IDs of online devices in TeamViewer"
+            }
+          ],
+          "semanticDescription": "This command allows the user to search for TeamViewer devices, computers and servers based on their name. If no name is provided, all devices will be shown.",
+          "title": "Devices",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Search for TeamViewer connections",
+          "fetchTask": false,
+          "id": "searchConnections",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Session code used in the TeamViewer connections",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "sessionCode",
+              "semanticDescription": "Code of the TeamViewer session used in the connection.",
+              "title": "Session Code"
+            },
+            {
+              "description": "Enter a start date to find TeamViewer connections",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "startDateOfConnection",
+              "semanticDescription": "Start date of the connection.",
+              "title": "Start date"
+            },
+            {
+              "description": "Name of the expert in the session.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "sessionExpertName",
+              "semanticDescription": "Name of the expert in the session, it can be empty, a partial name or full name.",
+              "title": "Expert Name"
+            },
+            {
+              "description": "Type of the session used in the connection.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "sessionConnectionType",
+              "semanticDescription": "Type of the session used in the connection. Acceptable values are: Remote Control and Assist AR",
+              "title": "Session Type"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Show me all TeamViewer connections made in the last week"
+            },
+            {
+              "text": "Show me the TeamViewer connections from the past month with the longest duration"
+            },
+            {
+              "text": "Show me the TeamViewer connections with the session type Remote Control"
+            }
+          ],
+          "semanticDescription": "This command enables the user to search for TeamViewer connections based on the session code used in the connections or the start date of the connections.",
+          "title": "Connections",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Remote Support",
+    "Augmented Reality",
+    "Front Line Workers"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_largeimage.png",
+  "lastUpdatedAt": "2024-08-30T11:46:23.4504472+00:00",
+  "longDescription": "Efficient collaboration between team members whether it is in the context of developing a new product, supporting customers or operational on-site teams, is key for enabling them to be successful. This can be a great challenge when we consider that people want to use different communication tools, share information in different ways and formats and need a solution that is available anywhere they are on whatever device. The Microsoft Teams platform offers a plethora of different communication capabilities and serves as a hub that contains all the artefacts that teams need to perform their tasks.\n\nThe TeamViewer integration to Microsoft Teams further extends the capabilities of the platform by enabling colleagues to connect with each other with remote device access and through AR connections beyond traditional chat, VoIP and video calls. This offers a powerful advantage when you “just need to see” what the problem is and trying to verbalize the issue is inefficient. AR connections especially are a must-have in cases where physical tasks are needed and you can ‘virtually’ point and draw in the user’s field of view to demonstrate in detail what to do.\n\nMoreover, the TeamViewer integration allows team members to bring all the artefacts they need to the Microsoft Teams hub including access to devices and environments needed to develop, test or demo different products. With the ability to create channel tabs and easily share devices with the rest of the members, teams can bring all the required tools within the Microsoft Teams channel and increase their productivity significantly. \n\nThe TeamViewer Dashboard, that is available as a personal tab, provides a view of all active sessions, connection history and helpful user guide. Here users can get a quick overview of all open invitations and make sure they don't miss a thing! \n\n With the app’s latest version it is now possible to feed TeamViewer connection data to Copilot for Microsoft 365 and get AI enhanced output joined with other data. For example by querying Copilot for Microsoft 365 with the following prompt: Show me the TeamViewer connections I made in the last month.\n\n Please note that in order to use this application an eligible TeamViewer subscription is required. For more information please contact us via [our website](https://www.teamviewer.com/en/customer-support/)",
+  "mpnId": "5123792",
+  "officeAssetId": "WA200002046",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.teamviewer.com/en/privacy-policy/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Initiate Remote Control or Assist AR connections and manage device access.",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://msteams-integration.teamviewer.com/tabs/help?locale={locale}&theme={theme}",
+      "entityId": "Help",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://msteams-integration.teamviewer.com/tabs/settings?locale={locale}&theme={theme}&tid={tid}",
+      "entityId": "Settings",
+      "name": "Settings",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://msteams-integration.teamviewer.com/tabs/active-sessions?locale={locale}&theme={theme}&tid={tid}",
+      "entityId": "ActiveSessions",
+      "name": "Active Sessions",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://msteams-integration.teamviewer.com/tabs/connections?locale={locale}&theme={theme}&tid={tid}",
+      "entityId": "Connections",
+      "name": "Connection History",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://msteams-integration.teamviewer.com/tabs/web-session?locale={locale}&theme={theme}&tid={tid}",
+      "entityId": "WebSession",
+      "name": "Web Session",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115332255",
+  "termsOfUseUrl": "https://www.teamviewer.com/en/eula/",
+  "validDomains": [
+    "msteams-integration.teamviewer.com",
+    "*.teamviewer.com"
+  ],
+  "videoUrl": "https://youtu.be/2HwXfcErs5Q",
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.17",
+      "id": "a79e783f-bd43-506c-ac03-563d8719bcf7",
+      "version": "1.0.34",
+      "name": "TeamViewer",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 71562510,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "TeamViewer",
+      "developerUrl": "https://www.teamviewer.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams-integration.teamviewer.com/tabs/config?locale={locale}&theme={theme}&entityId={entityId}&tid={tid}",
+          "context": [
+            "channelTab",
+            "meetingSidePanel",
+            "meetingDetailsTab",
+            "meetingChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "HealthCareAndLifeSciences",
+        "Manufacturing"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Remote-Control- oder Augmented-Reality-Verbindung",
+              "fetchTask": true,
+              "id": "Connect",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "taskInfo": {
+                "height": "medium",
+                "title": "Remote control",
+                "url": "https://msteams-integration.teamviewer.com/connect",
+                "width": "medium"
+              },
+              "title": "Verbinden",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Suchen Sie nach TeamViewer-Geräten",
+              "fetchTask": false,
+              "id": "searchDevices",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Name des Geräts, das in den TeamViewer-Geräten gesucht werden soll",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "nameOfDevice",
+                  "semanticDescription": "Full name or partial name of the devices, computers or servers to search for.",
+                  "title": "Gerätename"
+                },
+                {
+                  "description": "Status des Geräts.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "deviceStatus",
+                  "semanticDescription": "Status of the device. Acceptable values are: online and offline.",
+                  "title": "Gerätestatus"
+                },
+                {
+                  "description": "Das letzte Datum, an dem das Gerät online gesehen wurde.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "offlineStartDate",
+                  "semanticDescription": "This parameter specifies the start date from which the filter should begin searching for devices that are offline. It defines the earliest point in time for the search range. It only applies to offline devices.",
+                  "title": "Zuletzt online gesehen"
+                },
+                {
+                  "description": "The latest date to search for devices that are offline.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "offlineEndDate",
+                  "semanticDescription": "This parameter specifies the end date up to which the filter should search for devices that are offline. It defines the latest point in time for the search range. It only applies to offline devices.",
+                  "title": "Offline since end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show TeamViewer managed devices that are online"
+                },
+                {
+                  "text": "Show me a list of TeamViewer devices that have been offline for two months"
+                },
+                {
+                  "text": "List the TeamViewer IDs of online devices in TeamViewer"
+                }
+              ],
+              "semanticDescription": "This command allows the user to search for TeamViewer devices, computers and servers based on their name. If no name is provided, all devices will be shown.",
+              "title": "Geräte",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Suchen Sie nach TeamViewer-Verbindungen",
+              "fetchTask": false,
+              "id": "searchConnections",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Geben Sie den Sitzungscode ein, um eine TeamViewer-Verbindung zu finden",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionCode",
+                  "semanticDescription": "Code of the TeamViewer session used in the connection.",
+                  "title": "Sitzungscode"
+                },
+                {
+                  "description": "Geben Sie das Startdatum ein, um eine TeamViewer-Verbindung zu finden",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "startDateOfConnection",
+                  "semanticDescription": "Start date of the connection.",
+                  "title": "Startdatum"
+                },
+                {
+                  "description": "Name des Experten in der Sitzung.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionExpertName",
+                  "semanticDescription": "Name of the expert in the session, it can be empty, a partial name or full name.",
+                  "title": "Expertenname"
+                },
+                {
+                  "description": "Art der Sitzung, die für die Verbindung verwendet wird.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionConnectionType",
+                  "semanticDescription": "Type of the session used in the connection. Acceptable values are: Remote Control and Assist AR",
+                  "title": "Sitzungstyp"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me all TeamViewer connections made in the last week"
+                },
+                {
+                  "text": "Show me the TeamViewer connections from the past month with the longest duration"
+                },
+                {
+                  "text": "Show me the TeamViewer connections with the session type Remote Control"
+                }
+              ],
+              "semanticDescription": "This command enables the user to search for TeamViewer connections based on the session code used in the connections or the start date of the connections.",
+              "title": "Verbindungen",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Remote Support",
+        "Augmented Reality",
+        "Front Line Workers"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_largeimage.png",
+      "lastUpdatedAt": "2024-08-30T11:46:23.4504472+00:00",
+      "longDescription": "Eine effiziente Zusammenarbeit zwischen Teammitgliedern ist der Schlüssel zum Erfolg, egal ob bei der Entwicklung eines neuen Produkts oder für den Support von Kunden oder operativen Teams vor Ort. Dies kann eine große Herausforderung darstellen, wenn man bedenkt, dass unterschiedliche Kommunikationstools zum Einsatz kommen, Informationen auf unterschiedliche Weise und in unterschiedlichen Formaten ausgetauscht werden und eine Lösung benötigt wird, die überall auf jedem Gerät verfügbar ist. Die Microsoft Teams-Plattform bietet eine Vielzahl unverzichtbarer Kommunikationsfunktionen und dient als Hub für alle Artefakte, die Teams zur Ausführung ihrer Aufgaben benötigen.\n\nMit der TeamViewer Integration wird der Funktionsumfang von Microsoft Teams noch erweitert. Sie ermöglicht über herkömmliche Chat-, VoIP- und Videoanrufe hinaus die Verbindung im Team auch über Remote-Gerätezugriff und AR-Verbindungen. Dies bietet einen starken Vorteil, wenn man „nur nachsehen muss“, wo das Problem liegt, anstatt ineffizient mit Worten zu versuchen, die Problematik zu beschreiben. AR-Verbindungen sind insbesondere dann ein Muss, wenn physische Aktionen erforderlich sind. Denn mit dieser Technologie kann dem Benutzer durch „virtuelles“ Zeigen und Zeichnen innerhalb seines Sichtfelds detailliert demonstriert werden, was zu tun ist.\n\nDarüber hinaus ermöglicht die TeamViewer Integration den Teammitgliedern die Integration aller für sie relevanten Artefakte in den Microsoft Teams-Hub – auch den Zugriff auf Geräte und Umgebungen zum Entwickeln, Testen oder Präsentieren einzelner Produkte. Durch selbst festgelegte Kanal-Tabs und die einfache Freigabe von Geräten für andere Mitglieder können Teams alle erforderlichen Tools in den Kanal von Microsoft Teams integrieren. Die Produktivität steigert sich dadurch erheblich. \n\nDas als persönlicher Tab verfügbare TeamViewer Dashboard eine Ansicht aller aktiven Sitzungen, einen Verbindungsverlauf sowie eine hilfreiche Bedienungsanleitung. Hier erhalten Benutzer einen schnellen Überblick über alle offenen Einladungen und verpassen garantiert nichts mehr! \n\n Mit der neuesten Version der App ist es nun möglich, TeamViewer Verbindungsdaten an Copilot für Microsoft 365 zu übermitteln und so eine verbesserte KI-Ausgabe zusammen mit anderen Daten zu erhalten. Zum Beispiel durch Abfrage von Copilot für Microsoft 365 mit der folgenden Prompts: Zeige mir die TeamViewer Verbindungen, die ich im letzten Monat hergestellt habe.\n\n Bitte beachten Sie, dass für die Nutzung dieser Anwendung ein entsprechendes TeamViewer Abonnement erforderlich ist. Weitere Informationen erhalten Sie über [our website](https://www.teamviewer.com/en/customer-support/)",
+      "mpnId": "5123792",
+      "officeAssetId": "WA200002046",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teamviewer.com/en/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Initiieren Sie Remote-Control und Assist AR oder teilen Sie...",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/help?locale={locale}&theme={theme}",
+          "entityId": "Help",
+          "name": "Hilfe",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/settings?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "Settings",
+          "name": "Einstellungen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/active-sessions?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "ActiveSessions",
+          "name": "Aktive Sitzungen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/connections?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "Connections",
+          "name": "Verbindungsverlauf",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/web-session?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "WebSession",
+          "name": "Web Session",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115332255",
+      "termsOfUseUrl": "https://www.teamviewer.com/en/eula/",
+      "validDomains": [
+        "msteams-integration.teamviewer.com",
+        "*.teamviewer.com"
+      ],
+      "videoUrl": "https://youtu.be/2HwXfcErs5Q"
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "a79e783f-bd43-506c-ac03-563d8719bcf7",
+      "version": "1.0.34",
+      "name": "TeamViewer",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 71562510,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "TeamViewer",
+      "developerUrl": "https://www.teamviewer.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams-integration.teamviewer.com/tabs/config?locale={locale}&theme={theme}&entityId={entityId}&tid={tid}",
+          "context": [
+            "channelTab",
+            "meetingSidePanel",
+            "meetingDetailsTab",
+            "meetingChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "HealthCareAndLifeSciences",
+        "Manufacturing"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Remote Control o Augmented Reality",
+              "fetchTask": true,
+              "id": "Connect",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "taskInfo": {
+                "height": "medium",
+                "title": "Remote control",
+                "url": "https://msteams-integration.teamviewer.com/connect",
+                "width": "medium"
+              },
+              "title": "Conectar",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Buscar dispositivos TeamViewer",
+              "fetchTask": false,
+              "id": "searchDevices",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Nombre del dispositivo que se está buscando",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "nameOfDevice",
+                  "semanticDescription": "Full name or partial name of the devices, computers or servers to search for.",
+                  "title": "Nombre del dispositivo"
+                },
+                {
+                  "description": "Estado del dispositivo.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "deviceStatus",
+                  "semanticDescription": "Status of the device. Acceptable values are: online and offline.",
+                  "title": "Estado del dispositivo"
+                },
+                {
+                  "description": "La última fecha en que el dispositivo estuvo en línea.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "offlineStartDate",
+                  "semanticDescription": "This parameter specifies the start date from which the filter should begin searching for devices that are offline. It defines the earliest point in time for the search range. It only applies to offline devices.",
+                  "title": "Última vez en línea"
+                },
+                {
+                  "description": "The latest date to search for devices that are offline.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "offlineEndDate",
+                  "semanticDescription": "This parameter specifies the end date up to which the filter should search for devices that are offline. It defines the latest point in time for the search range. It only applies to offline devices.",
+                  "title": "Offline since end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show TeamViewer managed devices that are online"
+                },
+                {
+                  "text": "Show me a list of TeamViewer devices that have been offline for two months"
+                },
+                {
+                  "text": "List the TeamViewer IDs of online devices in TeamViewer"
+                }
+              ],
+              "semanticDescription": "This command allows the user to search for TeamViewer devices, computers and servers based on their name. If no name is provided, all devices will be shown.",
+              "title": "Dispositivos",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Buscar conexiones TeamViewer",
+              "fetchTask": false,
+              "id": "searchConnections",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Introduce el código de sesión para encontrar conexiones TeamViewer",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionCode",
+                  "semanticDescription": "Code of the TeamViewer session used in the connection.",
+                  "title": "Código de sesión"
+                },
+                {
+                  "description": "Introduce la fecha de inicio para encontrar conexiones TeamViewer",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "startDateOfConnection",
+                  "semanticDescription": "Start date of the connection.",
+                  "title": "Fecha de inicio"
+                },
+                {
+                  "description": "Nombre del experto en la sesión.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionExpertName",
+                  "semanticDescription": "Name of the expert in the session, it can be empty, a partial name or full name.",
+                  "title": "Nombre del experto"
+                },
+                {
+                  "description": "Tipo de sesión utilizada en la conexión.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionConnectionType",
+                  "semanticDescription": "Type of the session used in the connection. Acceptable values are: Remote Control and Assist AR",
+                  "title": "Tipo de sesión"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me all TeamViewer connections made in the last week"
+                },
+                {
+                  "text": "Show me the TeamViewer connections from the past month with the longest duration"
+                },
+                {
+                  "text": "Show me the TeamViewer connections with the session type Remote Control"
+                }
+              ],
+              "semanticDescription": "This command enables the user to search for TeamViewer connections based on the session code used in the connections or the start date of the connections.",
+              "title": "Conexiones",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Remote Support",
+        "Augmented Reality",
+        "Front Line Workers"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_largeimage.png",
+      "lastUpdatedAt": "2024-08-30T11:46:23.4504472+00:00",
+      "longDescription": "La colaboración eficiente entre los miembros del equipo, ya sea en el contexto de desarrollar un producto nuevo o de dar soporte a los clientes o a equipos operativos in situ, es clave para permitirles triunfar. Esto puede ser un gran desafío si tenemos en cuenta que la gente quiere utilizar herramientas de comunicación diferentes, compartir información de distintas formas y en diferentes formatos, y que necesitan una solución que esté disponible en cualquier sitio en el que se hallen y en cualquier dispositivo. La plataforma de Microsoft Teams ofrece una plétora de diversas capacidades de comunicación y sirve como un centro que recoge todos los artefactos que los equipos necesitan para llevar a cabo sus tareas.\n\nLa integración de TeamViewer en Microsoft Teams amplía mucho más las capacidades de la plataforma permitiendo que los compañeros se conecten entre ellos con el acceso remoto a dispositivos y a través de las conexiones de RA que van más allá de un chat tradicional, VoIP y videollamadas. Esto ofrece una ventaja muy potente cuando «solo necesitas ver» cuál es el problema e intentar verbalizarlo no resulta muy eficaz. Las conexiones de RA son imprescindibles sobre todo en casos en los que se necesitan tareas físicas y puedes señalar y dibujar «virtualmente» en el campo de visualización del usuario para mostrarle en detalle lo que hacer.\n\nAdemás, la integración de TeamViewer permite que los miembros del equipo tengan todos los artefactos que necesiten en el centro de Microsoft Teams, incluyendo acceso a los dispositivos y entornos que necesiten para desarrollar, probar o crear demostraciones de distintos productos. Con la posibilidad de crear pestañas de canales y compartir dispositivos de manera sencilla con el resto de los miembros, los equipos pueden tener todas las herramientas necesarias en el canal de Microsoft Teams y aumentar su productividad de manera significativa. \n\nEl panel de control de TeamViewer, que está disponible como una pestaña personal, proporciona una visión de todas las sesiones activas, historial de conexiones y una guía de usuario muy útil. Aquí, los usuarios pueden tener una visión rápida de todas las invitaciones abiertas y asegurarse de que no se pierden nada. \n\n La última versión de la app permite enviar datos de conexión de TeamViewer a Copilot para Microsoft 365 y obtener resultados mejorados con IA unidos a otros datos. Por ejemplo, introduciendo el siguiente prompt en Copilot para Microsoft 365: «Enséñame las conexiones TeamViewer que he tenido en el último mes».\n\n Ten en cuenta que para poder usar esta aplicación, es necesario contar con una suscripción a TeamViewer. Para más información, contáctanos a través de [our website](https://www.teamviewer.com/en/customer-support/)",
+      "mpnId": "5123792",
+      "officeAssetId": "WA200002046",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teamviewer.com/en/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Inicia Remote Control y conexiones a Pilot o comparte el acceso a dispositivos.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/help?locale={locale}&theme={theme}",
+          "entityId": "Help",
+          "name": "Ayuda",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/settings?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "Settings",
+          "name": "Configuración",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/active-sessions?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "ActiveSessions",
+          "name": "Sesiones activas",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/connections?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "Connections",
+          "name": "Historial de conexiones",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/web-session?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "WebSession",
+          "name": "Web Session",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115332255",
+      "termsOfUseUrl": "https://www.teamviewer.com/en/eula/",
+      "validDomains": [
+        "msteams-integration.teamviewer.com",
+        "*.teamviewer.com"
+      ],
+      "videoUrl": "https://youtu.be/2HwXfcErs5Q"
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "a79e783f-bd43-506c-ac03-563d8719bcf7",
+      "version": "1.0.34",
+      "name": "TeamViewer",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 71562510,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "TeamViewer",
+      "developerUrl": "https://www.teamviewer.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams-integration.teamviewer.com/tabs/config?locale={locale}&theme={theme}&entityId={entityId}&tid={tid}",
+          "context": [
+            "channelTab",
+            "meetingSidePanel",
+            "meetingDetailsTab",
+            "meetingChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "HealthCareAndLifeSciences",
+        "Manufacturing"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Connexion Remote Control ou Assist AR",
+              "fetchTask": true,
+              "id": "Connect",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "taskInfo": {
+                "height": "medium",
+                "title": "Remote control",
+                "url": "https://msteams-integration.teamviewer.com/connect",
+                "width": "medium"
+              },
+              "title": "Connexion",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Rechercher des appareils TeamViewer",
+              "fetchTask": false,
+              "id": "searchDevices",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Entrez le nom de l'appareil pour rechercher des appareils TeamViewer",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "nameOfDevice",
+                  "semanticDescription": "Full name or partial name of the devices, computers or servers to search for.",
+                  "title": "Nom de l'appareil recherché"
+                },
+                {
+                  "description": "État de l'appareil.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "deviceStatus",
+                  "semanticDescription": "Status of the device. Acceptable values are: online and offline.",
+                  "title": "État de l'appareil"
+                },
+                {
+                  "description": "La dernière date à laquelle l'appareil a été vu en ligne.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "offlineStartDate",
+                  "semanticDescription": "This parameter specifies the start date from which the filter should begin searching for devices that are offline. It defines the earliest point in time for the search range. It only applies to offline devices.",
+                  "title": "Dernière connexion en ligne"
+                },
+                {
+                  "description": "The latest date to search for devices that are offline.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "offlineEndDate",
+                  "semanticDescription": "This parameter specifies the end date up to which the filter should search for devices that are offline. It defines the latest point in time for the search range. It only applies to offline devices.",
+                  "title": "Offline since end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show TeamViewer managed devices that are online"
+                },
+                {
+                  "text": "Show me a list of TeamViewer devices that have been offline for two months"
+                },
+                {
+                  "text": "List the TeamViewer IDs of online devices in TeamViewer"
+                }
+              ],
+              "semanticDescription": "This command allows the user to search for TeamViewer devices, computers and servers based on their name. If no name is provided, all devices will be shown.",
+              "title": "Appareils",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Rechercher des connexions TeamViewer",
+              "fetchTask": false,
+              "id": "searchConnections",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Entrez le code de session pour rechercher des connexions TeamViewer",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionCode",
+                  "semanticDescription": "Code of the TeamViewer session used in the connection.",
+                  "title": "Code de session"
+                },
+                {
+                  "description": "Entrez la date de début pour rechercher des connexions TeamViewer",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "startDateOfConnection",
+                  "semanticDescription": "Start date of the connection.",
+                  "title": "Date de début"
+                },
+                {
+                  "description": "Nom de l'expert dans la session.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionExpertName",
+                  "semanticDescription": "Name of the expert in the session, it can be empty, a partial name or full name.",
+                  "title": "Nom de l'expert"
+                },
+                {
+                  "description": "Type de session utilisé dans la connexion.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionConnectionType",
+                  "semanticDescription": "Type of the session used in the connection. Acceptable values are: Remote Control and Assist AR",
+                  "title": "Type de session"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me all TeamViewer connections made in the last week"
+                },
+                {
+                  "text": "Show me the TeamViewer connections from the past month with the longest duration"
+                },
+                {
+                  "text": "Show me the TeamViewer connections with the session type Remote Control"
+                }
+              ],
+              "semanticDescription": "This command enables the user to search for TeamViewer connections based on the session code used in the connections or the start date of the connections.",
+              "title": "Connexions",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Remote Support",
+        "Augmented Reality",
+        "Front Line Workers"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_largeimage.png",
+      "lastUpdatedAt": "2024-08-30T11:46:23.4504472+00:00",
+      "longDescription": "Qu’il s’agisse de développer un nouveau produit, d’assister des clients ou des équipes opérationnelles sur site, une collaboration efficace au sein de l’équipe est la clé du succès. Elle peut se révéler un véritable défi, tant les outils de communication utilisés sont multiples : chacun partage les informations sous les formes les plus diverses et a besoin d’une solution disponible où qu’il soit et quel que soit l’appareil qu’il utilise. La plateforme Microsoft Teams offre une myriade de modes de communications et fait office de plaque tournante qui contient tous les outils nécessaires aux équipes pour réaliser leurs tâches.\n\nL’intégration de TeamViewer à Microsoft Teams élargit encore les capacités de la plateforme en permettant l’interconnexion entre collègues grâce à un accès à distance aux appareils. Les connexions en réalité augmentée vont au-delà des moyens traditionnels de communication comme le chat, le VoIP et les appels vidéo. Un avantage de taille lorsque vous souhaitez simplement « jeter un œil » au problème et qu’une explication orale ne suffit pas. La réalité augmentée est incontournable là où des tâches physiques sont requises : vous pouvez « virtuellement » montrer des objets ou esquisser des schémas dans le champ de vision de l’utilisateur pour lui montrer en détail ce qu’il doit faire.\n\nEn outre, l’intégration de TeamViewer permet aux membres de l’équipe d’intégrer à la plateforme Microsoft Teams toutes les fonctions nécessaires, notamment l’accès aux appareils et aux environnements requis pour développer, tester ou faire la démonstration de différents produits. Avec la possibilité de créer des onglets de canaux et de partager en toute simplicité des appareils avec les autres membres, les équipes peuvent intégrer tous les outils nécessaires au canal Microsoft Teams et augmenter significativement leur productivité. \n\nDisponible en tant qu’onglet personnel, le tableau de bord TeamViewer fournit une vue d’ensemble des sessions actives, de l’historique de connexion et un guide utilisateur utile. Les utilisateurs bénéficient d’un aperçu rapide de toutes les invitations en attente, pour ne rien rater ! \n\n Grâce à la version la plus récente de l’application, il est désormais possible d’alimenter Copilot pour Microsoft 365 avec des données de connexion TeamViewer et d’obtenir des résultats améliorés par l’IA, combinés par d’autres données. Par exemple, en interrogeant Copilot pour Microsoft 365 avec l’invite suivante : Montre-moi les connexions TeamViewer que j’ai effectuées le mois dernier.\n\n Veuillez noter que l’utilisation de cette application requiert un abonnement TeamViewer éligible. Pour de plus amples informations, veuillez nous contacter via [our website](https://www.teamviewer.com/en/customer-support/)",
+      "mpnId": "5123792",
+      "officeAssetId": "WA200002046",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teamviewer.com/en/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Lancez des connexions Remote Control ou Assist AR, gérez l’accès aux appareils.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/help?locale={locale}&theme={theme}",
+          "entityId": "Help",
+          "name": "Aide",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/settings?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "Settings",
+          "name": "Paramètres",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/active-sessions?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "ActiveSessions",
+          "name": "Sessions actives",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/connections?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "Connections",
+          "name": "Historique de connexion",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/web-session?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "WebSession",
+          "name": "Web Session",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115332255",
+      "termsOfUseUrl": "https://www.teamviewer.com/en/eula/",
+      "validDomains": [
+        "msteams-integration.teamviewer.com",
+        "*.teamviewer.com"
+      ],
+      "videoUrl": "https://youtu.be/2HwXfcErs5Q"
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "a79e783f-bd43-506c-ac03-563d8719bcf7",
+      "version": "1.0.34",
+      "name": "TeamViewer",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 71562510,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "TeamViewer",
+      "developerUrl": "https://www.teamviewer.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams-integration.teamviewer.com/tabs/config?locale={locale}&theme={theme}&entityId={entityId}&tid={tid}",
+          "context": [
+            "channelTab",
+            "meetingSidePanel",
+            "meetingDetailsTab",
+            "meetingChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "HealthCareAndLifeSciences",
+        "Manufacturing"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Controllo remoto o connessione tramite realtà aumentata",
+              "fetchTask": true,
+              "id": "Connect",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "taskInfo": {
+                "height": "medium",
+                "title": "Remote control",
+                "url": "https://msteams-integration.teamviewer.com/connect",
+                "width": "medium"
+              },
+              "title": "Connetti",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Cerca i dispositivi TeamViewer",
+              "fetchTask": false,
+              "id": "searchDevices",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Nome del dispositivo TeamViewer",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "nameOfDevice",
+                  "semanticDescription": "Full name or partial name of the devices, computers or servers to search for.",
+                  "title": "Nome dispositivo"
+                },
+                {
+                  "description": "Stato del dispositivo.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "deviceStatus",
+                  "semanticDescription": "Status of the device. Acceptable values are: online and offline.",
+                  "title": "Stato dispositivo"
+                },
+                {
+                  "description": "L'ultima data in cui il dispositivo è stato visto online.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "offlineStartDate",
+                  "semanticDescription": "This parameter specifies the start date from which the filter should begin searching for devices that are offline. It defines the earliest point in time for the search range. It only applies to offline devices.",
+                  "title": "Ultima visualizzazione online"
+                },
+                {
+                  "description": "The latest date to search for devices that are offline.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "offlineEndDate",
+                  "semanticDescription": "This parameter specifies the end date up to which the filter should search for devices that are offline. It defines the latest point in time for the search range. It only applies to offline devices.",
+                  "title": "Offline since end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show TeamViewer managed devices that are online"
+                },
+                {
+                  "text": "Show me a list of TeamViewer devices that have been offline for two months"
+                },
+                {
+                  "text": "List the TeamViewer IDs of online devices in TeamViewer"
+                }
+              ],
+              "semanticDescription": "This command allows the user to search for TeamViewer devices, computers and servers based on their name. If no name is provided, all devices will be shown.",
+              "title": "Dispositivi",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Cerca le connessioni TeamViewer",
+              "fetchTask": false,
+              "id": "searchConnections",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Codice della sessione TeamViewer",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionCode",
+                  "semanticDescription": "Code of the TeamViewer session used in the connection.",
+                  "title": "Codice sessione"
+                },
+                {
+                  "description": "Data di inizio della sessione",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "startDateOfConnection",
+                  "semanticDescription": "Start date of the connection.",
+                  "title": "Data inizio"
+                },
+                {
+                  "description": "Nome dell'esperto nella sessione.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionExpertName",
+                  "semanticDescription": "Name of the expert in the session, it can be empty, a partial name or full name.",
+                  "title": "Nome esperto"
+                },
+                {
+                  "description": "Tipo di sessione utilizzata nella connessione.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionConnectionType",
+                  "semanticDescription": "Type of the session used in the connection. Acceptable values are: Remote Control and Assist AR",
+                  "title": "Tipo di sessione"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me all TeamViewer connections made in the last week"
+                },
+                {
+                  "text": "Show me the TeamViewer connections from the past month with the longest duration"
+                },
+                {
+                  "text": "Show me the TeamViewer connections with the session type Remote Control"
+                }
+              ],
+              "semanticDescription": "This command enables the user to search for TeamViewer connections based on the session code used in the connections or the start date of the connections.",
+              "title": "Connessioni",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Remote Support",
+        "Augmented Reality",
+        "Front Line Workers"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_largeimage.png",
+      "lastUpdatedAt": "2024-08-30T11:46:23.4504472+00:00",
+      "longDescription": "Una collaborazione efficiente tra i membri dei tuoi team è fondamentale per il successo, che si tratti di sviluppare un nuovo prodotto, supportare i clienti o eseguire attività operative sul campo. Ciò può rappresentare un'importante sfida se consideriamo che ogni individuo utilizza diversi metodi di comunicazione, condivide i dati in modo differente, e necessita di soluzioni sempre disponibili su qualunque dispositivo. Microsoft Teams offre un'ampia gamma di strumenti di comunicazione e rappresenta un hub che unisce dati, team e relative attività.\n\nL'integrazione di TeamViewer con Microsoft Teams estende ulteriormente le funzionalità della piattaforma, consentendo ai lavoratori di connettersi tra loro, accedere ai reciproci dispositivi e risolvere problematiche in realtà aumentata, oltre a classiche chat, chiamate VoIP e videoconferenze. Ciò rappresenta un potente vantaggio, in quanto spesso è semplicemente necessario \"vedere\" il problema, mentre provare a descriverlo verbalmente risulta inefficiente. Le connessioni in AR sono ormai una necessità quando si deve supportare a distanza un'attività fisica, consentendo di fornire chiare indicazioni visive virtuali direttamente nel campo visivo.\n\nInoltre, l'integrazione di TeamViewer consente ai lavoratori di potare in Microsoft Teams tutti gli strumenti di cui hanno bisogno, incluso l'accesso diretto agli ambienti di sviluppo, test o dimostrazione di qualsiasi prodotto. Grazie alla capacità di creare schede e di condividere facilmente i dispositivi con l'intero team, gli utenti avranno tutto a disposizione direttamente nei propri canali Microsoft Teams, con un netto aumento della produttività. \n\nLa dashboard TeamViewer, disponibile come scheda personale, offre una panoramica di tutte le sessioni attive, della cronologia delle connessioni e delle guide utente. Qui i lavoratori avranno un'immediata visibilità sugli inviti aperti e potranno assicurarsi di non perdersi mai nulla. \n\n Con l'ultima versione dell'app, è possibile portare i dati di connessione di TeamViewer in Copilot di Microsoft 365, ottenendo un output migliorato dall'AI ed integrato dei dati esterni necessari. Potrai ad esempio inserire in Copilot di Microsoft 365 il seguente prompt: Mostrami le connessioni TeamViewer effettuate nell'ultimo mese.\n\n Per l'utilizzo dell'applicazione è richiesto un piano TeamViewer supportato. Per maggiori informazioni, contattaci dal [our website](https://www.teamviewer.com/en/customer-support/)",
+      "mpnId": "5123792",
+      "officeAssetId": "WA200002046",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teamviewer.com/en/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Avvia sessioni di controllo remoto e Assist AR, oppure condividi un dispositivo.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/help?locale={locale}&theme={theme}",
+          "entityId": "Help",
+          "name": "Aiuto",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/settings?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "Settings",
+          "name": "Impostazioni",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/active-sessions?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "ActiveSessions",
+          "name": "Sessioni attive",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/connections?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "Connections",
+          "name": "Cronologia connessioni",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/web-session?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "WebSession",
+          "name": "Web Session",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115332255",
+      "termsOfUseUrl": "https://www.teamviewer.com/en/eula/",
+      "validDomains": [
+        "msteams-integration.teamviewer.com",
+        "*.teamviewer.com"
+      ],
+      "videoUrl": "https://youtu.be/2HwXfcErs5Q"
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "a79e783f-bd43-506c-ac03-563d8719bcf7",
+      "version": "1.0.34",
+      "name": "TeamViewer",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 71562510,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "TeamViewer",
+      "developerUrl": "https://www.teamviewer.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://msteams-integration.teamviewer.com/tabs/config?locale={locale}&theme={theme}&entityId={entityId}&tid={tid}",
+          "context": [
+            "channelTab",
+            "meetingSidePanel",
+            "meetingDetailsTab",
+            "meetingChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "HealthCareAndLifeSciences",
+        "Manufacturing"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "85e7104d-d23c-4079-b6c2-1748bdab368a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "リモートコントロールまたは拡張現実接続",
+              "fetchTask": true,
+              "id": "Connect",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "taskInfo": {
+                "height": "medium",
+                "title": "Remote control",
+                "url": "https://msteams-integration.teamviewer.com/connect",
+                "width": "medium"
+              },
+              "title": "接続",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "TeamViewer デバイスを検索します",
+              "fetchTask": false,
+              "id": "searchDevices",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "TeamViewer デバイスの名前を入力してください",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "nameOfDevice",
+                  "semanticDescription": "Full name or partial name of the devices, computers or servers to search for.",
+                  "title": "デバイス名"
+                },
+                {
+                  "description": "デバイスのステータスです。",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "deviceStatus",
+                  "semanticDescription": "Status of the device. Acceptable values are: online and offline.",
+                  "title": "デバイスのステータス"
+                },
+                {
+                  "description": "デバイスが最後にオンラインで確認された日付です。",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "offlineStartDate",
+                  "semanticDescription": "This parameter specifies the start date from which the filter should begin searching for devices that are offline. It defines the earliest point in time for the search range. It only applies to offline devices.",
+                  "title": "最終オンライン確認日"
+                },
+                {
+                  "description": "The latest date to search for devices that are offline.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "offlineEndDate",
+                  "semanticDescription": "This parameter specifies the end date up to which the filter should search for devices that are offline. It defines the latest point in time for the search range. It only applies to offline devices.",
+                  "title": "Offline since end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show TeamViewer managed devices that are online"
+                },
+                {
+                  "text": "Show me a list of TeamViewer devices that have been offline for two months"
+                },
+                {
+                  "text": "List the TeamViewer IDs of online devices in TeamViewer"
+                }
+              ],
+              "semanticDescription": "This command allows the user to search for TeamViewer devices, computers and servers based on their name. If no name is provided, all devices will be shown.",
+              "title": "デバイスの検索",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "TeamViewer 接続を検索します",
+              "fetchTask": false,
+              "id": "searchConnections",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "TeamViewer セッション コードを入力してください",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionCode",
+                  "semanticDescription": "Code of the TeamViewer session used in the connection.",
+                  "title": "セッション コード"
+                },
+                {
+                  "description": "セッションの開始日を入力してください",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "startDateOfConnection",
+                  "semanticDescription": "Start date of the connection.",
+                  "title": "開始日"
+                },
+                {
+                  "description": "セッションのエキスパートの名前です。",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionExpertName",
+                  "semanticDescription": "Name of the expert in the session, it can be empty, a partial name or full name.",
+                  "title": "エキスパート名"
+                },
+                {
+                  "description": "接続に使用されるセッションのタイプです。",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "sessionConnectionType",
+                  "semanticDescription": "Type of the session used in the connection. Acceptable values are: Remote Control and Assist AR",
+                  "title": "セッションタイプ"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me all TeamViewer connections made in the last week"
+                },
+                {
+                  "text": "Show me the TeamViewer connections from the past month with the longest duration"
+                },
+                {
+                  "text": "Show me the TeamViewer connections with the session type Remote Control"
+                }
+              ],
+              "semanticDescription": "This command enables the user to search for TeamViewer connections based on the session code used in the connections or the start date of the connections.",
+              "title": "接続の検索",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Remote Support",
+        "Augmented Reality",
+        "Front Line Workers"
+      ],
+      "languageTag": "ja",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_largeimage.png",
+      "lastUpdatedAt": "2024-08-30T11:46:23.4504472+00:00",
+      "longDescription": "新製品の開発、顧客サポート、現場でのチーム作業など、チームメンバー間の効率的なコラボレーションは、チームを成功に導く鍵となります。ユーザーはさまざまなコミュニケーション ツールを使用し、多様な方法と形式で情報を共有しています。そして、あらゆるデバイスでどこでも利用できるソリューションが求められており、これをいかに提供するかが課題となっています。Microsoft Teams プラットフォームは多彩なコミュニケーション能力を提供し、チームがタスクを遂行するために必要なあらゆるツールを備えたハブとして機能します。\n\nTeamViewer は、スタッフ同士が互いのリモート デバイスに接続することを可能にし、Microsoft Teams プラットフォームの性能をさらに高めます。そのコミュニケーションは、従来のチャットや VoIP、ビデオ通話だけでなく、AR を介した接続によって行うことも可能です。言葉に言い表しづらく、\"実際にそれを見せる必要がある\" とき、AR 接続は大きな効果を発揮します。AR 接続は特に、物理的なタスクが必要な場合に必須であり、ユーザーの視野に 「仮想的に」 指し示して、何をすべきかを詳細に伝えることができます。\n\nさらに、TeamViewer の連携により、チーム メンバーは、さまざまな製品の開発、テスト、デモに必要なデバイスや環境へのアクセスを含め、必要なすべてのものをハブである Microsoft Teams に持ち込むことができますチャネルタブを作成し、他のメンバーとデバイスを簡単に共有できる機能により、チームは必要なすべてのツールを Microsoft Teams チャネルに持ち込むことができ、生産性を大幅に向上させることができます。\n\n個人用のタブとして使用できる TeamViewer ダッシュボードには、すべてのアクティブ セッション、接続履歴、および便利なユーザーガイドが表示されます。ユーザーはここですべての招待の概要を瞬時に見られるため、見逃すことはありません。\n\nアプリの最新版を利用すると、TeamViewer 接続データを Copilot for Microsoft 365 へ読み込ませることが可能になり、AI がその他のデータと組み合わせて拡張した出力を得ることができます。例えば、以下のプロンプトで Copilot for Microsoft 365 に問い合わせることができます。先月私がおこなった TeamViewer 接続を表示して。\n\nこのアプリケーションを使用するには、対応する TeamViewer サブスクリプションが必要です。詳しくは [our website](https://www.teamviewer.com/en/customer-support/)よりお問合せください。",
+      "mpnId": "5123792",
+      "officeAssetId": "WA200002046",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teamviewer.com/en/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "リモートコントロールと Assist AR 接続を初期化、または Teams でデバイスアクセスを共有します。",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a79e783f-bd43-506c-ac03-563d8719bcf7/2025071115332255/a79e783f-bd43-506c-ac03-563d8719bcf7_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/help?locale={locale}&theme={theme}",
+          "entityId": "Help",
+          "name": "ヘルプ",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/settings?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "Settings",
+          "name": "設定",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/active-sessions?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "ActiveSessions",
+          "name": "有効なセッション",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/connections?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "Connections",
+          "name": "接続履歴",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://msteams-integration.teamviewer.com/tabs/web-session?locale={locale}&theme={theme}&tid={tid}",
+          "entityId": "WebSession",
+          "name": "Web Session",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115332255",
+      "termsOfUseUrl": "https://www.teamviewer.com/en/eula/",
+      "validDomains": [
+        "msteams-integration.teamviewer.com",
+        "*.teamviewer.com"
+      ],
+      "videoUrl": "https://youtu.be/2HwXfcErs5Q"
+    }
+  ]
+}

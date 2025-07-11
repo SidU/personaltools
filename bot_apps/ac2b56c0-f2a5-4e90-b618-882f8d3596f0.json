@@ -1,0 +1,1677 @@
+{
+  "manifestVersion": "1.12",
+  "id": "ac2b56c0-f2a5-4e90-b618-882f8d3596f0",
+  "version": "1.6.6",
+  "name": "Ad Assistant by Clever Ads",
+  "accentColor": "#2E7AA2",
+  "amsSellerAccountId": 66763720,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "Owner.Read.Group",
+          "type": "Application"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Access to the menu from where you can receive summaries, metrics, graphs and manage your accounts",
+              "title": "menu"
+            },
+            {
+              "description": "General assistance with the bot, the steps involved, and the commands you can use",
+              "title": "help"
+            },
+            {
+              "description": "Starts the app tutorial",
+              "title": "tutorial"
+            },
+            {
+              "description": "Shows a summary of your selected metrics",
+              "title": "metrics"
+            },
+            {
+              "description": "Ask your bot to compare the most important metrics in numeric form or displayed in a graph for you",
+              "title": "compare"
+            },
+            {
+              "description": "Displays the list of your scheduled reports",
+              "title": "reports"
+            },
+            {
+              "description": "Displays a graph of the evolution of clicks for the past 7 days",
+              "title": "clicks"
+            },
+            {
+              "description": "Displays a graph of the evolution of impressions for the past 7 days",
+              "title": "impressions"
+            },
+            {
+              "description": "Disconnect your Ads account from the app",
+              "title": "logout"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Access to the menu from where you can receive summaries, metrics, graphs and manage your accounts",
+              "title": "menu"
+            },
+            {
+              "description": "General assistance with the bot, the steps involved, and the commands you can use",
+              "title": "help"
+            },
+            {
+              "description": "Starts the app tutorial",
+              "title": "tutorial"
+            },
+            {
+              "description": "Shows a summary of your selected metrics",
+              "title": "metrics"
+            },
+            {
+              "description": "Ask your bot to compare the most important metrics in numeric form or displayed in a graph for you",
+              "title": "compare"
+            },
+            {
+              "description": "Displays the list of your scheduled reports",
+              "title": "reports"
+            },
+            {
+              "description": "Displays a graph of the evolution of clicks for the past 7 days",
+              "title": "clicks"
+            },
+            {
+              "description": "Displays a graph of the evolution of impressions for the past 7 days",
+              "title": "impressions"
+            },
+            {
+              "description": "Disconnect your Ads account from the app",
+              "title": "logout"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Access to the menu from where you can receive summaries, metrics, graphs and manage your accounts",
+              "title": "menu"
+            },
+            {
+              "description": "General assistance with the bot, the steps involved, and the commands you can use",
+              "title": "help"
+            },
+            {
+              "description": "Starts the app tutorial",
+              "title": "tutorial"
+            },
+            {
+              "description": "Shows a summary of your selected metrics",
+              "title": "metrics"
+            },
+            {
+              "description": "Ask your bot to compare the most important metrics in numeric form or displayed in a graph for you",
+              "title": "compare"
+            },
+            {
+              "description": "Displays the list of your scheduled reports",
+              "title": "reports"
+            },
+            {
+              "description": "Displays a graph of the evolution of clicks for the past 7 days",
+              "title": "clicks"
+            },
+            {
+              "description": "Displays a graph of the evolution of impressions for the past 7 days",
+              "title": "impressions"
+            },
+            {
+              "description": "Disconnect your Ads account from the app",
+              "title": "logout"
+            }
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "f8812969-f37f-46ff-8dc7-86c059d1a3de",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "DataVisualizationAndBI",
+    "ProjectManagement",
+    "SalesAndMarketing"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultInstallScope": "personal",
+  "developerName": "Clever Ads",
+  "developerUrl": "https://cleverads.com/",
+  "industries": [
+    "ProfessionalServices",
+    "Retail"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "f8812969-f37f-46ff-8dc7-86c059d1a3de",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "commandBox",
+            "compose",
+            "message"
+          ],
+          "description": "Get metrics in your chat",
+          "fetchTask": true,
+          "id": "metrics_extension",
+          "initialRun": true,
+          "parameters": [
+            {
+              "choices": [],
+              "description": "",
+              "inputType": "text",
+              "name": "",
+              "title": ""
+            }
+          ],
+          "title": "Metrics by Clever Ads",
+          "type": "action"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose",
+            "message"
+          ],
+          "description": "Get graphs in your chat",
+          "fetchTask": true,
+          "id": "graph_extension",
+          "initialRun": true,
+          "parameters": [
+            {
+              "choices": [],
+              "description": "",
+              "inputType": "text",
+              "name": "",
+              "title": ""
+            }
+          ],
+          "title": "Graphs by Clever Ads",
+          "type": "action"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose",
+            "message"
+          ],
+          "description": "Compare months metrics",
+          "fetchTask": true,
+          "id": "comparison_extension",
+          "initialRun": true,
+          "parameters": [
+            {
+              "choices": [],
+              "description": "",
+              "inputType": "text",
+              "name": "",
+              "title": ""
+            }
+          ],
+          "title": "Monthly Comparison by Clever Ads",
+          "type": "action"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose",
+            "message"
+          ],
+          "description": "List your scheduled reports",
+          "fetchTask": true,
+          "id": "reports_extension",
+          "initialRun": true,
+          "parameters": [
+            {
+              "choices": [],
+              "description": "",
+              "inputType": "text",
+              "name": "",
+              "title": ""
+            }
+          ],
+          "title": "Scheduled Reports by Clever Ads",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "marketing reports",
+    "agency tools",
+    "ads manager"
+  ],
+  "languageTag": "en-us",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_largeimage.png",
+  "lastUpdatedAt": "2024-04-02T10:40:08.6719401+00:00",
+  "longDescription": "Tool to increase the performance of advertising campaigns: monitor the effectiveness of ads, optimize on the go, and streamline reporting.\r\n\r\nAd Assistant by Clever Ads helps agencies control & optimize clients’ advertising campaigns in Google, Microsoft, Facebook, Instagram, Twitter, and TikTok ads like never before.\r\n\r\nTo monitor the performance of ad campaigns, you spend a lot of time on the computer, jumping from one platform to another. And the more clients you have, the more time and attention it takes.\r\n\r\nIf you’re outside the office, on vacation, or simply away from the computer, it’s difficult to stay on top of all your ad campaigns.\r\n\r\nMissing an important detail could affect their performance, resulting in clients who are dissatisfied and who may start looking for better services.\r\n\r\nWe help you increase the performance of your clients' ad campaigns on the go.\r\n\r\nQUICKLY MONITOR THE EFFECTIVENESS OF ADS WHEREVER YOU ARE.\r\nCreate alerts for specific metrics as well as any errors or anomalies. Get instant notifications when a metric reaches predetermined values or something important happens to your campaigns and accounts need attention.\r\n\r\nOPTIMIZE YOUR CLIENTS' CAMPAIGNS ON THE GO\r\nOur app gives you everything you need to optimize your clients' campaigns, including trend metrics, custom alerts, and anomalies.\r\n\r\nRECEIVE SMART REPORTS TO TRACK YOUR CAMPAIGNS\r\nCreate personalized reports by selecting your preferred metrics and share them with anyone, with zero time spent.\r\nGet insights on campaign performance.\r\n\r\n\r\nMore than 1 million users worldwide trust Clever Ads to grow their businesses.\r\n\r\n\r\nBe one step ahead of your competitors with Ad Assistant for agencies.\r\n\r\n\r\nFor any questions or concerns contact our team of tech developers at *assistant@cleverads.com*",
+  "mpnId": "6314531",
+  "officeAssetId": "WA200001182",
+  "permissions": [],
+  "privacyUrl": "https://cleverads.com/privacy-policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Ads Manager, Reports & Alerts for Google, Microsoft, Meta, Twitter & TikTok Ads",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://msteams.cleverads.com/tabs/commands",
+      "entityId": "commands",
+      "name": "Commands",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://msteams.cleverads.com/tabs/commands"
+    },
+    {
+      "contentUrl": "https://msteams.cleverads.com/tabs/faq",
+      "entityId": "faq",
+      "name": "F.A.Q",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://msteams.cleverads.com/tabs/faq"
+    }
+  ],
+  "systemVersion": "2025071112205085",
+  "termsOfUseUrl": "https://cleverads.com/terms-conditions",
+  "validDomains": [
+    "msteams.cleverads.com",
+    "admin.cleverads.com"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=wY-vL4gVI10",
+  "webApplicationInfo": {
+    "id": "f8812969-f37f-46ff-8dc7-86c059d1a3de",
+    "resource": "https://admin.cleverads.com/private/msteams_auth"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en-us",
+    "es-es"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.12",
+      "id": "ac2b56c0-f2a5-4e90-b618-882f8d3596f0",
+      "version": "1.6.6",
+      "name": "Ad Assistant by Clever Ads",
+      "accentColor": "#2E7AA2",
+      "amsSellerAccountId": 66763720,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "Owner.Read.Group",
+              "type": "Application"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Accede al menú donde podrás recibir resúmenes, métricas, gráficas y gestionar tus cuentas",
+                  "title": "menu"
+                },
+                {
+                  "description": "Asistencia general con el bot, los pasos involucrados y los comandos que se pueden usar",
+                  "title": "help"
+                },
+                {
+                  "description": "Comienza el tutorial de la app",
+                  "title": "tutorial"
+                },
+                {
+                  "description": "Muestra un resumen de tus métricas seleccionadas",
+                  "title": "metrics"
+                },
+                {
+                  "description": "Pregunta a tu bot para comparar las métricas más importantes en forma numérica o mostrándolo en una gráfica",
+                  "title": "compare"
+                },
+                {
+                  "description": "Visualiza la lista de tus reportes programados",
+                  "title": "reports"
+                },
+                {
+                  "description": "Visualiza una gráfica de la evolución de los clics de los últimos 7 días",
+                  "title": "clicks"
+                },
+                {
+                  "description": "Visualiza una gráfica de la evolución de las impresiones de los últimos 7 días",
+                  "title": "impressions"
+                },
+                {
+                  "description": "Desconecta tu cuenta de Ads de la app",
+                  "title": "logout"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Accede al menú donde podrás recibir resúmenes, métricas, gráficas y gestionar tus cuentas",
+                  "title": "menu"
+                },
+                {
+                  "description": "Asistencia general con el bot, los pasos involucrados y los comandos que se pueden usar",
+                  "title": "help"
+                },
+                {
+                  "description": "Comienza el tutorial de la app",
+                  "title": "tutorial"
+                },
+                {
+                  "description": "Muestra un resumen de tus métricas seleccionadas",
+                  "title": "metrics"
+                },
+                {
+                  "description": "Pregunta a tu bot para comparar las métricas más importantes en forma numérica o mostrándolo en una gráfica",
+                  "title": "compare"
+                },
+                {
+                  "description": "Visualiza la lista de tus reportes programados",
+                  "title": "reports"
+                },
+                {
+                  "description": "Visualiza una gráfica de la evolución de los clics de los últimos 7 días",
+                  "title": "clicks"
+                },
+                {
+                  "description": "Visualiza una gráfica de la evolución de las impresiones de los últimos 7 días",
+                  "title": "impressions"
+                },
+                {
+                  "description": "Desconecta tu cuenta de Ads de la app",
+                  "title": "logout"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Accede al menú donde podrás recibir resúmenes, métricas, gráficas y gestionar tus cuentas",
+                  "title": "menu"
+                },
+                {
+                  "description": "Asistencia general con el bot, los pasos involucrados y los comandos que se pueden usar",
+                  "title": "help"
+                },
+                {
+                  "description": "Comienza el tutorial de la app",
+                  "title": "tutorial"
+                },
+                {
+                  "description": "Muestra un resumen de tus métricas seleccionadas",
+                  "title": "metrics"
+                },
+                {
+                  "description": "Pregunta a tu bot para comparar las métricas más importantes en forma numérica o mostrándolo en una gráfica",
+                  "title": "compare"
+                },
+                {
+                  "description": "Visualiza la lista de tus reportes programados",
+                  "title": "reports"
+                },
+                {
+                  "description": "Visualiza una gráfica de la evolución de los clics de los últimos 7 días",
+                  "title": "clicks"
+                },
+                {
+                  "description": "Visualiza una gráfica de la evolución de las impresiones de los últimos 7 días",
+                  "title": "impressions"
+                },
+                {
+                  "description": "Desconecta tu cuenta de Ads de la app",
+                  "title": "logout"
+                }
+              ],
+              "scopes": [
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "f8812969-f37f-46ff-8dc7-86c059d1a3de",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": true,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "DataVisualizationAndBI",
+        "ProjectManagement",
+        "SalesAndMarketing"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultInstallScope": "personal",
+      "developerName": "Clever Ads",
+      "developerUrl": "https://cleverads.com/",
+      "industries": [
+        "ProfessionalServices",
+        "Retail"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "f8812969-f37f-46ff-8dc7-86c059d1a3de",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "commandBox",
+                "compose",
+                "message"
+              ],
+              "description": "Recibe métricas en tu chat",
+              "fetchTask": true,
+              "id": "metrics_extension",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "choices": [],
+                  "description": "",
+                  "inputType": "text",
+                  "name": "",
+                  "title": ""
+                }
+              ],
+              "title": "Métricas Clever Ads",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose",
+                "message"
+              ],
+              "description": "Recibe gráficas en tu chat",
+              "fetchTask": true,
+              "id": "graph_extension",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "choices": [],
+                  "description": "",
+                  "inputType": "text",
+                  "name": "",
+                  "title": ""
+                }
+              ],
+              "title": "Gráficas Clever Ads",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose",
+                "message"
+              ],
+              "description": "Compare métricas entre meses",
+              "fetchTask": true,
+              "id": "comparison_extension",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "choices": [],
+                  "description": "",
+                  "inputType": "text",
+                  "name": "",
+                  "title": ""
+                }
+              ],
+              "title": "Comparativa mensual Clever Ads",
+              "type": "action"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose",
+                "message"
+              ],
+              "description": "Lista tus reportes programados",
+              "fetchTask": true,
+              "id": "reports_extension",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "choices": [],
+                  "description": "",
+                  "inputType": "text",
+                  "name": "",
+                  "title": ""
+                }
+              ],
+              "title": "Reportes programados Clever Ads",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "marketing reports",
+        "agency tools",
+        "ads manager"
+      ],
+      "languageTag": "es-es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_largeimage.png",
+      "lastUpdatedAt": "2024-04-02T10:40:08.6719401+00:00",
+      "longDescription": "Herramienta para aumentar el rendimiento de las campañas publicitarias: controla el rendimiento de los anuncios, optimiza sobre la marcha y crea informes automáticos.\r\n\r\nAd Assistant by Clever Ads ayuda a las agencias a controlar y optimizar las campañas publicitarias de sus clientes en Google, Microsoft, Facebook, Instagram, Twitter y TikTok como nunca antes.\r\n\r\nPara controlar el rendimiento de las campañas publicitarias, pasas mucho tiempo en el ordenador, saltando de una plataforma a otra. Y cuantos más clientes tengas, más tiempo y atención te llevará.\r\n\r\nSi estás fuera de la oficina, de vacaciones o simplemente lejos del ordenador, es difícil estar al tanto de todas tus campañas publicitarias.\r\n\r\nPasar por alto un detalle importante podría afectar a su rendimiento, lo que se traduciría en clientes insatisfechos que podrían empezar a buscar mejores servicios.\r\n\r\nTe ayudamos a aumentar el rendimiento de las campañas publicitarias de tus clientes sobre la marcha.\r\n\r\nSUPERVISA RÁPIDAMENTE EL RENDIMIENTO DE LOS ANUNCIOS ESTÉS DONDE ESTÉS.\r\nCrea alertas para métricas específicas, así como para cualquier error o anomalía. Recibe notificaciones instantáneas cuando una métrica alcance un valor predeterminado o cuando ocurra algo importante en sus campañas y las cuentas necesiten atención.\r\n\r\n\r\nOPTIMIZA LAS CAMPAÑAS DE TUS CLIENTES SOBRE LA MARCHA.\r\nNuestra aplicación le ofrece todo lo que necesita para optimizar las campañas de tus clientes, incluidas métricas de tendencias, alertas personalizadas y anomalías.\r\n\r\n\r\nRECIBE INFORMES INTELIGENTES PARA REALIZAR UN SEGUIMIENTO DE TUS CAMPAÑAS\r\nCrea sus propios informes con métricas seleccionadas y compártalos con quien quiera, sin perder tiempo.\r\nObtén información sobre el rendimiento de las campañas.\r\n\r\n\r\n\r\nMás de 1 millón de usuarios en todo el mundo confían en Clever Ads para hacer crecer sus negocios.\r\n\r\n\r\nVaya un paso por delante de sus competidores con Ad Assistant para agencias.\r\n\r\n\r\n¡Empieza ya!\r\n1. Añade la aplicación Clever Ads a Microsoft Teams.\r\n2. Inicia sesión con tu correo electrónico de Google/Microsoft/Facebook vinculado a tu cuenta de anunciante.\r\n3. Accede a tu panel de control, configura tu cuenta, programa tus informes y alertas.\r\n4. Accede al chat de Microsoft Teams y comienza a preguntar al bot por métricas, gráficos, etc.\r\nPara cualquier duda o consulta contacta con nuestro equipo de desarrolladores técnicos en *assistant@cleverads.com*",
+      "mpnId": "6314531",
+      "officeAssetId": "WA200001182",
+      "permissions": [],
+      "privacyUrl": "https://cleverads.com/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "PPC Analytics, Informes y Alertas Google/Microsoft/Facebook/Twitter/TikTok Ads",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ac2b56c0-f2a5-4e90-b618-882f8d3596f0/2025071112205085/ac2b56c0-f2a5-4e90-b618-882f8d3596f0_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams.cleverads.com/tabs/commands",
+          "entityId": "commands",
+          "name": "Comandos",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://msteams.cleverads.com/tabs/commands"
+        },
+        {
+          "contentUrl": "https://msteams.cleverads.com/tabs/faq",
+          "entityId": "faq",
+          "name": "Preguntas Frecuentes",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://msteams.cleverads.com/tabs/faq"
+        }
+      ],
+      "systemVersion": "2025071112205085",
+      "termsOfUseUrl": "https://cleverads.com/terms-conditions",
+      "validDomains": [
+        "msteams.cleverads.com",
+        "admin.cleverads.com"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=wY-vL4gVI10",
+      "webApplicationInfo": {
+        "id": "f8812969-f37f-46ff-8dc7-86c059d1a3de",
+        "resource": "https://admin.cleverads.com/private/msteams_auth"
+      }
+    }
+  ]
+}

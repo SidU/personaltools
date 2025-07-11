@@ -1,0 +1,194 @@
+{
+  "manifestVersion": "1.12",
+  "id": "6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9",
+  "version": "1.1.18",
+  "name": "Pydo",
+  "accentColor": "#60A18E",
+  "activities": {
+    "activityTypes": [
+      {
+        "description": "Nuevo comunicado",
+        "templateText": "{appName} - {user} publicó un nuevo post",
+        "type": "pydoCommunication"
+      }
+    ]
+  },
+  "amsSellerAccountId": 83287880,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "TeamsActivity.Send.User",
+          "type": "Application"
+        },
+        {
+          "name": "TeamsActivity.Send.Group",
+          "type": "Application"
+        },
+        {
+          "name": "TeamsActivity.Send.Chat",
+          "type": "Application"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "e7c3eac7-6a7f-4689-9c3b-6274a64f2e61",
+      "isNotificationOnly": true,
+      "scopes": [
+        "team",
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ContentManagement",
+    "HumanResourcesAndRecruiting",
+    "Social"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultInstallScope": "personal",
+  "developerName": "NUNSYS S.A.",
+  "developerUrl": "https://www.pydo.ai",
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "languageTag": "es-es",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9/2025071113393825/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9_largeimage.png",
+  "lastUpdatedAt": "2025-04-15T14:14:35.4373469+00:00",
+  "longDescription": "Mantén a tu equipo informado y conectado con Pydo, la herramienta definitiva de comunicación interna para Microsoft Teams.\n\n**¿Qué es Pydo?**\nPydo es una aplicación diseñada para que los mensajes clave de tu empresa lleguen directamente a los chats de Microsoft Teams. Con esta herramienta, te aseguras de que toda tu organización esté al tanto de cualquier información esencial en tiempo real. Gracias a su sistema de notificaciones push, la comunicación interna se vuelve inmediata, efectiva y sin distracciones.\n\n**Funciones Clave de Pydo para Microsoft Teams**\n\n**1. Comunicación Interna y Engagement**\n- Envía comunicados directamente a los chats de Microsoft Teams.\n- Asegura que tus mensajes no pasen desapercibidos gracias a las **notificaciones push**.\n- Edita y actualiza comunicados una vez enviados.\n- Asegura que cada empleado reciba y lea los mensajes importantes, eliminando la dependencia de los emails.\n- Mantén a todo el equipo informado sobre cambios y novedades.\n- **Elige dónde publicar:** Decide si tu contenido aparecerá en **Equipos de Teams** o directamente en los **chats personales** gracias a las listas de difusión.\n\n**2. Gestión de Contenidos y Automatización**\n- **Programación de Mensajes:** Automatiza comunicados para que se envíen en el momento adecuado.\n- **Ayuda con IA:** Genera textos de alta calidad con Inteligencia Artificial integrada (GPT-4).\n- **Planificación:** Organiza tus publicaciones de manera clara y eficiente con un calendario intuitivo.\n\n**3. Gestiona tus campañas de Comunicación Interna en Microsoft Teams**\n- **Campañas:** Agrupa tus comunicados en campañas para una comunicación interna más estructurada en Microsoft Teams.\n- **Plantillas:** Diseña tus propias campañas desde cero o aprovecha las plantillas predefinidas que Pydo te ofrece para comenzar rápidamente.\n- **Reutiliza y optimiza tu trabajo:** Duplica contenidos para ahorrar tiempo y crear nuevas iniciativas basadas en tus estrategias previas.\n\n**Encuestas y Clima Laboral**\n- Crea encuestas en Microsoft Teams con Pydo para medir el clima organizacional y recoger opiniones del equipo.\n- Encuestas según tus necesidades: anónimas o nominales.\n- Analiza los resultados con gráficos interactivos y exporta los datos para un análisis más profundo.\n\n**Organización de Eventos**\n- Comparte eventos con toda la información clave y notifica directamente a los asistentes.\n- Gestiona inscripciones de manera sencilla.\n- Obtén un listado detallado de asistentes.\n\n**Análisis de Resultados**\n- Revisa comentarios y reacciones de los empleados para entender el impacto de tus mensajes.\n- Métricas avanzadas para evaluar la efectividad de tus campañas.\n- Analiza el sentimiento detrás de los comentarios para ajustar tu estrategia de comunicación.\n\n**Beneficios de Usar Pydo**\n- **Comunicación Instantánea:** Tus mensajes llegan al instante.\n- **Mayor Compromiso:** Mantén a tu equipo involucrado.\n- **Optimización:** Automatiza tareas repetitivas y enfócate en lo que importa.\n- **Adaptabilidad:** Compatible exclusivamente con Microsoft Teams, garantizando integración perfecta.\n\n**Transforma la Comunicación Interna en Microsoft Teams con Pydo**\nCon Pydo, la comunicación en tu organización nunca volverá a ser un problema. Notifica, informa y conecta con tu equipo de forma eficaz.\n\n**Limitaciones**\n- **Idioma:** Esta aplicación está disponible únicamente en español.\n- **Compatibilidad de la Plataforma:** Pydo está diseñado para su uso en Microsoft Teams, y no es compatible con otras plataformas de colaboración.\n- **Requisitos de Integración:** Para utilizar Pydo completamente, los usuarios deben tener cuentas activas en Microsoft Teams.\n\n**Contacto**\nSi tienes cualquier pregunta o necesitas ayuda con nuestra app Pydo, envíanos un correo electrónico a **pydo@pydo.ai**\n\nTambién puedes consultar más información en [Pydo.ai](https://www.pydo.ai/#FAQ_Pydo).",
+  "mpnId": "1032570",
+  "officeAssetId": "WA200005733",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.pydo.ai/politica-de-privacidad",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9/2025071113393825/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9/2025071113393825/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9/2025071113393825/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9/2025071113393825/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9/2025071113393825/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Implementa con Pydo la comunicación interna de tu empresa en Microsoft Teams",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9/2025071113393825/6d0abcdb-a5e5-45f9-9041-737c9fcfa3f9_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://app.pydo.ai/index.html#/dashboard",
+      "entityId": "Dashboard",
+      "name": "Dashboard",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://app.pydo.ai/index.html#/config",
+      "entityId": "Configuration",
+      "name": "Configuración",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071113393825",
+  "termsOfUseUrl": "https://www.pydo.ai/condiciones-de-uso",
+  "validDomains": [
+    "admin.pydo.ai",
+    "app.pydo.ai",
+    "pydo.ai"
+  ],
+  "videoUrl": "https://youtu.be/U6C7Y2hXXYk",
+  "webApplicationInfo": {
+    "id": "abef1915-0d5e-4efc-99e5-d9dd3a5f3992",
+    "resource": "https://app.pydo.ai"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "es-es"
+  ],
+  "localizedDefinitions": []
+}

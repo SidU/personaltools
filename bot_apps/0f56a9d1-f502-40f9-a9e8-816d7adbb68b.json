@@ -1,0 +1,3598 @@
+{
+  "manifestVersion": "1.17",
+  "id": "0f56a9d1-f502-40f9-a9e8-816d7adbb68b",
+  "version": "4.1.0",
+  "name": "Adobe Acrobat Sign",
+  "accentColor": "#230201",
+  "activities": {
+    "activityTypes": [
+      {
+        "description": "Agreement Completed",
+        "templateText": "{localizedMessage}",
+        "type": "agreementCompleted"
+      },
+      {
+        "description": "Signature Requested",
+        "templateText": "{localizedMessage}",
+        "type": "signatureRequested"
+      },
+      {
+        "description": "Form Fill Requested",
+        "templateText": "{localizedMessage}",
+        "type": "formFillRequested"
+      },
+      {
+        "description": "Acceptance Requested",
+        "templateText": "{localizedMessage}",
+        "type": "acceptanceRequested"
+      },
+      {
+        "description": "Acknowledgement Requested",
+        "templateText": "{localizedMessage}",
+        "type": "acknowledgmentRequested"
+      },
+      {
+        "description": "Delegation Requested",
+        "templateText": "{localizedMessage}",
+        "type": "delegationRequested"
+      },
+      {
+        "description": "Approval Requested",
+        "templateText": "{localizedMessage}",
+        "type": "approvalRequested"
+      }
+    ]
+  },
+  "amsSellerAccountId": 10100310,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "Mailbox.ReadWrite.User",
+          "type": "Delegated"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Find out what I can do.",
+              "title": "help"
+            },
+            {
+              "description": "View current status of a document.",
+              "title": "check status"
+            },
+            {
+              "description": "Display documents waiting on you.",
+              "title": "show docs for me"
+            },
+            {
+              "description": "Display documents waiting on others.",
+              "title": "show docs for others"
+            },
+            {
+              "description": "Sign out of your Adobe Acrobat Sign account.",
+              "title": "sign out"
+            },
+            {
+              "description": "Sign in to get started.",
+              "title": "sign in"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "f91f7d3b-8e41-427e-95e9-b6f0424c81f4",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "WorkflowAndBusinessManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Adobe Inc.",
+  "developerUrl": "https://acrobat.adobe.com/us/en/sign.html",
+  "extensions": [
+    {
+      "alternates": [
+        {
+          "alternateIcons": {
+            "highResolutionIcon": {
+              "size": 64,
+              "url": "https://static.echocdn.com/office365integration/icons/as_128.png"
+            },
+            "icon": {
+              "size": 64,
+              "url": "https://static.echocdn.com/office365integration/icons/as_64.png"
+            }
+          },
+          "hide": {
+            "storeOfficeAddin": {
+              "assetId": "WA104381158",
+              "officeAddinId": "5DE11285-4132-4ADD-A025-EB72EB16BC84"
+            }
+          }
+        }
+      ],
+      "audienceClaimUrl": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=ribbon&flow=HOME",
+      "requirements": {
+        "capabilities": [
+          {
+            "minVersion": "1.4",
+            "name": "MailBox"
+          }
+        ],
+        "scopes": [
+          "mail"
+        ]
+      },
+      "ribbons": [
+        {
+          "contexts": [
+            "mailCompose"
+          ],
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.4",
+                "name": "Mailbox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "tabs": [
+            {
+              "builtInTabId": "TabDefault",
+              "groups": [
+                {
+                  "controls": [
+                    {
+                      "actionId": "action_1",
+                      "enabled": true,
+                      "icons": [
+                        {
+                          "size": 16,
+                          "url": "https://static.echocdn.com/office365integration/icons/SFS_16.png"
+                        },
+                        {
+                          "size": 32,
+                          "url": "https://static.echocdn.com/office365integration/icons/SFS_32.png"
+                        },
+                        {
+                          "size": 80,
+                          "url": "https://static.echocdn.com/office365integration/icons/SFS_80.png"
+                        }
+                      ],
+                      "id": "sfsComposePaneButton",
+                      "label": "Send for Signature",
+                      "overriddenByRibbonApi": false,
+                      "supertip": {
+                        "description": "Request signatures on your documents.",
+                        "title": "Send attachments out for signature"
+                      },
+                      "type": "button"
+                    }
+                  ],
+                  "id": "msgComposeGroup",
+                  "label": "Adobe Acrobat Sign",
+                  "overriddenByRibbonApi": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "contexts": [
+            "mailRead"
+          ],
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.4",
+                "name": "Mailbox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "tabs": [
+            {
+              "builtInTabId": "TabDefault",
+              "groups": [
+                {
+                  "controls": [
+                    {
+                      "actionId": "action_2",
+                      "enabled": true,
+                      "icons": [
+                        {
+                          "size": 16,
+                          "url": "https://static.echocdn.com/office365integration/icons/FSS_16.png"
+                        },
+                        {
+                          "size": 32,
+                          "url": "https://static.echocdn.com/office365integration/icons/FSS_32.png"
+                        },
+                        {
+                          "size": 80,
+                          "url": "https://static.echocdn.com/office365integration/icons/FSS_80.png"
+                        }
+                      ],
+                      "id": "fssReadPaneButton",
+                      "label": "Fill and Sign",
+                      "overriddenByRibbonApi": false,
+                      "supertip": {
+                        "description": "Easily fill out, sign and return the attached documents.",
+                        "title": "Sign the attachments"
+                      },
+                      "type": "button"
+                    },
+                    {
+                      "actionId": "action_3",
+                      "enabled": true,
+                      "icons": [
+                        {
+                          "size": 16,
+                          "url": "https://static.echocdn.com/office365integration/icons/SFS_16.png"
+                        },
+                        {
+                          "size": 32,
+                          "url": "https://static.echocdn.com/office365integration/icons/SFS_32.png"
+                        },
+                        {
+                          "size": 80,
+                          "url": "https://static.echocdn.com/office365integration/icons/SFS_80.png"
+                        }
+                      ],
+                      "id": "sfsReadPaneButton",
+                      "label": "Send for Signature",
+                      "overriddenByRibbonApi": false,
+                      "supertip": {
+                        "description": "Request signatures on your documents.",
+                        "title": "Send attachments out for signature"
+                      },
+                      "type": "button"
+                    },
+                    {
+                      "actionId": "action_4",
+                      "enabled": true,
+                      "icons": [
+                        {
+                          "size": 16,
+                          "url": "https://static.echocdn.com/office365integration/icons/TAS_16.png"
+                        },
+                        {
+                          "size": 32,
+                          "url": "https://static.echocdn.com/office365integration/icons/TAS_32.png"
+                        },
+                        {
+                          "size": 80,
+                          "url": "https://static.echocdn.com/office365integration/icons/TAS_80.png"
+                        }
+                      ],
+                      "id": "tasReadPaneButton",
+                      "label": "Agreement Status",
+                      "overriddenByRibbonApi": false,
+                      "supertip": {
+                        "description": "Check the status of your recent agreements.",
+                        "title": "View the status of your agreements"
+                      },
+                      "type": "button"
+                    }
+                  ],
+                  "id": "msgReadGroup",
+                  "label": "Adobe Acrobat Sign",
+                  "overriddenByRibbonApi": false
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "runtimes": [
+        {
+          "actions": [
+            {
+              "displayName": "action_1",
+              "id": "action_1",
+              "multiselect": false,
+              "pinnable": false,
+              "supportsNoItemContext": false,
+              "type": "openPage",
+              "view": "view_1"
+            },
+            {
+              "displayName": "action_3",
+              "id": "action_3",
+              "multiselect": false,
+              "pinnable": false,
+              "supportsNoItemContext": false,
+              "type": "openPage",
+              "view": "view_3"
+            }
+          ],
+          "code": {
+            "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=SFS"
+          },
+          "id": "runtime_1",
+          "lifetime": "short",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.4",
+                "name": "Mailbox"
+              }
+            ]
+          },
+          "type": "general"
+        },
+        {
+          "actions": [
+            {
+              "displayName": "action_2",
+              "id": "action_2",
+              "multiselect": false,
+              "pinnable": false,
+              "supportsNoItemContext": false,
+              "type": "openPage",
+              "view": "view_2"
+            }
+          ],
+          "code": {
+            "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=FSS"
+          },
+          "id": "runtime_2",
+          "lifetime": "short",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.4",
+                "name": "Mailbox"
+              }
+            ]
+          },
+          "type": "general"
+        },
+        {
+          "actions": [
+            {
+              "displayName": "action_4",
+              "id": "action_4",
+              "multiselect": false,
+              "pinnable": false,
+              "supportsNoItemContext": false,
+              "type": "openPage",
+              "view": "view_4"
+            }
+          ],
+          "code": {
+            "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=TAS"
+          },
+          "id": "runtime_3",
+          "lifetime": "short",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.4",
+                "name": "Mailbox"
+              }
+            ]
+          },
+          "type": "general"
+        }
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "f91f7d3b-8e41-427e-95e9-b6f0424c81f4",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Sign agreements in a meeting.",
+          "fetchTask": true,
+          "id": "createTaskModule",
+          "initialRun": false,
+          "title": "Live Sign",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "adobeApps"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_largeimage.png",
+  "lastUpdatedAt": "2025-07-10T20:10:11.8957827+00:00",
+  "longDescription": "Get your documents signed faster than ever when you add Acrobat Sign to Microsoft Teams, Microsoft 365 and Microsoft Outlook. Now, you can create an agreement and send it for signature, sign documents yourself, and track at every step - all right from Microsoft apps.\nWith Acrobat Sign, recipients can complete and sign documents via any browser or mobile device - anytime, anywhere, with no account needed. Or, get signatures live in a Teams meeting with Live Sign.\nMinimize legal and compliance risks. Acrobat Sign solutions are globally compliant and legally-binding in nearly every country in the world.\nAcrobat Sign for Microsoft Teams and Microsoft 365 add-ins require a valid license of Acrobat Sign.\n- [Get started with a free 30-day trial](https://adobe.com/go/sign_teams_trial_from_appsource)\n**Key features with Adobe Acrobat Sign for Teams and Microsoft 365**\nAuthor and send documents, contracts, and digital forms for signature and approval. Sign documents yourself and manage your Acrobat Sign activity all without leaving the applications you already rely on every day.\n- See real time status and take action for documents in progress.\n- Easily send files for signature without leaving Teams. Choose from your recent Office files, shared Teams files, OneDrive files, Sign templates, or your personal hard drive.\n- Manage your documents including check status, send reminders, and view details for completed documents.\n- Sign documents that are waiting for you.\n- Access is easy with single sign-on (SSO).\n**Key features only available with Adobe Acrobat Sign for Teams**\n- Support your customers when they need it most and get agreements signed faster with Live Sign in a Teams meeting.\n- Get status in real-time with actionable notifications in your activity feed. Get notified when documents are ready for you to sign and complete the document in a single step. Get notified when documents are completed and view details. All directly in the activity feed.\n- Stay updated at every step. Check which documents are out for signature, signed, or waiting for signature using the Adobe Acrobat Sign bot in Teams.\n**Learn more**\n- [Acrobat Sign](https://youtu.be/a2JclC-yT_I)\n- [Acrobat Sign and Microsoft 365](https://www.adobe.com/documentcloud/integrations/microsoft-office-365.html)\n- [Acrobat Sign for Microsoft Teams](https://www.adobe.com/documentcloud/integrations/microsoft-teams.html)\n- [Acrobat Sign for Teams User Guide](https://helpx.adobe.com/sign/using/microsoft-teams-integration-user-guide.html)",
+  "mpnId": "4844927",
+  "officeAssetId": "WA104381233",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.adobe.com/go/privacy_policy",
+  "restrictedTenantTypes": [
+    "Freemium"
+  ],
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "mcasId": "11641",
+    "status": "attested"
+  },
+  "shortDescription": "Collaborate on agreements more efficiently with Adobe Acrobat Sign",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://static.echocdn.com/office365integration/personalTabHome.html?appVersion=4.1.0",
+      "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f-Home",
+      "name": "Home",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://static.echocdn.com/office365integration/manageTab.html?appVersion=4.1.0",
+      "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f",
+      "name": "Manage",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://static.echocdn.com/office365integration/documentsTab.html?appVersion=4.1.0",
+      "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f-Documents",
+      "name": "Documents",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115505886",
+  "termsOfUseUrl": "https://www.adobe.com/go/terms",
+  "validDomains": [
+    "*.*.echosign.com",
+    "*.echosign.com",
+    "*.echocdn.com",
+    "*.adobesign.com"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=a2JclC-yT_I",
+  "webApplicationInfo": {
+    "id": "ea36b867-ca67-45fd-a61b-d2be86273167",
+    "resource": "api://static.echocdn.com/ea36b867-ca67-45fd-a61b-d2be86273167"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "de",
+    "fr",
+    "ja",
+    "ko"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.17",
+      "id": "0f56a9d1-f502-40f9-a9e8-816d7adbb68b",
+      "version": "4.1.0",
+      "name": "Adobe Acrobat Sign",
+      "accentColor": "#230201",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Vereinbarung abgeschlossen",
+            "templateText": "{localizedMessage}",
+            "type": "agreementCompleted"
+          },
+          {
+            "description": "Signatur erforderlich",
+            "templateText": "{localizedMessage}",
+            "type": "signatureRequested"
+          },
+          {
+            "description": "Ausfüllen des Formulars erforderlich",
+            "templateText": "{localizedMessage}",
+            "type": "formFillRequested"
+          },
+          {
+            "description": "Annehmen erforderlich",
+            "templateText": "{localizedMessage}",
+            "type": "acceptanceRequested"
+          },
+          {
+            "description": "Bestätigung erforderlich",
+            "templateText": "{localizedMessage}",
+            "type": "acknowledgmentRequested"
+          },
+          {
+            "description": "Delegieren erforderlich",
+            "templateText": "{localizedMessage}",
+            "type": "delegationRequested"
+          },
+          {
+            "description": "Genehmigung erforderlich",
+            "templateText": "{localizedMessage}",
+            "type": "approvalRequested"
+          }
+        ]
+      },
+      "amsSellerAccountId": 10100310,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "Mailbox.ReadWrite.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Herausfinden, was möglich ist.",
+                  "title": "Hilfe"
+                },
+                {
+                  "description": "Momentanen Dokumentstatus anzeigen.",
+                  "title": "Status prüfen"
+                },
+                {
+                  "description": "Dokumente anzeigen, die auf Sie warten.",
+                  "title": "Dokumente für mich anzeigen"
+                },
+                {
+                  "description": "Dokumente anzeigen, die auf andere warten.",
+                  "title": "Dokumente für Andere anzeigen"
+                },
+                {
+                  "description": "Melden Sie sich von Ihrem Adobe Acrobat Sign-Account ab.",
+                  "title": "Abmelden"
+                },
+                {
+                  "description": "Melden Sie sich für die ersten Schritte an.",
+                  "title": "Anmelden"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "f91f7d3b-8e41-427e-95e9-b6f0424c81f4",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Adobe Inc.",
+      "developerUrl": "https://acrobat.adobe.com/us/en/sign.html",
+      "extensions": [
+        {
+          "alternates": [
+            {
+              "alternateIcons": {
+                "highResolutionIcon": {
+                  "size": 64,
+                  "url": "https://static.echocdn.com/office365integration/icons/as_128.png"
+                },
+                "icon": {
+                  "size": 64,
+                  "url": "https://static.echocdn.com/office365integration/icons/as_64.png"
+                }
+              },
+              "hide": {
+                "storeOfficeAddin": {
+                  "assetId": "WA104381158",
+                  "officeAddinId": "5DE11285-4132-4ADD-A025-EB72EB16BC84"
+                }
+              }
+            }
+          ],
+          "audienceClaimUrl": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=ribbon&flow=HOME",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.4",
+                "name": "MailBox"
+              }
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "ribbons": [
+            {
+              "contexts": [
+                "mailCompose"
+              ],
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "tabs": [
+                {
+                  "builtInTabId": "TabDefault",
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "action_1",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_80.png"
+                            }
+                          ],
+                          "id": "sfsComposePaneButton",
+                          "label": "Send for Signature",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Request signatures on your documents.",
+                            "title": "Send attachments out for signature"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgComposeGroup",
+                      "label": "Adobe Acrobat Sign",
+                      "overriddenByRibbonApi": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "mailRead"
+              ],
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "tabs": [
+                {
+                  "builtInTabId": "TabDefault",
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "action_2",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_80.png"
+                            }
+                          ],
+                          "id": "fssReadPaneButton",
+                          "label": "Fill and Sign",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Easily fill out, sign and return the attached documents.",
+                            "title": "Sign the attachments"
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "action_3",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_80.png"
+                            }
+                          ],
+                          "id": "sfsReadPaneButton",
+                          "label": "Send for Signature",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Request signatures on your documents.",
+                            "title": "Send attachments out for signature"
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "action_4",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_80.png"
+                            }
+                          ],
+                          "id": "tasReadPaneButton",
+                          "label": "Agreement Status",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Check the status of your recent agreements.",
+                            "title": "View the status of your agreements"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgReadGroup",
+                      "label": "Adobe Acrobat Sign",
+                      "overriddenByRibbonApi": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "runtimes": [
+            {
+              "actions": [
+                {
+                  "displayName": "action_1",
+                  "id": "action_1",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_1"
+                },
+                {
+                  "displayName": "action_3",
+                  "id": "action_3",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_3"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=SFS"
+              },
+              "id": "runtime_1",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "displayName": "action_2",
+                  "id": "action_2",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_2"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=FSS"
+              },
+              "id": "runtime_2",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "displayName": "action_4",
+                  "id": "action_4",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_4"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=TAS"
+              },
+              "id": "runtime_3",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            }
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "f91f7d3b-8e41-427e-95e9-b6f0424c81f4",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Unterzeichen Sie Vereinbarungen in Meetings.",
+              "fetchTask": true,
+              "id": "createTaskModule",
+              "initialRun": false,
+              "title": "Live Sign",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "adobeApps"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_largeimage.png",
+      "lastUpdatedAt": "2025-07-10T20:10:11.8957827+00:00",
+      "longDescription": "Wenn du Adobe Acrobat Sign zu Microsoft Teams, Microsoft 365 und Microsoft Outlook hinzufügst, werden deine Dokumente schneller signiert als je zuvor. Jetzt kannst du eine Vereinbarung erstellen, sie zur Signatur senden, Dokumente selbst signieren und jeden Schritt des Ablaufs verfolgen – und das alles direkt in Microsoft-Anwendungen.\nMit Acrobat Sign können Empfangende Dokumente über jeden Browser oder jedes Mobilgerät ausfüllen und signieren, ganz ohne Konto.\nMinimiere rechtliche und Compliance-Risiken. Acrobat Sign-Lösungen sind weltweit gesetzeskonform und in fast jedem Land der Welt rechtlich bindend.\nAcrobat Sign für Microsoft Teams- und Microsoft 365-Add-ins erfordern eine gültige Lizenz für Acrobat Sign.\n- [Jetzt mit einem 30-tägigen kostenlosen Probe-Abo anfangen](https://adobe.com/go/sign_teams_trial_from_appsource_de)\n**Wichtigste Funktionen von Adobe Acrobat Sign für Teams und Microsoft 365**\nErstelle und sende Dokumente, Verträge und digitale Formulare zur Unterschrift und Genehmigung. Signiere Dokumente selbst und verwalte deine Acrobat Sign-Aktivitäten, ohne dabei die Anwendungen verlassen zu müssen, auf die du dich bereits täglich verlässt.\n- Sieh den Status in Echtzeit und verwalte Dokumente, die sich in Bearbeitung befinden.\n- Sende Dateien einfach zur Signatur, ohne dafür Teams verlassen zu müssen. Wähle Dateien von deinen kürzlich verwendeten Office-Dateien, freigegebenen Teams-Dateien, OneDrive-Dateien, Sign-Vorlagen oder von deiner Festplatte.\n- Verwalte deine Dokumente. Prüfe zum Beispiel den Status, sende Erinnerungen und siehe dir die Details zu abgeschlossenen Dokumenten an.\n- Signiere Dokumente, die auf deine Unterschrift warten.\n- Der Zugriff ist mit Single Sign-on (SSO) ganz einfach.\n**Wichtigste Funktionen, die nur in Adobe Acrobat Sign für Teams verfügbar sind**\n- Unterstütze deine Kunden, wenn sie es am dringendsten benötigen und lasse Dokumente schneller unterschreiben, mit der Live Sign-Funktion direkt in einem Teams-Meeting.\n- Erhalte Benachrichtigungen, wenn Dokumente zur Signatur bereit sind und schließe das Dokument in einem einzigen Schritt ab. Erhalte eine Benachrichtigung, wenn Dokumente abgeschlossen wurden und sieh dir die Details dazu an. All das direkt im Aktivitätenfeed.\n- Sei bei jedem Schritt auf dem Laufenden. Prüfe mit dem Adobe Acrobat Sign-Bot in Teams nach, welche Dokumente zur Signatur versendet wurden, bereits signiert sind oder auf eine Signatur warten .\n**Mehr erfahren**\n- [Acrobat Sign](https://youtu.be/a2JclC-yT_I)\n- [Acrobat Sign und Microsoft 365](https://www.adobe.com/documentcloud/integrations/microsoft-office-365.html)\n- [Acrobat Sign für Microsoft Teams](https://www.adobe.com/documentcloud/integrations/microsoft-teams.html)\n- [Acrobat Sign für Teams: Benutzerhandbuch](https://helpx.adobe.com/de/sign/using/microsoft-teams-integration-user-guide.html)",
+      "mpnId": "4844927",
+      "officeAssetId": "WA104381233",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.adobe.com/go/privacy_policy",
+      "restrictedTenantTypes": [
+        "Freemium"
+      ],
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "11641",
+        "status": "attested"
+      },
+      "shortDescription": "Arbeiten Sie mit Adobe Acrobat Sign effizienter zusammen an Vereinbarungen",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/personalTabHome.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f-Home",
+          "name": "Startseite",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/manageTab.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f",
+          "name": "Verwalten",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/documentsTab.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f-Documents",
+          "name": "Dokumente",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115505886",
+      "termsOfUseUrl": "https://www.adobe.com/go/terms",
+      "validDomains": [
+        "*.*.echosign.com",
+        "*.echosign.com",
+        "*.echocdn.com",
+        "*.adobesign.com"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=a2JclC-yT_I",
+      "webApplicationInfo": {
+        "id": "ea36b867-ca67-45fd-a61b-d2be86273167",
+        "resource": "api://static.echocdn.com/ea36b867-ca67-45fd-a61b-d2be86273167"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "0f56a9d1-f502-40f9-a9e8-816d7adbb68b",
+      "version": "4.1.0",
+      "name": "Adobe Acrobat Sign",
+      "accentColor": "#230201",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Accord terminé",
+            "templateText": "{localizedMessage}",
+            "type": "agreementCompleted"
+          },
+          {
+            "description": "Signature requise",
+            "templateText": "{localizedMessage}",
+            "type": "signatureRequested"
+          },
+          {
+            "description": "Remplissage du formulaire demandé",
+            "templateText": "{localizedMessage}",
+            "type": "formFillRequested"
+          },
+          {
+            "description": "Acceptation requise",
+            "templateText": "{localizedMessage}",
+            "type": "acceptanceRequested"
+          },
+          {
+            "description": "Validation requise",
+            "templateText": "{localizedMessage}",
+            "type": "acknowledgmentRequested"
+          },
+          {
+            "description": "Délégation requise",
+            "templateText": "{localizedMessage}",
+            "type": "delegationRequested"
+          },
+          {
+            "description": "Approbation requise",
+            "templateText": "{localizedMessage}",
+            "type": "approvalRequested"
+          }
+        ]
+      },
+      "amsSellerAccountId": 10100310,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "Mailbox.ReadWrite.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Découvrez ce que je peux faire.",
+                  "title": "aide"
+                },
+                {
+                  "description": "Affichez le statut actuel d’un document.",
+                  "title": "vérifier le statut"
+                },
+                {
+                  "description": "Affichez les documents en attente d’une intervention de votre part.",
+                  "title": "afficher documents pour moi"
+                },
+                {
+                  "description": "Affichez les documents en attente d’autres personnes.",
+                  "title": "afficher documents pour d’autres"
+                },
+                {
+                  "description": "Déconnectez-vous de votre compte Adobe Acrobat Sign.",
+                  "title": "déconnexion"
+                },
+                {
+                  "description": "Connectez-vous pour commencer.",
+                  "title": "se connecter"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "f91f7d3b-8e41-427e-95e9-b6f0424c81f4",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Adobe Inc.",
+      "developerUrl": "https://acrobat.adobe.com/us/en/sign.html",
+      "extensions": [
+        {
+          "alternates": [
+            {
+              "alternateIcons": {
+                "highResolutionIcon": {
+                  "size": 64,
+                  "url": "https://static.echocdn.com/office365integration/icons/as_128.png"
+                },
+                "icon": {
+                  "size": 64,
+                  "url": "https://static.echocdn.com/office365integration/icons/as_64.png"
+                }
+              },
+              "hide": {
+                "storeOfficeAddin": {
+                  "assetId": "WA104381158",
+                  "officeAddinId": "5DE11285-4132-4ADD-A025-EB72EB16BC84"
+                }
+              }
+            }
+          ],
+          "audienceClaimUrl": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=ribbon&flow=HOME",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.4",
+                "name": "MailBox"
+              }
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "ribbons": [
+            {
+              "contexts": [
+                "mailCompose"
+              ],
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "tabs": [
+                {
+                  "builtInTabId": "TabDefault",
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "action_1",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_80.png"
+                            }
+                          ],
+                          "id": "sfsComposePaneButton",
+                          "label": "Send for Signature",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Request signatures on your documents.",
+                            "title": "Send attachments out for signature"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgComposeGroup",
+                      "label": "Adobe Acrobat Sign",
+                      "overriddenByRibbonApi": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "mailRead"
+              ],
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "tabs": [
+                {
+                  "builtInTabId": "TabDefault",
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "action_2",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_80.png"
+                            }
+                          ],
+                          "id": "fssReadPaneButton",
+                          "label": "Fill and Sign",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Easily fill out, sign and return the attached documents.",
+                            "title": "Sign the attachments"
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "action_3",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_80.png"
+                            }
+                          ],
+                          "id": "sfsReadPaneButton",
+                          "label": "Send for Signature",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Request signatures on your documents.",
+                            "title": "Send attachments out for signature"
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "action_4",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_80.png"
+                            }
+                          ],
+                          "id": "tasReadPaneButton",
+                          "label": "Agreement Status",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Check the status of your recent agreements.",
+                            "title": "View the status of your agreements"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgReadGroup",
+                      "label": "Adobe Acrobat Sign",
+                      "overriddenByRibbonApi": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "runtimes": [
+            {
+              "actions": [
+                {
+                  "displayName": "action_1",
+                  "id": "action_1",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_1"
+                },
+                {
+                  "displayName": "action_3",
+                  "id": "action_3",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_3"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=SFS"
+              },
+              "id": "runtime_1",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "displayName": "action_2",
+                  "id": "action_2",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_2"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=FSS"
+              },
+              "id": "runtime_2",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "displayName": "action_4",
+                  "id": "action_4",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_4"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=TAS"
+              },
+              "id": "runtime_3",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            }
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "f91f7d3b-8e41-427e-95e9-b6f0424c81f4",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Signez des accords pendant une réunion.",
+              "fetchTask": true,
+              "id": "createTaskModule",
+              "initialRun": false,
+              "title": "Live Sign",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "adobeApps"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_largeimage.png",
+      "lastUpdatedAt": "2025-07-10T20:10:11.8957827+00:00",
+      "longDescription": "Faites signer vos documents plus rapidement que jamais en ajoutant Acrobat Sign à Microsoft Teams, Microsoft 365 et Microsoft Outlook. Désormais, vous pouvez créer un accord et l’envoyer pour signature, signer vous-même des documents et en assurer le suivi à chaque étape, le tout à partir des applications Microsoft.\nAvec Acrobat Sign, les destinataires peuvent compléter et signer des documents dans n’importe quel navigateur ou sur un appareil mobile, à tout moment et partout, sans avoir besoin d’un compte. Vous pouvez également obtenir des signatures en direct dans une réunion Teams avec Live Sign.\nRéduisez les risques juridiques et de conformité. Les solutions Acrobat Sign sont conformes aux normes internationales et juridiquement contraignantes dans la quasi-totalité des pays du monde.\nLes modules complémentaires Acrobat Sign pour Microsoft Teams et Microsoft 365 requièrent une licence Acrobat Sign valide.\n- [Commencez avec une version d’essai gratuite de 30 jours](https://adobe.com/go/sign_teams_trial_from_appsource_fr)\n**Fonctionnalités principales d’Adobe Acrobat Sign pour Teams et Microsoft 365***\nCréez et envoyez des documents, des contrats et des formulaires numériques pour signature et approbation. Signez vous-même des documents et gérez votre activité Acrobat Sign sans quitter les applications dont vous vous servez tous les jours.\n- Consultez le statut en temps réel et prenez des mesures pour les documents en cours.\n- Envoyez facilement des fichiers pour signature sans quitter Teams. Choisissez parmi vos fichiers Office récents, vos fichiers Teams partagés, vos fichiers OneDrive, vos modèles Sign ou sur votre disque dur personnel.\n- Gérez vos documents, notamment en vérifiant leur statut, en envoyant des rappels et en affichant les détails des documents terminés.\n- Signez les documents qui sont en attente d’une action de votre part.\n- L’accès est facilité par l’authentification unique (SSO).\n**Fonctionnalités principales uniquement disponibles avec Adobe Acrobat Sign pour Teams**\n- Aidez vos clients quand ils en ont le plus besoin et accélérez la signature des accords grâce à Live Sign dans une réunion Teams.\n- Obtenez des informations sur le statut en temps réel grâce à des notifications exploitables dans votre flux d’activité. Vous recevez une notification lorsque des documents sont prêts à être signés et complétés en une seule étape. Vous recevez également une notification lorsque des documents sont terminés et vous pouvez afficher les détails, le tout directement dans votre flux d’activité.\n- Restez informé à chaque étape. Vérifiez quels documents sont prêts à être signés, sont signés ou en attente de signature avec le bot Adobe Acrobat Sign dans Teams.\n**En savoir plus**\n- [Acrobat Sign](https://youtu.be/a2JclC-yT_I)\n- [Acrobat Sign et Microsoft 365](https://www.adobe.com/fr/documentcloud/integrations/microsoft-office-365.html)\n- [Acrobat Sign pour Microsoft Teams](https://www.adobe.com/fr/documentcloud/integrations/microsoft-teams.html)\n- [Guide de l’utilisateur Acrobat Sign pour Teams](https://helpx.adobe.com/fr/sign/using/microsoft-teams-integration-user-guide.html)",
+      "mpnId": "4844927",
+      "officeAssetId": "WA104381233",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.adobe.com/go/privacy_policy",
+      "restrictedTenantTypes": [
+        "Freemium"
+      ],
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "11641",
+        "status": "attested"
+      },
+      "shortDescription": "Collaborez plus efficacement sur les accords avec Adobe Acrobat Sign",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/personalTabHome.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f-Home",
+          "name": "Accueil",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/manageTab.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f",
+          "name": "Gérer",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/documentsTab.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f-Documents",
+          "name": "Documents",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115505886",
+      "termsOfUseUrl": "https://www.adobe.com/go/terms",
+      "validDomains": [
+        "*.*.echosign.com",
+        "*.echosign.com",
+        "*.echocdn.com",
+        "*.adobesign.com"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=a2JclC-yT_I",
+      "webApplicationInfo": {
+        "id": "ea36b867-ca67-45fd-a61b-d2be86273167",
+        "resource": "api://static.echocdn.com/ea36b867-ca67-45fd-a61b-d2be86273167"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "0f56a9d1-f502-40f9-a9e8-816d7adbb68b",
+      "version": "4.1.0",
+      "name": "Adobe Acrobat Sign",
+      "accentColor": "#230201",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "すべてのプロセスが完了しました",
+            "templateText": "{localizedMessage}",
+            "type": "agreementCompleted"
+          },
+          {
+            "description": "署名を依頼",
+            "templateText": "{localizedMessage}",
+            "type": "signatureRequested"
+          },
+          {
+            "description": "フォーム入力を依頼",
+            "templateText": "{localizedMessage}",
+            "type": "formFillRequested"
+          },
+          {
+            "description": "同意を依頼",
+            "templateText": "{localizedMessage}",
+            "type": "acceptanceRequested"
+          },
+          {
+            "description": "受領確認を依頼",
+            "templateText": "{localizedMessage}",
+            "type": "acknowledgmentRequested"
+          },
+          {
+            "description": "委任を依頼",
+            "templateText": "{localizedMessage}",
+            "type": "delegationRequested"
+          },
+          {
+            "description": "承認を依頼",
+            "templateText": "{localizedMessage}",
+            "type": "approvalRequested"
+          }
+        ]
+      },
+      "amsSellerAccountId": 10100310,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "Mailbox.ReadWrite.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "使用可能なコマンドを確認できます。",
+                  "title": "ヘルプ"
+                },
+                {
+                  "description": "文書の現在のステータスを表示します。",
+                  "title": "ステータスを確認"
+                },
+                {
+                  "description": "あなたの処理待ちの文書を表示します。",
+                  "title": "自分の処理待ちの文書を表示"
+                },
+                {
+                  "description": "他のユーザーの処理待ちの文書を表示します。",
+                  "title": "他のユーザーの処理待ちの文書を表示"
+                },
+                {
+                  "description": "Adobe Acrobat Sign アカウントからログアウトします。",
+                  "title": "ログアウト"
+                },
+                {
+                  "description": "ログインして開始しましょう。",
+                  "title": "ログイン"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "f91f7d3b-8e41-427e-95e9-b6f0424c81f4",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Adobe Inc.",
+      "developerUrl": "https://acrobat.adobe.com/us/en/sign.html",
+      "extensions": [
+        {
+          "alternates": [
+            {
+              "alternateIcons": {
+                "highResolutionIcon": {
+                  "size": 64,
+                  "url": "https://static.echocdn.com/office365integration/icons/as_128.png"
+                },
+                "icon": {
+                  "size": 64,
+                  "url": "https://static.echocdn.com/office365integration/icons/as_64.png"
+                }
+              },
+              "hide": {
+                "storeOfficeAddin": {
+                  "assetId": "WA104381158",
+                  "officeAddinId": "5DE11285-4132-4ADD-A025-EB72EB16BC84"
+                }
+              }
+            }
+          ],
+          "audienceClaimUrl": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=ribbon&flow=HOME",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.4",
+                "name": "MailBox"
+              }
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "ribbons": [
+            {
+              "contexts": [
+                "mailCompose"
+              ],
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "tabs": [
+                {
+                  "builtInTabId": "TabDefault",
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "action_1",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_80.png"
+                            }
+                          ],
+                          "id": "sfsComposePaneButton",
+                          "label": "Send for Signature",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Request signatures on your documents.",
+                            "title": "Send attachments out for signature"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgComposeGroup",
+                      "label": "Adobe Acrobat Sign",
+                      "overriddenByRibbonApi": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "mailRead"
+              ],
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "tabs": [
+                {
+                  "builtInTabId": "TabDefault",
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "action_2",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_80.png"
+                            }
+                          ],
+                          "id": "fssReadPaneButton",
+                          "label": "Fill and Sign",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Easily fill out, sign and return the attached documents.",
+                            "title": "Sign the attachments"
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "action_3",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_80.png"
+                            }
+                          ],
+                          "id": "sfsReadPaneButton",
+                          "label": "Send for Signature",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Request signatures on your documents.",
+                            "title": "Send attachments out for signature"
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "action_4",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_80.png"
+                            }
+                          ],
+                          "id": "tasReadPaneButton",
+                          "label": "Agreement Status",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Check the status of your recent agreements.",
+                            "title": "View the status of your agreements"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgReadGroup",
+                      "label": "Adobe Acrobat Sign",
+                      "overriddenByRibbonApi": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "runtimes": [
+            {
+              "actions": [
+                {
+                  "displayName": "action_1",
+                  "id": "action_1",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_1"
+                },
+                {
+                  "displayName": "action_3",
+                  "id": "action_3",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_3"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=SFS"
+              },
+              "id": "runtime_1",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "displayName": "action_2",
+                  "id": "action_2",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_2"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=FSS"
+              },
+              "id": "runtime_2",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "displayName": "action_4",
+                  "id": "action_4",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_4"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=TAS"
+              },
+              "id": "runtime_3",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            }
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "f91f7d3b-8e41-427e-95e9-b6f0424c81f4",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "会議で契約書に署名します。",
+              "fetchTask": true,
+              "id": "createTaskModule",
+              "initialRun": false,
+              "title": "Live Sign",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "adobeApps"
+      ],
+      "languageTag": "ja",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_largeimage.png",
+      "lastUpdatedAt": "2025-07-10T20:10:11.8957827+00:00",
+      "longDescription": "Acrobat Sign を Microsoft Teams、Microsoft 365 および Microsoft Outlook に追加すると、これまで以上に文書にすばやく署名できます。契約書の作成、署名用の送信、文書の自己署名、すべてのステップでの進捗状況のトラックなど、すべての操作を Microsoft アプリから直接行えるようになりました。\nAcrobat Sign を使用して、受信者はいつでもどこでも、どのブラウザーやモバイルデバイスからでも文書を完成させて、署名できます。追加のアカウントは必要ありません。Live Sign を使用すれば、Teams の会議中にライブで署名を取得することもできます。\n法務リスクとコンプライアンスリスクを最小限にできます。Acrobat Sign ソリューションは、世界中のほぼすべての国でグローバルに準拠しており、法的拘束力があります。\nAcrobat Sign for Microsoft Teams and Microsoft 365 アドインを使用するには、Acrobat Sign の有効なライセンスが必要です。\n- [30 日間の無料体験を開始](https://adobe.com/go/sign_teams_trial_from_appsource_jp)\n**Adobe Acrobat Sign for Microsoft Teams and Microsoft 365 の主な機能**\n文書、契約書、およびデジタルフォームのオーサリング、署名および承認用の送信を行えます。すでに毎日利用しているアプリケーションから離れることなく、文書の自己署名や、すべての Acrobat Sign アクティビティの管理を行えます。\n- リアルタイムのステータスを表示し、進行中の文書にアクションを実行できます。\n- Teams を離れることなく、署名用のファイルを簡単に送信できます。最近の Office ファイル、共有 Teams ファイル、OneDrive ファイル、Sign テンプレート、または個人のハードドライブから選択できます。\n- ステータスの確認、リマインダーの送信、完成した文書の詳細の表示などにより、文書を管理できます。\n- あなたの処理待ちの文書に署名できます。\n- シングルサインオン (SSO) で、アクセスが簡単です。\n**Adobe Acrobat Sign for Microsoft Teams でのみ利用可能なの主な機能**\n- お客様が最も必要とするときにサポートし、Teams の会議中に Live Sign を使って契約書により早く署名できます。\n- アクティビティフィードのアクション可能な通知で、ステータスをリアルタイムに取得できます。文書に署名して文書を完成させる準備が整ったときに、ワンステップで通知を受け取ることができます。文書が完成したら通知を受け取り、詳細を表示できます。すべての操作を、アクティビティフィード内で直接行えます。\n- 最新情報をすべてのステップで入手できます。Teams では Adobe Acrobat Sign ボットを使用して、文書が署名用に送信済み、署名済み、署名待ちかを確認できます。\n**詳細情報**\n- [Acrobat Sign](https://youtu.be/a2JclC-yT_I)\n- [Acrobat Sign と Microsoft 365](https://www.adobe.com/jp/documentcloud/integrations/microsoft-office-365.html)\n- [Adobe Acrobat (Teams 向け)](https://www.adobe.com/jp/documentcloud/integrations/microsoft-teams.html)\n- [Acrobat Sign (Teams 向け) ユーザーガイド](https://helpx.adobe.com/jp/sign/using/microsoft-teams-integration-user-guide.html)",
+      "mpnId": "4844927",
+      "officeAssetId": "WA104381233",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.adobe.com/go/privacy_policy",
+      "restrictedTenantTypes": [
+        "Freemium"
+      ],
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "11641",
+        "status": "attested"
+      },
+      "shortDescription": "Adobe Acrobat Sign でより効率的に契約書で共同作業",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/personalTabHome.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f-Home",
+          "name": "ホーム",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/manageTab.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f",
+          "name": "管理",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/documentsTab.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f-Documents",
+          "name": "文書",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115505886",
+      "termsOfUseUrl": "https://www.adobe.com/go/terms",
+      "validDomains": [
+        "*.*.echosign.com",
+        "*.echosign.com",
+        "*.echocdn.com",
+        "*.adobesign.com"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=a2JclC-yT_I",
+      "webApplicationInfo": {
+        "id": "ea36b867-ca67-45fd-a61b-d2be86273167",
+        "resource": "api://static.echocdn.com/ea36b867-ca67-45fd-a61b-d2be86273167"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "0f56a9d1-f502-40f9-a9e8-816d7adbb68b",
+      "version": "4.1.0",
+      "name": "Adobe Acrobat Sign",
+      "accentColor": "#230201",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "계약 완료됨",
+            "templateText": "{localizedMessage}",
+            "type": "agreementCompleted"
+          },
+          {
+            "description": "서명 요청됨",
+            "templateText": "{localizedMessage}",
+            "type": "signatureRequested"
+          },
+          {
+            "description": "양식 작성 요청됨",
+            "templateText": "{localizedMessage}",
+            "type": "formFillRequested"
+          },
+          {
+            "description": "수락 요청됨",
+            "templateText": "{localizedMessage}",
+            "type": "acceptanceRequested"
+          },
+          {
+            "description": "수신 확인 요청됨",
+            "templateText": "{localizedMessage}",
+            "type": "acknowledgmentRequested"
+          },
+          {
+            "description": "위임 요청됨",
+            "templateText": "{localizedMessage}",
+            "type": "delegationRequested"
+          },
+          {
+            "description": "승인 요청됨",
+            "templateText": "{localizedMessage}",
+            "type": "approvalRequested"
+          }
+        ]
+      },
+      "amsSellerAccountId": 10100310,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "Mailbox.ReadWrite.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "내가 할 수 있는 일을 알아봅니다.",
+                  "title": "도움말"
+                },
+                {
+                  "description": "문서의 현재 상태를 봅니다.",
+                  "title": "상태 확인"
+                },
+                {
+                  "description": "사용자에게 대기 중인 문서를 표시합니다.",
+                  "title": "내 문서 표시"
+                },
+                {
+                  "description": "다른 사용자에게 대기 중인 문서를 표시합니다.",
+                  "title": "다른 사용자의 문서 표시"
+                },
+                {
+                  "description": "Adobe Acrobat Sign 계정에서 로그아웃합니다.",
+                  "title": "로그아웃"
+                },
+                {
+                  "description": "시작하려면 로그인하십시오.",
+                  "title": "로그인"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "f91f7d3b-8e41-427e-95e9-b6f0424c81f4",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Adobe Inc.",
+      "developerUrl": "https://acrobat.adobe.com/us/en/sign.html",
+      "extensions": [
+        {
+          "alternates": [
+            {
+              "alternateIcons": {
+                "highResolutionIcon": {
+                  "size": 64,
+                  "url": "https://static.echocdn.com/office365integration/icons/as_128.png"
+                },
+                "icon": {
+                  "size": 64,
+                  "url": "https://static.echocdn.com/office365integration/icons/as_64.png"
+                }
+              },
+              "hide": {
+                "storeOfficeAddin": {
+                  "assetId": "WA104381158",
+                  "officeAddinId": "5DE11285-4132-4ADD-A025-EB72EB16BC84"
+                }
+              }
+            }
+          ],
+          "audienceClaimUrl": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=ribbon&flow=HOME",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.4",
+                "name": "MailBox"
+              }
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "ribbons": [
+            {
+              "contexts": [
+                "mailCompose"
+              ],
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "tabs": [
+                {
+                  "builtInTabId": "TabDefault",
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "action_1",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_80.png"
+                            }
+                          ],
+                          "id": "sfsComposePaneButton",
+                          "label": "Send for Signature",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Request signatures on your documents.",
+                            "title": "Send attachments out for signature"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgComposeGroup",
+                      "label": "Adobe Acrobat Sign",
+                      "overriddenByRibbonApi": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "mailRead"
+              ],
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "tabs": [
+                {
+                  "builtInTabId": "TabDefault",
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "action_2",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/FSS_80.png"
+                            }
+                          ],
+                          "id": "fssReadPaneButton",
+                          "label": "Fill and Sign",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Easily fill out, sign and return the attached documents.",
+                            "title": "Sign the attachments"
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "action_3",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/SFS_80.png"
+                            }
+                          ],
+                          "id": "sfsReadPaneButton",
+                          "label": "Send for Signature",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Request signatures on your documents.",
+                            "title": "Send attachments out for signature"
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "action_4",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://static.echocdn.com/office365integration/icons/TAS_80.png"
+                            }
+                          ],
+                          "id": "tasReadPaneButton",
+                          "label": "Agreement Status",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Check the status of your recent agreements.",
+                            "title": "View the status of your agreements"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgReadGroup",
+                      "label": "Adobe Acrobat Sign",
+                      "overriddenByRibbonApi": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "runtimes": [
+            {
+              "actions": [
+                {
+                  "displayName": "action_1",
+                  "id": "action_1",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_1"
+                },
+                {
+                  "displayName": "action_3",
+                  "id": "action_3",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_3"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=SFS"
+              },
+              "id": "runtime_1",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "displayName": "action_2",
+                  "id": "action_2",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_2"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=FSS"
+              },
+              "id": "runtime_2",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "displayName": "action_4",
+                  "id": "action_4",
+                  "multiselect": false,
+                  "pinnable": false,
+                  "supportsNoItemContext": false,
+                  "type": "openPage",
+                  "view": "view_4"
+                }
+              ],
+              "code": {
+                "page": "https://static.echocdn.com/office365integration/index.html?appVersion=4.1.0&locale=en-US&source=command&flow=TAS"
+              },
+              "id": "runtime_3",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.4",
+                    "name": "Mailbox"
+                  }
+                ]
+              },
+              "type": "general"
+            }
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "f91f7d3b-8e41-427e-95e9-b6f0424c81f4",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "회의에서 계약에 서명하십시오.",
+              "fetchTask": true,
+              "id": "createTaskModule",
+              "initialRun": false,
+              "title": "Live Sign",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "adobeApps"
+      ],
+      "languageTag": "ko",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_largeimage.png",
+      "lastUpdatedAt": "2025-07-10T20:10:11.8957827+00:00",
+      "longDescription": "Microsoft Teams, Microsoft 365와 Microsoft Outlook에 Acrobat Sign을 추가하면 그 어느 때보다 빠르게 문서에 서명할 수 있습니다. 이제 Microsoft 앱에서 바로 계약을 만들고, 서명을 위해 전송하고, 직접 문서에 서명할 수 있습니다.\nAcrobat Sign을 사용하면 수신자는 계정이 없어도 어떤 브라우저나 모바일 디바이스에서나 문서를 작성하고 서명할 수 있습니다. 또는 Teams 회의에서 Live Sign으로 실시간으로 서명을 받을 수 있습니다.\n법적 및 준수 위험을 최소화하세요. Acrobat 솔루션은 세계적으로 호환되며 세계 거의 어디서나 법적 구속력을 갖습니다.\nMicrosoft용 Acrobat Sign과 Microsoft 365 추가 기능에는 유효한 Acrobat Sign 라이선스가 필요합니다.\n- [30일 무료 체험판으로 시작하기](https://adobe.com/go/sign_teams_trial_from_appsource_kr)\n**Teams용 Adobe Acrobat Sign 및 Microsoft 365 주요 기능**\n문서, 계약, 디지털 양식을 작성 및 승인을 위해 전송합니다. 문서에 직접 서명하고 매일 사용하는 애플리케이션에서 벗어나지 않고 Acrobat Sign 활동을 모두 관리할 수 있습니다.\n- 진행 중인 문서의 실시간 상태를 확인하고 조치를 취합니다.\n- Teams에서 나가지 않고 손쉽게 서명을 위해 파일을 전송합니다. 최근 Office 파일, 공유된 Teams 파일, OneDrive 파일, Sign 템플릿 또는 개인 하드 드라이브에서 파일을 전송하십시오.\n- 상태 확인, 알림 보내기, 완료된 문서의 세부 사항 보기 등 문서를 관리합니다.\n- 대기 중인 문서에 서명합니다.\n- SSO(Single Sign-On)로 액세스가 쉬워집니다.\n**Teams용 Adobe Acrobat Sign 전용 주요 기능**가장 필요할 때 고객을 지원하고 Teams 회의에서 Live Sign으로 계약에 더 빠르게 서명 받으십시오.\n- 활동 피드에서 작업할 수 있는 알림으로 실시간으로 상태를 확인합니다. 문서에 서명할 수 있게 되면 알림을 받고 문서를 한 단계로 완료할 수 있습니다. 문서가 완료되면 알림을 받고 세부 사항을 확인할 수 있습니다. 모두 활동 피드에서 바로 확인할 수 있습니다.\n- 모든 단계에서 업데이트를 받습니다. Teams용 Adobe Acrobat Sign 봇을 사용해 어떤 문서가 서명을 위해 전송되었는지, 서명되었는지, 또는 서명을 기다리는 중인지 확인할 수 있습니다.\n**자세히 알아보기**\n- [Acrobat Sign](https://youtu.be/a2JclC-yT_I)\n- [Acrobat Sign 및 Microsoft 365](https://www.adobe.com/documentcloud/integrations/microsoft-office-365.html)\n- [Microsoft Teams용 Acrobat Sign](https://www.adobe.com/documentcloud/integrations/microsoft-teams.html)\n- [Teams용 Acrobat Sign 사용 안내서](https://helpx.adobe.com/sign/using/microsoft-teams-integration-user-guide.html)",
+      "mpnId": "4844927",
+      "officeAssetId": "WA104381233",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.adobe.com/go/privacy_policy",
+      "restrictedTenantTypes": [
+        "Freemium"
+      ],
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "11641",
+        "status": "attested"
+      },
+      "shortDescription": "Adobe Acrobat Sign을 사용하여 보다 효율적으로 계약을 공동 작업할 수 있습니다.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2025071115505886/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/personalTabHome.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f-Home",
+          "name": "홈",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/manageTab.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f",
+          "name": "관리",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://static.echocdn.com/office365integration/documentsTab.html?appVersion=4.1.0",
+          "entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f-Documents",
+          "name": "문서",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115505886",
+      "termsOfUseUrl": "https://www.adobe.com/go/terms",
+      "validDomains": [
+        "*.*.echosign.com",
+        "*.echosign.com",
+        "*.echocdn.com",
+        "*.adobesign.com"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=a2JclC-yT_I",
+      "webApplicationInfo": {
+        "id": "ea36b867-ca67-45fd-a61b-d2be86273167",
+        "resource": "api://static.echocdn.com/ea36b867-ca67-45fd-a61b-d2be86273167"
+      }
+    }
+  ]
+}

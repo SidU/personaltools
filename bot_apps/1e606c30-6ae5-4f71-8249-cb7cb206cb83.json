@@ -1,0 +1,2881 @@
+{
+  "manifestVersion": "1.11",
+  "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+  "version": "1.0.0",
+  "name": "Splashtop SOS - EU",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 74287270,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+      "isNotificationOnly": true,
+      "scopes": [
+        "personal",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ITAdmin",
+    "Productivity",
+    "Utilities"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Splashtop Inc.",
+  "developerUrl": "https://www.splashtop.com",
+  "devicePermissions": [
+    "OpenExternal"
+  ],
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "",
+          "fetchTask": true,
+          "id": "CreateSOSDownloadLink",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Log in",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "languageTag": "en-us",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+  "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+  "longDescription": "Splashtop is integrated with Microsoft Teams to enable your technicians to remotely support your users using the Splashtop SOS - EU service.\nYou can easily initiate a remote desktop connection to your users’ computers to provide support, directly from within chat window. It takes only a few clicks to start a session. After the support case ends, you can check session history on Session Logs tab. Your users do not need to have any software pre-installed for all this to work.\nSplashtop On-Demand Support is a solution optimized for MSPs and IT professionals looking for a fast and user-friendly remote support solution, with high performance and robust security.\n**Key features**\n- European based infrastructure.\n- Easily start a remote session to the user’s computer from within a chat.\n- Full Splashtop features are supported in a remote session, e.g. file transfer, remote reboot, chat, multi-monitor, copy-and-paste, share technician desktop, etc.\n- Review the session logs directly on your Teams UI.\n- Remote sessions are fully encrypted.\n**Useful links**\n- Get started: [link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- Contact us: [feedback@splashtop.com](mailto:feedback@splashtop.com)\n- Help support site: [link](https://support-splashtopbusiness.splashtop.com/)\n- Sign up: [https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+  "officeAssetId": "WA200003751",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.splashtop.com/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Remotely support your users from Microsoft Teams using Splashtop SOS - EU.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+      "entityId": "setting",
+      "name": "Settings",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+      "entityId": "sessions",
+      "name": "Session Logs",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+      "entityId": "help",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071112470321",
+  "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+  "validDomains": [
+    "my.splashtop.eu"
+  ],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en-us",
+    "zh-cn",
+    "zh-sg",
+    "zh-hk",
+    "zh-mo",
+    "zh-tw",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "pt"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "SOS-Link erstellen",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "Splashtop ist in Microsoft Teams integriert, um Ihren Technikern die Möglichkeit zu geben, Ihre Benutzer über den Splashtop SOS - EU-Dienst aus der Ferne zu unterstützen.\nSie können ganz einfach eine Fernverbindung zu den Computern Ihrer Benutzer starten, um direkt aus dem Chat-Fenster heraus Support zu leisten. Es sind nur wenige Klicks nötig, um eine Verbindung zu starten. Nach Beendigung des Supportfalls können Sie den Sitzungsverlauf auf der Registerkarte Sitzungsprotokolle überprüfen. Auf den Computern Ihrer Benutzer muss keine Software vorinstalliert sein, damit dies alles funktioniert.\nSplashtop On-Demand Support ist eine Lösung, die für MSPs und IT-Profis optimiert ist, die eine schnelle und benutzerfreundliche Fernsupportlösung mit hoher Leistung und robuster Sicherheit suchen.\n**Hauptfunktionen**\n- European based infrastructure.\n- Starten Sie ganz einfach eine Fernsitzung zum Computer des Benutzers aus einem Chat heraus.\n- Alle Splashtop-Funktionen werden in einer Fernsitzung unterstützt, z.B. Dateiübertragung, Fernneustart, Chat, Multi-Monitor, Kopieren und Einfügen, Freigabe des Techniker-Desktops, usw.\n- Überprüfen Sie die Sitzungsprotokolle direkt auf Ihrer Teams-Benutzeroberfläche.\n- Fernsitzungen sind vollständig verschlüsselt.\n**Nützliche Links**\n- Erste Schritte: [link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- Kontakt: [feedback@splashtop.com](mailto:feedback@splashtop.com)\n- Website des Supports: [link](https://support-splashtopbusiness.splashtop.com/)\n- Registrieren: [https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Unterstützen Sie Ihre Benutzer aus der Ferne mit Splashtop SOS - EU.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "Einstellungen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "Sitzungsprotokolle",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "Hilfe",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Crear vínculo SOS",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "Splashtop está integrado con Microsoft Teams para permitir que sus técnicos brinden respaldo a distancia a sus usuarios empleando el servicio Splashtop SOS - EU. \nPuede fácilmente iniciar una conexión de escritorio remoto para brindarle soporte a los ordenadores de sus usuarios, directamente desde cualquier ventana de chat. Eso solo requerirá hacer unos clics para iniciar una sesión. Después de que termine un caso de servicio de soporte,  puede revisar el historial de sesión en la pestaña de Registros de Sesión. Sus usuarios no necesitan poseer ningún software preinstalado para que funcione. \nSplashtop On-Demand Support es una solución optimizada para proveedores de servicios administrados (MPS) y profesionales de TI que buscan una solución de soporte remoto rápida y amigable para el usuario, con un gran nivel de rendimiento y una sólida seguridad.\n**Características clave**\n- European based infrastructure.\n- Inicio de sesión a distancia con facilidad en el ordenador de un usuario desde una ventana de chat.\n- Todas las funciones de Splashtop están respaldadas en una sesión remota, ej.: transferencia de archivo, reinicio remoto, chat, pantalla múltiple, copiar y pegar, escritorio técnico compartido, etc.\n- Comprobación de registros de sesión directamente en su interfaz de usuario (IU) de Teams. \n- Las sesiones remotas están completamente cifradas.\n**Vínculos útiles**\n- Introducción: [link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- Contáctanos: [feedback@splashtop.com](mailto:feedback@splashtop.com)\n- Sitio de soporte: [link](https://support-splashtopbusiness.splashtop.com/)\n- Registrarse: [https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Soporte a distancia sus usuarios con Splashtop SOS - EU.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "Configuración",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "Registros de sesión",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "Ayuda",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Créer un lien SOS",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "Splashtop est intégré à Microsoft Teams pour permettre à vos techniciens d'assister à distance vos utilisateurs à l'aide du service Splashtop SOS - EU.\nVous pouvez facilement initier une connexion de bureau à distance sur les ordinateurs de vos utilisateurs pour fournir une assistance directement depuis la fenêtre de conversation. Il suffit de quelques clics pour démarrer une session. Une fois la demande d'assistance terminée, vous pouvez vérifier l'historique des sessions dans l'onglet Journaux de session. Vos utilisateurs n'ont besoin d'aucun logiciel pré-installé pour que tout cela fonctionne.\nSplashtop On-Demand Support est optimisé pour les services d’infogérance et les professionnels de l'informatique à la recherche d'une solution d'assistance à distance rapide et conviviale, avec des performances élevées et une sécurité robuste.\n**Fonctionnalités clés**\n- European based infrastructure.\n- Démarrez facilement une session à distance sur l'ordinateur de l'utilisateur à partir d'un chat.\n- Les fonctionnalités complètes de Splashtop sont prises en charge dans une session à distance, par ex. transfert de fichiers, redémarrage à distance, chat, multi-moniteur, copier-coller, partage du bureau du technicien, etc.\n- Consultez les journaux de session directement sur votre interface utilisateur Teams.\n- Les sessions à distance sont entièrement cryptées.\n**Liens utiles**\n- Commencer : [link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- Nous contacter : [feedback@splashtop.com](mailto:feedback@splashtop.com)\n- Support en ligne : [link](https://support-splashtopbusiness.splashtop.com/)\n- S'inscrire : [https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Soutenez à distance de vos utilisateurs avec Splashtop SOS - EU.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "Paramètres",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "Journaux de session",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "Aide",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Crea collegamento SOS",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "Splashtop è integrato con Microsoft Teams per consentire ai tuoi tecnici di supportare in remoto i tuoi utenti utilizzando il servizio Splashtop SOS - EU.\nPuoi facilmente avviare una connessione desktop remoto ai computer dei tuoi utenti per fornire supporto, direttamente dalla finestra di chat. Bastano pochi clic per avviare una sessione. Al termine del caso di supporto, è possibile controllare la cronologia delle sessioni nella scheda Registri sessioni. I tuoi utenti non devono avere alcun software preinstallato per far funzionare tutto questo.\nSplashtop On-Demand Support è una soluzione ottimizzata per MSP e professionisti IT che cercano una soluzione di supporto remoto veloce e facile da usare, con alte prestazioni e sicurezza robusta.\n**Funzionalità principali**\n- European based infrastructure.\n- Easily start a remote session to the user’s computer from within a chat.\n- Full Splashtop features are supported in a remote session, e.g. file transfer, remote reboot, chat, multi-monitor, copy-and-paste, share technician desktop, etc.\n- Review the session logs directly on your Teams UI.\n- Remote sessions are fully encrypted.\n**Collegamenti utili**\n- Introduzione: [link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- Contattaci: [feedback@splashtop.com](mailto:feedback@splashtop.com)\n- Sito supporto: [link](https://support-splashtopbusiness.splashtop.com/)\n- Registrarse: [https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Supporta da remoto i tuoi utenti con Splashtop SOS - EU.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "Impostazioni",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "Registri di sessione",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "Aiuto",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "SOS リンクの作成",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "ja",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "Splashtop は Microsoft Teams と統合されており、技術者は Splashtop SOS - EUを使用してユーザーを遠隔からサポートすることができます。\nユーザーのコンピュータにリモートデスクトップ接続し、チャットウィンドウから直接サポートすることができます。数回クリックするだけで接続を開始でき、サポート終了後は「セッションログ」タブからセッション履歴を確認することができます。ユーザーはこれら機能を利用するために予めソフトウェアをインストールしておく必要はありません。\nSplashtop On-Demand Support は、高いパフォーマンスと堅牢なセキュリティを備え、迅速で使い勝手の良い遠隔サポートツールを求める MSP や IT 担当者向けに最適なソリューションです。\n**主な機能**\n- European based infrastructure.\n- ユーザーのコンピュータへはチャットから簡単にリモートセッションを開始できます。\n- リモートセッションではファイル転送、リモート再起動、チャット、マルチモニター、コピー＆ペースト、技術者デスクトップの共有など、Splashtop の全機能がサポートされます。\n- Teams の UI 上で直接セッション履歴を確認できます。\n- リモートセッションは完全に暗号化されます。\n**役に立つリンク**\n- はじめに：[link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- お問い合わせ：[feedback@splashtop.com](mailto:feedback@splashtop.com)\n- サポート サイト：[link](https://support-splashtopbusiness.splashtop.com/)\n- サインアップ：[https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Splashtop SOS - EU を使用してユーザーをリモートでサポートします。",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "設定",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "セッションログ",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "手助け",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "SOS 링크 만들기",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "ko",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "Splashtop이 Microsoft Teams와 통합되어, 기술자들로 하여금 Splashtop SOS - EU 서비스를 통해 사용자들을 원격으로 지원할 수 있게 해 줍니다.\n사용자 컴퓨터로의 원격 데스크톱 연결을 채팅창 내에서 직접 손쉽게 시작하여 지원을 제공할 수 있습니다. 몇 번의 클릭만으로 세션이 시작됩니다. 지원 케이스가 끝난 후, 세션 기록을 세션 로그 탭에서 확인할 수 있습니다. 귀하의 사용자들은 이런 작업을 위해 어떠한 소프트웨어도 사전 설치할 필요가 없습니다.\nSplashtop On-Demand Support는 고성능에 강력한 보안을 제공하면서 빠르고 사용이 쉬운 원격 지원 솔루션을 원하는 MSP와 IT 전문가들을 위해 최적화된 솔루션입니다.\n**주요 기능**\n- European based infrastructure.\n- 사용자 컴퓨터로의 원격 세션을 채팅 중 손쉽게 시작합니다.\n- 원격 세션 중Splashtop의 모든 기능들이 지원됩니다. 예) 파일 전송, 원격 리부팅, 채팅, 다대다 모니터, 복사 및 붙여넣기, 기술자 데스크톱 공유, 등등.\n- 귀하의 Teams UI에서 직접 세션 로그들을 열람합니다.\n- 원격 세션들은 완전히 암호화됩니다.\n**유용한 링크**\n- 시작: [link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- 사용자 문의: [feedback@splashtop.com](mailto:feedback@splashtop.com)\n- 지원 사이트: [link](https://support-splashtopbusiness.splashtop.com/)\n- 등록: [https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Splashtop SOS - EU 로 원격으로 사용자를 지원합니다.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "설정",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "세션 로그",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "도움",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Criar link SOS",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "O Splashtop é integrado ao Microsoft Teams para permitir aos seus técnicos oferecerem suporte remoto aos usuários usando o serviço Splashtop SOS - EU.\nVocê pode facilmente iniciar uma conexão de área de trabalho remota com os computadores de seus usuários para fornecer suporte, direta- mente da janela de bate-papo. Leva apenas alguns cliques para iniciar uma sessão. Após o término do caso de suporte, você pode verificar o histórico da sessão na guia Logs de sessão. Seus usuários não precisam ter nenhum software pré-instalado para tudo isso funcionar.\nO Splashtop On-Demand Support é uma solução otimizada para MSPs e profissionais de TI que buscam uma solução de suporte remoto rápi da e fácil de usar, com alto desempenho e segurança robusta.\n**Principais recursos**\n- European based infrastructure.\n- Inicie facilmente uma sessão remota para o computador do usuário a partir de um bate-papo.\n- Recursos completos do Splashtop são suportados em uma se- ssão remota, por exemplo, transferência de arquivos, reini- cialização remota, bate-papo, vários monitores, copiar e co- lar, compartilhar a área de trabalho do técnico, etc.\n- Revisar os logs de sessão diretamente na IU do Teams.\n- As sessões remotas são totalmente criptografadas.\n**Links Úteis**\n- Introdução: [link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- Fale conosco: [feedback@splashtop.com](mailto:feedback@splashtop.com)\n- Site de Suporte: [link](https://support-splashtopbusiness.splashtop.com/)\n- Inscrever-se: [https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Apoiar os usuários remotamente com Splashtop SOS - EU.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "Definições",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "Registros da sessão",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "Ajuda",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "创建 SOS 链接",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "zh-cn",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "Splashtop 与 Microsoft Teams 集成，确保技术员能够使用 Splashtop SOS - EU 服务远程支持用户。\n您可以轻松启动远程桌面，连接到用户计算机，直接在聊天窗口为用户提供支持！只需点击几次鼠标即可开始会话。远程支持结束后，您可以在“会话日志”选项卡查看会话历史记录。上述操作均无需用户预先安装任何软件。\nSplashtop On-Demand Support 是对用户友好的快速远程支持解决方案，专为 MSP 和 IT 专业人员设计，具有高性能和强大的安全性。\n**主要功能**\n- European based infrastructure.\n- 在聊天中轻松启动远程会话，连接到用户计算机。\n- 远程会话期间支持 Splashtop 的所有功能，如文件传输、远程重启、聊天、多显示器、复制粘贴、共享技术员屏幕等。\n- 直接在 Teams 用户界面查看会话日志。\n- 远程会话已完全加密。\n**实用链接**\n- 入门：[link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- 联系我们：[feedback@splashtop.com](mailto:feedback@splashtop.com)\n- 支持网站：[link](https://support-splashtopbusiness.splashtop.com/)\n- 注册：[https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "使用 Splashtop SOS - EU 远程支持用户。",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "设置",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "会话日志",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "帮助",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "建立 SOS 連結",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "zh-hk",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "Splashtop  與 Microsoft Teams 整合，方便技術人員藉由 Splashtop SOS - EU 服務為使用者提供遠端支援。\n您可以直接從聊天視窗啟動與遠端電腦桌面的連接，只要輕鬆按幾下即可開始連線，快速支援遠端使用者。支援結束後，您可在「連線記錄」標籤中查看連線歷史記錄。這一切完全不需要遠端使用者預先安裝任何軟體。\nSplashtop On-Demand Support 是快捷易用的遠端支援解決方案，專為 MSP 和 IT 專業人員設計，具有高性能和強大的安全性。\n**主要功能**\n- European based infrastructure.\n- 從聊天中輕鬆啟動與使用者電腦的遠端連線。\n- 遠端連線支援完整的 Splashtop 功能，例如檔案傳輸、遠端重啟、聊天、多螢幕、複製貼上、共享技術人員桌面等。\n- 直接在 Teams 介面上查看連線記錄。\n- 遠端連線完全加密。\n**實用連結**\n- 入門：[link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- 聯繫我們：[feedback@splashtop.com](mailto:feedback@splashtop.com)\n- 支援網站：[link](https://support-splashtopbusiness.splashtop.com/)\n- 註冊：[https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "使用 Splashtop SOS - EU 遠端支援使用者。",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "設定",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "連線記錄",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "幫助",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "建立 SOS 連結",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "zh-mo",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "Splashtop  與 Microsoft Teams 整合，方便技術人員藉由 Splashtop SOS - EU 服務為使用者提供遠端支援。\n您可以直接從聊天視窗啟動與遠端電腦桌面的連接，只要輕鬆按幾下即可開始連線，快速支援遠端使用者。支援結束後，您可在「連線記錄」標籤中查看連線歷史記錄。這一切完全不需要遠端使用者預先安裝任何軟體。\nSplashtop On-Demand Support 是快捷易用的遠端支援解決方案，專為 MSP 和 IT 專業人員設計，具有高性能和強大的安全性。\n**主要功能**\n- European based infrastructure.\n- 從聊天中輕鬆啟動與使用者電腦的遠端連線。\n- 遠端連線支援完整的 Splashtop 功能，例如檔案傳輸、遠端重啟、聊天、多螢幕、複製貼上、共享技術人員桌面等。\n- 直接在 Teams 介面上查看連線記錄。\n- 遠端連線完全加密。\n**實用連結**\n- 入門：[link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- 聯繫我們：[feedback@splashtop.com](mailto:feedback@splashtop.com)\n- 支援網站：[link](https://support-splashtopbusiness.splashtop.com/)\n- 註冊：[https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "使用 Splashtop SOS - EU 遠端支援使用者。",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "設定",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "連線記錄",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "幫助",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "创建 SOS 链接",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "zh-sg",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "Splashtop 与 Microsoft Teams 集成，确保技术员能够使用 Splashtop SOS - EU 服务远程支持用户。\n您可以轻松启动远程桌面，连接到用户计算机，直接在聊天窗口为用户提供支持！只需点击几次鼠标即可开始会话。远程支持结束后，您可以在“会话日志”选项卡查看会话历史记录。上述操作均无需用户预先安装任何软件。\nSplashtop On-Demand Support 是对用户友好的快速远程支持解决方案，专为 MSP 和 IT 专业人员设计，具有高性能和强大的安全性。\n**主要功能**\n- European based infrastructure.\n- 在聊天中轻松启动远程会话，连接到用户计算机。\n- 远程会话期间支持 Splashtop 的所有功能，如文件传输、远程重启、聊天、多显示器、复制粘贴、共享技术员屏幕等。\n- 直接在 Teams 用户界面查看会话日志。\n- 远程会话已完全加密。\n**实用链接**\n- 入门：[link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- 联系我们：[feedback@splashtop.com](mailto:feedback@splashtop.com)\n- 支持网站：[link](https://support-splashtopbusiness.splashtop.com/)\n- 注册：[https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "使用 Splashtop SOS - EU 远程支持用户。",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "设置",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "会话日志",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "帮助",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "1e606c30-6ae5-4f71-8249-cb7cb206cb83",
+      "version": "1.0.0",
+      "name": "Splashtop SOS - EU",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74287270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Splashtop Inc.",
+      "developerUrl": "https://www.splashtop.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9d16c37e-2af2-408d-b555-bc645bd05121",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": true,
+              "id": "CreateSOSDownloadLink",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "建立 SOS 連結",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "zh-tw",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_largeimage.png",
+      "lastUpdatedAt": "2022-02-07T03:13:04.5114108+00:00",
+      "longDescription": "Splashtop  與 Microsoft Teams 整合，方便技術人員藉由 Splashtop SOS - EU 服務為使用者提供遠端支援。\n您可以直接從聊天視窗啟動與遠端電腦桌面的連接，只要輕鬆按幾下即可開始連線，快速支援遠端使用者。支援結束後，您可在「連線記錄」標籤中查看連線歷史記錄。這一切完全不需要遠端使用者預先安裝任何軟體。\nSplashtop On-Demand Support 是快捷易用的遠端支援解決方案，專為 MSP 和 IT 專業人員設計，具有高性能和強大的安全性。\n**主要功能**\n- European based infrastructure.\n- 從聊天中輕鬆啟動與使用者電腦的遠端連線。\n- 遠端連線支援完整的 Splashtop 功能，例如檔案傳輸、遠端重啟、聊天、多螢幕、複製貼上、共享技術人員桌面等。\n- 直接在 Teams 介面上查看連線記錄。\n- 遠端連線完全加密。\n**實用連結**\n- 入門：[link](https://support-splashtopbusiness.splashtop.com/hc/articles/360062237051)\n- 聯繫我們：[feedback@splashtop.com](mailto:feedback@splashtop.com)\n- 支援網站：[link](https://support-splashtopbusiness.splashtop.com/)\n- 註冊：[https://www.splashtop.com/sos](https://www.splashtop.com/sos)",
+      "officeAssetId": "WA200003751",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.splashtop.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "使用 Splashtop SOS - EU 遠端支援使用者。",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1e606c30-6ae5-4f71-8249-cb7cb206cb83/2025071112470321/1e606c30-6ae5-4f71-8249-cb7cb206cb83_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/setting",
+          "entityId": "setting",
+          "name": "設定",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/session-logs",
+          "entityId": "sessions",
+          "name": "連線記錄",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://my.splashtop.eu/external_services/ms_teams/help",
+          "entityId": "help",
+          "name": "幫助",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112470321",
+      "termsOfUseUrl": "https://www.splashtop.com/terms/splashtop",
+      "validDomains": [
+        "my.splashtop.eu"
+      ]
+    }
+  ]
+}

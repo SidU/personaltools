@@ -1,0 +1,1334 @@
+{
+  "manifestVersion": "1.14",
+  "id": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+  "version": "23.2.33",
+  "name": "Core Fax (CA)",
+  "accentColor": "#111b58",
+  "amsSellerAccountId": 72816780,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Usage: send fax to fax_number",
+              "title": "send fax to"
+            },
+            {
+              "description": "How to interact with Core Fax bot.",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "FilesAndDocuments",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "OpenText Americas",
+  "developerUrl": "https://www.opentext.com/products/xm-fax",
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Send this message using Core Fax.",
+          "fetchTask": true,
+          "id": "share-by-fax",
+          "initialRun": true,
+          "title": "Send using Core Fax",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_largeimage.png",
+  "lastUpdatedAt": "2024-12-03T15:35:32.1001746+00:00",
+  "longDescription": "Core Fax integration with Microsoft Teams lets users send faxes directly from Microsoft Teams in a secured and streamlined fashion. The Core Fax Microsoft Teams application eliminates mishandling of sensitive information by allowing users to manage document transmissions without leaving Microsoft Teams – so no printing or device switching. \n\nOpenText™ Core Fax™ is an enterprise-grade digital fax solution offering businesses of all sizes the features and functionality they need to keep communications flowing. Core Fax solution provides complete encryption for faxes with centralized traceability for easier audits and optional zero retention settings to further ensure document protection. Core Fax enhances productivity, reduces costs and helps organizations comply the with highest security requirements.\n\nCore Fax cloud account is required to use the Microsoft Teams Core Fax application.\n\nImportant: Core Fax has three Microsoft Teams apps. Make sure to select the appropriate version based on the location of your Core Fax account.\n\nThe xmedius domain corresponds to the region of your enterprise account: \n* For xmedius.com – select Core Fax (US) \n* For xmedius.ca – select Core Fax (CA) \n* For xmedius.eu – select Core Fax (EMEA) \n* For corefax.opentext.au – select Core Fax (AU) \n\nTo learn more about Core Fax, please visit our [web site](https://www.opentext.com/products/xm-fax).",
+  "mpnId": "1590175",
+  "officeAssetId": "WA200006089",
+  "permissions": [],
+  "privacyUrl": "https://www.opentext.com/about/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Use the Core Fax app to securely send documents from Microsoft Teams.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_smallimage.png",
+  "systemVersion": "2025071115062806",
+  "termsOfUseUrl": "https://portal.xmedius.ca/terms_of_service",
+  "validDomains": [
+    "token.botframework.com",
+    "*.xmedius.ca",
+    "*.opentext.com"
+  ],
+  "webApplicationInfo": {
+    "id": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+    "resource": "api://botid-fdd3589e-bbd2-4223-b4a4-b6b492635f43"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.14",
+      "id": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+      "version": "23.2.33",
+      "name": "Core Fax (CA)",
+      "accentColor": "#111b58",
+      "amsSellerAccountId": 72816780,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Syntax: Fax senden an Faxnummer",
+                  "title": "Fax senden an"
+                },
+                {
+                  "description": "Informationen zur Interaktion mit dem Core Fax-Bot.",
+                  "title": "Hilfe"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": true,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "FilesAndDocuments",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "OpenText Americas",
+      "developerUrl": "https://www.opentext.com/products/xm-fax",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+          "canUpdateConfiguration": true,
+          "commands": [
+            {
+              "context": [
+                "message"
+              ],
+              "description": "Diese Mitteilung mit Core Fax senden.",
+              "fetchTask": true,
+              "id": "share-by-fax",
+              "initialRun": true,
+              "title": "Mit Core Fax senden",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_largeimage.png",
+      "lastUpdatedAt": "2024-12-03T15:35:32.1001746+00:00",
+      "longDescription": "Die Core Fax-Integration in Microsoft Teams ermöglicht ein sicheres und unkompliziertes Senden von Faxen direkt aus Microsoft Teams. Die Core Fax Microsoft Teams-Anwendung verhindert die Fehlmanipulation von vertraulichen Daten, indem die Benutzer die Dokumentübertragung direkt aus Microsoft Teams verwalten können – ohne Dokumente drucken oder das Gerät wechseln zu müssen.\n\nOpenText™ Core Fax™ ist eine digitale Faxlösung für Unternehmen, die Geschäften beliebiger Größe alle Funktionen bereitstellt, die für eine flüssige Kommunikation erforderlich sind. Die Core Fax-Lösung bietet eine vollständige Verschlüsselung der Faxe mit zentralisierter Nachverfolgbarkeit für einfachere Audits sowie Einstellungen zur optionalen Verhinderung der Dokumentbeibehaltung, die den Dokumentschutz erweitern. Core Fax steigert die Produktivität, reduziert Kosten und unterstützt Unternehmen beim Einhalten der strengsten Sicherheitsanforderungen.\n\nZur Verwendung der Microsoft Teams Core Fax-Anwendung ist ein Core Fax-Cloud-Konto erforderlich.\n\nWichtig: Für Core Fax gibt es drei Microsoft Teams-Apps. Vergewissern Sie sich, dass Sie je nach Standort Ihres Core Fax-Kontos die richtige Version auswählen.\n\nDie xmedius-Domäne entspricht der Region Ihres Unternehmenskontos: \n* Für xmedius.com wählen Sie Core Fax (US). \n* Für xmedius.ca wählen Sie Core Fax (CA). \n* Für xmedius.eu wählen Sie Core Fax (EMEA) \n* Für corefax.opentext.au wählen Sie Core Fax (AU) \n\nWeitere Informationen zu Core Fax finden Sie auf unserer [Website](https://www.opentext.com/products/xm-fax).",
+      "mpnId": "1590175",
+      "officeAssetId": "WA200006089",
+      "permissions": [],
+      "privacyUrl": "https://www.opentext.com/about/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Die Core Fax-App ermöglicht das sichere Senden von Dokumenten in Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_smallimage.png",
+      "systemVersion": "2025071115062806",
+      "termsOfUseUrl": "https://portal.xmedius.ca/terms_of_service",
+      "validDomains": [
+        "token.botframework.com",
+        "*.xmedius.ca",
+        "*.opentext.com"
+      ],
+      "webApplicationInfo": {
+        "id": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+        "resource": "api://botid-fdd3589e-bbd2-4223-b4a4-b6b492635f43"
+      }
+    },
+    {
+      "manifestVersion": "1.14",
+      "id": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+      "version": "23.2.33",
+      "name": "Core Fax (CA)",
+      "accentColor": "#111b58",
+      "amsSellerAccountId": 72816780,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Utilisation : envoyer un fax à numéro_fax",
+                  "title": "envoyer un fax à"
+                },
+                {
+                  "description": "Comment interagir avec le bot Core Fax.",
+                  "title": "aide"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": true,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "FilesAndDocuments",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "OpenText Americas",
+      "developerUrl": "https://www.opentext.com/products/xm-fax",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+          "canUpdateConfiguration": true,
+          "commands": [
+            {
+              "context": [
+                "message"
+              ],
+              "description": "Envoyer ce message à l'aide de Core Fax.",
+              "fetchTask": true,
+              "id": "share-by-fax",
+              "initialRun": true,
+              "title": "Envoyer à l'aide de Core Fax",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_largeimage.png",
+      "lastUpdatedAt": "2024-12-03T15:35:32.1001746+00:00",
+      "longDescription": "L'intégration de Core Fax avec Microsoft Teams permet aux utilisateurs d'envoyer des fax facilement et de manière sécurisée, directement depuis Microsoft Teams. L'application Core Fax Microsoft Teams élimine toute mauvaise manipulation des informations sensibles en permettant aux utilisateurs de gérer des transmissions de documents sans quitter Microsoft Teams. Plus besoin de changer d'appareil ou d'imprimante. \n\nOpenText™ Core Fax™ est une solution de fax numérique adaptée aux entreprises de toutes tailles. Elle leur offre toutes les fonctionnalités dont elles ont besoin pour la circulation des communications. La solution Core Fax chiffre complètement les fax, avec un système de traçabilité centralisé qui facilite les audits, ainsi que des paramètres facultatifs empêchant complètement la conservation des documents afin de renforcer encore leur protection. Core Fax améliore la productivité, réduit les coûts et permet aux organisations de se conformer aux exigences les plus strictes en matière de sécurité.\n\nL'utilisation de l'application Core Fax Microsoft Teams nécessite un compte dans le cloud Core Fax.\n\nImportant : Core Fax propose trois applications Microsoft Teams. Veillez à sélectionner la version adaptée en fonction de l'emplacement de votre compte Core Fax.\n\nLe domaine xmedius correspond à la région de votre compte d'entreprise : \n* Pour xmedius.com – sélectionnez Core Fax (US) \n* Pour xmedius.ca – sélectionnez Core Fax (CA) \n* Pour xmedius.eu – sélectionnez Core Fax (EMEA) \n* Pour corefax.opentext.au – sélectionnez Core Fax (AU) \n\nPour en savoir plus sur Core Fax, consultez notre [site Web](https://www.opentext.com/products/xm-fax).",
+      "mpnId": "1590175",
+      "officeAssetId": "WA200006089",
+      "permissions": [],
+      "privacyUrl": "https://www.opentext.com/about/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Utilisez Core Fax pr l'envoi sécurisé de documents depuis Microsoft Teams.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fdd3589e-bbd2-4223-b4a4-b6b492635f43/2025071115062806/fdd3589e-bbd2-4223-b4a4-b6b492635f43_smallimage.png",
+      "systemVersion": "2025071115062806",
+      "termsOfUseUrl": "https://portal.xmedius.ca/terms_of_service",
+      "validDomains": [
+        "token.botframework.com",
+        "*.xmedius.ca",
+        "*.opentext.com"
+      ],
+      "webApplicationInfo": {
+        "id": "fdd3589e-bbd2-4223-b4a4-b6b492635f43",
+        "resource": "api://botid-fdd3589e-bbd2-4223-b4a4-b6b492635f43"
+      }
+    }
+  ]
+}

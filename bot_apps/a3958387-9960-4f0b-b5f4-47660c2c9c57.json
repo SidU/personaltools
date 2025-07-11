@@ -1,0 +1,812 @@
+{
+  "manifestVersion": "1.11",
+  "id": "a3958387-9960-4f0b-b5f4-47660c2c9c57",
+  "version": "1.1.3",
+  "name": "Aranda Virtual Agent",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 72332220,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Crea un nuevo caso en la mesa de ayuda",
+              "title": "Crear Caso"
+            },
+            {
+              "description": "Consultar casos activos",
+              "title": "Consultar Caso"
+            },
+            {
+              "description": "Listado con tus últimos 15 casos abiertos",
+              "title": "Ver mis casos"
+            },
+            {
+              "description": "Listado con los últimos 15 artículos publicados",
+              "title": "Ver artículos"
+            },
+            {
+              "description": "Artículos según el texto de búsqueda",
+              "title": "Consultar Artículo"
+            },
+            {
+              "description": "Noticias publicadas en el portal de usuario",
+              "title": "Noticias"
+            },
+            {
+              "description": "Accesos publicados en el portal del usuario",
+              "title": "Accesos"
+            },
+            {
+              "description": "Listado de solicitudes de aprobaciones pendientes",
+              "title": "Aprobaciones"
+            },
+            {
+              "description": "Breve descripción de las funcionalidades del Bot",
+              "title": "Ayuda"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Crea un nuevo caso en la mesa de ayuda",
+              "title": "Crear Caso"
+            },
+            {
+              "description": "Consultar casos activos",
+              "title": "Consultar Caso"
+            },
+            {
+              "description": "Artículos según el texto de búsqueda",
+              "title": "Consultar Artículo"
+            },
+            {
+              "description": "Noticias publicadas en el portal de usuario",
+              "title": "Noticias"
+            },
+            {
+              "description": "Accesos publicados en el portal del usuario",
+              "title": "Accesos"
+            },
+            {
+              "description": "Listado de solicitudes de aprobaciones pendientes",
+              "title": "Aprobaciones"
+            },
+            {
+              "description": "Breve descripción de las funcionalidades del Bot",
+              "title": "Ayuda"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "6e3593c1-2b7b-401a-9a67-45f64366e5b8",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "ITAdmin",
+    "Utilities"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Aranda Software",
+  "developerUrl": "https://arandasoft.com/",
+  "industries": [
+    "Government",
+    "ProfessionalServices"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "6e3593c1-2b7b-401a-9a67-45f64366e5b8",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Buscar por número de caso",
+          "fetchTask": false,
+          "id": "SearchQuery",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Buscar por número de caso",
+              "inputType": "text",
+              "name": "SearchQuery",
+              "title": "Mis casos"
+            }
+          ],
+          "title": "Mis casos",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Busqueda de información en artículos",
+          "fetchTask": false,
+          "id": "SearchQueryArticle",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Busqueda de información en artículos",
+              "inputType": "text",
+              "name": "SearchQueryArticle",
+              "title": "Artículos"
+            }
+          ],
+          "title": "Artículos",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Bot",
+    "USDK",
+    "ASDK"
+  ],
+  "languageTag": "es",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_largeimage.png",
+  "lastUpdatedAt": "2024-07-29T22:36:11.1571328+00:00",
+  "longDescription": "El chatbot de Aranda Service Desk (robot conversacional) en Microsoft Teams, le permite generar casos y hacer seguimiento a los mismos sin salir de Microsoft Teams. Reduzca la cantidad de clics para crear casos, consultar casos, artículos, noticias, accesos y aprobaciones en la Mesa de Servicios, reduciendo los tiempos de respuesta.\n\nPara utilizar esta aplicación debe tener una suscripción activa de Aranda Service Desk, [contáctenos](https://arandasoft.com/productos/service-management/aranda-virtual-agent/) para más detalles.",
+  "mpnId": "1391927",
+  "officeAssetId": "WA200002215",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://arandasoft.com/privacy-policy/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Creación y consulta de casos sin salir de Microsoft Teams.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_smallimage.png",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teamsbotservice.arandasoft.com/notify",
+      "entityId": "OpenPositionsTab",
+      "name": "Notificaciones",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teamsbotservice.arandasoft.com/boards",
+      "entityId": "OpenPositionsTab2",
+      "name": "Tableros",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071114420005",
+  "termsOfUseUrl": "https://arandasoft.com/terms-of-use/",
+  "validDomains": [
+    "teamsbotservice.arandasoft.com",
+    "teamsuiservice.arandasoft.com"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=S1art-ZMzGw",
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "es",
+    "en",
+    "pt"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.11",
+      "id": "a3958387-9960-4f0b-b5f4-47660c2c9c57",
+      "version": "1.1.3",
+      "name": "Aranda Virtual Agent",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 72332220,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Create a new case in the help desk",
+                  "title": "Create Case"
+                },
+                {
+                  "description": "Consult active cases",
+                  "title": "Consult Case"
+                },
+                {
+                  "description": "List of your last 15 open cases",
+                  "title": "See my cases"
+                },
+                {
+                  "description": "List of the last 15 articles published",
+                  "title": "See articles"
+                },
+                {
+                  "description": "Articles by search text",
+                  "title": "Consult article"
+                },
+                {
+                  "description": "News published in the user portal",
+                  "title": "News"
+                },
+                {
+                  "description": "Accesses published in the user portal",
+                  "title": "Access"
+                },
+                {
+                  "description": "List of pending approval requests",
+                  "title": "Approvals"
+                },
+                {
+                  "description": "Brief description of the Bot functionalities",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Create a new case in the help desk",
+                  "title": "Create Case"
+                },
+                {
+                  "description": "Consult active cases",
+                  "title": "Consult Case"
+                },
+                {
+                  "description": "Articles by search text",
+                  "title": "Consult article"
+                },
+                {
+                  "description": "News published in the user portal",
+                  "title": "News"
+                },
+                {
+                  "description": "Accesses published in the user portal",
+                  "title": "Access"
+                },
+                {
+                  "description": "List of pending approval requests",
+                  "title": "Approvals"
+                },
+                {
+                  "description": "Brief description of the Bot functionalities",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "6e3593c1-2b7b-401a-9a67-45f64366e5b8",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Aranda Software",
+      "developerUrl": "https://arandasoft.com/",
+      "industries": [
+        "Government",
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "6e3593c1-2b7b-401a-9a67-45f64366e5b8",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Search by case number",
+              "fetchTask": false,
+              "id": "SearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search by case number",
+                  "inputType": "text",
+                  "name": "SearchQuery",
+                  "title": "My Cases"
+                }
+              ],
+              "title": "My Cases",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Search for information in articles",
+              "fetchTask": false,
+              "id": "SearchQueryArticle",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Search for information in articles",
+                  "inputType": "text",
+                  "name": "SearchQueryArticle",
+                  "title": "Articles"
+                }
+              ],
+              "title": "Articles",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Bot",
+        "USDK",
+        "ASDK"
+      ],
+      "languageTag": "en",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_largeimage.png",
+      "lastUpdatedAt": "2024-07-29T22:36:11.1571328+00:00",
+      "longDescription": "The Aranda Service Desk chatbot (conversational robot) in Microsoft Teams, allows you to generate cases and follow up on them without leaving Microsoft Teams. Reduce the number of clicks to create cases, view cases, articles, news, access and approvals in the Service Desk, reducing response times.\n\nTo use this application you must have an active Aranda Service Desk subscription, [contact us](https://arandasoft.com/productos/service-management/aranda-virtual-agent/) for more details.",
+      "mpnId": "1391927",
+      "officeAssetId": "WA200002215",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://arandasoft.com/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Creation and consultation of cases without leaving Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsbotservice.arandasoft.com/notify",
+          "entityId": "OpenPositionsTab",
+          "name": "Notifications",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsbotservice.arandasoft.com/boards",
+          "entityId": "OpenPositionsTab2",
+          "name": "Boards",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114420005",
+      "termsOfUseUrl": "https://arandasoft.com/terms-of-use/",
+      "validDomains": [
+        "teamsbotservice.arandasoft.com",
+        "teamsuiservice.arandasoft.com"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=S1art-ZMzGw"
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "a3958387-9960-4f0b-b5f4-47660c2c9c57",
+      "version": "1.1.3",
+      "name": "Aranda Virtual Agent",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 72332220,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Criar um novo caso no help desk",
+                  "title": "Criar caso"
+                },
+                {
+                  "description": "Consultar casos activos",
+                  "title": "Consulte o caso"
+                },
+                {
+                  "description": "Lista dos seus últimos 15 casos abertos",
+                  "title": "Ver os meus casos"
+                },
+                {
+                  "description": "Lista dos últimos 15 artigos publicados",
+                  "title": "Ver artigos"
+                },
+                {
+                  "description": "Artigos por texto de pesquisa",
+                  "title": "Consulte o artigo"
+                },
+                {
+                  "description": "Notícias publicadas no portal do utilizador",
+                  "title": "Notícias"
+                },
+                {
+                  "description": "Acessos publicados no portal do utilizador",
+                  "title": "Acesso"
+                },
+                {
+                  "description": "Lista de pedidos de aprovação pendentes",
+                  "title": "Aprovações"
+                },
+                {
+                  "description": "Breve descrição das funcionalidades do Bot",
+                  "title": "Ajuda"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Criar um novo caso no help desk",
+                  "title": "Criar caso"
+                },
+                {
+                  "description": "Consultar casos activos",
+                  "title": "Consulte o caso"
+                },
+                {
+                  "description": "Artigos por texto de pesquisa",
+                  "title": "Consulte o artigo"
+                },
+                {
+                  "description": "Notícias publicadas no portal do utilizador",
+                  "title": "Notícias"
+                },
+                {
+                  "description": "Acessos publicados no portal do utilizador",
+                  "title": "Acesso"
+                },
+                {
+                  "description": "Lista de pedidos de aprovação pendentes",
+                  "title": "Aprovações"
+                },
+                {
+                  "description": "Breve descrição das funcionalidades do Bot",
+                  "title": "Ajuda"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "6e3593c1-2b7b-401a-9a67-45f64366e5b8",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Aranda Software",
+      "developerUrl": "https://arandasoft.com/",
+      "industries": [
+        "Government",
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "6e3593c1-2b7b-401a-9a67-45f64366e5b8",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Busca por número de caso",
+              "fetchTask": false,
+              "id": "SearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Busca por número de caso",
+                  "inputType": "text",
+                  "name": "SearchQuery",
+                  "title": "Meus casos"
+                }
+              ],
+              "title": "Meus casos",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Busca de informações em artigos",
+              "fetchTask": false,
+              "id": "SearchQueryArticle",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Busca de informações em artigos",
+                  "inputType": "text",
+                  "name": "SearchQueryArticle",
+                  "title": "Artigos"
+                }
+              ],
+              "title": "Artigos",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Bot",
+        "USDK",
+        "ASDK"
+      ],
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_largeimage.png",
+      "lastUpdatedAt": "2024-07-29T22:36:11.1571328+00:00",
+      "longDescription": "O chatbot do Aranda Service Desk (robô conversacional) em Microsoft Teams, permite gerar casos e acompanhá-los sem deixar o Microsoft Teams. Reduzir o número de cliques para criar casos, visualizar casos, artigos, notícias, acesso e aprovações no Service Desk, Para utilizar este aplicativo, você deve ter uma assinatura ativa do Service Desk da Aranda, Entre em [contato](https://arandasoft.com/productos/service-management/aranda-virtual-agent/) conosco para obter mais detalhes.",
+      "mpnId": "1391927",
+      "officeAssetId": "WA200002215",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://arandasoft.com/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Criação e consulta de casos sem sair das Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a3958387-9960-4f0b-b5f4-47660c2c9c57/2025071114420005/a3958387-9960-4f0b-b5f4-47660c2c9c57_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsbotservice.arandasoft.com/notify",
+          "entityId": "OpenPositionsTab",
+          "name": "Notificações",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsbotservice.arandasoft.com/boards",
+          "entityId": "OpenPositionsTab2",
+          "name": "Placas",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114420005",
+      "termsOfUseUrl": "https://arandasoft.com/terms-of-use/",
+      "validDomains": [
+        "teamsbotservice.arandasoft.com",
+        "teamsuiservice.arandasoft.com"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=S1art-ZMzGw"
+    }
+  ]
+}

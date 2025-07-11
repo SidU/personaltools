@@ -1,0 +1,1193 @@
+{
+  "manifestVersion": "1.16",
+  "id": "deac2053-5a12-47a6-b6a5-6ca7c934f800",
+  "version": "1.4.0",
+  "name": "EasyVista Connect by Symplifyr",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 87255420,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Welcome message",
+              "title": "Hello"
+            },
+            {
+              "description": "Ticket Details - Ticket [Ticket_Number]",
+              "title": "Ticket"
+            },
+            {
+              "description": "List of all tickets",
+              "title": "My Tickets"
+            },
+            {
+              "description": "List of all tasks",
+              "title": "My Tasks"
+            },
+            {
+              "description": "Create a new ticket",
+              "title": "Create Ticket"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "groupChat",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "configurableProperties": [
+    "name",
+    "smallImageUrl",
+    "largeImageUrl"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Lean Digital, Lda",
+  "developerUrl": "https://symplifyr.com/",
+  "galleryTabs": [],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Test command to run query",
+          "fetchTask": true,
+          "id": "searchQuery",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search your catalog",
+              "inputType": "text",
+              "name": "searchQuery",
+              "title": "Search Query"
+            }
+          ],
+          "title": "Search",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "ITSM Servicedesk EV Service Management",
+    "Approval Validation Evaluation",
+    " Incident Service Request Case"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_largeimage.png",
+  "lastUpdatedAt": "2025-03-31T09:38:10.3991522+00:00",
+  "longDescription": "Simplify how you manage incidents and service requests with the **EasyVista Connect for Microsoft Teams**, providing a seamless experience across your organization. With this integration, you can easily submit, track, and resolve requests directly within your Teams workspace. Key features include:\n- **Instant Filing & Tracking:** Submit and track incidents and requests with real-time updates directly in your Teams chat.\n- **Streamlined Task Actions:** Approve, reject, or delegate tasks effortlessly across IT, HR, Facilities, and other departments.\n- **Smart Assistance:** Receive relevant, context-based answers from your knowledge base.\n- **Unified Overview:** Access a consolidated view of all ongoing requests, incidents, and approvals, keeping you organized.​\n- **Collaborative Solutions:** Collaborate with your team in real time to resolve issues faster, with shared visibility and seamless task hand-offs.​\nThis app supports Microsoft Teams, Microsoft 365 and Outlook hubs.​\n**A valid EasyVista subscription is required.**\n*Any Doubt?* [Contact Us](https://symplifyr.com/index#contacts) at **Symplifyr (a Lean Digital Brand)**",
+  "mpnId": "6599121",
+  "officeAssetId": "WA200006975",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://symplifyr.com/evc/privacy.php",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Intuitive Incident and Request Filing and Tracking with EasyVista Connect",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab",
+      "entityId": "index0",
+      "name": "My Tickets",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab"
+    }
+  ],
+  "systemVersion": "2025071115095358",
+  "termsOfUseUrl": "https://symplifyr.com/evc/terms.php",
+  "validDomains": [
+    "t4ev-bot-prod.azurewebsites.net",
+    "t4evstorageprod.z6.web.core.windows.net",
+    "symplifyr.com"
+  ],
+  "videoUrl": "https://youtu.be/VOI-4-MTxh4",
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "pt",
+    "es",
+    "it",
+    "de",
+    "fr"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.16",
+      "id": "deac2053-5a12-47a6-b6a5-6ca7c934f800",
+      "version": "1.4.0",
+      "name": "EasyVista Connect by Symplifyr",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 87255420,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Willkommensnachricht",
+                  "title": "Hallo"
+                },
+                {
+                  "description": "Ticketdetails - Ticket [Ticket_Nummer]",
+                  "title": "Ticket"
+                },
+                {
+                  "description": "Liste aller Tickets",
+                  "title": "Meine Tickets"
+                },
+                {
+                  "description": "Liste aller Aufgaben",
+                  "title": "Meine Aufgaben"
+                },
+                {
+                  "description": "Neues Ticket erstellen",
+                  "title": "Ticket erstellen"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "smallImageUrl",
+        "largeImageUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Lean Digital, Lda",
+      "developerUrl": "https://symplifyr.com/",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": true,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Durchsuchen Sie Ihren Katalog",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Search",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "ITSM Servicedesk EV Service Management",
+        "Approval Validation Evaluation",
+        " Incident Service Request Case"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_largeimage.png",
+      "lastUpdatedAt": "2025-03-31T09:38:10.3991522+00:00",
+      "longDescription": "Vereinfachen Sie das Management von Vorfällen und Serviceanfragen mite **EasyVista Connect für Microsoft Teams**, um eine nahtlose Erfahrung in Ihrer gesamten Organisation zu ermöglichen. Mit dieser Integration können Sie Anfragen einfach einreichen, verfolgen und direkt in Ihrem Teams-Arbeitsbereich lösen. Hauptfunktionen:\n- **Sofortige Erfassung & Nachverfolgung:** Erfassen und verfolgen Sie Vorfälle und Anfragen mit Echtzeit-Updates direkt im Teams-Chat.\n- **Optimierte Aufgabenverwaltung:** Genehmigen, ablehnen oder delegieren Sie Aufgaben mühelos in IT, HR, Facility Management und anderen Abteilungen.\n- **ntelligente Unterstützung:** Erhalten Sie relevante, kontextbezogene Antworten aus Ihrer Wissensdatenbank.\n- **Einheitliche Übersicht:** Greifen Sie auf eine konsolidierte Ansicht aller laufenden Anfragen, Vorfälle und Genehmigungen zu, um stets organisiert zu bleiben.​\n- **Effektive Zusammenarbeit:** Arbeiten Sie in Echtzeit mit Ihrem Team zusammen, um Probleme schneller zu lösen – mit geteilter Sichtbarkeit und nahtlosen Übergaben von Aufgaben.​\nDiese Anwendung unterstützt Microsoft Teams, Microsoft 365 und Outlook.​\n**Ein gültiges EasyVista-Abonnement ist erforderlich.**\n*Fragen?* [Kontaktieren Sie uns](https://symplifyr.com/index#contacts) bei **Symplifyr (eine Marke von Lean Digital)**",
+      "mpnId": "6599121",
+      "officeAssetId": "WA200006975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://symplifyr.com/evc/privacy.php",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Intuitive Verfolgung von Vorfällen und Anfragen mit EasyVista Connect",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab",
+          "entityId": "index0",
+          "name": "Meine Tickets",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071115095358",
+      "termsOfUseUrl": "https://symplifyr.com/evc/terms.php",
+      "validDomains": [
+        "t4ev-bot-prod.azurewebsites.net",
+        "t4evstorageprod.z6.web.core.windows.net",
+        "symplifyr.com"
+      ],
+      "videoUrl": "https://youtu.be/VOI-4-MTxh4"
+    },
+    {
+      "manifestVersion": "1.16",
+      "id": "deac2053-5a12-47a6-b6a5-6ca7c934f800",
+      "version": "1.4.0",
+      "name": "EasyVista Connect by Symplifyr",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 87255420,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Mensaje de bienvenida",
+                  "title": "Hola"
+                },
+                {
+                  "description": "Detalles del Ticket - Ticket [Ticket_Número]",
+                  "title": "Ticket"
+                },
+                {
+                  "description": "Lista de todos los tickets",
+                  "title": "Mis Tickets"
+                },
+                {
+                  "description": "Lista de todas las tareas",
+                  "title": "Mis Tareas"
+                },
+                {
+                  "description": "Crear nuevo ticket",
+                  "title": "Crear Ticket"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "smallImageUrl",
+        "largeImageUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Lean Digital, Lda",
+      "developerUrl": "https://symplifyr.com/",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": true,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Buscar en su catálogo",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Search",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "ITSM Servicedesk EV Service Management",
+        "Approval Validation Evaluation",
+        " Incident Service Request Case"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_largeimage.png",
+      "lastUpdatedAt": "2025-03-31T09:38:10.3991522+00:00",
+      "longDescription": "Simplifique la gestión de incidentes y solicitudes de servicio con  **EasyVista Connect for Microsoft Teams**, proporcionando una experiencia fluida en toda su organización. Con esta integración, puede enviar, realizar seguimiento y resolver solicitudes directamente en su espacio de trabajo de Teams. Funcionalidades clave:\n- **Registro y seguimiento instantáneo:** Envíe y realice el seguimiento de incidentes y solicitudes con actualizaciones en tiempo real directamente en el chat de Teams.\n- **Acciones optimizadas:** Apruebe, rechace o delegue tareas fácilmente en IT, RRHH, Instalaciones y otros departamentos.\n- **Asistencia inteligente:** Obtenga respuestas relevantes y contextuales desde su base de conocimientos.\n- **Visión unificada:** Acceda a una vista consolidada de todas las solicitudes, incidentes y aprobaciones en curso, manteniéndose siempre organizado.\n- **Colaboración eficiente:** Trabaje en equipo en tiempo real para resolver problemas más rápido, con visibilidad compartida y transferencia fluida de tareas.​\nEsta aplicación es compatible con Microsoft Teams, Microsoft 365 y Outlook.\n**Se requiere una suscripción válida de EasyVista.**\n*¿Dudas?* [Contáctenos](https://symplifyr.com/index#contacts) en **Symplifyr (una marca de Lean Digital)**",
+      "mpnId": "6599121",
+      "officeAssetId": "WA200006975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://symplifyr.com/evc/privacy.php",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Seguimiento intuitivo de incidentes y solicitudes con EasyVista Connect",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab",
+          "entityId": "index0",
+          "name": "Mis Tickets",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071115095358",
+      "termsOfUseUrl": "https://symplifyr.com/evc/terms.php",
+      "validDomains": [
+        "t4ev-bot-prod.azurewebsites.net",
+        "t4evstorageprod.z6.web.core.windows.net",
+        "symplifyr.com"
+      ],
+      "videoUrl": "https://youtu.be/VOI-4-MTxh4"
+    },
+    {
+      "manifestVersion": "1.16",
+      "id": "deac2053-5a12-47a6-b6a5-6ca7c934f800",
+      "version": "1.4.0",
+      "name": "EasyVista Connect by Symplifyr",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 87255420,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Message de bienvenue",
+                  "title": "Bonjour"
+                },
+                {
+                  "description": "Détails du billet - Billet [Billet_Numéro]",
+                  "title": "Billet"
+                },
+                {
+                  "description": "Liste de tous les billets",
+                  "title": "Mes Billets"
+                },
+                {
+                  "description": "Liste de toutes les tâches",
+                  "title": "Mes Tâches"
+                },
+                {
+                  "description": "Créer un nouveau billet",
+                  "title": "Créer un Billet"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "smallImageUrl",
+        "largeImageUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Lean Digital, Lda",
+      "developerUrl": "https://symplifyr.com/",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": true,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Rechercher dans votre catalogue",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Search",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "ITSM Servicedesk EV Service Management",
+        "Approval Validation Evaluation",
+        " Incident Service Request Case"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_largeimage.png",
+      "lastUpdatedAt": "2025-03-31T09:38:10.3991522+00:00",
+      "longDescription": "Simplifiez la gestion des incidents et des demandes de service avec **EasyVista Connect for Microsoft Teams**, en offrant une expérience fluide à l’ensemble de votre organisation. Grâce à cette intégration, vous pouvez soumettre, suivre et résoudre facilement des demandes directement dans votre espace de travail Teams. Fonctionnalités clés:\n- **Enregistrement et suivi instantanés:** Soumettez et suivez les incidents et demandes avec des mises à jour en temps réel directement dans le chat Teams.\n- **Actions optimisées:** Approuvez, rejetez ou déléguez des tâches en toute simplicité dans les départements IT, RH, Services généraux et autres.\n- **Assistance intelligente:** Recevez des réponses pertinentes et contextuelles issues de votre base de connaissances.\n- **Vue unifiée:** Accédez à une vue consolidée de toutes les demandes, incidents et validations en cours, pour rester toujours organisé.\n- **Collaboration efficace:** Travaillez en équipe en temps réel pour résoudre les problèmes plus rapidement, avec une visibilité partagée et un transfert fluide des tâches.​\nCette application est compatible avec Microsoft Teams, Microsoft 365 et Outlook.\n**Un abonnement valide à EasyVista est requis.**\n*Des questions?* [Contactez-nous](https://symplifyr.com/index#contacts) chez **Symplifyr (une marque Lean Digital)**",
+      "mpnId": "6599121",
+      "officeAssetId": "WA200006975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://symplifyr.com/evc/privacy.php",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Suivi intuitif des incidents et demandes avec EasyVista Connect",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab",
+          "entityId": "index0",
+          "name": "Mes Billets",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071115095358",
+      "termsOfUseUrl": "https://symplifyr.com/evc/terms.php",
+      "validDomains": [
+        "t4ev-bot-prod.azurewebsites.net",
+        "t4evstorageprod.z6.web.core.windows.net",
+        "symplifyr.com"
+      ],
+      "videoUrl": "https://youtu.be/VOI-4-MTxh4"
+    },
+    {
+      "manifestVersion": "1.16",
+      "id": "deac2053-5a12-47a6-b6a5-6ca7c934f800",
+      "version": "1.4.0",
+      "name": "EasyVista Connect by Symplifyr",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 87255420,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Messagio di benvenuto",
+                  "title": "Ciao"
+                },
+                {
+                  "description": "Dettagli del Biglietto - Biglietto [Biglietto_Numero]",
+                  "title": "Biglietto"
+                },
+                {
+                  "description": "Elenco di tutti i Biglietti",
+                  "title": "Miei Biglietti"
+                },
+                {
+                  "description": "Elenco di tutti i Compiti",
+                  "title": "Miei Compiti"
+                },
+                {
+                  "description": "Creare un novo biglietto",
+                  "title": "Crea Biglietto"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "smallImageUrl",
+        "largeImageUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Lean Digital, Lda",
+      "developerUrl": "https://symplifyr.com/",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": true,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Cerca nel tuo catalogo",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Search",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "ITSM Servicedesk EV Service Management",
+        "Approval Validation Evaluation",
+        " Incident Service Request Case"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_largeimage.png",
+      "lastUpdatedAt": "2025-03-31T09:38:10.3991522+00:00",
+      "longDescription": "Semplifica la gestione degli incidenti e delle richieste di servizio con **EasyVista Connect for Microsoft Teams**, offrendo un’esperienza fluida in tutta la tua organizzazione. Con questa integrazione, puoi facilmente inviare, monitorare e risolvere le richieste direttamente nel tuo spazio di lavoro di Teams. Funzionalità principali:\n- **Registrazione e monitoraggio istantaneo:** Invia e monitora incidenti e richieste con aggiornamenti in tempo reale direttamente nella chat di Teams.\n- **Azioni ottimizzate:** Approva, rifiuta o delega attività con facilità in IT, HR, Strutture e altri dipartimenti.\n- **Assistenza intelligente:** Ricevi risposte contestuali e pertinenti dalla tua base di conoscenza.\n- **Vista unificata:** Accedi a una panoramica consolidata di tutte le richieste, gli incidenti e le approvazioni in corso, rimanendo sempre organizzato.\n- **Collaborazione efficiente:** Lavora in team in tempo reale per risolvere i problemi più rapidamente, con visibilità condivisa e passaggi di attività senza interruzioni.​\nQuesta applicazione è compatibile con Microsoft Teams, Microsoft 365 e Outlook.\n**È necessario un abbonamento valido a EasyVista.**\n*Domande?* [Contattaci](https://symplifyr.com/index#contacts) su **Symplifyr (un marchio Lean Digital)**",
+      "mpnId": "6599121",
+      "officeAssetId": "WA200006975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://symplifyr.com/evc/privacy.php",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Monitoraggio intuitivo di incidenti e richieste con EasyVista Connect",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab",
+          "entityId": "index0",
+          "name": "Miei Biglietti",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071115095358",
+      "termsOfUseUrl": "https://symplifyr.com/evc/terms.php",
+      "validDomains": [
+        "t4ev-bot-prod.azurewebsites.net",
+        "t4evstorageprod.z6.web.core.windows.net",
+        "symplifyr.com"
+      ],
+      "videoUrl": "https://youtu.be/VOI-4-MTxh4"
+    },
+    {
+      "manifestVersion": "1.16",
+      "id": "deac2053-5a12-47a6-b6a5-6ca7c934f800",
+      "version": "1.4.0",
+      "name": "EasyVista Connect by Symplifyr",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 87255420,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Mensagem de boas-vindas",
+                  "title": "Olá"
+                },
+                {
+                  "description": "Detalhes do Ticket - Ticket [Ticket_Número]",
+                  "title": "Ticket"
+                },
+                {
+                  "description": "Lista de todos os tickets",
+                  "title": "Meus Tickets"
+                },
+                {
+                  "description": "Lista de todas as tarefas",
+                  "title": "Minhas Tarefas"
+                },
+                {
+                  "description": "Cria um novo ticket",
+                  "title": "Criar Ticket"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "smallImageUrl",
+        "largeImageUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Lean Digital, Lda",
+      "developerUrl": "https://symplifyr.com/",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "d0a2e7ae-a0e3-4941-984e-2007b8483d54",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Test command to run query",
+              "fetchTask": true,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Procure o seu catálogo",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Search Query"
+                }
+              ],
+              "title": "Search",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "ITSM Servicedesk EV Service Management",
+        "Approval Validation Evaluation",
+        " Incident Service Request Case"
+      ],
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_largeimage.png",
+      "lastUpdatedAt": "2025-03-31T09:38:10.3991522+00:00",
+      "longDescription": "Simplifique a gestão de incidentes e pedidos de serviço com o **EasyVista Connect para Microsoft Teams**, proporcionando uma experiência fluida em toda a sua organização. Com esta integração, pode facilmente submeter, acompanhar e resolver pedidos diretamente no seu espaço de trabalho do Teams. Principais funcionalidades:\n- *Registo e acompanhamento instantâneo:** Submeta e acompanhe incidentes e pedidos com atualizações em tempo real diretamente no chat do Teams.\n- **Ações otimizadas:** Aprove, rejeite ou delegue tarefas de forma simples em IT, RH, Instalações e outros departamentos.\n- **Assistência inteligente:** Obtenha respostas contextuais e relevantes da sua base de conhecimento.\n- **Visão unificada:** Aceda a uma visão consolidada de todos os pedidos, incidentes e aprovações em curso, mantendo-se sempre organizado.\n- **Colaboração eficiente:** Trabalhe em equipa em tempo real para resolver problemas mais rapidamente, com visibilidade partilhada e transferência de tarefas sem complicações.​\nEsta aplicação é compatível com Microsoft Teams, Microsoft 365 e Outlook.​\n**É necessária uma subscrição válida do EasyVista.**\n*Dúvidas?* [Contacte-nos](https://symplifyr.com/index#contacts) na **Symplifyr (uma marca Lean Digital)**",
+      "mpnId": "6599121",
+      "officeAssetId": "WA200006975",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://symplifyr.com/evc/privacy.php",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Acompanhamento intuitivo de incidentes e pedidos com EasyVista Connect",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/deac2053-5a12-47a6-b6a5-6ca7c934f800/2025071115095358/deac2053-5a12-47a6-b6a5-6ca7c934f800_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab",
+          "entityId": "index0",
+          "name": "Meus Tickets",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://t4evstorageprod.z6.web.core.windows.net//index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071115095358",
+      "termsOfUseUrl": "https://symplifyr.com/evc/terms.php",
+      "validDomains": [
+        "t4ev-bot-prod.azurewebsites.net",
+        "t4evstorageprod.z6.web.core.windows.net",
+        "symplifyr.com"
+      ],
+      "videoUrl": "https://youtu.be/VOI-4-MTxh4"
+    }
+  ]
+}

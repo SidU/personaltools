@@ -1,0 +1,144 @@
+{
+  "manifestVersion": "1.17",
+  "id": "8c7355fc-e051-4833-907a-d5500925a64b",
+  "version": "1.0.7",
+  "name": "Opsera",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 89526520,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "ChannelMessage.Read.Group",
+          "type": "Application"
+        },
+        {
+          "name": "ChatMessage.Read.Chat",
+          "type": "Application"
+        },
+        {
+          "name": "ChatMessageReadReceipt.Read.Chat",
+          "type": "Application"
+        },
+        {
+          "name": "ChannelSettings.Read.Group",
+          "type": "Application"
+        },
+        {
+          "name": "TeamSettings.Read.Group",
+          "type": "Application"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "configuration": {
+        "team": {
+          "fetchTask": true
+        }
+      },
+      "id": "fe096bb1-8097-4f5f-9eb2-f59c83e54732",
+      "isNotificationOnly": true,
+      "scopes": [
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ITAdmin"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultGroupCapability": {
+    "team": "bot"
+  },
+  "developerName": "Opsera, Inc",
+  "developerUrl": "https://www.opsera.io",
+  "devicePermissions": [
+    "Notifications"
+  ],
+  "industries": [
+    "Other"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "opsera",
+    "devops",
+    "automation"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8c7355fc-e051-4833-907a-d5500925a64b/2025071114263030/8c7355fc-e051-4833-907a-d5500925a64b_largeimage.png",
+  "lastUpdatedAt": "2024-12-24T17:29:06.0499704+00:00",
+  "longDescription": "Opsera's Continuous Orchestration automates any CI/CD toolchain, enables declarative pipelines, and provides unified insights across your entire software delivery process.\n\nUsing our Microsoft Teams bot, you can add granular alerts for each step in your pipelines to alert specific channels through out its execution.\n\nAn account with Opsera is a prerequisite to use the bot. The bot can be configured from the Opsera user interface. Please refer [here](https://docs.opsera.io/tool-registry/teams-tool-registration).\n\nPlease [click here](https://portal.opsera.io/signup) to sign up for Opsera.\n\nFor further questions [Contact Us ](https://www.opsera.io/contact) or write to us [support@opsera.io](mailto:support@opsera.io?subject=Opsera%20Teams%20Integration)",
+  "mpnId": "",
+  "officeAssetId": "WA200007943",
+  "permissions": [],
+  "privacyUrl": "https://www.opsera.io/privacy",
+  "publisherDocsUrl": "https://docs.opsera.io/tool-registry/teams-tool-registration",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8c7355fc-e051-4833-907a-d5500925a64b/2025071114263030/8c7355fc-e051-4833-907a-d5500925a64b_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8c7355fc-e051-4833-907a-d5500925a64b/2025071114263030/8c7355fc-e051-4833-907a-d5500925a64b_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8c7355fc-e051-4833-907a-d5500925a64b/2025071114263030/8c7355fc-e051-4833-907a-d5500925a64b_screenshot/2.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Opsera App for pipeline notifications and approvals",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/8c7355fc-e051-4833-907a-d5500925a64b/2025071114263030/8c7355fc-e051-4833-907a-d5500925a64b_smallimage.png",
+  "systemVersion": "2025071114263030",
+  "termsOfUseUrl": "https://www.opsera.io/terms-of-service",
+  "validDomains": [
+    "app.opsera.io"
+  ],
+  "videoUrl": "https://youtu.be/kE1W_je7YhQ",
+  "webApplicationInfo": {
+    "id": "fe096bb1-8097-4f5f-9eb2-f59c83e54732",
+    "resource": "https://notapplicable"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": []
+}

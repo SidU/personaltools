@@ -1,0 +1,199 @@
+{
+  "manifestVersion": "1.7",
+  "id": "ad0296df-84dc-4b31-ae34-68c4a9c091c2",
+  "version": "1.1.8",
+  "name": "SEI 365",
+  "accentColor": "#64A2CC",
+  "amsSellerAccountId": 71117260,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Gerencie seus alertas inteligentes",
+              "title": "Alertas e Notificações"
+            },
+            {
+              "description": "Processos na unidade atual",
+              "title": "Processos Recebidos"
+            },
+            {
+              "description": "Processos na unidade atual",
+              "title": "Processos Gerados"
+            },
+            {
+              "description": "Seus processos na unidade atual",
+              "title": "Processos atribuídos a mim"
+            },
+            {
+              "description": "Processos agrupados por Marcador",
+              "title": "Marcadores"
+            },
+            {
+              "description": "Consulte seus acompanhamentos",
+              "title": "Acompanhamentos Especiais"
+            },
+            {
+              "description": "Consulte os blocos de assinatura",
+              "title": "Blocos de Assinatura"
+            },
+            {
+              "description": "Consulte os blocos internos",
+              "title": "Blocos Internos"
+            },
+            {
+              "description": "Use para alterar sua unidade atual",
+              "title": "Trocar Unidade"
+            },
+            {
+              "description": "Informações de Ajuda e Suporte avançado",
+              "title": "Guia do usuário e Ajuda"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "cf3ebd1b-5936-41f0-9c14-882b91b48fa5",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsFiles": false
+    }
+  ],
+  "categories": [
+    "WorkflowAndBusinessManagement",
+    "Productivity",
+    "Utilities"
+  ],
+  "creatorId": "",
+  "developerName": "Top365",
+  "developerUrl": "https://www.sei365.com.br",
+  "industries": [
+    "Government"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "cf3ebd1b-5936-41f0-9c14-882b91b48fa5",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Obtenha os processos ou documentos através da pesquisa do SEI",
+          "fetchTask": false,
+          "id": "getSearch",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Pesquise por Processos ou Documentos",
+              "inputType": "number",
+              "name": "numero-protocolo",
+              "title": "Protocolo",
+              "value": "*"
+            }
+          ],
+          "title": "Pesquisa",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "app.sei365.com.br"
+            ],
+            "supportsAnonymousAccess": false
+          }
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "languageTag": "pt-br",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ad0296df-84dc-4b31-ae34-68c4a9c091c2/2025071113211140/ad0296df-84dc-4b31-ae34-68c4a9c091c2_largeimage.png",
+  "lastUpdatedAt": "2021-05-12T15:35:51.1646687+00:00",
+  "longDescription": "O Assistente SEI 365 pode transformar o dia-a-dia de trabalho dos usuários do SEI (Sistema Eletrônico de Informação), com ele você pode visualizar processos administrativos e documentos do SEI diretamente no Microsoft Teams - a sua principal ferramenta no Teletrabalho.\n\nVocê pode também dar ciência, ver e assinar documentos ou então ativar alertas proativos para receber notificações inteligentes no seu computador e celular usando o aplicaitivo do Microsoft Teams.\n\nEstamos prontos para ajudar com:\n- Processos Recebidos e Gerados\n- Processos Atribuídos a mim\n- Marcadores\n- Blocos de Assinatura\n- Blocos internos\n- Acompanhamentos especiais\n\nNotificações inteligentes:\n- Acompanhar Novos Processos\n- Acompanhar Disponibilização de Blocos de Assinatura\n- Acompanhar Prazo de atendimento de Processos\n- Acompanhar Retorno Programado de Processos\n- Resumo do dia\n\nO Assistente 365 é o seu parceiro ideal, seguro e eficiente, para o dia-a-dia de teletrabalho.\n\nEste app requer uma conta de usuário existente no SEI. Acesse nosso site [https://www.sei365.com.br/acesso-sei](https://www.sei365.com.br/acesso-sei) para mais detalhes.",
+  "mpnId": "6230208",
+  "officeAssetId": "WA200002898",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.sei365.com.br/app/privacy.html",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ad0296df-84dc-4b31-ae34-68c4a9c091c2/2025071113211140/ad0296df-84dc-4b31-ae34-68c4a9c091c2_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ad0296df-84dc-4b31-ae34-68c4a9c091c2/2025071113211140/ad0296df-84dc-4b31-ae34-68c4a9c091c2_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ad0296df-84dc-4b31-ae34-68c4a9c091c2/2025071113211140/ad0296df-84dc-4b31-ae34-68c4a9c091c2_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ad0296df-84dc-4b31-ae34-68c4a9c091c2/2025071113211140/ad0296df-84dc-4b31-ae34-68c4a9c091c2_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ad0296df-84dc-4b31-ae34-68c4a9c091c2/2025071113211140/ad0296df-84dc-4b31-ae34-68c4a9c091c2_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "SEI 365, o Assistente Inteligente para integração do SEI com o Microsoft Teams!",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ad0296df-84dc-4b31-ae34-68c4a9c091c2/2025071113211140/ad0296df-84dc-4b31-ae34-68c4a9c091c2_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://app.sei365.com.br/user-settings",
+      "entityId": "seiUserSettings",
+      "name": "Preferências",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.sei365.com.br/user-settings"
+    }
+  ],
+  "systemVersion": "2025071113211140",
+  "termsOfUseUrl": "https://www.sei365.com.br/app/terms.html",
+  "validDomains": [
+    "app.sei365.com.br",
+    "token.botframework.com"
+  ],
+  "videoUrl": "https://youtu.be/I6fKEAhUtW0",
+  "webApplicationInfo": {
+    "id": "cf3ebd1b-5936-41f0-9c14-882b91b48fa5",
+    "resource": "api://app.sei365.com.br/cf3ebd1b-5936-41f0-9c14-882b91b48fa5"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "pt-br"
+  ],
+  "localizedDefinitions": []
+}

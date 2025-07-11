@@ -1,0 +1,1735 @@
+{
+  "manifestVersion": "1.17",
+  "id": "c80cee99-d17f-4b2d-a2a4-57652ffd2a4b",
+  "version": "1.6.3",
+  "name": "Perform & Engage 365",
+  "accentColor": "#00B0F0",
+  "amsSellerAccountId": 68621620,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "orgWide": [],
+      "resourceSpecific": []
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "d9a83fb0-f566-4160-a38d-9ee4e2c2f2af",
+      "isNotificationOnly": true,
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "HumanResourcesAndRecruiting",
+    "Productivity",
+    "WorkflowAndBusinessManagement"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor",
+    "developerUrl",
+    "privacyUrl",
+    "termsOfUseUrl"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Zensai UKI LTD",
+  "developerUrl": "https://www.weekly10.com/",
+  "devicePermissions": [],
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://pro.weekly10.net/static/react-teams-tabs/home/build/index.html?theme={theme}#/meetings/config",
+      "context": [
+        "meetingChatTab",
+        "meetingSidePanel"
+      ],
+      "scopes": [
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "d9a83fb0-f566-4160-a38d-9ee4e2c2f2af",
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Query Perform & Engage 365 for sentiment information in your organisation.",
+          "fetchTask": false,
+          "id": "sentiment_summary",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Enter a natural language query to get a sentiment",
+              "inputType": "textarea",
+              "isRequired": true,
+              "name": "user_query",
+              "semanticDescription": "This is the natural language query to get a sentiment summarisation for your team, department or the whole organisation. You can use queries like 'What is the sentiment like in my team?' or 'What is the feeling like in my organisation?'",
+              "title": "user query",
+              "value": ""
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Using the Perform & Engage 365 plugin, What is the sentiment like in my team?"
+            },
+            {
+              "text": "Using the Perform & Engage 365 plugin, What is the feeling like in my organization and when was the lowest sentiment seen?"
+            },
+            {
+              "text": "Using the Perform & Engage 365 plugin, How has the sentiment been in my organization over the last month?"
+            }
+          ],
+          "semanticDescription": "This command provides a sentiment, mood or feeling summarisation. This command may be invoked to deal with user queries about teams, departments or the whole organisation. This command is useful when the user want more infomration about morale in their organisation or when they are interested in how any changes may have affected the mood of their team, department or organisation.",
+          "title": "Sentiment summary",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Check-ins",
+    "Performance Management",
+    "Feedback"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_largeimage.png",
+  "lastUpdatedAt": "2025-07-03T12:52:45.247444+00:00",
+  "longDescription": "Perform & Engage 365 is a simple process which helps increase the performance and effectiveness of your team or organization. Using a simple quick weekly check-in employees can share their success, challenges and recognize others. Managers can then provide timely feedback and support to increase trust and build a culture of transparency. Employees and managers can set goals and OKRs to align with organization objectives. Perform & Engage 365 also provides organizational insights using our AI powered sentiment and 10Pulse Engagement model.\n\nResearch shows that giving and receiving feedback on a regular basis improves performance and engagement outcomes, whilst normalizing the culture of feedback within a team. Performance management becomes a continuous and iterative process, empowering managers to continually coach and feedback to employees.\n\nThe Perform & Engage 365 app brings all of the functionality of the weekly check-in to Microsoft Teams, Outlook and Microsoft 365. Using Microsoft 365 SSO (Single Sign-on) employees experience a seamless experience, with the ability to complete updates entirely from Microsoft Teams, Outlook and Microsoft 365. Notifications are pushed out using the Perform & Engage 365 bot and employees can manage their goals and check-ins all in one place.\n\nThe Perform & Engage 365 Microsoft Teams app allows employees to:\n* Provide check-ins\n* Create and manage goals or OKRs\n* Recognize other employees\n\nThe Perform & Engage 365 app allows managers to:\n* Review updates\n* Provide feedback\n* Pass-up and share good work\n\nThe App also provides notifications via the Perform & Engage 365 bot for managers and employees.\n\nIn order to use this app, you need to have an active Perform & Engage 365 account.\n\nFor more information, Help on getting started, or to contact us please visit our website - https://weekly10.zendesk.com/hc/en-us\n\nOnce enabled, this app works in Microsoft Copilot for Microsoft 365 and allows managers and executives to use natural language queries to get a quick snapshot of sentiment in different areas in the Organization. \nTry queries like the following in Copilot: \n\n* Using the Perform & Engage 365 plugin, What is the sentiment like in my team?\n* Using the Perform & Engage 365 plugin, What is the feeling like in my organization and when was the lowest sentiment seen? ",
+  "mpnId": "6163933",
+  "officeAssetId": "WA200001441",
+  "permissions": [],
+  "privacyUrl": "https://www.weekly10.com/terms/privacy",
+  "publisherDocsUrl": "https://weekly10.zendesk.com/hc/en-us/articles/13737018408861-Introducing-Weekly10-for-Microsoft-Teams",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/2.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "m365Certified"
+  },
+  "shortDescription": "A check-in with powerful outcomes, with performance, feedback and goals.",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://pro.weekly10.net/static/react-teams-tabs/my_updates/build/index.html?theme={theme}",
+      "entityId": "CheckIn",
+      "name": "Me",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://pro.weekly10.net/"
+    },
+    {
+      "contentUrl": "https://pro.weekly10.net/static/react-teams-tabs/manager/build/index.html?theme={theme}",
+      "entityId": "MyTeam",
+      "name": "My Team",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://pro.weekly10.net"
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "subscriptionOffer": {
+    "isEligibleForAzureBenefits": false,
+    "offerId": "binarygeeklimited1581455264019.weekly10_msft_transact"
+  },
+  "systemVersion": "2025071114572219",
+  "termsOfUseUrl": "https://www.weekly10.com/terms/customer",
+  "validDomains": [
+    "*.weekly10.net"
+  ],
+  "webApplicationInfo": {
+    "id": "6fd1421e-89e8-4a8b-bd01-9397656a50d5",
+    "resource": "api://pro.weekly10.net/6fd1421e-89e8-4a8b-bd01-9397656a50d5"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "fr",
+    "de",
+    "nl"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.17",
+      "id": "c80cee99-d17f-4b2d-a2a4-57652ffd2a4b",
+      "version": "1.6.3",
+      "name": "Perform & Engage 365",
+      "accentColor": "#00B0F0",
+      "amsSellerAccountId": 68621620,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "orgWide": [],
+          "resourceSpecific": []
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "d9a83fb0-f566-4160-a38d-9ee4e2c2f2af",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Zensai UKI LTD",
+      "developerUrl": "https://www.weekly10.com/",
+      "devicePermissions": [],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://pro.weekly10.net/static/react-teams-tabs/home/build/index.html?theme={theme}#/meetings/config",
+          "context": [
+            "meetingChatTab",
+            "meetingSidePanel"
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "d9a83fb0-f566-4160-a38d-9ee4e2c2f2af",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Query Perform & Engage 365 for sentiment information in your organisation.",
+              "fetchTask": false,
+              "id": "sentiment_summary",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Enter a natural language query to get a sentiment",
+                  "inputType": "textarea",
+                  "isRequired": true,
+                  "name": "user_query",
+                  "semanticDescription": "This is the natural language query to get a sentiment summarisation for your team, department or the whole organisation. You can use queries like 'What is the sentiment like in my team?' or 'What is the feeling like in my organisation?'",
+                  "title": "user query",
+                  "value": ""
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Using the Perform & Engage 365 plugin, What is the sentiment like in my team?"
+                },
+                {
+                  "text": "Using the Perform & Engage 365 plugin, What is the feeling like in my organization and when was the lowest sentiment seen?"
+                },
+                {
+                  "text": "Using the Perform & Engage 365 plugin, How has the sentiment been in my organization over the last month?"
+                }
+              ],
+              "semanticDescription": "This command provides a sentiment, mood or feeling summarisation. This command may be invoked to deal with user queries about teams, departments or the whole organisation. This command is useful when the user want more infomration about morale in their organisation or when they are interested in how any changes may have affected the mood of their team, department or organisation.",
+              "title": "Sentiment summary",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Check-ins",
+        "Performance Management",
+        "Feedback"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_largeimage.png",
+      "lastUpdatedAt": "2025-07-03T12:52:45.247444+00:00",
+      "longDescription": "Perform & Engage 365 ist ein einfaches Verfahren, mit dem Sie die Leistung und Effektivität Ihres Teams oder Ihrer Organisation steigern können. Mit einem einfachen, schnellen wöchentlichen Check-in können Mitarbeiter ihre Erfolge und Herausforderungen mitteilen und andere anerkennen. Manager können dann zeitnahes Feedback und Unterstützung geben, um das Vertrauen zu stärken und eine Kultur der Transparenz aufzubauen. Mitarbeiter und Manager können Ziele und OKRs festlegen, die mit den Unternehmenszielen übereinstimmen. Perform & Engage 365 bietet auch Einblicke in die Organisation mithilfe unseres KI-gestützten Sentiment- und 10Pulse-Engagement-Modells.\n\n Untersuchungen zeigen, dass das regelmäßige Geben und Erhalten von Feedback die Leistung und das Engagement verbessert und gleichzeitig die Feedback-Kultur innerhalb eines Teams normalisiert. Das Leistungsmanagement wird zu einem kontinuierlichen und iterativen Prozess, der es Managern ermöglicht, Mitarbeiter kontinuierlich zu coachen und ihnen Feedback zu geben.\n\nDie Perform & Engage 365-App bringt die gesamte Funktionalität des wöchentlichen Check-Ins zu Microsoft Teams. Durch die Verwendung von Microsoft 365 SSO (Single Sign-on) erleben die Mitarbeiter eine nahtlose Erfahrung, mit der Möglichkeit, Aktualisierungen vollständig von Microsoft Teams aus durchzuführen. Benachrichtigungen werden über den Perform & Engage 365-Bot verschickt, und Mitarbeiter können ihre Ziele und Check-Ins an einem Ort verwalten.\n\nDie Perform & Engage 365-App von Microsoft Teams ermöglicht es Mitarbeitern:\n* Check-Ins bereitzustellen\n* Ziele oder OKRs zu erstellen und zu verwalten\n* Andere Mitarbeiter anzuerkennen\n\nDie Perform & Engage 365-App von Microsoft Teams ermöglicht es Managern:\n* Aktualisierungen zu überprüfen\n* Feedback zu geben\n* Gute Arbeit weiterzugeben und zu teilen\n\nDie App bietet außerdem Benachrichtigungen über den Perform & Engage 365-Bot für Manager und Mitarbeiter.",
+      "mpnId": "6163933",
+      "officeAssetId": "WA200001441",
+      "permissions": [],
+      "privacyUrl": "https://www.weekly10.com/terms/privacy",
+      "publisherDocsUrl": "https://weekly10.zendesk.com/hc/en-us/articles/13737018408861-Introducing-Weekly10-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "m365Certified"
+      },
+      "shortDescription": "Ein einfaches Check-in mit aussagekräftigen Ergebnissen.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://pro.weekly10.net/static/react-teams-tabs/my_updates/build/index.html?theme={theme}",
+          "entityId": "CheckIn",
+          "name": "Ich",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://pro.weekly10.net/"
+        },
+        {
+          "contentUrl": "https://pro.weekly10.net/static/react-teams-tabs/manager/build/index.html?theme={theme}",
+          "entityId": "MyTeam",
+          "name": "Mein Team",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://pro.weekly10.net"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "binarygeeklimited1581455264019.weekly10_msft_transact"
+      },
+      "systemVersion": "2025071114572219",
+      "termsOfUseUrl": "https://www.weekly10.com/terms/customer",
+      "validDomains": [
+        "*.weekly10.net"
+      ],
+      "webApplicationInfo": {
+        "id": "6fd1421e-89e8-4a8b-bd01-9397656a50d5",
+        "resource": "api://pro.weekly10.net/6fd1421e-89e8-4a8b-bd01-9397656a50d5"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "c80cee99-d17f-4b2d-a2a4-57652ffd2a4b",
+      "version": "1.6.3",
+      "name": "Perform & Engage 365",
+      "accentColor": "#00B0F0",
+      "amsSellerAccountId": 68621620,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "orgWide": [],
+          "resourceSpecific": []
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "d9a83fb0-f566-4160-a38d-9ee4e2c2f2af",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Zensai UKI LTD",
+      "developerUrl": "https://www.weekly10.com/",
+      "devicePermissions": [],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://pro.weekly10.net/static/react-teams-tabs/home/build/index.html?theme={theme}#/meetings/config",
+          "context": [
+            "meetingChatTab",
+            "meetingSidePanel"
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "d9a83fb0-f566-4160-a38d-9ee4e2c2f2af",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Query Perform & Engage 365 for sentiment information in your organisation.",
+              "fetchTask": false,
+              "id": "sentiment_summary",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Enter a natural language query to get a sentiment",
+                  "inputType": "textarea",
+                  "isRequired": true,
+                  "name": "user_query",
+                  "semanticDescription": "This is the natural language query to get a sentiment summarisation for your team, department or the whole organisation. You can use queries like 'What is the sentiment like in my team?' or 'What is the feeling like in my organisation?'",
+                  "title": "user query",
+                  "value": ""
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Using the Perform & Engage 365 plugin, What is the sentiment like in my team?"
+                },
+                {
+                  "text": "Using the Perform & Engage 365 plugin, What is the feeling like in my organization and when was the lowest sentiment seen?"
+                },
+                {
+                  "text": "Using the Perform & Engage 365 plugin, How has the sentiment been in my organization over the last month?"
+                }
+              ],
+              "semanticDescription": "This command provides a sentiment, mood or feeling summarisation. This command may be invoked to deal with user queries about teams, departments or the whole organisation. This command is useful when the user want more infomration about morale in their organisation or when they are interested in how any changes may have affected the mood of their team, department or organisation.",
+              "title": "Sentiment summary",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Check-ins",
+        "Performance Management",
+        "Feedback"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_largeimage.png",
+      "lastUpdatedAt": "2025-07-03T12:52:45.247444+00:00",
+      "longDescription": "Perform & Engage 365 est un processus simple qui permet d'augmenter les performances et l'efficacité de votre équipe ou de votre organisation. En utilisant un simple check-in hebdomadaire rapide, les employés peuvent partager leurs succès, leurs défis et reconnaître les autres. Les managers peuvent alors fournir un retour d'information et un soutien en temps voulu pour renforcer la confiance et instaurer une culture de la transparence. Les employés et les managers peuvent fixer des objectifs et des OKRs pour s'aligner sur les objectifs de l'organisation. Perform & Engage 365 fournit également des informations sur l'organisation à l'aide de notre modèle d'engagement 10Pulse et de nos sentiments alimentés par l'IA.\nLes recherches montrent que le fait de donner et de recevoir du feedback de manière régulière améliore les performances et l'engagement, tout en normalisant la culture du feedback au sein d'une équipe. La gestion des performances devient un processus continu et itératif, ce qui permet aux managers de coacher et de donner un retour d'information aux employés de manière continue. Grâce au SSO (Single Sign-On) de Microsoft 365, les employés bénéficient d'une expérience transparente et peuvent effectuer des mises à jour entièrement à partir de Microsoft Teams. Les notifications sont envoyées à l'aide du robot Perform & Engage 365 et les employés peuvent gérer leurs objectifs et leurs pointages en un seul endroit. L'application Microsoft Teams Perform & Engage 365 permet aux employés de :\n* Fournir des pointages\n* Créer et gérer des objectifs ou des OKRs\n* Reconnaître d'autres employés\n\n L'application Microsoft Teams Perform & Engage 365 permet aux managers de :\n* Vérifier les mises à jour\n* Fournir un feedback\n* Transmettre et partager le bon travail\n\n L'application fournit également des notifications via le robot Perform & Engage 365 pour les managers et les employés.",
+      "mpnId": "6163933",
+      "officeAssetId": "WA200001441",
+      "permissions": [],
+      "privacyUrl": "https://www.weekly10.com/terms/privacy",
+      "publisherDocsUrl": "https://weekly10.zendesk.com/hc/en-us/articles/13737018408861-Introducing-Weekly10-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "m365Certified"
+      },
+      "shortDescription": "Un simple check-in avec des résultats significatifs.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://pro.weekly10.net/static/react-teams-tabs/my_updates/build/index.html?theme={theme}",
+          "entityId": "CheckIn",
+          "name": "Moi",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://pro.weekly10.net/"
+        },
+        {
+          "contentUrl": "https://pro.weekly10.net/static/react-teams-tabs/manager/build/index.html?theme={theme}",
+          "entityId": "MyTeam",
+          "name": "Mon équipe",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://pro.weekly10.net"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "binarygeeklimited1581455264019.weekly10_msft_transact"
+      },
+      "systemVersion": "2025071114572219",
+      "termsOfUseUrl": "https://www.weekly10.com/terms/customer",
+      "validDomains": [
+        "*.weekly10.net"
+      ],
+      "webApplicationInfo": {
+        "id": "6fd1421e-89e8-4a8b-bd01-9397656a50d5",
+        "resource": "api://pro.weekly10.net/6fd1421e-89e8-4a8b-bd01-9397656a50d5"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "c80cee99-d17f-4b2d-a2a4-57652ffd2a4b",
+      "version": "1.6.3",
+      "name": "Perform & Engage 365",
+      "accentColor": "#00B0F0",
+      "amsSellerAccountId": 68621620,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "orgWide": [],
+          "resourceSpecific": []
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "d9a83fb0-f566-4160-a38d-9ee4e2c2f2af",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Zensai UKI LTD",
+      "developerUrl": "https://www.weekly10.com/",
+      "devicePermissions": [],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://pro.weekly10.net/static/react-teams-tabs/home/build/index.html?theme={theme}#/meetings/config",
+          "context": [
+            "meetingChatTab",
+            "meetingSidePanel"
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "d9a83fb0-f566-4160-a38d-9ee4e2c2f2af",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Query Perform & Engage 365 for sentiment information in your organisation.",
+              "fetchTask": false,
+              "id": "sentiment_summary",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Enter a natural language query to get a sentiment",
+                  "inputType": "textarea",
+                  "isRequired": true,
+                  "name": "user_query",
+                  "semanticDescription": "This is the natural language query to get a sentiment summarisation for your team, department or the whole organisation. You can use queries like 'What is the sentiment like in my team?' or 'What is the feeling like in my organisation?'",
+                  "title": "user query",
+                  "value": ""
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Using the Perform & Engage 365 plugin, What is the sentiment like in my team?"
+                },
+                {
+                  "text": "Using the Perform & Engage 365 plugin, What is the feeling like in my organization and when was the lowest sentiment seen?"
+                },
+                {
+                  "text": "Using the Perform & Engage 365 plugin, How has the sentiment been in my organization over the last month?"
+                }
+              ],
+              "semanticDescription": "This command provides a sentiment, mood or feeling summarisation. This command may be invoked to deal with user queries about teams, departments or the whole organisation. This command is useful when the user want more infomration about morale in their organisation or when they are interested in how any changes may have affected the mood of their team, department or organisation.",
+              "title": "Sentiment summary",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Check-ins",
+        "Performance Management",
+        "Feedback"
+      ],
+      "languageTag": "nl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_largeimage.png",
+      "lastUpdatedAt": "2025-07-03T12:52:45.247444+00:00",
+      "longDescription": "Perform & Engage 365 is a simple process which helps increase the performance and effectiveness of your team or organization. Using a simple quick weekly check-in employees can share their success, challenges and recognize others. Managers can then provide timely feedback and support to increase trust and build a culture of transparency. Employees and managers can set goals and OKRs to align with organization objecives. Perform & Engage 365 also provides organizational insights using our AI powered sentiment and 10Pulse Engagement model.\n\nResearch shows that giving and receiving feedback on a regular basis improves performance and engagement outcomes, whilst normalizing the culture of feedback within a team. Performance management becomes a continuous and iterative process, empowering managers to continually coach and feedback to employees.\n\nThe Perform & Engage 365 app brings all of the functionality of the weekly check-in to Microsoft Teams. Using Microsoft 365 SSO (Single Sign-on) employees experience a seamless experience, with the ability to complete updates entirely from Microsoft Teams. Notifications are pushed out using the Perform & Engage 365 bot and employees can manage their goals and check-ins all in one place.\n\nThe Perform & Engage 365 Microsoft Teams app allows employees to:\n* Provide check-ins\n* Create and manage goals or OKRs\n* Recognize other employees\n\nThe Perform & Engage 365 Microsoft Teams app allows managers to:\n* Review updates\n* Provide feedback\n* Pass-up and share good work\n\nThe App also provides notifications via the Perform & Engage 365 bot for managers and employees.",
+      "mpnId": "6163933",
+      "officeAssetId": "WA200001441",
+      "permissions": [],
+      "privacyUrl": "https://www.weekly10.com/terms/privacy",
+      "publisherDocsUrl": "https://weekly10.zendesk.com/hc/en-us/articles/13737018408861-Introducing-Weekly10-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "m365Certified"
+      },
+      "shortDescription": "A simple check-in with meaningful results.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b/2025071114572219/c80cee99-d17f-4b2d-a2a4-57652ffd2a4b_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://pro.weekly10.net/static/react-teams-tabs/my_updates/build/index.html?theme={theme}",
+          "entityId": "CheckIn",
+          "name": "Me",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://pro.weekly10.net/"
+        },
+        {
+          "contentUrl": "https://pro.weekly10.net/static/react-teams-tabs/manager/build/index.html?theme={theme}",
+          "entityId": "MyTeam",
+          "name": "Mijn Team",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://pro.weekly10.net"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "binarygeeklimited1581455264019.weekly10_msft_transact"
+      },
+      "systemVersion": "2025071114572219",
+      "termsOfUseUrl": "https://www.weekly10.com/terms/customer",
+      "validDomains": [
+        "*.weekly10.net"
+      ],
+      "webApplicationInfo": {
+        "id": "6fd1421e-89e8-4a8b-bd01-9397656a50d5",
+        "resource": "api://pro.weekly10.net/6fd1421e-89e8-4a8b-bd01-9397656a50d5"
+      }
+    }
+  ]
+}

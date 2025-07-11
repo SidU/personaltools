@@ -1,0 +1,165 @@
+{
+  "manifestVersion": "1.11",
+  "id": "53dd167d-b994-43b4-9cf6-81399060c435",
+  "version": "1.2.0",
+  "name": "wantedspaceBot",
+  "accentColor": "#0381EB",
+  "amsSellerAccountId": 67731650,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "근무상태를 출근으로 변경할 때 사용합니다.",
+              "title": "출근"
+            },
+            {
+              "description": "근무 상태를 퇴근으로 변경할 때 사용합니다.",
+              "title": "퇴근"
+            },
+            {
+              "description": "출근 후 잠시 자리를 비울 때 사용합니다.",
+              "title": "자리비움"
+            },
+            {
+              "description": "본인의 근무 상태를 확인할 때 사용합니다.",
+              "title": "상태"
+            },
+            {
+              "description": "명령어 리스트를 확인할 때 사용합니다.",
+              "title": "도움말"
+            },
+            {
+              "description": "근무 상태를 출근으로 변경할 때 사용합니다.",
+              "title": "checkin"
+            },
+            {
+              "description": "근무 상태를 퇴근으로 변경할 때 사용합니다.",
+              "title": "checkout"
+            },
+            {
+              "description": "출근 후 잠시 자리를 비울 때 사용합니다.",
+              "title": "away"
+            },
+            {
+              "description": "명령어 리스트를 확인할 때 사용합니다.",
+              "title": "help"
+            },
+            {
+              "description": "본인의 근무 상태를 확인할 때 사용합니다.",
+              "title": "workstatus"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "팀원들의 근무 상태를 확인 할 때 사용합니다.",
+              "title": "팀상태"
+            },
+            {
+              "description": "팀원들의 근무 상태를 확인 할 때 사용합니다.",
+              "title": "teamstatus"
+            },
+            {
+              "description": "명령어 리스트를 확인할 때 사용합니다.",
+              "title": "도움말"
+            },
+            {
+              "description": "명령어 리스트를 확인할 때 사용합니다.",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "cf9bdb02-ec92-42a5-a418-61f6448124b0",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Wantedlab",
+  "developerUrl": "https://www.wantedspace.ai/",
+  "industries": [
+    "Distribution",
+    "ProfessionalServices"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "wantedspaceBot",
+    "wantedspace",
+    "근태관리"
+  ],
+  "languageTag": "ko",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53dd167d-b994-43b4-9cf6-81399060c435/2025071114453788/53dd167d-b994-43b4-9cf6-81399060c435_largeimage.png",
+  "lastUpdatedAt": "2022-08-08T07:41:24.2531395+00:00",
+  "longDescription": "This application is available in korean.\n원티드스페이스는 통합 근태 관리 시스템입니다.\nwantedspaceBot에 메세지를 보내는 것으로 쉽고 빠르게 근태를 신청할 수 있어요.\nwantedspaceBot을 사용하기 위해서는 원티드스페이스에 회원가입을 해야 합니다.\n- [https://dashboard.wantedspace.ai](https://dashboard.wantedspace.ai) 에 접속해서 회원가입 해주세요.",
+  "mpnId": "6130719",
+  "officeAssetId": "WA200001232",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.wantedspace.ai/personal_infomation.html",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53dd167d-b994-43b4-9cf6-81399060c435/2025071114453788/53dd167d-b994-43b4-9cf6-81399060c435_screenshot/0.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Microsoft Teams를 사용한 간편한 근태 관리",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53dd167d-b994-43b4-9cf6-81399060c435/2025071114453788/53dd167d-b994-43b4-9cf6-81399060c435_smallimage.png",
+  "systemVersion": "2025071114453788",
+  "termsOfUseUrl": "https://www.wantedspace.ai/service.html",
+  "validDomains": [
+    "wantedspace.ai",
+    "*.wantedspace.ai"
+  ],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "ko"
+  ],
+  "localizedDefinitions": []
+}

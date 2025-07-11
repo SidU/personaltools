@@ -1,0 +1,187 @@
+{
+  "manifestVersion": "1.17",
+  "id": "fe2f94eb-7164-4fcd-a2c7-16db90307caa",
+  "version": "1.3.2",
+  "name": "Edgility SMS",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 72658330,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Configure SMS for Teams",
+              "title": "setup"
+            },
+            {
+              "description": "Disconnect SMS for Teams",
+              "title": "disconnect"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "fe2f94eb-7164-4fcd-a2c7-16db90307caa",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "ITAdmin",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Edgility",
+  "developerUrl": "https://www.edgility.com.au",
+  "industries": [
+    "ProfessionalServices",
+    "Retail"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "fe2f94eb-7164-4fcd-a2c7-16db90307caa",
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Send a new SMS",
+          "fetchTask": true,
+          "id": "sendSMS",
+          "initialRun": true,
+          "title": "Send SMS",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Manage inbound SMS to channel",
+          "fetchTask": true,
+          "id": "enableInbound",
+          "initialRun": false,
+          "title": "Manage Inbound",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "text message",
+    "sms",
+    "communication"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fe2f94eb-7164-4fcd-a2c7-16db90307caa/2025071115141521/fe2f94eb-7164-4fcd-a2c7-16db90307caa_largeimage.png",
+  "lastUpdatedAt": "2024-10-22T02:06:08.5808727+00:00",
+  "longDescription": "**Edgility streamlines SMS/MMS communication via direct integrations with Microsoft 365 products.**\n\nEdgility extends the reach of your communication, by adding the ability to send and receive SMS and MMS from your Microsoft Teams chat threads, your Microsoft Outlook Inbox and Microsoft 365.\n\nSimply click the SMS Extension in your chat to reveal the Sending Screen, compose your message and click SEND! Your message is also submitted to the chat thread, where it becomes part of your Teams conversation. Stay on top of support or customer service queries by having **inbound SMS and SMS replies routed to the Team or Chat of your choice.** You'll be notified of inbound text messages and replies with message alerts in Microsoft Teams.\n\nThis App is an extension of Edgility's enterprise SMS platform, which allows for multi-user account provisioning and management. So you can set up Edgility SMS for Teams for your entire staff - no matter where they are, while managing a single account.\n\n_Currently available in Australia and New Zealand_\n\n**The features of Edgility SMS for Teams:**\n\n*   Send and receive SMS from collaborative Teams chats - visible to all members\n*   Send and receive SMS privately from Edgility App\n*   Send and receive MMS (Australia only. With Virtual Number)\n*   Send and receive SMS from your Outlook inbox\n*   Schedule SMS for later delivery\n*   SMS Conversation Threading in Teams chats\n*   Create Contacts and Groups\n*   Save templates for quick sending\n*   Notifications of inbound SMS\n*   Pin Edgility App to your Microsoft Teams Menu for easy access\n\nVisit https://edgility.com.au to sign up now. To talk to one of our experts, call us on +61 2 9518 5955 or email support@edgility.com.au\n\n**Here's why SMS is so effective**\n\nWith almost as many handsets in circulation as there are people on earth, SMS is perhaps the most widely accepted form of communication available. 98% of text messages are read by their intended recipient with 3 minutes of delivery. The immediacy and rate of successful delivery makes it more effective for reminders, alerts, and notifications than email.\n\n**SMS is who we are.**\n\nWith two decades of experience in mobile technology, Edgility are leaders in the development and integration of SMS conversational tools. Whatever your objective, Edgility can offer a simple, sometimes automated, solution to ensure SMS communication is effectively implemented into your marketing or transactional channels. Send or schedule SMS campaigns, receive replies, import contacts, view live delivery reporting, interact using the SMS Chat, integrate SMS into other systems using our APIs and more.",
+  "mpnId": "6291994",
+  "officeAssetId": "WA200003970",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.edgility.com.au/privacy-policy/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fe2f94eb-7164-4fcd-a2c7-16db90307caa/2025071115141521/fe2f94eb-7164-4fcd-a2c7-16db90307caa_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fe2f94eb-7164-4fcd-a2c7-16db90307caa/2025071115141521/fe2f94eb-7164-4fcd-a2c7-16db90307caa_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fe2f94eb-7164-4fcd-a2c7-16db90307caa/2025071115141521/fe2f94eb-7164-4fcd-a2c7-16db90307caa_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fe2f94eb-7164-4fcd-a2c7-16db90307caa/2025071115141521/fe2f94eb-7164-4fcd-a2c7-16db90307caa_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fe2f94eb-7164-4fcd-a2c7-16db90307caa/2025071115141521/fe2f94eb-7164-4fcd-a2c7-16db90307caa_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Send and receive SMS and MMS directly from Teams chat threads.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fe2f94eb-7164-4fcd-a2c7-16db90307caa/2025071115141521/fe2f94eb-7164-4fcd-a2c7-16db90307caa_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://app.messageport.com.au/integrations/teams/embed/chat",
+      "context": [
+        "channelTab",
+        "privateChatTab"
+      ],
+      "entityId": "chat_inbox",
+      "name": "Edgility Inbox",
+      "scopes": [
+        "personal",
+        "groupChat",
+        "team"
+      ],
+      "websiteUrl": "https://app.messageport.com.au/chat"
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115141521",
+  "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2041178",
+  "validDomains": [
+    "edgility.com.au",
+    "teams.edgility.com.au",
+    "messageport.com.au",
+    "app.messageport.com.au"
+  ],
+  "videoUrl": "https://youtu.be/hvC6Kg25GJU?si=IkVNgF8SsvEQhkI5",
+  "webApplicationInfo": {
+    "id": "e7b23d7b-28c1-4d43-afc4-f77c8c20e809",
+    "resource": "api://app.messageport.com.au/e7b23d7b-28c1-4d43-afc4-f77c8c20e809"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": []
+}

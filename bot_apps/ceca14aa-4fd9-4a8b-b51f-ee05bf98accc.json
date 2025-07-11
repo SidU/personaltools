@@ -1,0 +1,3743 @@
+{
+  "manifestVersion": "1.8",
+  "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+  "version": "2.0.0",
+  "name": "Sailpoint",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 74532060,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "View bot commands",
+              "title": "help"
+            },
+            {
+              "description": "Create new access request",
+              "title": "create"
+            },
+            {
+              "description": "Sign in to SailPoint account",
+              "title": "sign in"
+            },
+            {
+              "description": "Sign out from SailPoint account",
+              "title": "sign out"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "ITAdmin",
+    "Utilities"
+  ],
+  "creatorId": "",
+  "developerName": "SailPoint Technologies, Inc.",
+  "developerUrl": "https://www.sailpoint.com/",
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Security",
+    "Identity",
+    "Access management"
+  ],
+  "languageTag": "en-us",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+  "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+  "longDescription": "SailPoint app enables users to get the access they need to stay productive right from within the tool they use the most, all while maintaining strict governance and compliance controls. \n With this app you can: make role or application requests; cancel an access request if you don’t need it; approve or deny new access requests and add comments if needed; get notified when an access request is approved or denied along with comments. To use this app you need license to Access Requests within SailPoint IdentityNow for your organization. For more information please [contact Sailpoint](https://www.sailpoint.com/contact-us/). ",
+  "mpnId": "6132139",
+  "officeAssetId": "WA200002761",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Access Requests and Approvals right within Microsoft Teams anytime, everywhere.",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+      "entityId": "notifications-page",
+      "name": "Event Notifications",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+      "entityId": "requests-page",
+      "name": "My Requests",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+      "entityId": "approvals-page",
+      "name": "My Approvals",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+      "entityId": "help-page",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071114572195",
+  "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+  "validDomains": [
+    "teams-integration.accessiq.sailpoint.com"
+  ],
+  "webApplicationInfo": {
+    "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+    "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en-us",
+    "ko-kr",
+    "zh-cn",
+    "es-mx",
+    "cs-cz",
+    "da-dk",
+    "de-de",
+    "fi-fi",
+    "fr-fr",
+    "it-it",
+    "ja-jp",
+    "lt-lt",
+    "nl-nl",
+    "pl-pl",
+    "pt-br",
+    "ru-ru",
+    "sv-se",
+    "th-th",
+    "tr-tr",
+    "zh-tw"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Zobrazit příkazy bota",
+                  "title": "help"
+                },
+                {
+                  "description": "Vytvořit novou žádost o přístup",
+                  "title": "create"
+                },
+                {
+                  "description": "Přihlásit se k účtu SailPoint",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Odhlásit se od účtu SailPoint",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "cs-cz",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "Aplikace SailPoint poskytuje uživatelům přístup, který potřebují, aby mohli zůstat produktivní v nástroji, který používají nejčastěji. Zároveň používá přísné kontroly řízení a dodržování předpisů. \n S touto aplikací můžete: podávat žádosti o role nebo aplikace; rušit žádosti o přístup, pokud jej nepotřebujete; schvalovat nebo zamítat nové žádosti o přístup a v případě potřeby přidat komentář; dostávat oznámení o schválení nebo zamítnutí žádosti o přístup společně s komentáři. Chcete-li používat tuto aplikaci, potřebujete licenci pro žádosti o přístup v rámci SailPointu IdentityNow pro vaši organizaci. Ohledně dalších informací [kontaktujte SailPoint](https://www.sailpoint.com/contact-us/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Přistupujte k žádostem a schválením přímo z Microsoft Teams – kdekoli a kdykoli!",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Oznámení událostí",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Moje žádosti",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Moje schválení",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Pomoc",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Vis bot-kommandoer",
+                  "title": "help"
+                },
+                {
+                  "description": "Opret ny adgangsanmodning",
+                  "title": "create"
+                },
+                {
+                  "description": "Log ind på SailPoint-konto",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Log ud af SailPoint-konto",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "da-dk",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "SailPoint-appen gør det muligt for brugerne at få den adgang, de har brug for til at forblive produktive direkte fra det værktøj, de bruger mest samtidigt med at opretholde strenge styrings- og overholdelseskontroller. \n Med denne app kan du: anmode om roller eller applikationer; annullere en adgangsanmodning, hvis du ikke har brug for den; godkende eller afvise nye adgangsanmodninger og tilføje kommentarer, hvis det er nødvendigt; blive underrettet, når en adgangsanmodning er godkendt eller afvist sammen med kommentarer. For at bruge denne app har du brug for licens til adgangsanmodninger i SailPoint IdentityNow for din organisation. For mere information, venligst [kontakt SailPoint](https://www.sailpoint.com/contact-us/).",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Anmodninger om adgang og godkendelser direkte i Microsoft Teams.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Begivenhedsnotifikationer",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Mine anmodninger",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Mine godkendelser",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Hjælp",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Bot-Befehle anzeigen",
+                  "title": "help"
+                },
+                {
+                  "description": "Neue Zugriffsanfrage erstellen",
+                  "title": "create"
+                },
+                {
+                  "description": "Bei SailPoint-Konto anmelden",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Vom SailPoint-Konto abmelden",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "de-de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "Die SailPoint-App ermöglicht es den Benutzern, den Zugriff zu erhalten, den sie benötigen, um produktiv zu bleiben - direkt aus den Werkzeugen heraus, die sie am meisten nutzen - und gleichzeitig strikte Governance- und Compliance-Kontrollen aufrechtzuerhalten. \n Mit dieser App können Sie: Rollen- oder Anwendungsanforderungen stellen; eine Zugriffsanforderung stornieren, wenn Sie diese nicht benötigen; neue Zugriffsanforderungen genehmigen oder ablehnen und bei Bedarf Kommentare hinzufügen; Benachrichtigungen erhalten, wenn eine Zugriffsanforderung genehmigt oder abgelehnt wird, zusammen mit Kommentaren. Um diese App zu nutzen, benötigen Sie eine Lizenz für Zugriffsanfragen innerhalb von SailPoint IdentityNow für Ihre Organisation. Für weitere Informationen kontaktieren Sie bitte [SailPoint](https:\\/\\/www.sailpoint.com\\/contact-us\\/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Zugriffsanforderungen und Genehmigungen direkt in Microsoft Teams.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Ereignisbenachrichtigungen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Meine Anfragen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Meine Genehmigungen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Hilfe",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Ver comandos del bot",
+                  "title": "help"
+                },
+                {
+                  "description": "Crear nueva solicitud de acceso",
+                  "title": "create"
+                },
+                {
+                  "description": "Inicie sesión en la cuenta de SailPoint",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Cerrar sesión de la cuenta de SailPoint",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "es-mx",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "La aplicación de SailPoint permite a los usuarios obtener el acceso que necesitan para mantenerse productivos directamente desde la herramienta que más utilizan, todo mientras se mantienen rigurosos controles de gobernanza y cumplimiento. \n Con esta aplicación puede: realizar solicitudes de roles o aplicaciones; cancelar una solicitud de acceso si no la necesita; aprobar o denegar nuevas solicitudes de acceso y añadir comentarios si es necesario; recibir notificaciones cuando una solicitud de acceso es aprobada o denegada junto con los comentarios. Para usar esta aplicación necesita una licencia para solicitar accesos dentro de SailPoint IdentityNow para su organización. Para más información, [póngase en contacto con SailPoint](https:\\/\\/www.sailpoint.com\\/contact-us\\/).",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Acceda a las solicitudes y las aprobaciones directamente en Microsoft Teams.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Notificaciones de eventos",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Mis solicitudes",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Mis aprobaciones",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Ayuda",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Näytä bottikomennot",
+                  "title": "help"
+                },
+                {
+                  "description": "Luo uusi käyttöoikeuspyyntö",
+                  "title": "create"
+                },
+                {
+                  "description": "Kirjaudu sisään SailPoint-tiliin",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Kirjaudu ulos SailPoint-tilistä",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "fi-fi",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "SailPoint-sovelluksen avulla käyttäjät saavat pääsyn tuottavuuden kannalta tarpeellisimpiin toimintoihin suoraan yleisimmin käyttämänsä työkalun kautta valvonnasta ja vaatimustenmukaisuudesta tinkimättä. \n Sovelluksen avulla voit tehdä rooli- ja sovelluspyyntöjä, peruuttaa tarpeettomat käyttöoikeuspyynnöt, hyväksyä tai hylätä uudet käyttöoikeuspyynnöt, lisätä halutut kommentit sekä saada ilmoituksia käyttöoikeuspyyntöjen hyväksymisestä tai hylkäämisestä kommentteineen. Sovelluksen käyttöön tarvitaan organisaation SailPoint IdentityNow -käyttöoikeuspyyntöjen lisenssi. Pyydä lisätietoja [ottamalla yhteyttä SailPointiin](https://www.sailpoint.com/contact-us/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Microsoft Teamsin käyttöoikeuspyynnöt ja -hyväksynnät missä ja milloin tahansa.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Tapahtumailmoitukset",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Omat pyynnöt",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Omat hyväksynnät",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Ohje",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Voir les commandes du bot",
+                  "title": "help"
+                },
+                {
+                  "description": "Créer une nouvelle demande d'accès",
+                  "title": "create"
+                },
+                {
+                  "description": "Se connecter au compte SailPoint",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Se déconnecter du compte SailPoint",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "fr-fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "L'application SailPoint permet aux utilisateurs d'obtenir l'accès dont ils ont besoin pour rester productifs directement depuis l'outil qu'ils utilisent le plus, tout en maintenant des contrôles stricts de gouvernance et de conformité. \n Avec cette application, vous pouvez : faire des demandes de rôle ou d'application ; annuler une demande d'accès si vous n'en avez pas besoin ; approuver ou refuser de nouvelles demandes d'accès et ajouter des commentaires si nécessaire ; être informé lorsque qu'une demande d'accès est approuvée ou refusée, avec des commentaires. Pour utiliser cette application, vous avez besoin d'une licence pour les demandes d'accès au sein de SailPoint IdentityNow de votre organisation. Pour plus d'informations, veuillez [contacter SailPoint](https://www.sailpoint.com/contact-us/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Demandes et approbations d'accès directement dans Microsoft Teams.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Notifications d'événement",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Mes demandes",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Mes approbations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Aide",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Visualizza i comandi del bot",
+                  "title": "help"
+                },
+                {
+                  "description": "Crea nuova richiesta di accesso",
+                  "title": "create"
+                },
+                {
+                  "description": "Accedi all'account SailPoint",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Disconnettiti dall'account SailPoint",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "it-it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "L'app SailPoint consente agli utenti di ottenere l'accesso di cui hanno bisogno per rimanere produttivi direttamente dallo strumento che utilizzano di più, il tutto mantenendo rigorosi controlli di governance e conformità. \n Con questa app è possibile: effettuare richieste di ruolo o applicazione; annullare una richiesta di accesso se non è necessaria; approvare o rifiutare nuove richieste di accesso e aggiungere commenti se necessario; ricevere notifiche quando una richiesta di accesso viene approvata o negata insieme ai commenti. Per utilizzare questa app è necessaria la licenza per le richieste d'accesso all'interno di SailPoint IdentityNow per la tua organizzazione. Per ulteriori informazioni [contatta SailPoint](https://www.sailpoint.com/contact-us/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Richieste di accesso e approvazioni direttamente all'interno di Microsoft Teams.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Notifiche degli eventi",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Le mie richieste",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Le mie approvazioni",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Aiuto",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "ボットコマンドを表示",
+                  "title": "help"
+                },
+                {
+                  "description": "新しいアクセスリクエストを作成",
+                  "title": "create"
+                },
+                {
+                  "description": "SailPointアカウントにサインイン",
+                  "title": "sign in"
+                },
+                {
+                  "description": "SailPointアカウントからサインアウト",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "ja-jp",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "SailPointアプリは、厳格なガバナンスとコンプライアンス管理を維持しながら、ユーザーが使用頻度の最も高いツールから生産性を維持するために必要なアクセスを取得できるようにします。\n このアプリを使用すると、次のことが可能になります：ロールまたはアプリケーションのリクエストを行う；不要なアクセスリクエストをキャンセルする；新しいアクセスリクエストを承認または拒否し、必要に応じてコメントを追加する；アクセスリクエストが承認または拒否されたときに、コメント付きの通知を受け取る。このアプリを使用するには、組織のSailPoint IdentityNow内のアクセスライセンスが必要です。詳細については、[SailPointにお問い合わせください](https://www.sailpoint.com/contact-us/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "いつでもどこでもMicrosoft Teams内でアクセスリクエストと承認を行うことができます。",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "イベント通知",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "リクエスト",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "承認",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "ヘルプ",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "봇 명령어 보기",
+                  "title": "help"
+                },
+                {
+                  "description": "새 액세스 요청 생성",
+                  "title": "create"
+                },
+                {
+                  "description": "SailPoint 계정에 로그인",
+                  "title": "sign in"
+                },
+                {
+                  "description": "SailPoint 계정에서 로그아웃",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "ko-kr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "SailPoint 앱은 사용자가 가장 많이 사용하는 도구에서 생산성을 유지하는 데 필요한 액세스 권한을 얻을 수 있도록 하며, 엄격한 거버넌스 및 규정 준수 통제를 유지합니다. <<br>>이 앱을 통해 역할 또는 애플리케이션 요청을 하고, 필요하지 않은 경우 액세스 요청을 취소하고, 새로운 액세스 요청을 승인 또는 거부하고, 필요한 경우 의견을 추가할 수 있습니다. 또한, 액세스 요청이 승인 또는 거부될 때 의견과 함께 알림을 받게 됩니다. 이 앱을 사용하려면 조직의 SailPoint IdentityNow 내의 액세스 요청에 대한 라이센스가 필요합니다. 자세한 내용은 [SailPoint에 문의](https:\\/\\/www.sailpoint.com\\/contact-us\\/)하세요. ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Microsoft Teams 내에서 언제 어디서나 액세스 요청 및 승인을 처리하세요.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "이벤트 알림",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "내 요청",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "내 승인",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "도움말",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Peržiūrėti roboto komandas",
+                  "title": "help"
+                },
+                {
+                  "description": "Kurti naują prieigos užklausą",
+                  "title": "create"
+                },
+                {
+                  "description": "Prisijungti prie „SailPoint“ paskyros",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Atsijungti nuo „SailPoint“ paskyros",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "lt-lt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "Su „SailPoint“ programėle naudotojai gali gauti prieigą, kuri jiems reikalinga norint išlikti produktyviems tiesiogiai su įrankiu, kurį jie naudoja daugiausiai, vis dar išlaikant griežtą valdymą ir atitikties kontrolės priemones. \n Su šia programėle galite: teikti pareigų arba paraiškos užklausas; atšaukti prieigos užklausą, jei jos jums nereikia; patvirtinti arba atmesti naujas prieigos užklausas ir pridėti komentarus, jei reikia; gauti pranešimus, kai prieigos užklausa patvirtinama arba atmetama kartu su komentarais. Norėdami naudoti šią programėlę, privalote savo organizacijai turėti licenciją prie prieigos užklausų su „SailPoint IdentityNow“. Daugiau informacijos [kreipkitės į „SailPoint“](https://www.sailpoint.com/contact-us/).",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Prieigos užklausos ir patvirtinimai tiesiai „Microsoft Teams“.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Pranešimai apie įvykius",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Mano užklausos",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Mano patvirtinimai",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Pagalba",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Botcommando's bekijken",
+                  "title": "help"
+                },
+                {
+                  "description": "Nieuw toegangsverzoek creëren",
+                  "title": "create"
+                },
+                {
+                  "description": "Aanmelden bij SailPoint-account",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Afmelden van SailPoint-account",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "nl-nl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "De SailPoint-app geeft gebruikers de toegang die ze nodig hebben om productief te blijven, direct vanuit de tool die ze het meest gebruiken, terwijl strikte governance- en compliantiecontroles behouden blijven. \n Met deze app kunt u: rol- of applicatieverzoeken indienen; een toegangsverzoek annuleren als u het niet nodig hebt; nieuwe toegangsverzoeken goedkeuren of afwijzen en indien nodig opmerkingen toevoegen; meldingen ontvangen wanneer een toegangsverzoek wordt goedgekeurd of afgewezen, samen met opmerkingen. Om deze app te gebruiken, hebt u een licentie nodig voor Access Requests binnen SailPoint IdentityNow voor uw organisatie. Voor meer informatie kunt u [contact opnemen met SailPoint](https://www.sailpoint.com/contact-us/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Toegangsverzoeken en -goedkeuringen direct binnen Microsoft Teams.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Meldingen van gebeurtenissen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Mijn verzoeken",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Mijn toestemmingen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Hulp",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Zobacz polecenia bota",
+                  "title": "help"
+                },
+                {
+                  "description": "Utwórz nowe żądanie dostępu",
+                  "title": "create"
+                },
+                {
+                  "description": "Zaloguj się do konta SailPoint",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Wyloguj się z konta SailPoint",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "pl-pl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "Aplikacja SailPoint umożliwia użytkownikom uzyskanie dostępu, którego potrzebują, aby pozostać produktywnymi bezpośrednio z narzędzia, którego używają najczęściej, jednocześnie utrzymując ścisłe kontrole związane z zarządzaniem i zgodnością. \n Dzięki tej aplikacji możesz: składać wnioski o rolę lub aplikację; anulować wniosek o dostęp, jeśli go nie potrzebujesz; zatwierdzać lub odrzucać nowe wnioski o dostęp i dodawać komentarze w razie potrzeby; otrzymywać powiadomienia o zatwierdzeniu lub odrzuceniu wniosku o dostęp wraz z komentarzami. Aby korzystać z tej aplikacji, potrzebujesz licencji na Access Requests w ramach SailPoint IdentityNow dla Twojej organizacji. Aby uzyskać więcej informacji, prosimy [skontaktować się z SailPoint](https://www.sailpoint.com/contact-us/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Żądania dostępu i zatwierdzenia bezpośrednio w Microsoft Teams.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Powiadomienia o Wydarzeniach",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Moje żądania",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Moje zatwierdzenia",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Pomoc",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Visualizar comandos do bot",
+                  "title": "help"
+                },
+                {
+                  "description": "Crie uma nova solicitação de acesso",
+                  "title": "create"
+                },
+                {
+                  "description": "Faça login na conta do SailPoint",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Sair da conta do SailPoint",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "pt-br",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "O aplicativo SailPoint permite que os usuários obtenham o acesso necessário para se manterem produtivos diretamente na ferramenta que mais utilizam, tudo isso enquanto mantêm rigorosos controles de governança e conformidade. \n Com este aplicativo, você pode: fazer solicitações de função ou aplicação; cancelar uma solicitação de acesso se você não precisar dela; aprovar ou negar novas solicitações de acesso e adicionar comentários, se necessário; ser notificado quando uma solicitação de acesso for aprovada ou negada juntamente com os comentários. Para usar este aplicativo, você precisa de uma licença de Solicitações de Acesso dentro do SailPoint IdentityNow para a sua organização. Para obter mais informações, [entre em contato com o SailPoint](https://www.sailpoint.com/contact-us/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Solicitações de Acesso e Aprovações diretamente no Microsoft Teams.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Notificações de eventos",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Minhas solicitações",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Minhas aprovações",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Ajuda",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Просмотреть команды бота",
+                  "title": "help"
+                },
+                {
+                  "description": "Создать новый запрос доступа",
+                  "title": "create"
+                },
+                {
+                  "description": "Войти в учётную запись SailPoint",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Выйти из учётной записи SailPoint",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "ru-ru",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "Приложение SailPoint позволяет пользователям получать доступ, необходимый для поддержания продуктивности, непосредственно из инструмента, который они используют чаще всего, при этом соблюдая строгие меры управления доступом и контроля соответствия. \n С этим приложением вы можете: делать запросы на роли или приложения; отменять запрос на доступ, если он вам не нужен; утверждать или отклонять новые запросы на доступ и добавлять комментарии при необходимости; получать уведомления, когда запрос на доступ утверждён или отклонён вместе с комментариями. Для использования этого приложения вам необходима лицензия на запросы на доступ для вашей организации через SailPoint IdentityNow. Для получения дополнительной информации [свяжитесь с SailPoint](https://www.sailpoint.com/contact-us/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Запросы на доступ и утверждения прямо в Microsoft Teams.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Уведомления о событиях",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Мои запросы",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Мои утверждения",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Справка",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Visa kommandon för bot",
+                  "title": "help"
+                },
+                {
+                  "description": "Skapa ny åtkomstförfrågan",
+                  "title": "create"
+                },
+                {
+                  "description": "Logga in på SailPoint-konto",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Logga ut från SailPoint-konto",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "sv-se",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "SailPoint-appen gör det möjligt för användare att få tillgång till det som de behöver för att vara produktiva direkt från det verktyg de använder mest, samtidigt som strikta styrnings- och efterlevnadskontroller upprätthålls.\n Med denna app kan du: göra roll- eller applikationsförfrågningar, avbryta en åtkomstförfrågan om den inte behövs, godkänna eller avslå nya åtkomstförfrågningar och lägga till kommentarer vid behov, få information när en åtkomstförfrågan godkänns eller avslås tillsammans med kommentarer. För att använda denna app behöver du en licens för att få tillgång till åtkomstförfrågningar i SailPoint IdentityNow för din organisation. För mer information, [kontakta SailPoint](https://www.sailpoint.com/contact-us/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Åtkomstförfrågningar och godkännanden direkt i Microsoft Teams.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Evenemangsaviseringar",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "Mina begäranden",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Mina godkännanden",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Hjälp",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "ดูคำสั่งบอท",
+                  "title": "help"
+                },
+                {
+                  "description": "สร้างคำขอสิทธิ์เข้าถึงใหม่",
+                  "title": "create"
+                },
+                {
+                  "description": "เข้าสู่ระบบบัญชี SailPoint",
+                  "title": "sign in"
+                },
+                {
+                  "description": "ออกจากระบบบัญชี SailPoint",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "th-th",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "แอป SailPoint ช่วยให้ผู้ใช้สามารถเข้าถึงสิ่งที่พวกเขาต้องการเพื่อรักษาประสิทธิภาพในการทำงานได้จากภายในเครื่องมือที่พวกเขาใช้มากที่สุด ทั้งนี้ยังคงรักษาการควบคุมการปฏิบัติตามระเบียบข้อบังคับอย่างเคร่งครัด \n ด้วยแอปนี้คุณสามารถ: ทำการขอบทบาทหรือการใช้งานแอปพลิเคชัน; ยกเลิกคำขอการเข้าถึงหากคุณไม่ต้องการ; อนุมัติหรือปฏิเสธคำขอเข้าถึงใหม่และเพิ่มความคิดเห็นถ้าจำเป็น; ได้รับการแจ้งเตือนเมื่อคำขอการเข้าถึงได้รับการอนุมัติหรือถูกปฏิเสธพร้อมกับความคิดเห็น ในการใช้แอปนี้คุณต้องมีใบอนุญาตเพื่อเข้าถึงการขอภายใน SailPoint IdentityNow สำหรับองค์กรของคุณ สำหรับข้อมูลเพิ่มเติมกรุณา[ติดต่อ SailPoint](https://www.sailpoint.com/contact-us/)",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "สามารถขอและอนุมัติการเข้าถึงได้ภายใน Microsoft Teams ทุกที่ทุกเวลา",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "การแจ้งเตือนเหตุการณ์",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "คำขอของฉัน",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "การอนุมัติของฉัน",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "ช่วยเหลือ",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Bot komutlarını görüntüle",
+                  "title": "help"
+                },
+                {
+                  "description": "Yeni erişim isteği oluşturun",
+                  "title": "create"
+                },
+                {
+                  "description": "SailPoint hesabında oturum açın",
+                  "title": "sign in"
+                },
+                {
+                  "description": "SailPoint hesabındaki oturumu kapatın",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "tr-tr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "SailPoint uygulaması, kullanıcıların en çok kullandıkları araç içinde kalarak verimliliklerini sürdürmek için ihtiyaç duydukları erişimi elde etmelerini sağlar, bunun yanı sıra sıkı yönetim ve uyumluluk kontrollerini de korur. \n Bu uygulama ile rol veya uygulama istekleri gerçekleştirebilir; ihtiyacınız yoksa bir erişim isteğini iptal edebilir; yeni erişim isteklerini onaylayabilir veya reddedebilir ve gerektiğinde yorum ekleyebilirsiniz; bir erişim isteği onaylandığında veya reddedildiğinde yorumlarla birlikte bildirim alabilirsiniz. Bu uygulamayı kullanmak için kuruluşunuzda SailPoint IdentityNow ile Erişim İstekleri için lisansa ihtiyacınız vardır. Daha fazla bilgi için lütfen [SailPoint ile iletişime geçin](https://www.sailpoint.com/contact-us/). ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Microsoft Teams ile Erişim İsteklerini ve Onaylarını dilediğiniz zaman.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "Etkinlik Bildirimleri",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "İsteklerim",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "Onaylarım",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "Yardım",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "查看机器人命令",
+                  "title": "help"
+                },
+                {
+                  "description": "创建新的访问请求",
+                  "title": "create"
+                },
+                {
+                  "description": "登录SailPoint帐户",
+                  "title": "sign in"
+                },
+                {
+                  "description": "退出SailPoint登出",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "zh-cn",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "SailPoint应用程序使用户能够在他们最常用的工具中直接获得高效工作所需的访问权限，同时维持系统严格的治理和合规控制。\n 您可以通过此应用程序：提出角色或应用程序请求；在不需要时取消访问请求；批准或拒绝新的访问请求并添加必要的备注；在访问请求被批准或拒绝收到通知（连带备注）。要使用此应用程序，您需要拥有贵组织的SailPoint IdentityNow中获得访问请求许可。如需了解更多信息，请[联系SailPoint](https:\\/\\/www.sailpoint.com\\/contact-us\\/)。 ",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "随时随地在Microsoft Teams内访问请求并执行审批操作。",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "事件通知",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "我的请求",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "我的批准",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "帮助",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    },
+    {
+      "manifestVersion": "1.8",
+      "id": "ceca14aa-4fd9-4a8b-b51f-ee05bf98accc",
+      "version": "2.0.0",
+      "name": "SailPoint",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74532060,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "查看機器人命令",
+                  "title": "help"
+                },
+                {
+                  "description": "建立新的存取要求",
+                  "title": "create"
+                },
+                {
+                  "description": "登入 SailPoint 帳號",
+                  "title": "sign in"
+                },
+                {
+                  "description": "從SailPoint帳戶登出",
+                  "title": "sign out"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "developerName": "SailPoint Technologies, Inc.",
+      "developerUrl": "https://www.sailpoint.com/",
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Security",
+        "Identity",
+        "Access management"
+      ],
+      "languageTag": "zh-tw",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_largeimage.png",
+      "lastUpdatedAt": "2025-01-20T12:52:25.1566738+00:00",
+      "longDescription": "SailPoint 應用程式使用戶能夠從他們最常使用的工具中獲取所需的訪問權限，以保持工作效率，同時維持嚴格的治理和合規控制。\n 透過此應用程式，您可以：提出角色或應用程式請求；如果您不需要，可以取消訪問請求；批准或拒絕新的訪問請求，並在需要時添加評論；在訪問請求被批准或拒絕時收到通知，並附上評論。 要使用此應用程式，您需要獲得 SailPoint IdentityNow 的訪問請求許可。欲瞭解更多資訊，請 [聯繫 SailPoint](https://www.sailpoint.com/contact-us/)。",
+      "mpnId": "6132139",
+      "officeAssetId": "WA200002761",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sailpoint.com/legal/privacy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "隨時隨地在 Microsoft Teams 內進行存取請求和批准。",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc/2025071114572195/ceca14aa-4fd9-4a8b-b51f-ee05bf98accc_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/notifications",
+          "entityId": "notifications-page",
+          "name": "事件通知",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/requests",
+          "entityId": "requests-page",
+          "name": "我的要求",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/approvals",
+          "entityId": "approvals-page",
+          "name": "我的核准資料",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teams-integration.accessiq.sailpoint.com/ui/help",
+          "entityId": "help-page",
+          "name": "協助",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114572195",
+      "termsOfUseUrl": "https://www.sailpoint.com/legal/customer-agreements/",
+      "validDomains": [
+        "teams-integration.accessiq.sailpoint.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9a0a80f5-fb91-4a9d-954e-56e01c337a2d",
+        "resource": "api://teams-integration.accessiq.sailpoint.com/9a0a80f5-fb91-4a9d-954e-56e01c337a2d"
+      }
+    }
+  ]
+}

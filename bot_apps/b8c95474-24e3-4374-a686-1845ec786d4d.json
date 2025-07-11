@@ -1,0 +1,2236 @@
+{
+  "manifestVersion": "1.9",
+  "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+  "version": "1.0.11",
+  "name": "GoToMeeting",
+  "accentColor": "#A4D344",
+  "amsSellerAccountId": 14073140,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Get your personal meeting link",
+              "title": "start"
+            },
+            {
+              "description": "Join with a meeting ID",
+              "title": "join [meeting ID/name]"
+            },
+            {
+              "description": "Show available commands",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Get your personal meeting link",
+              "title": "start"
+            },
+            {
+              "description": "Join with a meeting ID",
+              "title": "join [meeting ID/name]"
+            },
+            {
+              "description": "Sign in to your account.",
+              "title": "sign in"
+            },
+            {
+              "description": "Sign out of your account.",
+              "title": "sign out"
+            },
+            {
+              "description": "Show available commands",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "developerName": "GoToMeeting by LogMeIn Inc.",
+  "developerUrl": "https://www.gotomeeting.com",
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Meeting Actions",
+          "fetchTask": false,
+          "id": "meetingActions",
+          "initialRun": false,
+          "taskInfo": {
+            "height": "385",
+            "title": "Meeting Actions",
+            "url": "https://my.jive.com/gtm-msteams/messaging-extension",
+            "width": "665"
+          },
+          "title": "Meeting Actions",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "voip",
+    "meeting"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_largeimage.png",
+  "lastUpdatedAt": "2021-11-03T09:22:06.660745+00:00",
+  "longDescription": "When you integrate GoToMeeting with Microsoft Teams, your meetings and calls will live where your team collaborates. Every tool has a purpose, and with the latest integration users can now maximize productivity by choosing the right meeting solution for the task at hand. Your organization may use Teams for file sharing, chat and small internal discussions. However, when it comes to important sessions with executives, customers, partners, analysts, investors & more, GoToMeeting ensures fast, high quality, and reliable large meetings for up to 250 people inside and outside your organization.\n\nPlease note that in order to use the GoToMeeting for Teams app, users must have an active GoToMeeting account. Please visit to [https://www.gotomeeting.com/](https://www.gotomeeting.com/) to find further information on how to get one.\nFor existing customers, please visit [https://support.goto.com/](https://support.goto.com/) for any required assistance.",
+  "officeAssetId": "WA200001489",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.logmeininc.com/legal/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "You can easily start or join meetings within Microsoft Teams",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://my.jive.com/gtm-msteams/dashboard",
+      "entityId": "Dashboard",
+      "name": "Dashboard",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://global.gotomeeting.com/"
+    },
+    {
+      "contentUrl": "https://my.jive.com/gtm-msteams/help",
+      "entityId": "Help",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115294170",
+  "termsOfUseUrl": "https://www.logmeininc.com/legal/terms-and-conditions",
+  "validDomains": [
+    "*.onjive.com",
+    "*.jive.com"
+  ],
+  "webApplicationInfo": {
+    "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+    "resource": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "zh"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.9",
+      "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+      "version": "1.0.11",
+      "name": "GoToMeeting",
+      "accentColor": "#A4D344",
+      "amsSellerAccountId": 14073140,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Persönlichen Meetinglink erhalten",
+                  "title": "start"
+                },
+                {
+                  "description": "Über eine Meeting-ID teilnehmen",
+                  "title": "join [Meeting-ID/Name]"
+                },
+                {
+                  "description": "Verfügbare Befehle anzeigen",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Persönlichen Meetinglink erhalten",
+                  "title": "start"
+                },
+                {
+                  "description": "Über eine Meeting-ID teilnehmen",
+                  "title": "join [Meeting-ID/Name]"
+                },
+                {
+                  "description": "Bei Ihrem Konto anmelden",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Von Ihrem Konto abmelden",
+                  "title": "sign out"
+                },
+                {
+                  "description": "Verfügbare Befehle anzeigen",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "GoToMeeting by LogMeIn Inc.",
+      "developerUrl": "https://www.gotomeeting.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Meetingaktionen",
+              "fetchTask": false,
+              "id": "meetingActions",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "385",
+                "title": "Meeting Actions",
+                "url": "https://my.jive.com/gtm-msteams/messaging-extension",
+                "width": "665"
+              },
+              "title": "Meetingaktionen",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "voip",
+        "meeting"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_largeimage.png",
+      "lastUpdatedAt": "2021-11-03T09:22:06.660745+00:00",
+      "longDescription": "Wenn Sie GoToMeeting in Microsoft Teams integrieren, finden Meetings und Anrufe dort statt, wo Ihr Team zusammenarbeitet. Jedes Tool ist für einen bestimmten Zweck optimiert, und mit der aktuellen Integration maximieren Sie Ihre Produktivität mit der jeweils optimalen Meeting-Lösung. Ihr Unternehmen setzt Teams möglicherweise schon für den Dateizugriff, Chats und kleinere interne Besprechungen ein. Wenn es jedoch um wichtige Sitzungen mit Führungskräften, Kunden, Partnern, Analysten, Investoren usw. geht, gewährleistet GoToMeeting schnelle, qualitativ hochwertige und zuverlässige große Meetings für bis zu 250 Personen innerhalb und außerhalb Ihres Unternehmens.\n\nBitte beachten Sie, dass für die Nutzung von GoToMeeting for Teams ein aktives GoToMeeting-Konto erforderlich ist. Unter [https://www.gotomeeting.com/](https://www.gotomeeting.com/) finden Sie weitere Informationen.\nSie sind schon Kunde? Unter [https://support.goto.com/](https://support.goto.com/) erhalten Sie Unterstützung.",
+      "officeAssetId": "WA200001489",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.logmeininc.com/legal/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Schnell und einfach in Microsoft Teams Meetings starten oder daran teilnehmen",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/dashboard",
+          "entityId": "Dashboard",
+          "name": "Dashboard",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://global.gotomeeting.com/"
+        },
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/help",
+          "entityId": "Help",
+          "name": "Hilfe",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294170",
+      "termsOfUseUrl": "https://www.logmeininc.com/legal/terms-and-conditions",
+      "validDomains": [
+        "*.onjive.com",
+        "*.jive.com"
+      ],
+      "webApplicationInfo": {
+        "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+        "resource": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+      "version": "1.0.11",
+      "name": "GoToMeeting",
+      "accentColor": "#A4D344",
+      "amsSellerAccountId": 14073140,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Conseguir su enlace de reuniones personal",
+                  "title": "start"
+                },
+                {
+                  "description": "Unirse con un ID de reunión",
+                  "title": "join [ID/nombre de la reunión]"
+                },
+                {
+                  "description": "Mostrar comandos disponibles",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Conseguir su enlace de reuniones personal",
+                  "title": "start"
+                },
+                {
+                  "description": "Unirse con un ID de reunión",
+                  "title": "join [ID/nombre de la reunión]"
+                },
+                {
+                  "description": "Iniciar sesión en su cuenta",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Cerrar la sesión de su cuenta",
+                  "title": "sign out"
+                },
+                {
+                  "description": "Mostrar comandos disponibles",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "GoToMeeting by LogMeIn Inc.",
+      "developerUrl": "https://www.gotomeeting.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Acciones de reunión",
+              "fetchTask": false,
+              "id": "meetingActions",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "385",
+                "title": "Meeting Actions",
+                "url": "https://my.jive.com/gtm-msteams/messaging-extension",
+                "width": "665"
+              },
+              "title": "Acciones de reunión",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "voip",
+        "meeting"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_largeimage.png",
+      "lastUpdatedAt": "2021-11-03T09:22:06.660745+00:00",
+      "longDescription": "Cuando integra GoToMeeting con Microsoft Teams, sus reuniones y llamadas estarán justo donde su equipo colabora. Todas las herramientas tienen una finalidad y, gracias a esta reciente integración, los usuarios pueden potenciar su productividad eligiendo la solución de reuniones adecuada para la tarea que están realizando. Sus organizaciones pueden usar Teams para compartir archivos, chats y debates internos ligeros. No obstante, cuando se trata de sesiones importantes con ejecutivos, clientes, socios, analistas, inversores y otros perfiles parecidos, GoToMeeting garantiza reuniones rápidas, de alta calidad y fiables para hasta 250 personas de su organización y externas.\n\nPara usar la aplicación GoToMeeting for Teams, los usuarios deben tener una cuenta de GoToMeeting activa. Visite [https://www.gotomeeting.com/](https://www.gotomeeting.com/) para obtener más información sobre cómo conseguir una.\nLos clientes existentes pueden visitar [https://support.goto.com/](https://support.goto.com/) para obtener la ayuda que precisan.",
+      "officeAssetId": "WA200001489",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.logmeininc.com/legal/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Puede iniciar reuniones o unirse a ellas fácilmente desde Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/dashboard",
+          "entityId": "Dashboard",
+          "name": "Panel de control",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://global.gotomeeting.com/"
+        },
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/help",
+          "entityId": "Help",
+          "name": "Ayuda",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294170",
+      "termsOfUseUrl": "https://www.logmeininc.com/legal/terms-and-conditions",
+      "validDomains": [
+        "*.onjive.com",
+        "*.jive.com"
+      ],
+      "webApplicationInfo": {
+        "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+        "resource": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+      "version": "1.0.11",
+      "name": "GoToMeeting",
+      "accentColor": "#A4D344",
+      "amsSellerAccountId": 14073140,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Obtenez votre lien de réunion personnel",
+                  "title": "start"
+                },
+                {
+                  "description": "Rejoindre avec un identifiant de réunion",
+                  "title": "join [ID de réunion/nom]"
+                },
+                {
+                  "description": "Afficher les commandes disponibles",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Obtenez votre lien de réunion personnel",
+                  "title": "start"
+                },
+                {
+                  "description": "Rejoindre avec un identifiant de réunion",
+                  "title": "join [ID de réunion/nom]"
+                },
+                {
+                  "description": "Connexion à votre compte",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Déconnexion de votre compte",
+                  "title": "sign out"
+                },
+                {
+                  "description": "Afficher les commandes disponibles",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "GoToMeeting by LogMeIn Inc.",
+      "developerUrl": "https://www.gotomeeting.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Actions de réunion",
+              "fetchTask": false,
+              "id": "meetingActions",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "385",
+                "title": "Meeting Actions",
+                "url": "https://my.jive.com/gtm-msteams/messaging-extension",
+                "width": "665"
+              },
+              "title": "Actions de réunion",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "voip",
+        "meeting"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_largeimage.png",
+      "lastUpdatedAt": "2021-11-03T09:22:06.660745+00:00",
+      "longDescription": "En intégrant GoToMeeting avec Microsoft Teams, vous pouvez rapprocher vos appels et vos réunions du centre de collaboration de votre équipe. Chaque outil a son utilité, et avec cette dernière intégration les utilisateurs peuvent optimiser leur productivité en choisissant la solution de réunion adaptée à la tâche. Votre organisation peut utiliser Teams pour le partage de fichiers, le chat et les petites discussions internes. Mais pour des réunions plus importantes avec des cadres, des clients, des partenaires, des analystes, des investisseurs et autres , GoToMeeting permet des réunions rapides de grande qualité en toute fiabilité jusqu’à 250 personnes internes ou externes.\n\nVeuillez noter que pour utiliser l’application GoToMeeting for Teams, les utilisateurs doivent avoir un compte GoToMeeting actif. Veuillez consulter [https://www.gotomeeting.com/](https://www.gotomeeting.com/) pour savoir comment en obtenir un.\nPour les client existants, veuillez consulter [https://support.goto.com/](https://support.goto.com/) pour obtenir de l’aide.",
+      "officeAssetId": "WA200001489",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.logmeininc.com/legal/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Vous pouvez facilement démarrer ou rejoindre des réunions dans Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/dashboard",
+          "entityId": "Dashboard",
+          "name": "Tableau de bord",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://global.gotomeeting.com/"
+        },
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/help",
+          "entityId": "Help",
+          "name": "Aide",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294170",
+      "termsOfUseUrl": "https://www.logmeininc.com/legal/terms-and-conditions",
+      "validDomains": [
+        "*.onjive.com",
+        "*.jive.com"
+      ],
+      "webApplicationInfo": {
+        "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+        "resource": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+      "version": "1.0.11",
+      "name": "GoToMeeting",
+      "accentColor": "#A4D344",
+      "amsSellerAccountId": 14073140,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Ottieni il collegamento alla tua riunione personale",
+                  "title": "start"
+                },
+                {
+                  "description": "Partecipa con un ID riunione",
+                  "title": "join [ID/nome riunione]"
+                },
+                {
+                  "description": "Mostra i comandi disponibili",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Ottieni il tuo personale collegamento alla riunione",
+                  "title": "start"
+                },
+                {
+                  "description": "Partecipa con un ID riunione",
+                  "title": "join [ID/nome riunione]"
+                },
+                {
+                  "description": "Accedi al tuo account",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Disconnettiti dal tuo account",
+                  "title": "sign out"
+                },
+                {
+                  "description": "Mostra i comandi disponibili",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "GoToMeeting by LogMeIn Inc.",
+      "developerUrl": "https://www.gotomeeting.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Azioni riunione",
+              "fetchTask": false,
+              "id": "meetingActions",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "385",
+                "title": "Meeting Actions",
+                "url": "https://my.jive.com/gtm-msteams/messaging-extension",
+                "width": "665"
+              },
+              "title": "Azioni riunione",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "voip",
+        "meeting"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_largeimage.png",
+      "lastUpdatedAt": "2021-11-03T09:22:06.660745+00:00",
+      "longDescription": "Integrando GoToMeeting con Microsoft Teams, le tue riunioni e chiamate saranno il fulcro per la collaborazione del tuo team. Ogni strumento ha uno scopo, e l’integrazione più recente assicura la massima produttività degli utenti consentendo di scegliere la soluzione di riunione più adatta per le varie situazioni. La tua organizzazione può usare Teams per la condivisione di file, la chat e piccole conversazioni interne. Tuttavia, per le sessioni più importanti, con dirigenti, clienti, partner, analisti, investitori e altro, GoToMeeting consente di tenere riunioni rapide, di alta qualità e affidabili con fino a 250 partecipanti, sia interni che esterni alla tua organizzazione.\n\nRicorda che, per usare l’app GoToMeeting for Teams, gli utenti devono disporre di un account GoToMeeting attivo. Visita [https://www.gotomeeting.com/](https://www.gotomeeting.com/) per ulteriori informazioni su come ottenere un account.\nSe sei già un cliente, visita [https://support.goto.com/](https://support.goto.com/) se hai bisogno di assistenza.",
+      "officeAssetId": "WA200001489",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.logmeininc.com/legal/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Puoi avviare riunioni o parteciparvi direttamente da Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/dashboard",
+          "entityId": "Dashboard",
+          "name": "Dashboard",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://global.gotomeeting.com/"
+        },
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/help",
+          "entityId": "Help",
+          "name": "Guida",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294170",
+      "termsOfUseUrl": "https://www.logmeininc.com/legal/terms-and-conditions",
+      "validDomains": [
+        "*.onjive.com",
+        "*.jive.com"
+      ],
+      "webApplicationInfo": {
+        "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+        "resource": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+      "version": "1.0.11",
+      "name": "GoToMeeting",
+      "accentColor": "#A4D344",
+      "amsSellerAccountId": 14073140,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Obter o link de sua reunião pessoal",
+                  "title": "start"
+                },
+                {
+                  "description": "Ingressar usando um ID de reunião",
+                  "title": "join [ID/nome da reunião]"
+                },
+                {
+                  "description": "Exibir os comandos disponíveis",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Obter o link de sua reunião pessoal",
+                  "title": "start"
+                },
+                {
+                  "description": "Ingressar usando um ID de reunião",
+                  "title": "join [ID/nome da reunião]"
+                },
+                {
+                  "description": "Efetuar login em sua conta",
+                  "title": "sign in"
+                },
+                {
+                  "description": "Efetuar logout de sua conta",
+                  "title": "sign out"
+                },
+                {
+                  "description": "Exibir os comandos disponíveis",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "GoToMeeting by LogMeIn Inc.",
+      "developerUrl": "https://www.gotomeeting.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Ações da reunião",
+              "fetchTask": false,
+              "id": "meetingActions",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "385",
+                "title": "Meeting Actions",
+                "url": "https://my.jive.com/gtm-msteams/messaging-extension",
+                "width": "665"
+              },
+              "title": "Ações da reunião",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "voip",
+        "meeting"
+      ],
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_largeimage.png",
+      "lastUpdatedAt": "2021-11-03T09:22:06.660745+00:00",
+      "longDescription": "Ao integrar o GoToMeeting com o Microsoft Teams, suas reuniões e chamadas serão feitas no mesmo lugar onde sua equipe já colabora. Toda ferramenta tem um propósito e, com essa nova integração, agora os usuários podem maximizar a produtividade escolhendo a solução de reuniões certa para a tarefa em questão. Sua organização pode usar o Teams para compartilhamento de arquivos, bate-papo e pequenas conversas internas. Entretanto, quando se trata de sessões importantes com o corpo executivo, clientes, parceiros, analistas, investidores e muitos outros, o GoToMeeting garante reuniões grandes, rápidas, de alta qualidade e confiáveis para até 250 pessoas de dentro e fora da organização.\n\nÉ importante salientar que, para usar o aplicativo GoToMeeting for Teams, os usuários precisam ter uma conta ativa do GoToMeeting. Veja como obter uma conta em [https://www.gotomeeting.com/](https://www.gotomeeting.com/).\nOs clientes existentes devem acessar [https://support.goto.com/](https://support.goto.com/) caso precisem de ajuda.",
+      "officeAssetId": "WA200001489",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.logmeininc.com/legal/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "É fácil iniciar ou ingressar em reuniões pelo Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/dashboard",
+          "entityId": "Dashboard",
+          "name": "Painel",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://global.gotomeeting.com/"
+        },
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/help",
+          "entityId": "Help",
+          "name": "Ajuda",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294170",
+      "termsOfUseUrl": "https://www.logmeininc.com/legal/terms-and-conditions",
+      "validDomains": [
+        "*.onjive.com",
+        "*.jive.com"
+      ],
+      "webApplicationInfo": {
+        "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+        "resource": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+      "version": "1.0.11",
+      "name": "GoToMeeting",
+      "accentColor": "#A4D344",
+      "amsSellerAccountId": 14073140,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "获取您的个人会议链接",
+                  "title": "start"
+                },
+                {
+                  "description": "使用会议 ID 加入",
+                  "title": "join [会议 ID/名称]"
+                },
+                {
+                  "description": "显示可用指令",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "获取您的个人会议链接",
+                  "title": "start"
+                },
+                {
+                  "description": "使用会议 ID 加入",
+                  "title": "join [会议 ID/名称]"
+                },
+                {
+                  "description": "登录您的帐户",
+                  "title": "sign in"
+                },
+                {
+                  "description": "登出您的帐户",
+                  "title": "sign out"
+                },
+                {
+                  "description": "显示可用指令",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "GoToMeeting by LogMeIn Inc.",
+      "developerUrl": "https://www.gotomeeting.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "f4d21119-118a-42db-8ca7-9598b5c9f7e3",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "会议操作",
+              "fetchTask": false,
+              "id": "meetingActions",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "385",
+                "title": "Meeting Actions",
+                "url": "https://my.jive.com/gtm-msteams/messaging-extension",
+                "width": "665"
+              },
+              "title": "会议操作",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "voip",
+        "meeting"
+      ],
+      "languageTag": "zh",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_largeimage.png",
+      "lastUpdatedAt": "2021-11-03T09:22:06.660745+00:00",
+      "longDescription": "将 GoToMeeting 与 Microsoft Teams 集成后，您的团队在哪里合作，您的会议和通话就可以在哪里进行。每一个工具都有自己的用途。通过这一最新集成，用户可以为手头的任务选择合适的解决方案来使工作效率最大化。您的组织可以通过 Teams 分享文件、聊天并展开小型的内部讨论。当涉及到与高管、客户、合作伙伴、分析师或投资者等人员的重要会议时，GoToMeeting 可为组织内外多达 250 人开展快速、优质和可靠的大型会议。\n\n请注意，用户必须拥有已激活的 GoToMeeting 帐户才能使用 GoToMeeting for Teams 应用程序。关于帐户获取方式，请访问 [https://www.gotomeeting.com/](https://www.gotomeeting.com/) 了解详情。\n现有客户如需要任何帮助，请访问 [https://support.goto.com/](https://support.goto.com/)。",
+      "officeAssetId": "WA200001489",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.logmeininc.com/legal/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "您可以在 Microsoft Teams 中轻松地启动或加入会议",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b8c95474-24e3-4374-a686-1845ec786d4d/2025071115294170/b8c95474-24e3-4374-a686-1845ec786d4d_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/dashboard",
+          "entityId": "Dashboard",
+          "name": "控制面板",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://global.gotomeeting.com/"
+        },
+        {
+          "contentUrl": "https://my.jive.com/gtm-msteams/help",
+          "entityId": "Help",
+          "name": "帮助",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294170",
+      "termsOfUseUrl": "https://www.logmeininc.com/legal/terms-and-conditions",
+      "validDomains": [
+        "*.onjive.com",
+        "*.jive.com"
+      ],
+      "webApplicationInfo": {
+        "id": "b8c95474-24e3-4374-a686-1845ec786d4d",
+        "resource": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+      }
+    }
+  ]
+}

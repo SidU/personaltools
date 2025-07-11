@@ -1,0 +1,212 @@
+{
+  "manifestVersion": "1.19",
+  "id": "cc7afbb5-77be-422b-906b-33aa68b7d81f",
+  "version": "1.0.0",
+  "name": "Peaka EU",
+  "accentColor": "#5F62F0",
+  "amsSellerAccountId": 90534920,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Get information on how to use the bot",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Get information on how to use the bot",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "fbb45249-585e-416b-81b6-76858d9bc456",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "DataVisualizationAndBI"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Peaka Inc.",
+  "developerUrl": "https://www.peaka.com/",
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "fbb45249-585e-416b-81b6-76858d9bc456",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "context": [
+            "commandBox"
+          ],
+          "description": "Selects active Peaka project used by assistant",
+          "fetchTask": true,
+          "id": "selectProject",
+          "initialRun": true,
+          "taskInfo": {
+            "height": "medium",
+            "title": "Select Active Peaka Project",
+            "url": "https://stripe-proxy.service.eu.peaka.studio/teams/api/messages",
+            "width": "medium"
+          },
+          "title": "Select Active Project",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cc7afbb5-77be-422b-906b-33aa68b7d81f/2025071114383247/cc7afbb5-77be-422b-906b-33aa68b7d81f_largeimage.png",
+  "lastUpdatedAt": "2025-03-26T10:41:33.8444533+00:00",
+  "longDescription": "Introducing Peaka AI Assistant, your new go-to solution for interacting with your data sources without the need for technical expertise or SQL knowledge.\nThis powerful tool empowers you to ask questions in your natural language, and it will provide you with the necessary information, insights, or data segments you seek.\n\nPeaka connects to many data sources. You can check the whole integration list from here: [https://www.peaka.com/integrations/](https://www.peaka.com/integrations/)\n\nTo get started:\n\n1. Register on [https://eu.peaka.studio/signup](https://eu.peaka.studio/signup)\n2. Create a new project\n3. Connect your data sources (or try out our sample data)\n4. In your project go to Settings > Integrations\n5. Copy your Microsoft Teams ID: `{tenant_id}` to Settings > Integrations\n6. Start asking me about your data\n\nIf you have multiple projects you can use select project command by typing /Peaka in command box.\n\nStuck? Send us an email info@peaka.com. For more check out our [docs](https://docs.peaka.com/).\n\nIf you see an issue on AI generated answers reach out to us  ➡️ support@peaka.com. We're here to help!\n\nNote: This bot is connected to the EU region of Peaka.",
+  "mpnId": "",
+  "officeAssetId": "WA200008352",
+  "permissions": [],
+  "privacyUrl": "https://www.peaka.com/privacy-policy",
+  "publisherDocsUrl": "https://docs.peaka.com",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cc7afbb5-77be-422b-906b-33aa68b7d81f/2025071114383247/cc7afbb5-77be-422b-906b-33aa68b7d81f_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cc7afbb5-77be-422b-906b-33aa68b7d81f/2025071114383247/cc7afbb5-77be-422b-906b-33aa68b7d81f_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cc7afbb5-77be-422b-906b-33aa68b7d81f/2025071114383247/cc7afbb5-77be-422b-906b-33aa68b7d81f_screenshot/2.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Peaka enables natural language queries over your data within Microsoft Teams.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cc7afbb5-77be-422b-906b-33aa68b7d81f/2025071114383247/cc7afbb5-77be-422b-906b-33aa68b7d81f_smallimage.png",
+  "systemVersion": "2025071114383247",
+  "termsOfUseUrl": "https://www.peaka.com/terms-and-conditions",
+  "validDomains": [],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": []
+}

@@ -1,0 +1,3944 @@
+{
+  "manifestVersion": "1.12",
+  "id": "312ac5ed-982b-453a-a784-f5258c182593",
+  "version": "1.0.1",
+  "name": "Easy Poll - Vote & Survey",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 81188260,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Provides more information on how to use Easy Poll.",
+              "title": "Help"
+            },
+            {
+              "description": "Provides examples of how to use polling.",
+              "title": "Inspire"
+            }
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "Utilities"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "hyOffice",
+  "developerUrl": "https://www.easy-poll.app",
+  "galleryTabs": [],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Create a poll",
+          "fetchTask": true,
+          "id": "createPoll",
+          "initialRun": false,
+          "title": "Create a poll",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "vote survey quiz feedback questionnaire",
+    "umfrage abstimmung encuestas sondage qna",
+    "votacao pesquisa forms oylama 投票 调查 설문조사"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+  "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+  "longDescription": "Enhance your team's decision-making process with Easy Poll. Easy Poll allows you to seamlessly create and manage polls directly within Microsoft Teams. This makes it an essential asset for gathering opinions and making informed decisions in your team or organization.\n\n**Key Features:**\n- **Instant Poll Creation:** Quickly create a poll and use it immediately in any chat. Obtain immediate feedback from your team.\n- **Drafts for Later:** Prepare polls in advance by creating drafts and posting them when ready.\n- **Reusable Polls:** Save time by reusing polls across different chats and channels with ease.\n- **Organized Overview:** Maintain a clear and organized overview of all your polls for easy access whenever needed.\n\n**No Account Needed**: Easy Poll operates directly within Microsoft Teams without requiring any registration. This ensures that everyone can participate and vote instantly, fostering seamless team collaboration.\n\nExperience the convenience of Easy Poll by **creating your first poll now**! Use the app for free with a limited number of polls.\nLearn more at [www.easy-poll.app](https://www.easy-poll.app/).",
+  "mpnId": "6525452",
+  "officeAssetId": "WA200007310",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.easy-poll.app/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Instant polls. Easy.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+      "entityId": "index",
+      "name": "Home",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+    }
+  ],
+  "systemVersion": "2025071113033950",
+  "termsOfUseUrl": "https://www.easy-poll.app/terms",
+  "validDomains": [
+    "easypollbot.azurewebsites.net",
+    "poll.easy-poll.app",
+    "cdn.easy-poll.app",
+    "easypollbackend.azurewebsites.net"
+  ],
+  "webApplicationInfo": {
+    "id": "312ac5ed-982b-453a-a784-f5258c182593",
+    "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "pt",
+    "nl",
+    "it",
+    "ko",
+    "ja",
+    "ar",
+    "he",
+    "da",
+    "nb",
+    "sv",
+    "tr",
+    "zh",
+    "vi",
+    "cs",
+    "el",
+    "fi",
+    "pl"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "التصويت والاستطلاع - Easy Poll",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "ar",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "**Easy Poll** يتيح لك إنشاء وإدارة الاستطلاعات بسلاسة ومباشرة. عزز عملية اتخاذ القرار في فريقك باستخدام Easy Poll.\n\nيجعله أداة أساسية لجمع الآراء واتخاذ قرارات مستنيرة في فريقك أو مؤسستك داخل Microsoft Teams.\n\n**الرئيسية الميزات:**\n- **إنشاء استطلاع فوري**: قم بإنشاء استطلاع بسرعة واستخدمه على الفور في أي دردشة. احصل على تغذية راجعة فورية من فريقك.\n- **مسودات لاحقًا للتنفيذ**: قم بتحضير الاستطلاعات مسبقًا من خلال إنشاء المسودات ونشرها عندما تكون جاهزة.\n- **إعادة استخدام الاستطلاعات**: وفر الوقت من خلال إعادة استخدام الاستطلاعات عبر الدردشات والقنوات المختلفة بكل سهولة.\n- **نظرة عامة منظمة**: حافظ على نظرة عامة واضحة ومنظمة لجميع استطلاعاتك بسهولة للوصول إليها عند الحاجة.\n- **لحساب حاجة لا**: Easy Poll يعمل مباشرة داخل Microsoft Teams دون الحاجة إلى تسجيل، مما يضمن مشاركة الجميع بسهولة.\n\nجرب الراحة التي يقدمها Easy Poll من خلال إنشاء استطلاعك الأول الآن! استخدم التطبيق مجانًا مع عدد محدود من الفريق.\n\nلمزيد من المعلومات، قم بزيارة [www.easy-poll.app](https://www.easy-poll.app)\n",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": ".الاستطلاعات الفورية. بكل سهولة",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Hlasování",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "cs",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "Zlepšete rozhodovací proces ve vašem týmu pomocí Easy Poll. Easy Poll vám umožňuje bezproblémově vytvářet a spravovat ankety přímo v Microsoft Teams, což z něj dělá nezbytný nástroj pro sběr názorů a přijímání informovaných rozhodnutí ve vašem týmu nebo organizaci.\n\n**Klíčové funkce:**\n- **Okamžité vytváření anket:** Rychle vytvořte anketu a okamžitě ji použijte v jakémkoli chatu. Získejte okamžitou zpětnou vazbu od svého týmu.\n- **Návrhy pro pozdější použití:** Připravte si ankety předem vytvořením návrhů a zveřejněte je, když budete připraveni.\n- **Znovu použitelné ankety:** Ušetřete čas opakovaným použitím anket napříč různými chaty a kanály s lehkostí.\n- **Přehledné uspořádání:** Udržujte si jasný a přehledný přehled o všech vašich anketách pro snadný přístup, kdykoli je budete potřebovat.\nNení potřeba žádný účet: Easy Poll funguje přímo v Microsoft Teams bez nutnosti registrace. To zajišťuje, že každý se může okamžitě zapojit a hlasovat, čímž podporuje bezproblémovou týmovou spolupráci.\nZažijte pohodlí Easy Poll vytvořením vaší první ankety nyní! Aplikaci můžete používat zdarma s omezeným počtem anket.\nVíce informací naleznete na [www.easy-poll.app](https://www.easy-poll.app).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Okamžité hlasování. Snadno.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Afstemninger",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "da",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "**Forbedr dit teams beslutningsproces med Easy Poll.** Easy Poll giver dig mulighed for nemt\nat oprette og administrere afstemninger direkte i Microsoft Teams. Dette gør det til et\nuundværligt værktøj til at indsamle meninger og træffe velinformerede beslutninger i dit\nteam eller din organisation.\n\n**Nøglefunktioner:**\n**Øjeblikkelig oprettelse af afstemninger:** Opret hurtigt en afstemning og brug den straks\ni enhver chat. Få øjeblikkelig feedback fra dit team.\n- **Kladder til senere:** Forbered afstemninger på forhånd ved at oprette kladder og\noffentliggøre dem, når de er klar.\n- **Genanvendelige afstemninger:** Spar tid ved at genbruge afstemninger på tværs af\nforskellige chats og kanaler med lethed.\n- **Organiseret overblik:** Bevar et klart og organiseret overblik over alle dine afstemninger,\nså de er nemme at tilgå, når det er nødvendigt.\n\n**Ingen konto nødvendig:** Easy Poll fungerer direkte i Microsoft Teams uden behov for\nregistrering. Dette sikrer, at alle kan deltage og stemme øjeblikkeligt, hvilket fremmer\nproblemfri team-samarbejde.\n\nOplev bekvemmeligheden ved Easy Poll ved at oprette din første afstemning nu! Brug\nappen gratis med et begrænset antal afstemninger.\n\nLæs mere på [www.easy-poll.app](https://www.easy-poll.app).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Øjeblikkelige afstemninger. Nemt.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Umfragen",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "Verbessern Sie den Entscheidungsprozess Ihres Teams mit Easy Poll. Easy Poll ermöglicht es Ihnen, nahtlos Umfragen direkt in Microsoft Teams zu erstellen und zu verwalten. Dies macht es zu einem unverzichtbaren Werkzeug für das Sammeln von Meinungen und das Treffen fundierter Entscheidungen in Ihrem Team oder Ihrer Organisation.\n\n**Vorteile:**\n- **Sofortige Umfrageerstellung:** Erstellen Sie schnell eine Umfrage und nutzen Sie sie sofort in jedem Chat. Erhalten Sie sofortiges Feedback von Ihrem Team.\n- **Entwürfe für später:** Bereiten Sie Umfragen im Voraus vor, indem Sie Entwürfe erstellen diese bei Bedarf posten.\n- **Wiederverwendbare Umfragen:** Sparen Sie Zeit, indem Sie Umfragen mühelos in verschiedenen Chats und Kanälen wiederverwenden.\n- **Organisierte Übersicht:** Behalten Sie eine klare und organisierte Übersicht über alle Ihre Umfragen für einen einfachen Zugriff bei Bedarf.\n\n**Kein Konto erforderlich:** Easy Poll funktioniert direkt innerhalb von Microsoft Teams, ohne dass eine Registrierung erforderlich ist. Dies stellt sicher, dass jeder sofort teilnehmen und abstimmen kann, was eine nahtlose Zusammenarbeit fördert.\nErleben Sie die Einfachheit von Easy Poll, indem Sie **jetzt Ihre erste Umfrage erstellen**! Nutzen Sie die App kostenlos mit einer begrenzten Anzahl von Umfragen.\nErfahren Sie mehr unter [www.easy-poll.app](https://www.easy-poll.app).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Sofortige Umfragen. Einfach.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Ψηφοφορίες",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "el",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "**Βελτιώστε τη διαδικασία λήψης αποφάσεων της ομάδας σας με το Easy Poll.** Το Easy Poll σας επιτρέπει να δημιουργείτε και να ιαχειρίζεστε ψηφοφορίες απευθείας μέσα στο Microsoft Teams, καθιστώντας το ένα απαραίτητο εργαλείο για τη συλλογή απόψεων και τη λήψη ενημερωμένων ποφάσεων στην ομάδα ή στον οργανισμό σας.\n**Κύρια χαρακτηριστικά:**\n- **Άμεση Δημιουργία Ψηφοφοριών:** Δημιουργήστε γρήγορα μια ψηφοφορία και χρησιμοποιήστε την άμεσα σε οποιαδήποτε συνομιλία. Λάβετε άμεση ανατροφοδότηση από την ομάδα σας.\n- **Προσχέδια για Αργότερα:** Προετοιμάστε ψηφοφορίες εκ των προτέρων δημιουργώντας προσχέδια και δημοσιεύστε τα όταν είστε έτοιμοι.\n- **Επαναχρησιμοποιήσιμες Ψηφοφορίες:** Εξοικονομήστε χρόνο επαναχρησιμοποιώντας ψηφοφορίες σε διαφορετικές συνομιλίες και κανάλια με ευκολία.\n- **Οργανωμένη Επισκόπηση:** Διατηρήστε μια σαφή και οργανωμένη επισκόπηση όλων των ψηφοφοριών σας για εύκολη πρόσβαση όποτε χρειαστεί.\n- **Χωρίς Λογαριασμό:** Το Easy Poll λειτουργεί απευθείας μέσα στο Microsoft Teams χωρίς να απαιτείται εγγραφή. Αυτό διασφαλίζει ότι όλοι μπορούν να συμμετάσχουν και να ψηφίσουν αμέσως, διευκολύνοντας την αδιάκοπη συνεργασία της ομάδας.\n**Ανακαλύψτε την ευκολία του Easy Poll δημιουργώντας την πρώτη σας ψηφοφορία τώρα!** Χρησιμοποιήστε την εφαρμογή δωρεάν με περιορισμένο αριθμό ψηφοφοριών.\nΜάθετε περισσότερα στο [www.easy-poll.app](https://www.easy-poll.app).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Άμεσες ψηφοφορίες. Εύκολα.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Encuestas",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "Mejora el proceso de toma de decisiones de tu equipo con Easy Poll. Easy Poll te permite crear y gestionar encuestas de manera fluida directamente dentro de Microsoft Teams. Esto lo convierte en un activo esencial para reunir opiniones y tomar decisiones informadas en tu equipo u organización.\n\n**Características principales:** \n- **Creación de encuestas instantáneas:** Crea rápidamente una encuesta y utilízala inmediatamente en cualquier chat. Obtén retroalimentación inmediata de tu equipo.\n- **Borradores para más tarde:** Prepara encuestas por adelantado creando borradores y publicándolos cuando estés listo.\n- **Encuestas reutilizables:** Ahorra tiempo reutilizando encuestas en diferentes chats y canales con facilidad.\n- **Vista organizada:** Mantén una visión clara y organizada de todas tus encuestas para acceder a ellas fácilmente cuando sea necesario.\n\n**No necesitas una cuenta:** Easy Poll funciona directamente dentro de Microsoft Teams sin requerir ningún registro. Esto asegura que todos puedan participar y votar instantáneamente, fomentando una colaboración en equipo sin problemas. Experimenta la conveniencia de Easy Poll creando tu primera encuesta ahora.\nUsa la aplicación de forma gratuita con un número limitado de encuestas.\nPara más información, visita [www.easy-poll.app](https://www.easy-poll.app).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Sondages instantanés. Facile.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Äänestä & Kysely",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "fi",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "**Paranna tiimisi päätöksentekoprosessia Easy Pollin avulla.** Easy Pollin avulla voit luoda ja hallinnoida kyselyjä suoraan Microsoft Teamsissa. Tämä tekee siitä olennaisen työkalun mielipiteiden keräämiseen ja tietoon perustuvien päätösten tekemiseen tiimissäsi tai organisaatiossasi.\n\n**Tärkeimmät ominaisuudet:**\n- **Välitön kyselyjen luominen:** Luo kysely nopeasti ja käytä sitä heti missä tahansa keskustelussa. Saat välitöntä palautetta tiimiltäsi.\n- **Luonnokset myöhempää varten:** Valmistele kyselyt etukäteen luomalla luonnoksia ja julkaisemalla ne, kun olet valmis.\n- **Uudelleenkäytettävät kyselyt:** Säästä aikaa käyttämällä kyselyitä uudelleen eri keskusteluissa ja kanavissa helposti.\n- **Selkeä yleiskatsaus:** Säilytä selkeä ja järjestelmällinen yleiskatsaus kaikista kyselyistäsi, jotta ne ovat helposti saatavilla aina tarvittaessa.\n\nEi tarvita tiliä: Easy Poll toimii suoraan Microsoft Teamsissa ilman rekisteröintiä. Tämä varmistaa, että kaikki voivat osallistua ja äänestää välittömästi, edistäen saumatonta tiimiyhteistyötä.\n\nKoe Easy Pollin helppous luomalla ensimmäinen kyselysi nyt! Käytä sovellusta ilmaiseksi rajoitetulla määrällä kyselyjä.\n\nLisätietoja osoitteessa [www.easy-poll.app](https://www.easy-poll.app).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Välittömät kyselyt. Helposti.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Vote & Sondage",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "Améliorez le processus de prise de décision de votre équipe avec Easy Poll. Easy Poll vous permet de créer et de gérer des sondages directement dans Microsoft Teams. C'est un atout essentiel pour recueillir des avis et prendre des décisions éclairées au sein de votre équipe ou organisation.\n\n**Fonctionnalités clés :**\n- **Création de sondages instantanés :** Créez rapidement un sondage et utilisez-le immédiatement dans n'importe quelle conversation. Obtenez des retours instantanés de votre équipe.\n- **Brouillons pour plus tard :** Préparez des sondages à l'avance en créant des brouillons et publiez-les quand vous êtes prêt.\n- **Sondages réutilisables :** Gagnez du temps en réutilisant des sondages dans différents chats et canaux en toute simplicité.\n- **Vue d'ensemble organisée :** Maintenez une vue d'ensemble claire et organisée de tous vos sondages pour un accès facile à tout moment.\n\n**Aucun compte nécessaire :** Easy Poll fonctionne directement dans Microsoft Teams sans nécessiter d'inscription. Cela garantit que tout le monde peut participer et voter instantanément, favorisant une collaboration d'équipe fluide.\n\nDécouvrez la commodité de Easy Poll en créant votre premier sondage maintenant! Utilisez l'application gratuitement avec un nombre limité de sondages.\n\nEn savoir plus sur [www.easy-poll.app](https://www.easy-poll.app).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Sondages instantanés. Facile.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "הצבעה וסקרים - Easy Poll",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "he",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "מאפשר לכם ליצור ולנהל **Easy Poll**. שפרו את תהליך קבלת ההחלטות של הצוות שלכם עם **Easy Poll**. זהו כלי חיוני לאיסוף דעות ולקבלת החלטות מבוססות **Microsoft Teams**. סקרים בקלות ישירות בתוך הצוות או בארגון שלכם.\n**תכונות עיקריות**:\n- **יצירת סקר מיידי**: צרו סקר במהירות והשתמשו בו מיד בכל שיחה. קבלו משוב מיידי מהצוות שלכם.\n- **טיוטות לשימוש מאוחר יותר**: הכינו סקרים מראש באמצעות יצירת טיוטות ופרסמו אותן כשיהיו מוכנות.\n- **סקרים לשימוש חוזר**: חסכו זמן על ידי שימוש חוזר בסקרים בצ'אטים וערוצים שונים בקלות.\n- **סקירה מאורגנת**: שמרו על סקירה ברורה ומאורגנת של כל הסקרים שלכם לגישה נוחה בכל עת.\n**Easy Poll** פועל ישירות בתוך **Microsoft Teams**: אין צורך בחשבון או בהרשמה. זה מבטיח שכל אחד יוכל להשתתף ולהצביע מיידית, מה שתורם לשיתוף פעולה חלק בצוות.\nחוו את הנוחות של **Easy Poll** על ידי יצירת הסקר הראשון שלכם עכשיו! השתמשו באפליקציה בחינם עם מספר סקרים מוגבל.\nלמדו עוד באתר [www.easy-poll.app](https://www.easy-poll.app/)",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": ".סקרים מיידיים. בקלות",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Vota e Sondaggio",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "Migliora il processo decisionale del tuo team con Easy Poll. Easy Poll ti permette di creare e gestire sondaggi direttamente all'interno di Microsoft Teams senza sforzo. Questo lo rende uno strumento essenziale per raccogliere opinioni e prendere decisioni informate nel tuo team o nella tua organizzazione.\n\n**Caratteristiche principali:**\n- **Creazione di sondaggi istantanei:** Crea rapidamente un sondaggio e usalo immediatamente in qualsiasi chat. Ottieni feedback immediato dal tuo team.\n- **Bozze per dopo:** Prepara i sondaggi in anticipo creando bozze e pubblicandole quando sono pronte.\n- **Sondaggi riutilizzabili:** Risparmia tempo riutilizzando i sondaggi in diverse chat e canali con facilità.\n- **Panoramica organizzata:** Mantieni una panoramica chiara e organizzata di tutti i tuoi sondaggi per un facile accesso ogni volta che ne hai bisogno.\n\n**Nessun account necessario:** Easy Poll funziona direttamente all'interno di Microsoft Teams senza richiedere alcuna registrazione. Questo assicura che tutti possano partecipare e votare istantaneamente, favorendo una collaborazione di squadra senza intoppi.\nSperimenta la comodità di Easy Poll creando il tuo primo sondaggio ora! Usa l'app gratuitamente con un numero limitato di sondaggi.\nScopri di più su [www.easy-poll.app](https://www.easy-poll.app/).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Sondaggi istantanei. Facile.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - 投票とアンケート",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "ja",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "Easy Pollでチームの意思決定プロセスを強化しましょう。Easy Pollを使えば、Microsoft Teams内でシームレスに投票を作成・管理できます。これにより、チームや組織内で意見を集め、情報に基づいた意思決定を行うための重要なツールとなります。\n\n**主な機能:**\n- **瞬時に投票を作成:** すぐに投票を作成し、任意のチャットで即座に使用できます。チームから即座にフィードバックを得られます。\n- **後で投稿するための下書き:** 事前に投票の下書きを作成し、準備が整ったら投稿できます。\n- **再利用可能な投票:** 異なるチャットやチャネルで簡単に投票を再利用して時間を節約できます。\n- **整理された概要:** 必要な時にすぐにアクセスできるよう、すべての投票を明確かつ整理された状態で維持します。\n\n**アカウント不要:** Easy Poll は Microsoft Teams 内で直接動作し、登録不要で誰でもすぐに参加して投票できます。これにより、シームレスなチームコラボレーションが可能になります。今すぐ Easy Poll の便利さを体験し、最初の投票を作成してみましょう！制限付きの無料ポールでアプリをお試しください。\n詳細は、[www.easy-poll.app](https://www.easy-poll.app) をご覧ください。",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "瞬時に投票。簡単に。",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - 투표 & 설문조사",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "ko",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "Easy Poll로 팀의 의사 결정 과정을 향상시키세요. Easy Poll을 사용하면 Microsoft Teams 내에서 간편하게 설문조사를 생성하고 관리할 수 있습니다. 이는 팀이나 조직 내에서 의견을 수집하고 정보를 기반으로 한 결정을 내리는 데 필수적인 도구입니다.\n\n**주요 기능:**\n- **즉시 투표 생성:** 채팅에서 즉시 사용할 수 있는 투표를 빠르게 생성하여 팀의 즉각적인 피드백을 받을 수 있습니다.\n- **나중을 위한 초안:** 미리 투표를 준비하여 초안을 작성하고 준비되었을 때 게시할 수 있습니다.\n- **재사용 가능한 투표:** 다른 채팅 및 채널에서 쉽게 재사용할 수 있는 투표를 저장하여 시간을 절약할 수 있습니다.\n- **체계적인 개요:** 필요할 때 언제든지 쉽게 접근할 수 있도록 모든 투표를 명확하고 체계적으로 관리합니다.\n\n**계정 불필요:** Easy Poll 은 등록 없이 Microsoft Teams 내에서 직접 작동합니다.\n이를 통해 모든 사람이 즉시 참여하고 투표할 수 있어 원활한 팀 협업을 촉진합니다. 지금 첫 번째 투표를 생성하여 Easy Poll 의 편리함을 경험해보세요!\n제한된 수의 투표로 무료로 앱을 사용할 수 있습니다.\n자세한 내용은 [www.easy-poll.app](https://www.easy-poll.app) 에서 확인하세요.",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "즉시 투표. 간편하게.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll – Stem",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "nb",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "**Forbedre teamets beslutningsprosess med Easy Poll.** Easy Poll lar deg sømløst lage og administrere meningsmålinger direkte i Microsoft Teams. Dette gjør det til et essensielt verktøy for å samle inn meninger og ta velinformerte beslutninger i ditt team eller organisasjon.\n \n**Hovedfunksjoner:**\n- **Umiddelbar oppretting av meningsmålinger:** Opprett raskt en meningsmåling og bruk den umiddelbart i enhver samtale. Få umiddelbare tilbakemeldinger fra teamet ditt.\n- **Utkast til senere:** Forbered meningsmålinger på forhånd ved å lage utkast og publisere dem når de er klare.\n- **Gjenbrukbare meningsmålinger:** Spar tid ved å gjenbruke meningsmålinger på tvers av ulike samtaler og kanaler med letthet.\n- **Organisert oversikt:** Hold en klar og organisert oversikt over alle dine meningsmålinger for enkel tilgang når det er nødvendig.\n\nIngen konto nødvendig: Easy Poll fungerer direkte i Microsoft Teams uten behov for registrering. Dette sikrer at alle kan delta og stemme umiddelbart, og fremmer sømløs team-samarbeid.\n\nOpplev bekvemmeligheten med Easy Poll ved å lage din første meningsmåling nå! Bruk appen gratis med et begrenset antall meningsmålinger.\n\nLær mer på [www.easy-poll.app](https://www.easy-poll.app).\n",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Umiddelbare meningsmålinger. Enkelt.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Stem & Enquête",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "nl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "Verbeter het besluitvormingsproces van je team met Easy Poll. Easy Poll stelt je in staat om naadloos peilingen te maken en te beheren direct binnen Microsoft Teams. Dit maakt het een essentieel hulpmiddel voor het verzamelen van meningen en het nemen van weloverwogen beslissingen in je team of organisatie.\n\n**Belangrijkste Kenmerken:**\n- **Directe Peiling Creatie:** Maak snel een peiling en gebruik deze direct in elke chat. Verkrijg onmiddellijk feedback van je team.\n- **Concepten voor Later:** Bereid peilingen van tevoren voor door concepten te maken en deze te plaatsen wanneer ze klaar zijn.\n- **Herbruikbare Peilingen:** Bespaar tijd door peilingen eenvoudig opnieuw te gebruiken in verschillende chats en kanalen.\n- **Georganiseerd Overzicht:** Houd een duidelijk en georganiseerd overzicht van al je peilingen voor gemakkelijke toegang wanneer nodig.\n\n**Geen Account Nodig:** Easy Poll werkt direct binnen Microsoft Teams zonder registratie. Dit zorgt ervoor dat iedereen direct kan deelnemen en stemmen, wat naadloze team samenwerking bevordert. Ervaar het gemak van Easy Poll door nu je eerste peiling te maken! Gebruik de app gratis met een beperkt aantal peilingen.\nMeer informatie op [www.easy-poll.app](https://www.easy-poll.app).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Directe peilingen. Eenvoudig.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Głosowanie",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "pl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "Ulepsz proces podejmowania decyzji w swoim zespole dzięki Easy Poll. Easy Poll umożliwia płynne tworzenie i zarządzanie ankietami bezpośrednio w Microsoft Teams. To niezbędne narzędzie do zbierania opinii i podejmowania świadomych decyzji w Twoim zespole lub organizacji.\n\n**Kluczowe funkcje:** \n- **Natychmiastowe tworzenie ankiet:** Szybko stwórz ankietę i wykorzystaj ją natychmiast w dowolnym czacie. Uzyskaj natychmiastowe opinie od swojego zespołu.\n- **Szkice na później:** Przygotuj ankiety z wyprzedzeniem, tworząc szkice, które możesz opublikować, gdy będą gotowe.\n- **Wielokrotne użycie ankiet:** Oszczędzaj czas, ponownie wykorzystując ankiety w różnych czatach i kanałach bez wysiłku.\n- **Zorganizowany przegląd:** Zachowaj przejrzysty i uporządkowany widok wszystkich swoich ankiet, aby łatwo uzyskać do nich dostęp w dowolnym momencie.\n\n**Brak potrzeby rejestracji:** Easy Poll działa bezpośrednio w Microsoft Teams, bez konieczności zakładania konta. To sprawia, że każdy może od razu brać udział w głosowaniu, wspierając płynną współpracę zespołową.\n\nPoznaj wygodę Easy Poll, tworząc swoją pierwszą ankietę już teraz! Aplikacja jest dostępna za darmo z ograniczoną liczbą ankiet.\n\nDowiedz się więcej na [www.easy-poll.app](https://www.easy-poll.app).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Szybkie ankiety. Łatwe rozwiązania.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Votação e pesquisa",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "Melhore o processo de tomada de decisão da sua equipe com o Easy Poll. O Easy Poll permite que você crie e gerencie enquetes diretamente no Microsoft Teams. Isso faz com que seja um recurso essencial para reunir opiniões e tomar decisões informadas em sua equipe ou organização.\n\n**Principais Características:**\n- **Criação de Enquetes Instantâneas:** Crie uma enquete rapidamente e use-a imediatamente em qualquer chat. Obtenha feedback imediato da sua equipe.\n- **Rascunhos para Posterior:** Prepare enquetes com antecedência criando rascunhos e publicando-os quando estiverem prontos.\n- **Enquetes Reutilizáveis:** Economize tempo reutilizando enquetes em diferentes chats e canais com facilidade.\n- **Visão Geral Organizada:** Mantenha uma visão clara e organizada de todas as suas enquetes para fácil acesso sempre que necessário.\n\n**Sem Necessidade de Conta:** Easy Poll opera diretamente no Microsoft Teams sem exigir qualquer registro. Isso garante que todos possam participar e votar instantaneamente, promovendo uma colaboração perfeita da equipe.\nExperimente a Conveniência do Easy Poll: Crie sua primeira enquete agora! Use o aplicativo gratuitamente com um número limitado de enquetes.\nSaiba mais em [www.easy-poll.app](https://www.easy-poll.app).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Enquetes instantâneas. Fácil.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Röstning & Enkät",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "sv",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "**Förbättra beslutsfattandet i ditt team med Easy Poll.** Med Easy Poll kan du enkelt skapa och hantera omröstningar direkt i Microsoft Teams. Detta gör den till ett ovärderligt verktyg för att samla in åsikter och fatta välgrundade beslut inom ditt team eller organisation.\n\n**Huvudfunktioner:**\n- **Omedelbar omröstningsskapande:** Skapa snabbt en omröstning och använd den direkt i valfri chatt. Få omedelbar feedback från ditt team.\n- **Utkast för senare:** Förbered omröstningar i förväg genom att skapa utkast och publicera dem när du är redo.\n- **Återanvändbara omröstningar:** Spara tid genom att enkelt återanvända omröstningar i olika chattar och kanaler.\n- **Organiserad översikt:** Håll en tydlig och organiserad översikt över alla dina omröstningar för enkel åtkomst när det behövs.\n\nIngen registrering krävs: Easy Poll fungerar direkt i Microsoft Teams utan behov av registrering. Detta säkerställer att alla kan delta och rösta omedelbart, vilket främjar sömlöst samarbete i teamet.\n\nUpplev bekvämligheten med Easy Poll genom att skapa din första omröstning nu! Använd appen gratis med ett begränsat antal omröstningar.\n\nLäs mer på [www.easy-poll.app](https://www.easy-poll.app).",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Omedelbara omröstningar. Enkelt.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Anket ve Oylama",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "tr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "**Easy Poll ile ekibinizin karar alma sürecini geliştirin.** Easy Poll, Microsoft Teams içinde\ndoğrudan anketler oluşturmanıza ve yönetmenize olanak tanır. Bu, ekip veya organizasyon\niçinde fikir toplamak ve bilinçli kararlar almak için önemli bir araç haline gelir.\n\n**Ana Özellikler:**\n- **Anında Anket Oluşturma:** Hızla anket oluşturun ve herhangi bir sohbette hemen\nkullanın. Ekibinizden anında geri bildirim alın.\n- **Taslaklar:** Anketleri önceden hazırlayın ve hazır olduğunda paylaşın.\n- **Yeniden Kullanılabilir Anketler:** Farklı sohbetler ve kanallarda anketleri kolayca\nyeniden kullanarak zamandan tasarruf edin.\n- **Düzenli Genel Bakış:** Tüm anketlerinizi düzenli ve net bir şekilde görün,\ngerektiğinde kolayca erişin.\n\n**Hesaba Gerek Yok:** Easy Poll, herhangi bir kayıt gerektirmeden doğrudan Microsoft Teams\niçinde çalışır. Bu sayede herkes anında katılabilir ve oy verebilir, böylece ekip işbirliği\nsorunsuz hale gelir.\nEasy Poll'un kolaylığını hemen ilk anketinizi oluşturarak deneyimleyin! Uygulamayı sınırlı\nsayıda anketle ücretsiz kullanın.\nDaha fazla bilgi için [www.easy-poll.app](https://www.easy-poll.app) adresini ziyaret edin.",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Anında oylamalar. Kolayca.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - Thăm Dò & Khảo Sát",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "vi",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "Nâng cao quy trình ra quyết định của nhóm bạn với **Easy Poll**. Easy Poll cho phép bạn tạo\nvà quản lý các cuộc thăm dò trực tiếp trong Microsoft Teams một cách liền mạch. Đây là\ncông cụ cần thiết để thu thập ý kiến và đưa ra quyết định có căn cứ trong nhóm hoặc tổ chức của bạn.\n\nTính năng chính:\n- **Tạo cuộc thăm dò tức thì**: Nhanh chóng tạo cuộc thăm dò và sử dụng ngay lập tức trong bất kỳ cuộc trò chuyện nào. Nhận phản hồi ngay lập tức từ nhóm của bạn.\n- **Bản nháp cho sau này**: Chuẩn bị cuộc thăm dò trước bằng cách tạo bản nháp và đăng khi sẵn sàng.\n- **Cuộc thăm dò có thể tái sử dụng**: Tiết kiệm thời gian bằng cách sử dụng lại các cuộc thăm dò trong các cuộc trò chuyện và kênh khác nhau một cách dễ dàng.\n- **Tổng quan rõ ràng**: Duy trì tổng quan rõ ràng và có tổ chức về tất cả các cuộc thăm dò của bạn để dễ dàng truy cập khi cần.\n\n**Không cần tài khoản**: Easy Poll hoạt động trực tiếp trong Microsoft Teams mà không cần đăng ký. Điều này đảm bảo rằng mọi người đều có thể tham gia và bỏ phiếu ngay lập tức, thúc đẩy sự cộng tác liền mạch của nhóm.\n\nTrải nghiệm sự tiện lợi của Easy Poll bằng cách tạo cuộc thăm dò đầu tiên của bạn ngay\nbây giờ! Sử dụng ứng dụng miễn phí với số lượng thăm dò giới hạn.\n\nTìm hiểu thêm tại [www.easy-poll.app](https://www.easy-poll.app).\n",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Thăm dò nhanh chóng. Dễ dàng.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "312ac5ed-982b-453a-a784-f5258c182593",
+      "version": "1.0.1",
+      "name": "Easy Poll - 投票与调查",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 81188260,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Provides more information on how to use Easy Poll.",
+                  "title": "Help"
+                },
+                {
+                  "description": "Provides examples of how to use polling.",
+                  "title": "Inspire"
+                }
+              ],
+              "scopes": [
+                "team",
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "hyOffice",
+      "developerUrl": "https://www.easy-poll.app",
+      "galleryTabs": [],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "a26e530c-fa67-4a41-bf2f-8a7420707e01",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Create a poll",
+              "fetchTask": true,
+              "id": "createPoll",
+              "initialRun": false,
+              "title": "Create a poll",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "vote survey quiz feedback questionnaire",
+        "umfrage abstimmung encuestas sondage qna",
+        "votacao pesquisa forms oylama 投票 调查 설문조사"
+      ],
+      "languageTag": "zh",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_largeimage.png",
+      "lastUpdatedAt": "2025-07-02T14:15:31.6303634+00:00",
+      "longDescription": "**通过 Easy Poll 增强您团队的决策流程。** Easy Poll 允许您在 Microsoft Teams 中无缝创建和管理投票。这使它成为团队或组织中收集意见并做出明智决策的关键工具\n\n**主要功能：**\n- **即时创建投票：** 快速创建投票，并立即在任何聊天中使用。即时从团队中获取反馈。\n- **草稿功能：** 提前准备好投票草稿，待准备好后发布。\n- **可重复使用的投票：** 轻松在不同的聊天和频道中重复使用投票，节省时间。\n- **有序的概览：** 保持对所有投票的清晰和有序概览，方便随时访问。\n\n**无需账号：** Easy Poll 直接在 Microsoft Teams 中运行，无需任何注册。这确保了每个人都可以立即参与和投票，促进无缝的团队协作。\n\n立即体验 Easy Poll 的便捷性，创建您的第一个投票！免费使用，限制次数的投票功能。\n\n了解更多信息，请访问 [www.easy-poll.app](https://www.easy-poll.app)。",
+      "mpnId": "6525452",
+      "officeAssetId": "WA200007310",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.easy-poll.app/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/0.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/1.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/2.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/3.jpeg",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_screenshot/4.jpeg"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "即时投票。简单易用。",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/312ac5ed-982b-453a-a784-f5258c182593/2025071113033950/312ac5ed-982b-453a-a784-f5258c182593_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://poll.easy-poll.app/index.html#/tab",
+          "entityId": "index",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://poll.easy-poll.app/index.html#/tab"
+        }
+      ],
+      "systemVersion": "2025071113033950",
+      "termsOfUseUrl": "https://www.easy-poll.app/terms",
+      "validDomains": [
+        "easypollbot.azurewebsites.net",
+        "poll.easy-poll.app",
+        "cdn.easy-poll.app",
+        "easypollbackend.azurewebsites.net"
+      ],
+      "webApplicationInfo": {
+        "id": "312ac5ed-982b-453a-a784-f5258c182593",
+        "resource": "api://poll.easy-poll.app/312ac5ed-982b-453a-a784-f5258c182593"
+      }
+    }
+  ]
+}

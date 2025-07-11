@@ -1,0 +1,125 @@
+{
+  "manifestVersion": "1.13",
+  "id": "c6462b50-a869-45e1-88b6-734c7087df25",
+  "version": "1.0.3",
+  "name": "Sage Intacct",
+  "accentColor": "#008146",
+  "amsSellerAccountId": 64840300,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": []
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Add the ability to list expenses",
+              "title": "List expenses"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "4ea35294-171b-424d-9325-49860428efec",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultInstallScope": "personal",
+  "developerName": "Sage Global Services Ltd",
+  "developerUrl": "https://www.sage.com",
+  "devicePermissions": [
+    "Geolocation",
+    "Media",
+    "Notifications",
+    "Midi",
+    "OpenExternal"
+  ],
+  "industries": [
+    "Finance"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Expenses",
+    "Receipts",
+    "Invoices"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c6462b50-a869-45e1-88b6-734c7087df25/2025071112351879/c6462b50-a869-45e1-88b6-734c7087df25_largeimage.png",
+  "lastUpdatedAt": "2024-01-16T14:14:34.8903324+00:00",
+  "longDescription": "This application is only available to existing Sage Intacct customers that have been selected for the Early Adopter program. Contact your Sage Intacct account manager to see if your company qualifies for participation.\n\nStop jumping between applications and work with Sage Intacct from within Microsoft Teams. Whether you’re in the office or at your daughter’s soccer game, just open Microsoft Teams and you’re ready to go. Today, we’re starting with expenses but stay tuned as we expand beyond that in future releases.\n\nMake managing expenses easier for your employees and AP staff. The Sage Digital Assistant simplifies expenses by guiding expense entry from where they already work every day–Microsoft Teams. Upload images of receipts from merchants anywhere in the US to quickly draft and submit expense reports. Better yet, your AP team is freed from the tedious process of rekeying expenses from spreadsheets and gets instant visibility into expenses once they are submitted.\n\nSage Intacct for Microsoft Teams enables users to:\n* Upload images of receipts to automatically populate expense information\n* Create draft expense reports using a guided experience and submit multiple expenses all at once\n* Track the status of expense reports in Microsoft Teams\n* Eliminate manual steps and spreadsheets when capturing and entering expenses\n* Get instant visibility into expenses upon submission\n\nNote that an active Sage Intacct subscription is required.\n",
+  "mpnId": "5312241",
+  "officeAssetId": "WA200004189",
+  "permissions": [],
+  "privacyUrl": "https://www.sage.com/en-gb/legal/privacy-and-cookies/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c6462b50-a869-45e1-88b6-734c7087df25/2025071112351879/c6462b50-a869-45e1-88b6-734c7087df25_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c6462b50-a869-45e1-88b6-734c7087df25/2025071112351879/c6462b50-a869-45e1-88b6-734c7087df25_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c6462b50-a869-45e1-88b6-734c7087df25/2025071112351879/c6462b50-a869-45e1-88b6-734c7087df25_screenshot/2.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Simplify expenses with Sage Intacct for Microsoft Teams (Early Adopter Only)",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c6462b50-a869-45e1-88b6-734c7087df25/2025071112351879/c6462b50-a869-45e1-88b6-734c7087df25_smallimage.png",
+  "systemVersion": "2025071112351879",
+  "termsOfUseUrl": "https://www.sage.com/en-gb/legal/terms-and-conditions/product-and-service-terms-and-conditions/",
+  "validDomains": [
+    "token.botframework.com",
+    "people.sage.com",
+    "*.*.sage.com"
+  ],
+  "webApplicationInfo": {
+    "id": "4ea35294-171b-424d-9325-49860428efec",
+    "resource": "https://notapplicable"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": []
+}

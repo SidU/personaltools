@@ -1,0 +1,2963 @@
+{
+  "manifestVersion": "1.9",
+  "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+  "version": "1.0.12",
+  "name": "DigiLEAN",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 76200010,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Displays help message",
+              "title": "help"
+            },
+            {
+              "description": "Create a new task with a title and todays date",
+              "title": "create task [task title]"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "DataVisualizationAndBI",
+    "Productivity",
+    "WorkflowAndBusinessManagement"
+  ],
+  "creatorId": "",
+  "developerName": "DigiLEAN AS",
+  "developerUrl": "https://www.digilean.com",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://teams.digilean.tools/#/config",
+      "context": [
+        "channelTab",
+        "privateChatTab"
+      ],
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "visual management",
+    "lean",
+    "boards"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_largeimage.png",
+  "lastUpdatedAt": "2023-12-22T11:55:32.5215087+00:00",
+  "longDescription": "Manage your daily operations with our all-in-one platform. Everything from performance boards to incident- and improvement management.\n\nWith our visual management toolbox, you can easily visualize your performance data, design your boards and engage your team in planning and reporting. This reduces the need to pull data and create reports manually. With automatically updated data, better availability combined with interactive task management, you become more productive.\n\nDigiLEAN let you share information and collaborate while working remotely. It becomes easier to invite and engage your colleagues into the improvement culture and add transparency to your business.\n\nOut-of-the-box capabilities with DigiLEAN:\n\n- Easily create your visual boards in the matter of minutes (drag & drop).\n- Visualize your Key Performance Indicators (KPIs).\n- Add DigiLEAN task management boards to track daily activities.\n- Manage improvement suggestions and incidents.\n- Manage projects with dynamic and flexible project tables and boards.\n- Use structured problem-solving tools (A3). \n\nPlease contact our support team at support(a)digilean.com for more details.",
+  "officeAssetId": "WA200003315",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.digilean.com/legal/privacy-policy/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Visual management tool supporting improvement processes for teams and enterprise",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://teams.digilean.tools/#/start",
+      "entityId": "tools.digilean.teamsapp.start",
+      "name": "Start",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+    },
+    {
+      "contentUrl": "https://teams.digilean.tools/#/tasks",
+      "entityId": "tools.digilean.teamsapp.tasks",
+      "name": "Tasks",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+    },
+    {
+      "contentUrl": "https://teams.digilean.tools/#/flexiboards",
+      "entityId": "tools.digilean.teamsapp.flexiboards",
+      "name": "Boards",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.digilean.tools/#/index/flexiboards"
+    },
+    {
+      "contentUrl": "https://teams.digilean.tools/#/improvementhub",
+      "entityId": "tools.digilean.teamsapp.improvementhub",
+      "name": "Improvement",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.digilean.tools/#/index/improvement"
+    },
+    {
+      "contentUrl": "https://teams.digilean.tools/#/deviationhub",
+      "entityId": "tools.digilean.teamsapp.deviationhub",
+      "name": "Incident",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.digilean.tools/#/index/deviation"
+    },
+    {
+      "contentUrl": "https://teams.digilean.tools/#/projecthub",
+      "entityId": "tools.digilean.teamsapp.projecthub",
+      "name": "Project",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.digilean.tools/#/index/project"
+    },
+    {
+      "contentUrl": "https://teams.digilean.tools/#/A3",
+      "entityId": "tools.digilean.teamsapp.a3",
+      "name": "A3",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.digilean.tools/#/index/A3"
+    },
+    {
+      "contentUrl": "https://teams.digilean.tools/#/settings",
+      "entityId": "tools.digilean.teamsapp.usersettings",
+      "name": "Settings",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.digilean.tools/#/settings"
+    },
+    {
+      "contentUrl": "https://signup.digilean.tools/help",
+      "entityId": "tools.digilean.teamsapp.help",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.digilean.tools"
+    }
+  ],
+  "systemVersion": "2025071112564971",
+  "termsOfUseUrl": "https://www.digilean.com/legal/terms-and-conditions/",
+  "validDomains": [
+    "bot.digilean.tools",
+    "teams.digilean.tools",
+    "app.digilean.tools",
+    "signup.digilean.tools",
+    "digileanfiles.blob.core.windows.net"
+  ],
+  "webApplicationInfo": {
+    "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+    "resource": "api://teams.digilean.tools/562eda61-d481-46e1-9cb3-be3ce2ba8544"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "no",
+    "sv",
+    "tr",
+    "pl",
+    "hu"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.9",
+      "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+      "version": "1.0.12",
+      "name": "DigiLEAN",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 76200010,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Displays help message",
+                  "title": "help"
+                },
+                {
+                  "description": "Create a new task with a title and todays date",
+                  "title": "create task [task title]"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "DataVisualizationAndBI",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "developerName": "DigiLEAN AS",
+      "developerUrl": "https://www.digilean.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams.digilean.tools/#/config",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "visual management",
+        "lean",
+        "boards"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_largeimage.png",
+      "lastUpdatedAt": "2023-12-22T11:55:32.5215087+00:00",
+      "longDescription": "Verwalten Sie Ihren täglichen Betrieb mit unserer All-in-One-Plattform. Alles von Leistungstafeln bis hin zum Vorfalls- und Verbesserungsmanagement.\n\nMit unserer visuellen Management-Toolbox können Sie Ihre Leistungsdaten einfach visualisieren, Ihre Tafeln entwerfen und Ihr Team einbeziehen Planung und Berichterstellung. Dies reduziert die Notwendigkeit, Daten manuell abzurufen und Berichte zu erstellen. Mit automatisch aktualisierten Daten, besserer Verfügbarkeit in Kombination mit interaktiver Aufgabenverwaltung werden Sie produktiver.\n\nMit DigiLEAN können Sie Informationen austauschen und zusammenarbeiten, während Sie remote arbeiten. Es wird einfacher, Ihre Kollegen einzuladen und in die Verbesserungskultur einzubeziehen und Ihrem Unternehmen mehr Transparenz zu verleihen.\n\nOut-of-the-Box-Funktionen mit DigiLEAN:\n\n- Erstellen Sie ganz einfach Ihre visuellen Tafeln in wenigen Minuten (Ziehen und drop).\n- Visualisieren Sie Ihre Key Performance Indicators (KPIs).\n- Fügen Sie DigiLEAN Task Management Boards hinzu, um tägliche Aktivitäten zu verfolgen.\n- Verwalten Sie Verbesserungsvorschläge und Vorfälle.\n- Verwalten Sie Projekte mit dynam ic und flexible Projekttabellen und -boards.\n- Verwenden Sie strukturierte Problemlösungstools (A3).",
+      "officeAssetId": "WA200003315",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.digilean.com/legal/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Visuelles Management-Tool zur Unterstützung von Verbesserungsprozessen",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams.digilean.tools/#/start",
+          "entityId": "tools.digilean.teamsapp.start",
+          "name": "Anfangen",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/tasks",
+          "entityId": "tools.digilean.teamsapp.tasks",
+          "name": "Aufgaben",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/flexiboards",
+          "entityId": "tools.digilean.teamsapp.flexiboards",
+          "name": "Boards",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/flexiboards"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/improvementhub",
+          "entityId": "tools.digilean.teamsapp.improvementhub",
+          "name": "Verbesserung",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/improvement"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/deviationhub",
+          "entityId": "tools.digilean.teamsapp.deviationhub",
+          "name": "Vorfall",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/deviation"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/projecthub",
+          "entityId": "tools.digilean.teamsapp.projecthub",
+          "name": "Projekt",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/project"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/A3",
+          "entityId": "tools.digilean.teamsapp.a3",
+          "name": "A3",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/A3"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/settings",
+          "entityId": "tools.digilean.teamsapp.usersettings",
+          "name": "Einstellungen",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/settings"
+        },
+        {
+          "contentUrl": "https://signup.digilean.tools/help",
+          "entityId": "tools.digilean.teamsapp.help",
+          "name": "Hilfe",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools"
+        }
+      ],
+      "systemVersion": "2025071112564971",
+      "termsOfUseUrl": "https://www.digilean.com/legal/terms-and-conditions/",
+      "validDomains": [
+        "bot.digilean.tools",
+        "teams.digilean.tools",
+        "app.digilean.tools",
+        "signup.digilean.tools",
+        "digileanfiles.blob.core.windows.net"
+      ],
+      "webApplicationInfo": {
+        "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+        "resource": "api://teams.digilean.tools/562eda61-d481-46e1-9cb3-be3ce2ba8544"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+      "version": "1.0.12",
+      "name": "DigiLEAN",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 76200010,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Displays help message",
+                  "title": "help"
+                },
+                {
+                  "description": "Create a new task with a title and todays date",
+                  "title": "create task [task title]"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "DataVisualizationAndBI",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "developerName": "DigiLEAN AS",
+      "developerUrl": "https://www.digilean.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams.digilean.tools/#/config",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "visual management",
+        "lean",
+        "boards"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_largeimage.png",
+      "lastUpdatedAt": "2023-12-22T11:55:32.5215087+00:00",
+      "longDescription": "Gestione sus operaciones diarias con nuestra plataforma todo en uno. Todo, desde paneles de rendimiento hasta gestión de incidentes y mejoras.\n\nCon nuestra caja de herramientas de gestión visual, puede visualizar fácilmente sus datos de rendimiento, diseñar sus paneles e involucrar a su equipo en planificación e informes. Esto reduce la necesidad de extraer datos y crear informes manualmente. Con datos actualizados automáticamente, una mejor disponibilidad combinada con la gestión interactiva de tareas, se vuelve más productivo.\n\nDigiLEAN le permite compartir información y colaborar mientras trabaja de forma remota. más fácil invitar e involucrar a sus colegas en la cultura de mejora y agregar transparencia a su negocio.\n\nCapacidades listas para usar con DigiLEAN:\n\n- Cree fácilmente sus tableros visuales en cuestión de minutos (arrastrar y drop).\n- Visualice sus indicadores clave de rendimiento (KPI).\n- Agregue tableros de administración de tareas de DigiLEAN para realizar un seguimiento de las actividades diarias.\n- Administre sugerencias de mejora e incidentes.\n- Administre proyectos con dynam tablas y tableros de proyectos icónicos y flexibles.\n- Usar herramientas estructuradas de resolución de problemas (A3).",
+      "officeAssetId": "WA200003315",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.digilean.com/legal/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Herramienta de gestión visual de apoyo a los procesos de mejora",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams.digilean.tools/#/start",
+          "entityId": "tools.digilean.teamsapp.start",
+          "name": "Empezar",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/tasks",
+          "entityId": "tools.digilean.teamsapp.tasks",
+          "name": "Tareas",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/flexiboards",
+          "entityId": "tools.digilean.teamsapp.flexiboards",
+          "name": "Tableros",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/flexiboards"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/improvementhub",
+          "entityId": "tools.digilean.teamsapp.improvementhub",
+          "name": "Mejora",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/improvement"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/deviationhub",
+          "entityId": "tools.digilean.teamsapp.deviationhub",
+          "name": "Incidente",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/deviation"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/projecthub",
+          "entityId": "tools.digilean.teamsapp.projecthub",
+          "name": "Proyecto",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/project"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/A3",
+          "entityId": "tools.digilean.teamsapp.a3",
+          "name": "A3",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/A3"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/settings",
+          "entityId": "tools.digilean.teamsapp.usersettings",
+          "name": "Configuración",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/settings"
+        },
+        {
+          "contentUrl": "https://signup.digilean.tools/help",
+          "entityId": "tools.digilean.teamsapp.help",
+          "name": "Ayuda",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools"
+        }
+      ],
+      "systemVersion": "2025071112564971",
+      "termsOfUseUrl": "https://www.digilean.com/legal/terms-and-conditions/",
+      "validDomains": [
+        "bot.digilean.tools",
+        "teams.digilean.tools",
+        "app.digilean.tools",
+        "signup.digilean.tools",
+        "digileanfiles.blob.core.windows.net"
+      ],
+      "webApplicationInfo": {
+        "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+        "resource": "api://teams.digilean.tools/562eda61-d481-46e1-9cb3-be3ce2ba8544"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+      "version": "1.0.12",
+      "name": "DigiLEAN",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 76200010,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Displays help message",
+                  "title": "help"
+                },
+                {
+                  "description": "Create a new task with a title and todays date",
+                  "title": "create task [task title]"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "DataVisualizationAndBI",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "developerName": "DigiLEAN AS",
+      "developerUrl": "https://www.digilean.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams.digilean.tools/#/config",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "visual management",
+        "lean",
+        "boards"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_largeimage.png",
+      "lastUpdatedAt": "2023-12-22T11:55:32.5215087+00:00",
+      "longDescription": "Gérez vos opérations quotidiennes avec notre plateforme tout-en-un. Tout, des tableaux de performances à la gestion des incidents et des améliorations.\n\nGrâce à notre boîte à outils de gestion visuelle, vous pouvez facilement visualiser vos données de performances, concevoir vos tableaux et impliquer votre équipe dans la planification et la création de rapports. Cela réduit le besoin d'extraire des données et de créer des rapports manuellement. Avec des données mises à jour automatiquement, une meilleure disponibilité combinée à une gestion interactive des tâches, vous devenez plus productif.\n\nDigiLEAN vous permet de partager des informations et de collaborer tout en travaillant à distance. Il devient plus facile d'inviter et d'impliquer vos collègues dans la culture d'amélioration et d'ajouter de la transparence à votre entreprise.\n\nCapacités prêtes à l'emploi avec DigiLEAN :\n\n- Créez facilement vos tableaux visuels en quelques minutes ( glisser-déposer).\n- Visualisez vos indicateurs de performance clés (KPI).\n- Ajoutez des tableaux de gestion des tâches DigiLEAN pour suivre les activités quotidiennes.\n- Gérez les suggestions d'amélioration et les incidents.\n- Gérez les projets avec des tableaux de projets dynamiques et flexibles et tableaux.\n- Utiliser des outils structurés de résolution de problèmes (A3).",
+      "officeAssetId": "WA200003315",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.digilean.com/legal/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Outil de management visuel au service des processus d'amélioration",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams.digilean.tools/#/start",
+          "entityId": "tools.digilean.teamsapp.start",
+          "name": "Commencer",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/tasks",
+          "entityId": "tools.digilean.teamsapp.tasks",
+          "name": "Tâches",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/flexiboards",
+          "entityId": "tools.digilean.teamsapp.flexiboards",
+          "name": "Conseils",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/flexiboards"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/improvementhub",
+          "entityId": "tools.digilean.teamsapp.improvementhub",
+          "name": "Amélioration",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/improvement"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/deviationhub",
+          "entityId": "tools.digilean.teamsapp.deviationhub",
+          "name": "Incident",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/deviation"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/projecthub",
+          "entityId": "tools.digilean.teamsapp.projecthub",
+          "name": "Projet",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/project"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/A3",
+          "entityId": "tools.digilean.teamsapp.a3",
+          "name": "A3",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/A3"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/settings",
+          "entityId": "tools.digilean.teamsapp.usersettings",
+          "name": "Paramètres",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/settings"
+        },
+        {
+          "contentUrl": "https://signup.digilean.tools/help",
+          "entityId": "tools.digilean.teamsapp.help",
+          "name": "Aide",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools"
+        }
+      ],
+      "systemVersion": "2025071112564971",
+      "termsOfUseUrl": "https://www.digilean.com/legal/terms-and-conditions/",
+      "validDomains": [
+        "bot.digilean.tools",
+        "teams.digilean.tools",
+        "app.digilean.tools",
+        "signup.digilean.tools",
+        "digileanfiles.blob.core.windows.net"
+      ],
+      "webApplicationInfo": {
+        "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+        "resource": "api://teams.digilean.tools/562eda61-d481-46e1-9cb3-be3ce2ba8544"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+      "version": "1.0.12",
+      "name": "DigiLEAN",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 76200010,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Displays help message",
+                  "title": "help"
+                },
+                {
+                  "description": "Create a new task with a title and todays date",
+                  "title": "create task [task title]"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "DataVisualizationAndBI",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "developerName": "DigiLEAN AS",
+      "developerUrl": "https://www.digilean.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams.digilean.tools/#/config",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "visual management",
+        "lean",
+        "boards"
+      ],
+      "languageTag": "hu",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_largeimage.png",
+      "lastUpdatedAt": "2023-12-22T11:55:32.5215087+00:00",
+      "longDescription": "Kezelje napi műveleteit az egyben platformunkkal. A teljesítménytáblázattól az incidensek és fejlesztések kezeléséig minden\n\nVizuális menedzsment eszköztárunkkal egyszerűen megjelenítheti teljesítményadatait, megtervezheti tábláit, és bevonhatja csapatát a tervezésbe és a jelentéskészítésbe. Ez csökkenti az adatok lekérésének és a jelentések manuális létrehozásának szükségességét. Az automatikusan frissülő adatokkal, a jobb elérhetőséggel és az interaktív feladatkezeléssel kombinálva termelékenyebbé válik.\n\nA DigiLEAN lehetővé teszi az információk megosztását és az együttműködést távmunka közben. Könnyebb meghívni és bevonni kollégáit a fejlesztési kultúrába, és átláthatóbbá tenni vállalkozását.\n\nKivethető lehetőségek a DigiLEAN segítségével:\n\n- Egyszerűen, percek alatt létrehozhatja vizuális tábláit (húzással).\n- Vizualizálja kulcsfontosságú teljesítménymutatóit (KPI).\n -DigiLEAN feladatkezelő táblák hozzáadása a napi tevékenységek nyomon követéséhez.\n -Javítási javaslatok és események kezelése.\n- Projektek kezelése dinamikus és rugalmas projekttáblákkal és táblákkal.\n- Használjon strukturált problémamegoldó eszközöket (A3).\n",
+      "officeAssetId": "WA200003315",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.digilean.com/legal/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Vizuális menedzsment eszköz, amely támogatja a csapatok fejlesztési folyamatait",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams.digilean.tools/#/start",
+          "entityId": "tools.digilean.teamsapp.start",
+          "name": "Indítás",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/tasks",
+          "entityId": "tools.digilean.teamsapp.tasks",
+          "name": "Feladatok",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/flexiboards",
+          "entityId": "tools.digilean.teamsapp.flexiboards",
+          "name": "Csapattáblák",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/flexiboards"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/improvementhub",
+          "entityId": "tools.digilean.teamsapp.improvementhub",
+          "name": "Fejlesztés",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/improvement"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/deviationhub",
+          "entityId": "tools.digilean.teamsapp.deviationhub",
+          "name": "Események",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/deviation"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/projecthub",
+          "entityId": "tools.digilean.teamsapp.projecthub",
+          "name": "Projekt",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/project"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/A3",
+          "entityId": "tools.digilean.teamsapp.a3",
+          "name": "A3",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/A3"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/settings",
+          "entityId": "tools.digilean.teamsapp.usersettings",
+          "name": "Beállítások",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/settings"
+        },
+        {
+          "contentUrl": "https://signup.digilean.tools/help",
+          "entityId": "tools.digilean.teamsapp.help",
+          "name": "Segítség",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools"
+        }
+      ],
+      "systemVersion": "2025071112564971",
+      "termsOfUseUrl": "https://www.digilean.com/legal/terms-and-conditions/",
+      "validDomains": [
+        "bot.digilean.tools",
+        "teams.digilean.tools",
+        "app.digilean.tools",
+        "signup.digilean.tools",
+        "digileanfiles.blob.core.windows.net"
+      ],
+      "webApplicationInfo": {
+        "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+        "resource": "api://teams.digilean.tools/562eda61-d481-46e1-9cb3-be3ce2ba8544"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+      "version": "1.0.12",
+      "name": "DigiLEAN",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 76200010,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Displays help message",
+                  "title": "help"
+                },
+                {
+                  "description": "Create a new task with a title and todays date",
+                  "title": "create task [task title]"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "DataVisualizationAndBI",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "developerName": "DigiLEAN AS",
+      "developerUrl": "https://www.digilean.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams.digilean.tools/#/config",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "visual management",
+        "lean",
+        "boards"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_largeimage.png",
+      "lastUpdatedAt": "2023-12-22T11:55:32.5215087+00:00",
+      "longDescription": "Gestisci le tue operazioni quotidiane con la nostra piattaforma all-in-one. Tutto, dalle schede delle prestazioni alla gestione degli incidenti e dei miglioramenti.\n\nCon il nostro toolbox di gestione visiva, puoi facilmente visualizzare i dati sulle tue prestazioni, progettare le tue schede e coinvolgere il tuo team in pianificazione e reporting. Ciò riduce la necessità di estrarre dati e creare report manualmente. Con i dati aggiornati automaticamente, una migliore disponibilità combinata con la gestione interattiva delle attività, diventi più produttivo.\n\nDigiLEAN ti consente di condividere informazioni e collaborare mentre lavori da remoto. Diventa più facile invitare e coinvolgere i tuoi colleghi nella cultura del miglioramento e aggiungere trasparenza alla tua attività.\n\nFunzionalità pronte all'uso con DigiLEAN:\n\n- Crea facilmente le tue lavagne visive in pochi minuti (trascina e drop).\n- Visualizza i tuoi indicatori chiave di prestazione (KPI).\n- Aggiungi schede di gestione delle attività DigiLEAN per tenere traccia delle attività quotidiane.\n- Gestisci suggerimenti e incidenti di miglioramento.\n- Gestisci i progetti con dynam Tabelle e lavagne di progetto flessibili e flessibili.\n- Utilizza strumenti strutturati per la risoluzione dei problemi (A3).",
+      "officeAssetId": "WA200003315",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.digilean.com/legal/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Strumento di gestione visiva a supporto dei processi di miglioramento",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams.digilean.tools/#/start",
+          "entityId": "tools.digilean.teamsapp.start",
+          "name": "Inizio",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/tasks",
+          "entityId": "tools.digilean.teamsapp.tasks",
+          "name": "Attività",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/flexiboards",
+          "entityId": "tools.digilean.teamsapp.flexiboards",
+          "name": "Schede",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/flexiboards"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/improvementhub",
+          "entityId": "tools.digilean.teamsapp.improvementhub",
+          "name": "Miglioramento",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/improvement"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/deviationhub",
+          "entityId": "tools.digilean.teamsapp.deviationhub",
+          "name": "Incidente",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/deviation"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/projecthub",
+          "entityId": "tools.digilean.teamsapp.projecthub",
+          "name": "Progetto",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/project"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/A3",
+          "entityId": "tools.digilean.teamsapp.a3",
+          "name": "A3",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/A3"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/settings",
+          "entityId": "tools.digilean.teamsapp.usersettings",
+          "name": "Impostazioni",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/settings"
+        },
+        {
+          "contentUrl": "https://signup.digilean.tools/help",
+          "entityId": "tools.digilean.teamsapp.help",
+          "name": "Aiuto",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools"
+        }
+      ],
+      "systemVersion": "2025071112564971",
+      "termsOfUseUrl": "https://www.digilean.com/legal/terms-and-conditions/",
+      "validDomains": [
+        "bot.digilean.tools",
+        "teams.digilean.tools",
+        "app.digilean.tools",
+        "signup.digilean.tools",
+        "digileanfiles.blob.core.windows.net"
+      ],
+      "webApplicationInfo": {
+        "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+        "resource": "api://teams.digilean.tools/562eda61-d481-46e1-9cb3-be3ce2ba8544"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+      "version": "1.0.12",
+      "name": "DigiLEAN",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 76200010,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Displays help message",
+                  "title": "help"
+                },
+                {
+                  "description": "Create a new task with a title and todays date",
+                  "title": "create task [task title]"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "DataVisualizationAndBI",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "developerName": "DigiLEAN AS",
+      "developerUrl": "https://www.digilean.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams.digilean.tools/#/config",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "visual management",
+        "lean",
+        "boards"
+      ],
+      "languageTag": "no",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_largeimage.png",
+      "lastUpdatedAt": "2023-12-22T11:55:32.5215087+00:00",
+      "longDescription": "Styr dine daglige operasjoner i en og samme plattform. Løsningen tilbyr alt fra tavler for daglig styring til hendelsesregistrering og oppfølging av forbedringsarbeid.\n\nDu kan selv sette opp dine digitale tavler basert på tilgjengelige visuelle komponenter. Dette kan være grafer for KPI'er, oppgavetavler for bedre koordingering og samhandling og andre tilrettelagte komponenter for å få kontroll over ditt forbedringsarbeid. Interaktiv oppgavestyring, bedre tilgjengelige og konstant oppdaterte data gjør deg mer produktiv.\nDigiLEAN lar deg dele informasjon og samarbeide på tvers av lokasjoner. Det er enkelt å inkludere kollegaene dine i forbedringsarbeidet og bidra til transparens og engasjement i organisasjonen.\n\nI DigiLEAN kan du:\n\n- Enkelt opprette visuelle tavler på få minutter (drag & drop)\n- Visualisere dine nøkkelindikatorer (KPI'er)\n- Legge til tavler for oppgavestyring for å enkelt følge opp daglige aktiviteter\n- Følge opp forbedringsforslag og hendelser.\n- Følge opp prosjekter med dynamisk og fleksible prosjekttabeller og tavler.\n- Få tilgang til strukturert problemløsningsverktøy (A3)\n",
+      "officeAssetId": "WA200003315",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.digilean.com/legal/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Visuelt styringsverktøy som støtter forbedringsprosesser for team og bedrifter",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams.digilean.tools/#/start",
+          "entityId": "tools.digilean.teamsapp.start",
+          "name": "Start",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/tasks",
+          "entityId": "tools.digilean.teamsapp.tasks",
+          "name": "Oppgaver",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/flexiboards",
+          "entityId": "tools.digilean.teamsapp.flexiboards",
+          "name": "Tavler",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/flexiboards"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/improvementhub",
+          "entityId": "tools.digilean.teamsapp.improvementhub",
+          "name": "Forbedring",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/improvement"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/deviationhub",
+          "entityId": "tools.digilean.teamsapp.deviationhub",
+          "name": "Hendelse",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/deviation"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/projecthub",
+          "entityId": "tools.digilean.teamsapp.projecthub",
+          "name": "Prosjekt",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/project"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/A3",
+          "entityId": "tools.digilean.teamsapp.a3",
+          "name": "A3",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/A3"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/settings",
+          "entityId": "tools.digilean.teamsapp.usersettings",
+          "name": "Innstillinger",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/settings"
+        },
+        {
+          "contentUrl": "https://signup.digilean.tools/help",
+          "entityId": "tools.digilean.teamsapp.help",
+          "name": "Hjelp",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools"
+        }
+      ],
+      "systemVersion": "2025071112564971",
+      "termsOfUseUrl": "https://www.digilean.com/legal/terms-and-conditions/",
+      "validDomains": [
+        "bot.digilean.tools",
+        "teams.digilean.tools",
+        "app.digilean.tools",
+        "signup.digilean.tools",
+        "digileanfiles.blob.core.windows.net"
+      ],
+      "webApplicationInfo": {
+        "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+        "resource": "api://teams.digilean.tools/562eda61-d481-46e1-9cb3-be3ce2ba8544"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+      "version": "1.0.12",
+      "name": "DigiLEAN",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 76200010,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Displays help message",
+                  "title": "help"
+                },
+                {
+                  "description": "Create a new task with a title and todays date",
+                  "title": "create task [task title]"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "DataVisualizationAndBI",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "developerName": "DigiLEAN AS",
+      "developerUrl": "https://www.digilean.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams.digilean.tools/#/config",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "visual management",
+        "lean",
+        "boards"
+      ],
+      "languageTag": "pl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_largeimage.png",
+      "lastUpdatedAt": "2023-12-22T11:55:32.5215087+00:00",
+      "longDescription": "Zarządzaj swoimi codziennymi operacjami za pomocą naszej wszechstronnej platformy. Wszystko, od tablic wydajności po zarządzanie incydentami i usprawnieniami.\n\nDzięki naszemu zestawowi narzędzi do zarządzania wizualnego możesz łatwo wizualizować dane dotyczące wydajności, projektować tablice i angażować swój zespół w planowanie i raportowanie.Zmniejsza to potrzebę pobierania danych i ręcznego tworzenia raportów. Dzięki automatycznie aktualizowanym danym, lepszej dostępności w połączeniu z interaktywnym zarządzaniem zadaniami, stajesz się bardziej produktywny.\n\nDigiLEAN umożliwia udostępnianie informacji i współpracę podczas pracy zdalnej. Łatwiej jest zapraszać współpracowników i angażować ich w kulturę doskonalenia oraz zapewniać przejrzystość swojej firmie.\n\nGotowe możliwości DigiLEAN:\n\n- Z łatwością twórz tablice wizualne w ciągu kilku minut (przeciągnij i upuść).\n- sualizuj kluczowe wskaźniki wydajności (KPI).\n- Dodaj tablice do zarządzania zadaniami DigiLEAN, aby śledzić codzienne czynności.\n- Manage improvement suggestions and incidents.\n- Zarządzaj sugestiami ulepszeń i incydentami.\n- Zarządzaj projektami za pomocą dynamicznych i elastycznych tabel i tablic projektowych.\n- Use structured problem-solving tools (A3).\n",
+      "officeAssetId": "WA200003315",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.digilean.com/legal/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Narzędzie do zarządzania wizualnego wspierające procesy doskonalenia zespołów",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams.digilean.tools/#/start",
+          "entityId": "tools.digilean.teamsapp.start",
+          "name": "Początek",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/tasks",
+          "entityId": "tools.digilean.teamsapp.tasks",
+          "name": "Zadania",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/flexiboards",
+          "entityId": "tools.digilean.teamsapp.flexiboards",
+          "name": "Tablice zespołu",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/flexiboards"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/improvementhub",
+          "entityId": "tools.digilean.teamsapp.improvementhub",
+          "name": "Ulepszenie",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/improvement"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/deviationhub",
+          "entityId": "tools.digilean.teamsapp.deviationhub",
+          "name": "Zdarzenia",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/deviation"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/projecthub",
+          "entityId": "tools.digilean.teamsapp.projecthub",
+          "name": "Projekt",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/project"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/A3",
+          "entityId": "tools.digilean.teamsapp.a3",
+          "name": "A3",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/A3"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/settings",
+          "entityId": "tools.digilean.teamsapp.usersettings",
+          "name": "Ustawienia",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/settings"
+        },
+        {
+          "contentUrl": "https://signup.digilean.tools/help",
+          "entityId": "tools.digilean.teamsapp.help",
+          "name": "Pomoc",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools"
+        }
+      ],
+      "systemVersion": "2025071112564971",
+      "termsOfUseUrl": "https://www.digilean.com/legal/terms-and-conditions/",
+      "validDomains": [
+        "bot.digilean.tools",
+        "teams.digilean.tools",
+        "app.digilean.tools",
+        "signup.digilean.tools",
+        "digileanfiles.blob.core.windows.net"
+      ],
+      "webApplicationInfo": {
+        "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+        "resource": "api://teams.digilean.tools/562eda61-d481-46e1-9cb3-be3ce2ba8544"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+      "version": "1.0.12",
+      "name": "DigiLEAN",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 76200010,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Displays help message",
+                  "title": "help"
+                },
+                {
+                  "description": "Create a new task with a title and todays date",
+                  "title": "create task [task title]"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "DataVisualizationAndBI",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "developerName": "DigiLEAN AS",
+      "developerUrl": "https://www.digilean.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams.digilean.tools/#/config",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "visual management",
+        "lean",
+        "boards"
+      ],
+      "languageTag": "sv",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_largeimage.png",
+      "lastUpdatedAt": "2023-12-22T11:55:32.5215087+00:00",
+      "longDescription": "Hantera din dagliga verksamhet med vår allt-i-ett-plattform. Allt från prestationstavlor till incident- och förbättringshantering.\n\nMed vår visuella hanteringsverktygslåda kan du enkelt visualisera dina prestationsdata, designa dina tavlor och engagera ditt team i planering och rapportering. Detta minskar behovet av att hämta data och skapa rapporter manuellt. Med automatiskt uppdaterad data, bättre tillgänglighet i kombination med interaktiv uppgiftshantering blir du mer produktiv.\n\nDigiLEAN låter dig dela information och samarbeta samtidigt som du arbetar på distans. Det blir lättare att bjuda in och engagera dina kollegor i förbättringskulturen och lägga till transparens till ditt företag.\n\nOut-of-the-box-funktioner med DigiLEAN:\n\n- Skapa enkelt dina visuella tavlor på bara några minuter (dra & drop).\n- Visualisera dina Key Performance Indicators (KPIs).\n- Lägg till DigiLEAN-uppgiftsstyrningstavlor för att spåra dagliga aktiviteter.\n- Hantera förbättringsförslag och incidenter.\n- Hantera projekt med dynamik ic och flexibla projekttabeller och tavlor.\n- Använd strukturerade problemlösningsverktyg (A3).",
+      "officeAssetId": "WA200003315",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.digilean.com/legal/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Visuellt hanteringsverktyg som stödjer förbättringsprocesser",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams.digilean.tools/#/start",
+          "entityId": "tools.digilean.teamsapp.start",
+          "name": "Starta",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/tasks",
+          "entityId": "tools.digilean.teamsapp.tasks",
+          "name": "Uppgifter",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/flexiboards",
+          "entityId": "tools.digilean.teamsapp.flexiboards",
+          "name": "Styrelser",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/flexiboards"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/improvementhub",
+          "entityId": "tools.digilean.teamsapp.improvementhub",
+          "name": "Förbättring",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/improvement"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/deviationhub",
+          "entityId": "tools.digilean.teamsapp.deviationhub",
+          "name": "Händelse",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/deviation"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/projecthub",
+          "entityId": "tools.digilean.teamsapp.projecthub",
+          "name": "Projekt",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/project"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/A3",
+          "entityId": "tools.digilean.teamsapp.a3",
+          "name": "A3",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/A3"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/settings",
+          "entityId": "tools.digilean.teamsapp.usersettings",
+          "name": "Inställningar",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/settings"
+        },
+        {
+          "contentUrl": "https://signup.digilean.tools/help",
+          "entityId": "tools.digilean.teamsapp.help",
+          "name": "Hjälp",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools"
+        }
+      ],
+      "systemVersion": "2025071112564971",
+      "termsOfUseUrl": "https://www.digilean.com/legal/terms-and-conditions/",
+      "validDomains": [
+        "bot.digilean.tools",
+        "teams.digilean.tools",
+        "app.digilean.tools",
+        "signup.digilean.tools",
+        "digileanfiles.blob.core.windows.net"
+      ],
+      "webApplicationInfo": {
+        "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+        "resource": "api://teams.digilean.tools/562eda61-d481-46e1-9cb3-be3ce2ba8544"
+      }
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+      "version": "1.0.12",
+      "name": "DigiLEAN",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 76200010,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Displays help message",
+                  "title": "help"
+                },
+                {
+                  "description": "Create a new task with a title and todays date",
+                  "title": "create task [task title]"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "DataVisualizationAndBI",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "developerName": "DigiLEAN AS",
+      "developerUrl": "https://www.digilean.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams.digilean.tools/#/config",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "visual management",
+        "lean",
+        "boards"
+      ],
+      "languageTag": "tr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_largeimage.png",
+      "lastUpdatedAt": "2023-12-22T11:55:32.5215087+00:00",
+      "longDescription": "Hepsi bir arada platformumuzla günlük operasyonlarınızı yönetin. Performans panolarından olay ve iyileştirme yönetimine kadar her şeyi.\n\nGörsel yönetim araç kutumuzla performans verilerinizi kolayca görselleştirebilir, panolarınızı tasarlayabilir ve ekibinizin planlama ve raporlama. Bu, manuel olarak veri çekme ve rapor oluşturma ihtiyacını azaltır. Otomatik olarak güncellenen veriler, daha iyi kullanılabilirlik ve etkileşimli görev yönetimi ile birleştiğinde daha üretken olursunuz.\n\nDigiLEAN, uzaktan çalışırken bilgi paylaşmanıza ve işbirliği yapmanıza olanak tanır. iş arkadaşlarınızı iyileştirme kültürüne davet etmek ve onlarla etkileşim kurmak daha kolay ve işinize şeffaflık katın.\n\nDigiLEAN ile kullanıma hazır yetenekler:\n\n- Görsel panolarınızı dakikalar içinde kolayca oluşturun (sürükle ve bırakın).\n- Temel Performans Göstergelerinizi (KPI'lar) görselleştirin.\n- Günlük etkinlikleri izlemek için DigiLEAN görev yönetimi panoları ekleyin.\n- İyileştirme önerilerini ve olayları yönetin.\n- Projeleri dinam ile yönetin ic ve esnek proje tabloları ve panoları.\n- Yapılandırılmış problem çözme araçlarını kullanın (A3).",
+      "officeAssetId": "WA200003315",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.digilean.com/legal/privacy-policy/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Ekipler ve kuruluş için iyileştirme süreçlerini destekleyen görsel yönetim aracı",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/562eda61-d481-46e1-9cb3-be3ce2ba8544/2025071112564971/562eda61-d481-46e1-9cb3-be3ce2ba8544_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams.digilean.tools/#/start",
+          "entityId": "tools.digilean.teamsapp.start",
+          "name": "Başla",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/tasks",
+          "entityId": "tools.digilean.teamsapp.tasks",
+          "name": "Görevler",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/myspace"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/flexiboards",
+          "entityId": "tools.digilean.teamsapp.flexiboards",
+          "name": "Panolar",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/flexiboards"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/improvementhub",
+          "entityId": "tools.digilean.teamsapp.improvementhub",
+          "name": "İyileştirme",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/improvement"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/deviationhub",
+          "entityId": "tools.digilean.teamsapp.deviationhub",
+          "name": "Olay",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/deviation"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/projecthub",
+          "entityId": "tools.digilean.teamsapp.projecthub",
+          "name": "Proje",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/project"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/A3",
+          "entityId": "tools.digilean.teamsapp.a3",
+          "name": "A3",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/index/A3"
+        },
+        {
+          "contentUrl": "https://teams.digilean.tools/#/settings",
+          "entityId": "tools.digilean.teamsapp.usersettings",
+          "name": "Ayarlar",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools/#/settings"
+        },
+        {
+          "contentUrl": "https://signup.digilean.tools/help",
+          "entityId": "tools.digilean.teamsapp.help",
+          "name": "Yardım",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.digilean.tools"
+        }
+      ],
+      "systemVersion": "2025071112564971",
+      "termsOfUseUrl": "https://www.digilean.com/legal/terms-and-conditions/",
+      "validDomains": [
+        "bot.digilean.tools",
+        "teams.digilean.tools",
+        "app.digilean.tools",
+        "signup.digilean.tools",
+        "digileanfiles.blob.core.windows.net"
+      ],
+      "webApplicationInfo": {
+        "id": "562eda61-d481-46e1-9cb3-be3ce2ba8544",
+        "resource": "api://teams.digilean.tools/562eda61-d481-46e1-9cb3-be3ce2ba8544"
+      }
+    }
+  ]
+}
