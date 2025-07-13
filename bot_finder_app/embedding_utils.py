@@ -4,15 +4,26 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 import numpy as np
-import openai
 from tqdm import tqdm
+
+try:
+    import openai
+except Exception:  # pragma: no cover - optional dependency
+    openai = None
+
+try:
+    from sentence_transformers import SentenceTransformer
+except Exception:  # pragma: no cover - optional dependency
+    SentenceTransformer = None
 
 # Directory containing augmented bot definitions relative to repo root
 DEFS_DIR = Path(__file__).resolve().parent.parent / "augmented_defs"
 # Cached index path
 CACHE_PATH = Path(__file__).resolve().parent / "index_cache.json"
-# Embedding model
+# Embedding model for OpenAI
 EMBED_MODEL = "text-embedding-3-small"
+
+_transformer = None
 
 def load_bots() -> Dict[str, dict]:
     """Load bot definition JSON files."""
@@ -26,9 +37,16 @@ def load_bots() -> Dict[str, dict]:
     return bots
 
 def get_embedding(text: str) -> List[float]:
-    """Get embedding vector for text using OpenAI API."""
-    resp = openai.embeddings.create(model=EMBED_MODEL, input=[text])
-    return resp.data[0].embedding
+    """Get embedding vector using OpenAI or a local model."""
+    if openai and os.getenv("OPENAI_API_KEY"):
+        resp = openai.embeddings.create(model=EMBED_MODEL, input=[text])
+        return resp.data[0].embedding
+    if SentenceTransformer:
+        global _transformer
+        if _transformer is None:
+            _transformer = SentenceTransformer("all-MiniLM-L6-v2")
+        return _transformer.encode(text).tolist()
+    raise RuntimeError("No embedding backend available")
 
 def build_index(bots: Dict[str, dict]) -> List[dict]:
     """Build embedding index from example prompts."""

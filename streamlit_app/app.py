@@ -1,25 +1,20 @@
 import json
-import os
 from pathlib import Path
-from difflib import get_close_matches
 
 import streamlit as st
+
+from bot_finder_app.embedding_utils import load_index, search
 
 
 # Directory containing the augmented bot definitions
 DEFS_DIR = Path(__file__).resolve().parent.parent / "augmented_defs"
 
 
-def load_bots():
-    """Load all bot definition JSON files into memory."""
-    bots = {}
-    for path in DEFS_DIR.glob("*.json"):
-        try:
-            with open(path, "r", encoding="utf-8") as f:
-                bots[path.stem] = json.load(f)
-        except Exception as e:
-            st.error(f"Failed to load {path.name}: {e}")
-    return bots
+@st.cache_resource(show_spinner=False)
+def load_data():
+    """Load bot definitions and embedding index."""
+    index, bots = load_index()
+    return index, bots
 
 
 def get_description(app):
@@ -42,20 +37,19 @@ def get_commands(app):
     return commands
 
 
-BOTS = load_bots()
+INDEX, BOTS = load_data()
 BOT_NAMES = list(BOTS.keys())
 
 
-def search_bots(query):
+def search_bots(query: str):
+    """Return bot IDs matching the user query via embeddings."""
     if not query:
         return BOT_NAMES
+    matches = search(query, INDEX, top_n=len(BOT_NAMES))
+    # Filter to bots with a reasonable similarity score
     results = []
-    q = query.lower()
-    for bot_id, data in BOTS.items():
-        text_parts = [bot_id.lower(), data.get("name", "").lower(), get_description(data).lower()]
-        text_parts.extend(cmd["title"].lower() for cmd in get_commands(data))
-        blob = " ".join(text_parts)
-        if q in blob or get_close_matches(q, [blob]):
+    for bot_id, items in matches:
+        if items and items[0].get("score", 0) > 0.2:
             results.append(bot_id)
     return results
 
@@ -63,7 +57,14 @@ def search_bots(query):
 st.sidebar.title("Teams Bot Explorer")
 search_query = st.sidebar.text_input("Search bots")
 options = search_bots(search_query)
-selected_bot = st.sidebar.selectbox("Select a bot", options)
+if not options:
+    st.sidebar.write("No bots found")
+    st.stop()
+selected_bot = st.sidebar.selectbox(
+    "Select a bot",
+    options,
+    format_func=lambda bot_id: BOTS[bot_id].get("name", bot_id),
+)
 
 bot_data = BOTS.get(selected_bot, {})
 
@@ -106,3 +107,5 @@ if examples:
 # Download button
 json_str = json.dumps(bot_data, ensure_ascii=False, indent=2)
 st.download_button("Download JSON", json_str, file_name=f"{selected_bot}.json")
+with st.expander("Raw JSON"):
+    st.json(bot_data)
