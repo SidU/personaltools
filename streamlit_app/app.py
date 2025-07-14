@@ -38,8 +38,26 @@ def get_commands(app):
     return commands
 
 
+def get_scopes(app):
+    """Return set of scopes supported by a bot manifest."""
+    scopes = set()
+    for bot in app.get("bots", []):
+        scopes.update(bot.get("scopes") or [])
+    return scopes
+
+
+def is_notification_only(app) -> bool:
+    """Return True if any bot in the app is notification only."""
+    for bot in app.get("bots", []):
+        if bot.get("isNotificationOnly"):
+            return True
+    return False
+
+
 INDEX, BOTS = load_data()
 BOT_NAMES = list(BOTS.keys())
+ALL_SCOPES = sorted({s for b in BOTS.values() for s in get_scopes(b)})
+NOTIF_OPTIONS = ["Any", "Notification only", "Interactive"]
 
 
 def fuzzy_search(query: str) -> list:
@@ -75,6 +93,32 @@ def semantic_search(query: str) -> list:
         if items and items[0].get("score", 0) > 0.2:
             results.append(bot_id)
     return results
+
+
+def filter_by_scopes(bot_ids: list, scopes: list) -> list:
+    """Return bot IDs that support at least one of the given scopes."""
+    if not scopes:
+        return bot_ids
+    filtered = []
+    wanted = set(scopes)
+    for bot_id in bot_ids:
+        data = BOTS.get(bot_id, {})
+        if get_scopes(data) & wanted:
+            filtered.append(bot_id)
+    return filtered
+
+
+def filter_by_notification(bot_ids: list, option: str) -> list:
+    """Return bot IDs filtered by notification-only setting."""
+    if option == "Any":
+        return bot_ids
+    want_notification = option == "Notification only"
+    filtered = []
+    for bot_id in bot_ids:
+        data = BOTS.get(bot_id, {})
+        if is_notification_only(data) == want_notification:
+            filtered.append(bot_id)
+    return filtered
 
 
 st.set_page_config(page_title="Teams Bot Explorer", layout="wide")
@@ -113,10 +157,25 @@ with col_left:
         st.session_state.selected_bot = None
         st.session_state.last_action = "semantic"
 
+    scope_filter = st.multiselect(
+        "Filter by scope",
+        ALL_SCOPES,
+        key="scope_filter",
+    )
+
+    notif_filter = st.selectbox(
+        "Filter by bot type",
+        NOTIF_OPTIONS,
+        key="notif_filter",
+    )
+
 
 with col_center:
-    st.header("Results")
-    results = st.session_state.search_results
+    selected_scopes = st.session_state.get("scope_filter", [])
+    notif_option = st.session_state.get("notif_filter", "Any")
+    results = filter_by_scopes(st.session_state.search_results, selected_scopes)
+    results = filter_by_notification(results, notif_option)
+    st.header(f"Results ({len(results)})")
     if not results:
         st.write("No bots found")
     for bot_id in results:
