@@ -1101,16 +1101,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Proceso create new process for onboarding",
-      "description": "User asks Proceso to create a new process specifically for onboarding new employees."
+      "prompt": "@Proceso create a new process flow for onboarding new employees",
+      "description": "The user wants to create a new process flow specifically for onboarding new employees.",
+      "command": "create"
     },
     {
-      "prompt": "@Proceso update process for monthly reporting",
-      "description": "User requests Proceso to make updates to an existing process related to monthly reporting."
+      "prompt": "@Proceso update the existing process for handling customer feedback",
+      "description": "The user is requesting an update to the current process used for managing customer feedback.",
+      "command": "manage"
     },
     {
-      "prompt": "@Proceso delete process for outdated project management",
-      "description": "User instructs Proceso to delete a process that is no longer needed for project management."
+      "prompt": "@Proceso manage the process documentation for product launches",
+      "description": "The user asks the bot to manage and possibly revise process documentation related to product launches.",
+      "command": "manage"
     }
   ]
 }

@@ -1,0 +1,2600 @@
+{
+  "manifestVersion": "1.11",
+  "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+  "version": "3.3.3",
+  "name": "NetDocuments (UK)",
+  "accentColor": "#9D22E4",
+  "amsSellerAccountId": 70219270,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Presents a welcome card for signing into NetDocuments",
+              "title": "hi"
+            },
+            {
+              "description": "Presents a welcome card for signing into NetDocuments",
+              "title": "hello"
+            },
+            {
+              "description": "Presents a welcome card for signing into NetDocuments",
+              "title": "signin"
+            },
+            {
+              "description": "Signs the user out of NetDocuments",
+              "title": "signout"
+            },
+            {
+              "description": "Presents a URL for the user to visit for help",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "ContentManagement",
+    "HumanResourcesAndRecruiting"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "NetDocuments",
+  "developerUrl": "https://netdocuments.com",
+  "devicePermissions": [
+    "Notifications"
+  ],
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://chatlink-teams-tab-uk.netdocuments.com/settings",
+      "context": [
+        "channelTab"
+      ],
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Perform a search",
+          "fetchTask": false,
+          "id": "searchQuery",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Your search query",
+              "inputType": "text",
+              "name": "searchQuery",
+              "title": "Search"
+            }
+          ],
+          "title": "Search",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Signs out the user from the NetDocuments integration.",
+          "fetchTask": true,
+          "id": "accessCommand",
+          "initialRun": false,
+          "title": "Signout",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Sends a help card to the user.",
+          "fetchTask": true,
+          "id": "helpCommand",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Help",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Sends a settings card to the user.",
+          "fetchTask": true,
+          "id": "settingsCommand",
+          "initialRun": false,
+          "title": "Settings",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "File Management",
+    "Document Management DMS",
+    "Content Management"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_largeimage.png",
+  "lastUpdatedAt": "2024-06-25T06:06:29.1207511+00:00",
+  "longDescription": "The NetDocuments Microsoft Teams integration allows you to access all your NetDocuments functions and workflows without leaving Microsoft Teams, while keeping your files secure and easily accessible in NetDocuments.\n\n - **Stay connected**. Microsoft Teams is the collaboration platform of choice, so have the best of both worlds with the ability to chat and have meetings in Microsoft Teams, while also accessing and sharing secure files from NetDocuments.\n - **Stay safe**. No need to worry about files being spread across numerous locations within Microsoft Teams and who might access them. They’ll always stay safe and secure in NetDocuments while easily accessible within Microsoft Teams.\n - **Stay synced**. Soon, you’ll be able to provision a Microsoft Teams channel from a NetDocuments workspace and also sync files within Microsoft Teams to NetDocuments, so there is a single, secure, but also easily accessible, location for all your project or matter content in one location.\n\nPlease note this integration requires a NetDocuments (UK) subscription that includes the NetDocuments PLAN solution. If needed, contact your account executive to purchase PLAN or NetDocuments Customer Support for assistance with setup in Microsoft Teams.\n\n Please note this integration requires a NetDocuments subscription. Need NetDocuments? Connect with us at +44 2031 299324. Current customers can contact your account executive to purchase [ChatLink](https://www.netdocuments.com/products/chatlink-for-microsoft-teams) for Microsoft Teams or check out [NetDocuments Customer Support](https://netdocuments.force.com/NetDocumentsSupport/s/article/360042374252) for assistance with setup in Microsoft Teams.",
+  "mpnId": "5240827",
+  "officeAssetId": "WA200004918",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.netdocuments.com/privacy-policy/",
+  "publisherDocsUrl": "https://support.netdocuments.com/s/article/360042374252",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/2.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Work better with your NetDocuments apps in Microsoft Teams",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_smallimage.png",
+  "systemVersion": "2025071113093989",
+  "termsOfUseUrl": "https://www.netdocuments.com/terms-of-use/",
+  "validDomains": [
+    "token.botframework.com",
+    "preview-eu.netdocuments.com",
+    "api.eu.netdocuments.com",
+    "eu.netdocuments.com",
+    "chatlink-integration-portal-uk-prod.netdocuments.com",
+    "chatlink-teams-tab-uk.netdocuments.com"
+  ],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "de",
+    "es",
+    "fr-ca",
+    "fr",
+    "pt-br",
+    "pt",
+    "ja"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.11",
+      "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+      "version": "3.3.3",
+      "name": "NetDocuments (UK)",
+      "accentColor": "#9D22E4",
+      "amsSellerAccountId": 70219270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Präsentiert eine Hilfekarte für das, was im System zu tun ist",
+                  "title": "hallo"
+                },
+                {
+                  "description": "Präsentiert eine Hilfekarte für das, was im System zu tun ist",
+                  "title": "hi"
+                },
+                {
+                  "description": "Legt eine Willkommenskarte für die Anmeldung bei NetDocuments vor",
+                  "title": "anmeldung"
+                },
+                {
+                  "description": "Meldet den Benutzer von NetDocuments ab",
+                  "title": "abmeldung"
+                },
+                {
+                  "description": "Zeigt eine URL an, die der Benutzer besuchen kann, um Hilfe zu erhalten",
+                  "title": "hilfe"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": true,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "HumanResourcesAndRecruiting"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "NetDocuments",
+      "developerUrl": "https://netdocuments.com",
+      "devicePermissions": [
+        "Notifications"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://chatlink-teams-tab-uk.netdocuments.com/settings",
+          "context": [
+            "channelTab"
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Suche durchführen",
+              "fetchTask": false,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Ihre Suchanfrage",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Suchen"
+                }
+              ],
+              "title": "Suchen",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Meldet den Benutzer von der NetDocuments-Integration ab.",
+              "fetchTask": true,
+              "id": "accessCommand",
+              "initialRun": false,
+              "title": "Abmelden",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Sendet eine Hilfekarte an den Benutzer.",
+              "fetchTask": true,
+              "id": "helpCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Hilfe",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Sendet eine Einstellungenkarte an den Benutzer.",
+              "fetchTask": true,
+              "id": "settingsCommand",
+              "initialRun": false,
+              "title": "Einstellungen",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "File Management",
+        "Document Management DMS",
+        "Content Management"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_largeimage.png",
+      "lastUpdatedAt": "2024-06-25T06:06:29.1207511+00:00",
+      "longDescription": "Mit der Integration von NetDocuments in Microsoft Teams können Sie auf alle Ihre NetDocuments-Funktionen und -Workflows zugreifen, ohne Microsoft Teams zu verlassen, und gleichzeitig Ihre Dateien sicher und leicht zugänglich in NetDocuments aufbewahren.\n\n - **Bleiben Sie in Verbindung**. Microsoft Teams ist die Kollaborationsplattform der Wahl, also haben Sie das Beste aus beiden Welten mit der Möglichkeit, zu chatten und Meetings in Microsoft Teams zu führen, während Sie auch auf sichere Dateien von NetDocuments zugreifen und diese freigeben.\n - **Bleiben Sie sicher**. Sie müssen sich keine Gedanken darüber machen, ob Dateien an zahlreichen Standorten innerhalb von Microsoft Teams verbreitet werden und wer darauf zugreifen könnte. Sie bleiben in NetDocuments immer sicher und zugleich in Microsoft Teams leicht zugänglich.\n - **Bleiben Sie synchronisiert**. Bald können Sie einen Microsoft Teams-Kanal von einem NetDocuments-Arbeitsbereich aus bereitstellen und Dateien innerhalb von Microsoft Teams mit NetDocuments synchronisieren, sodass es einen einzigen, sicheren, aber auch leicht zugänglichen Standort für alle Ihre Projekt- oder Vorgangsinhalte an einem Ort gibt.\n\nBitte beachten Sie, dass diese Integration ein NetDocuments-Abonnement (UK) erfordert, das die NetDocuments PLAN-Lösung enthält. Wenden Sie sich bei Bedarf an Ihren Kundenbetreuer, um den PLAN- oder NetDocuments-Kundensupport zu erwerben, um Unterstützung bei der Einrichtung in Microsoft Teams zu erhalten.\n\nBenötigen Sie NetDocuments? Kontaktieren Sie uns unter +44 2031 299324. Aktuelle Kunden können sich an Ihren Kundenbetreuer wenden, um [ChatLink](https://www.netdocuments.com/products/chatlink-for-microsoft-teams) für Microsoft Teams zu erwerben, oder schauen Sie sich [NetDocuments Customer Support](https://netdocuments.force.com/NetDocumentsSupport/s/article/360042374252) an, um Unterstützung bei der Einrichtung in Microsoft Teams zu erhalten.",
+      "mpnId": "5240827",
+      "officeAssetId": "WA200004918",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.netdocuments.com/privacy-policy/",
+      "publisherDocsUrl": "https://support.netdocuments.com/s/article/360042374252",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Arbeiten Sie besser mit Ihren NetDocuments-Apps in Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_smallimage.png",
+      "systemVersion": "2025071113093989",
+      "termsOfUseUrl": "https://www.netdocuments.com/terms-of-use/",
+      "validDomains": [
+        "token.botframework.com",
+        "preview-eu.netdocuments.com",
+        "api.eu.netdocuments.com",
+        "eu.netdocuments.com",
+        "chatlink-integration-portal-uk-prod.netdocuments.com",
+        "chatlink-teams-tab-uk.netdocuments.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+      "version": "3.3.3",
+      "name": "NetDocuments (UK)",
+      "accentColor": "#9D22E4",
+      "amsSellerAccountId": 70219270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Presenta una tarjeta de ayuda sobre qué hacer dentro del sistema",
+                  "title": "hola"
+                },
+                {
+                  "description": "Presenta una tarjeta de ayuda sobre qué hacer dentro del sistema",
+                  "title": "hola"
+                },
+                {
+                  "description": "Presenta una tarjeta de bienvenida para iniciar sesión en NetDocuments",
+                  "title": "inicio de sesión"
+                },
+                {
+                  "description": "Cierra la sesión del usuario en NetDocuments",
+                  "title": "cerrar de sesión"
+                },
+                {
+                  "description": "Presenta una URL para que el usuario la visite para obtener ayuda",
+                  "title": "ayuda"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": true,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "HumanResourcesAndRecruiting"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "NetDocuments",
+      "developerUrl": "https://netdocuments.com",
+      "devicePermissions": [
+        "Notifications"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://chatlink-teams-tab-uk.netdocuments.com/settings",
+          "context": [
+            "channelTab"
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Realizar una búsqueda",
+              "fetchTask": false,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Su consulta de búsqueda",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Buscar"
+                }
+              ],
+              "title": "Buscar",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Cierra la sesión del usuario en la integración de NetDocuments.",
+              "fetchTask": true,
+              "id": "accessCommand",
+              "initialRun": false,
+              "title": "Desconectar",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Envía una tarjeta de ayuda al usuario.",
+              "fetchTask": true,
+              "id": "helpCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Ayuda",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Envía una tarjeta de configuración al usuario.",
+              "fetchTask": true,
+              "id": "settingsCommand",
+              "initialRun": false,
+              "title": "Configuración",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "File Management",
+        "Document Management DMS",
+        "Content Management"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_largeimage.png",
+      "lastUpdatedAt": "2024-06-25T06:06:29.1207511+00:00",
+      "longDescription": "La integración de NetDocuments con Microsoft Teams le permite acceder a todas sus funciones y flujos de trabajo de NetDocuments sin salir de Microsoft Teams, a la vez que mantiene sus archivos protegidos y fácilmente accesibles en NetDocuments.\n\n - **Permanezca conectado**. Microsoft Teams es la plataforma de colaboración preferida, así que tenga lo mejor de ambos mundos con la capacidad de chatear y tener reuniones en Microsoft Teams, al tiempo que accede y comparte archivos seguros desde NetDocuments.\n - **Manténgase seguro**. No es necesario preocuparse por la posibilidad de que los archivos se distribuyan en numerosas ubicaciones dentro de Microsoft Teams ni por quién puede acceder a ellos. Siempre estarán seguros y protegidos en NetDocuments, pero sin dejar de ser fácilmente accesibles en Microsoft Teams.\n - **Permanezca sincronizado**. Pronto, podrá aprovisionar un canal de Microsoft Teams desde un espacio de trabajo de NetDocuments y sincronizar archivos dentro de Microsoft Teams con NetDocuments, por lo que hay una ubicación única, segura, pero también fácilmente accesible, para todo el contenido de su proyecto o asunto en una ubicación.\n\nTenga en cuenta que esta integración requiere una suscripción a NetDocuments (UK) que incluya la solución NetDocuments PLAN. Si es necesario, póngase en contacto con su ejecutivo de cuentas para adquirir el servicio de atención al cliente de PLAN o NetDocuments para obtener ayuda con la configuración en Microsoft Teams.\n\n¿Necesita NetDocuments? Póngase en contacto con nosotros en el +44 2031 299324. Los clientes actuales pueden comunicarse con su ejecutivo de cuentas para adquirir [ChatLink](https://www.netdocuments.com/products/chatlink-for-microsoft-teams) para Microsoft Teams o consultar [Asistencia al cliente de NetDocuments](https://netdocuments.force.com/NetDocumentsSupport/s/article/360042374252) para obtener ayuda con la configuración en Microsoft Teams.",
+      "mpnId": "5240827",
+      "officeAssetId": "WA200004918",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.netdocuments.com/privacy-policy/",
+      "publisherDocsUrl": "https://support.netdocuments.com/s/article/360042374252",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Trabaje mejor con sus aplicaciones NetDocuments en Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_smallimage.png",
+      "systemVersion": "2025071113093989",
+      "termsOfUseUrl": "https://www.netdocuments.com/terms-of-use/",
+      "validDomains": [
+        "token.botframework.com",
+        "preview-eu.netdocuments.com",
+        "api.eu.netdocuments.com",
+        "eu.netdocuments.com",
+        "chatlink-integration-portal-uk-prod.netdocuments.com",
+        "chatlink-teams-tab-uk.netdocuments.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+      "version": "3.3.3",
+      "name": "NetDocuments (UK)",
+      "accentColor": "#9D22E4",
+      "amsSellerAccountId": 70219270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Présente une carte d’aide sur ce qu’il faut faire dans le système",
+                  "title": "bonjour"
+                },
+                {
+                  "description": "Présente une carte d’aide sur ce qu’il faut faire dans le système",
+                  "title": "bonjour"
+                },
+                {
+                  "description": "Présente une carte de bienvenue pour se connecter à NetDocuments",
+                  "title": "connexion"
+                },
+                {
+                  "description": "Déconnecte l’utilisateur de NetDocuments",
+                  "title": "déconnexion"
+                },
+                {
+                  "description": "Présente une URL que l’utilisateur peut consulter pour obtenir de l’aide",
+                  "title": "aide"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": true,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "HumanResourcesAndRecruiting"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "NetDocuments",
+      "developerUrl": "https://netdocuments.com",
+      "devicePermissions": [
+        "Notifications"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://chatlink-teams-tab-uk.netdocuments.com/settings",
+          "context": [
+            "channelTab"
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Effectuer une recherche",
+              "fetchTask": false,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Votre demande de recherche",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Rechercher"
+                }
+              ],
+              "title": "Rechercher",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Déconnecte l'utilisateur de l'intégration NetDocuments.",
+              "fetchTask": true,
+              "id": "accessCommand",
+              "initialRun": false,
+              "title": "Se déconnecter",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Envoie une carte d’aide à l’utilisateur.",
+              "fetchTask": true,
+              "id": "helpCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Aide",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Envoie une carte d’paramètres à l’utilisateur.",
+              "fetchTask": true,
+              "id": "settingsCommand",
+              "initialRun": false,
+              "title": "Paramètres",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "File Management",
+        "Document Management DMS",
+        "Content Management"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_largeimage.png",
+      "lastUpdatedAt": "2024-06-25T06:06:29.1207511+00:00",
+      "longDescription": "L’intégration de NetDocuments Microsoft Teams vous permet d’accéder à toutes vos fonctions et flux de travail NetDocuments sans quitter Microsoft Teams, tout en gardant vos fichiers sécurisés et facilement accessibles dans NetDocuments.\n\n - **Restez connecté**. Microsoft Teams est la plateforme de collaboration de choix, alors profitez du meilleur des deux mondes avec la possibilité de discuter et d’organiser des réunions dans Microsoft Teams, tout en accédant et en partageant des fichiers sécurisés à partir de NetDocuments.\n - **Restez en sécurité**. Inutile de s’inquiéter de la propagation des fichiers sur de nombreux sites de Microsoft Teams et des personnes susceptibles d’y accéder. Ils resteront toujours en sécurité dans NetDocuments tout en étant facilement accessibles dans Microsoft Teams.\n - **Restez synchronisé**. Vous serez bientôt en mesure d’approvisionner un canal Microsoft Teams à partir d’un espace de travail NetDocuments ainsi que de synchroniser les fichiers de Microsoft Teams avec NetDocuments, de sorte qu’il existe un emplacement unique, sécurisé, mais également facilement accessible, pour tous vos projets ou contenus en un seul endroit.\n\nVeuillez noter que cette intégration nécessite un abonnement NetDocuments (UK) qui inclut la solution NetDocuments PLAN. Si nécessaire, contactez votre chargé de compte pour acheter le service client PLAN ou NetDocuments pour obtenir de l’aide sur la configuration dans Microsoft Teams.\n\nBesoin de NetDocuments ? Contactez-nous au +44 2031 299324. Les clients actuels peuvent contacter votre chargé de compte pour acheter [ChatLink](https://www.netdocuments.com/products/chatlink-for-microsoft-teams) pour Microsoft Teams ou consulter [NetDocuments Customer Support](https://netdocuments.force.com/NetDocumentsSupport/s/article/360042374252) pour obtenir de l’aide sur la configuration dans Microsoft Teams.",
+      "mpnId": "5240827",
+      "officeAssetId": "WA200004918",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.netdocuments.com/privacy-policy/",
+      "publisherDocsUrl": "https://support.netdocuments.com/s/article/360042374252",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Travaillez mieux avec vos applications NetDocuments dans Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_smallimage.png",
+      "systemVersion": "2025071113093989",
+      "termsOfUseUrl": "https://www.netdocuments.com/terms-of-use/",
+      "validDomains": [
+        "token.botframework.com",
+        "preview-eu.netdocuments.com",
+        "api.eu.netdocuments.com",
+        "eu.netdocuments.com",
+        "chatlink-integration-portal-uk-prod.netdocuments.com",
+        "chatlink-teams-tab-uk.netdocuments.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+      "version": "3.3.3",
+      "name": "NetDocuments (UK)",
+      "accentColor": "#9D22E4",
+      "amsSellerAccountId": 70219270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Présente une carte d’aide sur ce qu’il faut faire dans le système",
+                  "title": "bonjour"
+                },
+                {
+                  "description": "Présente une carte d’aide sur ce qu’il faut faire dans le système",
+                  "title": "bonjour"
+                },
+                {
+                  "description": "Présente une carte de bienvenue pour vous connecter à NetDocuments",
+                  "title": "connexion"
+                },
+                {
+                  "description": "Déconnecte l’utilisateur de NetDocuments",
+                  "title": "déconnexion"
+                },
+                {
+                  "description": "Présente une URL que l’utilisateur peut visiter pour obtenir de l’aide",
+                  "title": "aide"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": true,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "HumanResourcesAndRecruiting"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "NetDocuments",
+      "developerUrl": "https://netdocuments.com",
+      "devicePermissions": [
+        "Notifications"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://chatlink-teams-tab-uk.netdocuments.com/settings",
+          "context": [
+            "channelTab"
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Effectuer une recherche",
+              "fetchTask": false,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Votre requête de recherche",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Rechercher"
+                }
+              ],
+              "title": "Rechercher",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Déconnecte l'utilisateur de l'intégration NetDocuments.",
+              "fetchTask": true,
+              "id": "accessCommand",
+              "initialRun": false,
+              "title": "Se déconnecter",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Envoie une carte d’aide à l’utilisateur.",
+              "fetchTask": true,
+              "id": "helpCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Aide",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Envoie une carte d’paramètres à l’utilisateur.",
+              "fetchTask": true,
+              "id": "settingsCommand",
+              "initialRun": false,
+              "title": "Paramètres",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "File Management",
+        "Document Management DMS",
+        "Content Management"
+      ],
+      "languageTag": "fr-ca",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_largeimage.png",
+      "lastUpdatedAt": "2024-06-25T06:06:29.1207511+00:00",
+      "longDescription": "L’intégration de NetDocuments Microsoft Teams vous permet d’accéder à toutes vos fonctions et flux de travail NetDocuments sans quitter Microsoft Teams, tout en gardant vos fichiers sécurisés et facilement accessibles dans NetDocuments.\n\n - **Restez connecté**. Microsoft Teams est la plateforme de collaboration de choix, alors ayez le meilleur des deux mondes avec la possibilité de clavarder et d’avoir des réunions dans Microsoft Teams, tout en accédant et en partageant des fichiers sécurisés à partir de NetDocuments.\n - **Restez en sécurité**. Nul besoin de s’inquiéter de la propagation des fichiers dans de nombreux emplacements de Microsoft Teams et des personnes qui pourraient y accéder. Ils resteront toujours en sécurité dans NetDocuments tout en étant facilement accessibles dans Microsoft Teams.\n - **Restez synchronisé**. Bientôt, vous pourrez alimenter un canal Microsoft Teams à partir d’un espace de travail NetDocuments et synchroniser les fichiers dans Microsoft Teams vers NetDocuments, de sorte d’avoir un emplacement unique, sécurisé, mais également facilement accessible, pour tout votre contenu de projet ou de matière en un seul endroit.\n\nVeuillez noter que cette intégration nécessite un abonnement à NetDocuments (UK) qui comprend la solution NetDocuments PLAN. Au besoin, communiquez avec votre chargé de compte pour acheter le soutien à la clientèle de PLAN ou de NetDocuments pour obtenir de l’aide avec la configuration dans Microsoft Teams.\n\nBesoin de NetDocuments? Communiquez avec nous au +44 2031 299324. Les clients actuels peuvent communiquer avec votre chargé de compte pour acheter [ChatLink](https://www.netdocuments.com/products/chatlink-for-microsoft-teams) pour Microsoft Teams ou consultez [Soutien à la clientèle deNetDocuments](https://netdocuments.force.com/NetDocumentsSupport/s/article/360042374252) pour obtenir de l’aide avec la configuration dans Microsoft Teams.",
+      "mpnId": "5240827",
+      "officeAssetId": "WA200004918",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.netdocuments.com/privacy-policy/",
+      "publisherDocsUrl": "https://support.netdocuments.com/s/article/360042374252",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Travaillez mieux avec vos applications NetDocuments dans Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_smallimage.png",
+      "systemVersion": "2025071113093989",
+      "termsOfUseUrl": "https://www.netdocuments.com/terms-of-use/",
+      "validDomains": [
+        "token.botframework.com",
+        "preview-eu.netdocuments.com",
+        "api.eu.netdocuments.com",
+        "eu.netdocuments.com",
+        "chatlink-integration-portal-uk-prod.netdocuments.com",
+        "chatlink-teams-tab-uk.netdocuments.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+      "version": "3.3.3",
+      "name": "NetDocuments (UK)",
+      "accentColor": "#9D22E4",
+      "amsSellerAccountId": 70219270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "システム内で何をすべきかについてヘルプカードを提示",
+                  "title": "こんにちは"
+                },
+                {
+                  "description": "システム内で何をすべきかについてヘルプカードを提示",
+                  "title": "こんにちは"
+                },
+                {
+                  "description": "NetDocumentsにサインインしたときのウェルカムカードを提示",
+                  "title": "サインイン"
+                },
+                {
+                  "description": "NetDocumentsからユーザーをサインアウト",
+                  "title": "サインアウト"
+                },
+                {
+                  "description": "ユーザーがヘルプへアクセスするためのURLを提示",
+                  "title": "ヘルプ"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": true,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "HumanResourcesAndRecruiting"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "NetDocuments",
+      "developerUrl": "https://netdocuments.com",
+      "devicePermissions": [
+        "Notifications"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://chatlink-teams-tab-uk.netdocuments.com/settings",
+          "context": [
+            "channelTab"
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "検索を実行",
+              "fetchTask": false,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "検索クエリ",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "検索"
+                }
+              ],
+              "title": "検索",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "NetDocuments 統合からユーザーをサインアウトします。",
+              "fetchTask": true,
+              "id": "accessCommand",
+              "initialRun": false,
+              "title": "サインアウト",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "ユーザーにヘルプカードを送信します。",
+              "fetchTask": true,
+              "id": "helpCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "ヘルプ",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "ユーザーに設定カードを送信します。",
+              "fetchTask": true,
+              "id": "settingsCommand",
+              "initialRun": false,
+              "title": "設定",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "File Management",
+        "Document Management DMS",
+        "Content Management"
+      ],
+      "languageTag": "ja",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_largeimage.png",
+      "lastUpdatedAt": "2024-06-25T06:06:29.1207511+00:00",
+      "longDescription": "NetDocuments Microsoft Teamsの統合により、Microsoft Teamsを離れることなく、すべてのNetDocumentsの機能とワークフローにアクセスできます。同時にファイルはNetDocumentsで安全に保護され、簡単にアクセスできます。\n\n - **接続を維持**。Microsoft Teamsは、最適なコラボレーションプラットフォームです。Microsoft Teamsでチャットや会議をしながら、NetDocumentsの安全なファイルにアクセスして共有できる機能で、両者の長所を同時に活用できます。\n - **安全を維持**。ファイルがMicrosoft Teamsのさまざまな場所に分散するのではないか、誰がファイルにアクセスするのかといった心配は不要です。NetDocumentsで常に安全とセキュリティを維持しながら、Microsoft Teamsで簡単にアクセスできます。\n - **同期を維持**。まもなく、NetDocumentsのワークスペースからMicrosoft Teamsのチャネルをプロビジョニング、Microsoft Teams内のファイルをNetDocumentsに同期できるため、すべてのプロジェクトまたは重要なコンテンツが1か所にまとまり、安全かつ簡単にアクセスできるようになります。\n\nこの統合には、NetDocuments PLANソリューションなど、NetDocuments (UK) サブスクリプションが必要です。必要に応じて、PLANの購入についてアカウントエグゼクティブにお問い合わせください。 またはMicrosoft Teamsでの設定についてNetDocumentsカスタマーサポートからサポートを受けてください。\n\nNetDocumentsが必要ですか？ +44 2031 299324までお電話ください。現在のお客様は、アカウントエグゼクティブに連絡してMicrosoft Teams向け[ChatLink](https://www.netdocuments.com/products/chatlink-for-microsoft-teams)をご購入いただくか、 Microsoft Teamsの設定に関するサポートのため[NetDocuments Customer Support](https://netdocuments.force.com/NetDocumentsSupport/s/article/360042374252)をチェックして ください。",
+      "mpnId": "5240827",
+      "officeAssetId": "WA200004918",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.netdocuments.com/privacy-policy/",
+      "publisherDocsUrl": "https://support.netdocuments.com/s/article/360042374252",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "躊躇することなく、Microsoft TeamsのNetDocumentsアプリで作業を改善",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_smallimage.png",
+      "systemVersion": "2025071113093989",
+      "termsOfUseUrl": "https://www.netdocuments.com/terms-of-use/",
+      "validDomains": [
+        "token.botframework.com",
+        "preview-eu.netdocuments.com",
+        "api.eu.netdocuments.com",
+        "eu.netdocuments.com",
+        "chatlink-integration-portal-uk-prod.netdocuments.com",
+        "chatlink-teams-tab-uk.netdocuments.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+      "version": "3.3.3",
+      "name": "NetDocuments (UK)",
+      "accentColor": "#9D22E4",
+      "amsSellerAccountId": 70219270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Apresenta um cartão de ajuda sobre o que fazer no sistema",
+                  "title": "olá"
+                },
+                {
+                  "description": "Apresenta um cartão de ajuda sobre o que fazer no sistema",
+                  "title": "olá"
+                },
+                {
+                  "description": "Apresenta um cartão de boas-vindas para iniciar sessão no NetDocuments",
+                  "title": "iniciar sessão"
+                },
+                {
+                  "description": "Termina a sessão do utilizador em NetDocuments",
+                  "title": "terminar sessão"
+                },
+                {
+                  "description": "Apresenta um URL para o utilizador visitar para obter ajuda",
+                  "title": "ajuda"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": true,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "HumanResourcesAndRecruiting"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "NetDocuments",
+      "developerUrl": "https://netdocuments.com",
+      "devicePermissions": [
+        "Notifications"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://chatlink-teams-tab-uk.netdocuments.com/settings",
+          "context": [
+            "channelTab"
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Realizar uma pesquisa",
+              "fetchTask": false,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "A sua consulta de pesquisa",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Pesquisar"
+                }
+              ],
+              "title": "Pesquisar",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Desconecta o usuário da integração do NetDocuments.",
+              "fetchTask": true,
+              "id": "accessCommand",
+              "initialRun": false,
+              "title": "Sair",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Envia um cartão de ajuda ao utilizador.",
+              "fetchTask": true,
+              "id": "helpCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Ajuda",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Envia um cartão de configurações para o usuário.",
+              "fetchTask": true,
+              "id": "settingsCommand",
+              "initialRun": false,
+              "title": "Configurações",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "File Management",
+        "Document Management DMS",
+        "Content Management"
+      ],
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_largeimage.png",
+      "lastUpdatedAt": "2024-06-25T06:06:29.1207511+00:00",
+      "longDescription": "A integração do NetDocuments para Microsoft Teams permite-lhe aceder a todas as suas funções e fluxos de trabalho NetDocuments sem sair do Microsoft Teams, mantendo os seus ficheiros seguros e facilmente acessíveis no NetDocuments.\n\n - **Mantenha-se ligado**. O Microsoft Teams é a plataforma de colaboração de eleição, por isso, pode ter o melhor de dois mundos com as opções de chat e reuniões no Microsoft Teams, ao mesmo tempo que acede e partilha ficheiros seguros a partir do NetDocuments.\n - **Mantenha-se seguro**. Não precisa de se preocupar com a disseminação de ficheiros em várias localizações no Microsoft Teams e quem pode aceder aos mesmos. Manter-se-ão sempre seguros e protegidos no NetDocuments e, ao mesmo tempo, facilmente acessíveis no Microsoft Teams.\n - **Mantenha-se sincronizado**. Em breve, poderá aprovisionar um canal do Microsoft Teams a partir de uma área de trabalho NetDocuments e também sincronizar ficheiros no Microsoft Teams com o NetDocuments, para que exista uma localização única, segura, mas também facilmente acessível, para todo o seu conteúdo de projeto ou tema numa localização.\n\nTenha em atenção que esta integração requer uma subscrição NetDocuments (UK) que inclui a solução NetDocuments PLAN. Se necessário, contacte o seu gestor de conta para adquirir o PLAN ou o apoio ao cliente NetDocuments para obter assistência com a configuração no Microsoft Teams.\n\nPrecisa da NetDocuments? Contacte-nos através do número +44 2031 299324. Os clientes atuais podem contactar o seu gestor de conta para comprar [ChatLink](https://www.netdocuments.com/products/chatlink-for-microsoft-teams) para o Microsoft Teams ou consultar [apoio ao cliente NetDocuments](https://netdocuments.force.com/NetDocumentsSupport/s/article/360042374252) para obter assistência com a configuração no Microsoft Teams.",
+      "mpnId": "5240827",
+      "officeAssetId": "WA200004918",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.netdocuments.com/privacy-policy/",
+      "publisherDocsUrl": "https://support.netdocuments.com/s/article/360042374252",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Trabalhe melhor com as suas aplicações NetDocuments no Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_smallimage.png",
+      "systemVersion": "2025071113093989",
+      "termsOfUseUrl": "https://www.netdocuments.com/terms-of-use/",
+      "validDomains": [
+        "token.botframework.com",
+        "preview-eu.netdocuments.com",
+        "api.eu.netdocuments.com",
+        "eu.netdocuments.com",
+        "chatlink-integration-portal-uk-prod.netdocuments.com",
+        "chatlink-teams-tab-uk.netdocuments.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+      "version": "3.3.3",
+      "name": "NetDocuments (UK)",
+      "accentColor": "#9D22E4",
+      "amsSellerAccountId": 70219270,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Apresenta um cartão de ajuda sobre o que fazer no sistema",
+                  "title": "olá"
+                },
+                {
+                  "description": "Apresenta um cartão de ajuda sobre o que fazer no sistema",
+                  "title": "oi"
+                },
+                {
+                  "description": "Apresenta um cartão de boas-vindas por fazer login no NetDocuments",
+                  "title": "entrar"
+                },
+                {
+                  "description": "Desconecta o usuário do NetDocuments",
+                  "title": "sair"
+                },
+                {
+                  "description": "Apresenta um URL para o usuário visitar para obter ajuda",
+                  "title": "ajuda"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": true,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "HumanResourcesAndRecruiting"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "NetDocuments",
+      "developerUrl": "https://netdocuments.com",
+      "devicePermissions": [
+        "Notifications"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://chatlink-teams-tab-uk.netdocuments.com/settings",
+          "context": [
+            "channelTab"
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "e944d554-5264-4c96-a0fc-22f30d083c2a",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Realizar uma pesquisa",
+              "fetchTask": false,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Sua consulta de pesquisa",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Pesquisar"
+                }
+              ],
+              "title": "Pesquisar",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Desconecta o usuário da integração do NetDocuments.",
+              "fetchTask": true,
+              "id": "accessCommand",
+              "initialRun": false,
+              "title": "Sair",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Envia um cartão de ajuda para o usuário.",
+              "fetchTask": true,
+              "id": "helpCommand",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Ajuda",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Envia um cartão de configurações para o usuário.",
+              "fetchTask": true,
+              "id": "settingsCommand",
+              "initialRun": false,
+              "title": "Configurações",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "File Management",
+        "Document Management DMS",
+        "Content Management"
+      ],
+      "languageTag": "pt-br",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_largeimage.png",
+      "lastUpdatedAt": "2024-06-25T06:06:29.1207511+00:00",
+      "longDescription": "A integração do NetDocuments com o Microsoft Teams permite acessar todas as funções e fluxos de trabalho do NetDocuments sem sair do Microsoft Teams, mantendo seus arquivos seguros e facilmente acessíveis no NetDocuments.\n\n - **Mantenha-se conectado**. O Microsoft Teams é a plataforma de colaboração preferida, então tenha o melhor dos dois mundos com a capacidade de conversar e fazer reuniões no Microsoft Teams, além de acessar e compartilhar arquivos seguros do NetDocuments.\n - **Mantenha-se seguro**. Não há necessidade de se preocupar com a disseminação de arquivos em vários locais no Microsoft Teams e quem pode acessá-los. Eles sempre permanecerão seguros e protegidos no NetDocuments enquanto são facilmente acessíveis no Microsoft Teams.\n - **Mantenha-se sincronizado**. Em breve, você poderá provisionar um canal do Microsoft Teams a partir de um espaço de trabalho do NetDocuments e também sincronizar arquivos no Microsoft Teams com o NetDocuments, para que haja um local único, seguro, mas também facilmente acessível, para todo o conteúdo do seu projeto ou assunto em um único local.\n\nObserve que essa integração requer uma assinatura do NetDocuments (UK) que inclua a solução NetDocuments PLAN. Se necessário, entre em contato com seu executivo de contas para adquirir o PLAN ou o suporte ao cliente do NetDocuments para obter assistência com a configuração no Microsoft Teams.\n\nPrecisa do NetDocuments? Entre em contato conosco pelo telefone +44 2031 299324. Os clientes atuais podem entrar em contato com seu executivo de contas para adquirir o [ChatLink](https://www.netdocuments.com/products/chatlink-for-microsoft-teams) para Microsoft Teams ou contatar o [suporte ao cliente NetDocuments](https://netdocuments.force.com/NetDocumentsSupport/s/article/360042374252) para obter assistência com a configuração no Microsoft Teams.",
+      "mpnId": "5240827",
+      "officeAssetId": "WA200004918",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.netdocuments.com/privacy-policy/",
+      "publisherDocsUrl": "https://support.netdocuments.com/s/article/360042374252",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_screenshot/2.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Trabalhe melhor com seus aplicativos NetDocuments no Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e944d554-5264-4c96-a0fc-22f30d083c2a/2025071113093989/e944d554-5264-4c96-a0fc-22f30d083c2a_smallimage.png",
+      "systemVersion": "2025071113093989",
+      "termsOfUseUrl": "https://www.netdocuments.com/terms-of-use/",
+      "validDomains": [
+        "token.botframework.com",
+        "preview-eu.netdocuments.com",
+        "api.eu.netdocuments.com",
+        "eu.netdocuments.com",
+        "chatlink-integration-portal-uk-prod.netdocuments.com",
+        "chatlink-teams-tab-uk.netdocuments.com"
+      ]
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@NetDocuments (UK) hi",
+      "description": "The user greets the NetDocuments bot to initiate interaction.",
+      "command": "hi"
+    },
+    {
+      "prompt": "@NetDocuments (UK) help",
+      "description": "The user requests assistance or guidance on how to use the NetDocuments bot features.",
+      "command": "help"
+    },
+    {
+      "prompt": "@NetDocuments (UK) signin",
+      "description": "The user wants to sign in to their NetDocuments account through Teams.",
+      "command": "signin"
+    }
+  ]
+}

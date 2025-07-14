@@ -1,0 +1,1169 @@
+{
+  "manifestVersion": "1.17",
+  "id": "95fb5da0-6ced-4247-9d62-294f8fcb75df",
+  "version": "2.10.10",
+  "name": "FactSet",
+  "accentColor": "#002856",
+  "amsSellerAccountId": 66547250,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Get help on using FactSet",
+              "title": "help"
+            },
+            {
+              "description": "Sign out of FactSet",
+              "title": "sign out"
+            },
+            {
+              "description": "Resume delivery of market summaries",
+              "title": "subscribe"
+            },
+            {
+              "description": "Stop delivery of market summaries",
+              "title": "unsubscribe"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "95fb5da0-6ced-4247-9d62-294f8fcb75df",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "FinancialManagement",
+    "Communication",
+    "DataVisualizationAndBI"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "FactSet",
+  "developerUrl": "https://www.factset.com/",
+  "industries": [
+    "Finance"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "95fb5da0-6ced-4247-9d62-294f8fcb75df",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Search FactSet for information and share within Teams.",
+          "fetchTask": false,
+          "id": "lookupMessageExtension",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Search for a company or ask a question",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "query",
+              "semanticDescription": "Search for balance sheet metrics like Accounts Payable, Accounts Receivable, Enterprise Value, Liabilities, Shareholders Equity, Total Assets, and Total Debt. Evaluate financial ratios including Current Ratio, Inventories, Long-Term Debt, Minority Interest, and Short-term Debt. Discover key performance metrics like Return on Assets, Return on Equity, Return on Invested Capital, and Return on Total Capital. Investigate profitability metrics like Gross Margin, Net Margin, Operating Margin, and Pretax Margin. Query income statement items including EBIT, EBITDA, EPS Before Unusual Items, EPS Diluted, Income Taxes, Net Income, Pretax Income, Sales, Volume, and SG&A. Explore related ratios like Cost of Goods Sold, Gross Income, Income Taxes Payable, and Interest Expense. Obtain comprehensive company information including Auditor Details, CEO, CFO, COO, CTO, Company Description, Headquarters, Industry, Sector, GICS Industry, GICS Sector, Issue Credit Rating, Issuer Credit Rating, Number of Employees, and Website Info. Look up bond price and derived metrics including Accrued Interest, Convexity, Durations, Effective Convexity, Effective Duration, Interpolated Spread, Latest Clean Price, Modified Duration, Option Adjusted Spread, Partial Duration, Yield to Call, Yield to Maturity, Yield to Worst, Z Spread, and Credit Default Swaps. Retrieve economic indicators like CPI, PPI, Employment Rate, Underemployment Rate, Unemployment Rate, GDP, Current Account Balance, Consumer Expenditures, Retail Trade, Retail Sales, and Central Government Budget Balance. Explore deep sector metrics for industries like airlines, casinos, coal, cruise, hotels, oil, and retail. Access equity-specific metrics like Return on Assets, Return on Equity, PE Ratio, PEG Ratio, largest upcoming IPOs, free cash flow, broker rating. Use FactSet search to retrieve comprehensive financial data and metrics to support robust financial analysis and decision-making.",
+              "title": "query"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "What are the largest upcoming IPOs from FactSet?"
+            },
+            {
+              "text": "What is Boeing's free cash flow from FactSet?"
+            },
+            {
+              "text": "What is the broker rating for CVS from FactSet?"
+            }
+          ],
+          "semanticDescription": "Search for balance sheet metrics like Accounts Payable (ex: 'accounts payable for Pepsi'), Accounts Receivable (ex: 'BMW accounts receivable'), Enterprise Value (ex: 'enterprise value of Ford'), Liabilities (ex: 'liabilities for FDS'), Shareholders Equity (ex: 'Lowes shareholders equity'), Total Assets (ex: 'Target's total assets'), and Total Debt (ex: 'WDAY-US total debt'). Evaluate a variety of financial ratios including Current Ratio (ex: 'current ratio for Amazon'), Inventories (ex: 'Kroger inventories'), Long-Term Debt (ex: 'long-term debt for Zoom'), Minority Interest (ex: 'Delta Apparel minority interest'), and Short-term Debt (ex: 'short-term debt for CVS'). Discover key performance metrics like Return on Assets (ex: 'ROA for Apple'), Return on Equity (ex: 'Gartner's ROE'), Return on Invested Capital (ex: 'ROIC for Ford'), and Return on Total Capital (ex: 'ROTC for Dell'). Investigate profitability metrics like Gross Margin (ex: 'GM gross margin'), Net Margin (ex: 'Eli Lilly's net margin'), Operating Margin (ex: 'operating margin of MRK-US'), and Pretax Margin (ex: 'Texas Instruments pretax margin'). Query income statement items including EBIT (ex: 'IBM's EBIT'), EBITDA (ex: 'IBM's EBITDA'), EPS Before Unusual Items (ex: 'EPS before unusual items for Apple'), EPS Diluted (ex: 'Apple's EPS'), Income Taxes (ex: 'Best Buy income tax'), Net Income (ex: 'Verizon net income last year'), Pretax Income (ex: 'Pfizer pretax income'), Sales (ex: 'Forrester sales in 2021'), Volume (ex: 'IBM volume'), and SG&A (ex: 'SG&A for Ford'). Explore related ratios like Cost of Goods Sold (ex: 'Cost of goods sold for Walmart'), Gross Income (ex: 'Gross income for Tesla'), Income Taxes Payable (ex: 'Income taxes payable for Visa'), and Interest Expense (ex: 'Interest expense for BBY'). Obtain comprehensive company information including Auditor Details (ex: 'auditor of CVS'), CEO (ex: 'CEO of Walmart'), CFO (ex: 'CFO of Walmart'), COO (ex: 'COO of Home Depot'), CTO (ex: 'CTO of Fidelity'), Company Description (ex: 'company description of Walmart'), Headquarters (ex: 'Meta headquarters'), Industry (ex: 'Beyond Meat industry'), Sector (ex: 'Beyond Meat sector'), GICS Industry (ex: 'GICS industry of MNY'), GICS Sector (ex: 'Home Depot GICS sector'), Issue Credit Rating (ex: 'PetroRio's S&P credit rating'), Issuer Credit Rating (ex: 'Lowe's Moody's credit rating'), Number of Employees (ex: 'Meta employees'), and Website Info (ex: 'website for Beyond Meat'). Look up bond price and derived value metrics including Accrued Interest (ex: 'US904678AG48 accrued interest'), Convexity (ex: 'Vodafone 2.95 convexity'), Durations (ex: 'duration Petrorio 2026'), Effective Convexity (ex: 'GB00BLPK7110 effective convexity'), Effective Duration (ex: 'effective duration of Itau 6.125'), Interpolated Spread (ex: 'Infor bond interpolated spread'), Latest Clean Price (ex: 'latest clean price of Petrorio'), Modified Duration (ex: 'modified duration for CSN 6.7'), Option Adjusted Spread (ex: 'CSN 6.7 option adjusted spread'), Partial Duration (ex: 'Aviation Capital Group 2-year partial duration'), Yield to Call (ex: '912797GB7 yield to call'), Yield to Maturity (ex: '912796ZY8 yield to maturity'), Yield to Worst (ex: 'yield to worst for Starbucks'), Z Spread (ex: 'Danaher 2026 z spread'), and Credit Default Swaps (ex: 'FedEx Corporation 2029 CDS 10 year'). Retrieve economic indicators (CPI, ex: 'US CPI', PPI, ex: 'China PPI', WPI Inflation, ex: 'Brazil WPI inflation', Employment Rate, ex: 'Germany employment', Underemployment Rate, ex: 'underemployment in Hong Kong', Unemployment Rate, ex: 'unemployment in Peru', GDP, ex: 'Japan GDP', Current Account Balance, ex: 'India current account balance', Consumer Expenditures, ex: 'US consumer expenditures', Retail Trade, ex: 'Taiwan retail trade', Retail Sales, ex: 'Mexico retail sales', Central Government Budget Balance, ex: 'Libya central government balance'). Explore deep sector metrics for industries like airlines (ex: 'Delta available seat miles', 'Spirit Airlines cost per available seat mile'), casinos (ex: 'Wynn floor area', 'MGM Resorts revenue'), coal (ex: 'Peabody capex', 'Peabody reserves'), cruise (ex: 'Norwegian Cruise capacity', 'Norwegian Cruise passenger cruise days'), hotels (ex: 'Hyatt number of rooms', 'Hilton RevPar'), oil (ex: 'Shell number of gas stations', 'Shell oil production per day'), and retail (ex: 'Gap online sales', 'Gap same store sales'). Access equity-specific metrics like Return on Assets, Return on Equity, PE Ratio, PEG Ratio (ex: 'ROA for GM', 'ROE of Meta', 'PE ratio for Peabody Energy', 'Amgen PEG ratio'), largest upcoming IPOs, free cash flow, broker rating. Use FactSet search to retrieve detailed financial data, key performance metrics, bond metrics, economic indicators, and company information to support robust financial analysis and decision-making.",
+          "title": "Search",
+          "type": "query"
+        },
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Create Note",
+          "fetchTask": true,
+          "id": "createResearchNote",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Create Note with FactSet",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "news",
+    "finance",
+    "company info"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/95fb5da0-6ced-4247-9d62-294f8fcb75df/2025071115333649/95fb5da0-6ced-4247-9d62-294f8fcb75df_largeimage.png",
+  "lastUpdatedAt": "2024-11-26T14:30:41.6840041+00:00",
+  "longDescription": "Stay on top of the key stories impacting markets with curated summaries from our [StreetAccount](https://www.factset.com/solutions/business-needs/data-solutions/streetaccount-news) news feed. These are delivered automatically to you throughout the day, so you always remain informed. View all the news summaries you receive in a single place, so it is easy to catch up on what has been happening while you were away.\nFurther functionality is available with a FactSet subscription. Query our detailed company content and bring color to your discussions about a company. View recent price movements and key metrics, discover the company's most recent M&A activity, or plan your next move by checking out the company's upcoming event. Share this information in conversations and groups without restrictions, enabling effortless collaboration without switching between applications.\nFactSet alerts can be customized and delivered directly in Microsoft Teams, ensuring you never miss crucial information with immediate notifications on significant price movements and important news updates, right where you work.\nFactSet works seamlessly with Copilot for Microsoft 365. Simplify meeting preparation by querying FactSet to gather insights about a company. For example, ask, \"What is Boeing's free cash flow?\" to quickly get relevant information. The results may be AI-generated. If you come across any objectionable content, please reach out to [FactSet Support](https://my.apps.factset.com/support#/).\n**For more information on FactSet, please visit our [website](https://www.factset.com/solutions/business-needs/collaboration-messaging).**\nFactSet delivers superior analytics, service, content, and technology to help investment professionals see and seize opportunity sooner. Receive and share FactSet's industry-leading content whenever and wherever you are in Microsoft Teams and Outlook.",
+  "mpnId": "5301686",
+  "officeAssetId": "WA200002146",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.factset.com/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/95fb5da0-6ced-4247-9d62-294f8fcb75df/2025071115333649/95fb5da0-6ced-4247-9d62-294f8fcb75df_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/95fb5da0-6ced-4247-9d62-294f8fcb75df/2025071115333649/95fb5da0-6ced-4247-9d62-294f8fcb75df_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/95fb5da0-6ced-4247-9d62-294f8fcb75df/2025071115333649/95fb5da0-6ced-4247-9d62-294f8fcb75df_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/95fb5da0-6ced-4247-9d62-294f8fcb75df/2025071115333649/95fb5da0-6ced-4247-9d62-294f8fcb75df_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Leverage the power and intelligence of FactSet anytime, anywhere.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/95fb5da0-6ced-4247-9d62-294f8fcb75df/2025071115333649/95fb5da0-6ced-4247-9d62-294f8fcb75df_smallimage.png",
+  "systemVersion": "2025071115333649",
+  "termsOfUseUrl": "https://www.factset.com/hubfs/Misc/FactSet%20Teams%20Terms%20of%20Use.pdf",
+  "validDomains": [
+    "teams.factset.com",
+    "token.botframework.com",
+    "prod-auth-prompt-app-svc.azurewebsites.net",
+    "login.factset.com",
+    "auth.factset.com"
+  ],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@FactSet help",
+      "description": "A user is asking for help to understand what services and capabilities the FactSet bot can provide.",
+      "command": "help"
+    },
+    {
+      "prompt": "@FactSet subscribe",
+      "description": "A user wants to subscribe to notifications or updates provided by FactSet.",
+      "command": "subscribe"
+    },
+    {
+      "prompt": "@FactSet sign out",
+      "description": "A user is looking to sign out of their current session with the FactSet bot.",
+      "command": "sign out"
+    }
+  ]
+}

@@ -1091,16 +1091,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Approveit Can you help me approve the latest invoice from vendor ABC Ltd?",
-      "description": "The user asks the bot to approve a specific invoice from a named vendor."
+      "prompt": "@Approveit Can you approve the invoice from ABC Corp?",
+      "description": "A user asks the bot to approve a specific invoice from a company.",
+      "command": "Approve invoices"
     },
     {
-      "prompt": "@Approveit I need to approve the purchase order #12345. Can you do that?",
-      "description": "The user requests the bot to approve a specified purchase order by its number."
+      "prompt": "@Approveit I need to approve the purchase order #12345.",
+      "description": "A user requests the bot to approve a purchase order by its specific number.",
+      "command": "Approve purchase orders"
     },
     {
-      "prompt": "@Approveit Please approve the bill that was submitted yesterday.",
-      "description": "The user instructs the bot to approve a bill that was submitted on the previous day."
+      "prompt": "@Approveit Please process the bill approval for the recent utility payment.",
+      "description": "A user instructs the bot to approve a bill related to a utility payment.",
+      "command": "Approve bills"
     }
   ]
 }

@@ -1,0 +1,2655 @@
+{
+  "manifestVersion": "1.17",
+  "id": "693aa4f0-e16c-11ea-ab9b-11514b3de7ae",
+  "version": "1.27.7",
+  "name": "Breakthru",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 72238330,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "MeetingStage.Write.Chat",
+          "type": "Delegated"
+        },
+        {
+          "name": "ChannelMeetingStage.Write.Group",
+          "type": "Delegated"
+        },
+        {
+          "name": "InAppPurchase.Allow.User",
+          "type": "Delegated"
+        },
+        {
+          "name": "LiveShareSession.ReadWrite.Chat",
+          "type": "Delegated"
+        },
+        {
+          "name": "LiveShareSession.ReadWrite.Group",
+          "type": "Delegated"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Schedule breakthru reminder.",
+              "title": "schedule reminders"
+            },
+            {
+              "description": "Show my reminders.",
+              "title": "show my reminders"
+            },
+            {
+              "description": "Cancel breakthru reminders.",
+              "title": "cancel"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "This will help you gift breaks to others, in chats and channels.",
+              "title": "give"
+            },
+            {
+              "description": "Learn how to include Breakthru in meetings.",
+              "title": "meet"
+            },
+            {
+              "description": "Get help with Breakthru.",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ]
+        }
+      ],
+      "id": "6d23e712-527b-406f-8d59-d02927885918",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "HumanResourcesAndRecruiting",
+    "Productivity",
+    "Social",
+    "Education"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultInstallScope": "personal",
+  "developerName": "Breakthru Immersive, INC",
+  "developerUrl": "https://breakthru.me",
+  "devicePermissions": [
+    "Media"
+  ],
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://play.breakthru.me/meeting/settings",
+      "context": [
+        "channelTab",
+        "privateChatTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel",
+        "meetingStage"
+      ],
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "Education",
+    "HealthCareAndLifeSciences"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "6d23e712-527b-406f-8d59-d02927885918",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Send as a Gift",
+          "fetchTask": true,
+          "id": "breakthruMessageExtension",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Send as a Gift",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "play.breakthru.me"
+            ],
+            "supportsAnonymousAccess": false
+          }
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "breaks",
+    "wellbeing",
+    "Microbreak"
+  ],
+  "languageTag": "en-us",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_largeimage.png",
+  "lastUpdatedAt": "2024-10-21T16:25:40.9491854+00:00",
+  "longDescription": "Take tiny breaks in your day with Breakthru. Clear your head, find inspiration, breathe, with a guided system of two-minute movement-based breaks. Choose to feel joy, energy, centeredness, or confidence. Share and play them together to build a collective break taking habit as a team.\nSet a team challenge, give breakthru to a colleague, or use it as an ice breaker in meetings. Create custom reminders for yourself, and unlock new breaks over time. Invite moments of movement into your day.  \nScientifically proven to increase engagement, build resilience and manage stress, movement gets your heart rate up, grows your brain, and prepares you to think and to learn.\nBreakthru is a tool for all ages. Free for schools, forever. Fully integrated into Microsoft Teams, Outlook, and Microsoft 365.\n\n**How to:** A guide will appear at the beginning of each Breakthru. Simply stand, make some room, and follow the movements. There is no right or wrong way to play. Your movement will generate a sound.\n**Play:** Launch Breakthru, select the Play tab, then pick a mood and go. Feel joy, energy, centeredness, or confidence.\n**Set Reminders:** Breakthru invites you to set reminders to help you build a breaktaking habit. Manage them from the reminder tab.\n**Give:** Give the gift of a break to your team. Activate Breakthru in a chat or channel by tapping the Breakthru icon and give a break to your team. Choose a mood you’d like to gift or share them all. Bring energy to your team’s day. \n**Meet:** Share Breakthru in a meeting or a class to take a group break. Add Breakthru when scheduling the gathering, or activate it in the meeting chat via @breakthu. Create collective energy, by bringing people together through movement and play. \n**Set a team challenge:** Launch a challenge in a channel or a chat as a fun way to encourage your team to take healthy breaks throughout the week. \n**In School:** Breakthru microbreaks teach students to articulate how they’re feeling, imagine how they want to feel, and help them learn healthy breaktaking habits to get there. For older students, it’s a chance to check in with themselves and each other. Movement is an antidote to anxiety. Visually led and choreographed by movement practitioners, the microbreaks are accessible to students of all ages and users worldwide.\n",
+  "meetingExtensionDefinition": {
+    "isAnonymousAccessAllowed": false,
+    "scenes": [
+      {
+        "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/7fecf460-07d7-43bf-8bea-f196d2dc0e66_scenemetadata.json",
+        "id": "7fecf460-07d7-43bf-8bea-f196d2dc0e66",
+        "maxAudience": 7,
+        "name": "Butterflies",
+        "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/7fecf460-07d7-43bf-8bea-f196d2dc0e66_scenepreview.png",
+        "seatsReservedForOrganizersOrPresenters": 0
+      },
+      {
+        "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/b6433eb4-dbd3-4153-a3c3-09dee73cf6e1_scenemetadata.json",
+        "id": "b6433eb4-dbd3-4153-a3c3-09dee73cf6e1",
+        "maxAudience": 12,
+        "name": "Dandelion",
+        "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/b6433eb4-dbd3-4153-a3c3-09dee73cf6e1_scenepreview.png",
+        "seatsReservedForOrganizersOrPresenters": 1
+      },
+      {
+        "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/344268b2-44df-4f50-bcdf-7d895cb8d065_scenemetadata.json",
+        "id": "344268b2-44df-4f50-bcdf-7d895cb8d065",
+        "maxAudience": 10,
+        "name": "Maple Leaf",
+        "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/344268b2-44df-4f50-bcdf-7d895cb8d065_scenepreview.png",
+        "seatsReservedForOrganizersOrPresenters": 0
+      },
+      {
+        "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/471b82f9-1d7a-4032-94d5-f489a329c93b_scenemetadata.json",
+        "id": "471b82f9-1d7a-4032-94d5-f489a329c93b",
+        "maxAudience": 4,
+        "name": "New Mood",
+        "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/471b82f9-1d7a-4032-94d5-f489a329c93b_scenepreview.png",
+        "seatsReservedForOrganizersOrPresenters": 0
+      },
+      {
+        "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/41c77d63-4bde-47f3-a14b-df6bbf46e59a_scenemetadata.json",
+        "id": "41c77d63-4bde-47f3-a14b-df6bbf46e59a",
+        "maxAudience": 7,
+        "name": "Cherry Blossom",
+        "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/41c77d63-4bde-47f3-a14b-df6bbf46e59a_scenepreview.png",
+        "seatsReservedForOrganizersOrPresenters": 0
+      }
+    ],
+    "supportsCustomShareToStage": false,
+    "supportsStreaming": false
+  },
+  "mpnId": "6271582",
+  "officeAssetId": "WA200002243",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://breakthru.me/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "mcasId": "36418",
+    "status": "m365Certified"
+  },
+  "shortDescription": "Tiny breaks to share and play, built right into your day.",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://play.breakthru.me/tab",
+      "entityId": "index",
+      "name": "Play",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://play.breakthru.me/meeting",
+      "context": [
+        "meetingSidePanel",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingStage"
+      ],
+      "entityId": "meeting",
+      "name": "Breakthru",
+      "scopes": [
+        "groupChat"
+      ]
+    },
+    {
+      "contentUrl": "https://play.breakthru.me/history",
+      "entityId": "index-history",
+      "name": "History",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://play.breakthru.me/achievements",
+      "entityId": "achievements",
+      "name": "Streaks",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://play.breakthru.me/reminders",
+      "entityId": "reminders",
+      "name": "Reminders",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://play.breakthru.me/challenges",
+      "entityId": "challenges",
+      "name": "Challenges",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115334060",
+  "termsOfUseUrl": "https://breakthru.me/terms",
+  "validDomains": [
+    "play.breakthru.me",
+    "breakthru.me",
+    "breakthru-assets-h4auezahdkgfcpex.z01.azurefd.net",
+    "go.breakthru.me",
+    "breakthru-int-production.azurewebsites.net"
+  ],
+  "videoUrl": "https://vimeo.com/899987627",
+  "webApplicationInfo": {
+    "id": "a92ca17d-dd74-4448-b8da-0a93fa25c156",
+    "resource": "api://play.breakthru.me/a92ca17d-dd74-4448-b8da-0a93fa25c156"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en-us",
+    "es",
+    "pt",
+    "fr",
+    "de"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.17",
+      "id": "693aa4f0-e16c-11ea-ab9b-11514b3de7ae",
+      "version": "1.27.7",
+      "name": "Breakthru",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 72238330,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "MeetingStage.Write.Chat",
+              "type": "Delegated"
+            },
+            {
+              "name": "ChannelMeetingStage.Write.Group",
+              "type": "Delegated"
+            },
+            {
+              "name": "InAppPurchase.Allow.User",
+              "type": "Delegated"
+            },
+            {
+              "name": "LiveShareSession.ReadWrite.Chat",
+              "type": "Delegated"
+            },
+            {
+              "name": "LiveShareSession.ReadWrite.Group",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Setze eine Breakthru Erinnerung.",
+                  "title": "Erinnerungen planen"
+                },
+                {
+                  "description": "Zeige meine Erinnerungen",
+                  "title": "Zeige meine Erinnerungen"
+                },
+                {
+                  "description": "Breakthru Erinnerungen absagen.",
+                  "title": "Absagen"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Hiermit kannst anderen Pausen schenken, in Chats oder auf Kanälen.",
+                  "title": "Schenken"
+                },
+                {
+                  "description": "Erfahre wie du Breakthru in Meetings einbinden kannst.",
+                  "title": "Treffen"
+                },
+                {
+                  "description": "Hol dir Hilfe bei Breakthru.",
+                  "title": "Hilfe"
+                }
+              ],
+              "scopes": [
+                "personal",
+                "groupChat",
+                "team"
+              ]
+            }
+          ],
+          "id": "6d23e712-527b-406f-8d59-d02927885918",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Social",
+        "Education"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultInstallScope": "personal",
+      "developerName": "Breakthru Immersive, INC",
+      "developerUrl": "https://breakthru.me",
+      "devicePermissions": [
+        "Media"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://play.breakthru.me/meeting/settings",
+          "context": [
+            "channelTab",
+            "privateChatTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel",
+            "meetingStage"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "HealthCareAndLifeSciences"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "6d23e712-527b-406f-8d59-d02927885918",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Als Geschenk versenden",
+              "fetchTask": true,
+              "id": "breakthruMessageExtension",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Als Geschenk versenden",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "play.breakthru.me"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "breaks",
+        "wellbeing",
+        "Microbreak"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_largeimage.png",
+      "lastUpdatedAt": "2024-10-21T16:25:40.9491854+00:00",
+      "longDescription": "Mach’ kleine Pausen mit Breakthru während deines Tages. Mach dir den Kopf frei, finde Inspiration, atme durch, mit einem geführten System von 2-minütigen Bewegungspausen. Wähle, was du empfinden möchtest zwischen Freude, Kraft, Zentriertheit oder Zuversicht. Teile und spiele sie mit anderen und bilde eine kollektive Gewohnheit im Team.\nLege eine Team-Herausforderung fest, schenke Breakthru einer/m Kollegen:in oder nutze es als Eisbrecher in Meetings. Erstelle eigene Erinnerungen für dich und schalte neue Pausen im Laufe der Zeit frei. Lade Momente der Bewegung in deinen Tag ein. \nWissenschaftlich erwiesen die Interaktion zu fördern, Belastbarkeit aufzubauen und Stress zu bewältigen, Bewegung steigert den Puls und bereitet dich aufs Denken und Lernen vor.\nBreakthru ist ein Tool für alle Altersgruppen. Immer kostenlos für Schulen, und das wird auch so bleiben.\n\n**How to:** Zu Beginn jedes Breakthru erscheint eine Anleitung. Stell dich hin, mach dir Platz und folge den Bewegungen. Du kannst nichts falsch machen. Deine Bewegungen erzeugen den Klang. \n**Spiele:** Starte Breakthru, wähle den Play-Tab, wähle dann eine Stimmung und leg los. Fühle Freude, Kraft, Zentriertheit oder Zuversicht. \n**Erinnerungen festlegen:** Breakthru lädt dich ein, Erinnerungen festzulegen, um eine Pausengewohnheit zu entwickeln. Verwalte sie über den Erinnerungs-Tab. \n**Verschenken:** Schenke deinem Team eine Pause. Aktiviere Breakthru in einem Chat oder Kanal, indem du auf das Breakthru-Symbol tippst und schenke deinem Team eine Pause. Wähle eine Stimmung aus, die du verschenken möchtest, oder teile sie alle. Bringe Kraft in den Tag deines Teams. \n**Treffen:** Teile Breakthru in einem Meeting oder im Unterricht, um eine Gruppenpause einzulegen. Füge Breakthru hinzu, wenn du das Treffen planst, oder aktiviere es im Meeting-Chat über @breakthu. Schaffe kollektive Kraft, indem Menschen durch Bewegung und Spiel zusammengebracht werden. \n**Lege eine Team-Herausforderung fest:** Starte eine Herausforderung in einem Kanal oder Chat, um dein Team zu ermutigen auf unterhaltsame Weise, während der Woche gesunde Pausen einzulegen. \n**In der Schule:** Breakthru-Mikropausen lehren die Schüler, ihre Gefühle zu artikulieren, ausmalen, wie sie sich fühlen möchten, und helfen ihnen dabei, gesunde Pausengewohnheiten zu erlernen, um an das Ziel zu gelangen. Für ältere Schüler ist es eine Gelegenheit, sich selbst und andere voll wahrzunehmen. Bewegung ist ein Gegenmittel gegen Angst. Visuell geführt und choreographiert von Bewegungspraktikern sind die Mikropausen zugänglich für Schüler jeden Alters und Nutzer weltweit.\n",
+      "meetingExtensionDefinition": {
+        "isAnonymousAccessAllowed": false,
+        "scenes": [
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/7fecf460-07d7-43bf-8bea-f196d2dc0e66_scenemetadata.json",
+            "id": "7fecf460-07d7-43bf-8bea-f196d2dc0e66",
+            "maxAudience": 7,
+            "name": "Schmetterlinge",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/7fecf460-07d7-43bf-8bea-f196d2dc0e66_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/b6433eb4-dbd3-4153-a3c3-09dee73cf6e1_scenemetadata.json",
+            "id": "b6433eb4-dbd3-4153-a3c3-09dee73cf6e1",
+            "maxAudience": 12,
+            "name": "Löwenzahn",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/b6433eb4-dbd3-4153-a3c3-09dee73cf6e1_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 1
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/344268b2-44df-4f50-bcdf-7d895cb8d065_scenemetadata.json",
+            "id": "344268b2-44df-4f50-bcdf-7d895cb8d065",
+            "maxAudience": 10,
+            "name": "Herbstlaub",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/344268b2-44df-4f50-bcdf-7d895cb8d065_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/471b82f9-1d7a-4032-94d5-f489a329c93b_scenemetadata.json",
+            "id": "471b82f9-1d7a-4032-94d5-f489a329c93b",
+            "maxAudience": 4,
+            "name": "Neue Stimmung",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/471b82f9-1d7a-4032-94d5-f489a329c93b_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/41c77d63-4bde-47f3-a14b-df6bbf46e59a_scenemetadata.json",
+            "id": "41c77d63-4bde-47f3-a14b-df6bbf46e59a",
+            "maxAudience": 7,
+            "name": "Kirschblüte",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/41c77d63-4bde-47f3-a14b-df6bbf46e59a_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          }
+        ],
+        "supportsCustomShareToStage": false,
+        "supportsStreaming": false
+      },
+      "mpnId": "6271582",
+      "officeAssetId": "WA200002243",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://breakthru.me/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "36418",
+        "status": "m365Certified"
+      },
+      "shortDescription": "Winzige Pausen zum Teilen und Spielen, direkt in deinen Tag integriert",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://play.breakthru.me/tab",
+          "entityId": "index",
+          "name": "Spielen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/meeting",
+          "context": [
+            "meetingSidePanel",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingStage"
+          ],
+          "entityId": "meeting",
+          "name": "Verlauf",
+          "scopes": [
+            "groupChat"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/history",
+          "entityId": "index-history",
+          "name": "Gewinnserie",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/achievements",
+          "entityId": "achievements",
+          "name": "Erinnerungen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/reminders",
+          "entityId": "reminders",
+          "name": "Herausforderungen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/challenges",
+          "entityId": "challenges",
+          "name": "Challenges",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115334060",
+      "termsOfUseUrl": "https://breakthru.me/terms",
+      "validDomains": [
+        "play.breakthru.me",
+        "breakthru.me",
+        "breakthru-assets-h4auezahdkgfcpex.z01.azurefd.net",
+        "go.breakthru.me",
+        "breakthru-int-production.azurewebsites.net"
+      ],
+      "videoUrl": "https://vimeo.com/899987627",
+      "webApplicationInfo": {
+        "id": "a92ca17d-dd74-4448-b8da-0a93fa25c156",
+        "resource": "api://play.breakthru.me/a92ca17d-dd74-4448-b8da-0a93fa25c156"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "693aa4f0-e16c-11ea-ab9b-11514b3de7ae",
+      "version": "1.27.7",
+      "name": "Breakthru",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 72238330,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "MeetingStage.Write.Chat",
+              "type": "Delegated"
+            },
+            {
+              "name": "ChannelMeetingStage.Write.Group",
+              "type": "Delegated"
+            },
+            {
+              "name": "InAppPurchase.Allow.User",
+              "type": "Delegated"
+            },
+            {
+              "name": "LiveShareSession.ReadWrite.Chat",
+              "type": "Delegated"
+            },
+            {
+              "name": "LiveShareSession.ReadWrite.Group",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Programar un recordatorio de breakthru.",
+                  "title": "recordatorios de horarios"
+                },
+                {
+                  "description": "Mostrar mis recordatorios.",
+                  "title": "mostrar mis recordatorios"
+                },
+                {
+                  "description": "Cancelar los recordatorios de breakthru.",
+                  "title": "cancelar"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Esto te ayudará a regalar descansos a otros, en chats y canales.",
+                  "title": "regala"
+                },
+                {
+                  "description": "Aprende a incluir Breakthru en las reuniones.",
+                  "title": "reúnete"
+                },
+                {
+                  "description": "Obtenga ayuda con Breakthru.",
+                  "title": "ayuda"
+                }
+              ],
+              "scopes": [
+                "personal",
+                "groupChat",
+                "team"
+              ]
+            }
+          ],
+          "id": "6d23e712-527b-406f-8d59-d02927885918",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Social",
+        "Education"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultInstallScope": "personal",
+      "developerName": "Breakthru Immersive, INC",
+      "developerUrl": "https://breakthru.me",
+      "devicePermissions": [
+        "Media"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://play.breakthru.me/meeting/settings",
+          "context": [
+            "channelTab",
+            "privateChatTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel",
+            "meetingStage"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "HealthCareAndLifeSciences"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "6d23e712-527b-406f-8d59-d02927885918",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Enviar como regalo",
+              "fetchTask": true,
+              "id": "breakthruMessageExtension",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Enviar como regalo",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "play.breakthru.me"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "breaks",
+        "wellbeing",
+        "Microbreak"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_largeimage.png",
+      "lastUpdatedAt": "2024-10-21T16:25:40.9491854+00:00",
+      "longDescription": "Haz pequeñas pausas en tu día con Breakthru. Despeja tu mente, encuentra inspiración, respira, con un sistema guiado de pausas de dos minutos basadas en el movimiento. Elige si quieres sentir alegría, energía, centrarte o confianza. Compártelo y reprodúcelo junto con tu equipo para crear un hábito colectivo de pausas.\nEstablece un reto de equipo, regala Breakthru a un compañero o utilízalo para romper el hielo en reuniones. Crea recordatorios personalizados para ti y desbloquea nuevos descansos con el tiempo. Invita momentos de movimiento a tu día.\nSe ha demostrado científicamente que el movimiento aumenta el compromiso, crea resiliencia y controla el estrés, hace que tu ritmo cardíaco aumente, que crezca tu cerebro y te prepara para pensar y aprender.\nBreakthru es una herramienta para todas las edades. Gratis para las escuelas, para siempre.\n\n**Cómo:** Una guía aparecerá al principio de cada Breakthru. Simplemente ponte de pie, haz espacio y sigue los movimientos. No hay una forma correcta o incorrecta de jugar. Tu movimiento generará un sonido.\n**Juega:** Inicia Breakthru, selecciona la pestaña Jugar, elige un estado de ánimo y ponte en marcha. Siente alegría, energía, céntrate o confianza.\n**Establece Recordatorios:** Breakthru te invita a establecer recordatorios para ayudarte a crear un hábito de descanso. Adminístralos desde la pestaña de Recordatorios.\n**Regala:** Regala un descanso a tu equipo. Agrega Breakthru en un chat o canal tocando el icono de Breakthru y regala un descanso a tu equipo. Elige un estado de ánimo que quieras regalar o compártelos todos. Aporta energía a la jornada de tu equipo.\n**Reúnete:** Comparte Breakthru en una reunión o clase para hacer una pausa en grupo. Añade Breakthru al programar la reunión, o actívalo en el chat de la reunión a través de @breakthu. Crea energía colectiva, reuniendo a la gente a través del movimiento y el juego.\n**Establece un desafío de equipo:** Lanza un reto en un canal o chat como forma divertida de animar a tu equipo a realizar descansos saludables a lo largo de la semana.\n**En la escuela:** Los micro descansos de Breakthru enseñan a los alumnos a expresar cómo se sienten, a imaginar cómo quieren sentirse y les ayuda a aprender hábitos de descanso saludables para conseguirlo. Para los alumnos mayores, es una oportunidad para comprobar su estado de ánimo y el de los demás. El movimiento es un antídoto contra la ansiedad. Dirigidos visualmente y coreografiados por profesionales del movimiento, los micro descansos son accesibles para estudiantes de todas las edades y usuarios de todo el mundo.",
+      "meetingExtensionDefinition": {
+        "isAnonymousAccessAllowed": false,
+        "scenes": [
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/7fecf460-07d7-43bf-8bea-f196d2dc0e66_scenemetadata.json",
+            "id": "7fecf460-07d7-43bf-8bea-f196d2dc0e66",
+            "maxAudience": 7,
+            "name": "Mariposas",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/7fecf460-07d7-43bf-8bea-f196d2dc0e66_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/b6433eb4-dbd3-4153-a3c3-09dee73cf6e1_scenemetadata.json",
+            "id": "b6433eb4-dbd3-4153-a3c3-09dee73cf6e1",
+            "maxAudience": 12,
+            "name": "Diente de león",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/b6433eb4-dbd3-4153-a3c3-09dee73cf6e1_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 1
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/344268b2-44df-4f50-bcdf-7d895cb8d065_scenemetadata.json",
+            "id": "344268b2-44df-4f50-bcdf-7d895cb8d065",
+            "maxAudience": 10,
+            "name": "Hojas de otoño",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/344268b2-44df-4f50-bcdf-7d895cb8d065_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/471b82f9-1d7a-4032-94d5-f489a329c93b_scenemetadata.json",
+            "id": "471b82f9-1d7a-4032-94d5-f489a329c93b",
+            "maxAudience": 4,
+            "name": "Nuevo estado de ánimo",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/471b82f9-1d7a-4032-94d5-f489a329c93b_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/41c77d63-4bde-47f3-a14b-df6bbf46e59a_scenemetadata.json",
+            "id": "41c77d63-4bde-47f3-a14b-df6bbf46e59a",
+            "maxAudience": 7,
+            "name": "Cherry Blossom",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/41c77d63-4bde-47f3-a14b-df6bbf46e59a_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          }
+        ],
+        "supportsCustomShareToStage": false,
+        "supportsStreaming": false
+      },
+      "mpnId": "6271582",
+      "officeAssetId": "WA200002243",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://breakthru.me/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "36418",
+        "status": "m365Certified"
+      },
+      "shortDescription": "Pequeñas pausas para compartir y jugar, integradas en tu día.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://play.breakthru.me/tab",
+          "entityId": "index",
+          "name": "Juega",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/meeting",
+          "context": [
+            "meetingSidePanel",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingStage"
+          ],
+          "entityId": "meeting",
+          "name": "Historial",
+          "scopes": [
+            "groupChat"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/history",
+          "entityId": "index-history",
+          "name": "Rachas",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/achievements",
+          "entityId": "achievements",
+          "name": "Recordatorios",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/reminders",
+          "entityId": "reminders",
+          "name": "Desafíos",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/challenges",
+          "entityId": "challenges",
+          "name": "Challenges",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115334060",
+      "termsOfUseUrl": "https://breakthru.me/terms",
+      "validDomains": [
+        "play.breakthru.me",
+        "breakthru.me",
+        "breakthru-assets-h4auezahdkgfcpex.z01.azurefd.net",
+        "go.breakthru.me",
+        "breakthru-int-production.azurewebsites.net"
+      ],
+      "videoUrl": "https://vimeo.com/899987627",
+      "webApplicationInfo": {
+        "id": "a92ca17d-dd74-4448-b8da-0a93fa25c156",
+        "resource": "api://play.breakthru.me/a92ca17d-dd74-4448-b8da-0a93fa25c156"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "693aa4f0-e16c-11ea-ab9b-11514b3de7ae",
+      "version": "1.27.7",
+      "name": "Breakthru",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 72238330,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "MeetingStage.Write.Chat",
+              "type": "Delegated"
+            },
+            {
+              "name": "ChannelMeetingStage.Write.Group",
+              "type": "Delegated"
+            },
+            {
+              "name": "InAppPurchase.Allow.User",
+              "type": "Delegated"
+            },
+            {
+              "name": "LiveShareSession.ReadWrite.Chat",
+              "type": "Delegated"
+            },
+            {
+              "name": "LiveShareSession.ReadWrite.Group",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Planifiez un rappel de percée.",
+                  "title": "planifier des rappels"
+                },
+                {
+                  "description": "Afficher mes rappels.",
+                  "title": "afficher mes rappels"
+                },
+                {
+                  "description": "Annulez les rappels de percée.",
+                  "title": "annuler"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Cela vous aidera à offrir des pauses aux autres, dans les chats et les canaux.",
+                  "title": "donner"
+                },
+                {
+                  "description": "Découvrez comment inclure Breakthru dans les réunions.",
+                  "title": "rencontrer"
+                },
+                {
+                  "description": "Obtenez de l'aide avec Breakthru.",
+                  "title": "aider"
+                }
+              ],
+              "scopes": [
+                "personal",
+                "groupChat",
+                "team"
+              ]
+            }
+          ],
+          "id": "6d23e712-527b-406f-8d59-d02927885918",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Social",
+        "Education"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultInstallScope": "personal",
+      "developerName": "Breakthru Immersive, INC",
+      "developerUrl": "https://breakthru.me",
+      "devicePermissions": [
+        "Media"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://play.breakthru.me/meeting/settings",
+          "context": [
+            "channelTab",
+            "privateChatTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel",
+            "meetingStage"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "HealthCareAndLifeSciences"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "6d23e712-527b-406f-8d59-d02927885918",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Envoyer en cadeau",
+              "fetchTask": true,
+              "id": "breakthruMessageExtension",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Envoyer en cadeau",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "play.breakthru.me"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "breaks",
+        "wellbeing",
+        "Microbreak"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_largeimage.png",
+      "lastUpdatedAt": "2024-10-21T16:25:40.9491854+00:00",
+      "longDescription": "Faites de petites pauses dans votre journée avec Breakthru. Videz-vous la tête, trouvez l'inspiration, respirez, avec un système guidé de pauses de deux minutes basées sur le mouvement. Choisissez de ressentir de la joie, de l'énergie, du centrage ou de la confiance. Partagez-les et jouez-les ensemble pour construire une pause collective en prenant l'habitude en équipe.\nDéfinissez un défi d'équipe, donnez une percée à un collègue ou utilisez-le comme brise-glace lors de réunions. Créez des rappels personnalisés pour vous-même et débloquez de nouvelles pauses au fil du temps. Invitez des moments de mouvement dans votre journée. \nScientifiquement prouvé pour augmenter l'engagement, renforcer la résilience et gérer le stress, le mouvement accélère votre rythme cardiaque, développe votre cerveau et vous prépare à réfléchir et à apprendre.\nLa percée est un outil pour tous les âges. Gratuit pour les écoles, pour toujours.\n\n**Comment :** Un guide apparaîtra au début de chaque percée. Tenez-vous simplement debout, faites de la place et suivez les mouvements. Il n'y a pas de bonne ou de mauvaise façon de jouer. Votre mouvement générera un son.\n**Jouer :** Lancez Breakthru, sélectionnez l'onglet Lecture, puis choisissez une ambiance et c'est parti. Ressentez de la joie, de l'énergie, de la concentration ou de la confiance.\n**Définissez des rappels :** Breakthru vous invite à définir des rappels pour vous aider à développer une habitude révolutionnaire. Gérez-les depuis l'onglet des rappels.\n**Donner:** offrez une pause à votre équipe. Activez Breakthru dans un chat ou un canal en appuyant sur l'icône Breakthru et donnez une pause à votre équipe. Choisissez une ambiance que vous aimeriez offrir ou partagez-les toutes. Apportez de l'énergie à la journée de votre équipe. \n**Rencontrer:** Partagez Breakthru lors d'une réunion ou d'un cours pour faire une pause de groupe. Ajoutez Breakthru lors de la planification du rassemblement ou activez-le dans le chat de la réunion via @breakthu. Créer une énergie collective, en rassemblant les gens par le mouvement et le jeu. \n**Définissez un défi d'équipe :** lancez un défi dans une chaîne ou un chat pour encourager votre équipe à faire des pauses saines tout au long de la semaine. \n**À l'école :** Les micro-pauses révolutionnaires apprennent aux élèves à exprimer comment ils se sentent, à imaginer ce qu'ils veulent que D se sente et les aident à adopter de saines habitudes de pause pour y arriver. Pour les élèves plus âgés, c'est l'occasion de faire le point sur eux-mêmes et les uns sur les autres. Le mouvement est un antidote à l'anxiété. Visuellement dirigées et chorégraphiées par des praticiens du mouvement, les micropauses sont accessibles aux étudiants de tous âges et aux utilisateurs du monde entier.",
+      "meetingExtensionDefinition": {
+        "isAnonymousAccessAllowed": false,
+        "scenes": [
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/7fecf460-07d7-43bf-8bea-f196d2dc0e66_scenemetadata.json",
+            "id": "7fecf460-07d7-43bf-8bea-f196d2dc0e66",
+            "maxAudience": 7,
+            "name": "Papillons",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/7fecf460-07d7-43bf-8bea-f196d2dc0e66_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/b6433eb4-dbd3-4153-a3c3-09dee73cf6e1_scenemetadata.json",
+            "id": "b6433eb4-dbd3-4153-a3c3-09dee73cf6e1",
+            "maxAudience": 12,
+            "name": "Pissenlit",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/b6433eb4-dbd3-4153-a3c3-09dee73cf6e1_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 1
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/344268b2-44df-4f50-bcdf-7d895cb8d065_scenemetadata.json",
+            "id": "344268b2-44df-4f50-bcdf-7d895cb8d065",
+            "maxAudience": 10,
+            "name": "Feuilles d'automne",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/344268b2-44df-4f50-bcdf-7d895cb8d065_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/471b82f9-1d7a-4032-94d5-f489a329c93b_scenemetadata.json",
+            "id": "471b82f9-1d7a-4032-94d5-f489a329c93b",
+            "maxAudience": 4,
+            "name": "Nouvelle humeur",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/471b82f9-1d7a-4032-94d5-f489a329c93b_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/41c77d63-4bde-47f3-a14b-df6bbf46e59a_scenemetadata.json",
+            "id": "41c77d63-4bde-47f3-a14b-df6bbf46e59a",
+            "maxAudience": 7,
+            "name": "Cherry Blossom",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/41c77d63-4bde-47f3-a14b-df6bbf46e59a_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          }
+        ],
+        "supportsCustomShareToStage": false,
+        "supportsStreaming": false
+      },
+      "mpnId": "6271582",
+      "officeAssetId": "WA200002243",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://breakthru.me/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "36418",
+        "status": "m365Certified"
+      },
+      "shortDescription": "De petites pauses pour partager et jouer, intégrées à votre journée.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://play.breakthru.me/tab",
+          "entityId": "index",
+          "name": "Joue",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/meeting",
+          "context": [
+            "meetingSidePanel",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingStage"
+          ],
+          "entityId": "meeting",
+          "name": "Histoire",
+          "scopes": [
+            "groupChat"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/history",
+          "entityId": "index-history",
+          "name": "Traces",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/achievements",
+          "entityId": "achievements",
+          "name": "Rappels",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/reminders",
+          "entityId": "reminders",
+          "name": "Défis",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/challenges",
+          "entityId": "challenges",
+          "name": "Challenges",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115334060",
+      "termsOfUseUrl": "https://breakthru.me/terms",
+      "validDomains": [
+        "play.breakthru.me",
+        "breakthru.me",
+        "breakthru-assets-h4auezahdkgfcpex.z01.azurefd.net",
+        "go.breakthru.me",
+        "breakthru-int-production.azurewebsites.net"
+      ],
+      "videoUrl": "https://vimeo.com/899987627",
+      "webApplicationInfo": {
+        "id": "a92ca17d-dd74-4448-b8da-0a93fa25c156",
+        "resource": "api://play.breakthru.me/a92ca17d-dd74-4448-b8da-0a93fa25c156"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "693aa4f0-e16c-11ea-ab9b-11514b3de7ae",
+      "version": "1.27.7",
+      "name": "Breakthru",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 72238330,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "MeetingStage.Write.Chat",
+              "type": "Delegated"
+            },
+            {
+              "name": "ChannelMeetingStage.Write.Group",
+              "type": "Delegated"
+            },
+            {
+              "name": "InAppPurchase.Allow.User",
+              "type": "Delegated"
+            },
+            {
+              "name": "LiveShareSession.ReadWrite.Chat",
+              "type": "Delegated"
+            },
+            {
+              "name": "LiveShareSession.ReadWrite.Group",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Agendar lembrete de intervalo.",
+                  "title": "agendar lembretes"
+                },
+                {
+                  "description": "Mostrar meus lembretes.",
+                  "title": "mostrar meus lembretes"
+                },
+                {
+                  "description": "Cancele os lembretes de interrupção.",
+                  "title": "cancelar"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Isso ajudará você a oferecer intervalos para outras pessoas, em bate-papos e canais.",
+                  "title": "dar"
+                },
+                {
+                  "description": "Saiba como incluir Breakthru nas reuniões.",
+                  "title": "conheça"
+                },
+                {
+                  "description": "Obtenha ajuda com o Breakthru.",
+                  "title": "ajuda"
+                }
+              ],
+              "scopes": [
+                "personal",
+                "groupChat",
+                "team"
+              ]
+            }
+          ],
+          "id": "6d23e712-527b-406f-8d59-d02927885918",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Social",
+        "Education"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultInstallScope": "personal",
+      "developerName": "Breakthru Immersive, INC",
+      "developerUrl": "https://breakthru.me",
+      "devicePermissions": [
+        "Media"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://play.breakthru.me/meeting/settings",
+          "context": [
+            "channelTab",
+            "privateChatTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel",
+            "meetingStage"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "HealthCareAndLifeSciences"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "6d23e712-527b-406f-8d59-d02927885918",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Enviar como presente",
+              "fetchTask": true,
+              "id": "breakthruMessageExtension",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "enviar como presente",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "play.breakthru.me"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "breaks",
+        "wellbeing",
+        "Microbreak"
+      ],
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_largeimage.png",
+      "lastUpdatedAt": "2024-10-21T16:25:40.9491854+00:00",
+      "longDescription": "Faça pequenas pausas no seu dia com Breakthru. Limpe sua cabeça, encontre inspiração, respire, com um sistema guiado de pausas baseadas em movimento de dois minutos. Escolha sentir alegria, energia, centralidade ou confiança. Compartilhe e jogue-os juntos para construir um hábito coletivo de pausa em equipe. \nDefina um desafio para a equipe, dê uma pausa para um colega ou use-o para quebrar o gelo nas reuniões. Crie lembretes personalizados para você e desbloqueie novas pausas ao longo do tempo. Convide momentos de movimento para o seu dia. \nCientificamente comprovado para aumentar o engajamento, desenvolver resiliência e gerenciar o estresse, o movimento aumenta sua frequência cardíaca, aumenta seu cérebro e prepara você para pensar e aprender. \nBreakthru é uma ferramenta para todas as idades. Gratuito para as escolas, para sempre.\n \n\n**Como:** Um guia aparecerá no início de cada Breakthru. Simplesmente fique de pé, abra espaço e siga os movimentos. Não existe maneira certa ou errada de jogar. Seu movimento irá gerar um som. \n**Jogar:** inicie o Breakthru, selecione a guia Jogar, escolha um clima e pronto. Sinta alegria, energia, centralidade ou confiança. \n**Defina lembretes:** Breakthru convida você a definir lembretes para ajudá-lo a criar um hábito de quebrar a cabeça. Gerencie-os na guia de lembretes. \n**Dar:** dê um descanso para sua equipe. Ative o Breakthru em um bate-papo ou canal tocando no ícone Breakthru e dê uma pausa para sua equipe. Escolha um humor que você gostaria de presentear ou compartilhe todos eles. Traga energia para o dia da sua equipe. \n**Conheça:** compartilhe o Breakthru em uma reunião ou aula para fazer uma pausa em grupo. Adicione Breakthru ao agendar a reunião ou ative-o no bate-papo da reunião via @breakthu. Crie energia coletiva, aproximando as pessoas através do movimento e da brincadeira. \n**Defina um desafio de equipe:** lance um desafio em um canal ou bate-papo como uma forma divertida de incentivar sua equipe a fazer pausas saudáveis durante a semana. \n**Na escola:** os microintervalos de pausa ensinam os alunos a articular como estão se sentindo, imaginar como eles querem que D se sinta e os ajudam a aprender hábitos saudáveis de pausa para chegar lá. Para os alunos mais velhos, é uma chance de verificar consigo mesmos e uns com os outros. O movimento é um antídoto para a ansiedade. Liderados visualmente e coreografados por praticantes de movimento, os microbreaks são acessíveis a estudantes de todas as idades e usuários em todo o mundo.",
+      "meetingExtensionDefinition": {
+        "isAnonymousAccessAllowed": false,
+        "scenes": [
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/7fecf460-07d7-43bf-8bea-f196d2dc0e66_scenemetadata.json",
+            "id": "7fecf460-07d7-43bf-8bea-f196d2dc0e66",
+            "maxAudience": 7,
+            "name": "Borboletas",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/7fecf460-07d7-43bf-8bea-f196d2dc0e66_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/b6433eb4-dbd3-4153-a3c3-09dee73cf6e1_scenemetadata.json",
+            "id": "b6433eb4-dbd3-4153-a3c3-09dee73cf6e1",
+            "maxAudience": 12,
+            "name": "Dente-de-leão",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/b6433eb4-dbd3-4153-a3c3-09dee73cf6e1_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 1
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/344268b2-44df-4f50-bcdf-7d895cb8d065_scenemetadata.json",
+            "id": "344268b2-44df-4f50-bcdf-7d895cb8d065",
+            "maxAudience": 10,
+            "name": "Folhas de outono",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/344268b2-44df-4f50-bcdf-7d895cb8d065_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/471b82f9-1d7a-4032-94d5-f489a329c93b_scenemetadata.json",
+            "id": "471b82f9-1d7a-4032-94d5-f489a329c93b",
+            "maxAudience": 4,
+            "name": "Novo clima",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/471b82f9-1d7a-4032-94d5-f489a329c93b_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          },
+          {
+            "file": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/41c77d63-4bde-47f3-a14b-df6bbf46e59a_scenemetadata.json",
+            "id": "41c77d63-4bde-47f3-a14b-df6bbf46e59a",
+            "maxAudience": 7,
+            "name": "Cherry Blossom",
+            "preview": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/41c77d63-4bde-47f3-a14b-df6bbf46e59a_scenepreview.png",
+            "seatsReservedForOrganizersOrPresenters": 0
+          }
+        ],
+        "supportsCustomShareToStage": false,
+        "supportsStreaming": false
+      },
+      "mpnId": "6271582",
+      "officeAssetId": "WA200002243",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://breakthru.me/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "36418",
+        "status": "m365Certified"
+      },
+      "shortDescription": "Pequenas pausas para compartilhar e jogar, incorporadas ao seu dia.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/693aa4f0-e16c-11ea-ab9b-11514b3de7ae/2025071115334060/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://play.breakthru.me/tab",
+          "entityId": "index",
+          "name": "Toque",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/meeting",
+          "context": [
+            "meetingSidePanel",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingStage"
+          ],
+          "entityId": "meeting",
+          "name": "História",
+          "scopes": [
+            "groupChat"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/history",
+          "entityId": "index-history",
+          "name": "Listras",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/achievements",
+          "entityId": "achievements",
+          "name": "Lembretes",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/reminders",
+          "entityId": "reminders",
+          "name": "Desafios",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://play.breakthru.me/challenges",
+          "entityId": "challenges",
+          "name": "Challenges",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115334060",
+      "termsOfUseUrl": "https://breakthru.me/terms",
+      "validDomains": [
+        "play.breakthru.me",
+        "breakthru.me",
+        "breakthru-assets-h4auezahdkgfcpex.z01.azurefd.net",
+        "go.breakthru.me",
+        "breakthru-int-production.azurewebsites.net"
+      ],
+      "videoUrl": "https://vimeo.com/899987627",
+      "webApplicationInfo": {
+        "id": "a92ca17d-dd74-4448-b8da-0a93fa25c156",
+        "resource": "api://play.breakthru.me/a92ca17d-dd74-4448-b8da-0a93fa25c156"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Breakthru schedule reminders for a 5-minute break every hour on weekdays.",
+      "description": "The user wants to schedule reminders for regular breaks throughout the workweek.",
+      "command": "schedule reminders"
+    },
+    {
+      "prompt": "@Breakthru show my reminders for today.",
+      "description": "The user requests to view all of the break reminders that have been set for the current day.",
+      "command": "show my reminders"
+    },
+    {
+      "prompt": "@Breakthru help with setting up a break reminder.",
+      "description": "The user is asking for assistance in setting up a break reminder using the bot.",
+      "command": "help"
+    }
+  ]
+}

@@ -1086,19 +1086,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Cassava create 'Cybersecurity Basics'",
-      "description": "A user wants to create a new training program focused on cybersecurity basics.",
-      "command": "create"
-    },
-    {
       "prompt": "@Cassava status",
-      "description": "A user wants to check the current status of all ongoing training programs within the organization.",
+      "description": "User wants to check the current status of training programs.",
       "command": "status"
     },
     {
-      "prompt": "@Cassava help",
-      "description": "A user needs assistance with understanding how to use the available commands and features of Cassava.",
-      "command": "help"
+      "prompt": "@Cassava create Leadership Training",
+      "description": "User wants to create a new training program titled 'Leadership Training'.",
+      "command": "create [name]"
+    },
+    {
+      "prompt": "@Cassava demo",
+      "description": "User requests a demonstration of the training programs offered.",
+      "command": "demo"
     }
   ]
 }

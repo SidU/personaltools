@@ -1065,16 +1065,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@SCOM Connector show me all critical alerts",
-      "description": "The user wants the bot to display a list of all critical alerts currently in the System Center Operations Manager (SCOM)."
+      "prompt": "@SCOM Connector show me the latest SCOM alerts",
+      "description": "The user wants to view the most recent alerts from their SCOM system.",
+      "command": "show latest alerts"
     },
     {
       "prompt": "@SCOM Connector acknowledge alert 12345",
-      "description": "The user is asking the bot to acknowledge a specific alert with the ID 12345 in SCOM."
+      "description": "The user wants to acknowledge a specific alert by its ID in their SCOM system.",
+      "command": "acknowledge alert"
     },
     {
       "prompt": "@SCOM Connector resolve alert 67890",
-      "description": "The user instructs the bot to resolve a specific alert with the ID 67890 in SCOM."
+      "description": "The user wants to resolve a specific alert by its ID in their SCOM system.",
+      "command": "resolve alert"
     }
   ]
 }

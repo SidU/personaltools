@@ -1,0 +1,118 @@
+{
+  "manifestVersion": "1.5",
+  "id": "12cb271a-ab87-46f3-ad9b-04784a931d5e",
+  "version": "1.3.2",
+  "name": "Filewall chatbot",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 66019680,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Shows all the user's blocked messages",
+              "title": "Show blocked messages"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "12cb271a-ab87-46f3-ad9b-04784a931d5e",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ITAdmin",
+    "Utilities"
+  ],
+  "creatorId": "",
+  "developerName": "odix",
+  "developerUrl": "https://www.odi-x.com",
+  "industries": [
+    "Other"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "email",
+    "security",
+    "CDR"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/12cb271a-ab87-46f3-ad9b-04784a931d5e/2025071112323012/12cb271a-ab87-46f3-ad9b-04784a931d5e_largeimage.png",
+  "lastUpdatedAt": "2021-02-03T14:47:32.7679673+00:00",
+  "longDescription": "Microsoft Teams chatbot for Filewall. This chatbot allows admins to get notifications and perform administrative tasks directly from teams. Users can receive notifications when messages are blocked and view all currently blocked messages. To be able to use this chatbot you must have an active Filewall for Exchange subscription. Filewall for Exchange is available in Appsource: https://appsource.microsoft.com/en-us/product/web-apps/odix.filewall. More information about Filewall is available at https://odi-x.com/filewallqa. If you need additional assistance you can contact our support team at https://odi-x.com/contact-filewall-support",
+  "mpnId": "6078863",
+  "officeAssetId": "WA200002595",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.odi-x.com/privacy-policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/12cb271a-ab87-46f3-ad9b-04784a931d5e/2025071112323012/12cb271a-ab87-46f3-ad9b-04784a931d5e_screenshot/0.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Filewall chatbot. Allows users to perform various filewall tasks via teams",
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/12cb271a-ab87-46f3-ad9b-04784a931d5e/2025071112323012/12cb271a-ab87-46f3-ad9b-04784a931d5e_smallimage.png",
+  "systemVersion": "2025071112323012",
+  "termsOfUseUrl": "https://www.odi-x.com/filewall-terms-of-use",
+  "validDomains": [],
+  "videoUrl": "https://www.youtube.com/watch?v=Jxua0GYTBFA",
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Filewall chatbot Show blocked messages",
+      "description": "The user wants to see a list of messages that have been blocked by the Filewall.",
+      "command": "Show blocked messages"
+    },
+    {
+      "prompt": "@Filewall chatbot can you Show blocked messages?",
+      "description": "The user is asking the Filewall chatbot to display any messages that have been blocked.",
+      "command": "Show blocked messages"
+    },
+    {
+      "prompt": "@Filewall chatbot please Show blocked messages for today",
+      "description": "The user is requesting to view the list of messages that have been blocked by the Filewall for the current day.",
+      "command": "Show blocked messages"
+    }
+  ]
+}

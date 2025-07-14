@@ -1080,16 +1080,17 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@nlsql.com What were the quarterly sales figures for the last two years?",
-      "description": "User wants to retrieve historical sales data from the enterprise database."
+      "prompt": "@nlsql.com Can you show me the sales data for the last quarter?",
+      "description": "The user is asking the bot to retrieve sales data for the previous quarter using natural language."
     },
     {
-      "prompt": "@nlsql.com Can you provide a list of all pending orders for this month?",
-      "description": "User is asking for a report on all pending orders from the current month."
+      "prompt": "@nlsql.com help",
+      "description": "The user requests help to understand how to use the bot's features.",
+      "command": "help"
     },
     {
-      "prompt": "@nlsql.com Show me the latest customer feedback from our database.",
-      "description": "User requests the most recent entries of customer feedback stored in the enterprise database."
+      "prompt": "@nlsql.com Find the top 5 products by revenue this month.",
+      "description": "The user queries the bot for a list of the top 5 products based on revenue for the current month using natural language."
     }
   ]
 }

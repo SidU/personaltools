@@ -1084,18 +1084,18 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Koji help",
-      "description": "User is asking for help with understanding how to use the enterprise applications.",
+      "prompt": "@Koji can you show me how to integrate Salesforce with our current system?",
+      "description": "The user is asking for guidance on integrating Salesforce with their existing enterprise applications."
+    },
+    {
+      "prompt": "@Koji help me understand how to use the new features in the HR application",
+      "description": "The user is requesting assistance to understand and utilize the new features in their HR application.",
       "command": "help"
     },
     {
-      "prompt": "@Koji, can you guide me on how to best utilize the CRM tool for managing client interactions?",
-      "description": "User is seeking advice on optimizing the use of the CRM tool for client management."
-    },
-    {
-      "prompt": "@Koji stop",
-      "description": "User wants to stop the current assistance or operation provided by Koji.",
-      "command": "stop"
+      "prompt": "@Koji logout from all enterprise applications",
+      "description": "The user wants to log out from all the enterprise applications they are currently signed into.",
+      "command": "logout"
     }
   ]
 }

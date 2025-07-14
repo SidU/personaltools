@@ -1097,18 +1097,18 @@
   "examplePrompts": [
     {
       "prompt": "@Chronoscope Time Tracking help",
-      "description": "A user is asking for assistance on how to use the Chronoscope bot and its available commands.",
+      "description": "User asks for help to understand what commands are available and how to use them.",
       "command": "help"
     },
     {
-      "prompt": "@Chronoscope Time Tracking linkAccount",
-      "description": "A user wants to link their account to the Chronoscope platform for the first time.",
-      "command": "linkAccount"
+      "prompt": "@Chronoscope Time Tracking logtime 3h ProjectX",
+      "description": "User logs 3 hours of work on ProjectX.",
+      "command": "logtime"
     },
     {
-      "prompt": "@Chronoscope Time Tracking logtime",
-      "description": "A user intends to log their work hours for the day into the Chronoscope system.",
-      "command": "logtime"
+      "prompt": "@Chronoscope Time Tracking linkAccount",
+      "description": "User requests to link their Chronoscope account with Microsoft Teams.",
+      "command": "linkAccount"
     }
   ]
 }

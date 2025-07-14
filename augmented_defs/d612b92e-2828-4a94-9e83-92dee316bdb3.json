@@ -1514,16 +1514,19 @@
   ],
   "examplePrompts": [
     {
-      "prompt": "@Loops Can you help me create a mind map for my upcoming presentation on renewable energy?",
-      "description": "The user wants the bot to assist in creating a mind map for a presentation topic."
+      "prompt": "@Loops I need help starting a new project on renewable energy.",
+      "description": "The user is seeking assistance in creating a new mind map for a project about renewable energy.",
+      "command": "createNewMap"
     },
     {
-      "prompt": "@Loops I'm teaching a class on World War II. Can you generate an interactive mind map to help my students understand the key events?",
-      "description": "The user is requesting the bot to generate a mind map for educational purposes about World War II."
+      "prompt": "@Loops can you suggest resources for learning about climate change?",
+      "description": "The user is asking the bot to provide educational resources related to climate change.",
+      "command": "suggestResources"
     },
     {
-      "prompt": "@Loops How can I use a mind map to brainstorm ideas for my new project on digital marketing?",
-      "description": "The user seeks guidance on using a mind map for brainstorming ideas for a digital marketing project."
+      "prompt": "@Loops show me how to link concepts in my mind map.",
+      "description": "The user wants guidance on connecting different concepts within their mind map.",
+      "command": "linkConcepts"
     }
   ]
 }

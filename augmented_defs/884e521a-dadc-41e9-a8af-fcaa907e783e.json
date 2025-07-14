@@ -1115,17 +1115,18 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Safety Check Can you initiate a safety check for all team members?",
-      "description": "User requests the bot to start a safety check for the entire team."
-    },
-    {
-      "prompt": "@Safety Check What should I do if a team member doesn’t respond to the safety check?",
-      "description": "User wants guidance on handling non-responses during a safety check.",
+      "prompt": "@Safety Check Can you tell me how to initiate a safety check?",
+      "description": "User is asking for guidance on how to start a safety check.",
       "command": "Help"
     },
     {
-      "prompt": "@Safety Check I need help with setting up a crisis communication plan.",
-      "description": "User asks for assistance in setting up a communication plan for crises.",
+      "prompt": "@Safety Check I need assistance with sending a safety alert.",
+      "description": "User is requesting assistance with sending a safety alert to employees.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@Safety Check How can I use this bot during an emergency?",
+      "description": "User wants to know how to utilize the bot in an emergency situation.",
       "command": "Help"
     }
   ]

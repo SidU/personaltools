@@ -1119,17 +1119,18 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@US Income Tax Simulator Can you simulate my tax liability for the year 2023?",
-      "description": "User is requesting a simulation of their US income tax liability for the year 2023."
+      "prompt": "@US Income Tax Simulator Can you show me how to use the simulator?",
+      "description": "A user is asking for guidance on how to use the simulator.",
+      "command": "help"
     },
     {
-      "prompt": "@US Income Tax Simulator What licenses are available for using this tool?",
-      "description": "User is inquiring about the types of licenses available for using the US Income Tax Simulator.",
+      "prompt": "@US Income Tax Simulator What licenses are available for this tool?",
+      "description": "A user wants to know about the available licenses for the US Income Tax Simulator.",
       "command": "licenses"
     },
     {
-      "prompt": "@US Income Tax Simulator I need some help understanding how to use this tool.",
-      "description": "User is seeking assistance with how to use the US Income Tax Simulator tool.",
+      "prompt": "@US Income Tax Simulator I need help understanding my tax simulation results.",
+      "description": "A user is seeking help to understand their tax simulation results.",
       "command": "help"
     }
   ]

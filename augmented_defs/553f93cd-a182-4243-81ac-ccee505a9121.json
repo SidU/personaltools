@@ -1,0 +1,417 @@
+{
+  "manifestVersion": "1.17",
+  "id": "553f93cd-a182-4243-81ac-ccee505a9121",
+  "version": "1.0.27",
+  "name": "Simpatico",
+  "accentColor": "#ffffff",
+  "amsSellerAccountId": 69018120,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Take a look at Simpatico’s features",
+              "title": "Simpatico Overview"
+            },
+            {
+              "description": "Take a mental health self assessment",
+              "title": "Take Self Assessment"
+            },
+            {
+              "description": "Take the workplace survey",
+              "title": "Psychological Risk Survey"
+            },
+            {
+              "description": "Tell us what you think about Simpatico",
+              "title": "Submit Feedback"
+            },
+            {
+              "description": "Tell us about any technical issues you experience",
+              "title": "Submit Support Ticket"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "1d9597c8-16f9-4585-9139-b1d5c50c9735",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "DataVisualizationAndBI",
+    "HumanResourcesAndRecruiting",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Mesh Assist Pty Ltd",
+  "developerUrl": "https://simpaticoteams.com",
+  "devicePermissions": [
+    "Geolocation",
+    "Notifications"
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "ec3dac99-bdd8-4c37-9819-97b68b8d43df",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Ask a question about mental health and receive a concise, informative answer.",
+          "fetchTask": false,
+          "id": "answerMentalHealthQuery",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "A question related to mental health.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "question",
+              "title": "question"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "I'm trying to help with stress"
+            },
+            {
+              "text": "How do I overcome the grief of losing a loved one?"
+            },
+            {
+              "text": "My sleep is affecting my work and life what can I do?"
+            },
+            {
+              "text": "I need to help my child with anxiety"
+            },
+            {
+              "text": "I'm feeling anxious today what can I do to help?"
+            }
+          ],
+          "title": "Ask Simpatico",
+          "type": "query"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Find articles on mental health topics, filtered by date, category, and type.",
+          "fetchTask": false,
+          "id": "searchMentalHealthArticles",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Choose a category such as ADHD, Anxiety, Depression, etc.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "category",
+              "title": "Category"
+            },
+            {
+              "description": "Sort by: 'viewed' (last viewed by you), 'popular' or 'new'",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "sortBy",
+              "title": "Sort by"
+            },
+            {
+              "description": "Articles viewed or published from given date (format: YYYY-MM-DD)",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "dateFrom",
+              "title": "Date From"
+            },
+            {
+              "description": "Articles viewed or published before given date (format: YYYY-MM-DD)",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "dateBefore",
+              "title": "Date Before"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Provide me some meditation guides"
+            },
+            {
+              "text": "Show me some articles that help with team morale"
+            },
+            {
+              "text": "What are some ways to help remote workers with their well-being?"
+            }
+          ],
+          "title": "Articles",
+          "type": "query"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Find organisation wellness reports, optionally filtered by date range.",
+          "fetchTask": false,
+          "id": "searchWellnessReports",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Specify report type as 'wellness' (wellness report)",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "reportType",
+              "title": "Report Type"
+            },
+            {
+              "description": "Reports published from given date (format: YYYY-MM-DD)",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "dateFrom",
+              "title": "Date From"
+            },
+            {
+              "description": "Reports published before given date (format: YYYY-MM-DD)",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "dateBefore",
+              "title": "Date Before"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Show me the latest company report for wellness"
+            },
+            {
+              "text": "Show me the wellness for my organisation for the last 7 days"
+            },
+            {
+              "text": "Show me the wellness report for the first week of February"
+            }
+          ],
+          "title": "Reports",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "teams.simpatico-ai.app"
+            ],
+            "supportsAnonymousAccess": true
+          }
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Mental Health",
+    "Wellbeing",
+    "Psychological risk"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/553f93cd-a182-4243-81ac-ccee505a9121/2025071114261622/553f93cd-a182-4243-81ac-ccee505a9121_largeimage.png",
+  "lastUpdatedAt": "2025-02-19T23:42:04.9203986+00:00",
+  "longDescription": "Simpatico is an AI-driven platform designed to improve employee well-being, enhance productivity, and foster a positive work culture. It offers a wide range of mental health support features, including mood tracking, stress management techniques, guided meditations, and self-help resources. Developed in consultation with renowned clinical psychologist Dr Simon Kinsella, Simpatico not only enables individuals to better understand and manage their mental health challenges but also provides actionable insights and data to help organizations understand and develop programs to support their staff's mental health and well-being needs.\nTransform mental health support with the power of Simpatico inside of Microsoft Teams, Outlook, and Microsoft 365 Copilot\n\n**Microsoft Teams notifications bot**\nThe Simpatico bot will send you relevant notifications in Teams, as well as access to information and features of Simpatico in chat.\n\n**Microsoft Teams personal app integration**\nIn the personal app, access and view the features of Simpatico app, right within Teams.\n\n**Microsoft Teams messaging extension**\nAdd information and features to all of your projects, meetings and workshops. Search and ask Simpatico for information, tips & techniques about mental health directly in Teams, share content in teams.\n\n**Personal app integration in Microsoft Outlook and Microsoft 365 Copilot (web app and Windows app)**\nIn the personal app, access knowledge tools, tips and techniques and self assessment just as you would in the Simpatico web app, right within Outlook and Microsoft 365 Copilot.\n\n**Messaging extension in Microsoft Outlook (web app and Windows app)**\nAdd Simpatico content to email communications. Search and ask Simpatico for information, tips & techniques about mental health directly in Outlook by using the Simpatico messaging extension.\n\n**Whats new**\nSimpatico works with Microsoft 365 Copilot.\nSearch articles about Anxiety, that I viewed last month in Simpatico \n\nManage access to Teams apps across Microsoft 365 [here](https://docs.microsoft.com/en-us/MicrosoftTeams/manage-third-party-teams-apps). \nThis application requires an active subscription with Simpatico. To create an account please send an email to support@simpaticoteams.com. \nPlease report any inappropriate content found within this app via [support.simpaticoteams.com](https://support.simpaticoteams.com)",
+  "meetingExtensionDefinition": {
+    "isAnonymousAccessAllowed": false,
+    "supportsCustomShareToStage": false,
+    "supportsStreaming": false
+  },
+  "mpnId": "6099981",
+  "officeAssetId": "WA200006021",
+  "permissions": [],
+  "privacyUrl": "https://simpaticoteams.com/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/553f93cd-a182-4243-81ac-ccee505a9121/2025071114261622/553f93cd-a182-4243-81ac-ccee505a9121_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/553f93cd-a182-4243-81ac-ccee505a9121/2025071114261622/553f93cd-a182-4243-81ac-ccee505a9121_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/553f93cd-a182-4243-81ac-ccee505a9121/2025071114261622/553f93cd-a182-4243-81ac-ccee505a9121_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/553f93cd-a182-4243-81ac-ccee505a9121/2025071114261622/553f93cd-a182-4243-81ac-ccee505a9121_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/553f93cd-a182-4243-81ac-ccee505a9121/2025071114261622/553f93cd-a182-4243-81ac-ccee505a9121_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Support the well-being of your organisation.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/553f93cd-a182-4243-81ac-ccee505a9121/2025071114261622/553f93cd-a182-4243-81ac-ccee505a9121_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://teams.simpatico-ai.app",
+      "context": [
+        "personalTab"
+      ],
+      "entityId": "simpatico",
+      "name": "Simpatico",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "subscriptionOffer": {
+    "isEligibleForAzureBenefits": true,
+    "offerId": "meshassistptyltd1582247424586.simpatico-teams"
+  },
+  "systemVersion": "2025071114261622",
+  "termsOfUseUrl": "https://simpaticoteams.com/terms",
+  "validDomains": [
+    "teams.simpatico-ai.app",
+    "app.simpatico-ai.app",
+    "api.simpatico-ai.app",
+    "prototype.teams.simpatico-ai.app",
+    "prototype.api.simpatico-ai.app",
+    "chatbot-demo.simpatico-ai.com"
+  ],
+  "webApplicationInfo": {
+    "id": "1d9597c8-16f9-4585-9139-b1d5c50c9735",
+    "resource": "api://teams.simpatico-ai.app/botid-1d9597c8-16f9-4585-9139-b1d5c50c9735"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Simpatico Can you give me a brief Simpatico Overview?",
+      "description": "User is asking the bot to provide an overview of the services or support offered by Simpatico.",
+      "command": "Simpatico Overview"
+    },
+    {
+      "prompt": "@Simpatico I’d like to Take Self Assessment to check my current well-being status.",
+      "description": "User wants to perform a self-assessment to evaluate their mental and emotional well-being.",
+      "command": "Take Self Assessment"
+    },
+    {
+      "prompt": "@Simpatico I have some ideas on how we can improve. Where can I Submit Feedback?",
+      "description": "User intends to submit feedback for improving the organization’s support system.",
+      "command": "Submit Feedback"
+    }
+  ]
+}

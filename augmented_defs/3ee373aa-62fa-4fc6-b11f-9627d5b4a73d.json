@@ -1,0 +1,1339 @@
+{
+  "manifestVersion": "1.17",
+  "id": "3ee373aa-62fa-4fc6-b11f-9627d5b4a73d",
+  "version": "1.0.6",
+  "name": "LawToolBox",
+  "accentColor": "#ffffff",
+  "amsSellerAccountId": 18191180,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "view today's events",
+              "title": "My Day"
+            },
+            {
+              "description": "view upcoming deadlines",
+              "title": "My Upcoming Deadlines"
+            },
+            {
+              "description": "view recent matters",
+              "title": "My Recent Matters"
+            },
+            {
+              "description": "view matters shared to me",
+              "title": "My Matters"
+            },
+            {
+              "description": "view files recently worked on",
+              "title": "My Recent Files"
+            },
+            {
+              "description": "logout from bot",
+              "title": "Logout"
+            },
+            {
+              "description": "get help",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "view matter info",
+              "title": "Matter"
+            },
+            {
+              "description": "get help",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "e6a504a1-9e11-469c-bcd4-69a52470230e",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "HumanResourcesAndRecruiting",
+    "Productivity",
+    "WorkflowAndBusinessManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "LawToolBox.com,Inc.",
+  "developerUrl": "https://www.lawtoolbox.com",
+  "devicePermissions": [
+    "Media"
+  ],
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://app.lawtoolbox.com/teams/tab/configuration.html",
+      "context": [
+        "channelTab"
+      ],
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "Government",
+    "ProfessionalServices"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "e6a504a1-9e11-469c-bcd4-69a52470230e",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "description": "Search for Matters",
+          "fetchTask": false,
+          "id": "searchMatters",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Enter keywords to search LawToolbox Matter or deadlines; if querying specific user's matter or deadlines, leave input empty",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "SearchMatter",
+              "semanticDescription": "The 'SearchMatter' parameter enables searching for matters or deadlines within LawToolBox using specific keywords or descriptive terms provided by the user. Valid matter names or descriptive terms should be used to direct the search. If a user inputs 'my matters', treat this as a command to retrieve all matters created by the user. In such cases, set the SearchMatter parameter to empty and filter the results by the user's creator ID. Similarly, if a user inputs 'recent matters', treat this as a command to retrieve all recently created matters. This method ensures accurate interpretation of user intent and provides relevant search results without misinterpreting these phrases as specific keywords.",
+              "title": "MatterSearch"
+            },
+            {
+              "description": "Retrieve email(s) of mentioned user(s) for 'associated' matter in LawToolBox. Exclude requester's email.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "useremail",
+              "semanticDescription": "The useremail parameter is used to specify the email address(es) of user(s) associated with a matter in LawToolbox. Provide up to 2 valid email addresses separated by commas, excluding the requester's own email. Use this parameter to filter matters based on the email address(es) of specific users, ensuring that only matters associated with those users are retrieved.",
+              "title": "user email"
+            },
+            {
+              "description": "Set 'isMyMatter' to true if there's mention of 'my', 'me', 'myself', 'my matters', 'my matter' or related terms in the context.",
+              "inputType": "toggle",
+              "isRequired": false,
+              "name": "ismymatter",
+              "semanticDescription": "Set isMyMatter to true if there is a mention of 'my', 'me', 'myself', 'my matters', 'my matter' or any similar pronouns or adjectives that refer to the speaker/writer in the context. Otherwise, set isMyMatter to false.",
+              "title": "Is my Matter"
+            },
+            {
+              "description": "date 'MM/dd/yyyy' or daterange like 'MM/dd/yyyy-MM/dd/yyyy' if available else leave empty.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "daterange",
+              "semanticDescription": "The `daterange` parameter is designed to interpret and process dates or date ranges from phrases. It accepts input in following formats: A single date (e.g., 'MM/dd/yyyy'), A date range (e.g., 'MM/dd/yyyy - MM/dd/yyyy') or it could be empty/blank if dates are not available in phrases. And for the contextual time frame such as: 'this week' - add date range of 7 days of current week, for example if this week start from 06/13/2024 and end on 06/19/2024 but the current date is 06/15/2024 then add date range of 7 days (06/13/2024 to 06/19/2024). 'next week' - add date range of 7 days of next week and start date must be date after current week, for example current date is 06/15/2024 and this week end on 06/19/202 then add date range of 7 days (06/20/2024 to 06/26/2024) after this week end. 'week' - add date range of 7 days from current date.",
+              "title": "dateRage"
+            },
+            {
+              "description": "true if user is asking for deadlines from LawToolBox else false",
+              "inputType": "toggle",
+              "isRequired": false,
+              "name": "fetchdeadlines",
+              "semanticDescription": "Set this parameter to true if the user is requesting deadlines, appointments, meetings from LawToolbox. This parameter is boolean and should reflect the user's intent to retrieve deadline data.",
+              "title": "deadline"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Show my upcoming deadlines in LawToolbox"
+            },
+            {
+              "text": "Show my matters in LawToolbox"
+            },
+            {
+              "text": "Show my deadlines for this week in LawToolbox"
+            }
+          ],
+          "semanticDescription": "Facilitates searching for legal matters based on keywords, user email, and ownership filters",
+          "title": "SearchMatters",
+          "type": "query"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Create a new matter",
+          "fetchTask": true,
+          "id": "creatematter",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Name of the matter",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "matterName",
+              "semanticDescription": "The matterName parameter accepts a string representing the name of the legal matter to be created. The name should be descriptive, unique, and must be short as much as possible. It may include letters, numbers, spaces.",
+              "title": "MatterName"
+            }
+          ],
+          "semanticDescription": "Enables users to create a new legal matter by providing the matter name",
+          "title": "Create a matter",
+          "type": "action"
+        },
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Find deadline from the message",
+          "fetchTask": true,
+          "id": "finddeadlines",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Keywords or phrases that can help in finding the deadlines",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "param",
+              "semanticDescription": "The param parameter is used to pass relevant data required to identify and highlight deadlines within a message. The input should be a string containing keywords or phrases that can help in finding the deadlines. Expected values are text strings relevant to the context of the message.",
+              "title": "param"
+            }
+          ],
+          "semanticDescription": "Allows users to find and highlight deadlines mentioned within a message",
+          "title": "LawToolBox",
+          "type": "action"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Create an appointment in the matter",
+          "fetchTask": true,
+          "id": "createappointment",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "start date of appointment in yyyy/mm/dd",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "startDate",
+              "semanticDescription": "The startDate parameter accepts the start date of the appointment in the format 'yyyy/mm/dd'. Ensure the date is accurate and within a reasonable range and appropriately represent the scheduled start of the appointment.",
+              "title": "StartDate"
+            },
+            {
+              "description": "end date of appointment in yyyy/mm/dd",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "endDate",
+              "semanticDescription": "The endDate parameter accepts the end date of the appointment in the format 'yyyy/mm/dd'. Ensure the date is accurate and within a reasonable range and appropriately represent the scheduled end of the appointment.",
+              "title": "EndDate"
+            },
+            {
+              "description": "start time of appointment in HH:mm",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "starttime",
+              "semanticDescription": "The starttime parameter specifies the start time of the appointment in 'HH' format, using a 24-hour clock. Ensure the time is accurate and represents the beginning of the appointment.",
+              "title": "StartTime"
+            },
+            {
+              "description": "end time of appointment in HH:mm",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "endtime",
+              "semanticDescription": "The endtime parameter specifies the end time of the appointment in 'HH' format, using a 24-hour clock. Ensure the time follows the start time and accurately represents the end of the appointment.",
+              "title": "EndTime"
+            },
+            {
+              "description": "The description or subject of the appointment",
+              "inputType": "textarea",
+              "isRequired": false,
+              "name": "description",
+              "semanticDescription": "Provide a brief description or subject for the appointment. The input should clearly outline the purpose or main topic of the appointment, using up to 300 characters.",
+              "title": "Description"
+            }
+          ],
+          "semanticDescription": "Allows users to schedule an appointment within a matter by providing the start and end dates, times, and a description",
+          "title": "Create an appointment",
+          "type": "action"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Get upcoming deadlines for a week",
+          "fetchTask": true,
+          "id": "myupcomingdeadlines",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "start date in MM/dd/yyyy format",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "startDate",
+              "semanticDescription": "Use this parameter to specify the start date for upcoming deadlines in 'MM/dd/yyyy' format. The date should be within the current or future time frame.",
+              "title": "StartDate"
+            },
+            {
+              "description": "end date in MM/dd/yyyy format",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "endDate",
+              "semanticDescription": "Use this parameter to specify the end date for upcoming deadlines in 'MM/dd/yyyy' format. The date should be within the current or future time frame.",
+              "title": "EndDate"
+            }
+          ],
+          "semanticDescription": "Displays upcoming deadlines within a week by entering the start and end dates",
+          "title": "My upcoming deadlines",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "app.lawtoolbox.com"
+            ],
+            "supportsAnonymousAccess": false
+          }
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "legal",
+    "law",
+    "deadlines"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d/2025071114494074/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d_largeimage.png",
+  "lastUpdatedAt": "2024-08-09T03:17:54.5869384+00:00",
+  "longDescription": "**Description**\nLawToolBox is an all-in-one matter management solution to provision new matters with templates, calculate and docket deadlines, create virtual meetings, access files saved from Outlook, manage contacts, and search for files across your Microsoft tenant. The LawToolBox court rules calculator and deadline management is used by law firms and legal departments to automatically calculate deadlines based on the rules of procedure for state and federal courts in all 50 states, and to automate other compliance-driven timelines for administrative or other agencies.\n**Features**\n - Use a rule-set or choose “general matters” for basic calendaring\n - Calculate litigation, administrative, regulatory or custom deadlines\n - Track a history of who made every change, and when they made that change\n - Generate reports by matter, user, team, firm, recent, upcoming, or hashtags\n - View analytics on average length of matters and motions\n - Search for keywords and phrases across Microsoft 365\n[Create Account](https://www.lawtoolbox.com/signup) \n[Contact Us](https://www.lawtoolbox.com/contact-us/) \n[Support](https://www.lawtoolbox.com/support/) \n**More Info**\nLawToolBox for Microsoft Teams is a companion app to the LawToolBox add-in for Outlook, and requires a paid subscription.  Access our [Linkedin Community](https://www.linkedin.com/groups/9048766/) to see what the community is saying about this product. \nLawToolBox works with Microsoft copilot for Microsoft 365. You can try sample prompt 'Copilot give me my matters from LawToolBox' ",
+  "mpnId": "4127203",
+  "officeAssetId": "WA104381656",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.lawtoolbox.com/privacy-policy/",
+  "publisherDocsUrl": "https://lawtoolbox.freshdesk.com/support/solutions/16000061277",
+  "restrictedTenantTypes": [
+    "Freemium"
+  ],
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d/2025071114494074/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d/2025071114494074/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d/2025071114494074/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d/2025071114494074/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d/2025071114494074/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Deadline & matter management for law firms, corporate legal, courts and agencies",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d/2025071114494074/3ee373aa-62fa-4fc6-b11f-9627d5b4a73d_smallimage.png",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://app.lawtoolbox.com/msteams?type=lawtoolbot",
+      "entityId": "lawtooltab",
+      "name": "LawToolBox",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.lawtoolbox.com"
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "subscriptionOffer": {
+    "isEligibleForAzureBenefits": true,
+    "offerId": "lawtoolboxinc.lawtoolboxdeadlinesoutlook"
+  },
+  "systemVersion": "2025071114494074",
+  "termsOfUseUrl": "https://www.lawtoolbox.com/Ads/Adchk.cfm?eaid=661",
+  "validDomains": [
+    "bot.lawtoolbox.com",
+    "app.lawtoolbox.com",
+    "login.microsoftonline.com",
+    "token.botframework.com"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=-86-vZ7yo2U",
+  "webApplicationInfo": {
+    "id": "6be25d92-7c0e-4b2f-829e-108766e095df",
+    "resource": "api://app.lawtoolbox.com/6be25d92-7c0e-4b2f-829e-108766e095df"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@LawToolBox My Day",
+      "description": "The user wants to view today's schedule and tasks related to their legal matters.",
+      "command": "My Day"
+    },
+    {
+      "prompt": "@LawToolBox My Upcoming Deadlines",
+      "description": "The user is asking for a list of all upcoming deadlines related to their legal cases.",
+      "command": "My Upcoming Deadlines"
+    },
+    {
+      "prompt": "@LawToolBox Help",
+      "description": "The user needs assistance and wants to know how to use the bot or its commands.",
+      "command": "Help"
+    }
+  ]
+}

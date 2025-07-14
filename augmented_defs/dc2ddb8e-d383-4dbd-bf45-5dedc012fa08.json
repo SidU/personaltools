@@ -1,0 +1,4418 @@
+{
+  "manifestVersion": "1.21",
+  "id": "dc2ddb8e-d383-4dbd-bf45-5dedc012fa08",
+  "version": "3.1.7",
+  "name": "iGlobe CRM",
+  "accentColor": "#230201",
+  "amsSellerAccountId": 17859280,
+  "appMetadata": {
+    "agentClassifications": {
+      "iGlobeCRMCopilotprod": "licensed"
+    }
+  },
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "Mailbox.ReadWrite.User",
+          "type": "Delegated"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "How can I help you?",
+              "title": "Hi MIPA"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+      "isNotificationOnly": false,
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "CustomerAndContactManagement",
+    "Productivity",
+    "SalesAndMarketing"
+  ],
+  "copilotGpts": [
+    {
+      "fileUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/en/declarativecopilot__0.json",
+      "id": "iGlobeCRMCopilotprod"
+    }
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "iGlobe",
+  "developerUrl": "https://iglobecrm.com/",
+  "elementRelationshipSet": {
+    "mutualDependencies": [],
+    "oneWayDependencies": []
+  },
+  "extensions": [
+    {
+      "requirements": {
+        "capabilities": [
+          {
+            "minVersion": "1.1",
+            "name": "Mailbox"
+          }
+        ],
+        "formFactors": [
+          "desktop"
+        ],
+        "scopes": [
+          "mail"
+        ]
+      },
+      "ribbons": [
+        {
+          "contexts": [
+            "mailCompose"
+          ],
+          "tabs": [
+            {
+              "groups": [
+                {
+                  "controls": [
+                    {
+                      "actionId": "onMessagecompose",
+                      "enabled": true,
+                      "icons": [
+                        {
+                          "size": 16,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                        },
+                        {
+                          "size": 32,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                        },
+                        {
+                          "size": 80,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                        }
+                      ],
+                      "id": "mailsavetocrm",
+                      "label": "Send and Save",
+                      "overriddenByRibbonApi": false,
+                      "supertip": {
+                        "description": "Opens a pane from where select company and contact to populate meeting subject and location.",
+                        "title": "Click button to outlook CRM add-in"
+                      },
+                      "type": "button"
+                    }
+                  ],
+                  "id": "dashboard",
+                  "label": "CRM",
+                  "overriddenByRibbonApi": false
+                }
+              ],
+              "id": "msgcomposetab",
+              "label": "Outlook CRM"
+            }
+          ]
+        },
+        {
+          "contexts": [
+            "mailRead"
+          ],
+          "tabs": [
+            {
+              "groups": [
+                {
+                  "controls": [
+                    {
+                      "actionId": "onMessageread",
+                      "enabled": true,
+                      "icons": [
+                        {
+                          "size": 16,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                        },
+                        {
+                          "size": 32,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                        },
+                        {
+                          "size": 80,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                        }
+                      ],
+                      "id": "mailreadforcrm",
+                      "label": "Outlook CRM",
+                      "overriddenByRibbonApi": false,
+                      "supertip": {
+                        "description": "Opens a pane from where you can save the email in iGlobe CRM and associate to SSO.",
+                        "title": "Click button to outlook CRM add-in"
+                      },
+                      "type": "button"
+                    }
+                  ],
+                  "id": "msgreadgroupid",
+                  "label": "CRM",
+                  "overriddenByRibbonApi": false
+                }
+              ],
+              "id": "msgreadtab",
+              "label": "Outlook CRM"
+            }
+          ]
+        },
+        {
+          "contexts": [
+            "meetingDetailsOrganizer"
+          ],
+          "tabs": [
+            {
+              "groups": [
+                {
+                  "controls": [
+                    {
+                      "actionId": "onApointmentread",
+                      "enabled": true,
+                      "icons": [
+                        {
+                          "size": 16,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                        },
+                        {
+                          "size": 32,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                        },
+                        {
+                          "size": 80,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                        }
+                      ],
+                      "id": "crmmeetingreport",
+                      "label": "New Meeting report",
+                      "overriddenByRibbonApi": false,
+                      "supertip": {
+                        "description": "Opens a pane from where you can create meeting report in CRM with selected event data.",
+                        "title": "Click button to create meeting report in CRM."
+                      },
+                      "type": "button"
+                    },
+                    {
+                      "actionId": "onAppointmentCompose",
+                      "enabled": true,
+                      "icons": [
+                        {
+                          "size": 16,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                        },
+                        {
+                          "size": 32,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                        },
+                        {
+                          "size": 80,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                        }
+                      ],
+                      "id": "crmmeetingplanner",
+                      "label": "Meeting planner",
+                      "overriddenByRibbonApi": false,
+                      "supertip": {
+                        "description": "Opens a pane from where select company and contact to populate meeting subject and location.",
+                        "title": "Click button to populate CRM data"
+                      },
+                      "type": "button"
+                    }
+                  ],
+                  "id": "appointmentcompose",
+                  "label": "CRM",
+                  "overriddenByRibbonApi": false
+                }
+              ],
+              "id": "appointmentcomposetab",
+              "label": "Outlook CRM"
+            }
+          ]
+        },
+        {
+          "contexts": [
+            "meetingDetailsAttendee"
+          ],
+          "tabs": [
+            {
+              "groups": [
+                {
+                  "controls": [
+                    {
+                      "actionId": "onApointmentread",
+                      "enabled": true,
+                      "icons": [
+                        {
+                          "size": 16,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                        },
+                        {
+                          "size": 32,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                        },
+                        {
+                          "size": 80,
+                          "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                        }
+                      ],
+                      "id": "eventread",
+                      "label": "New Meeting report",
+                      "overriddenByRibbonApi": false,
+                      "supertip": {
+                        "description": "Opens a pane from where you can create meeting report in CRM with selected event data.",
+                        "title": "Click button to meeting report in CRM."
+                      },
+                      "type": "button"
+                    }
+                  ],
+                  "id": "meetingreadgroupid",
+                  "label": "CRM",
+                  "overriddenByRibbonApi": false
+                }
+              ],
+              "id": "meetingreadtab",
+              "label": "Outlook CRM"
+            }
+          ]
+        }
+      ],
+      "runtimes": [
+        {
+          "actions": [
+            {
+              "id": "onMessageread",
+              "multiselect": false,
+              "pinnable": true,
+              "supportsNoItemContext": false,
+              "type": "openPage"
+            }
+          ],
+          "code": {
+            "page": "https://igcrmteamapp.iglobe.dk/mail"
+          },
+          "id": "messageread",
+          "lifetime": "short",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.13",
+                "name": "MailBox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "type": "general"
+        },
+        {
+          "actions": [
+            {
+              "id": "onMessagecompose",
+              "multiselect": false,
+              "pinnable": true,
+              "supportsNoItemContext": false,
+              "type": "openPage"
+            }
+          ],
+          "code": {
+            "page": "https://igcrmteamapp.iglobe.dk/Mail/ComposeMail"
+          },
+          "id": "messagecompose",
+          "lifetime": "short",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.13",
+                "name": "MailBox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "type": "general"
+        },
+        {
+          "actions": [
+            {
+              "id": "onMessagecomposeCheckonly",
+              "multiselect": false,
+              "pinnable": true,
+              "supportsNoItemContext": false,
+              "type": "openPage"
+            }
+          ],
+          "code": {
+            "page": "https://igcrmteamapp.iglobe.dk/Mail/ComposeMail?action=checkonly"
+          },
+          "id": "messagecomposeCheckonly",
+          "lifetime": "short",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.13",
+                "name": "MailBox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "type": "general"
+        },
+        {
+          "actions": [
+            {
+              "id": "onContactSync",
+              "multiselect": false,
+              "pinnable": true,
+              "supportsNoItemContext": false,
+              "type": "openPage"
+            }
+          ],
+          "code": {
+            "page": "https://igcrmteamapp.iglobe.dk/Mail/SyncContact"
+          },
+          "id": "contactsync",
+          "lifetime": "short",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.13",
+                "name": "MailBox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "type": "general"
+        },
+        {
+          "actions": [
+            {
+              "id": "onApointmentread",
+              "multiselect": false,
+              "pinnable": true,
+              "supportsNoItemContext": false,
+              "type": "openPage"
+            }
+          ],
+          "code": {
+            "page": "https://igcrmteamapp.iglobe.dk/Mail/Appoinment?action=read"
+          },
+          "id": "appoinmentread",
+          "lifetime": "short",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.13",
+                "name": "MailBox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "type": "general"
+        },
+        {
+          "actions": [
+            {
+              "id": "onAppointmentCompose",
+              "multiselect": false,
+              "pinnable": true,
+              "supportsNoItemContext": false,
+              "type": "openPage"
+            }
+          ],
+          "code": {
+            "page": "https://igcrmteamapp.iglobe.dk/Mail/Appoinment?action=compose"
+          },
+          "id": "appoinmentcompose",
+          "lifetime": "short",
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.13",
+                "name": "MailBox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "type": "general"
+        }
+      ]
+    }
+  ],
+  "industries": [
+    "ProfessionalServices",
+    "Sustainability"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Find company from CRM by title",
+          "fetchTask": false,
+          "id": "trackCompany",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Try filters by :title",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "title",
+              "semanticDescription": "Search company items by :title",
+              "title": "Title"
+            }
+          ],
+          "title": "Track Company",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Track SSO",
+          "fetchTask": false,
+          "id": "tracesso",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Try filters  overdue: this week: next week",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "Period",
+              "semanticDescription": "Try filters over due: this week: next week",
+              "title": "Period"
+            }
+          ],
+          "title": "SSO by followup",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Find Meeting report where i am responsible",
+          "fetchTask": false,
+          "id": "trackMeetingReport",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Try filters  overdue: this week: next week",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "Priority",
+              "semanticDescription": "Try filters  over due: this week: next week",
+              "title": "Priority"
+            }
+          ],
+          "title": "Meeting Report",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_largeimage.png",
+  "lastUpdatedAt": "2025-05-26T12:59:10.8545366+00:00",
+  "longDescription": "*iGlobe CRM works with Microsoft Teams* follows the “One Click will do the trick” approach, which means it is easy to use and tailored to your needs, your customers management and your device. You can access it anytime and anywhere, in Microsoft Teams, Outlook and Microsoft 365. You need to get the information and programs you need whenever and wherever you are, but you also need to have them all conveniently accessible. Microsoft Teams provides that for you. You can chat, call, meet, manage tasks, and work with documents and files, and more. With iGlobe CRM you now also have your customer and sales information in Microsoft Teams, Outlook and Microsoft 365 as well. iGlobe CRM in Microsoft Teams, as a personal App or in a tab.\n \n Should you have any questions please feel free to [contact us](mailto:sales@iglobe.dk). We can also offer you a demo or assist you in the implementation. As it is a simple product, we believe it will not take more than just 30 min. \n \n We are offering personal sales assistance through MIPA (My Intelligent Personal Assistance) and Microsoft 365 Copilot. Both MIPA and Copilot serve as personal assistants designed to help manage daily and weekly tasks, aiming to streamline your work and enhance efficiency. \n \n*IMPORTANT! Before starting the App you will need to create a SharePoint Site that will be used to store your CRM data and configuration list used in iGlobe CRM.  Please [contact us](mailto:support@iglobe.dk) our support team for more details*",
+  "mpnId": "2917933",
+  "officeAssetId": "WA200007241",
+  "permissions": [],
+  "privacyUrl": "https://iglobecrm.com/content/legal-information",
+  "publisherDocsUrl": "https://iglobecrm.com/content/iglobe-crm-administration-documentation-guide",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Using CRM on a trusted platform boosts effectiveness in your daily work.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail",
+      "context": [
+        "personalTab"
+      ],
+      "entityId": "crm",
+      "name": "CRM",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail?page=marketing",
+      "context": [
+        "personalTab",
+        "channelTab"
+      ],
+      "entityId": "iglobemarketing",
+      "name": "Marketing",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail?page=admin",
+      "context": [
+        "personalTab",
+        "channelTab"
+      ],
+      "entityId": "iglobeadmin",
+      "name": "Adminstration",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://igcrmteamapp.iglobe.dk/teammipa",
+      "context": [
+        "personalTab"
+      ],
+      "entityId": "MIPA",
+      "name": "MIPA",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/meetcrm",
+      "context": [
+        "personalTab",
+        "channelTab"
+      ],
+      "entityId": "meetcrm",
+      "name": "Meet CRM",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071113501039",
+  "termsOfUseUrl": "https://iglobecrm.com/content/iglobe-crm-team-app",
+  "validDomains": [
+    "token.botframework.com",
+    "igcrmteamapp.iglobe.dk"
+  ],
+  "videoUrl": "https://youtu.be/OCImHPtdGu4?si=FwAOOP62NJgHmS_D",
+  "webApplicationInfo": {
+    "id": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+    "resource": "api://igcrmteamapp.iglobe.dk/0bb1641a-3b3b-47f7-a11e-01279d92abfb"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "es-es",
+    "da-dk",
+    "de-de",
+    "nl-nl"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.21",
+      "id": "dc2ddb8e-d383-4dbd-bf45-5dedc012fa08",
+      "version": "3.1.7",
+      "name": "iGlobe CRM",
+      "accentColor": "#230201",
+      "amsSellerAccountId": 17859280,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "Mailbox.ReadWrite.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "How can I help you?",
+                  "title": "Hi MIPA"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "CustomerAndContactManagement",
+        "Productivity",
+        "SalesAndMarketing"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "iGlobe",
+      "developerUrl": "https://iglobecrm.com/",
+      "extensions": [
+        {
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.1",
+                "name": "Mailbox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "ribbons": [
+            {
+              "contexts": [
+                "mailCompose"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onMessagecompose",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "mailsavetocrm",
+                          "label": "Send and Save",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where select company and contact to populate meeting subject and location.",
+                            "title": "Click button to outlook CRM add-in"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "dashboard",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "msgcomposetab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "mailRead"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onMessageread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "mailreadforcrm",
+                          "label": "Outlook CRM",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can save the email in iGlobe CRM and associate to SSO.",
+                            "title": "Click button to outlook CRM add-in"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgreadgroupid",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "msgreadtab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "meetingDetailsOrganizer"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onApointmentread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "crmmeetingreport",
+                          "label": "New Meeting report",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can create meeting report in CRM with selected event data.",
+                            "title": "Click button to create meeting report in CRM."
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "onAppointmentCompose",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "crmmeetingplanner",
+                          "label": "Meeting planner",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where select company and contact to populate meeting subject and location.",
+                            "title": "Click button to populate CRM data"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "appointmentcompose",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "appointmentcomposetab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "meetingDetailsAttendee"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onApointmentread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "eventread",
+                          "label": "New Meeting report",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can create meeting report in CRM with selected event data.",
+                            "title": "Click button to meeting report in CRM."
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "meetingreadgroupid",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "meetingreadtab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            }
+          ],
+          "runtimes": [
+            {
+              "actions": [
+                {
+                  "id": "onMessageread",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/mail"
+              },
+              "id": "messageread",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onMessagecompose",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/ComposeMail"
+              },
+              "id": "messagecompose",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onMessagecomposeCheckonly",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/ComposeMail?action=checkonly"
+              },
+              "id": "messagecomposeCheckonly",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onContactSync",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/SyncContact"
+              },
+              "id": "contactsync",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onApointmentread",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/Appoinment?action=read"
+              },
+              "id": "appoinmentread",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onAppointmentCompose",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/Appoinment?action=compose"
+              },
+              "id": "appoinmentcompose",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            }
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices",
+        "Sustainability"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Find company from CRM by title",
+              "fetchTask": false,
+              "id": "trackCompany",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters by :title",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "title",
+                  "semanticDescription": "Search company items by :title",
+                  "title": "Title"
+                }
+              ],
+              "title": "Track Company",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Track SSO",
+              "fetchTask": false,
+              "id": "tracesso",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters  overdue: this week: next week",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "Period",
+                  "semanticDescription": "Try filters over due: this week: next week",
+                  "title": "Period"
+                }
+              ],
+              "title": "SSO by followup",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Find Meeting report where i am responsible",
+              "fetchTask": false,
+              "id": "trackMeetingReport",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters  overdue: this week: next week",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "Priority",
+                  "semanticDescription": "Try filters  over due: this week: next week",
+                  "title": "Priority"
+                }
+              ],
+              "title": "Meeting Report",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "da-dk",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_largeimage.png",
+      "lastUpdatedAt": "2025-05-26T12:59:10.8545366+00:00",
+      "longDescription": "*iGlobe CRM til Microsoft Teams* følger tilgangen om “One Click will do the trick”, hvilket betyder, at det er nemt at bruge og skræddersyet til dine behov, din kundestyring og din enhed. Du kan få adgang til det når som helst og hvor som helst i Microsoft Teams, Outlook og Microsoft 365. Du skal have de oplysninger og programmer, du har brug for, når og hvor du er, men du skal også have dem alle let tilgængelige. Microsoft Teams leverer det til dig. Du kan chatte, ringe, mødes, administrere opgaver og arbejde med dokumenter og filer og meget mere. Med iGlobe CRM har du nu også dine kunde- og salgsoplysninger i Microsoft Teams, Outlook og Microsoft 365 . iGlobe CRM i Microsoft Teams, som en personlig app eller i en fane. \n \n Vi tilbyder personlig salgshjælp gennem MIPA (My Intelligent Personal Assistance) og Microsoft 365 Copilot. Både MIPA og Copilot fungerer som personlige assistenter, der er designet til at hjælpe med at håndtere daglige og ugentlige opgaver, med det formål at strømline dit arbejde og øge effektiviteten. \n \n *Hvis du har spørgsmål, er du velkommen til at [kontakte us](mailto:sales@iglobe.dk). Vi kan også tilbyde dig en demo eller hjælpe dig med implementeringen. Da det er et simpelt produkt, mener vi, at det ikke vil tage mere end blot 30 min. \n \n VIGTIGT! Før du starter appen, skal du oprette et SharePoint-websted, der skal bruges til at gemme dine CRM-data og konfigurationsliste, der bruges i iGlobe CRM. Venligst [kontakt us](mailto:support@iglobe.dk) vores supportteam for flere detaljer*",
+      "mpnId": "2917933",
+      "officeAssetId": "WA200007241",
+      "permissions": [],
+      "privacyUrl": "https://iglobecrm.com/content/legal-information",
+      "publisherDocsUrl": "https://iglobecrm.com/content/iglobe-crm-administration-documentation-guide",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "iGlobe CRM",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail",
+          "context": [
+            "personalTab"
+          ],
+          "entityId": "crm",
+          "name": "CRM",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail?page=marketing",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "iglobemarketing",
+          "name": "Marketing",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail?page=admin",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "iglobeadmin",
+          "name": "Administration",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/teammipa",
+          "context": [
+            "personalTab"
+          ],
+          "entityId": "MIPA",
+          "name": "MIPA",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/meetcrm",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "meetcrm",
+          "name": "Meet CRM",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113501039",
+      "termsOfUseUrl": "https://iglobecrm.com/content/iglobe-crm-team-app",
+      "validDomains": [
+        "token.botframework.com",
+        "igcrmteamapp.iglobe.dk"
+      ],
+      "videoUrl": "https://youtu.be/OCImHPtdGu4?si=FwAOOP62NJgHmS_D",
+      "webApplicationInfo": {
+        "id": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+        "resource": "api://igcrmteamapp.iglobe.dk/0bb1641a-3b3b-47f7-a11e-01279d92abfb"
+      }
+    },
+    {
+      "manifestVersion": "1.21",
+      "id": "dc2ddb8e-d383-4dbd-bf45-5dedc012fa08",
+      "version": "3.1.7",
+      "name": "iGlobe CRM",
+      "accentColor": "#230201",
+      "amsSellerAccountId": 17859280,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "Mailbox.ReadWrite.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "How can I help you?",
+                  "title": "Hi MIPA"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "CustomerAndContactManagement",
+        "Productivity",
+        "SalesAndMarketing"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "iGlobe",
+      "developerUrl": "https://iglobecrm.com/",
+      "extensions": [
+        {
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.1",
+                "name": "Mailbox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "ribbons": [
+            {
+              "contexts": [
+                "mailCompose"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onMessagecompose",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "mailsavetocrm",
+                          "label": "Send and Save",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where select company and contact to populate meeting subject and location.",
+                            "title": "Click button to outlook CRM add-in"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "dashboard",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "msgcomposetab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "mailRead"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onMessageread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "mailreadforcrm",
+                          "label": "Outlook CRM",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can save the email in iGlobe CRM and associate to SSO.",
+                            "title": "Click button to outlook CRM add-in"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgreadgroupid",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "msgreadtab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "meetingDetailsOrganizer"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onApointmentread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "crmmeetingreport",
+                          "label": "New Meeting report",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can create meeting report in CRM with selected event data.",
+                            "title": "Click button to create meeting report in CRM."
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "onAppointmentCompose",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "crmmeetingplanner",
+                          "label": "Meeting planner",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where select company and contact to populate meeting subject and location.",
+                            "title": "Click button to populate CRM data"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "appointmentcompose",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "appointmentcomposetab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "meetingDetailsAttendee"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onApointmentread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "eventread",
+                          "label": "New Meeting report",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can create meeting report in CRM with selected event data.",
+                            "title": "Click button to meeting report in CRM."
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "meetingreadgroupid",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "meetingreadtab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            }
+          ],
+          "runtimes": [
+            {
+              "actions": [
+                {
+                  "id": "onMessageread",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/mail"
+              },
+              "id": "messageread",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onMessagecompose",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/ComposeMail"
+              },
+              "id": "messagecompose",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onMessagecomposeCheckonly",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/ComposeMail?action=checkonly"
+              },
+              "id": "messagecomposeCheckonly",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onContactSync",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/SyncContact"
+              },
+              "id": "contactsync",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onApointmentread",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/Appoinment?action=read"
+              },
+              "id": "appoinmentread",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onAppointmentCompose",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/Appoinment?action=compose"
+              },
+              "id": "appoinmentcompose",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            }
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices",
+        "Sustainability"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Find company from CRM by title",
+              "fetchTask": false,
+              "id": "trackCompany",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters by :title",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "title",
+                  "semanticDescription": "Search company items by :title",
+                  "title": "Title"
+                }
+              ],
+              "title": "Track Company",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Track SSO",
+              "fetchTask": false,
+              "id": "tracesso",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters  overdue: this week: next week",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "Period",
+                  "semanticDescription": "Try filters over due: this week: next week",
+                  "title": "Period"
+                }
+              ],
+              "title": "SSO by followup",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Find Meeting report where i am responsible",
+              "fetchTask": false,
+              "id": "trackMeetingReport",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters  overdue: this week: next week",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "Priority",
+                  "semanticDescription": "Try filters  over due: this week: next week",
+                  "title": "Priority"
+                }
+              ],
+              "title": "Meeting Report",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "de-de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_largeimage.png",
+      "lastUpdatedAt": "2025-05-26T12:59:10.8545366+00:00",
+      "longDescription": "*iGlobe CRM arbeitet mit Microsoft Teams* nach dem “One Click will do the trick”-Ansatz zusammen, was bedeutet, dass es einfach zu bedienen und auf Ihre Bedürfnisse, Ihr Kundenmanagement und Ihr Gerät zugeschnitten ist. Sie können jederzeit und überall darauf zugreifen, in Microsoft Teams, Outlook und Microsoft 365. Sie müssen die Informationen und Programme, die Sie benötigen, jederzeit und überall abrufen, aber Sie müssen auch alle bequem zugänglich haben. Microsoft Teams bietet Ihnen das. Sie können chatten, anrufen, sich treffen, Aufgaben verwalten, mit Dokumenten und Dateien arbeiten und vieles mehr. Mit iGlobe CRM haben Sie Ihre Kunden- und Vertriebsinformationen jetzt auch in Microsoft Teams, Outlook und Microsoft 365. iGlobe CRM in Microsoft Teams, als persönliche App oder in einem Tab.\n \n *Wir bieten persönliche Verkaufsunterstützung durch MIPA (My Intelligent Personal Assistance) und Microsoft 365 Copilot an. Sowohl MIPA als auch Copilot dienen als persönliche Assistenten, die darauf ausgelegt sind, alltägliche und wöchentliche Aufgaben zu verwalten, um Ihre Arbeit zu optimieren und die Effizienz zu steigern.\n \n Sollten Sie Fragen haben, wenden Sie sich bitte an [kontaktieren Sie us](mailto:sales@iglobe.dk). Wir können Ihnen auch eine Demo anbieten oder Sie bei der Implementierung unterstützen. Da es sich um ein einfaches Produkt handelt, glauben wir, dass es nicht länger als 30 Minuten dauern wird. \n \n WICHTIG! Bevor Sie die App starten, müssen Sie eine SharePoint-Site erstellen, die zum Speichern Ihrer CRM-Daten und der Konfigurationsliste verwendet wird, die in iGlobe CRM verwendet wird.  Bitte [kontaktieren Sie us](mailto:support@iglobe.dk) unser Support-Team, um weitere Informationen zu erhalten*",
+      "mpnId": "2917933",
+      "officeAssetId": "WA200007241",
+      "permissions": [],
+      "privacyUrl": "https://iglobecrm.com/content/legal-information",
+      "publisherDocsUrl": "https://iglobecrm.com/content/iglobe-crm-administration-documentation-guide",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "iGlobe CRM",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail",
+          "context": [
+            "personalTab"
+          ],
+          "entityId": "crm",
+          "name": "CRM",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail?page=marketing",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "iglobemarketing",
+          "name": "Marketing",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail?page=admin",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "iglobeadmin",
+          "name": "Administration",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/teammipa",
+          "context": [
+            "personalTab"
+          ],
+          "entityId": "MIPA",
+          "name": "MIPA",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/meetcrm",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "meetcrm",
+          "name": "Meet CRM",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113501039",
+      "termsOfUseUrl": "https://iglobecrm.com/content/iglobe-crm-team-app",
+      "validDomains": [
+        "token.botframework.com",
+        "igcrmteamapp.iglobe.dk"
+      ],
+      "videoUrl": "https://youtu.be/OCImHPtdGu4?si=FwAOOP62NJgHmS_D",
+      "webApplicationInfo": {
+        "id": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+        "resource": "api://igcrmteamapp.iglobe.dk/0bb1641a-3b3b-47f7-a11e-01279d92abfb"
+      }
+    },
+    {
+      "manifestVersion": "1.21",
+      "id": "dc2ddb8e-d383-4dbd-bf45-5dedc012fa08",
+      "version": "3.1.7",
+      "name": "iGlobe CRM",
+      "accentColor": "#230201",
+      "amsSellerAccountId": 17859280,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "Mailbox.ReadWrite.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "How can I help you?",
+                  "title": "Hi MIPA"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "CustomerAndContactManagement",
+        "Productivity",
+        "SalesAndMarketing"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "iGlobe",
+      "developerUrl": "https://iglobecrm.com/",
+      "extensions": [
+        {
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.1",
+                "name": "Mailbox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "ribbons": [
+            {
+              "contexts": [
+                "mailCompose"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onMessagecompose",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "mailsavetocrm",
+                          "label": "Send and Save",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where select company and contact to populate meeting subject and location.",
+                            "title": "Click button to outlook CRM add-in"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "dashboard",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "msgcomposetab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "mailRead"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onMessageread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "mailreadforcrm",
+                          "label": "Outlook CRM",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can save the email in iGlobe CRM and associate to SSO.",
+                            "title": "Click button to outlook CRM add-in"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgreadgroupid",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "msgreadtab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "meetingDetailsOrganizer"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onApointmentread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "crmmeetingreport",
+                          "label": "New Meeting report",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can create meeting report in CRM with selected event data.",
+                            "title": "Click button to create meeting report in CRM."
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "onAppointmentCompose",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "crmmeetingplanner",
+                          "label": "Meeting planner",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where select company and contact to populate meeting subject and location.",
+                            "title": "Click button to populate CRM data"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "appointmentcompose",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "appointmentcomposetab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "meetingDetailsAttendee"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onApointmentread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "eventread",
+                          "label": "New Meeting report",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can create meeting report in CRM with selected event data.",
+                            "title": "Click button to meeting report in CRM."
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "meetingreadgroupid",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "meetingreadtab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            }
+          ],
+          "runtimes": [
+            {
+              "actions": [
+                {
+                  "id": "onMessageread",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/mail"
+              },
+              "id": "messageread",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onMessagecompose",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/ComposeMail"
+              },
+              "id": "messagecompose",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onMessagecomposeCheckonly",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/ComposeMail?action=checkonly"
+              },
+              "id": "messagecomposeCheckonly",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onContactSync",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/SyncContact"
+              },
+              "id": "contactsync",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onApointmentread",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/Appoinment?action=read"
+              },
+              "id": "appoinmentread",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onAppointmentCompose",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/Appoinment?action=compose"
+              },
+              "id": "appoinmentcompose",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            }
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices",
+        "Sustainability"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Find company from CRM by title",
+              "fetchTask": false,
+              "id": "trackCompany",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters by :title",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "title",
+                  "semanticDescription": "Search company items by :title",
+                  "title": "Title"
+                }
+              ],
+              "title": "Track Company",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Track SSO",
+              "fetchTask": false,
+              "id": "tracesso",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters  overdue: this week: next week",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "Period",
+                  "semanticDescription": "Try filters over due: this week: next week",
+                  "title": "Period"
+                }
+              ],
+              "title": "SSO by followup",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Find Meeting report where i am responsible",
+              "fetchTask": false,
+              "id": "trackMeetingReport",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters  overdue: this week: next week",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "Priority",
+                  "semanticDescription": "Try filters  over due: this week: next week",
+                  "title": "Priority"
+                }
+              ],
+              "title": "Meeting Report",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "es-es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_largeimage.png",
+      "lastUpdatedAt": "2025-05-26T12:59:10.8545366+00:00",
+      "longDescription": "*iGlobe CRM funciona con Microsoft Teams* siguiendo el enfoque de \"Un clic hará el truco\", lo que significa que es fácil de usar y se adapta a sus necesidades, a la gestión de sus clientes y a su dispositivo. Puede acceder a él en cualquier momento y en cualquier lugar, en Microsoft Teams, Outlook y Microsoft 365. Necesita obtener la información y los programas que necesita cuando y donde quiera que esté, pero también necesita tenerlos todos convenientemente accesibles. Microsoft Teams te lo proporciona. Puede chatear, llamar, reunirse, administrar tareas y trabajar con documentos y archivos, y más. Con iGlobe CRM, ahora también tiene su información de clientes y ventas en Microsoft Teams, Outlook y Microsoft 365. iGlobe CRM en Microsoft Teams, como una aplicación personal o en una pestaña.\n \n * Estamos ofreciendo asistencia personal en ventas a través de MIPA (My Intelligent Personal Assistance) y Microsoft 365 Copilot. Tanto MIPA como Copilot funcionan como asistentes personales diseñados para ayudar a gestionar tareas diarias y semanales, con el objetivo de optimizar su trabajo y mejorar la eficiencia.\n \n Si tiene alguna pregunta, no dude en ponerse en contacto con [us](mailto:sales@iglobe.dk contacto]. También podemos ofrecerle una demostración o asistirle en la implementación. Como es un producto simple, creemos que no tomará más de 30 minutos. \n \n IMPORTANTE! Antes de iniciar la aplicación, deberá crear un sitio de SharePoint que se utilizará para almacenar los datos de su CRM y la lista de configuración utilizada en iGlobe CRM. Por favor, póngase en [contacto us](mailto:support@iglobe.dk) con nuestro equipo de soporte para obtener más detalles.*",
+      "mpnId": "2917933",
+      "officeAssetId": "WA200007241",
+      "permissions": [],
+      "privacyUrl": "https://iglobecrm.com/content/legal-information",
+      "publisherDocsUrl": "https://iglobecrm.com/content/iglobe-crm-administration-documentation-guide",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "iGlobe CRM",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail",
+          "context": [
+            "personalTab"
+          ],
+          "entityId": "crm",
+          "name": "CRM",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail?page=marketing",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "iglobemarketing",
+          "name": "Marketing",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail?page=admin",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "iglobeadmin",
+          "name": "Administración",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/teammipa",
+          "context": [
+            "personalTab"
+          ],
+          "entityId": "MIPA",
+          "name": "MIPA",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/meetcrm",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "meetcrm",
+          "name": "Meet CRM",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113501039",
+      "termsOfUseUrl": "https://iglobecrm.com/content/iglobe-crm-team-app",
+      "validDomains": [
+        "token.botframework.com",
+        "igcrmteamapp.iglobe.dk"
+      ],
+      "videoUrl": "https://youtu.be/OCImHPtdGu4?si=FwAOOP62NJgHmS_D",
+      "webApplicationInfo": {
+        "id": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+        "resource": "api://igcrmteamapp.iglobe.dk/0bb1641a-3b3b-47f7-a11e-01279d92abfb"
+      }
+    },
+    {
+      "manifestVersion": "1.21",
+      "id": "dc2ddb8e-d383-4dbd-bf45-5dedc012fa08",
+      "version": "3.1.7",
+      "name": "iGlobe CRM",
+      "accentColor": "#230201",
+      "amsSellerAccountId": 17859280,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "Mailbox.ReadWrite.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "How can I help you?",
+                  "title": "Hi MIPA"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "CustomerAndContactManagement",
+        "Productivity",
+        "SalesAndMarketing"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "iGlobe",
+      "developerUrl": "https://iglobecrm.com/",
+      "extensions": [
+        {
+          "requirements": {
+            "capabilities": [
+              {
+                "minVersion": "1.1",
+                "name": "Mailbox"
+              }
+            ],
+            "formFactors": [
+              "desktop"
+            ],
+            "scopes": [
+              "mail"
+            ]
+          },
+          "ribbons": [
+            {
+              "contexts": [
+                "mailCompose"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onMessagecompose",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "mailsavetocrm",
+                          "label": "Send and Save",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where select company and contact to populate meeting subject and location.",
+                            "title": "Click button to outlook CRM add-in"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "dashboard",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "msgcomposetab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "mailRead"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onMessageread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "mailreadforcrm",
+                          "label": "Outlook CRM",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can save the email in iGlobe CRM and associate to SSO.",
+                            "title": "Click button to outlook CRM add-in"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "msgreadgroupid",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "msgreadtab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "meetingDetailsOrganizer"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onApointmentread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "crmmeetingreport",
+                          "label": "New Meeting report",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can create meeting report in CRM with selected event data.",
+                            "title": "Click button to create meeting report in CRM."
+                          },
+                          "type": "button"
+                        },
+                        {
+                          "actionId": "onAppointmentCompose",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "crmmeetingplanner",
+                          "label": "Meeting planner",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where select company and contact to populate meeting subject and location.",
+                            "title": "Click button to populate CRM data"
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "appointmentcompose",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "appointmentcomposetab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            },
+            {
+              "contexts": [
+                "meetingDetailsAttendee"
+              ],
+              "tabs": [
+                {
+                  "groups": [
+                    {
+                      "controls": [
+                        {
+                          "actionId": "onApointmentread",
+                          "enabled": true,
+                          "icons": [
+                            {
+                              "size": 16,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/Images/crm_16.png"
+                            },
+                            {
+                              "size": 32,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_32.png"
+                            },
+                            {
+                              "size": 80,
+                              "url": "https://igcrmteamapp.iglobe.dk/crmoutlook/images/crm_80.png"
+                            }
+                          ],
+                          "id": "eventread",
+                          "label": "New Meeting report",
+                          "overriddenByRibbonApi": false,
+                          "supertip": {
+                            "description": "Opens a pane from where you can create meeting report in CRM with selected event data.",
+                            "title": "Click button to meeting report in CRM."
+                          },
+                          "type": "button"
+                        }
+                      ],
+                      "id": "meetingreadgroupid",
+                      "label": "CRM",
+                      "overriddenByRibbonApi": false
+                    }
+                  ],
+                  "id": "meetingreadtab",
+                  "label": "Outlook CRM"
+                }
+              ]
+            }
+          ],
+          "runtimes": [
+            {
+              "actions": [
+                {
+                  "id": "onMessageread",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/mail"
+              },
+              "id": "messageread",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onMessagecompose",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/ComposeMail"
+              },
+              "id": "messagecompose",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onMessagecomposeCheckonly",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/ComposeMail?action=checkonly"
+              },
+              "id": "messagecomposeCheckonly",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onContactSync",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/SyncContact"
+              },
+              "id": "contactsync",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onApointmentread",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/Appoinment?action=read"
+              },
+              "id": "appoinmentread",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            },
+            {
+              "actions": [
+                {
+                  "id": "onAppointmentCompose",
+                  "multiselect": false,
+                  "pinnable": true,
+                  "supportsNoItemContext": false,
+                  "type": "openPage"
+                }
+              ],
+              "code": {
+                "page": "https://igcrmteamapp.iglobe.dk/Mail/Appoinment?action=compose"
+              },
+              "id": "appoinmentcompose",
+              "lifetime": "short",
+              "requirements": {
+                "capabilities": [
+                  {
+                    "minVersion": "1.13",
+                    "name": "MailBox"
+                  }
+                ],
+                "formFactors": [
+                  "desktop"
+                ],
+                "scopes": [
+                  "mail"
+                ]
+              },
+              "type": "general"
+            }
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices",
+        "Sustainability"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Find company from CRM by title",
+              "fetchTask": false,
+              "id": "trackCompany",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters by :title",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "title",
+                  "semanticDescription": "Search company items by :title",
+                  "title": "Title"
+                }
+              ],
+              "title": "Track Company",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Track SSO",
+              "fetchTask": false,
+              "id": "tracesso",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters  overdue: this week: next week",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "Period",
+                  "semanticDescription": "Try filters over due: this week: next week",
+                  "title": "Period"
+                }
+              ],
+              "title": "SSO by followup",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Find Meeting report where i am responsible",
+              "fetchTask": false,
+              "id": "trackMeetingReport",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Try filters  overdue: this week: next week",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "Priority",
+                  "semanticDescription": "Try filters  over due: this week: next week",
+                  "title": "Priority"
+                }
+              ],
+              "title": "Meeting Report",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "nl-nl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_largeimage.png",
+      "lastUpdatedAt": "2025-05-26T12:59:10.8545366+00:00",
+      "longDescription": "*iGlobe CRM werkt met Microsoft Teams* en volgt de “One Click will do the trick”-aanpak, wat betekent dat het gemakkelijk te gebruiken is en is afgestemd op uw behoeften, uw klantenbeheer en uw apparaat. Je hebt er altijd en overal toegang toe, in Microsoft Teams, Outlook en Microsoft 365. Je moet de informatie en programma's krijgen die je nodig hebt waar en wanneer je maar wilt, maar je moet ze ook allemaal gemakkelijk toegankelijk hebben. Microsoft Teams biedt dat voor je. U kunt chatten, bellen, vergaderen, taken beheren en werken met documenten en bestanden, en meer. Met iGlobe CRM heb je nu ook je klant- en verkoopinformatie in Microsoft Teams, Outlook en Microsoft 365. iGlobe CRM in Microsoft Teams, als persoonlijke App of in een tabblad.\n\n Wij bieden persoonlijke verkoopondersteuning via MIPA (My Intelligent Personal Assistance) en Microsoft 365 Copilot. Zowel MIPA als Copilot fungeren als persoonlijke assistenten die zijn ontworpen om dagelijkse en wekelijkse taken te beheren, met als doel uw werk te stroomlijnen en de efficiëntie te verbeteren. \n\n Mocht u vragen hebben, neem dan gerust contact op met [contact us](mailto:sales@iglobe.dk]. Wij kunnen u ook een demo aanbieden of u assisteren bij de implementatie. Omdat het een eenvoudig product is, denken we dat het niet langer dan slechts 30 minuten zal duren. \n\n *Voordat u de app start, moet u een SharePoint-site maken die wordt gebruikt om uw CRM-gegevens en configuratielijst op te slaan die in iGlobe CRM worden gebruikt.  Neem [contact met us](mailto:support@iglobe.dk) op met ons ondersteuningsteam voor meer informatie*",
+      "mpnId": "2917933",
+      "officeAssetId": "WA200007241",
+      "permissions": [],
+      "privacyUrl": "https://iglobecrm.com/content/legal-information",
+      "publisherDocsUrl": "https://iglobecrm.com/content/iglobe-crm-administration-documentation-guide",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "iGlobe CRM",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08/2025071113501039/dc2ddb8e-d383-4dbd-bf45-5dedc012fa08_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail",
+          "context": [
+            "personalTab"
+          ],
+          "entityId": "crm",
+          "name": "CRM",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail?page=marketing",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "iglobemarketing",
+          "name": "Marketing",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/Detail?page=admin",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "iglobeadmin",
+          "name": "Beheer",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/teammipa",
+          "context": [
+            "personalTab"
+          ],
+          "entityId": "MIPA",
+          "name": "MIPA",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://igcrmteamapp.iglobe.dk/CRMTeam/meetcrm",
+          "context": [
+            "personalTab",
+            "channelTab"
+          ],
+          "entityId": "meetcrm",
+          "name": "Meet CRM",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113501039",
+      "termsOfUseUrl": "https://iglobecrm.com/content/iglobe-crm-team-app",
+      "validDomains": [
+        "token.botframework.com",
+        "igcrmteamapp.iglobe.dk"
+      ],
+      "videoUrl": "https://youtu.be/OCImHPtdGu4?si=FwAOOP62NJgHmS_D",
+      "webApplicationInfo": {
+        "id": "0bb1641a-3b3b-47f7-a11e-01279d92abfb",
+        "resource": "api://igcrmteamapp.iglobe.dk/0bb1641a-3b3b-47f7-a11e-01279d92abfb"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@iGlobe CRM I need help navigating the CRM features.",
+      "description": "The user is seeking assistance in understanding how to use the CRM features."
+    },
+    {
+      "prompt": "@iGlobe CRM Hi MIPA, can you provide me with today's sales report?",
+      "description": "The user is asking the bot to use the 'Hi MIPA' command to generate a sales report for the current day.",
+      "command": "Hi MIPA"
+    },
+    {
+      "prompt": "@iGlobe CRM Hi MIPA, what's my schedule for today?",
+      "description": "The user requests the bot to provide their schedule using the 'Hi MIPA' command.",
+      "command": "Hi MIPA"
+    }
+  ]
+}

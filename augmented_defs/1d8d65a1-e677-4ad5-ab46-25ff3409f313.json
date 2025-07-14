@@ -1060,18 +1060,18 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@TR Legal Communication Hub Can you show me the pending requests for today?",
-      "description": "User asks the bot to display all pending requests that need approval for the current day."
+      "prompt": "@TR Legal Communication Hub Can you approve the latest contract request?",
+      "description": "User asks the bot to approve the most recent contract request without logging into the product.",
+      "command": "Approve request"
     },
     {
-      "prompt": "@TR Legal Communication Hub Approve the latest request from John Doe",
-      "description": "User directs the bot to approve the most recent request submitted by John Doe using the one-click approval feature.",
-      "command": "One-Click Approvals"
+      "prompt": "@TR Legal Communication Hub I need to reject the compliance document submission. Can you handle that?",
+      "description": "User requests the bot to reject a specific compliance document submission.",
+      "command": "Reject request"
     },
     {
-      "prompt": "@TR Legal Communication Hub Reject the request with ID 12345",
-      "description": "User instructs the bot to reject a specific request using its unique ID.",
-      "command": "One-Click Approvals"
+      "prompt": "@TR Legal Communication Hub What are the pending requests for approval?",
+      "description": "User inquires about the list of pending requests that need approval."
     }
   ]
 }

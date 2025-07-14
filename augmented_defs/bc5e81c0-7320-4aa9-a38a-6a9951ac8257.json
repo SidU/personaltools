@@ -1160,18 +1160,18 @@
   ],
   "examplePrompts": [
     {
-      "prompt": "@FACT24 ENS+ Help",
-      "description": "The user wants to get assistance or more information about how to use the FACT24 ENS+ bot.",
-      "command": "Help"
-    },
-    {
-      "prompt": "@FACT24 ENS+ Subscribe",
-      "description": "The user wishes to subscribe to receive alerts and notifications from the FACT24 ENS+ bot.",
+      "prompt": "@FACT24 ENS+ Subscribe me to crisis alerts for the North region.",
+      "description": "User wants to subscribe to receive crisis alerts specific to the North region.",
       "command": "Subscribe"
     },
     {
-      "prompt": "@FACT24 ENS+ Unsubscribe",
-      "description": "The user wants to stop receiving alerts and notifications from the FACT24 ENS+ bot.",
+      "prompt": "@FACT24 ENS+ How do I unsubscribe from the alerts I am currently receiving?",
+      "description": "User is asking for guidance on how to unsubscribe from current alerts.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@FACT24 ENS+ Unsubscribe me from all alerts.",
+      "description": "User wants to stop receiving any alerts.",
       "command": "Unsubscribe"
     }
   ]

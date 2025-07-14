@@ -1101,19 +1101,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Base Can you help me understand how to use your features?",
-      "description": "The user is requesting assistance on how to use the bot's features.",
+      "prompt": "@Base Can you help me with the available commands?",
+      "description": "The user is asking for assistance on how to use the bot.",
       "command": "help"
     },
     {
-      "prompt": "@Base I need to check out for today. Can you log me out?",
-      "description": "The user wants to log out from their session.",
-      "command": "logout"
+      "prompt": "@Base I need to log in to start my work session.",
+      "description": "The user wants to log in to the system to begin working.",
+      "command": "login"
     },
     {
-      "prompt": "@Base How do I get started with logging in?",
-      "description": "The user is seeking guidance on how to log in to the system.",
-      "command": "login"
+      "prompt": "@Base Please log me out for the day.",
+      "description": "The user requests to log out from the system at the end of their work session.",
+      "command": "logout"
     }
   ]
 }

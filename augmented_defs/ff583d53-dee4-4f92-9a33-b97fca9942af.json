@@ -1,0 +1,275 @@
+{
+  "manifestVersion": "1.12",
+  "id": "ff583d53-dee4-4f92-9a33-b97fca9942af",
+  "version": "2.1.0",
+  "name": "GiveBack",
+  "accentColor": "#185e61",
+  "amsSellerAccountId": 80579820,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "orgWide": [],
+      "resourceSpecific": []
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Submit a GiveBack activity ",
+              "title": "Get Started"
+            },
+            {
+              "description": "Find out more about GiveBack or get help if you're having trouble with it",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Submit a GiveBack activity ",
+              "title": "Get Started"
+            },
+            {
+              "description": "Find out more about GiveBack or get help if you're having trouble with it",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Submit a GiveBack activity ",
+              "title": "Get Started"
+            },
+            {
+              "description": "Find out more about GiveBack or get help if you're having trouble with it",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "5c3bba0c-7db4-46fd-89dc-b365305cf0a4",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Social",
+    "WorkflowAndBusinessManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultGroupCapability": {
+    "groupchat": "bot",
+    "meetings": "bot",
+    "team": "bot"
+  },
+  "defaultInstallScope": "team",
+  "developerName": "GiveBack",
+  "developerUrl": "https://givebackcsr.com/",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://teams.givebackcsr.com/tabs/configuration",
+      "context": [
+        "privateChatTab",
+        "channelTab"
+      ],
+      "scopes": [
+        "groupChat",
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "Sustainability"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "5c3bba0c-7db4-46fd-89dc-b365305cf0a4",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Turn into Giveback mission using generative AI",
+          "fetchTask": true,
+          "id": "generate-mission",
+          "initialRun": true,
+          "taskInfo": {
+            "height": "large",
+            "title": "Turn into Giveback mission",
+            "url": "https://teams.givebackcsr.com/modules/generate",
+            "width": "large"
+          },
+          "title": "Turn into Giveback mission",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Sustainability",
+    "Engagement",
+    "ESG"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ff583d53-dee4-4f92-9a33-b97fca9942af/2025071114534126/ff583d53-dee4-4f92-9a33-b97fca9942af_largeimage.png",
+  "lastUpdatedAt": "2023-09-28T11:04:43.1709177+00:00",
+  "longDescription": "Do you want to be more involved in social or environmental initiatives? Do you want to make a difference alongside colleagues, peers, or friends? Our GiveBack application for Microsoft Teams is here to help!\n\nGiveback helps individuals, teams, or entire organisations create, track and share their social and environmental activities. We utilise AI-powered program automation to provide the inspiration to get started and begin running activities aligned with the global sustainability framework, the United Nations Sustainable Development Goals. If you are discussing potential activities to support within a messaging chat, you can use the 'more actions' feature to convert the conversation directly into a new mission card.\n\nOnce you have selected the mission that you and your team will support, you can invite others to participate, track progress and measure the impact of each mission. As you complete multiple missions and build your positive impact, the battle will be on to stay atop the GiveBack leaderboard as the most active impact champion across your team or organisation.\n\nFrom an organisations perspective (whether you are a business, school, college, NGO or otherwise), GiveBack helps nurture a culture of teamwork, impact, and sustainability. By building this culture and the organisations broader sustainability profile, you can position your organisation as an employer of choice helping attract employees or customers.\n\n[For support and frequently asked questions, check out our website](https://givebackcsr.com/support/).",
+  "mpnId": " 6595188",
+  "officeAssetId": "WA200005145",
+  "permissions": [],
+  "privacyUrl": "https://givebackcsr.com/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ff583d53-dee4-4f92-9a33-b97fca9942af/2025071114534126/ff583d53-dee4-4f92-9a33-b97fca9942af_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ff583d53-dee4-4f92-9a33-b97fca9942af/2025071114534126/ff583d53-dee4-4f92-9a33-b97fca9942af_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ff583d53-dee4-4f92-9a33-b97fca9942af/2025071114534126/ff583d53-dee4-4f92-9a33-b97fca9942af_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ff583d53-dee4-4f92-9a33-b97fca9942af/2025071114534126/ff583d53-dee4-4f92-9a33-b97fca9942af_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Build a culture of sustainability within your business, school, or organisation.",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ff583d53-dee4-4f92-9a33-b97fca9942af/2025071114534126/ff583d53-dee4-4f92-9a33-b97fca9942af_smallimage.png",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teams.givebackcsr.com/tabs/scoreboard",
+      "entityId": "ae6992dd-60b2-4bcd-bb9e-3120ee80e2b7",
+      "name": "Leaderboard",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071114534126",
+  "termsOfUseUrl": "https://givebackcsr.com/terms",
+  "validDomains": [
+    "teams.givebackcsr.com",
+    "app.givebackcsr.com"
+  ],
+  "videoUrl": "https://youtu.be/L3LO1KzxvsI",
+  "webApplicationInfo": {
+    "id": "5c3bba0c-7db4-46fd-89dc-b365305cf0a4",
+    "resource": "api://teams.givebackcsr.com/5c3bba0c-7db4-46fd-89dc-b365305cf0a4"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@GiveBack Can you help me understand how to initiate our sustainability program?",
+      "description": "The user is seeking guidance on starting a sustainability initiative within their organization.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@GiveBack How do I get the sustainability project started in our school?",
+      "description": "The user wants to know the steps to begin a sustainability project in their educational institution.",
+      "command": "Get Started"
+    },
+    {
+      "prompt": "@GiveBack I need assistance with sustainability efforts in our office. Can you help?",
+      "description": "The user is looking for assistance with implementing sustainability practices in their office.",
+      "command": "Help"
+    }
+  ]
+}

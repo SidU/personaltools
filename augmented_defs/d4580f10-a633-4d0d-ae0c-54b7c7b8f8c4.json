@@ -1092,16 +1092,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Pyn Can you send a welcome message to the new hires?",
-      "description": "User requests the bot to send a personalized welcome message to new team members."
+      "prompt": "@Pyn send a welcome message to new employees",
+      "description": "The user wants Pyn to send a personalized welcome message to new team members.",
+      "command": "send"
     },
     {
-      "prompt": "@Pyn Schedule a reminder for the upcoming HR policy update meeting",
-      "description": "User asks the bot to send a scheduled reminder about an upcoming HR meeting."
+      "prompt": "@Pyn schedule a reminder for the upcoming benefits enrollment period",
+      "description": "The user requests Pyn to notify the team about the upcoming benefits enrollment.",
+      "command": "send"
     },
     {
-      "prompt": "@Pyn Share the latest company benefits update with all employees",
-      "description": "User instructs the bot to disseminate the latest information about company benefits to the entire team."
+      "prompt": "@Pyn create a personalized message for team members with upcoming work anniversaries",
+      "description": "The user asks Pyn to generate a special message for employees celebrating work anniversaries soon.",
+      "command": "send"
     }
   ]
 }

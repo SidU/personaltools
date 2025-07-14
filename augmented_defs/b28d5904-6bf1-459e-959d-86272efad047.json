@@ -1077,18 +1077,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Ta1010 Could you help me find the latest updates on our project?",
-      "description": "User asking for assistance with project updates, potentially leading to further tasks or inquiries."
-    },
-    {
-      "prompt": "@Ta1010 askta Can you summarize the recent team meeting notes?",
-      "description": "User requesting a summary of the most recent team meeting notes.",
+      "prompt": "@Ta1010 can you askta to summarize the key points from today's team meeting notes?",
+      "description": "The user asks the bot to summarize information from meeting notes.",
       "command": "askta"
     },
     {
-      "prompt": "@Ta1010 tickets I need to check the status of the ticket ID 12345.",
-      "description": "User inquiring about the status of a specific ticket using its ID.",
+      "prompt": "@Ta1010 tickets open a new support ticket for the issue with the project management software not syncing.",
+      "description": "The user requests the bot to create a new support ticket for a software issue.",
       "command": "tickets"
+    },
+    {
+      "prompt": "@Ta1010 can you askta to find the latest updates on the project roadmap?",
+      "description": "The user asks the bot to retrieve the latest updates on a specific project roadmap.",
+      "command": "askta"
     }
   ]
 }

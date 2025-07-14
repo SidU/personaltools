@@ -1,0 +1,148 @@
+{
+  "manifestVersion": "1.11",
+  "id": "3d157066-8aab-4fbe-bec7-bc1c9914014e",
+  "version": "1.0.1",
+  "name": "Prisma SD-WAN (Elcapitan)",
+  "accentColor": "#04C4EC",
+  "amsSellerAccountId": 77892800,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Retrieve list of applications and application specific attributes",
+              "title": "show apps"
+            },
+            {
+              "description": "Retrieve Prisma SD-WAN events",
+              "title": "show events"
+            },
+            {
+              "description": "Show site health data such as events, device and link status",
+              "title": "show health"
+            },
+            {
+              "description": "Retrieve interfaces from a device",
+              "title": "show interfaces"
+            },
+            {
+              "description": "Retrieve Prisma SD-WAN inventory",
+              "title": "show inventory"
+            },
+            {
+              "description": "Retrieve performance metrics such as bandwidth utilization, app performance, link quality, etc.",
+              "title": "show metrics"
+            },
+            {
+              "description": "Retrieve circuits and paths for a given site",
+              "title": "show paths"
+            },
+            {
+              "description": "Retrieve list of sites and site specific attributes",
+              "title": "show sites"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "2b4ac9d2-e06b-478c-af94-5f197618f82a",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "DataVisualizationAndBI",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Palo Alto Networks Inc.",
+  "developerUrl": "https://www.paloaltonetworks.com/",
+  "industries": [
+    "Other"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "prisma",
+    "prisma sdwan",
+    "cloudgenix"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3d157066-8aab-4fbe-bec7-bc1c9914014e/2025071113293873/3d157066-8aab-4fbe-bec7-bc1c9914014e_largeimage.png",
+  "lastUpdatedAt": "2022-02-22T05:24:52.7315755+00:00",
+  "longDescription": "The Prisma SD-WAN (Elcapitan) Chatbot Application provides access to real time information from the Prisma SD-WAN network via the Microsoft Teams application. The Chatbot establishes a direct channel to communicate with the Prisma SD-WAN controller in Elcapitan region. This integration is enabled via the Prisma SD-WAN CloudBlade infrastructure. \n\nGetting Started:\n- Create an Azure Group and copy the group ID (object ID)\n- Login to the Prisma SD-WAN Controller and go to the CloudBlades tab\n- Search for Chatbot - Microsoft Teams and click configure\n- Configure the Azure group ID and install the Chatbot - Microsoft Teams CloudBlade. Access to the Bot is controlled by the Azure Group IDs configured on the Chatbot Microsoft Teams CloudBlade. \n\nOnce enabled and installed in a channel on Microsoft Teams, users can access real-time information on site and device configuration, site health, inventory information, events, and network metrics such as bandwidth utilization, application health, and application performance. \n\nPlease use the help command to review the list of supported commands. \n\nFor support, please use the link below\nhttps://www.paloaltonetworks.com/company/contact-sales\n\nIf you're currently not a Prisma SD-WAN customer, please speak to a sales representative by calling 866.320.4788 or 408.753.4000. More details on contacting sales are provided on the link below.\nhttps://www.paloaltonetworks.com/company/contact-sales",
+  "mpnId": "4797548",
+  "officeAssetId": "WA200003802",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.paloaltonetworks.com/legal-notices/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3d157066-8aab-4fbe-bec7-bc1c9914014e/2025071113293873/3d157066-8aab-4fbe-bec7-bc1c9914014e_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3d157066-8aab-4fbe-bec7-bc1c9914014e/2025071113293873/3d157066-8aab-4fbe-bec7-bc1c9914014e_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3d157066-8aab-4fbe-bec7-bc1c9914014e/2025071113293873/3d157066-8aab-4fbe-bec7-bc1c9914014e_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3d157066-8aab-4fbe-bec7-bc1c9914014e/2025071113293873/3d157066-8aab-4fbe-bec7-bc1c9914014e_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3d157066-8aab-4fbe-bec7-bc1c9914014e/2025071113293873/3d157066-8aab-4fbe-bec7-bc1c9914014e_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Get real time status & configuration from the Prisma SD-WAN Elcapitan region",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3d157066-8aab-4fbe-bec7-bc1c9914014e/2025071113293873/3d157066-8aab-4fbe-bec7-bc1c9914014e_smallimage.png",
+  "systemVersion": "2025071113293873",
+  "termsOfUseUrl": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/legal/palo-alto-networks-end-user-license-agreement-eula.pdf",
+  "validDomains": [],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Prisma SD-WAN (Elcapitan) show health",
+      "description": "The user wants to check the current health status of the Prisma SD-WAN in the Elcapitan region.",
+      "command": "show health"
+    },
+    {
+      "prompt": "@Prisma SD-WAN (Elcapitan) show interfaces",
+      "description": "The user is requesting detailed information about the network interfaces of the SD-WAN in the Elcapitan region.",
+      "command": "show interfaces"
+    },
+    {
+      "prompt": "@Prisma SD-WAN (Elcapitan) show apps",
+      "description": "The user wants to see a list of all applications currently running through the Prisma SD-WAN in the Elcapitan region.",
+      "command": "show apps"
+    }
+  ]
+}

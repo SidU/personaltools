@@ -1,0 +1,186 @@
+{
+  "manifestVersion": "1.14",
+  "id": "3abc9653-69b2-427c-9c1a-ab4b21b9a69e",
+  "version": "1.1.8",
+  "name": "Heymarket",
+  "accentColor": "#FFC926",
+  "amsSellerAccountId": 71918520,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Use this action to start a conversation with a Heymarket contact.",
+              "title": "text [Phone] [Text Message]"
+            },
+            {
+              "description": "Get help to use Heymarket Bot.",
+              "title": "help"
+            },
+            {
+              "description": "Use this action to send SMS using a Heymarket list",
+              "title": "list \"List Name\" Text Message"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "3abc9653-69b2-427c-9c1a-ab4b21b9a69e",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "SalesAndMarketing"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Common Sun, Inc.",
+  "developerUrl": "https://www.heymarket.com",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://app.heymarket.com/msteams/config.html",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "3abc9653-69b2-427c-9c1a-ab4b21b9a69e",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "commandBox",
+            "compose",
+            "message"
+          ],
+          "description": "",
+          "fetchTask": true,
+          "id": "templateMessage",
+          "initialRun": true,
+          "title": "Template Message",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "integrations.heymarket.com"
+            ],
+            "supportsAnonymousAccess": false
+          }
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "SMS",
+    "Text Messaging",
+    "Customer Support"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3abc9653-69b2-427c-9c1a-ab4b21b9a69e/2025071112440471/3abc9653-69b2-427c-9c1a-ab4b21b9a69e_largeimage.png",
+  "lastUpdatedAt": "2022-11-04T17:19:35.3995705+00:00",
+  "longDescription": "Send and receive SMS, Facebook Messenger, Apple Business Chat, Google's Business Messages and WhatsApp.\nRespond to customers  from Channels and Tabs. Customers never have to install an app and receive normal SMS. Your team can read and reply to messages using business grade features like assignments, templates and archive. Heymarket is trusted by thousands of companies, big and small, such as Keller Williams, UHaul, and Dignity Health.\n\nPlease follow the [instructions](https://help.heymarket.com/hc/en-us/articles/360047215552-Microsoft-Teams) to setup the app",
+  "mpnId": "6580520",
+  "officeAssetId": "WA200002210",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.heymarket.com/privacy/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3abc9653-69b2-427c-9c1a-ab4b21b9a69e/2025071112440471/3abc9653-69b2-427c-9c1a-ab4b21b9a69e_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3abc9653-69b2-427c-9c1a-ab4b21b9a69e/2025071112440471/3abc9653-69b2-427c-9c1a-ab4b21b9a69e_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3abc9653-69b2-427c-9c1a-ab4b21b9a69e/2025071112440471/3abc9653-69b2-427c-9c1a-ab4b21b9a69e_screenshot/2.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3abc9653-69b2-427c-9c1a-ab4b21b9a69e/2025071112440471/3abc9653-69b2-427c-9c1a-ab4b21b9a69e_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3abc9653-69b2-427c-9c1a-ab4b21b9a69e/2025071112440471/3abc9653-69b2-427c-9c1a-ab4b21b9a69e_screenshot/4.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Heymarket - Business Text Messaging for Microsoft teams",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/3abc9653-69b2-427c-9c1a-ab4b21b9a69e/2025071112440471/3abc9653-69b2-427c-9c1a-ab4b21b9a69e_smallimage.png",
+  "systemVersion": "2025071112440471",
+  "termsOfUseUrl": "https://www.heymarket.com/tos/",
+  "validDomains": [
+    "integrations.heymarket.com",
+    "app.heymarket.com"
+  ],
+  "videoUrl": "https://youtu.be/9gwF7aLLRZE",
+  "webApplicationInfo": {
+    "id": "3abc9653-69b2-427c-9c1a-ab4b21b9a69e",
+    "resource": "https://notapplicable"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Heymarket text 1234567890 Hi there! Just wanted to confirm our meeting tomorrow at 3 PM.",
+      "description": "User wants to send a confirmation text message to a phone number.",
+      "command": "text"
+    },
+    {
+      "prompt": "@Heymarket help",
+      "description": "User needs assistance with using the Heymarket bot.",
+      "command": "help"
+    },
+    {
+      "prompt": "@Heymarket list \"VIP Clients\" New promotion alert! Check your email for exclusive offers.",
+      "description": "User wants to send a promotional text message to a predefined list named 'VIP Clients'.",
+      "command": "list"
+    }
+  ]
+}

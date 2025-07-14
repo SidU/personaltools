@@ -1,0 +1,411 @@
+{
+  "manifestVersion": "1.12",
+  "id": "61a58a9f-3474-4d14-bda6-6547194a7381",
+  "version": "4.0.0",
+  "name": "LiftUp",
+  "accentColor": "#0a86cb",
+  "amsSellerAccountId": 72117880,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": []
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Usage: praise @someuser Some praise to share #category",
+              "title": "praise"
+            },
+            {
+              "description": "Get some help on how to use LiftUp",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "69e59100-2fb7-4f6e-a311-987f52b3007b",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "groupChat",
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "HumanResourcesAndRecruiting",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultGroupCapability": {
+    "groupchat": "tab",
+    "meetings": "bot",
+    "team": "tab"
+  },
+  "defaultInstallScope": "team",
+  "developerName": "surviveF5 GmbH",
+  "developerUrl": "https://liftup-teams.com",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://api.kudozza.com/app/team/configure?theme={theme}",
+      "context": [
+        "channelTab",
+        "privateChatTab"
+      ],
+      "scopes": [
+        "groupChat",
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "69e59100-2fb7-4f6e-a311-987f52b3007b",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "A praise is a short text message praising a team mate",
+          "fetchTask": true,
+          "id": "kudos",
+          "initialRun": true,
+          "taskInfo": {
+            "height": "medium",
+            "title": "Give praise",
+            "url": "https://api.kudozza.com/app/dialog?theme={theme}",
+            "width": "medium"
+          },
+          "title": "Give praise",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "appreciation",
+    "praise",
+    "recognition"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/61a58a9f-3474-4d14-bda6-6547194a7381/2025071112283582/61a58a9f-3474-4d14-bda6-6547194a7381_largeimage.png",
+  "lastUpdatedAt": "2024-08-29T14:45:46.8971557+00:00",
+  "longDescription": "In your quest to foster a remarkable company culture, the role of appreciation and recognition cannot be overstated—a point consistently emphasized by experts. LiftUp has evolved a comprehensive toolset that not only measures but actively kindles employee engagement, all without leaving Microsoft Teams.\n\nWith LiftUp, effortlessly integrating messages of recognition and praise into everyones daily tasks becomes second nature, simplifying the cultivation of an appreciation-rich culture. Like any habit, the practice of giving positive feedback becomes more ingrained over time, and LiftUp expedites this evolution.\n\n**Key Benefits**\n\n- Fosters a “culture of appreciation”\n- Shares celebrations instantly across your organisation\n- Brings your company’s values to life with tags\n- Boosts employee engagement through onboarding, challenges, and leaderboards\n- Encourages collaboration and helpfulness amoung team members.\n- Increases the visibility of achievements\n\n**Key Features**\n\n- Fully integrated in Microsoft Teams – No extra login. No switching to other apps.\n- Reactions – Extends message emojis with company branding and uniqueness\n- Digest – Find all recognition and praise in one place\n- Tags – Reinforce company values with custom high-visibility tags\n- Badges – Users can collect badges as they engage with the system\n- Challenges – Special timed events with badges for long term motivation\n- Leaderboard – Optional leaderboard to supply gamification and encourage engagement while still fulfilling privacy requirements\n- Insights – To unpack engagement in your organisation\n\nFully GDPR, CCPA and PCI compliant\n\n**Top 3 reasons why teams add LiftUp!**\n\n- Makes recognition and praise publically visible and findable\n- Actively adds to a culture of recognition and appreciation\n- Connects company values with behaviours\n\n**Getting started**\nWe recommend to install LiftUp in a Team first. Read more in our [Getting started guide](https://liftup-teams.com/getting-started)\n\nIf you have questions, visit our [help pages](https://liftup-teams.com/help/) and don't hesitate to contact us at info@liftup-teams.com\n",
+  "mpnId": "6266369",
+  "officeAssetId": "WA200002599",
+  "permissions": [],
+  "privacyUrl": "https://liftup-teams.com/privacy",
+  "publisherDocsUrl": "https://liftup-teams.com/getting-started",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/61a58a9f-3474-4d14-bda6-6547194a7381/2025071112283582/61a58a9f-3474-4d14-bda6-6547194a7381_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/61a58a9f-3474-4d14-bda6-6547194a7381/2025071112283582/61a58a9f-3474-4d14-bda6-6547194a7381_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/61a58a9f-3474-4d14-bda6-6547194a7381/2025071112283582/61a58a9f-3474-4d14-bda6-6547194a7381_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/61a58a9f-3474-4d14-bda6-6547194a7381/2025071112283582/61a58a9f-3474-4d14-bda6-6547194a7381_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/61a58a9f-3474-4d14-bda6-6547194a7381/2025071112283582/61a58a9f-3474-4d14-bda6-6547194a7381_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "mcasId": "36547",
+    "status": "m365Certified"
+  },
+  "shortDescription": "Recognize good work across teams to elevate workplace culture",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/61a58a9f-3474-4d14-bda6-6547194a7381/2025071112283582/61a58a9f-3474-4d14-bda6-6547194a7381_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://api.kudozza.com/app/personal/digest?theme={theme}",
+      "entityId": "digest",
+      "name": "Digest",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://api.kudozza.com/app/personal/insights?theme={theme}",
+      "entityId": "insights",
+      "name": "Insights",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://api.kudozza.com/app/personal/settings?theme={theme}",
+      "entityId": "settings",
+      "name": "Settings",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "subscriptionOffer": {
+    "isEligibleForAzureBenefits": false,
+    "offerId": "survivef5gmbh1598335334616.kudozza-tiered-production"
+  },
+  "systemVersion": "2025071112283582",
+  "termsOfUseUrl": "https://liftup-teams.com/terms",
+  "validDomains": [
+    "*.kudozza.com",
+    "*.liftup-teams.com",
+    "token.botframework.com"
+  ],
+  "webApplicationInfo": {
+    "id": "69e59100-2fb7-4f6e-a311-987f52b3007b",
+    "resource": "api://api.kudozza.com/69e59100-2fb7-4f6e-a311-987f52b3007b"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@LiftUp praise @johndoe for delivering an exceptional presentation today. It really elevated our team's understanding of the project!",
+      "description": "User wants to recognize John's exceptional presentation skills.",
+      "command": "praise"
+    },
+    {
+      "prompt": "@LiftUp help",
+      "description": "User is requesting assistance or information on how to use LiftUp features.",
+      "command": "help"
+    },
+    {
+      "prompt": "@LiftUp praise @janesmith and the marketing team for their outstanding work on the recent campaign launch. It exceeded all expectations!",
+      "description": "User wants to commend Jane Smith and her team for their successful campaign work.",
+      "command": "praise"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "manifestVersion": "1.12",
+  "id": "a1f5ad93-accd-463f-a8d5-904c77015815",
+  "version": "1.0.7",
+  "name": "Tailored Talks",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 77999760,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Get a list of commands this bot can accept",
+              "title": "Help"
+            },
+            {
+              "description": "Search for a talk",
+              "title": "Search Talk"
+            },
+            {
+              "description": "Get a specific talk by name",
+              "title": "Get Talk"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Get a list of commands this bot can accept",
+              "title": "Help"
+            },
+            {
+              "description": "Search for a talk",
+              "title": "Search Talk"
+            },
+            {
+              "description": "Get a specific talk by name",
+              "title": "Get Talk"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Get a list of commands this bot can accept",
+              "title": "Help"
+            },
+            {
+              "description": "Search for a talk",
+              "title": "Search Talk"
+            },
+            {
+              "description": "Get a specific talk by name",
+              "title": "Get Talk"
+            }
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "802b0078-f416-4de6-a86e-25327a641181",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Reference",
+    "TrainingAndTutorial"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Pogo Studio",
+  "developerUrl": "https://www.pogo-studio.com/",
+  "industries": [
+    "HealthCareAndLifeSciences"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "802b0078-f416-4de6-a86e-25327a641181",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Search for talks by name",
+          "fetchTask": false,
+          "id": "searchTalks",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search by name",
+              "inputType": "text",
+              "name": "searchText",
+              "title": "Name"
+            }
+          ],
+          "title": "Search Talks",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [],
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "healthcare"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a1f5ad93-accd-463f-a8d5-904c77015815/2025071112174284/a1f5ad93-accd-463f-a8d5-904c77015815_largeimage.png",
+  "lastUpdatedAt": "2022-06-30T13:22:17.1437784+00:00",
+  "longDescription": "Our flagship information-sharing product Tailored Talks was developed in partnership with stroke clinicians at NHS Lothian and with Chest Heart and Stroke Scotland, and is currently supporting NHS Scotland’s response to the COVID-19 pandemic in some intensive care units.\n\nTailored Talks enables clinicians to share personalised information with patients, in the format of accessible, easy-to-digest slide presentations that can be easily tailored to include only the information that’s relevant to the individual. These presentations can then be sent directly to patients.\n\nTo access Tailored Talks you need to be added as an organisation. Individual clinicians can then be added with various permission levels. Single-sign-on to local Tailored Talks accounts is provided, and users can map accounts with Microsoft Teams for seamless user-experience. \n\nThe system is supported by the NHS Lothian Innovations Team, and has also been funded by the Scottish Government",
+  "mpnId": "6477802",
+  "officeAssetId": "WA200004309",
+  "permissions": [],
+  "privacyUrl": "https://teams.tailored-talks.com/pdf/PrivacyPolicy.pdf",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a1f5ad93-accd-463f-a8d5-904c77015815/2025071112174284/a1f5ad93-accd-463f-a8d5-904c77015815_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a1f5ad93-accd-463f-a8d5-904c77015815/2025071112174284/a1f5ad93-accd-463f-a8d5-904c77015815_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a1f5ad93-accd-463f-a8d5-904c77015815/2025071112174284/a1f5ad93-accd-463f-a8d5-904c77015815_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a1f5ad93-accd-463f-a8d5-904c77015815/2025071112174284/a1f5ad93-accd-463f-a8d5-904c77015815_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a1f5ad93-accd-463f-a8d5-904c77015815/2025071112174284/a1f5ad93-accd-463f-a8d5-904c77015815_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Tailored Talks enables clinicians to share custom presentations with patients",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a1f5ad93-accd-463f-a8d5-904c77015815/2025071112174284/a1f5ad93-accd-463f-a8d5-904c77015815_smallimage.png",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teams.tailored-talks.com/",
+      "entityId": "44352c99-25ef-4435-b64b-76f4a6bd51c3",
+      "name": "Tailored Talks Home",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://teams.tailored-talks.com/"
+    },
+    {
+      "contentUrl": "https://teams.tailored-talks.com/TailoredTalks/AddEditTailoredTalkHtml",
+      "entityId": "76ecaead-f4b7-479b-a6d0-83b14e789bed",
+      "name": "Add Talk",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://teams.tailored-talks.com/TailoredTalks/AddEditTailoredTalkHtml"
+    },
+    {
+      "contentUrl": "https://teams.tailored-talks.com/TailoredTalks",
+      "entityId": "6f70bd7c-93b9-4c91-961e-fc7f4dd1a4a4",
+      "name": "My Talks",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://teams.tailored-talks.com/TailoredTalks"
+    },
+    {
+      "contentUrl": "https://teams.tailored-talks.com/TailoredTalks/AllTailoredTalks?mode=core",
+      "entityId": "be607dbf-f57d-48c6-b35c-a2eb63a7a1ae",
+      "name": "Core Talks",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://teams.tailored-talks.com/TailoredTalks/AllTailoredTalks?mode=core"
+    },
+    {
+      "contentUrl": "https://teams.tailored-talks.com/SlideLibrary",
+      "entityId": "cd043e8c-7f6c-4e59-9b55-9d20f69f3f7e",
+      "name": "Slide Library",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://teams.tailored-talks.com/SlideLibrary"
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071112174284",
+  "termsOfUseUrl": "https://teams.tailored-talks.com/pdf/TermsOfUse.pdf",
+  "validDomains": [
+    "teams.tailored-talks.com",
+    "token.botframework.com",
+    "*.tailored-talks.com"
+  ],
+  "videoUrl": "https://youtu.be/XacDNZo6sVw",
+  "webApplicationInfo": {
+    "id": "802b0078-f416-4de6-a86e-25327a641181",
+    "resource": "api://teams.tailored-talks.com/botid-802b0078-f416-4de6-a86e-25327a641181"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Tailored Talks Help",
+      "description": "A user is seeking assistance on how to use the Tailored Talks bot and its features.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@Tailored Talks Search Talk diabetes management",
+      "description": "A clinician wants to find a presentation related to diabetes management to share with a patient.",
+      "command": "Search Talk"
+    },
+    {
+      "prompt": "@Tailored Talks Get Talk 12345",
+      "description": "A user requests to retrieve a specific presentation using its ID to review or share with a patient.",
+      "command": "Get Talk"
+    }
+  ]
+}

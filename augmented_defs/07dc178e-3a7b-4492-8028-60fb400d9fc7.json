@@ -1064,16 +1064,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Tenable Cloud Security show latest security notifications",
-      "description": "The user asks the bot to display the most recent security notifications from Tenable Cloud Security."
+      "prompt": "@Tenable Cloud Security show recent security notifications",
+      "description": "Request the bot to display the latest security notifications from Tenable Cloud Security.",
+      "command": "show recent security notifications"
     },
     {
-      "prompt": "@Tenable Cloud Security configure notifications",
-      "description": "The user requests the bot to set up or modify their security notification preferences in Tenable Cloud Security."
+      "prompt": "@Tenable Cloud Security notify me of any critical security alerts",
+      "description": "Ask the bot to send notifications for any critical security alerts from Tenable Cloud Security.",
+      "command": "notify me of any critical security alerts"
     },
     {
-      "prompt": "@Tenable Cloud Security help",
-      "description": "The user asks the bot for assistance or a list of available commands and functionalities."
+      "prompt": "@Tenable Cloud Security summarize today's security updates",
+      "description": "Instruct the bot to provide a summary of all security updates received today from Tenable Cloud Security.",
+      "command": "summarize today's security updates"
     }
   ]
 }

@@ -1,0 +1,1864 @@
+{
+  "manifestVersion": "1.12",
+  "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+  "version": "1.0.12",
+  "name": "Docebo",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 77571240,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Connect to an LMS",
+              "title": "connect"
+            },
+            {
+              "description": "Disconnect from the LMS",
+              "title": "disconnect"
+            },
+            {
+              "description": "View list of bot commands",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "groupChat",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "TrainingAndTutorial"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor",
+    "developerUrl",
+    "privacyUrl",
+    "termsOfUseUrl"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Docebo",
+  "developerUrl": "https://www.docebo.com/",
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "962a955a-0aff-4320-b08e-45354c2a12f9",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Search for a course to share",
+          "fetchTask": false,
+          "id": "courses",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Search for...",
+              "inputType": "text",
+              "name": "query",
+              "title": "Search for..."
+            }
+          ],
+          "title": "Courses",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Search for training material to share",
+          "fetchTask": false,
+          "id": "training_materials",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Search for...",
+              "inputType": "text",
+              "name": "query",
+              "title": "Search for..."
+            }
+          ],
+          "title": "Training Material",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "LXP",
+    "LMS",
+    "Learning"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_largeimage.png",
+  "lastUpdatedAt": "2025-05-29T08:57:40.552211+00:00",
+  "longDescription": "Are you trying to increase LMS adoption and the completion rates of your training materials? Transform your learning environment with a seamless integration that adds learning to where people are already familiar and spend most of their time - in Microsoft Teams. Boost training adoption and productivity by bringing learning into the flow of work. Deliver a personalized, accessible and collaborative learning experience, without leaving Microsoft Teams.\n**Remove barriers to learning by:** \n- Personalizing training dashboards for different audiences within Teams.\r- Making training searchable and accessible within Teams.\r- Facilitating training collaboration between Teams users.\r- Allowing your Microsoft Teams admin to personalize the experience with a customized design, app name, description, logo, icon, and more.\n**Benefits to learners:**\n- **Learn on the fly and consume training material where you work.** This seamless integration helps you facilitate learning more organically, where learners already spend their time.\r- **Easily access your courses and training material in Teams.** Docebo for Microsoft Teams offers training dashboards within Microsoft Teams that can be personalized for different audiences, engaging learners, driving adoption, and making learning more convenient.\r- **Boost learners’ productivity and create a collaborative learning experience.** Support your learning culture by bringing learning into the flow of work, making it easier to consume content and facilitating social learning and knowledge sharing.\r- **Increase learning adoption and remove barriers to learning.** Make learning easy and convenient, helping create an ‘always on’ culture of learning.\nDownload the app now and break down learning barriers by integrating Docebo with your Microsoft Teams platform.\nA Docebo Learn account is required to use this app. Without an account, you will not be able to access its functionality. Please reach out to your Docebo Learn Administrator or visit our [webpage](https://www.docebo.com/products/learn-lms/ms-teams/) for more information.\n**Additional Resources**\n[Support Documentation](https://help.docebo.com/hc/en-us)",
+  "mpnId": "6683944",
+  "officeAssetId": "WA200005926",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.docebo.com/company/privacy-policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/2.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/4.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Effective learning with Docebo LMS, directly in Microsoft Teams",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://ate.docebo.cloud/dashboard",
+      "entityId": "dashboardTab",
+      "name": "Dashboard",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115174529",
+  "termsOfUseUrl": "https://tos.docebo.com/Docebo_MSA.pdf",
+  "validDomains": [
+    "ate.docebo.cloud"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=aD2PcGVvkXk",
+  "webApplicationInfo": {
+    "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+    "resource": "api://ate.docebo.cloud/962a955a-0aff-4320-b08e-45354c2a12f9"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.12",
+      "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+      "version": "1.0.12",
+      "name": "Docebo",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 77571240,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Mit einem LMS verbinden",
+                  "title": "connect"
+                },
+                {
+                  "description": "Vom LMS trennen",
+                  "title": "disconnect"
+                },
+                {
+                  "description": "Liste der Schlüsselfunktionen anzeigen",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "TrainingAndTutorial"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Docebo",
+      "developerUrl": "https://www.docebo.com/",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "962a955a-0aff-4320-b08e-45354c2a12f9",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Nach einem Kurs zum Teilen suchen",
+              "fetchTask": false,
+              "id": "courses",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Suchen nach...",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "Suchen nach..."
+                }
+              ],
+              "title": "Kurse",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Nach Schulungsunterlagen zum Teilen suchen",
+              "fetchTask": false,
+              "id": "training_materials",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Suchen nach...",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "Suchen nach..."
+                }
+              ],
+              "title": "Schulungsunterlage",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "LXP",
+        "LMS",
+        "Learning"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_largeimage.png",
+      "lastUpdatedAt": "2025-05-29T08:57:40.552211+00:00",
+      "longDescription": "Versuchen Sie, die Akzeptanz Ihrer LMS-Plattform und die Abschlussraten Ihrer Schulungsunterlagen zu erhöhen? Verändern Sie Ihre Lernumgebung mit einer nahtlosen Integration, die das Lernen in eine bereits vertraute Umgebung bringt, in der die Mitarbeiter die meiste Zeit verbringen: Microsoft Teams. Steigern Sie die Akzeptanz von Schulungen und die Produktivität, indem Sie das Lernen in den Arbeitsablauf einbinden. Bieten Sie eine personalisierte, zugängliche und kollaborative Lernerfahrung, ohne Microsoft Teams zu verlassen.\n**Beseitigen Sie Lernhindernisse durch:** \n- Personalisierung von Schulungs-Dashboards für verschiedene Zielgruppen in Teams.\r- Durchsuchbarkeit und Zugänglichkeit von Schulungen in Teams.\r- Erleichterung der Zusammenarbeit zwischen Teams-Benutzern bei Schulungen.\r- Möglichkeit für Ihren Microsoft Teams-Administrator, das Erlebnis mit einem benutzerdefinierten Design, App-Namen, Beschreibung, Logo, Symbol und mehr zu personalisieren.\n**Vorteile für die Lernenden:**\n- **Lernen Sie spontan und konsumieren Sie Schulungsunterlagen dort, wo Sie arbeiten.** Diese nahtlose Integration hilft Ihnen, das Lernen dort zu fördern, wo die Lernenden bereits ihre Zeit verbringen.\r- **Greifen Sie in Teams ganz einfach auf Ihre Kurse und Schulungsunterlagen zu.** Docebo for Microsoft Teams bietet Schulungs-Dashboards innerhalb von Microsoft Teams, die für verschiedene Zielgruppen personalisiert werden können, um die Lernenden zu motivieren, die Akzeptanz zu fördern und das Lernen zu erleichtern.\r- **Steigern Sie die Produktivität der Lernenden und schaffen Sie eine kollaborative Lernerfahrung.** Unterstützen Sie Ihre Lernkultur, indem Sie das Lernen in den Arbeitsablauf einbinden, die Nutzung von Inhalten erleichtern und das soziale Lernen und den Wissensaustausch fördern.\r- **Steigern Sie die Akzeptanz des Lernens und beseitigen Sie Lernhindernisse.** Machen Sie das Lernen einfach und bequem und tragen Sie dazu bei, eine Kultur des ständigen Lernens zu schaffen.\nLaden Sie die App jetzt herunter und überwinden Sie Lernbarrieren durch die Integration von Docebo in Ihre Microsoft Teams-Plattform.\nFür die Nutzung dieser App ist ein Docebo Learn-Konto erforderlich. Ohne ein Konto können Sie nicht auf die Funktionen der App zugreifen. Bitte wenden Sie sich an Ihren Docebo Learn Administrator oder besuchen Sie unsere [Webseite](https://www.docebo.com/products/learn-lms/ms-teams/) für weitere Informationen.\n**Zusätzliche Ressourcen**\n[Support-Dokumentation](https://help.docebo.com/hc/en-us)",
+      "mpnId": "6683944",
+      "officeAssetId": "WA200005926",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.docebo.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Effektives Lernen mit Docebo LMS, direkt in Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ate.docebo.cloud/dashboard",
+          "entityId": "dashboardTab",
+          "name": "Dashboard",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115174529",
+      "termsOfUseUrl": "https://tos.docebo.com/Docebo_MSA.pdf",
+      "validDomains": [
+        "ate.docebo.cloud"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=aD2PcGVvkXk",
+      "webApplicationInfo": {
+        "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+        "resource": "api://ate.docebo.cloud/962a955a-0aff-4320-b08e-45354c2a12f9"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+      "version": "1.0.12",
+      "name": "Docebo",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 77571240,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Conexión a un LMS",
+                  "title": "connect"
+                },
+                {
+                  "description": "Desconexión del LMS",
+                  "title": "disconnect"
+                },
+                {
+                  "description": "Ver lista de funcionalidades clave",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "TrainingAndTutorial"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Docebo",
+      "developerUrl": "https://www.docebo.com/",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "962a955a-0aff-4320-b08e-45354c2a12f9",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Buscar un curso para compartir",
+              "fetchTask": false,
+              "id": "courses",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Buscar...",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "Buscar..."
+                }
+              ],
+              "title": "Cursos",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Buscar material de formación para compartir",
+              "fetchTask": false,
+              "id": "training_materials",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Buscar...",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "Buscar..."
+                }
+              ],
+              "title": "Material de formación",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "LXP",
+        "LMS",
+        "Learning"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_largeimage.png",
+      "lastUpdatedAt": "2025-05-29T08:57:40.552211+00:00",
+      "longDescription": "¿Está intentando aumentar la adopción del LMS y las tasas de finalización de sus materiales de formación? Transforme su entorno de aprendizaje con una integración sin fisuras que lleva el aprendizaje allá donde a las personas les resulta más familiar y pasan más tiempo: - a Microsoft Teams. Impulse la formación y la productividad integrando el aprendizaje en el flujo de trabajo. Proporcione una experiencia de aprendizaje personalizada, accesible y colaborativa sin salir de Microsoft Teams.\n**Elimine las barreras en torno al aprendizaje:** \n- Personalizando los paneles de formación para diferentes audiencias dentro de Teams.\r- Haciendo que se pueda buscar la formación y acceder a ella dentro de Teams.\r- Facilitando la colaboración en la formación entre usuarios de Teams.\r- Permitiendo a su administrador de Microsoft Teams personalizar la experiencia con un diseño, nombre de la aplicación, descripción, logotipo, icono y más elementos personalizados.\n**Ventajas para los alumnos:**\n- **Aprendizaje sobre la marcha y consumo de los materiales de formación en el lugar de trabajo.** Esta integración sin fisuras le ayuda a facilitar un aprendizaje más orgánico donde los alumnos ya pasan su tiempo.\r- **Acceso fácil a sus cursos y materiales de formación en Teams.** Docebo for Microsoft Teams ofrece paneles de formación dentro de Microsoft Teams que pueden personalizarse para distintas audiencias, implicando a los alumnos, impulsando su adopción y haciendo que el aprendizaje resulte más cómodo.\r- **Aumento de la productividad de los alumnos y creación de una experiencia de aprendizaje colaborativa.** Refuerce su cultura del aprendizaje integrándolo en el flujo de trabajo, haciendo que sea más fácil consumir contenido y facilitando el aprendizaje social y los conocimientos compartidos.\r- **Aumente la adopción del aprendizaje y elimine barreras en torno a él.** Haga que el aprendizaje resulte fácil y cómodo, contribuyendo a crear una cultura del aprendizaje siempre activa.\nDescargue la aplicación ahora y rompa las cadenas del aprendizaje integrando Docebo con su plataforma de Microsoft Teams.\nSe requiere una cuenta de Docebo Learn para utilizar esta aplicación. Si no dispone de una cuenta, no podrá acceder a su funcionalidad. Póngase en contacto con su administrador de Docebo o visite nuestra [página web](https://www.docebo.com/products/learn-lms/ms-teams/) para más información.\n**Recursos adicionales**\n[Documentación de asistencia](https://help.docebo.com/hc/en-us)",
+      "mpnId": "6683944",
+      "officeAssetId": "WA200005926",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.docebo.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Aprendizaje efectivo con el LMS de Docebo, directamente en Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ate.docebo.cloud/dashboard",
+          "entityId": "dashboardTab",
+          "name": "Dashboard",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115174529",
+      "termsOfUseUrl": "https://tos.docebo.com/Docebo_MSA.pdf",
+      "validDomains": [
+        "ate.docebo.cloud"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=aD2PcGVvkXk",
+      "webApplicationInfo": {
+        "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+        "resource": "api://ate.docebo.cloud/962a955a-0aff-4320-b08e-45354c2a12f9"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+      "version": "1.0.12",
+      "name": "Docebo",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 77571240,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Se connecter à un LMS",
+                  "title": "connect"
+                },
+                {
+                  "description": "Se déconnecter du LMS",
+                  "title": "disconnect"
+                },
+                {
+                  "description": "Afficher la liste des principales fonctionnalités",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "TrainingAndTutorial"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Docebo",
+      "developerUrl": "https://www.docebo.com/",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "962a955a-0aff-4320-b08e-45354c2a12f9",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Rechercher un cours à partager",
+              "fetchTask": false,
+              "id": "courses",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Rechercher...",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "Rechercher..."
+                }
+              ],
+              "title": "Cours",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Rechercher des contenus pédagogiques à partager",
+              "fetchTask": false,
+              "id": "training_materials",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Rechercher...",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "Rechercher..."
+                }
+              ],
+              "title": "Contenu Pédagogique",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "LXP",
+        "LMS",
+        "Learning"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_largeimage.png",
+      "lastUpdatedAt": "2025-05-29T08:57:40.552211+00:00",
+      "longDescription": "Essayez-vous d'augmenter l'adoption du LMS et le taux d'achèvement de vos contenus pédagogiques ? Transformez votre environnement d'apprentissage grâce à une intégration transparente qui transporte l'apprentissage dans un environnement connu et où les gens passent le plus clair de leur temps - dans Microsoft Teams. Boostez l'adoption de la formation et la productivité en intégrant l'apprentissage dans le flux de travail. Offrez une expérience d'apprentissage personnalisée, accessible et collaborative, sans quitter Microsoft Teams.\n**Éliminez les obstacles à l'apprentissage en :** \n- Personnalisant des tableaux de bord de formation pour différents publics au sein de Teams.\r- Rendant la formation consultable et accessible au sein de Teams.\r- Facilitant la collaboration en matière de formation entre les utilisateurs de Teams.\r- Permettre à votre administrateur Microsoft Teams de créer une expérience sur-mesure avec un design personnalisé, un nom d'application, une description, un logo, une icône et autres.\n**Avantages pour les apprenants:**\n- **Apprendre à la volée et consulter des contenus pédagogiques au sein de l'environnement où ils travaillent.** Cette intégration transparente vous aide à faciliter l'apprentissage de manière plus organique, là où les apprenants passent déjà leur temps.\r- **Accéder facilement aux cours et contenus pédagogiques dans Teams.** Docebo for Microsoft Teams offre des tableaux de bord de formation dans Microsoft Teams qui peuvent être personnalisés pour différents publics, engageant les apprenants, favorisant l'adoption et rendant l'apprentissage plus pratique.\r- **Boostez la productivité des apprenants et rendez l'apprentissage collaboratif.** Soutenez votre culture d'apprentissage en intégrant l'apprentissage dans le flux de travail, en facilitant la consultation de contenu et en favorisant le social learning et le partage de connaissances.\r- **Augmentez l'adoption de l'apprentissage et supprimez les barrières à l'apprentissage.** Rendez l'apprentissage simple et pratique, en aidant à créer une culture d'apprentissage \" en continu \".\nTéléchargez l'application maintenant et supprimez les barrières à l'apprentissage en intégrant Docebo à votre plateforme Microsoft Teams.\nUn compte Docebo Learn est nécessaire pour utiliser cette application. Sans compte, vous ne pourrez pas accéder à ses fonctionnalités. Veuillez contacter votre administrateur Docebo Learn ou visiter notre [webpage](https://www.docebo.com/products/learn-lms/ms-teams/) pour plus d'informations.\n**Ressources supplémentaires**\n[Documentation d'assistance](https://help.docebo.com/hc/en-us)",
+      "mpnId": "6683944",
+      "officeAssetId": "WA200005926",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.docebo.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Un apprentissage efficace avec le LMS Docebo, directement dans Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ate.docebo.cloud/dashboard",
+          "entityId": "dashboardTab",
+          "name": "Dashboard",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115174529",
+      "termsOfUseUrl": "https://tos.docebo.com/Docebo_MSA.pdf",
+      "validDomains": [
+        "ate.docebo.cloud"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=aD2PcGVvkXk",
+      "webApplicationInfo": {
+        "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+        "resource": "api://ate.docebo.cloud/962a955a-0aff-4320-b08e-45354c2a12f9"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+      "version": "1.0.12",
+      "name": "Docebo",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 77571240,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Connetti a un LMS",
+                  "title": "connect"
+                },
+                {
+                  "description": "Disconnetti dall'LMS",
+                  "title": "disconnect"
+                },
+                {
+                  "description": "Visualizza l'elenco delle funzionalità principali",
+                  "title": "help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "TrainingAndTutorial"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Docebo",
+      "developerUrl": "https://www.docebo.com/",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "962a955a-0aff-4320-b08e-45354c2a12f9",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Cerca un corso da condividere",
+              "fetchTask": false,
+              "id": "courses",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Cerca...",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "Cerca..."
+                }
+              ],
+              "title": "Corsi",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Cerca materiale didattico da condividere",
+              "fetchTask": false,
+              "id": "training_materials",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Cerca...",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "Cerca..."
+                }
+              ],
+              "title": "Materiale Didattico",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "LXP",
+        "LMS",
+        "Learning"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_largeimage.png",
+      "lastUpdatedAt": "2025-05-29T08:57:40.552211+00:00",
+      "longDescription": "Stai cercando di aumentare l'adozione della piattaforma LMS e i tassi di completamento dei materiali didattici? Trasforma il tuo ambiente formativo con un'integrazione perfetta che introduce la formazione in un ambiente già familiare in cui le persone trascorrono la maggior parte del tempo: Microsoft Teams. Potenzia l'adozione e la produttività inserendo la formazione nel flusso di lavoro. Offri un'esperienza formativa personalizzata, accessibile e collaborativa, senza bisogno di uscire da Microsoft Teams.\n**Abbatti le barriere formative:** \n- Personalizza le dashboard formative per i diversi destinatari all'interno di Teams.\r- Rendi la formazione ricercabile e accessibile all'interno di Teams.\r- Facilita la collaborazione formativa tra gli utenti di Teams.\r- Consenti all'amministratore di Microsoft Teams di personalizzare il design, il nome dell'app, la descrizione, il logo, l'icona e altro ancora.\n**Vantaggi per gli studenti:**\n- **Impara al volo e consuma i materiali didattici direttamente dove lavori.** Questa perfetta integrazione aiuta a facilitare la formazione in modo più organico, raggiungendo gli studenti dove serve.\r- **Accedi facilmente ai corsi e ai materiali didattici in Teams.** Docebo for Microsoft Teams offre dashboard formative all'interno di Microsoft Teams che possono essere personalizzate per diversi tipi di pubblico, coinvolgendo gli studenti, promuovendo l'adozione e semplificando la formazione.\r- **Aumenta la produttività degli studenti e crea un'esperienza di formazione collaborativa.** Sostieni la cultura dell’apprendimento inserendo la formazione nel flusso di lavoro, facilitando la fruizione dei contenuti e promuovendo il social learning e la condivisione delle conoscenze.\r- **Aumenta l'adozione della formazione e rimuovi gli ostacoli all'apprendimento.** Semplifica la formazione, contribuendo a creare una cultura dell’apprendimento \"sempre attivo\".\nScarica subito l'app e abbatti le barriere formative integrando Docebo con la tua piattaforma Microsoft Teams.\nPer utilizzare quest'app è necessario disporre di un account Docebo Learn. Senza un account non sarà possibile accedere alle sue funzionalità. Per maggiori informazioni, contatta l'Amministratore di Docebo Learn o visita la nostra [pagina web](https://www.docebo.com/products/learn-lms/ms-teams/).\n**Risorse Aggiuntive**\n[Documentazione di Supporto](https://help.docebo.com/hc/en-us)",
+      "mpnId": "6683944",
+      "officeAssetId": "WA200005926",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.docebo.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Formazione efficace con l'LMS Docebo, direttamente in Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/962a955a-0aff-4320-b08e-45354c2a12f9/2025071115174529/962a955a-0aff-4320-b08e-45354c2a12f9_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ate.docebo.cloud/dashboard",
+          "entityId": "dashboardTab",
+          "name": "Dashboard",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115174529",
+      "termsOfUseUrl": "https://tos.docebo.com/Docebo_MSA.pdf",
+      "validDomains": [
+        "ate.docebo.cloud"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=aD2PcGVvkXk",
+      "webApplicationInfo": {
+        "id": "962a955a-0aff-4320-b08e-45354c2a12f9",
+        "resource": "api://ate.docebo.cloud/962a955a-0aff-4320-b08e-45354c2a12f9"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Docebo connect",
+      "description": "Connect to the Docebo LMS to start accessing learning resources within Teams.",
+      "command": "connect"
+    },
+    {
+      "prompt": "@Docebo help",
+      "description": "Request assistance or more information on how to use Docebo commands effectively.",
+      "command": "help"
+    },
+    {
+      "prompt": "@Docebo disconnect",
+      "description": "Disconnect from the Docebo LMS to stop accessing learning resources within Teams.",
+      "command": "disconnect"
+    }
+  ]
+}

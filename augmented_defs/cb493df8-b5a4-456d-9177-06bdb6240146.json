@@ -1121,19 +1121,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Todoist please add 'Prepare Q3 budget report' to my tasks.",
-      "description": "The user wants to add a new task to their todo list.",
+      "prompt": "@Todoist add 'Finish quarterly report' to my tasks",
+      "description": "User wants to add a new task to their Todoist list.",
       "command": "add"
     },
     {
-      "prompt": "@Todoist set the due date for 'Submit project proposal' to next Friday.",
-      "description": "The user wants to set a due date for an existing task.",
+      "prompt": "@Todoist due 'Finish quarterly report' by next Friday",
+      "description": "User is setting a due date for an existing task.",
       "command": "due"
     },
     {
-      "prompt": "@Todoist can you show me all tasks under the 'Marketing Campaign' project?",
-      "description": "The user requests to view all tasks within a specific project.",
-      "command": "project"
+      "prompt": "@Todoist help",
+      "description": "User is requesting assistance on how to use Todoist commands.",
+      "command": "help"
     }
   ]
 }

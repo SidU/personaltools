@@ -1031,19 +1031,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Opsgenie ack 12345",
-      "description": "Acknowledge a specific alert using its tiny ID.",
-      "command": "ack [tiny-id]"
+      "prompt": "@Opsgenie ack 123abc",
+      "description": "User wants to acknowledge an Opsgenie alert with the tiny-id 123abc.",
+      "command": "ack"
     },
     {
-      "prompt": "@Opsgenie snooze 67890 for 2h",
-      "description": "Snooze a specific alert for 2 hours using its tiny ID.",
-      "command": "snooze [tiny-id] for m/h/d"
+      "prompt": "@Opsgenie snooze 456def for 2h",
+      "description": "User requests to snooze an alert with the tiny-id 456def for 2 hours.",
+      "command": "snooze"
     },
     {
-      "prompt": "@Opsgenie note 'Investigating issue' to 11223",
-      "description": "Add a note to a specific alert using its tiny ID.",
-      "command": "note [note] to [tiny-id]"
+      "prompt": "@Opsgenie alert 'Server down' for team1,user1",
+      "description": "User sends an alert message saying 'Server down' to team1 and user1.",
+      "command": "alert"
     }
   ]
 }

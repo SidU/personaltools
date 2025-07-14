@@ -1,0 +1,2624 @@
+{
+  "manifestVersion": "1.20",
+  "id": "fa517b07-6e99-4075-b72f-6af4e7e89933",
+  "version": "1.0.0",
+  "name": "CEA_Falcon",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 84980180,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "See upcoming priorities",
+              "title": "Show priorities for this week"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Task activity, comments, and project milestones",
+              "title": "Recap work completed this week"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Track important actions",
+              "title": "Create task"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+      "isNotificationOnly": false,
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ITAdmin",
+    "SalesAndMarketing",
+    "Utilities"
+  ],
+  "creatorId": "",
+  "customEngineCopilots": [
+    {
+      "id": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+      "type": "bot"
+    }
+  ],
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Test_Test_new1",
+  "developerUrl": "https://asana.com/?noredirect&utm_source=asana_inproduct&utm_medium=organic_inproduct&utm_campaign=msft_teams_launch",
+  "elementRelationshipSet": {
+    "mutualDependencies": [],
+    "oneWayDependencies": []
+  },
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://teams-uat.integrations.asana.plus/teamstab/configure?locale={locale}",
+      "context": [
+        "privateChatTab",
+        "channelTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel"
+      ],
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "Agriculture",
+    "Manufacturing"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Search Asana tasks",
+          "fetchTask": false,
+          "id": "tasksSearchQuery",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search tasks in Asana",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchQuery",
+              "title": "Search Query"
+            }
+          ],
+          "title": "Tasks",
+          "type": "query"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Search Asana projects",
+          "fetchTask": false,
+          "id": "projectsSearchQuery",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search projects in Asana",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchQuery",
+              "title": "Search Query"
+            }
+          ],
+          "title": "Projects",
+          "type": "query"
+        },
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Search Asana portfolios",
+          "fetchTask": false,
+          "id": "portfoliosSearchQuery",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search portfolios in Asana",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchQuery",
+              "title": "Search Query"
+            }
+          ],
+          "title": "Portfolios",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "message",
+            "commandBox"
+          ],
+          "description": "Create a new Asana task",
+          "fetchTask": true,
+          "id": "createTask",
+          "initialRun": false,
+          "title": "Create Asana task",
+          "type": "action"
+        },
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Add message to Asana Task",
+          "fetchTask": true,
+          "id": "addMessageToTask",
+          "initialRun": false,
+          "title": "Add message to Asana task",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Get notified about updates to a project",
+          "fetchTask": true,
+          "id": "linkProject",
+          "initialRun": false,
+          "title": "Link project",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Adjust notification settings for this channel",
+          "fetchTask": true,
+          "id": "notificationSettings",
+          "initialRun": false,
+          "title": "Notification settings",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "*.asana.com"
+            ],
+            "supportsAnonymousAccess": false
+          }
+        }
+      ],
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_largeimage.png",
+  "lastUpdatedAt": "2025-05-21T04:37:08.7745104+00:00",
+  "longDescription": "Custom CEA published via PC for validation purpose",
+  "officeAssetId": "WA200008421",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://asana.com/terms#privacy-policy",
+  "publisherDocsUrl": "https://help.asana.com/s/article/microsoft-teams-and-asana-integration?language=en_US",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_screenshot/0.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Custom CEA published to PC for Verification",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_smallimage.png",
+  "systemVersion": "2025062316402561",
+  "termsOfUseUrl": "https://asana.com/terms#terms-of-service",
+  "validDomains": [
+    "*.integrations.asana.plus",
+    "*.ngrok.io",
+    "*.asana.plus",
+    "*.asana.com"
+  ],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.20",
+      "id": "fa517b07-6e99-4075-b72f-6af4e7e89933",
+      "version": "1.0.0",
+      "name": "Asana",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 84980180,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Bevorstehende Prioritäten anzeigen",
+                  "title": "Prioritäten der Woche anzeigen"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Task activity, comments, and project milestones",
+                  "title": "Recap work completed this week"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Track important actions",
+                  "title": "Create task"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "SalesAndMarketing",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Test_Test_new1",
+      "developerUrl": "https://asana.com/?noredirect&utm_source=asana_inproduct&utm_medium=organic_inproduct&utm_campaign=msft_teams_launch",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams-uat.integrations.asana.plus/teamstab/configure?locale={locale}",
+          "context": [
+            "privateChatTab",
+            "channelTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Agriculture",
+        "Manufacturing"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Aufgaben in Asana suchen",
+              "fetchTask": false,
+              "id": "tasksSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Aufgaben in Asana suchen",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Suchanfrage"
+                }
+              ],
+              "title": "Aufgaben",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Projekte in Asana suchen",
+              "fetchTask": false,
+              "id": "projectsSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Projekte in Asana suchen",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Suchanfrage"
+                }
+              ],
+              "title": "Projekte",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Portfolios in Asana suchen",
+              "fetchTask": false,
+              "id": "portfoliosSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Portfolios in Asana suchen",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Suchanfrage"
+                }
+              ],
+              "title": "Portfolios",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "message",
+                "commandBox"
+              ],
+              "description": "Neue Aufgabe in Asana erstellen",
+              "fetchTask": true,
+              "id": "createTask",
+              "initialRun": false,
+              "title": "Aufgabe erstellen",
+              "type": "action"
+            },
+            {
+              "context": [
+                "message"
+              ],
+              "description": "Nachricht zu einer Aufgabe in Asana hinzufügen",
+              "fetchTask": true,
+              "id": "addMessageToTask",
+              "initialRun": false,
+              "title": "Nachricht zu Aufgabe hinzufügen",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Nachrichten über Projekte erhalten",
+              "fetchTask": true,
+              "id": "linkProject",
+              "initialRun": false,
+              "title": "Projekt verknüpfen",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Einstellungen für diesen Kanal ändern",
+              "fetchTask": true,
+              "id": "notificationSettings",
+              "initialRun": false,
+              "title": "Benachrichtigungseinstellungen",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.asana.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_largeimage.png",
+      "lastUpdatedAt": "2025-05-21T04:37:08.7745104+00:00",
+      "longDescription": "Mit der Work-Management-Plattform von Asana können sich Ihre Teammitglieder auf die Ziele, Projekte und Aufgaben Ihres Teams konzentrieren – ganz gleich, wann und wo sie arbeiten.\n\n**Produktive Diskussionen**\nArbeiten Sie zusammen an Asana-Aufgaben und sorgen Sie für die notwendige Vernetzung Ihrer Arbeit, ohne Microsoft Teams verlassen zu müssen. Wandeln Sie Diskussionen in Teams direkt in konkrete Asana-Aufgaben um. \n\n**Mehr Einblick**\nSie erhalten Informationen zu Asana-Aufgaben, Projekten, Portfolios und Status-Updates innerhalb von Teams. Suchen Sie nach den von Ihnen benötigten Informationen, stellen Sie den Beteiligten Hintergrundinformationen zur Verfügung und greifen Sie auf Details zu, indem Sie Asana-Aufgaben direkt in Microsoft-Teams abrufen.\n\n**Alle Neuigkeiten in Asana**\nErhalten Sie wichtige Benachrichtigungen in Ihren eigenen, privaten „Meine Aufgaben“. Passen Sie Ihre Benachrichtigungspräferenzen pro Kanal an und verfolgen Sie dann den Aufgabenfortschritt in Ihren Teams-Kanälen. Erfassen Sie die Informationen, die Sie in Asana benötigen, während Sie in Teams konzentriert und miteinander vernetzt bleiben.\n\n**Microsoft Teams mit Asana verknüpfen**\nDiese Integration steht allen Asana-Kunden, die auch über ein Teams-Konto verfügen, kostenlos zur Verfügung.",
+      "officeAssetId": "WA200008421",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://asana.com/terms#privacy-policy",
+      "publisherDocsUrl": "https://help.asana.com/s/article/microsoft-teams-and-asana-integration?language=en_US",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_screenshot/0.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Wandeln Sie Gespräche in Asana-Aufgaben um, damit Ihre Arbeit nach Plan verläuft",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_smallimage.png",
+      "systemVersion": "2025062316402561",
+      "termsOfUseUrl": "https://asana.com/terms#terms-of-service",
+      "validDomains": [
+        "*.integrations.asana.plus",
+        "*.ngrok.io",
+        "*.asana.plus",
+        "*.asana.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "fa517b07-6e99-4075-b72f-6af4e7e89933",
+      "version": "1.0.0",
+      "name": "Asana",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 84980180,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Enterarte de las próximas prioridades",
+                  "title": "Mostrar prioridades de la semana"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Task activity, comments, and project milestones",
+                  "title": "Recap work completed this week"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Track important actions",
+                  "title": "Create task"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "SalesAndMarketing",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Test_Test_new1",
+      "developerUrl": "https://asana.com/?noredirect&utm_source=asana_inproduct&utm_medium=organic_inproduct&utm_campaign=msft_teams_launch",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams-uat.integrations.asana.plus/teamstab/configure?locale={locale}",
+          "context": [
+            "privateChatTab",
+            "channelTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Agriculture",
+        "Manufacturing"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Buscar tareas de Asana",
+              "fetchTask": false,
+              "id": "tasksSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Buscar tareas en Asana",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Consulta de búsqueda"
+                }
+              ],
+              "title": "Tareas",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Buscar proyectos de Asana",
+              "fetchTask": false,
+              "id": "projectsSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Buscar proyectos en Asana",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Consulta de búsqueda"
+                }
+              ],
+              "title": "Proyectos",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Buscar portafolios de Asana",
+              "fetchTask": false,
+              "id": "portfoliosSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Buscar portafolios en Asana",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Consulta de búsqueda"
+                }
+              ],
+              "title": "Portafolios",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "message",
+                "commandBox"
+              ],
+              "description": "Crear una tarea nueva de Asana",
+              "fetchTask": true,
+              "id": "createTask",
+              "initialRun": false,
+              "title": "Crear tarea",
+              "type": "action"
+            },
+            {
+              "context": [
+                "message"
+              ],
+              "description": "Agregar un mensaje a la tarea de Asana",
+              "fetchTask": true,
+              "id": "addMessageToTask",
+              "initialRun": false,
+              "title": "Agregar un mensaje a la tarea",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Recibir notificaciones de las actualizaciones de un proyecto",
+              "fetchTask": true,
+              "id": "linkProject",
+              "initialRun": false,
+              "title": "Vincular el proyecto",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Configurar los ajustes de notificaciones para este canal",
+              "fetchTask": true,
+              "id": "notificationSettings",
+              "initialRun": false,
+              "title": "Ajustes de las notificaciones",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.asana.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_largeimage.png",
+      "lastUpdatedAt": "2025-05-21T04:37:08.7745104+00:00",
+      "longDescription": "Con Asana, la plataforma de gestión del trabajo, tu equipo puede mantenerse enfocado en sus objetivos, proyectos y tareas, sin importar cuándo trabajen ni desde dónde lo hagan.\n\n**Transforma las conversaciones en acciones concretas**\nColabora en las tareas de Asana y mantén al trabajo conectado sin abandonar Teams. Transforma las conversaciones de Teams directamente en tareas concretas de Asana.\n\n**Maximiza la visibilidad**\nMira las tareas, los proyectos, los portafolios y las actualizaciones de estado de Asana dentro de Teams. Busca la información que necesites, comparte el contexto con los demás involucrados y despliega las tareas de Asana para ver los detalles directamente en Microsoft Teams.\n\n**Mantente informado sobre las actualizaciones más relevantes en Asana**\nRecibe notificaciones importantes en tu propia sección privada de Mis tareas. Adapta tus preferencias de notificación por canal, para poder seguir el progreso de las tareas dentro de tus canales de Teams. Da seguimiento a la información que necesitas en Asana, sin perder el foco ni la conexión en Teams.\n\n**Conecta Microsoft Teams con Asana**\nEsta integración está disponible de forma gratuita para todos los clientes de Asana que también tienen una cuenta de Teams.",
+      "officeAssetId": "WA200008421",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://asana.com/terms#privacy-policy",
+      "publisherDocsUrl": "https://help.asana.com/s/article/microsoft-teams-and-asana-integration?language=en_US",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_screenshot/0.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Convierte las conversaciones en acciones en Asana para tener todo bajo control",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_smallimage.png",
+      "systemVersion": "2025062316402561",
+      "termsOfUseUrl": "https://asana.com/terms#terms-of-service",
+      "validDomains": [
+        "*.integrations.asana.plus",
+        "*.ngrok.io",
+        "*.asana.plus",
+        "*.asana.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "fa517b07-6e99-4075-b72f-6af4e7e89933",
+      "version": "1.0.0",
+      "name": "Asana",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 84980180,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Consulter les priorités à venir",
+                  "title": "Voir les priorités de la semaine"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Task activity, comments, and project milestones",
+                  "title": "Recap work completed this week"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Track important actions",
+                  "title": "Create task"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "SalesAndMarketing",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Test_Test_new1",
+      "developerUrl": "https://asana.com/?noredirect&utm_source=asana_inproduct&utm_medium=organic_inproduct&utm_campaign=msft_teams_launch",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams-uat.integrations.asana.plus/teamstab/configure?locale={locale}",
+          "context": [
+            "privateChatTab",
+            "channelTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Agriculture",
+        "Manufacturing"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Rechercher des tâches Asana",
+              "fetchTask": false,
+              "id": "tasksSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Rechercher des tâches sur Asana",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Requête de recherche"
+                }
+              ],
+              "title": "Tâches",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Rechercher des projets Asana",
+              "fetchTask": false,
+              "id": "projectsSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Rechercher des projets sur Asana",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Requête de recherche"
+                }
+              ],
+              "title": "Projets",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Rechercher des portefeuilles Asana",
+              "fetchTask": false,
+              "id": "portfoliosSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Rechercher des portefeuilles sur Asana",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Requête de recherche"
+                }
+              ],
+              "title": "Portefeuilles",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "message",
+                "commandBox"
+              ],
+              "description": "Créer une nouvelle tâche Asana",
+              "fetchTask": true,
+              "id": "createTask",
+              "initialRun": false,
+              "title": "Créer une tâche",
+              "type": "action"
+            },
+            {
+              "context": [
+                "message"
+              ],
+              "description": "Ajouter un message à une tâche Asana",
+              "fetchTask": true,
+              "id": "addMessageToTask",
+              "initialRun": false,
+              "title": "Ajouter un message à une tâche",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Être informé des mises à jour d’un projet",
+              "fetchTask": true,
+              "id": "linkProject",
+              "initialRun": false,
+              "title": "Associer un projet",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Configurer les paramètres de notification pour ce canal",
+              "fetchTask": true,
+              "id": "notificationSettings",
+              "initialRun": false,
+              "title": "Paramètres de notification",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.asana.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_largeimage.png",
+      "lastUpdatedAt": "2025-05-21T04:37:08.7745104+00:00",
+      "longDescription": "Avec la plateforme de gestion du travail Asana, votre équipe reste concentrée sur ses objectifs, projets et tâches quotidiennes, à tout moment et en tout lieu.\n\n**Concrétiser vos discussions**\nCollaborez sur des tâches Asana et reliez toutes vos activités, sans quitter Teams. Concrétisez vos conversations Teams et créez des tâches Asana immédiatement exploitables. \n\n**Renforcer la visibilité**\nConsultez les tâches, projets, portefeuilles et mises à jour de statut Asana depuis Teams. Recherchez les informations dont vous avez besoin, fournissez des informations détaillées aux participants et accédez à tous les détails en affichant les tâches Asana directement sur Microsoft Teams.\n\n**Se tenir informé des mises à jour pertinentes sur Asana**\nRecevez vos notifications importantes dans « Mes tâches ». Personnalisez vos préférences de notification par canal, puis suivez la progression de votre travail sur Teams, depuis vos canaux. Suivez toutes les informations pertinentes sur Asana tout en restant connecté sur Teams, sans distraction. \n\n**Connecter Microsoft Teams à Asana**\nCette intégration est disponible gratuitement pour tous les utilisateurs Asana qui disposent également d’un compte Teams.",
+      "officeAssetId": "WA200008421",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://asana.com/terms#privacy-policy",
+      "publisherDocsUrl": "https://help.asana.com/s/article/microsoft-teams-and-asana-integration?language=en_US",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_screenshot/0.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Transformez vos discussions en tâches Asana pour mener à bien vos projets",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_smallimage.png",
+      "systemVersion": "2025062316402561",
+      "termsOfUseUrl": "https://asana.com/terms#terms-of-service",
+      "validDomains": [
+        "*.integrations.asana.plus",
+        "*.ngrok.io",
+        "*.asana.plus",
+        "*.asana.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "fa517b07-6e99-4075-b72f-6af4e7e89933",
+      "version": "1.0.0",
+      "name": "Asana",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 84980180,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "今後の優先事項を見る",
+                  "title": "今週の優先事項を表示"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Task activity, comments, and project milestones",
+                  "title": "Recap work completed this week"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Track important actions",
+                  "title": "Create task"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "SalesAndMarketing",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Test_Test_new1",
+      "developerUrl": "https://asana.com/?noredirect&utm_source=asana_inproduct&utm_medium=organic_inproduct&utm_campaign=msft_teams_launch",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams-uat.integrations.asana.plus/teamstab/configure?locale={locale}",
+          "context": [
+            "privateChatTab",
+            "channelTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Agriculture",
+        "Manufacturing"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Asana のタスクを検索",
+              "fetchTask": false,
+              "id": "tasksSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Asana でタスクを検索",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "検索クエリ"
+                }
+              ],
+              "title": "タスク",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Asana のプロジェクトを検索",
+              "fetchTask": false,
+              "id": "projectsSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Asana でプロジェクトを検索",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "検索クエリ"
+                }
+              ],
+              "title": "プロジェクト",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Asana のポートフォリオを検索",
+              "fetchTask": false,
+              "id": "portfoliosSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Asana でポートフォリオを検索",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "検索クエリ"
+                }
+              ],
+              "title": "ポートフォリオ",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "message",
+                "commandBox"
+              ],
+              "description": "Asana のタスクを新規作成",
+              "fetchTask": true,
+              "id": "createTask",
+              "initialRun": false,
+              "title": "タスクを作成",
+              "type": "action"
+            },
+            {
+              "context": [
+                "message"
+              ],
+              "description": "Asana のタスクにメッセージを追加",
+              "fetchTask": true,
+              "id": "addMessageToTask",
+              "initialRun": false,
+              "title": "タスクにメッセージを追加",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "プロジェクトの更新について通知を受け取る",
+              "fetchTask": true,
+              "id": "linkProject",
+              "initialRun": false,
+              "title": "プロジェクトをリンク",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "このチャネルの通知設定を調整",
+              "fetchTask": true,
+              "id": "notificationSettings",
+              "initialRun": false,
+              "title": "通知設定",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.asana.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "ja",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_largeimage.png",
+      "lastUpdatedAt": "2025-05-21T04:37:08.7745104+00:00",
+      "longDescription": "ワークマネジメントプラットフォームの Asana を使用すると、チームはいつ、どこで働いていても、目標、プロジェクト、タスクに集中していられます。\n\n**会話を実行可能なアクションにする**\nAsana のタスクでコラボレーションをしたり、つながりを維持したりすることが、Teams から直接行えます。Teams での会話を Asana の実行可能なタスクに直接変換しましょう。\n\n**可視性を最大限に高める**\nAsana のタスク、プロジェクト、ポートフォリオ、そしてステータス更新を Teams 内で直接確認できます。Asana のタスクを直接 Micrsoft Teams に展開することで、必要な情報を検索したり、関係者と背景情報を共有したり、詳細を確認したりできます。\n\n**Asana の関連する最新情報を常に把握する**\n重要な通知を非公開のマイタスクで受信できます。チャネルごとに通知設定を調整すれば、Teams チャネル内からタスクの進捗を把握できます。Teams でフォーカスとつながりを維持しながら Asana で必要な情報を追跡しましょう。 \n\n**Microsoft Teams と Asana を連携する**\nこの連携は、Teams アカウントをお持ちで、Asana をご利用のすべてのお客様に無料でご利用いただけます。",
+      "officeAssetId": "WA200008421",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://asana.com/terms#privacy-policy",
+      "publisherDocsUrl": "https://help.asana.com/s/article/microsoft-teams-and-asana-integration?language=en_US",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_screenshot/0.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "会話を Asana のアクションアイテムに変換し、仕事を順調に進めます",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_smallimage.png",
+      "systemVersion": "2025062316402561",
+      "termsOfUseUrl": "https://asana.com/terms#terms-of-service",
+      "validDomains": [
+        "*.integrations.asana.plus",
+        "*.ngrok.io",
+        "*.asana.plus",
+        "*.asana.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "fa517b07-6e99-4075-b72f-6af4e7e89933",
+      "version": "1.0.0",
+      "name": "Asana",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 84980180,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Veja as próximas prioridades",
+                  "title": "Mostrar prioridades desta semana"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Task activity, comments, and project milestones",
+                  "title": "Recap work completed this week"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Track important actions",
+                  "title": "Create task"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "SalesAndMarketing",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Test_Test_new1",
+      "developerUrl": "https://asana.com/?noredirect&utm_source=asana_inproduct&utm_medium=organic_inproduct&utm_campaign=msft_teams_launch",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams-uat.integrations.asana.plus/teamstab/configure?locale={locale}",
+          "context": [
+            "privateChatTab",
+            "channelTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Agriculture",
+        "Manufacturing"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "77c5c326-c0b3-4779-ad58-552ec216a4ab",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Procurar tarefas Asana",
+              "fetchTask": false,
+              "id": "tasksSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Procurar tarefas na Asana",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Consulta de pesquisa"
+                }
+              ],
+              "title": "Tarefas",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Procurar projetos Asana",
+              "fetchTask": false,
+              "id": "projectsSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Procurar projetos na Asana",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Consulta de pesquisa"
+                }
+              ],
+              "title": "Projetos",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Procurar portfólios Asana",
+              "fetchTask": false,
+              "id": "portfoliosSearchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Procurar portfólios na Asana",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "searchQuery",
+                  "title": "Consulta de pesquisa"
+                }
+              ],
+              "title": "Portfólios",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose",
+                "message",
+                "commandBox"
+              ],
+              "description": "Criar uma nova tarefa Asana",
+              "fetchTask": true,
+              "id": "createTask",
+              "initialRun": false,
+              "title": "Criar tarefa",
+              "type": "action"
+            },
+            {
+              "context": [
+                "message"
+              ],
+              "description": "Adicionar mensagem a uma tarefa Asana",
+              "fetchTask": true,
+              "id": "addMessageToTask",
+              "initialRun": false,
+              "title": "Adicionar mensagem à tarefa",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Receber notificações sobre atualizações em um projeto",
+              "fetchTask": true,
+              "id": "linkProject",
+              "initialRun": false,
+              "title": "Vincular projeto",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Ajuste as configurações de notificações deste canal",
+              "fetchTask": true,
+              "id": "notificationSettings",
+              "initialRun": false,
+              "title": "Configurações de notificações",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.asana.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_largeimage.png",
+      "lastUpdatedAt": "2025-05-21T04:37:08.7745104+00:00",
+      "longDescription": "A plataforma de gerenciamento de trabalho da Asana permite à sua equipe manter o foco nas metas, projetos e tarefas, não importa onde e quando a sua equipe trabalha.\n\n**Tome ações a partir das conversas**\nColabore em tarefas da Asana e mantenha o trabalho conectado sem precisar sair do Teams. Transforme diretamente as conversas do Teams em tarefas realizáveis na Asana. \n\n**Aumente a visibilidade**\nVisualize tarefas, projetos, portfólios e atualizações de status da Asana dentro do Teams. Pesquise informações, compartilhe contextos com os participantes e visualize detalhes ao interpretar e exibir tarefas da Asana diretamente no Microsoft Teams.\n\n**Mantenha-se informado sobre atualizações importantes na Asana**\nReceba notificações importantes na sua área privada de Minhas Tarefas. Ajuste suas preferências de notificações de acordo com o canal e acompanhe o progresso das tarefas dentro dos canais do Teams. Monitore as informações de que você precisa na Asana mantendo o foco e a conexão por meio do Teams. \n\n**Conecte o Microsoft Teams à Asana**\nEsta integração está disponível de forma gratuita a todos os clientes da Asana que também tenham conta no Teams.",
+      "officeAssetId": "WA200008421",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://asana.com/terms#privacy-policy",
+      "publisherDocsUrl": "https://help.asana.com/s/article/microsoft-teams-and-asana-integration?language=en_US",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_screenshot/0.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Transforme conversas em itens de ação na Asana para manter o trabalho em dia",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/fa517b07-6e99-4075-b72f-6af4e7e89933/2025062316402561/fa517b07-6e99-4075-b72f-6af4e7e89933_smallimage.png",
+      "systemVersion": "2025062316402561",
+      "termsOfUseUrl": "https://asana.com/terms#terms-of-service",
+      "validDomains": [
+        "*.integrations.asana.plus",
+        "*.ngrok.io",
+        "*.asana.plus",
+        "*.asana.com"
+      ]
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@CEA_Falcon Show priorities for this week",
+      "description": "The user wants to see the list of priorities for the current week.",
+      "command": "Show priorities for this week"
+    },
+    {
+      "prompt": "@CEA_Falcon Recap work completed this week",
+      "description": "The user is requesting a summary of the work completed during the current week.",
+      "command": "Recap work completed this week"
+    },
+    {
+      "prompt": "@CEA_Falcon Create task",
+      "description": "The user wants to create a new task using the bot.",
+      "command": "Create task"
+    }
+  ]
+}

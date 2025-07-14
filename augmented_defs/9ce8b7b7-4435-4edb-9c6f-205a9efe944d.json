@@ -1036,19 +1036,19 @@
   },
   "examplePrompts": [
     {
-      "prompt": "@Site24x7 Can you help me understand how to monitor website uptime?",
-      "description": "User is asking for guidance on monitoring website uptime.",
+      "prompt": "@Site24x7 help",
+      "description": "The user asks the bot for assistance or a list of available commands.",
       "command": "help"
     },
     {
-      "prompt": "@Site24x7 I need to switch accounts. How do I log out from my current session?",
-      "description": "User wants to log out from their current account.",
-      "command": "logout"
+      "prompt": "@Site24x7 login",
+      "description": "The user requests to log in to their Site24x7 account to access monitoring features.",
+      "command": "login"
     },
     {
-      "prompt": "@Site24x7 I forgot how to log in. Can you assist?",
-      "description": "User is asking for assistance with logging into their account.",
-      "command": "login"
+      "prompt": "@Site24x7 logout",
+      "description": "The user wants to log out from their current Site24x7 session.",
+      "command": "logout"
     }
   ]
 }

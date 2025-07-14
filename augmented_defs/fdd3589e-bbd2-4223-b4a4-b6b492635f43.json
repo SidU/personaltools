@@ -1333,18 +1333,18 @@
   ],
   "examplePrompts": [
     {
-      "prompt": "@Core Fax (CA) send fax to Dr. Smith at 555-1234 with the attached document",
-      "description": "User wants to send a fax to Dr. Smith using the provided phone number and attached document.",
+      "prompt": "@Core Fax (CA) send fax to +1234567890",
+      "description": "The user wants to send a fax to the phone number +1234567890.",
       "command": "send fax to"
     },
     {
       "prompt": "@Core Fax (CA) help",
-      "description": "User requests assistance or more information on how to use the Core Fax app.",
+      "description": "The user requests assistance or more information on how to use the Core Fax app.",
       "command": "help"
     },
     {
-      "prompt": "@Core Fax (CA) send fax to 123-4567 with subject 'Project Proposal' and the attached file",
-      "description": "User is sending a fax to a specific number with a subject line and an attached file.",
+      "prompt": "@Core Fax (CA) send fax to +9876543210",
+      "description": "The user is attempting to send a document via fax to the number +9876543210.",
       "command": "send fax to"
     }
   ]

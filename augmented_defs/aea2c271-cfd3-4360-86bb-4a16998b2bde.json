@@ -1096,18 +1096,18 @@
   "examplePrompts": [
     {
       "prompt": "@Spike.sh help",
-      "description": "A user needs assistance with understanding what commands are available or how to use the bot.",
+      "description": "A user needs assistance with understanding how to use the Spike.sh bot and its commands.",
       "command": "help"
     },
     {
       "prompt": "@Spike.sh oncall-now",
-      "description": "A user wants to check who is currently on call for incident management.",
+      "description": "A user wants to know who is currently on call for incident management.",
       "command": "oncall-now"
     },
     {
-      "prompt": "@Spike.sh disconnect",
-      "description": "A user wishes to disconnect their account from the Spike.sh bot.",
-      "command": "disconnect"
+      "prompt": "@Spike.sh connect-org",
+      "description": "A user is setting up Spike.sh for their organization and needs to connect it to their existing organization account.",
+      "command": "connect-org"
     }
   ]
 }
