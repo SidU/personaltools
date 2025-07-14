@@ -1,0 +1,3800 @@
+{
+  "manifestVersion": "1.17",
+  "id": "e00456a5-3a89-400a-88b9-368533594cb4",
+  "version": "1.1.0",
+  "name": "MyHub for AOS-US",
+  "accentColor": "#F9F9FA",
+  "amsSellerAccountId": 18006400,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "See all workspaces available to you",
+              "title": "View all workspaces"
+            },
+            {
+              "description": "See your favorite workspaces",
+              "title": "View favorite workspaces"
+            },
+            {
+              "description": "See workspaces you own or join",
+              "title": "View my workspaces"
+            },
+            {
+              "description": "See recently active workspaces ",
+              "title": "View recent workspaces"
+            },
+            {
+              "description": "Start receiving notifications from MyHub for AOS-US",
+              "title": "Turn notifications on"
+            },
+            {
+              "description": "Stop receiving notifications from MyHub for AOS-US",
+              "title": "Turn notifications off"
+            },
+            {
+              "description": "See all supported commands",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "4d69a8e1-9c38-4b33-b76f-9d59b5ae051b",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "AvePoint, inc.",
+  "developerUrl": "https://www.avepoint.com",
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Show tasks, you can filter by summary, due date",
+          "fetchTask": false,
+          "id": "SearchToDoList",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Task summary as keyword",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "taskSummary",
+              "title": "task summary"
+            },
+            {
+              "description": "Due start date of task",
+              "inputType": "time",
+              "isRequired": false,
+              "name": "taskDueStartDate",
+              "title": "due start date"
+            },
+            {
+              "description": "Due end date of task",
+              "inputType": "time",
+              "isRequired": false,
+              "name": "taskDueEndDate",
+              "title": "due end date"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Show me what MyHub tasks are overdue"
+            },
+            {
+              "text": "Show me what MyHub tasks are due this week"
+            },
+            {
+              "text": "Show me what MyHub tasks are due in next 5 days"
+            }
+          ],
+          "title": "Tasks",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "List all workspaces or workspaces that I own, workspace can be any Microsoft 365 object type",
+          "fetchTask": false,
+          "id": "SearchMyWorkspace",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "list all workspaces or workspaces that I own",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "workspaceName",
+              "title": "workspace name",
+              "value": "All"
+            },
+            {
+              "description": "Type of workspace",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "workspaceType",
+              "title": "Workspace Type"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Show me my MyHub Workspaces"
+            },
+            {
+              "text": "Show me my MyHub Workspaces that type is Teams"
+            },
+            {
+              "text": "Show me my MyHub Workspaces that name has 'Product'"
+            }
+          ],
+          "title": "Workspace",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "List services that I can use to start request",
+          "fetchTask": false,
+          "id": "SearchMyServices",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Service name as keyword, leave empty to list all services.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "serviceName",
+              "title": "Service Name"
+            },
+            {
+              "choices": [
+                {
+                  "title": "All",
+                  "value": "All"
+                }
+              ],
+              "description": "Type of service",
+              "inputType": "choiceset",
+              "isRequired": false,
+              "name": "serviceType",
+              "title": "Service Type",
+              "value": "All"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Show me what services are available in MyHub"
+            },
+            {
+              "text": "Show me available services having name 'Create Site Collection' in MyHub"
+            },
+            {
+              "text": "What services can I request in MyHub?"
+            }
+          ],
+          "title": "Services",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "languageTag": "en-us",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_largeimage.png",
+  "lastUpdatedAt": "2024-09-02T03:41:55.6840699+00:00",
+  "longDescription": "Meet MyHub for AOS-US, a convenient one-stop-shop for managing existing Microsoft 365 workspaces and creating new ones—all from Microsoft Teams!   It is also supported in Outlook and Microsoft 365 app.\r\n MyHub for AOS-US makes it easy to organize, understand, and access all your Microsoft workspaces by helping you:\r\n * Create workspace hubs based on different criteria, such as purpose or topic\r\n * Classify Teams, Groups, SharePoint sites, and Viva Engage communities with customized tags\r\n * Manage membership of Teams and Groups\r\n * Easily access content, tasks, and more associated with each workspace\r\n * Receive notifications from the bot after creating new workspaces \r\n Now integrated with Copilot for Microsoft 365 to allow end-users to leverage Copilot for Microsoft 365 to find relevant information about their workspaces, e.g.Show me my MyHub Workspaces.\r\n Customers of AvePoint’s Confidence Platform can also perform provisioning, recertification, and lifecycle tasks right from MyHub for AOS-US in Teams. In order to use this app, users must have an active Microsoft 365 account and licensed for MyHub for AOS-US. Please contact our support team for more details.  \r\n New to MyHub for AOS-US? [Sign up for free](https://myhub-gov.avepointonlineservices.com)  \r\n Additional Resources  \r\n [Product user guide](https://avepointcdn.azureedge.net/assets/webhelp/myhub-administrator-guide/index.htm#!Documents/aboutmyhub.htm)  \r\n Reach out to [AvePoint Support](https://www.avepoint.com/products/support) for additional help  \r\n MyHub for AOS-US has been created specifically for use by customers of AvePoint’s US sovereign cloud (AOS-US). If you are leveraging AvePoint's Commercial cloud (AOS), please use the MyHub application. If you are leveraging AvePoint’s FedRAMP (Moderate) Authorized cloud (AOS-UG) offering, please use the MyHub for AOS-UG application for full compatibility. ",
+  "mpnId": "1388828",
+  "officeAssetId": "WA200004505",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.avepoint.com/company/privacy-policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/2.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Easily manage and organize Microsoft Teams, Groups, SharePoint, and Viva Engage",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://myhub-gov.avepointonlineservices.com/teams/#/",
+      "entityId": "teams-app-home",
+      "name": "Home",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://myhub-gov.avepointonlineservices.com"
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071112283521",
+  "termsOfUseUrl": "https://www.avepoint.com/company/terms-and-conditions/",
+  "validDomains": [
+    "myhub-gov.avepointonlineservices.com",
+    "token.botframework.com"
+  ],
+  "webApplicationInfo": {
+    "id": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+    "resource": "api://myhub-gov.avepointonlineservices.com/07cba5b9-098c-4b75-8874-f444bcc285c3"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en-us",
+    "zh-cn",
+    "it-it",
+    "ja-jp",
+    "pt-br",
+    "de-de",
+    "es-es",
+    "fr-fr",
+    "ko-kr",
+    "nl-nl"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.17",
+      "id": "e00456a5-3a89-400a-88b9-368533594cb4",
+      "version": "1.1.0",
+      "name": "MyHub for AOS-US",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 18006400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Alle für Sie verfügbaren Arbeitsbereiche anzeigen",
+                  "title": "Alle Arbeitsbereiche anzeigen"
+                },
+                {
+                  "description": "Ihre favorisierten Arbeitsbereiche anzeigen",
+                  "title": "Beliebte Arbeitsbereiche zeigen"
+                },
+                {
+                  "description": "Arbeitsbereiche anzeigen, die Sie besitzen oder denen Sie beitreten",
+                  "title": "Meine Arbeitsbereiche anzeigen"
+                },
+                {
+                  "description": "Kürzlich aktive Arbeitsbereiche anzeigen",
+                  "title": "Aktuelle Arbeitsbereiche zeigen"
+                },
+                {
+                  "description": "Empfang der Benachrichtigungen von MyHub for AOS-US starten",
+                  "title": "Benachrichtigungen aktivieren"
+                },
+                {
+                  "description": "Empfang der Benachrichtigungen von MyHub for AOS-US beenden",
+                  "title": "Benachrichtigungen deaktivieren"
+                },
+                {
+                  "description": "Unterstützte Befehle anzeigen",
+                  "title": "Hilfe"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "4d69a8e1-9c38-4b33-b76f-9d59b5ae051b",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "AvePoint, inc.",
+      "developerUrl": "https://www.avepoint.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Show tasks, you can filter by summary, due date",
+              "fetchTask": false,
+              "id": "SearchToDoList",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Task summary as keyword",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "taskSummary",
+                  "title": "task summary"
+                },
+                {
+                  "description": "Due start date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueStartDate",
+                  "title": "due start date"
+                },
+                {
+                  "description": "Due end date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueEndDate",
+                  "title": "due end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what MyHub tasks are overdue"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due this week"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due in next 5 days"
+                }
+              ],
+              "title": "Tasks",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List all workspaces or workspaces that I own, workspace can be any Microsoft 365 object type",
+              "fetchTask": false,
+              "id": "SearchMyWorkspace",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "list all workspaces or workspaces that I own",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceName",
+                  "title": "workspace name",
+                  "value": "All"
+                },
+                {
+                  "description": "Type of workspace",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceType",
+                  "title": "Workspace Type"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me my MyHub Workspaces"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that type is Teams"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that name has 'Product'"
+                }
+              ],
+              "title": "Workspace",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List services that I can use to start request",
+              "fetchTask": false,
+              "id": "SearchMyServices",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Service name as keyword, leave empty to list all services.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "serviceName",
+                  "title": "Service Name"
+                },
+                {
+                  "choices": [
+                    {
+                      "title": "All",
+                      "value": "All"
+                    }
+                  ],
+                  "description": "Type of service",
+                  "inputType": "choiceset",
+                  "isRequired": false,
+                  "name": "serviceType",
+                  "title": "Service Type",
+                  "value": "All"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what services are available in MyHub"
+                },
+                {
+                  "text": "Show me available services having name 'Create Site Collection' in MyHub"
+                },
+                {
+                  "text": "What services can I request in MyHub?"
+                }
+              ],
+              "title": "Services",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "de-de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_largeimage.png",
+      "lastUpdatedAt": "2024-09-02T03:41:55.6840699+00:00",
+      "longDescription": "Lernen Sie MyHub for AOS-US kennen, Ihren bequemen One-Stop-Shop für die Verwaltung bestehender und die Erstellung neuer Microsoft 365-Arbeitsbereiche - alles von Microsoft Teams aus! MyHub for AOS-US wird jetzt auch in Outlook und Microsoft 365 App unterstützt.  \r\n MyHub for AOS-US macht es Ihnen leicht, all Ihre Microsoft-Arbeitsbereiche zu organisieren, zu verstehen und darauf zuzugreifen.\r\n * Erstellen Sie Arbeitsbereich-Hubs auf der Grundlage verschiedener Kriterien, wie Zweck oder Thema\r\n * Kassifizieren Sie Teams, Gruppen, SharePoint-Sites und Viva Engage-Communities mit benutzerdefinierten Tags\r\n * Verwalten Sie Mitgliedschaften in Teams und Gruppen\r\n * Greifen Sie auf Inhalte, Aufgaben und mehr, die mit jedem Arbeitsbereich verbunden sind, zu\r\n * Erhalten Sie Benachrichtigungen vom Bot nach der Erstellung neuer Arbeitsbereiche\r\n Die Integration mit Copilot for Microsoft 365 ermöglicht es Endnutzern, Copilot for Microsoft 365 zu nutzen, um relevante Informationen über ihre Arbeitsbereiche zu finden, z. B. \"Zeigen Sie mir meine MyHub-Arbeitsbereiche\".\r\n Kunden, die bereits die Confidence-Plattform von AvePoint nutzen, können auch Provisionierungs-, Rezertifizierungs- und Lebenszyklus-Aufgaben direkt von MyHub for AOS-US in Teams durchführen.Um diese App nutzen zu können, müssen Nutzer ein aktives Microsoft 365-Konto haben und eine Lizenz für MyHub for AOS-US besitzen. Bitte kontaktieren Sie unser Support-Team für weitere Details.   \r\n Sind Sie neu bei MyHub for AOS-US? [Kostenlos anmelden](https://myhub-gov.avepointonlineservices.com)  \r\n Zusätzliche Ressourcen  \r\n [Nutzerhandbuch des Produkts](https://avepointcdn.azureedge.net/assets/webhelp/myhub-administrator-guide/index.htm#!Documents/aboutmyhub.htm)  \r\n Wenden Sie sich an [AvePoint-Support](https://www.avepoint.com/products/support) für zusätzliche Hilfe.",
+      "mpnId": "1388828",
+      "officeAssetId": "WA200004505",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.avepoint.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Einfache Verwaltung von Teams, Gruppen, SharePoint und Viva Engage",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://myhub-gov.avepointonlineservices.com/teams/#/",
+          "entityId": "teams-app-home",
+          "name": "Homepage",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://myhub-gov.avepointonlineservices.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112283521",
+      "termsOfUseUrl": "https://www.avepoint.com/company/terms-and-conditions/",
+      "validDomains": [
+        "myhub-gov.avepointonlineservices.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+        "resource": "api://myhub-gov.avepointonlineservices.com/07cba5b9-098c-4b75-8874-f444bcc285c3"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "e00456a5-3a89-400a-88b9-368533594cb4",
+      "version": "1.1.0",
+      "name": "MyHub for AOS-US",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 18006400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Vea todos los espacios de trabajo disponibles para usted",
+                  "title": "Ver todos los esp. de trabajo"
+                },
+                {
+                  "description": "Vea sus espacios de trabajo favoritos",
+                  "title": "Ver esp. de trabajo favoritos"
+                },
+                {
+                  "description": "Vea los espacios de trabajo de los que es propietario o miembro",
+                  "title": "Ver mis espacios de trabajo"
+                },
+                {
+                  "description": "Vea los espacios de trabajo activos recientemente",
+                  "title": "Ver esp. de trabajo recientes"
+                },
+                {
+                  "description": "Comenzar a recibir notificaciones de MyHub for AOS-US",
+                  "title": "Activar las notificaciones"
+                },
+                {
+                  "description": "Dejar de recibir notificaciones de MyHub for AOS-US",
+                  "title": "Desactivar las notificaciones"
+                },
+                {
+                  "description": "Vedi tutti i comandi supportati",
+                  "title": "Ayuda"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "4d69a8e1-9c38-4b33-b76f-9d59b5ae051b",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "AvePoint, inc.",
+      "developerUrl": "https://www.avepoint.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Show tasks, you can filter by summary, due date",
+              "fetchTask": false,
+              "id": "SearchToDoList",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Task summary as keyword",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "taskSummary",
+                  "title": "task summary"
+                },
+                {
+                  "description": "Due start date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueStartDate",
+                  "title": "due start date"
+                },
+                {
+                  "description": "Due end date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueEndDate",
+                  "title": "due end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what MyHub tasks are overdue"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due this week"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due in next 5 days"
+                }
+              ],
+              "title": "Tasks",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List all workspaces or workspaces that I own, workspace can be any Microsoft 365 object type",
+              "fetchTask": false,
+              "id": "SearchMyWorkspace",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "list all workspaces or workspaces that I own",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceName",
+                  "title": "workspace name",
+                  "value": "All"
+                },
+                {
+                  "description": "Type of workspace",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceType",
+                  "title": "Workspace Type"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me my MyHub Workspaces"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that type is Teams"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that name has 'Product'"
+                }
+              ],
+              "title": "Workspace",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List services that I can use to start request",
+              "fetchTask": false,
+              "id": "SearchMyServices",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Service name as keyword, leave empty to list all services.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "serviceName",
+                  "title": "Service Name"
+                },
+                {
+                  "choices": [
+                    {
+                      "title": "All",
+                      "value": "All"
+                    }
+                  ],
+                  "description": "Type of service",
+                  "inputType": "choiceset",
+                  "isRequired": false,
+                  "name": "serviceType",
+                  "title": "Service Type",
+                  "value": "All"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what services are available in MyHub"
+                },
+                {
+                  "text": "Show me available services having name 'Create Site Collection' in MyHub"
+                },
+                {
+                  "text": "What services can I request in MyHub?"
+                }
+              ],
+              "title": "Services",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "es-es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_largeimage.png",
+      "lastUpdatedAt": "2024-09-02T03:41:55.6840699+00:00",
+      "longDescription": "Conozca MyHub for AOS-US, un sitio único y conveniente para administrar espacios de trabajo existentes de Microsoft 365 y crear nuevos; todo desde de Microsoft Teams. También es compatible con Outlook y la aplicación Microsoft 365. \r\n MyHub for AOS-US facilita la organización, la comprensión y el acceso a todos sus espacios de trabajo de Microsoft al ayudarle a:\r\n * Crear centros de espacio de trabajo basados en diferentes criterios, como por propósito o tema.\r\n * Clasificar Microsoft Teams, Grupos, sitios de SharePoint y Viva Engage communities con etiquetas personalizadas.\r\n * Administrar membresías de Teams y Grupos.\r\n * Acceder fácilmente al contenido, las tareas y otros servicios asociados con cada espacio de trabajo.\r\n * Recibir notificaciones del bot luego de crear nuevos espacios de trabajo.\r\n Ahora integrado con Copilot para Microsoft 365 para permitir a los usuarios finales aprovechar el Copilot para Microsoft 365 para encontrar información relevante sobre sus espacios de trabajo. Por ejemplo, muéstrame mis espacios de trabajo MyHub. \r\n Los clientes de la Plataforma de Confianza de AvePoint también realizan tareas de aprovisionamiento, recertificación y ciclo de vida directamente desde MyHub for AOS-US en Teams. Para usar esta aplicación, los usuarios deben tener una cuenta activa de Microsoft 365 y licencia para MyHub for AOS-US. Por favor, póngase en contacto con nuestro equipo de soporte para más detalles.  \r\n ¿Nuevo en MyHub for AOS-US? [Regístrate gratis](https://myhub-gov.avepointonlineservices.com)  \r\n Recursos adicionales  \r\n [Product user guide](https://avepointcdn.azureedge.net/assets/webhelp/myhub-administrator-guide/index.htm#!Documents/aboutmyhub.htm)  \r\n Comunícate con [Soporte de AvePoint](https://www.avepoint.com/products/support) para obtener ayuda adicional.",
+      "mpnId": "1388828",
+      "officeAssetId": "WA200004505",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.avepoint.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Administre y organice fácilmente Teams, Grupos, SharePoint y Viva Engage",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://myhub-gov.avepointonlineservices.com/teams/#/",
+          "entityId": "teams-app-home",
+          "name": "Inicio",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://myhub-gov.avepointonlineservices.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112283521",
+      "termsOfUseUrl": "https://www.avepoint.com/company/terms-and-conditions/",
+      "validDomains": [
+        "myhub-gov.avepointonlineservices.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+        "resource": "api://myhub-gov.avepointonlineservices.com/07cba5b9-098c-4b75-8874-f444bcc285c3"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "e00456a5-3a89-400a-88b9-368533594cb4",
+      "version": "1.1.0",
+      "name": "MyHub for AOS-US",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 18006400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Voir tous les espaces de travail à votre disposition",
+                  "title": "Afficher tous les workspaces"
+                },
+                {
+                  "description": "Voir vos espaces de travail favoris",
+                  "title": "Afficher les workspaces favoris"
+                },
+                {
+                  "description": "Voir les espaces de travail que vous possédez ou que vous rejoignez",
+                  "title": "Afficher mes espaces de travail"
+                },
+                {
+                  "description": "Voir les espaces de travail actifs récemment",
+                  "title": "Afficher les workspaces récents"
+                },
+                {
+                  "description": "Arrêter de recevoir des notifications de la part de MyHub for AOS-US",
+                  "title": "Activer les notifications"
+                },
+                {
+                  "description": "Arrêter de recevoir des notifications de la part de MyHub for AOS-US",
+                  "title": "Désactiver les notifications"
+                },
+                {
+                  "description": "Afficher toutes les commandes prises en charge",
+                  "title": "Aide"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "4d69a8e1-9c38-4b33-b76f-9d59b5ae051b",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "AvePoint, inc.",
+      "developerUrl": "https://www.avepoint.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Show tasks, you can filter by summary, due date",
+              "fetchTask": false,
+              "id": "SearchToDoList",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Task summary as keyword",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "taskSummary",
+                  "title": "task summary"
+                },
+                {
+                  "description": "Due start date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueStartDate",
+                  "title": "due start date"
+                },
+                {
+                  "description": "Due end date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueEndDate",
+                  "title": "due end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what MyHub tasks are overdue"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due this week"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due in next 5 days"
+                }
+              ],
+              "title": "Tasks",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List all workspaces or workspaces that I own, workspace can be any Microsoft 365 object type",
+              "fetchTask": false,
+              "id": "SearchMyWorkspace",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "list all workspaces or workspaces that I own",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceName",
+                  "title": "workspace name",
+                  "value": "All"
+                },
+                {
+                  "description": "Type of workspace",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceType",
+                  "title": "Workspace Type"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me my MyHub Workspaces"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that type is Teams"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that name has 'Product'"
+                }
+              ],
+              "title": "Workspace",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List services that I can use to start request",
+              "fetchTask": false,
+              "id": "SearchMyServices",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Service name as keyword, leave empty to list all services.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "serviceName",
+                  "title": "Service Name"
+                },
+                {
+                  "choices": [
+                    {
+                      "title": "All",
+                      "value": "All"
+                    }
+                  ],
+                  "description": "Type of service",
+                  "inputType": "choiceset",
+                  "isRequired": false,
+                  "name": "serviceType",
+                  "title": "Service Type",
+                  "value": "All"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what services are available in MyHub"
+                },
+                {
+                  "text": "Show me available services having name 'Create Site Collection' in MyHub"
+                },
+                {
+                  "text": "What services can I request in MyHub?"
+                }
+              ],
+              "title": "Services",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "fr-fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_largeimage.png",
+      "lastUpdatedAt": "2024-09-02T03:41:55.6840699+00:00",
+      "longDescription": "Voici MyHub for AOS-US, un guichet unique pratique pour gérer les espaces de travail Microsoft 365 existants et en créer de nouveaux - le tout dans Microsoft Teams ! Il est également pris en charge dans les applications Outlook et Microsoft 365. \r\n MyHub for AOS-US facilite l'organisation, la compréhension et l'accès à tous vos espaces de travail Microsoft en vous aidant à :\r\n * Créer des hubs d'espace de travail en fonction de différents critères, tels que l'objectif ou le sujet\r\n * Classer les équipes, les groupes, les sites SharePoint et les communautés Viva Engage à l'aide d'étiquettes personnalisées\r\n * Gérer l'appartenance des équipes et des groupes\r\n * Accéder facilement au contenu, aux tâches et plus encore associés à chaque espace de travail\r\n * Recevoir des notifications du bot après la création de nouveaux espaces de travail\r\n Désormais intégré à Copilot pour Microsoft 365, MyHub for AOS-US permet aux utilisateurs finaux de s'appuyer sur Copilot pour Microsoft 365 pour trouver des informations pertinentes sur leurs espaces de travail. Par exemple, saisissez « Afficher mes espaces de travail MyHub » dans Copilot. \r\n Les clients de la plateforme Confidence d'AvePoint peuvent également effectuer des tâches de mise en service, de recertification et de cycle de vie directement à partir de MyHub for AOS-US dans Teams. Afin d'utiliser cette application, les utilisateurs doivent disposer d'un compte Microsoft 365 actif et d'une licence pour MyHub for AOS-US. Veuillez contacter notre équipe de support pour plus de détails.  \r\n Nouveau sur MyHub for AOS-US? [Inscrivez-vous gratuitement](https://myhub-gov.avepointonlineservices.com)  \r\n Ressources supplémentaires  \r\n [Guide utilisateur du produit](https://avepointcdn.azureedge.net/assets/webhelp/myhub-administrator-guide/index.htm#!Documents/aboutmyhub.htm)  \r\n Contactez le [Support AvePoint](https://www.avepoint.com/products/support)  pour obtenir de l'aide supplémentaire.",
+      "mpnId": "1388828",
+      "officeAssetId": "WA200004505",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.avepoint.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Gérez et organisez facilement Teams, les groupes, SharePoint et les Viva Engage",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://myhub-gov.avepointonlineservices.com/teams/#/",
+          "entityId": "teams-app-home",
+          "name": "Accueil",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://myhub-gov.avepointonlineservices.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112283521",
+      "termsOfUseUrl": "https://www.avepoint.com/company/terms-and-conditions/",
+      "validDomains": [
+        "myhub-gov.avepointonlineservices.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+        "resource": "api://myhub-gov.avepointonlineservices.com/07cba5b9-098c-4b75-8874-f444bcc285c3"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "e00456a5-3a89-400a-88b9-368533594cb4",
+      "version": "1.1.0",
+      "name": "MyHub for AOS-US",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 18006400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Visualizza tutte le aree di lavoro disponibili",
+                  "title": "Visualizza tutte le aree lavoro"
+                },
+                {
+                  "description": "Visualizza tutte le aree di lavoro preferite",
+                  "title": "Visualizza aree lavoro preferite"
+                },
+                {
+                  "description": "Visualizza le aree di lavoro di cui si è proprietari o membri",
+                  "title": "Visualizza le mie aree di lavoro"
+                },
+                {
+                  "description": "Visualizza le aree di lavoro attive di recente ",
+                  "title": "Visualizza aree lavoro recenti"
+                },
+                {
+                  "description": "Inizia la ricezione di notifiche da MyHub for AOS-US",
+                  "title": "Attiva notifiche"
+                },
+                {
+                  "description": "Interrompi la ricezione di notifiche da MyHub for AOS-US",
+                  "title": "Disattiva notifiche"
+                },
+                {
+                  "description": "Vedi tutti i comandi supportati",
+                  "title": "Assistenza"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "4d69a8e1-9c38-4b33-b76f-9d59b5ae051b",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "AvePoint, inc.",
+      "developerUrl": "https://www.avepoint.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Show tasks, you can filter by summary, due date",
+              "fetchTask": false,
+              "id": "SearchToDoList",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Task summary as keyword",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "taskSummary",
+                  "title": "task summary"
+                },
+                {
+                  "description": "Due start date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueStartDate",
+                  "title": "due start date"
+                },
+                {
+                  "description": "Due end date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueEndDate",
+                  "title": "due end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what MyHub tasks are overdue"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due this week"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due in next 5 days"
+                }
+              ],
+              "title": "Tasks",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List all workspaces or workspaces that I own, workspace can be any Microsoft 365 object type",
+              "fetchTask": false,
+              "id": "SearchMyWorkspace",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "list all workspaces or workspaces that I own",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceName",
+                  "title": "workspace name",
+                  "value": "All"
+                },
+                {
+                  "description": "Type of workspace",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceType",
+                  "title": "Workspace Type"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me my MyHub Workspaces"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that type is Teams"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that name has 'Product'"
+                }
+              ],
+              "title": "Workspace",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List services that I can use to start request",
+              "fetchTask": false,
+              "id": "SearchMyServices",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Service name as keyword, leave empty to list all services.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "serviceName",
+                  "title": "Service Name"
+                },
+                {
+                  "choices": [
+                    {
+                      "title": "All",
+                      "value": "All"
+                    }
+                  ],
+                  "description": "Type of service",
+                  "inputType": "choiceset",
+                  "isRequired": false,
+                  "name": "serviceType",
+                  "title": "Service Type",
+                  "value": "All"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what services are available in MyHub"
+                },
+                {
+                  "text": "Show me available services having name 'Create Site Collection' in MyHub"
+                },
+                {
+                  "text": "What services can I request in MyHub?"
+                }
+              ],
+              "title": "Services",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "it-it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_largeimage.png",
+      "lastUpdatedAt": "2024-09-02T03:41:55.6840699+00:00",
+      "longDescription": "Scopri MyHub for AOS-US, un pratico punto vendita unico dove gestire le aree di lavoro di Microsoft 365 esistenti e crearne di nuove, tutto da Microsoft Teams! È supportato anche in Outlook e nell'app Microsoft 365. \r\n MyHub for AOS-US semplifica l'organizzazione, la comprensione e l'accesso a tutte le aree di lavoro Microsoft consentendo di:\r\n * Creare hub aree di lavoro in base a criteri diversi, ad esempio lo scopo o l'argomento\r\n * Classificare Team, Gruppi, siti di SharePoint, e Viva coinvolgente le comunità con tag personalizzati\r\n * Gestire l'appartenenza a team e gruppi\r\n * Accedere facilmente a contenuti, task e altri elementi associati a ciascuna area di lavoro\r\n * Ricevere notifiche dal bot dopo aver creato nuove aree di lavoro\r\n Ora integrato con Copilot per Microsoft 365 per consentire agli utenti finali di utilizzare Copilot per Microsoft 365 per trovare informazioni rilevanti sui propri spazi di lavoro. Ad esempio, mostrami i miei spazi di lavoro MyHub.\r\n I clienti di AvePoint Confidence Platform possono anche eseguire il provisioning, la ricertificazione e i task del ciclo di vita da MyHub for AOS-US in Teams. Per utilizzare questa app, gli utenti devono avere un account Microsoft 365 attivo e con licenza per MyHub for AOS-US. Si prega di contattare il nostro team di supporto per ulteriori dettagli.  \r\n Non conosci MyHub for AOS-US? [Registrati gratuitamente](https://myhub-gov.avepointonlineservices.com)  \r\n Risorse aggiuntive  \r\n [Guida per l'utente del prodotto](https://avepointcdn.azureedge.net/assets/webhelp/myhub-administrator-guide/index.htm#!Documents/aboutmyhub.htm)  \r\n Contatta il [Supporto AvePoint](https://www.avepoint.com/products/support) per ulteriore assistenza.",
+      "mpnId": "1388828",
+      "officeAssetId": "WA200004505",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.avepoint.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Gestisci e organizza facilmente Teams, gruppi, SharePoint e Viva Engage",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://myhub-gov.avepointonlineservices.com/teams/#/",
+          "entityId": "teams-app-home",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://myhub-gov.avepointonlineservices.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112283521",
+      "termsOfUseUrl": "https://www.avepoint.com/company/terms-and-conditions/",
+      "validDomains": [
+        "myhub-gov.avepointonlineservices.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+        "resource": "api://myhub-gov.avepointonlineservices.com/07cba5b9-098c-4b75-8874-f444bcc285c3"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "e00456a5-3a89-400a-88b9-368533594cb4",
+      "version": "1.1.0",
+      "name": "MyHub for AOS-US",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 18006400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "利用可能なワークスペースをすべて表示します",
+                  "title": "すべてのワークスペースを表示"
+                },
+                {
+                  "description": "お気に入りのワークスペースを表示します",
+                  "title": "お気に入りのワークスペースを表示"
+                },
+                {
+                  "description": "ユーザーが所有者またはメンバーであるワークスペースを表示します",
+                  "title": "個人用ワークスペースを表示"
+                },
+                {
+                  "description": "最近アクティビティのあるワークスペースを表示します",
+                  "title": "最近アクティビティのあるワークスペースを表示"
+                },
+                {
+                  "description": "MyHub for AOS-US からの通知を受信します",
+                  "title": "通知をオンにする"
+                },
+                {
+                  "description": "MyHub for AOS-US からの通知の受信を停止します",
+                  "title": "通知をオフにする"
+                },
+                {
+                  "description": "対応しているコマンドをすべて表示します",
+                  "title": "ヘルプ"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "4d69a8e1-9c38-4b33-b76f-9d59b5ae051b",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "AvePoint, inc.",
+      "developerUrl": "https://www.avepoint.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Show tasks, you can filter by summary, due date",
+              "fetchTask": false,
+              "id": "SearchToDoList",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Task summary as keyword",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "taskSummary",
+                  "title": "task summary"
+                },
+                {
+                  "description": "Due start date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueStartDate",
+                  "title": "due start date"
+                },
+                {
+                  "description": "Due end date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueEndDate",
+                  "title": "due end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what MyHub tasks are overdue"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due this week"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due in next 5 days"
+                }
+              ],
+              "title": "Tasks",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List all workspaces or workspaces that I own, workspace can be any Microsoft 365 object type",
+              "fetchTask": false,
+              "id": "SearchMyWorkspace",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "list all workspaces or workspaces that I own",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceName",
+                  "title": "workspace name",
+                  "value": "All"
+                },
+                {
+                  "description": "Type of workspace",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceType",
+                  "title": "Workspace Type"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me my MyHub Workspaces"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that type is Teams"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that name has 'Product'"
+                }
+              ],
+              "title": "Workspace",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List services that I can use to start request",
+              "fetchTask": false,
+              "id": "SearchMyServices",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Service name as keyword, leave empty to list all services.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "serviceName",
+                  "title": "Service Name"
+                },
+                {
+                  "choices": [
+                    {
+                      "title": "All",
+                      "value": "All"
+                    }
+                  ],
+                  "description": "Type of service",
+                  "inputType": "choiceset",
+                  "isRequired": false,
+                  "name": "serviceType",
+                  "title": "Service Type",
+                  "value": "All"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what services are available in MyHub"
+                },
+                {
+                  "text": "Show me available services having name 'Create Site Collection' in MyHub"
+                },
+                {
+                  "text": "What services can I request in MyHub?"
+                }
+              ],
+              "title": "Services",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "ja-jp",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_largeimage.png",
+      "lastUpdatedAt": "2024-09-02T03:41:55.6840699+00:00",
+      "longDescription": "MyHub for AOS-US は、新しい Microsoft 365 ワークスペースの作成および既存のワークスペースの管理をすべて Microsoft Teams インターフェイスから実行することを可能にする便利なツールです。Outlook アプリおよび Microsoft 365 アプリで MyHub for AOS-US アプリを使用することもできます。  \r\n MyHub for AOS-US で以下のことを実行できるため、すべての Microsoft 365 ワークスペースへのアクセス・ワークスペースの整理および把握が簡単になります。\r\n * 目的やトピックなど、さまざまな条件に基づいてワークスペース ハブを作成する\r\n * チーム、グループ、SharePoint サイト、Viva Engage コミュニティをカスタム タグで分類する\r\n * チームとグループのメンバーシップを管理する\r\n * 各ワークスペースに関連付けられたコンテンツ、タスクなどに簡単にアクセスできる\r\n * 新しいワークスペースの作成後にボットから通知を受信する\r\n Copilot for Microsoft 365 との統合により、エンド ユーザーは Copilot for Microsoft 365 を使用して、自分のワークスペースの関連情報を検索することができます。例えば、Copilot に 「私の MyHub ワークスペースを表示してください」 と入力します。 \r\n AvePoint Confidence Platform のお客様は Teams で MyHub for AOS-US を使用して、プロビジョニング・洗い替え・ライフサイクル タスクを直接実行することもできます。このアプリを使用するには、ユーザーはアクティブな Microsoft 365 アカウントおよび MyHub for AOS-US ライセンスを持っている必要があります。詳細については、AvePoint サポート チームまでお問い合わせください。  \r\n MyHub for AOS-US を初めて利用する場合: [無料でサインアップ](https://myhub-gov.avepointonlineservices.com)  \r\n 追加リソース  \r\n [製品ユーザー ガイド](https://avepointcdn.azureedge.net/assets/webhelp/myhub-administrator-guide/index.htm#!Documents/aboutmyhub.htm)  \r\n ヘルプが必要な場合、[AvePoint サポート](https://www.avepoint.com/products/support) までお問い合わせください。",
+      "mpnId": "1388828",
+      "officeAssetId": "WA200004505",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.avepoint.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Microsoft Teams、Groups、SharePoint、Yammer、Viva Engage を簡単に管理および整理します",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://myhub-gov.avepointonlineservices.com/teams/#/",
+          "entityId": "teams-app-home",
+          "name": "ホーム",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://myhub-gov.avepointonlineservices.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112283521",
+      "termsOfUseUrl": "https://www.avepoint.com/company/terms-and-conditions/",
+      "validDomains": [
+        "myhub-gov.avepointonlineservices.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+        "resource": "api://myhub-gov.avepointonlineservices.com/07cba5b9-098c-4b75-8874-f444bcc285c3"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "e00456a5-3a89-400a-88b9-368533594cb4",
+      "version": "1.1.0",
+      "name": "MyHub for AOS-US",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 18006400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "사용 가능한 모든 작업 영역 확인",
+                  "title": "모든 작업 영역 보기"
+                },
+                {
+                  "description": "즐겨찾기 작업 영역 확인",
+                  "title": "즐겨찾기 작업 영역 보기"
+                },
+                {
+                  "description": "소유하고 있거나 참여 중인 작업 영역 확인",
+                  "title": "내 작업 공간 보기"
+                },
+                {
+                  "description": "최근 활동한 작업 영역 확인",
+                  "title": "최근 활동한 작업 영역 보기"
+                },
+                {
+                  "description": "MyHub for AOS-US에서 알림 받기 시작",
+                  "title": "알림 켜기"
+                },
+                {
+                  "description": "MyHub for AOS-US에서 알림 받기 중지",
+                  "title": "알림 끄기"
+                },
+                {
+                  "description": "모든 지원되는 명령어 확인",
+                  "title": "도움말"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "4d69a8e1-9c38-4b33-b76f-9d59b5ae051b",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "AvePoint, inc.",
+      "developerUrl": "https://www.avepoint.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Show tasks, you can filter by summary, due date",
+              "fetchTask": false,
+              "id": "SearchToDoList",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Task summary as keyword",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "taskSummary",
+                  "title": "task summary"
+                },
+                {
+                  "description": "Due start date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueStartDate",
+                  "title": "due start date"
+                },
+                {
+                  "description": "Due end date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueEndDate",
+                  "title": "due end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what MyHub tasks are overdue"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due this week"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due in next 5 days"
+                }
+              ],
+              "title": "Tasks",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List all workspaces or workspaces that I own, workspace can be any Microsoft 365 object type",
+              "fetchTask": false,
+              "id": "SearchMyWorkspace",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "list all workspaces or workspaces that I own",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceName",
+                  "title": "workspace name",
+                  "value": "All"
+                },
+                {
+                  "description": "Type of workspace",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceType",
+                  "title": "Workspace Type"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me my MyHub Workspaces"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that type is Teams"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that name has 'Product'"
+                }
+              ],
+              "title": "Workspace",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List services that I can use to start request",
+              "fetchTask": false,
+              "id": "SearchMyServices",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Service name as keyword, leave empty to list all services.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "serviceName",
+                  "title": "Service Name"
+                },
+                {
+                  "choices": [
+                    {
+                      "title": "All",
+                      "value": "All"
+                    }
+                  ],
+                  "description": "Type of service",
+                  "inputType": "choiceset",
+                  "isRequired": false,
+                  "name": "serviceType",
+                  "title": "Service Type",
+                  "value": "All"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what services are available in MyHub"
+                },
+                {
+                  "text": "Show me available services having name 'Create Site Collection' in MyHub"
+                },
+                {
+                  "text": "What services can I request in MyHub?"
+                }
+              ],
+              "title": "Services",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "ko-kr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_largeimage.png",
+      "lastUpdatedAt": "2024-09-02T03:41:55.6840699+00:00",
+      "longDescription": "새 Microsoft 365 작업 영역 생성과 기존 작업 영역 관리가 모두 가능한 편리한 원스톱 도구, MyHub를 Microsoft Teams에서 만나보세요! Outlook과 Microsoft 365 앱에서도 MyHub 앱을 사용할 수 있습니다.\r\n MyHub를 통해 모든 Microsoft 작업 영역에 바로 액세스하여, 쉽고 빠르게 정리할 수 있습니다.\r\n * 목적, 주제 등 다양한 기준을 기반으로 작업 영역 허브 생성\r\n * 커스텀 태그에 따라 팀, 그룹, SharePoint 사이트 및 Viva Engage 커뮤니케이션 분류\r\n * 팀 및 그룹 멤버십 관리\r\n * 각 작업 영역 관련 콘텐츠, 작업 등에 편리하게 액세스\r\n * 새 작업 영역 생성 후 봇에게 알림 받기\r\n 이제 Copilot for Microsoft 365와 통합되어, 사용자는 Copilot for Microsoft 365 활용하여 작업 영역 관련 정보를 검색할 수 있습니다. 예시) \"내 MyHub 작업 영역을 보여주세요.\"\r\n AvePoint의 Confidence Platform 고객은 Teams에서 MyHub를 사용하여 프로비저닝, 정기 갱신 및 수명 주기 작업을 바로 수행할 수 있습니다. 이 앱을 사용하려면 사용자는 활성 Microsoft 365 계정 및 MyHub 라이선스를 보유하고 있어야 합니다. 자세한 내용을 확인하려면 AvePoint 지원팀에 문의해 주시기 바랍니다.\r\n MyHub for AOS-US를 처음 사용하시나요? [무료로 가입해 보세요!](https://myhub-gov.avepointonlineservices.com)\r\n 추가 정보[제품 사용자 가이드](https://avepointcdn.azureedge.net/assets/webhelp/myhub-administrator-guide/index.htm#!Documents/aboutmyhub.htm)도움이 필요한 경우 [AvePoint 지원팀](https://www.avepoint.com/products/support)에 연락해 주시기 바랍니다.",
+      "mpnId": "1388828",
+      "officeAssetId": "WA200004505",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.avepoint.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Microsoft Teams, Groups, SharePoint 및 Viva Engage를 쉽게 관리하고 정리합니다",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://myhub-gov.avepointonlineservices.com/teams/#/",
+          "entityId": "teams-app-home",
+          "name": "홈",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://myhub-gov.avepointonlineservices.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112283521",
+      "termsOfUseUrl": "https://www.avepoint.com/company/terms-and-conditions/",
+      "validDomains": [
+        "myhub-gov.avepointonlineservices.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+        "resource": "api://myhub-gov.avepointonlineservices.com/07cba5b9-098c-4b75-8874-f444bcc285c3"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "e00456a5-3a89-400a-88b9-368533594cb4",
+      "version": "1.1.0",
+      "name": "MyHub for AOS-US",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 18006400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Bekijk alle werkruimtes die voor u beschikbaar zijn",
+                  "title": "Alle werkruimtes bekijken"
+                },
+                {
+                  "description": "Bekijk uw favoriete werkruimtes",
+                  "title": "Favoriete werkruimtes bekijken"
+                },
+                {
+                  "description": "Bekijk werkruimtes waar u eigenaar van bent of wordt lid",
+                  "title": "Mijn werkruimtes bekijken"
+                },
+                {
+                  "description": "Bekijk recent actieve werkruimtes",
+                  "title": "Recente werkruimtes bekijken"
+                },
+                {
+                  "description": "Start met het ontvangen van meldingen van MyHub.",
+                  "title": "Meldingen inschakelen"
+                },
+                {
+                  "description": "Stop met het ontvangen van meldingen van MyHub.",
+                  "title": "Meldingen uitschakelen"
+                },
+                {
+                  "description": "Bekijk alle ondersteunde commando’s",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "4d69a8e1-9c38-4b33-b76f-9d59b5ae051b",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "AvePoint, inc.",
+      "developerUrl": "https://www.avepoint.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Show tasks, you can filter by summary, due date",
+              "fetchTask": false,
+              "id": "SearchToDoList",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Task summary as keyword",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "taskSummary",
+                  "title": "task summary"
+                },
+                {
+                  "description": "Due start date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueStartDate",
+                  "title": "due start date"
+                },
+                {
+                  "description": "Due end date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueEndDate",
+                  "title": "due end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what MyHub tasks are overdue"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due this week"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due in next 5 days"
+                }
+              ],
+              "title": "Tasks",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List all workspaces or workspaces that I own, workspace can be any Microsoft 365 object type",
+              "fetchTask": false,
+              "id": "SearchMyWorkspace",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "list all workspaces or workspaces that I own",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceName",
+                  "title": "workspace name",
+                  "value": "All"
+                },
+                {
+                  "description": "Type of workspace",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceType",
+                  "title": "Workspace Type"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me my MyHub Workspaces"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that type is Teams"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that name has 'Product'"
+                }
+              ],
+              "title": "Workspace",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List services that I can use to start request",
+              "fetchTask": false,
+              "id": "SearchMyServices",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Service name as keyword, leave empty to list all services.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "serviceName",
+                  "title": "Service Name"
+                },
+                {
+                  "choices": [
+                    {
+                      "title": "All",
+                      "value": "All"
+                    }
+                  ],
+                  "description": "Type of service",
+                  "inputType": "choiceset",
+                  "isRequired": false,
+                  "name": "serviceType",
+                  "title": "Service Type",
+                  "value": "All"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what services are available in MyHub"
+                },
+                {
+                  "text": "Show me available services having name 'Create Site Collection' in MyHub"
+                },
+                {
+                  "text": "What services can I request in MyHub?"
+                }
+              ],
+              "title": "Services",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "nl-nl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_largeimage.png",
+      "lastUpdatedAt": "2024-09-02T03:41:55.6840699+00:00",
+      "longDescription": "Maak kennis met MyHub, een handige one-stop-shop voor het beheren van bestaande en het aanmaken van nieuwe Microsoft 365-werkruimtes, allemaal vanuit Microsoft Teams! MyHub biedt u een centrale console en services die eenvoudig te gebruiken zijn. Organiseer en krijg inzicht in de gegevens van al uw werkruimtes.",
+      "mpnId": "1388828",
+      "officeAssetId": "WA200004505",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.avepoint.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Beheer en organiseer eenvoudig Teams, -groepen, SharePoint en Viva Engage",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://myhub-gov.avepointonlineservices.com/teams/#/",
+          "entityId": "teams-app-home",
+          "name": "Startpagina",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://myhub-gov.avepointonlineservices.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112283521",
+      "termsOfUseUrl": "https://www.avepoint.com/company/terms-and-conditions/",
+      "validDomains": [
+        "myhub-gov.avepointonlineservices.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+        "resource": "api://myhub-gov.avepointonlineservices.com/07cba5b9-098c-4b75-8874-f444bcc285c3"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "e00456a5-3a89-400a-88b9-368533594cb4",
+      "version": "1.1.0",
+      "name": "MyHub for AOS-US",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 18006400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Ver todos os espaços de trabalho disponíveis para você",
+                  "title": "Ver todos os espaços de trabalho"
+                },
+                {
+                  "description": "Ver seus espaços de trabalho favoritos",
+                  "title": "Espaços de trabalho favoritos"
+                },
+                {
+                  "description": "Ver espaços de trabalho dos quais você é membro ou proprietário",
+                  "title": "Ver meus espaços de trabalho"
+                },
+                {
+                  "description": "Ver espaços de trabalho recentemente ativos",
+                  "title": "Ver espaços de trabalho recentes"
+                },
+                {
+                  "description": "Começar a receber notificações do MyHub for AOS-US",
+                  "title": "Ligar as notificações"
+                },
+                {
+                  "description": "Parar de receber notificações do MyHub for AOS-US",
+                  "title": "Desligar as notificações"
+                },
+                {
+                  "description": "Acessar todos os comandos suportados",
+                  "title": "Ajuda"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "4d69a8e1-9c38-4b33-b76f-9d59b5ae051b",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "AvePoint, inc.",
+      "developerUrl": "https://www.avepoint.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Show tasks, you can filter by summary, due date",
+              "fetchTask": false,
+              "id": "SearchToDoList",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Task summary as keyword",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "taskSummary",
+                  "title": "task summary"
+                },
+                {
+                  "description": "Due start date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueStartDate",
+                  "title": "due start date"
+                },
+                {
+                  "description": "Due end date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueEndDate",
+                  "title": "due end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what MyHub tasks are overdue"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due this week"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due in next 5 days"
+                }
+              ],
+              "title": "Tasks",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List all workspaces or workspaces that I own, workspace can be any Microsoft 365 object type",
+              "fetchTask": false,
+              "id": "SearchMyWorkspace",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "list all workspaces or workspaces that I own",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceName",
+                  "title": "workspace name",
+                  "value": "All"
+                },
+                {
+                  "description": "Type of workspace",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceType",
+                  "title": "Workspace Type"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me my MyHub Workspaces"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that type is Teams"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that name has 'Product'"
+                }
+              ],
+              "title": "Workspace",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List services that I can use to start request",
+              "fetchTask": false,
+              "id": "SearchMyServices",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Service name as keyword, leave empty to list all services.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "serviceName",
+                  "title": "Service Name"
+                },
+                {
+                  "choices": [
+                    {
+                      "title": "All",
+                      "value": "All"
+                    }
+                  ],
+                  "description": "Type of service",
+                  "inputType": "choiceset",
+                  "isRequired": false,
+                  "name": "serviceType",
+                  "title": "Service Type",
+                  "value": "All"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what services are available in MyHub"
+                },
+                {
+                  "text": "Show me available services having name 'Create Site Collection' in MyHub"
+                },
+                {
+                  "text": "What services can I request in MyHub?"
+                }
+              ],
+              "title": "Services",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "pt-br",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_largeimage.png",
+      "lastUpdatedAt": "2024-09-02T03:41:55.6840699+00:00",
+      "longDescription": "Conheça o MyHub for AOS-US, uma prática loja de conveniência para gerenciar seus espaços de trabalho do Microsoft 365 existentes e criar novos – tudo a partir do Microsoft Teams.  \r\n O MyHub for AOS-US facilita a organização, a compreensão e o acesso a todos os seus espaços de trabalho da Microsoft, ajudando você a:\r\n * Criar hubs de espaço de trabalho com base em diferentes critérios, como finalidade ou tópico\r\n * Classificar equipes, grupos, sites do SharePoint e comunidades Viva Engage com tags personalizadas\r\n * Gerenciar a associação de equipes e grupos\r\n * Acessar facilmente conteúdo, tarefas e muito mais, associados a cada espaço de trabalho\r\n * Receber notificações do bot depois de criar novos espaços de trabalho\r\n Agora integrado com o Copilot para Microsoft 365 para permitir que os usuários finais aproveitem o Copilot para Microsoft 365 para encontrar informações relevantes sobre seus espaços de trabalho. Por exemplo, mostre-me meus espaços de trabalho MyHub. \r\n Os clientes da plataforma de confiança da AvePoint também podem realizar tarefas de provisionamento, recertificação e ciclo de vida diretamente do MyHub for AOS-US no Teams.  \r\n Novo no MyHub for AOS-US? [Inscreva-se gratuitamente](https://myhub-gov.avepointonlineservices.com)  \r\n Recursos adicionais  \r\n [Guia do usuário do produto](https://avepointcdn.azureedge.net/assets/webhelp/myhub-administrator-guide/index.htm#!Documents/aboutmyhub.htm)  \r\n Entre em contato com o [Suporte da AvePoint](https://www.avepoint.com/products/support)  para obter ajuda adicional.",
+      "mpnId": "1388828",
+      "officeAssetId": "WA200004505",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.avepoint.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Gerencie e organize facilmente o Teams, Grupos, SharePoint e Viva Engage",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://myhub-gov.avepointonlineservices.com/teams/#/",
+          "entityId": "teams-app-home",
+          "name": "Página Inicial",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://myhub-gov.avepointonlineservices.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112283521",
+      "termsOfUseUrl": "https://www.avepoint.com/company/terms-and-conditions/",
+      "validDomains": [
+        "myhub-gov.avepointonlineservices.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+        "resource": "api://myhub-gov.avepointonlineservices.com/07cba5b9-098c-4b75-8874-f444bcc285c3"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "e00456a5-3a89-400a-88b9-368533594cb4",
+      "version": "1.1.0",
+      "name": "MyHub for AOS-US",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 18006400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "查看所有适用于你的工作空间",
+                  "title": "查看所有工作空间"
+                },
+                {
+                  "description": "查看你标记喜爱的工作空间",
+                  "title": "查看喜爱的工作空间"
+                },
+                {
+                  "description": "查看你是所有者或者参与的工作空间",
+                  "title": "查看我的工作空间"
+                },
+                {
+                  "description": "查看最近有活动的工作空间",
+                  "title": "查看近期工作空间"
+                },
+                {
+                  "description": "开始接受MyHub for AOS-US的即时消息",
+                  "title": "开启消息提醒"
+                },
+                {
+                  "description": "停止接受MyHub for AOS-US的即时消息",
+                  "title": "关闭消息提醒"
+                },
+                {
+                  "description": "列出所有支持的命令",
+                  "title": "帮助"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "4d69a8e1-9c38-4b33-b76f-9d59b5ae051b",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "AvePoint, inc.",
+      "developerUrl": "https://www.avepoint.com",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Show tasks, you can filter by summary, due date",
+              "fetchTask": false,
+              "id": "SearchToDoList",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Task summary as keyword",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "taskSummary",
+                  "title": "task summary"
+                },
+                {
+                  "description": "Due start date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueStartDate",
+                  "title": "due start date"
+                },
+                {
+                  "description": "Due end date of task",
+                  "inputType": "time",
+                  "isRequired": false,
+                  "name": "taskDueEndDate",
+                  "title": "due end date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what MyHub tasks are overdue"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due this week"
+                },
+                {
+                  "text": "Show me what MyHub tasks are due in next 5 days"
+                }
+              ],
+              "title": "Tasks",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List all workspaces or workspaces that I own, workspace can be any Microsoft 365 object type",
+              "fetchTask": false,
+              "id": "SearchMyWorkspace",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "list all workspaces or workspaces that I own",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceName",
+                  "title": "workspace name",
+                  "value": "All"
+                },
+                {
+                  "description": "Type of workspace",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "workspaceType",
+                  "title": "Workspace Type"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me my MyHub Workspaces"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that type is Teams"
+                },
+                {
+                  "text": "Show me my MyHub Workspaces that name has 'Product'"
+                }
+              ],
+              "title": "Workspace",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "List services that I can use to start request",
+              "fetchTask": false,
+              "id": "SearchMyServices",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Service name as keyword, leave empty to list all services.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "serviceName",
+                  "title": "Service Name"
+                },
+                {
+                  "choices": [
+                    {
+                      "title": "All",
+                      "value": "All"
+                    }
+                  ],
+                  "description": "Type of service",
+                  "inputType": "choiceset",
+                  "isRequired": false,
+                  "name": "serviceType",
+                  "title": "Service Type",
+                  "value": "All"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Show me what services are available in MyHub"
+                },
+                {
+                  "text": "Show me available services having name 'Create Site Collection' in MyHub"
+                },
+                {
+                  "text": "What services can I request in MyHub?"
+                }
+              ],
+              "title": "Services",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "zh-cn",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_largeimage.png",
+      "lastUpdatedAt": "2024-09-02T03:41:55.6840699+00:00",
+      "longDescription": "MyHub for AOS-US是一个方便的一站式商店，用于管理现有的Microsoft 365工作区和创建新的工作区-所有这些都来自Microsoft Teams!同时我们也支持了Outlook 和 Microsoft 365 app。  \r\n MyHub for AOS-US使您轻松地组织、理解和访问所有Microsoft工作区：\r\n * 根据不同标准创建工作区中心，如创建目的或主题\r\n * 使用自定义标签对团队、组、SharePoint网站和Viva Engage社区进行分类\r\n * 管理团队和组成员\r\n * 轻松访问每个工作区相关的内容和任务\r\n * 在创建新工作区后接受来自bot的通知\r\n 现在我们与Copilot for Microsoft 365集成，允许用户利用Copilot for Microsoft 365来查找其工作区的相关信息。例如：展示我的MyHub工作区。 \r\n AvePoint’s Confidence Platform的客户还可以在Teams的MyHub for AOS-US中执行配置，重新认证、以及生命周期相关任务。这要求客户拥有有效的Microsoft 365 账号，以及MyHub for AOS-US的许可证。请联系我们的支持团队获取更多信息。  \r\n 刚来到MyHub? [免费注册](https://myhub-gov.avepointonlineservices.com)  \r\n 其他资源  \r\n [产品使用指南](https://avepointcdn.azureedge.net/assets/webhelp/myhub-administrator-guide/index.htm#!Documents/aboutmyhub.htm)  \r\n 请联系 [AvePoint 支持](https://www.avepoint.com/products/support)获取更多帮助。",
+      "mpnId": "1388828",
+      "officeAssetId": "WA200004505",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.avepoint.com/company/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "便捷管理和组织Microsoft Teams、Groups、SharePoin和Viva Engage社区",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/e00456a5-3a89-400a-88b9-368533594cb4/2025071112283521/e00456a5-3a89-400a-88b9-368533594cb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://myhub-gov.avepointonlineservices.com/teams/#/",
+          "entityId": "teams-app-home",
+          "name": "首页",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://myhub-gov.avepointonlineservices.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112283521",
+      "termsOfUseUrl": "https://www.avepoint.com/company/terms-and-conditions/",
+      "validDomains": [
+        "myhub-gov.avepointonlineservices.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "07cba5b9-098c-4b75-8874-f444bcc285c3",
+        "resource": "api://myhub-gov.avepointonlineservices.com/07cba5b9-098c-4b75-8874-f444bcc285c3"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@MyHub for AOS-US View all workspaces",
+      "description": "The user wants to see a list of all available workspaces they have access to.",
+      "command": "View all workspaces"
+    },
+    {
+      "prompt": "@MyHub for AOS-US Turn notifications on",
+      "description": "The user wants to enable notifications for their workspaces.",
+      "command": "Turn notifications on"
+    },
+    {
+      "prompt": "@MyHub for AOS-US Help",
+      "description": "The user is seeking assistance on how to use the MyHub for AOS-US bot.",
+      "command": "Help"
+    }
+  ]
+}

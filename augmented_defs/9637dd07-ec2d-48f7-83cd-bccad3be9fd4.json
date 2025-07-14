@@ -1,0 +1,158 @@
+{
+  "manifestVersion": "1.8",
+  "id": "9637dd07-ec2d-48f7-83cd-bccad3be9fd4",
+  "version": "1.0.0",
+  "name": "SkyPoint Cloud",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 73786570,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Searching for Customer Profiles.",
+              "title": "search"
+            },
+            {
+              "description": "Choose the tenant from which you want to lookup Customer Profiles.",
+              "title": "switchtenant"
+            },
+            {
+              "description": "Choose the instance from which you want to lookup Customer Profiles.",
+              "title": "switchinstance"
+            },
+            {
+              "description": "Get the full list of commands",
+              "title": "help"
+            },
+            {
+              "description": "Starts your session",
+              "title": "login"
+            },
+            {
+              "description": "Ends your current session",
+              "title": "logout"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "87b145ff-0622-4837-9c1c-3f9429b24260",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "CustomerAndContactManagement",
+    "DataVisualizationAndBI",
+    "SalesAndMarketing"
+  ],
+  "creatorId": "",
+  "developerName": " SkyPoint Cloud Inc.",
+  "developerUrl": "https://skypointcloud.com/",
+  "industries": [
+    "HealthCareAndLifeSciences",
+    "Retail"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "SkyPoint"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9637dd07-ec2d-48f7-83cd-bccad3be9fd4/2025071112135875/9637dd07-ec2d-48f7-83cd-bccad3be9fd4_largeimage.png",
+  "lastUpdatedAt": "2024-02-05T16:58:27.0816506+00:00",
+  "longDescription": "The SkyPoint Cloud bot enables users to quickly look up customer profiles in the Microsoft Teams in the chat with an intelligent bot. \nThe SkyPoint Cloud bot allows to connect to your SkyPoint instance and can pull up customer profiles in Microsoft Teams when you search for them by name, phone number, email address, or another field. The bot displays a customer profile card for the requested customer with details that help to drive real-time business decisions. \nIn order to use this app, you need to have access to a SkyPoint Cloud account. [Learn more.](https://skypointcloud.com/platform/)",
+  "mpnId": "3218274",
+  "officeAssetId": "WA200002580",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://skypointcloud.com/privacy/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9637dd07-ec2d-48f7-83cd-bccad3be9fd4/2025071112135875/9637dd07-ec2d-48f7-83cd-bccad3be9fd4_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9637dd07-ec2d-48f7-83cd-bccad3be9fd4/2025071112135875/9637dd07-ec2d-48f7-83cd-bccad3be9fd4_screenshot/1.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Real-time access to data you need to better serve your customers.",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9637dd07-ec2d-48f7-83cd-bccad3be9fd4/2025071112135875/9637dd07-ec2d-48f7-83cd-bccad3be9fd4_smallimage.png",
+  "systemVersion": "2025071112135875",
+  "termsOfUseUrl": "https://skypointcloud.com/terms/",
+  "validDomains": [
+    "token.botframework.com",
+    "*.skypointcloud.com"
+  ],
+  "webApplicationInfo": {
+    "id": "ba51b712-533b-498b-8594-be719a33313d",
+    "resource": "https://sicdpstage.b2clogin.com/sicdpstage.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/token"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@SkyPoint Cloud Can you help me find the latest customer feedback data?",
+      "description": "User seeks to retrieve specific customer feedback data using the bot's capabilities.",
+      "command": "search"
+    },
+    {
+      "prompt": "@SkyPoint Cloud I need to switch to our European tenant to access localized data.",
+      "description": "User wants to change the current tenant to access data specific to a different region.",
+      "command": "switchtenant"
+    },
+    {
+      "prompt": "@SkyPoint Cloud How do I log out from the current session?",
+      "description": "User needs assistance with logging out of the current session.",
+      "command": "logout"
+    }
+  ]
+}

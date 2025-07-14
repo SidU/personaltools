@@ -1,0 +1,200 @@
+{
+  "manifestVersion": "1.17",
+  "id": "d4275409-72a2-423e-9557-e088f0e68f20",
+  "version": "1.3.0",
+  "name": "touchSMS",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 72658330,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Configure touchSMS for Teams",
+              "title": "setup"
+            },
+            {
+              "description": "Disconnect touchSMS for Teams",
+              "title": "disconnect"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "d4275409-72a2-423e-9557-e088f0e68f20",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "ITAdmin",
+    "WorkflowAndBusinessManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Edgility",
+  "developerUrl": "https://www.touchsms.com.au",
+  "industries": [
+    "HealthCareAndLifeSciences",
+    "ProfessionalServices"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "d4275409-72a2-423e-9557-e088f0e68f20",
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Send a new SMS",
+          "fetchTask": true,
+          "id": "sendSMS",
+          "initialRun": true,
+          "title": "Send SMS",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Manage inbound SMS to channel",
+          "fetchTask": true,
+          "id": "enableInbound",
+          "initialRun": false,
+          "title": "Manage Inbound",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "text message",
+    "sms",
+    "communication"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d4275409-72a2-423e-9557-e088f0e68f20/2025071113003532/d4275409-72a2-423e-9557-e088f0e68f20_largeimage.png",
+  "lastUpdatedAt": "2024-10-24T03:55:42.6477232+00:00",
+  "longDescription": "\n**Send and receive SMS and MMS** directly from Microsoft Teams with touchSMS App. Adding SMS to your Microsoft Teams environment extends the reach of your communication and ensures you can stay in touch with your contacts, even after they look away from their screen.\n\nOnce connected, touchSMS will be added to your Message Extensions tools for quick sending. Select **Send SMS** to open the sending screen, where you can enter one or multiple numbers, select from saved contacts or groups, compose your SMS or MMS and just click SEND! Not ready to send? No problem - schedule the message for delivery at a later date/time.\n\nSending SMS from Teams is a great way to stay on top of client support, marketing or customer service queries, as **inbound SMS and SMS replies** are routed to the Team or Chat of your choice. All messages sent and received appear in your message history, so you always have a record of communication.\n\n_Currently available in Australia and New Zealand_\n\n**touchSMS features in Teams:**\n\n* Send and receive SMS from collaborative Teams chats - visible to all members\n* Send and receive SMS privately from touchSMS App\n* Send and receive MMS (Australia only. With Virtual Number)\n* Schedule SMS for later delivery\n* SMS Conversation Threading in Teams chats\n* Create Contacts and Groups\n* Save templates for quick sending\n* Notifications of inbound SMS\n* Pin touchSMS for Team App to your Microsoft Teams Menu for easy access\n\n[Sign up to touchSMS and add SMS to your Teams App NOW!](https://www.touchsms.com.au/)\n\ntouchSMS is a Prepaid SMS Platform - **5c per SMS/ 25c per MMS**\n\n_(5c per credit - 1 credit per Australian SMS & 2 credits per NZ SMS. Pricing in AUD)_\n\nNo contracts. No hidden fees.\n\nVisit [touchsms.com.au](https://www.touchsms.com.au/) to sign up for **free** \\- no credit card required.\n\nGet **10 FREE SMS** credits when you register.\n\nTo talk to one of our experts, call us on +61 2 9518 5955 or email [support@touchsms.com.au](mailto:support@touchsms.com.au)",
+  "mpnId": "6407446",
+  "officeAssetId": "WA200003655",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.touchsms.com.au/privacy-policy/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d4275409-72a2-423e-9557-e088f0e68f20/2025071113003532/d4275409-72a2-423e-9557-e088f0e68f20_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d4275409-72a2-423e-9557-e088f0e68f20/2025071113003532/d4275409-72a2-423e-9557-e088f0e68f20_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d4275409-72a2-423e-9557-e088f0e68f20/2025071113003532/d4275409-72a2-423e-9557-e088f0e68f20_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d4275409-72a2-423e-9557-e088f0e68f20/2025071113003532/d4275409-72a2-423e-9557-e088f0e68f20_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d4275409-72a2-423e-9557-e088f0e68f20/2025071113003532/d4275409-72a2-423e-9557-e088f0e68f20_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Send and receive SMS directly from Microsoft Teams with touchSMS",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d4275409-72a2-423e-9557-e088f0e68f20/2025071113003532/d4275409-72a2-423e-9557-e088f0e68f20_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://app.touchsms.com.au/integrations/teams/embed/chat",
+      "context": [
+        "channelTab",
+        "privateChatTab"
+      ],
+      "entityId": "chat_inbox",
+      "name": "touchSMS",
+      "scopes": [
+        "personal",
+        "groupChat",
+        "team"
+      ],
+      "websiteUrl": "https://app.touchsms.com.au/chat"
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071113003532",
+  "termsOfUseUrl": "https://www.touchsms.com.au/legal/",
+  "validDomains": [
+    "touchsms.com.au",
+    "teams.touchsms.com.au",
+    "app.touchsms.com.au",
+    "platform.touchsms.com.au"
+  ],
+  "videoUrl": "https://vimeo.com/1012213655",
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@touchSMS Can you help me set up my SMS service in Teams?",
+      "description": "User wants to initialize and set up the SMS service with touchSMS.",
+      "command": "setup"
+    },
+    {
+      "prompt": "@touchSMS I need to disconnect my SMS account from Teams.",
+      "description": "User requests to disconnect their current SMS account from the Teams integration.",
+      "command": "disconnect"
+    },
+    {
+      "prompt": "@touchSMS How do I configure the SMS settings?",
+      "description": "User is inquiring about configuring or setting up SMS related settings.",
+      "command": "setup"
+    }
+  ]
+}

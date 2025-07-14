@@ -1,0 +1,142 @@
+{
+  "manifestVersion": "1.10",
+  "id": "ff5b7b81-ef94-441d-bc7c-eb04e53a188f",
+  "version": "1.2.0",
+  "name": "Moneypenny",
+  "accentColor": "#FFFFFF",
+  "activities": {
+    "activityTypes": [
+      {
+        "description": "Caller Notification",
+        "templateText": "{transferActivityNotificationText}",
+        "type": "callerInfo"
+      }
+    ]
+  },
+  "amsSellerAccountId": 77029260,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "ff5b7b81-ef94-441d-bc7c-eb04e53a188f",
+      "isNotificationOnly": true,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "CustomerAndContactManagement"
+  ],
+  "creatorId": "",
+  "developerName": "CALLITECH LIMITED",
+  "developerUrl": "https://www.moneypenny.com/uk/",
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ff5b7b81-ef94-441d-bc7c-eb04e53a188f/2025071113470026/ff5b7b81-ef94-441d-bc7c-eb04e53a188f_largeimage.png",
+  "lastUpdatedAt": "2024-01-03T10:04:40.2145987+00:00",
+  "longDescription": "Let us transfer your calls directly into Microsoft Teams, allowing your entire business to operate in a multi-device environment – without the need for telephone numbers or a Microsoft call plan.\nYour Moneypenny Receptionist will manage calls in exactly the same way as they do now, but by connecting your account with us, you and your team will be able to receive calls through Teams. There’s no need to keep asking us to switch from your desktop to your mobile; we’ll be able to reach you wherever you are, no matter which device you’re using.\nComplete your quick and easy setup now, simply by adding the Moneypenny app to your organisation and granting us access to your employees on Teams. The app will allow us to run calls through your Azure Portal and enable transfers within the Teams platform using the Notification-only bot.\nTo use this app, you must have an active Moneypenny account. If you have any questions, please get in touch on +44 345 123 3700.\nLet's get started!",
+  "officeAssetId": "WA200003396",
+  "permissions": [
+    "Identity"
+  ],
+  "privacyUrl": "https://www.moneypenny.com/uk/privacy/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ff5b7b81-ef94-441d-bc7c-eb04e53a188f/2025071113470026/ff5b7b81-ef94-441d-bc7c-eb04e53a188f_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ff5b7b81-ef94-441d-bc7c-eb04e53a188f/2025071113470026/ff5b7b81-ef94-441d-bc7c-eb04e53a188f_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ff5b7b81-ef94-441d-bc7c-eb04e53a188f/2025071113470026/ff5b7b81-ef94-441d-bc7c-eb04e53a188f_screenshot/2.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Streamline the way you work by integrating your Microsoft Teams with Moneypenny",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/ff5b7b81-ef94-441d-bc7c-eb04e53a188f/2025071113470026/ff5b7b81-ef94-441d-bc7c-eb04e53a188f_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://teamsbot-notification.moneypenny.com/calls-tab?callRecordId={subEntityId}&userObjectId={userObjectId}&tenantId={tid}",
+      "entityId": "01e9900e-75a1-4355-906a-4eda1f5df5ca",
+      "name": "Calls",
+      "scopes": [
+        "personal"
+      ],
+      "searchUrl": "https://www.moneypenny.com/uk/",
+      "websiteUrl": "https://www.moneypenny.com/uk/"
+    },
+    {
+      "contentUrl": "https://teamsbot-notification.moneypenny.com/group-calls-tab?groupCallRecordId={subEntityId}&userObjectId={userObjectId}&tenantId={tid}",
+      "entityId": "D5A20F31-6C0C-4A05-8A4D-8E5EF4435509",
+      "name": "Group calls",
+      "scopes": [
+        "personal"
+      ],
+      "searchUrl": "https://www.moneypenny.com/uk/",
+      "websiteUrl": "https://www.moneypenny.com/uk/"
+    }
+  ],
+  "systemVersion": "2025071113470026",
+  "termsOfUseUrl": "https://www.moneypenny.com/uk/moneypenny-teams-integration-terms-and-conditions/",
+  "validDomains": [
+    "login.microsoftonline.com",
+    "teamsbot-notification.moneypenny.com",
+    "teamsbot-onboarding.moneypenny.com"
+  ],
+  "webApplicationInfo": {
+    "id": "5abaf07d-4c75-4994-88f6-1bfd550615de",
+    "resource": "https://teamsbot-onboarding.moneypenny.com/onboarding/start"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Moneypenny schedule a team meeting for next Tuesday at 10 AM",
+      "description": "The user wants to schedule a team meeting with a specified date and time.",
+      "command": null
+    },
+    {
+      "prompt": "@Moneypenny remind me to submit the financial report by end of day Friday",
+      "description": "The user requests a reminder to submit a specific report by a certain deadline.",
+      "command": null
+    },
+    {
+      "prompt": "@Moneypenny integrate my calendar with Teams for better event tracking",
+      "description": "The user asks Moneypenny to integrate their calendar with Teams.",
+      "command": null
+    }
+  ]
+}

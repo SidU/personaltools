@@ -1,0 +1,2140 @@
+{
+  "manifestVersion": "1.17",
+  "id": "d3d1be68-066c-4967-a74b-9edcf902dcfb",
+  "version": "4.9.2",
+  "name": "Decisions",
+  "accentColor": "#0073FF",
+  "activities": {
+    "activityTypes": [
+      {
+        "description": "Published agendas",
+        "templateText": "{actor} published agenda",
+        "type": "agendaPublished"
+      },
+      {
+        "description": "Topic suggestions",
+        "templateText": "{actor} suggested a topic",
+        "type": "topicSuggested"
+      },
+      {
+        "description": "Topic approvals",
+        "templateText": "{actor} added your topic",
+        "type": "topicAccepted"
+      },
+      {
+        "description": "General information update",
+        "templateText": "{actor} {message}",
+        "type": "generalUpdate"
+      }
+    ]
+  },
+  "amsSellerAccountId": 24942910,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Show list of articles",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Show list of articles",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Show list of articles",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "3a432a73-84ab-4af9-abab-f4278dcdafdb",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "ProjectManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultGroupCapability": {
+    "groupchat": "tab",
+    "meetings": "tab",
+    "team": "tab"
+  },
+  "developerName": "Decisions",
+  "developerUrl": "https://www.meetingdecisions.com",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2#/settings",
+      "context": [
+        "channelTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel"
+      ],
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "3a432a73-84ab-4af9-abab-f4278dcdafdb",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "commandBox",
+            "message"
+          ],
+          "description": "Quickly append items or topics to your upcoming meeting agendas.",
+          "fetchTask": true,
+          "id": "addToAgenda",
+          "initialRun": false,
+          "title": "Add to agenda in Decisions™",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox",
+            "message"
+          ],
+          "description": "Craft a structured agenda for your meeting to ensure focused discussions.",
+          "fetchTask": true,
+          "id": "createAgenda",
+          "initialRun": false,
+          "title": "Create agenda - Decisions™",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose",
+            "message"
+          ],
+          "description": "Rate the effectiveness and quality of recent meetings.",
+          "fetchTask": true,
+          "id": "meetingFeedback",
+          "initialRun": false,
+          "title": "Meeting feedback - Decisions™",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Retrieve and summarize the details or agenda for an upcoming meeting based on the subject provided.",
+          "fetchTask": false,
+          "id": "searchMeetingDetails",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "The subject of the meeting you want to share the details for, or 'upcoming'/'next' for the next meeting",
+              "inputType": "text",
+              "isRequired": true,
+              "name": "meetingSubject",
+              "title": "Meeting Subject"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Show me the details for my next meeting."
+            },
+            {
+              "text": "Provide the agenda and key points for my upcoming meeting."
+            },
+            {
+              "text": "What topics are on the agenda for the next meeting?"
+            }
+          ],
+          "semanticDescription": "An extension to fetch and provide summaries, agendas, or key details of upcoming meetings by their subjects or keywords.",
+          "title": "Meeting Details - Decisions™",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "agenda",
+    "minutes",
+    "recap"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_largeimage.png",
+  "lastUpdatedAt": "2025-03-27T11:55:48.6626142+00:00",
+  "longDescription": "Make your meetings count with a game-changing solution that powers meeting collaboration, engagement and productivity for users of Microsoft Teams with an agenda builder, minutes template, time tracker, secure voting, task assignment and more.\nThousands of customers trust Decisions for their meetings, whether they are held virtually, in-person or a hybrid of the two. \n\n**Key Features**\n\n- Teams meeting side panel support (In-meeting experience)\n- Smart Agenda builder\n- Collaboration on Agenda\n- One-click meeting minutes for Word and OneNote\n- Automatic creation of Meeting Book PDF or PPT\n- Custom templates\n- Time tracker\n- Easily manage guest and external presenters\n- Agenda topic submission process\n- Secure voting\n- Tasks and decisions syncing to Microsoft Planner and ToDo\n- Meeting Engagement Score\n- Meeting Feedback\n- Works with Microsoft 365 Copilot (Ex: Share meeting details)\n\nFor more information on getting started with Decisions, please [click here](https://support.meetingdecisions.com/en/getting-started)\n\nIf you see objectionable content, please [let us know](mailto:support@meetingdecisions.com?subject=Report%20of%20Objectionable%20Content)",
+  "mpnId": "4974427",
+  "officeAssetId": "WA104381880",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.meetingdecisions.com/privacy",
+  "restrictedTenantTypes": [
+    "Freemium"
+  ],
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "✨ AI-powered meetings: Agendas, summaries, decisions + tasks, all in one place",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/dashboard",
+      "entityId": "teamsDashboard",
+      "name": "Meetings",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.boarddecisions.com/redirect/dashboard?manifestVersion=4_9_2"
+    },
+    {
+      "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/my-assistant",
+      "entityId": "myAssistant",
+      "name": "✨ My Assistant",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.boarddecisions.com/web/#/my-assistant?source=teams&manifestVersion=4_9_2"
+    },
+    {
+      "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/my-week",
+      "entityId": "myWeekDashboard",
+      "name": "My Week",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.boarddecisions.com/web/#/my-week?source=teams&manifestVersion=4_9_2"
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "supportedChannelTypes": [
+    "privateChannels",
+    "sharedChannels"
+  ],
+  "systemVersion": "2025071113143993",
+  "termsOfUseUrl": "https://www.meetingdecisions.com/terms-of-service",
+  "validDomains": [
+    "app.boarddecisions.com",
+    "login.microsoftonline.com",
+    "token.botframework.com"
+  ],
+  "webApplicationInfo": {
+    "id": "1064f7e4-a9e2-467d-8d42-f45cc59f145d",
+    "resource": "api://app.boarddecisions.com/botid-3a432a73-84ab-4af9-abab-f4278dcdafdb"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "de",
+    "nb-no",
+    "fr"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.17",
+      "id": "d3d1be68-066c-4967-a74b-9edcf902dcfb",
+      "version": "4.9.2",
+      "name": "Decisions",
+      "accentColor": "#0073FF",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Veröffentlichte Agenda",
+            "templateText": "{actor} hat eine Agenda veröffentlicht",
+            "type": "agendaPublished"
+          },
+          {
+            "description": "Agendapunkt vorgeschlagen",
+            "templateText": "{actor} hat einen Agendapunkt vorgeschlagen",
+            "type": "topicSuggested"
+          },
+          {
+            "description": "Agendapunkt akzeptiert",
+            "templateText": "{actor} hat Ihren Agendapunkt akzeptiert",
+            "type": "topicAccepted"
+          },
+          {
+            "description": "Aktualisierung der allgemeinen informationen",
+            "templateText": "{actor} {message}",
+            "type": "generalUpdate"
+          }
+        ]
+      },
+      "amsSellerAccountId": 24942910,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Show list of articles",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Show list of articles",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Show list of articles",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "3a432a73-84ab-4af9-abab-f4278dcdafdb",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "ProjectManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultGroupCapability": {
+        "groupchat": "tab",
+        "meetings": "tab",
+        "team": "tab"
+      },
+      "developerName": "Decisions",
+      "developerUrl": "https://www.meetingdecisions.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2#/settings",
+          "context": [
+            "channelTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "3a432a73-84ab-4af9-abab-f4278dcdafdb",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox",
+                "message"
+              ],
+              "description": "Fügen Sie schnell Punkte oder Themen zu Ihren bevorstehenden Besprechungsagenden hinzu.",
+              "fetchTask": true,
+              "id": "addToAgenda",
+              "initialRun": false,
+              "title": "Zu Agenda hinzufügen",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox",
+                "message"
+              ],
+              "description": "Erstellen Sie eine strukturierte Agenda für Ihr Meeting, um fokussierte Diskussionen zu gewährleisten.",
+              "fetchTask": true,
+              "id": "createAgenda",
+              "initialRun": false,
+              "title": "Agenda erstellen",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Bewerten Sie die Effektivität und Qualität der letzten Besprechungen.",
+              "fetchTask": true,
+              "id": "meetingFeedback",
+              "initialRun": false,
+              "title": "Meeting-Feedback",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Retrieve and summarize the details or agenda for an upcoming meeting based on the subject provided.",
+              "fetchTask": false,
+              "id": "searchMeetingDetails",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The subject of the meeting you want to share the details for, or 'upcoming'/'next' for the next meeting",
+                  "inputType": "text",
+                  "isRequired": true,
+                  "name": "meetingSubject",
+                  "title": "Meeting Subject"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Welche Themen stehen auf der Agenda für das nächste Meeting?"
+                },
+                {
+                  "text": "Stellen Sie die Agenda und die wichtigsten Punkte für mein bevorstehendes Meeting bereit."
+                },
+                {
+                  "text": "Welche Themen stehen auf der Agenda für das nächste Meeting?"
+                }
+              ],
+              "semanticDescription": "An extension to fetch and provide summaries, agendas, or key details of upcoming meetings by their subjects or keywords.",
+              "title": "Besprechungsbriefing",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "agenda",
+        "minutes",
+        "recap"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_largeimage.png",
+      "lastUpdatedAt": "2025-03-27T11:55:48.6626142+00:00",
+      "longDescription": "Verbessern Sie Produktivität, Engagement und Zusammenarbeit Ihrer Meetings mit einer bahnbrechenden Lösung für Microsoft Teams mit einem Agenda-Editor, Protokollvorlagen, Zeitmanagement, Sicheren Abstimmungen, Aufgabenzuweisungen und vielem mehr. \n \nTausende Kunden vertrauen Decisions – unabhängig ob Meetings persönlich, online, oder kombiniert durchgeführt werden. \n \n**Schlüsselfunktionen** \n- Teams-Meeting Support in Seitenleiste („In-Meeting Experience“) \n- Intelligenter Agenda-Editor \n- Zusammenarbeit an Tagesordnungspunkten \n- Ein-Klick-Sitzungsprotokoll in Word oder OneNote \n- Automatische Erstellung von Sitzungsbüchern als PDF or PPT \n- Benutzerdefinierte Sitzungsvorlagen \n- Zeitmanagement (Stoppuhr) \n- Management von Gastteilnehmern / Externen Moderatoren \n- Einreichungsprozess für Tagesordnungspunkte \n- Sichere Abstimmungen \n- Beschlüsse- und Aufgabensynchronisierung mit Microsoft Planner und „To Do“",
+      "mpnId": "4974427",
+      "officeAssetId": "WA104381880",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.meetingdecisions.com/privacy",
+      "restrictedTenantTypes": [
+        "Freemium"
+      ],
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Effizientere Meetings.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/dashboard",
+          "entityId": "teamsDashboard",
+          "name": "Meetings",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.boarddecisions.com/redirect/dashboard?manifestVersion=4_9_2"
+        },
+        {
+          "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/my-assistant",
+          "entityId": "myAssistant",
+          "name": "✨ Mein Assistent",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.boarddecisions.com/web/#/my-assistant?source=teams&manifestVersion=4_9_2"
+        },
+        {
+          "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/my-week",
+          "entityId": "myWeekDashboard",
+          "name": "Meine Woche",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.boarddecisions.com/web/#/my-week?source=teams&manifestVersion=4_9_2"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "supportedChannelTypes": [
+        "privateChannels",
+        "sharedChannels"
+      ],
+      "systemVersion": "2025071113143993",
+      "termsOfUseUrl": "https://www.meetingdecisions.com/terms-of-service",
+      "validDomains": [
+        "app.boarddecisions.com",
+        "login.microsoftonline.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "1064f7e4-a9e2-467d-8d42-f45cc59f145d",
+        "resource": "api://app.boarddecisions.com/botid-3a432a73-84ab-4af9-abab-f4278dcdafdb"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "d3d1be68-066c-4967-a74b-9edcf902dcfb",
+      "version": "4.9.2",
+      "name": "Decisions",
+      "accentColor": "#0073FF",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Ordres du jour publiés",
+            "templateText": "{actor} a publié l’ordre du jour",
+            "type": "agendaPublished"
+          },
+          {
+            "description": "Sujet proposé",
+            "templateText": "{actor} a proposé un sujet",
+            "type": "topicSuggested"
+          },
+          {
+            "description": "Sujet approuvé",
+            "templateText": "{actor} a approuvé le sujet proposé",
+            "type": "topicAccepted"
+          },
+          {
+            "description": "Mise à jour des informations générales",
+            "templateText": "{actor} {message}",
+            "type": "generalUpdate"
+          }
+        ]
+      },
+      "amsSellerAccountId": 24942910,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Show list of articles",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Show list of articles",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Show list of articles",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "3a432a73-84ab-4af9-abab-f4278dcdafdb",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "ProjectManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultGroupCapability": {
+        "groupchat": "tab",
+        "meetings": "tab",
+        "team": "tab"
+      },
+      "developerName": "Decisions",
+      "developerUrl": "https://www.meetingdecisions.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2#/settings",
+          "context": [
+            "channelTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "3a432a73-84ab-4af9-abab-f4278dcdafdb",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox",
+                "message"
+              ],
+              "description": "Ajoutez rapidement des éléments ou des sujets à vos ordres du jour de réunion à venir.",
+              "fetchTask": true,
+              "id": "addToAgenda",
+              "initialRun": false,
+              "title": "Ajouter à l'ordre du jour",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox",
+                "message"
+              ],
+              "description": "Élaborez un ordre du jour structuré pour votre réunion afin d'assurer des discussions ciblées.",
+              "fetchTask": true,
+              "id": "createAgenda",
+              "initialRun": false,
+              "title": "Créer un ordre du jour",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Évaluez l'efficacité et la qualité des réunions récentes.",
+              "fetchTask": true,
+              "id": "meetingFeedback",
+              "initialRun": false,
+              "title": "Retour sur la réunion",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Obtenez un briefing pour une réunion à venir.",
+              "fetchTask": false,
+              "id": "searchMeetingDetails",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The subject of the meeting you want to share the details for, or 'upcoming'/'next' for the next meeting",
+                  "inputType": "text",
+                  "isRequired": true,
+                  "name": "meetingSubject",
+                  "title": "Meeting Subject"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Quels sujets figurent à l’ordre du jour de la prochaine réunion ?"
+                },
+                {
+                  "text": "Fournissez l’ordre du jour et les points clés de ma prochaine réunion."
+                },
+                {
+                  "text": "Quels sujets figurent à l’ordre du jour de la prochaine réunion ?"
+                }
+              ],
+              "semanticDescription": "An extension to fetch and provide summaries, agendas, or key details of upcoming meetings by their subjects or keywords.",
+              "title": "Briefing de réunion",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "agenda",
+        "minutes",
+        "recap"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_largeimage.png",
+      "lastUpdatedAt": "2025-03-27T11:55:48.6626142+00:00",
+      "longDescription": "Make your meetings count with a game-changing solution that powers meeting collaboration, engagement and productivity for users of Microsoft Teams with an agenda builder, minutes template, time tracker, secure voting, task assignment and more.\nThousands of customers trust Decisions for their meetings, whether they are held virtually, in-person or a hybrid of the two. \n\n**Key Features**\n\n- Teams meeting side panel support (In-meeting experience)\n- Smart Agenda builder\n- Collaboration on Agenda\n- One-click meeting minutes for Word and OneNote\n- Automatic creation of Meeting Book PDF or PPT\n- Custom templates\n- Time tracker\n- Easily manage guest and external presenters\n- Agenda topic submission process\n- Secure voting\n- Tasks and decisions syncing to Microsoft Planner and ToDo\n- Meeting Engagement Score\n- Meeting Feedback\n",
+      "mpnId": "4974427",
+      "officeAssetId": "WA104381880",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.meetingdecisions.com/privacy",
+      "restrictedTenantTypes": [
+        "Freemium"
+      ],
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Réunions productives",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/dashboard",
+          "entityId": "teamsDashboard",
+          "name": "Réunions",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.boarddecisions.com/redirect/dashboard?manifestVersion=4_9_2"
+        },
+        {
+          "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/my-assistant",
+          "entityId": "myAssistant",
+          "name": "✨ Mon assistant",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.boarddecisions.com/web/#/my-assistant?source=teams&manifestVersion=4_9_2"
+        },
+        {
+          "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/my-week",
+          "entityId": "myWeekDashboard",
+          "name": "Ma Semaine",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.boarddecisions.com/web/#/my-week?source=teams&manifestVersion=4_9_2"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "supportedChannelTypes": [
+        "privateChannels",
+        "sharedChannels"
+      ],
+      "systemVersion": "2025071113143993",
+      "termsOfUseUrl": "https://www.meetingdecisions.com/terms-of-service",
+      "validDomains": [
+        "app.boarddecisions.com",
+        "login.microsoftonline.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "1064f7e4-a9e2-467d-8d42-f45cc59f145d",
+        "resource": "api://app.boarddecisions.com/botid-3a432a73-84ab-4af9-abab-f4278dcdafdb"
+      }
+    },
+    {
+      "manifestVersion": "1.17",
+      "id": "d3d1be68-066c-4967-a74b-9edcf902dcfb",
+      "version": "4.9.2",
+      "name": "Decisions",
+      "accentColor": "#0073FF",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Agendapubliséring",
+            "templateText": "{actor} publisérte agenda",
+            "type": "agendaPublished"
+          },
+          {
+            "description": "Agendapunkt foreslått",
+            "templateText": "{actor} har foreslått et agendapunkt",
+            "type": "topicSuggested"
+          },
+          {
+            "description": "Agendapunkt godkjent",
+            "templateText": "{actor} har godkjent agendapunktet ditt",
+            "type": "topicAccepted"
+          },
+          {
+            "description": "Generell informasjonsoppdatering",
+            "templateText": "{actor} {message}",
+            "type": "generalUpdate"
+          }
+        ]
+      },
+      "amsSellerAccountId": 24942910,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Show list of articles",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Show list of articles",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Show list of articles",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "groupChat"
+              ]
+            }
+          ],
+          "id": "3a432a73-84ab-4af9-abab-f4278dcdafdb",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "ProjectManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultGroupCapability": {
+        "groupchat": "tab",
+        "meetings": "tab",
+        "team": "tab"
+      },
+      "developerName": "Decisions",
+      "developerUrl": "https://www.meetingdecisions.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2#/settings",
+          "context": [
+            "channelTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "3a432a73-84ab-4af9-abab-f4278dcdafdb",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox",
+                "message"
+              ],
+              "description": "Enkelt legg til punkter i dine kommende møteagendaer.",
+              "fetchTask": true,
+              "id": "addToAgenda",
+              "initialRun": false,
+              "title": "Legg til i agenda",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox",
+                "message"
+              ],
+              "description": "Lag en strukturert agenda for møtet ditt.",
+              "fetchTask": true,
+              "id": "createAgenda",
+              "initialRun": false,
+              "title": "Opprett agenda",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Vurder effektiviteten og kvaliteten på nylige møter.",
+              "fetchTask": true,
+              "id": "meetingFeedback",
+              "initialRun": false,
+              "title": "Møtefeedback",
+              "type": "action"
+            },
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Få en briefing for et kommende møte.",
+              "fetchTask": false,
+              "id": "searchMeetingDetails",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The subject of the meeting you want to share the details for, or 'upcoming'/'next' for the next meeting",
+                  "inputType": "text",
+                  "isRequired": true,
+                  "name": "meetingSubject",
+                  "title": "Meeting Subject"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Hvilke temaer står på agendaen for neste møte?"
+                },
+                {
+                  "text": "Gi meg agendaen og hovedpunktene for det kommende møtet mitt."
+                },
+                {
+                  "text": "Hvilke temaer står på agendaen for neste møte?"
+                }
+              ],
+              "semanticDescription": "An extension to fetch and provide summaries, agendas, or key details of upcoming meetings by their subjects or keywords.",
+              "title": "Møtebrief",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "agenda",
+        "minutes",
+        "recap"
+      ],
+      "languageTag": "nb-no",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_largeimage.png",
+      "lastUpdatedAt": "2025-03-27T11:55:48.6626142+00:00",
+      "longDescription": "Få mer produktive møter med Decisions. Samarbeid om møteagendaen, skriv smarte møtereferater og følge opp aksjonspunkter og beslutninger på en enkel måte.\nTusener av kunder bruker Decisions for sine møter, enten de holdes virtuelt, fysisk eller er en hybrid.  \n\n**Nøkkelfunksjonalitet**\n\n- Sidepanel med agenda i Teamsmøter\n- Smart agendadesigner\n- Agendasamhandling\n- Ett-klikks møtereferat for Word og OneNote\n- Generer møtebok i PDF eller PPT\n- Maler for agenda og referater\n- Tidtager per sak i møtet\n- Administrere gjestedeltagere\n- Send inn saker til møteagenda\n- Sikker votering\n- Oppgaver og beslutningslogg som synces til Planner og ToDo\n- Meeting Engagement Score\n- Møtefeedback\n",
+      "mpnId": "4974427",
+      "officeAssetId": "WA104381880",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.meetingdecisions.com/privacy",
+      "restrictedTenantTypes": [
+        "Freemium"
+      ],
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Lag smarte møteagendaer og referater - Få mer ut av dine møter",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/d3d1be68-066c-4967-a74b-9edcf902dcfb/2025071113143993/d3d1be68-066c-4967-a74b-9edcf902dcfb_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/dashboard",
+          "entityId": "teamsDashboard",
+          "name": "Møter",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.boarddecisions.com/redirect/dashboard?manifestVersion=4_9_2"
+        },
+        {
+          "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/my-assistant",
+          "entityId": "myAssistant",
+          "name": "✨ Min assistent",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.boarddecisions.com/web/#/my-assistant?source=teams&manifestVersion=4_9_2"
+        },
+        {
+          "contentUrl": "https://app.boarddecisions.com/teams/?manifestVersion=4_9_2&theme={theme}&frameContext={frameContext}&team-user-id={userObjectId}&team-tenant-id={tid}#/my-week",
+          "entityId": "myWeekDashboard",
+          "name": "Min Uke",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.boarddecisions.com/web/#/my-week?source=teams&manifestVersion=4_9_2"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "supportedChannelTypes": [
+        "privateChannels",
+        "sharedChannels"
+      ],
+      "systemVersion": "2025071113143993",
+      "termsOfUseUrl": "https://www.meetingdecisions.com/terms-of-service",
+      "validDomains": [
+        "app.boarddecisions.com",
+        "login.microsoftonline.com",
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "1064f7e4-a9e2-467d-8d42-f45cc59f145d",
+        "resource": "api://app.boarddecisions.com/botid-3a432a73-84ab-4af9-abab-f4278dcdafdb"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Decisions Can you help me create an agenda for our upcoming project meeting?",
+      "description": "User asks the bot to assist with creating a meeting agenda.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@Decisions I need a summary of yesterday's team meeting. Can you provide that?",
+      "description": "User requests the bot to provide a summary of a past meeting.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@Decisions How do I assign tasks from our meeting outcomes?",
+      "description": "User asks the bot for guidance on assigning tasks based on meeting results.",
+      "command": "Help"
+    }
+  ]
+}

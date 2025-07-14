@@ -1,0 +1,198 @@
+{
+  "manifestVersion": "1.12",
+  "id": "7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0",
+  "version": "1.3.1",
+  "name": "MSD Manuals",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 73720890,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Search by keywords",
+              "title": "Search"
+            },
+            {
+              "description": "Search by ICD code",
+              "title": "ICD Code"
+            },
+            {
+              "description": "Take our help tour?",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Reference",
+    "Education"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Merck & Co., Inc.",
+  "developerUrl": "https://msdmanuals.com/",
+  "industries": [
+    "Education",
+    "HealthCareAndLifeSciences"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Search by keywords",
+          "fetchTask": false,
+          "id": "searchKeyword",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search by keywords",
+              "inputType": "text",
+              "name": "RecentActivities",
+              "title": "RecentActivities"
+            }
+          ],
+          "title": "By Keyword",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Search by ICD code",
+          "fetchTask": false,
+          "id": "icdCode",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search by ICD code",
+              "inputType": "text",
+              "name": "ICDCode",
+              "title": "ICD Code"
+            }
+          ],
+          "title": "By Code",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Medical",
+    "Reference",
+    "MSD Manual"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0/2025071112251474/7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0_largeimage.png",
+  "lastUpdatedAt": "2025-05-09T13:29:59.0832418+00:00",
+  "longDescription": "The MSD Manuals is the must-have reference for credible and current health information. With a clear and concise description of medical diseases and disorders, the MSD Manuals is the perfect up-to-date health reference for a wide cross-section of users, including healthcare professionals and students in a variety of settings including healthcare organizations, insurance companies and schools. \nFor additional information, please visit [https://www.msdmanuals.com](https://www.msdmanuals.com)",
+  "officeAssetId": "WA200008556",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.msdprivacy.com/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0/2025071112251474/7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0/2025071112251474/7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0/2025071112251474/7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0_screenshot/2.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "MSD Manuals - A medical reference that covers 1000's of diseases and disorders",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0/2025071112251474/7b5eb6f3-3e84-4bd6-8e3b-5a45004c1bc0_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://mrckmanl-prod.azurewebsites.net/sharedtopics?userId={userObjectId}&tenant={tid}",
+      "entityId": "SharedTopics",
+      "name": "My Shared Topics",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://www.msdmanuals.com/"
+    }
+  ],
+  "systemVersion": "2025071112251474",
+  "termsOfUseUrl": "https://www.msd.com/terms-of-use/",
+  "validDomains": [
+    "mrckmanl-prod.azurewebsites.net",
+    "msdmanuals.com",
+    "msdprivacy.com"
+  ],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@MSD Manuals Can you help me find information on diabetes?",
+      "description": "The user is asking the bot to search for information on a specific disease.",
+      "command": "Search"
+    },
+    {
+      "prompt": "@MSD Manuals What is the ICD code for hypertension?",
+      "description": "The user wants to know the ICD code for a specific medical condition.",
+      "command": "ICD Code"
+    },
+    {
+      "prompt": "@MSD Manuals How do I use the search feature?",
+      "description": "The user is asking for help on how to use the search function of the bot.",
+      "command": "Help"
+    }
+  ]
+}

@@ -1,0 +1,1740 @@
+{
+  "manifestVersion": "1.12",
+  "id": "9d4448db-30fe-4e52-a463-6148cc883221",
+  "version": "2.34.0",
+  "name": "Cytric Easy",
+  "accentColor": "#ffffff",
+  "activities": {
+    "activityTypes": [
+      {
+        "description": "User shared a card",
+        "templateText": "You have received a trip card from {displayName}",
+        "type": "cardShared"
+      }
+    ]
+  },
+  "amsSellerAccountId": 78077400,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Log in to Cytric",
+              "title": "login"
+            },
+            {
+              "description": "Log out of Cytric",
+              "title": "logout"
+            },
+            {
+              "description": "Leave feedback",
+              "title": "feedback"
+            },
+            {
+              "description": "Explore the app",
+              "title": "take a tour"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "Utilities"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Amadeus",
+  "developerUrl": "https://amadeus.com/en/industries/corporations",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/config",
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "ProfessionalServices",
+    "Retail"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Travel",
+          "fetchTask": false,
+          "id": "messagingTripList",
+          "initialRun": false,
+          "taskInfo": {
+            "height": "600",
+            "title": "Share a trip",
+            "url": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/messaging-trip-list",
+            "width": "600"
+          },
+          "title": "Travel",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "online travel booking",
+    "events",
+    "expenses"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_largeimage.png",
+  "lastUpdatedAt": "2024-11-22T09:38:55.1198846+00:00",
+  "longDescription": "A new way to plan your collaboration experience - virtually or in person - all from one application.\n\nCytric Easy is an online solution that enables you to plan, book, and manage your business trips in Microsoft Teams. Take meeting collaboration and trip-planning to the next level:\n\n• Search, compare and, book a hotel, flight, or a car rental, all in Microsoft Teams\n• Plan trips and share travel details with colleagues\n• Receive flight recommendations based on the flight convenience, price and your preferences\n• Share your trip information directly in Microsoft Teams and join your colleagues' trips\n• Plan, book, and manage travel and related expenses within Microsoft Teams\n• Get a personal dashboard displayed in Microsoft Teams with all your trip information\n• Get recommendations to meet with close collaborators\n• A single login across your workplace ecosystem\n• Receive notifications for your created, changed, or canceled bookings \n• Receive notifications with expense-related tasks: after your trip to complete your expense report, with the approval status or a reminder to validate an expense report \n• Share transfer options with colleagues traveling to the same destination at similar times to save costs \n• Seamlessly organize your next Event or Group trip by using the built-in Event Manager tool within Easy. Streamline coordination and boost collaboration.\n\nWant to learn more about Cytric Easy? [Find out now](https://servicehub.amadeus.com/c/portal/view-solution/1070876235/learning-for-cytric-easy-end-users).",
+  "mpnId": "6094953",
+  "officeAssetId": "WA200004590",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://amadeus.com/en/policies/amadeus-policies",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "m365Certified"
+  },
+  "shortDescription": "Plan, share, book, and manage your next business trip in Microsoft Teams.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/travel",
+      "entityId": "travel",
+      "name": "Travel",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/expenses",
+      "entityId": "expenses",
+      "name": "Expense",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/settings",
+      "entityId": "settings",
+      "name": "Settings",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115424504",
+  "termsOfUseUrl": "https://amadeus.com/en/policies/cytric-for-teams",
+  "validDomains": [
+    "swp-cyt-prd01-app01.teams-server.cytric.net",
+    "token.botframework.com"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=s2WhFOHVT7M",
+  "webApplicationInfo": {
+    "id": "4e2e6532-bd2c-486a-abfb-9354b0e531ee",
+    "resource": "api://swp-cyt-prd01-app01.teams-server.cytric.net/botid-3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "de",
+    "es",
+    "fr"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.12",
+      "id": "9d4448db-30fe-4e52-a463-6148cc883221",
+      "version": "2.34.0",
+      "name": "Cytric Easy",
+      "accentColor": "#ffffff",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Der Benutzer hat eine Reise geteilt",
+            "templateText": "Sie haben eine Reise von {displayName} erhalten",
+            "type": "cardShared"
+          }
+        ]
+      },
+      "amsSellerAccountId": 78077400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "In Cytric anmelden",
+                  "title": "login"
+                },
+                {
+                  "description": "Von Cytric abmelden",
+                  "title": "logout"
+                },
+                {
+                  "description": "Feedback hinterlassen",
+                  "title": "feedback"
+                },
+                {
+                  "description": "Erkunden Sie die App",
+                  "title": "take a tour"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Amadeus",
+      "developerUrl": "https://amadeus.com/en/industries/corporations",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/config",
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices",
+        "Retail"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Travel",
+              "fetchTask": false,
+              "id": "messagingTripList",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "600",
+                "title": "Eine Reise teilen",
+                "url": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/messaging-trip-list",
+                "width": "600"
+              },
+              "title": "Travel",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "online travel booking",
+        "events",
+        "expenses"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_largeimage.png",
+      "lastUpdatedAt": "2024-11-22T09:38:55.1198846+00:00",
+      "longDescription": "Eine neue Art, Ihre Zusammenarbeit zu planen - virtuell oder persönlich - alles von einer Anwendung aus.\n\nCytric Easy ist eine Online-Lösung, mit der Sie Ihre Geschäftsreisen in Microsoft Teams planen, buchen und verwalten können. Bringen Sie die Zusammenarbeit in Meetings und die Reiseplanung auf die nächste Stufe: \n\n• Suchen, vergleichen und buchen Sie ein Hotel, einen Flug oder ein Auto, alles in Microsoft Teams\n• Planen Sie Reisen und teilen Sie Reisedetails mit Kollegen\n• Erhalten Sie Flugempfehlungen basierend auf Flugkomfort, Preis und Ihren Präferenzen\n• Teilen Sie Ihre Reiseinformationen direkt in Microsoft Teams und schließen Sie sich den Reisen Ihrer Kollegen an\n• Planen, buchen, Planen, buchen und verwalten Sie Reisen und damit verbundene Ausgaben in Microsoft Teams\n• Erhalten Sie ein persönliches Dashboard in Microsoft Teams mit all Ihren Reiseinformationen\n• Erhalten Sie Empfehlungen, um sich mit engen Mitarbeitern zu treffen\n• Eine einzige Anmeldung in Ihrem gesamten Arbeitsplatz-Ökosystem\n• Erhalten Sie Benachrichtigungen für Ihre erstellten, geänderten oder stornierten Buchungen\n• Erhalten Sie Benachrichtigungen mit ausgabenbezogenen Aufgaben: nach Ihrer Reise, um Ihre Spesenabrechnung zu vervollständigen, mit dem Genehmigungsstatus oder einer Erinnerung, um eine Spesenabrechnung zu validieren \n• Teilen Sie Transferoptionen mit Kollegen, die zu ähnlichen Zeiten an dasselbe Ziel reisen, um Kosten zu sparen \n• Organisieren Sie nahtlos Ihre nächste Veranstaltung oder Gruppenreise, indem Sie das integrierte Event Manager Tool in Easy verwenden. Optimieren Sie die Koordination und fördern Sie die Zusammenarbeit.\n\nWollen Sie mehr über Cytric Easy erfahren?  [Finde Sie es jetzt heraus] (https://servicehub.amadeus.com/c/portal/view-solution/1070876235/learning-for-cytric-easy-end-users).",
+      "mpnId": "6094953",
+      "officeAssetId": "WA200004590",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://amadeus.com/en/policies/amadeus-policies",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "m365Certified"
+      },
+      "shortDescription": "Planen, teilen, buchen und verwalten Sie Ihre Geschäftsreise in Microsoft Teams.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/travel",
+          "entityId": "travel",
+          "name": "Reisen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/expenses",
+          "entityId": "expenses",
+          "name": "Reisekosten",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/settings",
+          "entityId": "settings",
+          "name": "Einstellungen",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115424504",
+      "termsOfUseUrl": "https://amadeus.com/en/policies/cytric-for-teams",
+      "validDomains": [
+        "swp-cyt-prd01-app01.teams-server.cytric.net",
+        "token.botframework.com"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=s2WhFOHVT7M",
+      "webApplicationInfo": {
+        "id": "4e2e6532-bd2c-486a-abfb-9354b0e531ee",
+        "resource": "api://swp-cyt-prd01-app01.teams-server.cytric.net/botid-3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "9d4448db-30fe-4e52-a463-6148cc883221",
+      "version": "2.34.0",
+      "name": "Cytric Easy",
+      "accentColor": "#ffffff",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Compartieron una tarjeta de viaje",
+            "templateText": "Has recibido una tarjeta de viaje de {displayName}",
+            "type": "cardShared"
+          }
+        ]
+      },
+      "amsSellerAccountId": 78077400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Inicia sesión en Cytric",
+                  "title": "login"
+                },
+                {
+                  "description": "Cierra sesión en Cytric",
+                  "title": "logout"
+                },
+                {
+                  "description": "Comparte tus comentarios",
+                  "title": "feedback"
+                },
+                {
+                  "description": "Explora la aplicación",
+                  "title": "take a tour"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Amadeus",
+      "developerUrl": "https://amadeus.com/en/industries/corporations",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/config",
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices",
+        "Retail"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Travel",
+              "fetchTask": false,
+              "id": "messagingTripList",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "600",
+                "title": "Compartir un viaje",
+                "url": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/messaging-trip-list",
+                "width": "600"
+              },
+              "title": "Travel",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "online travel booking",
+        "events",
+        "expenses"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_largeimage.png",
+      "lastUpdatedAt": "2024-11-22T09:38:55.1198846+00:00",
+      "longDescription": "Una nueva manera de planificar tu experiencia colaborativa - virtual o en persona - todo desde una sola aplicación. \n\nCytric Easy es una herramienta digital que te permite planificar, reservar y organizar tus viajes de negocios en Microsoft Teams. Lleva las reuniones colaborativas y la planificación de viajes al siguiente nivel:\n\n• Busca, comparte y reserva un hotel, vuelo o coche de alquiler, todo dentro de Microsoft Teams\n• Planifica viajes y comparte sus detalles con tus compañeros\n• Recibe recomendaciones de vuelos basadas en la comodidad, precio y tus preferencias\n• Comparte la información de tu viaje directamente en Microsoft Teams y únete a los viajes de tus compañeros\n• Planifica, reserva y gestiona viajes y gastos relacionados dentro de Microsoft Teams\n• Accede a un panel personal en Microsoft Teams con toda la información de tus viajes\n• Obtén recomendaciones para reunirte con compañeros del destino al que viajas\n• Utiliza un único inicio de sesión en todo tu ecosistema laboral\n• Recibe notificaciones sobre tus reservas creadas, modificadas o canceladas\n• Recibe notificaciones con tareas relacionadas con tus gastos: después de tu viaje para completar tu informe de gastos, sobre el estado de aprobación o un recordatorio para validar un informe de gastos\n• Comparte opciones de traslado con compañeros que viajen al mismo destino en horarios similares para ahorrar gastos\n• Organiza fácilmente tu próximo evento o viaje en grupo utilizando la herramienta integrada de Event Manager dentro de Easy. Simplifica la coordinación y fomenta la colaboración. \n\n¿Quieres saber más sobre Cytric Easy? [Descúbrelo ahora](https://servicehub.amadeus.com/c/portal/view-solution/1070876235/learning-for-cytric-easy-end-users).",
+      "mpnId": "6094953",
+      "officeAssetId": "WA200004590",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://amadeus.com/en/policies/amadeus-policies",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "m365Certified"
+      },
+      "shortDescription": "Planifica, comparte, reserva y organiza tu viaje de negocios en Microsoft Teams.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/travel",
+          "entityId": "travel",
+          "name": "Viajes",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/expenses",
+          "entityId": "expenses",
+          "name": "Gastos",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/settings",
+          "entityId": "settings",
+          "name": "Ajustes",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115424504",
+      "termsOfUseUrl": "https://amadeus.com/en/policies/cytric-for-teams",
+      "validDomains": [
+        "swp-cyt-prd01-app01.teams-server.cytric.net",
+        "token.botframework.com"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=s2WhFOHVT7M",
+      "webApplicationInfo": {
+        "id": "4e2e6532-bd2c-486a-abfb-9354b0e531ee",
+        "resource": "api://swp-cyt-prd01-app01.teams-server.cytric.net/botid-3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "9d4448db-30fe-4e52-a463-6148cc883221",
+      "version": "2.34.0",
+      "name": "Cytric Easy",
+      "accentColor": "#ffffff",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "L'utilisateur a partagé une carte",
+            "templateText": "Vous avez reçu une carte de voyage de {displayName}",
+            "type": "cardShared"
+          }
+        ]
+      },
+      "amsSellerAccountId": 78077400,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Se connecter à Cytric",
+                  "title": "login"
+                },
+                {
+                  "description": "Se déconnecter de Cytric",
+                  "title": "logout"
+                },
+                {
+                  "description": "Laisser un avis",
+                  "title": "feedback"
+                },
+                {
+                  "description": "Explorer l'application",
+                  "title": "take a tour"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Amadeus",
+      "developerUrl": "https://amadeus.com/en/industries/corporations",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/config",
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices",
+        "Retail"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Travel",
+              "fetchTask": false,
+              "id": "messagingTripList",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "600",
+                "title": "Partager un voyage",
+                "url": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/messaging-trip-list",
+                "width": "600"
+              },
+              "title": "Travel",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "online travel booking",
+        "events",
+        "expenses"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_largeimage.png",
+      "lastUpdatedAt": "2024-11-22T09:38:55.1198846+00:00",
+      "longDescription": "Une nouvelle façon de planifier votre expérience de collaboration - virtuellement ou en personne - le tout depuis une seule application.\n\nCytric Easy est une solution en ligne qui vous permet de planifier, réserver et gérer vos voyages d'affaires dans Microsoft Teams. Passez à une nouvelle dimension de collaboration en réunion et de planification de voyages :\n\n• Recherchez, comparez et réservez un hôtel, un vol ou une location de voiture, le tout dans Microsoft Teams\n• Planifiez vos voyages et partagez les détails de vos voyages avec vos collègues\n• Recevez des recommandations de vols basées sur la commodité, le prix et vos préférences\n• Partagez les informations de votre voyage directement dans Microsoft Teams et rejoignez les voyages de vos collègues\n• Planifiez, réservez et gérez les voyages et les dépenses associées dans Microsoft Teams\n• Obtenez un tableau de bord personnel directement dans Microsoft Teams avec toutes les informations de votre voyage\n• Recevez des recommandations pour rencontrer des collaborateurs proches\n• Une seule connexion pour tout votre écosystème de travail\n• Recevez des notifications pour vos réservations créées, modifiées ou annulées\n• Recevez des notifications pour les tâches liées aux dépenses : après votre voyage pour compléter votre rapport de dépenses, avec le statut d'approbation ou un rappel pour valider un rapport de dépenses\n• Partagez des options de transfert avec des collègues voyageant vers la même destination à des heures similaires pour réduire les coûts\n• Organisez facilement votre prochain événement ou voyage de groupe en utilisant l'outil intégré Event Manager dans Easy. Simplifiez la coordination et améliorez la collaboration.\n\nVous voulez en savoir plus sur Cytric Easy ? [Find out now](https://servicehub.amadeus.com/c/portal/view-solution/1070876235/learning-for-cytric-easy-end-users).",
+      "mpnId": "6094953",
+      "officeAssetId": "WA200004590",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://amadeus.com/en/policies/amadeus-policies",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "m365Certified"
+      },
+      "shortDescription": "Planifiez, partagez et gérez votre voyage d'affaires dans Microsoft Teams.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9d4448db-30fe-4e52-a463-6148cc883221/2025071115424504/9d4448db-30fe-4e52-a463-6148cc883221_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/travel",
+          "entityId": "travel",
+          "name": "Voyage",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/expenses",
+          "entityId": "expenses",
+          "name": "Dépenses",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://swp-cyt-prd01-app01.teams-server.cytric.net/#/settings",
+          "entityId": "settings",
+          "name": "Paramètres",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115424504",
+      "termsOfUseUrl": "https://amadeus.com/en/policies/cytric-for-teams",
+      "validDomains": [
+        "swp-cyt-prd01-app01.teams-server.cytric.net",
+        "token.botframework.com"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=s2WhFOHVT7M",
+      "webApplicationInfo": {
+        "id": "4e2e6532-bd2c-486a-abfb-9354b0e531ee",
+        "resource": "api://swp-cyt-prd01-app01.teams-server.cytric.net/botid-3d6cdfb4-c6cb-48a0-8e62-5b9c1a84cb40"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Cytric Easy Can you help me plan my business trip to New York next month?",
+      "description": "The user is seeking assistance to plan a business trip to New York for the next month.",
+      "command": "take a tour"
+    },
+    {
+      "prompt": "@Cytric Easy I'd like to provide some feedback on the booking process.",
+      "description": "The user wants to give feedback on their experience with the booking process.",
+      "command": "feedback"
+    },
+    {
+      "prompt": "@Cytric Easy How do I log out of my account?",
+      "description": "The user is asking for instructions on how to log out of their account.",
+      "command": "logout"
+    }
+  ]
+}

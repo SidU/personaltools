@@ -1,0 +1,1177 @@
+{
+  "manifestVersion": "1.17",
+  "id": "55560ea0-ae82-48b2-b71e-a45356f56bb1",
+  "version": "1.1.1",
+  "name": "Abi",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 78858580,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": []
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Start a new conversation",
+              "title": "Home"
+            },
+            {
+              "description": "Return to Main Menu",
+              "title": "Help"
+            },
+            {
+              "description": "Contact the Support Team",
+              "title": "Contact the Support Team"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "e7c09c44-c705-4d05-89cb-3582dfccd89b",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ContentManagement",
+    "DataVisualizationAndBI",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Beroe",
+  "developerUrl": "https://www.beroeinc.com/",
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "e7c09c44-c705-4d05-89cb-3582dfccd89b",
+      "commands": [
+        {
+          "context": [
+            "commandBox"
+          ],
+          "description": "Category Intelligence, Supplier Shortlisting, Risk & Compliance,Category Benchmarks,Market Monitoring Dashboards,Commodity Price",
+          "fetchTask": false,
+          "id": "AbiSearch",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Specifies the query category, e.g., PET, caustic soda, appliances, cast iron, water, 2-Ethylhexanol, personalComputing, ABS etc.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "categoryName",
+              "semanticDescription": "Specifies the query category, e.g., PET, caustic soda, appliances, cast iron, water, 2-Ethylhexanol, personalComputing, Gold, Groceries, Ground Handling Services, Group Purchasing Organization(GPO) For MRO, Guar Gum, Gum Turpentine, Hafnium, Hard Disk Drives, Hardwood Lumber, Hazardous/Solid Waste Management, HDPE, Health Savings Account, Healthcare Consulting Services, Heat Pumps, Heat Treatment Services, Heating-as-a-Service (HaaS), Heavy Mining Equipment, Helium Gas, Help Desk & Call Center Software, HEOR Services, High Potency Drug Manufacturing, High-Fructose Corn Syrup, Home Health Care Nurse Billing Rates, Honey, Hops & Adjuncts, Hot Rolled Coils, Hotels, Human Capital Management (HCM software), Human Serum Albumin, HVAC Maintenance Services, Hydraulic And Pneumatic Components, Hydraulic Fracturing Services, Hydrogen Electrolyzers, Hydrogen Fuel, Hydrogen Peroxide, Hydroxychloroquine, Hydroxypropyl Methylcellulose, Ibuprofen, Ilmenite, Immigration Services, Immunoglobulin, In-Vitro Toxicology, In-Vivo Toxicology Testing, Inductors, Industrial Compressors, Industrial Ethanol, Industrial Fans And Blowers, Industrial Filters, Industrial Forklifts, Industrial Gases, Industrial Maintenance Services, Industrial Motors, Industrial Pumps, Industrial Turbines, Industrial Valves, Industrial Vending Solution For MRO, Industrial Washing Machines, Influencer Marketing Services, Injection Molding Machines, Injection Molding Services, Inland Water Cargo Transportation Services, Instore Merchandisers, Insurance Brokerage Services, Insurance Services, Integrated Facilities Management, Integrated HR Outsourcing, Interactive Digital Signage, Intermodal Container Rental, Investment Management, Iridium, Iron Castings, Iron Ore, Issue Tracking Software, IT Asset Disposition, IT Break-Fix Services, IT Managed Security Services, IT Recruitment Services, IT Services Outsourcing, IV Bags, IVD raw materials market, IVR Platform, Jerry Cans, Jet Fuel, Job Posting Services",
+              "title": "Category Name"
+            },
+            {
+              "description": "Intent of the query. Ask for market prices, suppliers list, price forecasts, cost structures,scope definitions,market conditions",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "queryIntent",
+              "semanticDescription": "This parameter represents the specific intent of the query. It can refer to market prices, supplier lists, price forecasts, cost structures, scope definitions, market conditions, price reports, reports (including PDFs), etc. For example: In the query 'Supplier list of caustic soda in India,' 'Supplier list' is the value of this parameter. In 'Give me a caustic soda reports,' 'reports' is the value of this parameter. In 'Give me a price summary of caustic soda,' 'price summary' is the value. In 'Give me the price forecast for caustic soda in India,' 'price forecast' is the value. In 'Can you provide the scope definitions for caustic soda?' 'scope definitions' is the value. In 'What are the current market prices of caustic soda?' 'current market prices'  is the value. In 'Can you share the cost structure of caustic soda?' 'cost structures' is the value In 'What are the market conditions for caustic soda?' 'market conditions' is the value In 'Can you provide the latest price report for caustic soda?' 'price report' is the value In 'Do you have a PDF report on caustic soda?' 'PDF report' is the value, In 'crude oil price in india' 'price' is the value",
+              "title": "Intent of the query"
+            },
+            {
+              "description": "Indicates the target geographic region for the query, like US, UK, India, Asia, Europe, London, New York, Virginia, Wales etc",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "region",
+              "semanticDescription": "This parameter specifies the geographic region or location related to the query. It allows users to target their inquiries toward specific areas, including countries, continents, and cities. For example, queries can focus on broad regions like the US, UK, India, Asia, or Europe, or they can be narrowed down to specific cities such as London, New York, or Virginia. Users can ask region-specific questions, such as 'What is the crude oil price in India?', 'Who are the caustic soda suppliers in New York?', or 'What are the forecast details of coal prices for the Moscow region?' Additionally, queries can target other specific regional information like 'Electric vehicle sales in California', 'Textile industry suppliers in Bangladesh', 'Wheat price forecasts for the European Union', or 'Labor costs in Southeast Asia'. This helps in acquiring region-specific information such as localized market trends, supplier availability, pricing data, and regulatory conditions. Whether users are looking for global insights or local details, the region parameter ensures the query is directed appropriately.",
+              "title": "region"
+            },
+            {
+              "description": "Indicates the date range for the query e.g. Jan 2024 to Aug 2028, next 6 months, Current Year, specific dates , specific time",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "timeRange",
+              "semanticDescription": "This parameter defines the time period or date range relevant to the query. It allows users to specify both broad and precise time frames, such as 'January 2024 to August 2028,' 'the next 6 months,' 'the Current Year,' or specific date ranges like 'March 1, 2024, to April 30, 2024.' Queries could involve questions such as 'What are the market forecasts for the next quarter?' or 'Provide supplier data for the past two years.' Additionally, users can narrow the query to a specific time within a day for more granular data, such as 'Show energy consumption data from 2 PM to 4 PM on June 15, 2024.' This ensures the query results are timely and relevant to the user’s needs.",
+              "title": "Time Range"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Summarize the next 12-month forecast for caustic soda for US, highlighting the key drivers and risks from abi?"
+            },
+            {
+              "text": "Give me personal computing reports for this year from Abi?"
+            },
+            {
+              "text": "Hey Abi, Create a 5 slides presentation summarizing supplier profiles for top global textile manufacturers ?"
+            },
+            {
+              "text": "Identify and list the opportunities for cost savings in the coal industry over the next 5 years from Abi?"
+            },
+            {
+              "text": "Summarize the global capacity demand analysis for PET, including insights into USA supply constraints from abi?"
+            }
+          ],
+          "semanticDescription": "Abi is a smart procurement assistant designed to assist professionals with queries related to Category Intelligence, Supplier Shortlisting, Risk & Compliance, Category Benchmarks, Market Monitoring Dashboards, and Commodity Price analysis. Users can specify the category of interest, such as commodities, chemicals, or specific product types (e.g., PET, caustic soda, Acetic Acid, Acetone, Xanthan Gum, Yeast, Zinc appliances). Abi can respond to queries about market trends, price forecasts, supplier lists, cost structures, and market conditions. The user can also define the geographic region for more localized insights (e.g., US, UK, India) and specify the expected response format (e.g., detailed reports, attachments, files). The time range for the query can be customized, whether it's for a future forecast or past market data (e.g., 'Jan 2024 to Aug 2028', 'next 6 months', or 'specific dates'). This comprehensive query handling ensures the user receives accurate, timely, and relevant information in the format best suited for their needs.  Abi is equipped to deliver precise and relevant information tailored to your needs.\n\nKey Features:\n- **Category Intelligence**: Abi supports queries across various categories such as Wooden Pallets, Xanthan Gum, Xenon Gas, Xylene, Xylitol, Yeast, Zinc, Zinc Oxide, Zippers, Viral Vaccines, Vitamin B, Vitamin C, and many others. Users can request detailed insights on these categories, including market trends and price movements.\n\n- **Supplier Shortlisting**: Abi can help you identify potential suppliers for categories like Styrene-Acrylonitrile Resin (SAN), Sugar Beet, Sugarcane, and other specialized products. It provides lists of suppliers, their capabilities, and market positions.\n\n- **Risk & Compliance**: Abi can evaluate risk factors and compliance issues related to categories such as Waste Water Treatment Services, Warehouse Management Systems, and Travel Management Services, helping you navigate regulatory and operational challenges.\n\n- **Category Benchmarks**: Abi provides comparative benchmarks for categories like Agricultural Seeds, Activated Carbon, and Aluminum Blister Film, offering insights into cost structures and performance metrics.\n\n- **Market Monitoring Dashboards**: Abi offers real-time dashboards for monitoring market conditions for products like Crude Oil, Caustic Soda, and PET, ensuring that you stay informed about the latest developments.\n\n- **Commodity Price Analysis**: Abi analyzes and forecasts commodity prices, including those for Sunflower Oil, Tungsten APT, and Salmon, providing detailed reports and insights.\n\nQuery Handling:\nAbi allows users to customize their queries with precision. You can specify:\n- **Category of Interest**: Such as chemicals, commodities, or specific products (e.g., PET, caustic soda).\n- **Geographic Region**: For localized insights, such as market conditions in the US, UK, or India.\n- **Response Format**: Choose from detailed reports, attachments, or files.\n- **Time Range**: Whether you need forecasts for the future or historical data (e.g., 'Jan 2024 to Aug 2028', 'next 6 months', or 'specific dates').\n\nSample User Questions:\n- **Forecast**: \"What is the carbon steel forecast for the next 12 months?\" or \"Can you provide a caustic soda forecast report?\"\n- **Price**: \"What is the price of PET in India?\" or \"What is the current price of Activated Carbon?\"\n- **Duration**: \"Can you give me a report on crude oil prices from January to December 2024?\" or \"Show me the price of Agricultural Seeds from 01/01/2023 to 01/08/2024.\"\n- **Region**: \"What are the market conditions for caustic soda in the US?\" or \"Provide me with a report on the price of Xenon Gas in Europe.\"\n- **Date Range**: \"Give me an analysis of Zinc prices from the past five years.\"\n- **Price Lookout**: \"What are the latest trends in Sunflower Oil prices?\" or \"Can you update me on the price movements of Tungsten Bar?\"\n- **Competitors**: \"What is the cost structure for labels category from a global point of view?\" or \"What are the competitors in the market for Robotic Process Automation?\"\n\nAdditional Topics:\nAbi can also handle queries related to specialized topics such as:\n- **Environmental and Industrial Applications**: \"What are the best practices for Waste Water Treatment Services?\"\n- **Technological Solutions**: \"How does the Virtual Trade Show Software compare to other solutions in terms of features and pricing?\"\n- **Market Analysis**: \"What is the market analysis for digital marketing tools?\"\n- **Cost Structures**: \"What is the cost structure of raw materials in Styrene-Butadiene Rubber (SBR)?\"\n- **Regulatory and Disposal Fees**: \"What is the disposal fee for metal in NYC?\"\n\nBy providing precise, comprehensive answers and insights across these diverse categories and questions, Abi ensures that you receive timely and relevant information tailored to your specific needs and interests.",
+          "title": "Abi",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Data and Analytics",
+    "Productivity",
+    "Content Management"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/55560ea0-ae82-48b2-b71e-a45356f56bb1/2025071112471300/55560ea0-ae82-48b2-b71e-a45356f56bb1_largeimage.png",
+  "lastUpdatedAt": "2025-02-03T11:10:04.4563172+00:00",
+  "longDescription": "I am Abi, a smart AI assistant that is designed to answer any question related to your sourcing decisions. You can also find answers to queries related to the following areas from both proprietary and partner-led information databases -\n\n- Category Intelligence\n- Supplier Shortlisting\n- Risk & Compliance\n- Category Benchmarks\n- Market Monitoring Dashboards\n- Commodity Price and Cost Drivers\n\n Abi works with Microsoft 365 Copilot\n\nType **Home** to start a new conversation\nIf you have any question you can [Click here](https://abi-web.beroelive.ai/faq) for FAQS.\nIn order to use this app, you need to have an active Abi account. To subscribe, please [Contact Us](mailto:livesupport@beroe-inc.com)\n\n*Important Disclaimer: This version of Beroe’s digital assistant, Abi, is built on the GPT language model developed by OpenAI. While Abi is getting smarter every day, sometimes it can provide irrelevant and inaccurate information. Secondly, Abi treats every question separately and does not remember the previous question and response at this time. Finally, while most of the answers provided by Abi are directly from Beroe’s Data Platform, GPT may sometimes respond to questions from publicly available data sources. Beroe does not have any control over such responses at this time.*\n[Contact us](https://www.beroeinc.com/contact/) to raise a request with our support team if you come across any objectionable content generated by AI.",
+  "mpnId": "6505471",
+  "officeAssetId": "WA200003862",
+  "permissions": [],
+  "privacyUrl": "https://abi.beroelive.ai/privacy-policy",
+  "publisherDocsUrl": "https://cdn-ads.beroelive.ai/microsoftteams/publishingUrl/Introduction_to_Abi_on_Teams_Doc.pdf",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/55560ea0-ae82-48b2-b71e-a45356f56bb1/2025071112471300/55560ea0-ae82-48b2-b71e-a45356f56bb1_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/55560ea0-ae82-48b2-b71e-a45356f56bb1/2025071112471300/55560ea0-ae82-48b2-b71e-a45356f56bb1_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/55560ea0-ae82-48b2-b71e-a45356f56bb1/2025071112471300/55560ea0-ae82-48b2-b71e-a45356f56bb1_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/55560ea0-ae82-48b2-b71e-a45356f56bb1/2025071112471300/55560ea0-ae82-48b2-b71e-a45356f56bb1_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/55560ea0-ae82-48b2-b71e-a45356f56bb1/2025071112471300/55560ea0-ae82-48b2-b71e-a45356f56bb1_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "mcasId": "43908",
+    "status": "m365Certified"
+  },
+  "shortDescription": "Abi – Your AI powered digital procurement assistant",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/55560ea0-ae82-48b2-b71e-a45356f56bb1/2025071112471300/55560ea0-ae82-48b2-b71e-a45356f56bb1_smallimage.png",
+  "systemVersion": "2025071112471300",
+  "termsOfUseUrl": "https://abi.beroelive.ai/terms-of-service",
+  "validDomains": [
+    "*.beroeinc.com",
+    "beroeinc.com",
+    "*.beroelive.ai"
+  ],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Abi Can you guide me through the platform features and functionalities?",
+      "description": "The user wants to understand the features Abi offers.",
+      "command": "Home"
+    },
+    {
+      "prompt": "@Abi I need help with a procurement issue.",
+      "description": "The user is seeking assistance with a procurement-related problem.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@Abi I have a technical issue, please connect me with the support team.",
+      "description": "The user needs to contact the support team for technical assistance.",
+      "command": "Contact the Support Team"
+    }
+  ]
+}

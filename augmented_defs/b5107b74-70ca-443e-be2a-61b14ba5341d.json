@@ -1,0 +1,328 @@
+{
+  "manifestVersion": "1.12",
+  "id": "b5107b74-70ca-443e-be2a-61b14ba5341d",
+  "version": "3.0.2",
+  "name": "check.it - Shared Checklists",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 71512660,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Gets checklists for current chat",
+              "title": "Get Checklists"
+            },
+            {
+              "description": "Get help",
+              "title": "Help"
+            },
+            {
+              "description": "Say hello",
+              "title": "Hello"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Gets checklists for current chat",
+              "title": "Get Checklists"
+            },
+            {
+              "description": "Get help",
+              "title": "Help"
+            },
+            {
+              "description": "Say hello",
+              "title": "Hello"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Gets checklists for current chat",
+              "title": "Get Checklists"
+            },
+            {
+              "description": "Get help",
+              "title": "Help"
+            },
+            {
+              "description": "Say hello",
+              "title": "Hello"
+            }
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "898cccfe-ed44-4140-ad2f-c5dd98a12820",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "WorkflowAndBusinessManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Flyte",
+  "developerUrl": "https://flyte.cloud/",
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "898cccfe-ed44-4140-ad2f-c5dd98a12820",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Open the message extension to manage templates",
+          "fetchTask": true,
+          "id": "openChecklist",
+          "initialRun": false,
+          "taskInfo": {
+            "height": "700",
+            "title": "check.it",
+            "url": "https://teamschecklistbt29dc19.azurewebsites.net/checklist.html",
+            "width": "500"
+          },
+          "title": "Open check.it",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Checklist",
+    "Process",
+    "Collaboration"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b5107b74-70ca-443e-be2a-61b14ba5341d/2025071114494300/b5107b74-70ca-443e-be2a-61b14ba5341d_largeimage.png",
+  "lastUpdatedAt": "2024-01-08T14:53:40.9666417+00:00",
+  "longDescription": "When carrying out repetitive processes/tasks such as onboarding, workshops and training, it can be difficult to manage and keep a track of progress. Check.it enables users to create collaborative, one-off or templated checklists to ensure tasks and company processes are consistently followed by everyone in the organisation. Check.it can also be used by individuals to manage personal tasks and activities in their day-to-day work.\n\nAs tasks are checked off, collaborators can clearly see when tasks were completed, and by whom, while identifying which tasks are still outstanding.\n\nIf you need help getting started with check.it, please [get in touch](https://www.checkitteams.com/#contact-us)",
+  "mpnId": "3814734",
+  "officeAssetId": "WA200003604",
+  "permissions": [],
+  "privacyUrl": "https://flyte.cloud/privacy/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b5107b74-70ca-443e-be2a-61b14ba5341d/2025071114494300/b5107b74-70ca-443e-be2a-61b14ba5341d_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b5107b74-70ca-443e-be2a-61b14ba5341d/2025071114494300/b5107b74-70ca-443e-be2a-61b14ba5341d_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b5107b74-70ca-443e-be2a-61b14ba5341d/2025071114494300/b5107b74-70ca-443e-be2a-61b14ba5341d_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b5107b74-70ca-443e-be2a-61b14ba5341d/2025071114494300/b5107b74-70ca-443e-be2a-61b14ba5341d_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b5107b74-70ca-443e-be2a-61b14ba5341d/2025071114494300/b5107b74-70ca-443e-be2a-61b14ba5341d_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Create and share templated checklists to a group, team, or even yourself.",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b5107b74-70ca-443e-be2a-61b14ba5341d/2025071114494300/b5107b74-70ca-443e-be2a-61b14ba5341d_smallimage.png",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "subscriptionOffer": {
+    "isEligibleForAzureBenefits": false,
+    "offerId": "cloudcoveritservicesltd1594388050480.1dd145cc-f8b4-4a20-a49e-807e5b4f4a5a"
+  },
+  "systemVersion": "2025071114494300",
+  "termsOfUseUrl": "https://flyte.cloud/terms/",
+  "validDomains": [
+    "teamschecklistbt29dc19.azurewebsites.net"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=HADRvbOb5Bw",
+  "webApplicationInfo": {
+    "id": "898cccfe-ed44-4140-ad2f-c5dd98a12820",
+    "resource": "api://teamschecklistbt29dc19.azurewebsites.net/botid-898cccfe-ed44-4140-ad2f-c5dd98a12820"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@check.it Hello",
+      "description": "A user greets the bot to start a conversation or interaction.",
+      "command": "Hello"
+    },
+    {
+      "prompt": "@check.it Get Checklists",
+      "description": "A user requests to view all available checklists.",
+      "command": "Get Checklists"
+    },
+    {
+      "prompt": "@check.it Help",
+      "description": "A user seeks assistance on how to use the bot and its features.",
+      "command": "Help"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "manifestVersion": "1.8",
+  "id": "13a58c36-8f58-46e7-90dd-16084830876c",
+  "version": "1.0.3",
+  "name": "researcHR",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 72779630,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "メニューを表示します",
+              "title": "menu"
+            },
+            {
+              "description": "ヘルプ",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "ヘルプ",
+              "title": "help"
+            },
+            {
+              "description": "メニューを表示します",
+              "title": "menu"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "ヘルプ",
+              "title": "help"
+            },
+            {
+              "description": "メニューを表示します",
+              "title": "menu"
+            }
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "82df726e-0de2-46af-b4f1-0645fd95fc97",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "HumanResourcesAndRecruiting"
+  ],
+  "creatorId": "",
+  "developerName": "KBE株式会社",
+  "developerUrl": "https://researchr.work/corporate",
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "82df726e-0de2-46af-b4f1-0645fd95fc97",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "context": [
+            "message"
+          ],
+          "description": "投稿をresearcHRデータベースに保存します",
+          "fetchTask": true,
+          "id": "ADD_TO_RESEARCHR",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Add to researcHR",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "マネジメント",
+    "AI",
+    "チーム"
+  ],
+  "languageTag": "ja",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/13a58c36-8f58-46e7-90dd-16084830876c/2025071114454153/13a58c36-8f58-46e7-90dd-16084830876c_largeimage.png",
+  "lastUpdatedAt": "2021-08-27T09:01:40.0441885+00:00",
+  "longDescription": "researcHRを使って「誰が・何を知っているか」を Microsoft Teams完結で集約・共有しましょう。\nresearcHRの主な機能：\n• AIとの会話形式でデータの入力／更新：researcHRがチャット形式で定期的にやり取りして最新情報を収集。Microsoft Teams完結でメンバーにも負担はかかりません。\n• データは自動で整理して保管：会話ログを元にデータを項目別に整理してセキュアに保管。項目はデフォルトでベストプラクティスを設定済みで、最短2クリックですぐに始められます。\n•検索もチャットからAIに話しかけるだけ：「こんな人居ない？」と Microsoft Teamsから直接チャットしてください。researcHRが文章を理解し最適なメンバーを探して来ます。\n•AIによる自動レポートも：「先週のあの部署は何をやってたのかな？」等をAIが情報をまとめて定期的にレポートすることも可能です。受け身でも情報が自然と目に入る状態を実現します。\nメンバー全員の経歴・最新情報を深く理解している、チームの仮想マネージャーとして機能します。\nぜひ日常業務にご活用ください。\n現在このアプリは日本でのみ利用可能です。\nその他の機能には、分析WEBダッシュボード、相互フィードバック機能などを近日公開予定です。\nご質問やお問い合わせは、[https://researchr.work/#contact](https://researchr.work/#contact)\nもしくは、contact@researchr.workまでご連絡ください。",
+  "mpnId": "6358078",
+  "officeAssetId": "WA200002557",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://researchr.work/privacypolicy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/13a58c36-8f58-46e7-90dd-16084830876c/2025071114454153/13a58c36-8f58-46e7-90dd-16084830876c_screenshot/0.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "チームの「誰が・何を知っているか」を集約・共有する",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/13a58c36-8f58-46e7-90dd-16084830876c/2025071114454153/13a58c36-8f58-46e7-90dd-16084830876c_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://bot.researchr.work/api/home",
+      "entityId": "home",
+      "name": "ホーム",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://bot.researchr.work/api/dashboard",
+      "entityId": "dashboard",
+      "name": "ダッシュボード",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071114454153",
+  "termsOfUseUrl": "https://researchr.work/tos",
+  "validDomains": [
+    "*.researchr.work"
+  ],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "ja"
+  ],
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@researcHR Can you show me the menu?",
+      "description": "User asks the bot to display the list of available options or features.",
+      "command": "menu"
+    },
+    {
+      "prompt": "@researcHR I need some help understanding how you work.",
+      "description": "User requests assistance in understanding how to use the bot.",
+      "command": "help"
+    },
+    {
+      "prompt": "@researcHR Who in the team is knowledgeable about data analysis?",
+      "description": "User inquires about team members who have expertise in data analysis."
+    }
+  ]
+}

@@ -1,0 +1,3590 @@
+{
+  "manifestVersion": "1.19",
+  "id": "87000000-3db9-bb44-5015-0b4a327a6597",
+  "version": "3.3.4",
+  "name": "Teams Manager",
+  "accentColor": "#5256AD",
+  "activities": {
+    "activityTypes": [
+      {
+        "description": "User commented on a Request",
+        "templateText": "{user} commented on Request {requestName}",
+        "type": "RequestCommentUpdated"
+      }
+    ]
+  },
+  "amsSellerAccountId": 60756500,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Enables my Notifications",
+              "title": "Enable Notifications"
+            },
+            {
+              "description": "Disables my Notifications",
+              "title": "Disable Notifications"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Shows Team Information",
+              "title": "Team Info"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ITAdmin",
+    "Productivity",
+    "ContentManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Solutions2Share GmbH",
+  "developerUrl": "https://www.teams-manager.com",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://teamsmanagerprod.azurefd.net/TeamTabs/TabConfiguration/v2?loginHint={loginHint}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+      "commands": [
+        {
+          "description": "Searches for a team",
+          "fetchTask": false,
+          "id": "SearchTeamsTitle",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Displayname of the Team",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "teamName",
+              "title": "Enter the name of the Team"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "I am looking for a team in Teams Manager with a name that starts with Sales-Q3"
+            },
+            {
+              "text": "Find a team in Teams Manager whose name starts with Team-Marketing"
+            },
+            {
+              "text": "Can you locate a team in Teams Manager with a name containing ProjectX"
+            }
+          ],
+          "title": "Search for a Team",
+          "type": "query"
+        },
+        {
+          "description": "Searches for a team based on the date it was managed by Teams Manager ",
+          "fetchTask": false,
+          "id": "SearchTeamsDate",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "The date the Team was managed by Teams Manager",
+              "inputType": "date",
+              "isRequired": false,
+              "name": "managedDate",
+              "title": "Enter Team managed date"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "I am looking for a team in Teams Manager that was created yesterday"
+            },
+            {
+              "text": "I need to find a team in Teams Manager that was created on January 15, 2023"
+            },
+            {
+              "text": "Find any team in Teams Manager that has an activity date of February 20, 2023."
+            }
+          ],
+          "title": "Search by managed Date",
+          "type": "query"
+        },
+        {
+          "description": "Searches for a team based on Teams Manager metadata",
+          "fetchTask": false,
+          "id": "SearchTeamsMetadata",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "The metadata value of the Team. Important: enter only the value, not the key!",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "metadata",
+              "title": "Enter metadata value of the Team"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "I am looking for a team in Teams Manager with 125 as metadata field project number"
+            },
+            {
+              "text": "I am looking for a team in Teams Manager with HR as metadata field department"
+            },
+            {
+              "text": "Search for the team in Teams Manager with Solutions2Share as metadata field customer"
+            }
+          ],
+          "title": "Search by metadata",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "templates",
+    "governance",
+    "provisioning"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_largeimage.png",
+  "lastUpdatedAt": "2025-02-12T16:08:23.0842351+00:00",
+  "longDescription": "**IT administrators** can keep control of their Microsoft 365 environment with [Teams Manager](https://www.solutions2share.com/teams-manager).Use Teams Manager to prevent the uncontrolled creation of Teams and Groups and automate your governance processes!\n\n**Key Features:**\n*   **Governance Dashboard and Reports** – get an overview of your Microsoft 365 environment (inactive or ownerless teams, teams with guests etc.)\n*   **Provisioning of new teams & SharePoint sites** – with channels, tabs, folders, files, Planners with tasks, OneNote with content, pre-set owners and members etc.\n*   **Request and approval workflow** – for provisioning new teams and channels, Microsoft 365 groups, SharePoint sites and more\n\n**Governance Rules & Features:**\n*   **Lifecycle management** – automatically archive or delete teams that are no longer needed\n*   **Naming conventions** – set rules for Teams names, OneNotes and Planners for more structure\n*   **Metadata** – ask for customizable metadata for new teams\n*   **Guest access** – activate or deactivate access for external users\n*   **Access review** – for team owners and their users\n*   **Governance policies** – combine all of the above and more into a powerful governance automation\n\n**Adoption:**\n*   **Better overview** for your users\n*  Works with **Microsoft 365 Copilot** as an agent for Microsoft Copilot. For example: 'I am looking for a team in Teams Manager with a name that starts with Project and with project number 125'\n*  **Bot communication** for requests, workflow and lifecycles\n\n**Get started right away!**\nIf you're ready to get control of your Microsoft 365 environment and automate your governance processes, simply add Teams Manager in the Microsoft Teams app store for a free trial!\n\n**About Solutions2Share**\n[Solutions2Share](https://www.solutions2share.com/) is the market leader for governance applications for Microsoft 365 with over 40,000 installations and more than 1.5 million users worldwide. Our clients save time with full governance automation and are able to provide their users with a structured environment in Microsoft 365 and Microsoft Teams.\n[Contact us](https://support.solutions2share.com) to raise a request with our support team if you come across any objectionable content generated by AI.",
+  "mpnId": "3675805",
+  "officeAssetId": "WA200000764",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.teams-manager.com/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/2.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "mcasId": "35836",
+    "status": "m365Certified"
+  },
+  "shortDescription": "Control your Teams with governance, lifecycles, templates & more!",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/TeamsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+      "entityId": "2820bd53-f3b7-42ff-8604-23fb94c16b78",
+      "name": "Teams",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/RequestsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+      "entityId": "d12c7518-3b2a-4a1f-a39b-56c7edad4a3a",
+      "name": "Requests",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/HelpTab/v2?loginHint={loginHint}&theme={theme}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+      "entityId": "0ed581df-4e8d-4808-a35b-919e1116ee0c",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "subscriptionOffer": {
+    "isEligibleForAzureBenefits": false,
+    "offerId": "solutions2sharegmbh.teamsmanager_flat"
+  },
+  "systemVersion": "2025071113175886",
+  "termsOfUseUrl": "https://www.teams-manager.com/terms-of-use/",
+  "validDomains": [
+    "teamsmanagerprod.azurewebsites.net",
+    "teamsmanagerprod.azurefd.net"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=F72-U9kSKQE",
+  "webApplicationInfo": {
+    "id": "15938b64-8ecd-4047-8d67-ced95c7a5c8f",
+    "resource": "api://teamsmanagerprod.azurefd.net/15938b64-8ecd-4047-8d67-ced95c7a5c8f"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "fr",
+    "de",
+    "nl",
+    "da",
+    "ja",
+    "it",
+    "tr",
+    "zh",
+    "es"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.19",
+      "id": "87000000-3db9-bb44-5015-0b4a327a6597",
+      "version": "3.3.4",
+      "name": "Teamleder",
+      "accentColor": "#5256AD",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Brugeren kommenterede en anmodning",
+            "templateText": "{user} kommenterede på Request {requestName}.",
+            "type": "RequestCommentUpdated"
+          }
+        ]
+      },
+      "amsSellerAccountId": 60756500,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Aktiverer de notifikationer, der sendes af Teams Manager",
+                  "title": "Aktivér meddelelser"
+                },
+                {
+                  "description": "Deaktiverer notifikationer sendt af Team Manager",
+                  "title": "Deaktiver meddelelser"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Shows Team Information",
+                  "title": "Team Info"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "ContentManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Solutions2Share GmbH",
+      "developerUrl": "https://www.teams-manager.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://teamsmanagerprod.azurefd.net/TeamTabs/TabConfiguration/v2?loginHint={loginHint}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "commands": [
+            {
+              "description": "Searches for a team",
+              "fetchTask": false,
+              "id": "SearchTeamsTitle",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Displayname of the Team",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teamName",
+                  "title": "Enter the name of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Jeg leder efter et team i Teams Manager med et navn, der starter med {displayName}."
+                },
+                {
+                  "text": "Find et hold i Teams Manager, hvis navn starter med {displayName}."
+                },
+                {
+                  "text": "Kan du finde et hold i Teams Manager med et navn, der indeholder {displayName}?"
+                }
+              ],
+              "title": "Search for a Team",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on the date it was managed by Teams Manager ",
+              "fetchTask": false,
+              "id": "SearchTeamsDate",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The date the Team was managed by Teams Manager",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "managedDate",
+                  "title": "Enter Team managed date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Jeg leder efter et team i Teams Manager, der blev oprettet {date}."
+                },
+                {
+                  "text": "Jeg har brug for at finde et team i Teams Manager, der blev oprettet den {date}."
+                },
+                {
+                  "text": "Find alle hold i Teams Manager, der har en aktivitetsdato på {date}."
+                }
+              ],
+              "title": "Search by managed Date",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on Teams Manager metadata",
+              "fetchTask": false,
+              "id": "SearchTeamsMetadata",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The metadata value of the Team. Important: enter only the value, not the key!",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "metadata",
+                  "title": "Enter metadata value of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Jeg leder efter et team i Teams Manager med {value} som metadatafelt {project number}."
+                },
+                {
+                  "text": "Jeg leder efter et team i Teams Manager med {value} som metadatafelt {department}."
+                },
+                {
+                  "text": "Søg efter teamet i Teams Manager med {value} som metadatafelt {customer}."
+                }
+              ],
+              "title": "Search by metadata",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "templates",
+        "governance",
+        "provisioning"
+      ],
+      "languageTag": "da",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_largeimage.png",
+      "lastUpdatedAt": "2025-02-12T16:08:23.0842351+00:00",
+      "longDescription": "**IT-administratorer** kan bevare kontrollen over deres Microsoft 365-miljø med [Teams Manager](https://www.solutions2share.com/de/teams-manager/). Forebyg ukontrolleret oprettelse af teams og grupper med Teams Manager, og automatiser dine governance-processer!\n\n**Nøglefunktioner:**\n*   **Governance-Dashboard og rapporter** – Oversigt over dit Microsoft 365-miljø (inaktive eller ejerløse teams, teams med gæster osv.)\n*   **Oprettelse af nye teams og SharePoint-sider** – med kanaler, faner, apps, mapper, filer, plannere med opgaver, OneNote med indhold, forudindstillede ejere og medlemmer osv.\n*   **Arbejdsgang for forespørgsler og godkendelse** – til oprettelse af nye teams og kanaler, Microsoft 365-grupper, SharePoint-sider og meget mere\n\n**Styringsregler og funktioner:**\n*   **Livscyklusser** – Teams, der ikke længere er nødvendige, kan automatisk arkiveres eller slettes.\n*   **Navngivningskonventioner** – Regler for teamnavne, OneNotes og Planners for mere struktur\n*   **Metadata** – Anmod om tilpassede metadata til nye teams\n*   **Gæsteadgang** – Aktivér eller deaktivér adgang for eksterne brugere\n*   **Adgangskontrol** – for teamejere og deres medlemmer\n*   **Retningslinjer for ledelse** – Kombiner alle funktioner for at skabe omfattende governance-automatisering\n\n**Adoption:**\n*   **Bedre overblik** for dine brugere\n*  Fungerer med **Microsoft 365 Copilot** som agent for Microsoft Copilot. For eksempel: 'I am looking for a team in Teams Manager with a name that starts with Project and with project number 125'.\n*  **Bot-kommunikation** for anmodninger, arbejdsgange og livscyklusser\n* **AI-chatstøtte** via intercom\n\n**Kom i gang i dag!**Hvis du er klar til at tage kontrol over dit Microsoft 365-miljø og automatisere dine styringsprocesser, så hent Teams Manager fra Microsoft Teams App Store og prøv det gratis!\n\n**Om Solutions2Share**\n[Solutions2Share](https://www.solutions2share.com/de/) er markedsleder inden for governance-applikationer til Microsoft 365 med over 40.000 installationer og mere end 1,5 millioner brugere på verdensplan. Vores kunder sparer tid gennem komplet governance-automatisering og kan tilbyde deres brugere et struktureret miljø i Microsoft 365 og Microsoft Teams.\n[Kontakt os](https://support.solutions2share.com) for at sende en anmodning til vores supportteam, hvis du støder på anstødeligt indhold genereret af AI.",
+      "mpnId": "3675805",
+      "officeAssetId": "WA200000764",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teams-manager.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "35836",
+        "status": "m365Certified"
+      },
+      "shortDescription": "Kontrol over teams med governance, livscyklusser, skabeloner og meget mere!",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/TeamsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "2820bd53-f3b7-42ff-8604-23fb94c16b78",
+          "name": "Hold",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/RequestsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "d12c7518-3b2a-4a1f-a39b-56c7edad4a3a",
+          "name": "Forespørgsler",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/HelpTab/v2?loginHint={loginHint}&theme={theme}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "0ed581df-4e8d-4808-a35b-919e1116ee0c",
+          "name": "Hjælp",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "solutions2sharegmbh.teamsmanager_flat"
+      },
+      "systemVersion": "2025071113175886",
+      "termsOfUseUrl": "https://www.teams-manager.com/terms-of-use/",
+      "validDomains": [
+        "teamsmanagerprod.azurewebsites.net",
+        "teamsmanagerprod.azurefd.net"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=F72-U9kSKQE",
+      "webApplicationInfo": {
+        "id": "15938b64-8ecd-4047-8d67-ced95c7a5c8f",
+        "resource": "api://teamsmanagerprod.azurefd.net/15938b64-8ecd-4047-8d67-ced95c7a5c8f"
+      }
+    },
+    {
+      "manifestVersion": "1.19",
+      "id": "87000000-3db9-bb44-5015-0b4a327a6597",
+      "version": "3.3.4",
+      "name": "Teams Manager",
+      "accentColor": "#5256AD",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Benutzer kommentierte eine Anfrage",
+            "templateText": "{user} kommentierte die Anfrage {requestName}",
+            "type": "RequestCommentUpdated"
+          }
+        ]
+      },
+      "amsSellerAccountId": 60756500,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Aktiviert die Benachrichtigungen die vom Teams Manager gesendet werden",
+                  "title": "Aktiviere Benachrichtigungen"
+                },
+                {
+                  "description": "Deaktiviert die Benachrichtigungen die vom Teams Manager gesendet werden",
+                  "title": "Deaktiviere Benachrichtigungen"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Shows Team Information",
+                  "title": "Team Info"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "ContentManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Solutions2Share GmbH",
+      "developerUrl": "https://www.teams-manager.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://teamsmanagerprod.azurefd.net/TeamTabs/TabConfiguration/v2?loginHint={loginHint}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "commands": [
+            {
+              "description": "Searches for a team",
+              "fetchTask": false,
+              "id": "SearchTeamsTitle",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Displayname of the Team",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teamName",
+                  "title": "Enter the name of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Ich suche im Teams Manager nach einem Team, dessen Name mit {displayName} beginnt"
+                },
+                {
+                  "text": "Suchen Sie im Teams Manager ein Team, dessen Name mit {displayName} beginnt"
+                },
+                {
+                  "text": "Können Sie im Teams Manager ein Team finden, dessen Name {displayName} enthält?"
+                }
+              ],
+              "title": "Search for a Team",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on the date it was managed by Teams Manager ",
+              "fetchTask": false,
+              "id": "SearchTeamsDate",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The date the Team was managed by Teams Manager",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "managedDate",
+                  "title": "Enter Team managed date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Ich suche in Teams Manager nach einem Team, das am {date} erstellt wurde"
+                },
+                {
+                  "text": "Ich muss in Teams Manager ein Team finden, das am {date} erstellt wurde."
+                },
+                {
+                  "text": "Suchen Sie alle Teams im Teams Manager, die ein Aktivitätsdatum von {date} haben."
+                }
+              ],
+              "title": "Search by managed Date",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on Teams Manager metadata",
+              "fetchTask": false,
+              "id": "SearchTeamsMetadata",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The metadata value of the Team. Important: enter only the value, not the key!",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "metadata",
+                  "title": "Enter metadata value of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Ich suche in Teams Manager nach einem Team mit {value} als Metadatenfeld {project number}."
+                },
+                {
+                  "text": "Ich suche ein Team in Teams Manager mit {value} als Metadatenfeld {department}."
+                },
+                {
+                  "text": "Suche nach dem Team in Teams Manager mit {value} als Metadatenfeld {customer}."
+                }
+              ],
+              "title": "Search by metadata",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "templates",
+        "governance",
+        "provisioning"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_largeimage.png",
+      "lastUpdatedAt": "2025-02-12T16:08:23.0842351+00:00",
+      "longDescription": "**IT Administratoren** können mit dem [Teams Manager](https://www.solutions2share.com/de/teams-manager/) die Kontrolle über ihre Microsoft 365 Umgebung behalten. Verhindern Sie mit dem Teams Manager die unkontrollierte Erstellung von Teams und Gruppen und automatisieren Sie Ihre Governance-Prozesse!  \n  \n **Key Features:**  \n*   **Governance-Dashboard und Berichte** – Überblick über Ihre Microsoft 365-Umgebung (inaktive oder eigentümerlose Teams, Teams mit Gästen usw.)  \n*   **Provisionierung neuer Teams und SharePoint-Sites** – mit Kanälen, Tabs, Apps, Ordnern, Dateien, Plannern mit Aufgaben, OneNote mit Inhalten, voreingestellten Besitzern und Mitgliedern usw.  \n*   **Anfrage- und Genehmigungsworkflow** – für die Provisionierung neuer Teams und Kanäle, Microsoft 365-Gruppen, SharePoint-Sites und mehr  \n  \n **Governance Regeln & Features:**  \n*   **Lebenszyklen** – nicht mehr benötigte Teams können automatisch archiviert oder gelöscht werden  \n*   **Namenskonventionen** –Regeln für Teams-Namen, OneNotes und Planners für mehr Struktur  \n*   **Metadaten** – fragen Sie bei neuen Teams anpassbare Metadaten ab  \n*   **Gastzugang** – Zugriff für externe Benutzer aktivieren oder deaktivieren  \n*   **Zugriffsüberprüfung** – für Teambesitzer und ihre Mitglieder  \n*   **Governance-Richtlinien** – kombinieren Sie alle Funktionen zu einer umfassenden Governance-Automatisierung  \n  \n**Adoption:**  \n*   **Bessere Übersicht** für Ihre Nutzer  \n*  Funktioniert mit **Microsoft 365 Copilot** als Agent für Microsoft Copilot. Zum Beispiel: 'Ich suche ein Team im Teams Manager mit einem Namen, der mit Project beginnt und mit der Projektnummer 125'.\n*  **Bot-Kommunikation** für Anfragen, Workflows und Lebenszyklen  \n* **AI-Chat Support** durch Intercom\n  \n**Starten Sie noch heute!**  \nWenn Sie bereit sind, die Kontrolle über Ihre Microsoft 365-Umgebung zu übernehmen und Ihre Governance-Prozesse zu automatisieren, holen Sie sich den Teams Manager im Microsoft Teams App Store und testen Sie ihn kostenlos!  \n  \n**Über Solutions2Share**  \n[Solutions2Share](https://www.solutions2share.com/de/) ist der Marktführer für Governance-Anwendungen für Microsoft 365 mit über 40.000 Installationen und mehr als 1,5 Millionen Benutzern weltweit. Unsere Kunden sparen Zeit durch vollständige Governance-Automatisierung und können ihren Benutzern eine strukturierte Umgebung in Microsoft 365 und Microsoft Teams bieten.\n[Kontaktieren Sie uns](https://support.solutions2share.com) um eine Anfrage an unser Support-Team zu stellen, wenn Sie auf anstößige, von AI generierte Inhalte stoßen.",
+      "mpnId": "3675805",
+      "officeAssetId": "WA200000764",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teams-manager.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "35836",
+        "status": "m365Certified"
+      },
+      "shortDescription": "Kontrolle über Teams mit Governance, Lebenszyklen, Vorlagen & mehr!",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/TeamsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "2820bd53-f3b7-42ff-8604-23fb94c16b78",
+          "name": "Teams",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/RequestsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "d12c7518-3b2a-4a1f-a39b-56c7edad4a3a",
+          "name": "Anfragen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/HelpTab/v2?loginHint={loginHint}&theme={theme}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "0ed581df-4e8d-4808-a35b-919e1116ee0c",
+          "name": "Hilfe",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "solutions2sharegmbh.teamsmanager_flat"
+      },
+      "systemVersion": "2025071113175886",
+      "termsOfUseUrl": "https://www.teams-manager.com/terms-of-use/",
+      "validDomains": [
+        "teamsmanagerprod.azurewebsites.net",
+        "teamsmanagerprod.azurefd.net"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=F72-U9kSKQE",
+      "webApplicationInfo": {
+        "id": "15938b64-8ecd-4047-8d67-ced95c7a5c8f",
+        "resource": "api://teamsmanagerprod.azurefd.net/15938b64-8ecd-4047-8d67-ced95c7a5c8f"
+      }
+    },
+    {
+      "manifestVersion": "1.19",
+      "id": "87000000-3db9-bb44-5015-0b4a327a6597",
+      "version": "3.3.4",
+      "name": "Director de equipos",
+      "accentColor": "#5256AD",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "El usuario ha comentado una solicitud",
+            "templateText": "{user} comentó sobre la solicitud {requestName}",
+            "type": "RequestCommentUpdated"
+          }
+        ]
+      },
+      "amsSellerAccountId": 60756500,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Activa las notificaciones enviadas por el Gestor de Equipos",
+                  "title": "Activar notificaciones"
+                },
+                {
+                  "description": "Desactiva las notificaciones enviadas por el Gestor de Equipos",
+                  "title": "Desactivar notificaciones"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Shows Team Information",
+                  "title": "Team Info"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "ContentManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Solutions2Share GmbH",
+      "developerUrl": "https://www.teams-manager.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://teamsmanagerprod.azurefd.net/TeamTabs/TabConfiguration/v2?loginHint={loginHint}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "commands": [
+            {
+              "description": "Searches for a team",
+              "fetchTask": false,
+              "id": "SearchTeamsTitle",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Displayname of the Team",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teamName",
+                  "title": "Enter the name of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Busco un equipo en el Gestor de equipos cuyo nombre empiece por {displayName}."
+                },
+                {
+                  "text": "Busca un equipo en el Gestor de equipos cuyo nombre empiece por {displayName}."
+                },
+                {
+                  "text": "¿Puede localizar un equipo en el Gestor de equipos con un nombre que contenga {displayName}?"
+                }
+              ],
+              "title": "Search for a Team",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on the date it was managed by Teams Manager ",
+              "fetchTask": false,
+              "id": "SearchTeamsDate",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The date the Team was managed by Teams Manager",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "managedDate",
+                  "title": "Enter Team managed date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Estoy buscando un equipo en Teams Manager que fue creado {date}."
+                },
+                {
+                  "text": "Necesito encontrar un equipo en Teams Manager que se creó el {deta}."
+                },
+                {
+                  "text": "Buscar cualquier equipo en el Gestor de Equipos que tenga una fecha de actividad de {date}."
+                }
+              ],
+              "title": "Search by managed Date",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on Teams Manager metadata",
+              "fetchTask": false,
+              "id": "SearchTeamsMetadata",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The metadata value of the Team. Important: enter only the value, not the key!",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "metadata",
+                  "title": "Enter metadata value of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Busco un equipo en Teams Manager con {value} como campo de metadatos {project number}."
+                },
+                {
+                  "text": "Busco un equipo en Teams Manager con {value} como campo de metadatos {department}."
+                },
+                {
+                  "text": "Buscar el equipo en Teams Manager con {value} como campo de metadatos {customer}."
+                }
+              ],
+              "title": "Search by metadata",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "templates",
+        "governance",
+        "provisioning"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_largeimage.png",
+      "lastUpdatedAt": "2025-02-12T16:08:23.0842351+00:00",
+      "longDescription": "**Los administradores de TI** pueden mantener el control de su entorno Microsoft 365 con el [Teams Manager](https://www.solutions2share.com/de/teams-manager/). Evite la creación incontrolada de equipos y grupos con Teams Manager y automatice sus procesos de gobernanza.\n\n**Características principales:**\n*   **Cuadro de mandos e informes de gobernanza** – Visión general de su entorno Microsoft 365 (equipos inactivos o sin propietario, equipos con invitados, etc.)\n*   **Aprovisionamiento de nuevos equipos y sitios SharePoint** – con canales, pestañas, aplicaciones, carpetas, archivos, planificadores con tareas, OneNote con contenidos, propietarios y miembros preestablecidos, etc.\n*   **Flujo de trabajo de consulta y aprobación** – para el aprovisionamiento de nuevos equipos y canales, grupos de Microsoft 365, sitios de SharePoint, etc.\n\n**Normas y características de gobernanza:**\n*   **Ciclos de vida** – Los equipos que ya no son necesarios pueden archivarse o eliminarse automáticamente.\n*   **Convenciones de denominación** – Reglas para los nombres de los equipos, OneNotes y Planners para una mayor estructuración\n*   **Metadatos** – Solicitar metadatos personalizables para nuevos equipos\n*   **Acceso para invitados** – Activar o desactivar el acceso de usuarios externos\n*   **Control de acceso** – para los propietarios de equipos y sus miembros\n*   **Directrices de gobernanza** – Combine todas las funciones para crear una automatización completa de la gobernanza\n\n**Adopción:**\n*   **Mejor visión de conjunto** para sus usuarios\n*  Funciona con **Microsoft 365 Copilot** como agente de Microsoft Copilot. Por ejemplo: 'Busco un equipo en Teams Manager con un nombre que empiece por Project y con el número de proyecto 125'\n*  **Comunicación Bot** para solicitudes, flujos de trabajo y ciclos de vida\n* **Chat AI** por intercom\n\n**Empiece hoy mismo!**\nSi está listo para tomar el control de su entorno Microsoft 365 y automatizar sus procesos de gobernanza, obtenga Teams Manager en Microsoft Teams App Store y pruébelo gratis.\n\n**Acerca de Solutions2Share**\n[Solutions2Share](https://www.solutions2share.com/de/) es el líder del mercado de aplicaciones de gobernanza para Microsoft 365, con más de 40 000 instalaciones y más de 1,5 millones de usuarios en todo el mundo. Nuestros clientes ahorran tiempo gracias a la automatización completa de la gobernanza y pueden ofrecer a sus usuarios un entorno estructurado en Microsoft 365 y Microsoft Teams.\n[Póngase en contacto con nosotros](https://support.solutions2share.com) para enviar una solicitud a nuestro equipo de asistencia si encuentra algún contenido inaceptable generado por AI.",
+      "mpnId": "3675805",
+      "officeAssetId": "WA200000764",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teams-manager.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "35836",
+        "status": "m365Certified"
+      },
+      "shortDescription": "Controle sus equipos con gobernanza, ciclos de vida, plantillas y mucho más.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/TeamsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "2820bd53-f3b7-42ff-8604-23fb94c16b78",
+          "name": "Equipos",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/RequestsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "d12c7518-3b2a-4a1f-a39b-56c7edad4a3a",
+          "name": "Consultas",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/HelpTab/v2?loginHint={loginHint}&theme={theme}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "0ed581df-4e8d-4808-a35b-919e1116ee0c",
+          "name": "Ayuda",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "solutions2sharegmbh.teamsmanager_flat"
+      },
+      "systemVersion": "2025071113175886",
+      "termsOfUseUrl": "https://www.teams-manager.com/terms-of-use/",
+      "validDomains": [
+        "teamsmanagerprod.azurewebsites.net",
+        "teamsmanagerprod.azurefd.net"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=F72-U9kSKQE",
+      "webApplicationInfo": {
+        "id": "15938b64-8ecd-4047-8d67-ced95c7a5c8f",
+        "resource": "api://teamsmanagerprod.azurefd.net/15938b64-8ecd-4047-8d67-ced95c7a5c8f"
+      }
+    },
+    {
+      "manifestVersion": "1.19",
+      "id": "87000000-3db9-bb44-5015-0b4a327a6597",
+      "version": "3.3.4",
+      "name": "Teams Manager",
+      "accentColor": "#5256AD",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "L'utilisateur a commenté une demande",
+            "templateText": "{user} a commenté la demande {requestName}",
+            "type": "RequestCommentUpdated"
+          }
+        ]
+      },
+      "amsSellerAccountId": 60756500,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Permet mes notifications qui sont envoyées par le responsable des équipes",
+                  "title": "Activer les notifications"
+                },
+                {
+                  "description": "Désactive mes notifications qui sont envoyées par le responsable des équipes",
+                  "title": "Désactiver les notifications"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Shows Team Information",
+                  "title": "Team Info"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "ContentManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Solutions2Share GmbH",
+      "developerUrl": "https://www.teams-manager.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://teamsmanagerprod.azurefd.net/TeamTabs/TabConfiguration/v2?loginHint={loginHint}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "commands": [
+            {
+              "description": "Searches for a team",
+              "fetchTask": false,
+              "id": "SearchTeamsTitle",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Displayname of the Team",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teamName",
+                  "title": "Enter the name of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Je recherche une équipe dans Teams Manager dont le nom commence par {displayName}."
+                },
+                {
+                  "text": "Trouver dans le gestionnaire d'équipes une équipe dont le nom commence par {displayName}."
+                },
+                {
+                  "text": "Pouvez-vous localiser une équipe dans le Gestionnaire d'équipes dont le nom contient {displayName}?"
+                }
+              ],
+              "title": "Search for a Team",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on the date it was managed by Teams Manager ",
+              "fetchTask": false,
+              "id": "SearchTeamsDate",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The date the Team was managed by Teams Manager",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "managedDate",
+                  "title": "Enter Team managed date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Je recherche dans Teams Manager une équipe qui a été créée {date}"
+                },
+                {
+                  "text": "J'ai besoin de trouver une équipe dans Teams Manager qui a été créée le {date}"
+                },
+                {
+                  "text": "Rechercher dans le gestionnaire d'équipes toute équipe dont la date d'activité est {date}."
+                }
+              ],
+              "title": "Search by managed Date",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on Teams Manager metadata",
+              "fetchTask": false,
+              "id": "SearchTeamsMetadata",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The metadata value of the Team. Important: enter only the value, not the key!",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "metadata",
+                  "title": "Enter metadata value of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Je recherche dans Teams Manager une équipe avec {value} comme champ de métadonnes {project number}."
+                },
+                {
+                  "text": "Je recherche une équipe dans Teams Manager avec {value} comme champ de métadonnes {department}."
+                },
+                {
+                  "text": "Recherche de l'équipe dans Teams Manager avec {value} comme champ de métadonnes {customer}"
+                }
+              ],
+              "title": "Search by metadata",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "templates",
+        "governance",
+        "provisioning"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_largeimage.png",
+      "lastUpdatedAt": "2025-02-12T16:08:23.0842351+00:00",
+      "longDescription": "**Les administrateurs informatiques** peuvent garder le contrôle de leur environnement Microsoft 365 avec [Teams Manager](https://www.solutions2share.com/de/teams-manager/). Utilisez Teams Manager pour empêcher la création incontrôlée d'équipes et de groupes et automatisez vos processus de gouvernance !\n\n**Principales caractéristiques :**\n*   **Tableau de bord et rapports de gouvernance** – obtenez un aperçu de votre environnement Microsoft 365 (équipes inactives ou sans propriétaire, équipes avec invités, etc.)\n*   **Provisionnement de nouvelles équipes et sites SharePoint** – avec des canaux, des onglets, des dossiers, des fichiers, Planner avec des tâches, OneNote avec du contenu, des propriétaires et des membres prédéfinis, etc.\n*   **Flux de travail de demande et d'approbation** – pour le provisionnement de nouvelles équipes et de nouveaux canaux, groupes Microsoft 365, sites SharePoint, etc.\n\n**Règles et fonctionnalités de gouvernance:**\n*   **Gestion du cycle de vie** – archivez ou supprimez automatiquement les équipes dont vous n'avez plus besoin\n*   **Conventions de dénomination** – définissez des règles pour les noms d'équipes, OneNotes et les planificateurs pour plus de structure\n*   **Métadonnées** – demandez des métadonnées personnalisables pour les nouvelles équipes\n*   **Accès invité** – activez ou désactivez l'accès pour les utilisateurs externes\n*   **Examen des accès** – pour les propriétaires d'équipe et leurs utilisateurs\n*   **Politiques du gouvernance** – combinez tout ce qui précède et plus encore dans une puissante automatisation de la gouvernance\n\n**Adoption par les utilisateurs:**\n*   **Meilleur aperçu** pour vos utilisateurs\n*  Fonctionne avec **Microsoft 365 Copilot** en tant qu'agent de Microsoft Copilot. Par exemple: 'Je recherche dans Teams Manager une équipe dont le nom commence par Projet et dont le numéro de projet est 125.'\n*  **Communication avec les bots** pour les demandes, le flux de travail et les cycles de vie\n* **Support de chat AI** par intercom\n\n**Commencez tout de suite !**\nSi vous êtes prêt à prendre le contrôle de votre environnement Microsoft 365 et à automatiser vos processus de gouvernance, ajoutez simplement Teams Manager dans la boutique d'applications Microsoft Teams pour un essai gratuit ! \n\n**À propos de Solutions2Share**\n[Solutions2Share](https://www.solutions2share.com/de/) est le leader du marché des applications de gouvernance pour Microsoft 365 avec plus de 40 000 installations et plus de 1,5 million d'utilisateurs dans le monde. Nos clients gagnent du temps grâce à l'automatisation complète de la gouvernance et sont en mesure de fournir à leurs utilisateurs un environnement structuré dans Microsoft 365 et Microsoft Teams.\n[Contactez-nous](https://support.solutions2share.com) pour déposer une demande auprès de notre équipe d'assistance si vous rencontrez un contenu répréhensible généré par l'IA.",
+      "mpnId": "3675805",
+      "officeAssetId": "WA200000764",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teams-manager.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "35836",
+        "status": "m365Certified"
+      },
+      "shortDescription": "Gouvernance, Cycle de Vie & Modèles avec Approbation. Structure pour équipes!",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/TeamsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "2820bd53-f3b7-42ff-8604-23fb94c16b78",
+          "name": "Équipes",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/RequestsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "d12c7518-3b2a-4a1f-a39b-56c7edad4a3a",
+          "name": "Demandes",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/HelpTab/v2?loginHint={loginHint}&theme={theme}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "0ed581df-4e8d-4808-a35b-919e1116ee0c",
+          "name": "Aide",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "solutions2sharegmbh.teamsmanager_flat"
+      },
+      "systemVersion": "2025071113175886",
+      "termsOfUseUrl": "https://www.teams-manager.com/terms-of-use/",
+      "validDomains": [
+        "teamsmanagerprod.azurewebsites.net",
+        "teamsmanagerprod.azurefd.net"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=F72-U9kSKQE",
+      "webApplicationInfo": {
+        "id": "15938b64-8ecd-4047-8d67-ced95c7a5c8f",
+        "resource": "api://teamsmanagerprod.azurefd.net/15938b64-8ecd-4047-8d67-ced95c7a5c8f"
+      }
+    },
+    {
+      "manifestVersion": "1.19",
+      "id": "87000000-3db9-bb44-5015-0b4a327a6597",
+      "version": "3.3.4",
+      "name": "Responsabile delle squadre",
+      "accentColor": "#5256AD",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "L'utente ha commentato una richiesta",
+            "templateText": "{user} ha commentato la richiesta {requestName}",
+            "type": "RequestCommentUpdated"
+          }
+        ]
+      },
+      "amsSellerAccountId": 60756500,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Attiva le notifiche inviate dal Teams Manager.",
+                  "title": "Attivare le notifiche"
+                },
+                {
+                  "description": "Disattiva le notifiche inviate dal Teams Manager.",
+                  "title": "Disattivare le notifiche"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Shows Team Information",
+                  "title": "Team Info"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "ContentManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Solutions2Share GmbH",
+      "developerUrl": "https://www.teams-manager.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://teamsmanagerprod.azurefd.net/TeamTabs/TabConfiguration/v2?loginHint={loginHint}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "commands": [
+            {
+              "description": "Searches for a team",
+              "fetchTask": false,
+              "id": "SearchTeamsTitle",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Displayname of the Team",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teamName",
+                  "title": "Enter the name of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Sto cercando una squadra in Teams Manager con un nome che inizia con {displayName}."
+                },
+                {
+                  "text": "Trova una squadra in Gestione Squadre il cui nome inizia con {displayName}."
+                },
+                {
+                  "text": "È possibile individuare una squadra in Teams Manager con un nome contenente {displayName}"
+                }
+              ],
+              "title": "Search for a Team",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on the date it was managed by Teams Manager ",
+              "fetchTask": false,
+              "id": "SearchTeamsDate",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The date the Team was managed by Teams Manager",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "managedDate",
+                  "title": "Enter Team managed date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Sto cercando un team in Teams Manager che è stato creato {date}"
+                },
+                {
+                  "text": "Ho bisogno di trovare un team in Gestione squadre che è stato creato in data {date}"
+                },
+                {
+                  "text": "Trova qualsiasi squadra in Teams Manager che abbia una data di attività pari a {date}."
+                }
+              ],
+              "title": "Search by managed Date",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on Teams Manager metadata",
+              "fetchTask": false,
+              "id": "SearchTeamsMetadata",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The metadata value of the Team. Important: enter only the value, not the key!",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "metadata",
+                  "title": "Enter metadata value of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Sto cercando un team in Teams Manager con {value} come campo metadati {project number}."
+                },
+                {
+                  "text": "Sto cercando un team in Teams Manager con {value} come campo metadati {department}."
+                },
+                {
+                  "text": "Cercare il team in Teams Manager con {value} come campo metadati {customer}."
+                }
+              ],
+              "title": "Search by metadata",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "templates",
+        "governance",
+        "provisioning"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_largeimage.png",
+      "lastUpdatedAt": "2025-02-12T16:08:23.0842351+00:00",
+      "longDescription": "**Gli amministratori IT** possono mantenere il controllo del loro ambiente Microsoft 365 con [Teams Manager](https://www.solutions2share.com/de/teams-manager/). Impedite la creazione incontrollata di team e gruppi con Teams Manager e automatizzate i processi di governance!\n\n**Caratteristiche principali:**\n*   **Cruscotto e rapporti di governance** – Panoramica dell'ambiente Microsoft 365 (team inattivi o senza proprietario, team con ospiti, ecc.)\n*   **Provisioning di nuovi team e siti SharePoint** – con canali, schede, app, cartelle, file, planner con attività, OneNote con contenuti, proprietari e membri preimpostati, ecc.\n*   **Flusso di lavoro di richiesta e approvazione** – per il provisioning di nuovi team e canali, gruppi Microsoft 365, siti SharePoint e altro ancora.\n\n**Regole e caratteristiche della governance:**\n*   **Cicli di vita** – I team non più necessari possono essere archiviati o eliminati automaticamente.\n*   **Convenzioni di denominazione** – Regole per i nomi dei team, OneNotes e Planner per una maggiore strutturazione\n*   **Metadati** – Richiesta di metadati personalizzabili per i nuovi team\n*   **Accesso ospiti** – Abilitare o disabilitare l'accesso per gli utenti esterni\n*   **Controllo dell'accesso** – per i proprietari di squadre e i loro membri\n*   **Linee guida per la governance** – Combinare tutte le funzioni per creare un'automazione completa della governance\n\n**Adozione:**\n*   **Una migliore visione d'insieme** per gli utenti\n*  Funziona con **Microsoft 365 Copilot** come agente per Microsoft Copilot. Ad esempio: 'Sto cercando un team in Teams Manager con un nome che inizia con Project e con il numero di progetto 125.'\n*  **Comunicazione bot** per richieste, flussi di lavoro e cicli di vita\n* **Supporto chat AI** tramite intercom\n\n**Iniziate oggi stesso!**\nSe siete pronti a prendere il controllo del vostro ambiente Microsoft 365 e ad automatizzare i processi di governance, acquistate Teams Manager dal Microsoft Teams App Store e provatelo gratuitamente!\n\n**Informazioni su Solutions2Share**\n[Solutions2Share](https://www.solutions2share.com/de/) è leader di mercato nelle applicazioni di governance per Microsoft 365, con oltre 40.000 installazioni e più di 1,5 milioni di utenti in tutto il mondo. I nostri clienti risparmiano tempo grazie alla completa automazione della governance e possono offrire ai loro utenti un ambiente strutturato in Microsoft 365 e Microsoft Teams.\n[Contattaci](https://support.solutions2share.com) per inoltrare una richiesta al nostro team di assistenza se vi imbattete in contenuti discutibili generati dall'IA.",
+      "mpnId": "3675805",
+      "officeAssetId": "WA200000764",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teams-manager.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "35836",
+        "status": "m365Certified"
+      },
+      "shortDescription": "Controllo dei team con governance, cicli di vita, modelli e altro ancora!",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/TeamsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "2820bd53-f3b7-42ff-8604-23fb94c16b78",
+          "name": "Squadre",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/RequestsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "d12c7518-3b2a-4a1f-a39b-56c7edad4a3a",
+          "name": "Richieste di informazioni",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/HelpTab/v2?loginHint={loginHint}&theme={theme}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "0ed581df-4e8d-4808-a35b-919e1116ee0c",
+          "name": "Aiuto",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "solutions2sharegmbh.teamsmanager_flat"
+      },
+      "systemVersion": "2025071113175886",
+      "termsOfUseUrl": "https://www.teams-manager.com/terms-of-use/",
+      "validDomains": [
+        "teamsmanagerprod.azurewebsites.net",
+        "teamsmanagerprod.azurefd.net"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=F72-U9kSKQE",
+      "webApplicationInfo": {
+        "id": "15938b64-8ecd-4047-8d67-ced95c7a5c8f",
+        "resource": "api://teamsmanagerprod.azurefd.net/15938b64-8ecd-4047-8d67-ced95c7a5c8f"
+      }
+    },
+    {
+      "manifestVersion": "1.19",
+      "id": "87000000-3db9-bb44-5015-0b4a327a6597",
+      "version": "3.3.4",
+      "name": "チームマネージャー",
+      "accentColor": "#5256AD",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "ユーザーがリクエストにコメント",
+            "templateText": "{user}さんがリクエスト{requestName}にコメントしました。",
+            "type": "RequestCommentUpdated"
+          }
+        ]
+      },
+      "amsSellerAccountId": 60756500,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Teams Managerから送信される通知を有効にします。",
+                  "title": "通知を有効にする"
+                },
+                {
+                  "description": "チームマネージャーから送信される通知を無効にします。",
+                  "title": "通知を停止する"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Shows Team Information",
+                  "title": "Team Info"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "ContentManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Solutions2Share GmbH",
+      "developerUrl": "https://www.teams-manager.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://teamsmanagerprod.azurefd.net/TeamTabs/TabConfiguration/v2?loginHint={loginHint}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "commands": [
+            {
+              "description": "Searches for a team",
+              "fetchTask": false,
+              "id": "SearchTeamsTitle",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Displayname of the Team",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teamName",
+                  "title": "Enter the name of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Teams Managerで{displayName}で始まる名前のチームを探しています。"
+                },
+                {
+                  "text": "Teams Managerで{displayName}で始まる名前のチームを探す。"
+                },
+                {
+                  "text": "Teams Managerで、{displayName}を含む名前のチームを見つけることができますか？"
+                }
+              ],
+              "title": "Search for a Team",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on the date it was managed by Teams Manager ",
+              "fetchTask": false,
+              "id": "SearchTeamsDate",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The date the Team was managed by Teams Manager",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "managedDate",
+                  "title": "Enter Team managed date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Teams Managerで{date}に作成されたチームを探しています。"
+                },
+                {
+                  "text": "Teams Managerで、{date}に作成されたチームを見つける必要があります。"
+                },
+                {
+                  "text": "Teams Managerで活動日が{date}のチームを検索します。"
+                }
+              ],
+              "title": "Search by managed Date",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on Teams Manager metadata",
+              "fetchTask": false,
+              "id": "SearchTeamsMetadata",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The metadata value of the Team. Important: enter only the value, not the key!",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "metadata",
+                  "title": "Enter metadata value of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Teams Managerで、メタデータフィールド{project number}として{value}を持つチームを探しています。"
+                },
+                {
+                  "text": "Teams Managerで、メタデータフィールド{department}として{value}を持つチームを探しています。"
+                },
+                {
+                  "text": "Teams Managerで{value}をメタデータフィールド{customer}としてチームを検索する。"
+                }
+              ],
+              "title": "Search by metadata",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "templates",
+        "governance",
+        "provisioning"
+      ],
+      "languageTag": "ja",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_largeimage.png",
+      "lastUpdatedAt": "2025-02-12T16:08:23.0842351+00:00",
+      "longDescription": "**IT管理者**は[Teams Manager](https://www.solutions2share.com/de/teams-manager/)でMicrosoft 365環境をコントロールできます。 Teams Managerでチームやグループの無秩序な作成を防ぎ、ガバナンスプロセスを自動化します！\n\n**主な特徴:**\n*   **ガバナンス・ダッシュボードとレポート** – Microsoft 365環境の概要（非アクティブまたはオーナーのいないチーム、ゲストのいるチームなど）\n*   **新しいチームとSharePointサイトのプロビジョニング** – チャンネル、タブ、アプリ、フォルダ、ファイル、タスク付きプランナー、コンテンツ付きOneNote、プリセットオーナーとメンバーなど。\n*   **問い合わせと承認のワークフロー** – 新しいチームやチャンネル、Microsoft 365グループ、SharePointサイトなどのプロビジョニングが可能\n\n**ガバナンス・ルールと特徴:**\n*   **ライフサイクル** – 不要になったチームは自動的にアーカイブまたは削除されます。\n*   **命名規則** – チーム名のルール、OneNotesとプランナーによる構造化\n*   **メタデータ** – 新しいチーム用にカスタマイズ可能なメタデータをリクエストする\n*   **ゲストアクセス** – 外部ユーザーのアクセスを有効または無効にする\n*   **アクセスチェック** – チームオーナーとそのメンバーのために\n*   **ガバナンス・ガイドライン** – すべての機能を組み合わせて、包括的なガバナンスの自動化を実現\n\n**採用:**\n*   ユーザーのための**より良い概要**\n*  Microsoft Copilotのエージェントとして、**Microsoft 365 Copilot**と連携します。例えば、こうだ：'Teams Managerで、Projectで始まる名前とプロジェクト番号125を持つチームを探しています。'\n*  リクエスト、ワークフロー、ライフサイクルの**ボットコミュニケーション**\n* **AIチャットサポート** intercom\n\n**今すぐ始めよう！**\nもしあなたがMicrosoft 365環境をコントロールし、ガバナンスプロセスを自動化する準備ができているなら、Microsoft Teams App StoreからTeams Managerを入手し、無料でお試しください！\n\n**Solutions2Shareについて**\n[Solutions2Share](https://www.solutions2share.com/de/) は、Microsoft 365向けガバナンス・アプリケーションのマーケットリーダーであり、世界中で40,000以上の導入実績と150万人以上のユーザーを有しています。当社のお客様は、完全なガバナンス自動化によって時間を節約し、Microsoft 365とMicrosoft Teamsで構造化された環境をユーザーに提供することができます。\nAIによって生成された不愉快なコンテンツに遭遇した場合は、[お問い合わせ](https://support.solutions2share.com)からサポートチームまでご連絡ください。",
+      "mpnId": "3675805",
+      "officeAssetId": "WA200000764",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teams-manager.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "35836",
+        "status": "m365Certified"
+      },
+      "shortDescription": "ガバナンス、ライフサイクル、テンプレートなどでチームをコントロール！",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/TeamsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "2820bd53-f3b7-42ff-8604-23fb94c16b78",
+          "name": "チーム",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/RequestsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "d12c7518-3b2a-4a1f-a39b-56c7edad4a3a",
+          "name": "お問い合わせ",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/HelpTab/v2?loginHint={loginHint}&theme={theme}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "0ed581df-4e8d-4808-a35b-919e1116ee0c",
+          "name": "ヘルプ",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "solutions2sharegmbh.teamsmanager_flat"
+      },
+      "systemVersion": "2025071113175886",
+      "termsOfUseUrl": "https://www.teams-manager.com/terms-of-use/",
+      "validDomains": [
+        "teamsmanagerprod.azurewebsites.net",
+        "teamsmanagerprod.azurefd.net"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=F72-U9kSKQE",
+      "webApplicationInfo": {
+        "id": "15938b64-8ecd-4047-8d67-ced95c7a5c8f",
+        "resource": "api://teamsmanagerprod.azurefd.net/15938b64-8ecd-4047-8d67-ced95c7a5c8f"
+      }
+    },
+    {
+      "manifestVersion": "1.19",
+      "id": "87000000-3db9-bb44-5015-0b4a327a6597",
+      "version": "3.3.4",
+      "name": "Teams Manager",
+      "accentColor": "#5256AD",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Gebruiker gaf commentaar op een verzoek",
+            "templateText": "{user} gaf commentaar op Verzoek {requestName}",
+            "type": "RequestCommentUpdated"
+          }
+        ]
+      },
+      "amsSellerAccountId": 60756500,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Activeert de meldingen die door de Teams Manager worden verstuurd.",
+                  "title": "Meldingen activeren"
+                },
+                {
+                  "description": "Schakelt de meldingen uit die door de Teams Manager worden verstuurd.",
+                  "title": "Meldingen uitschakelen"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Shows Team Information",
+                  "title": "Team Info"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "ContentManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Solutions2Share GmbH",
+      "developerUrl": "https://www.teams-manager.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://teamsmanagerprod.azurefd.net/TeamTabs/TabConfiguration/v2?loginHint={loginHint}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "commands": [
+            {
+              "description": "Searches for a team",
+              "fetchTask": false,
+              "id": "SearchTeamsTitle",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Displayname of the Team",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teamName",
+                  "title": "Enter the name of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Ik ben op zoek naar een team in Teams Manager met een naam die begint met {displayName}"
+                },
+                {
+                  "text": "Zoek een team in Teams Manager waarvan de naam begint met {displayName}"
+                },
+                {
+                  "text": "Kun je een team vinden in Teams Manager met een naam die {displayName} bevat?"
+                }
+              ],
+              "title": "Search for a Team",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on the date it was managed by Teams Manager ",
+              "fetchTask": false,
+              "id": "SearchTeamsDate",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The date the Team was managed by Teams Manager",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "managedDate",
+                  "title": "Enter Team managed date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Ik zoek een team in Teams Manager dat is aangemaakt {date}"
+                },
+                {
+                  "text": "Ik moet een team vinden in Teams Manager dat is aangemaakt op {date}"
+                },
+                {
+                  "text": "Zoek elk team in Teams Manager met een activiteitendatum van {date}."
+                }
+              ],
+              "title": "Search by managed Date",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on Teams Manager metadata",
+              "fetchTask": false,
+              "id": "SearchTeamsMetadata",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The metadata value of the Team. Important: enter only the value, not the key!",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "metadata",
+                  "title": "Enter metadata value of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Ik zoek een team in Teams Manager met {value} als metadataveld {project nummer}."
+                },
+                {
+                  "text": "Ik ben op zoek naar een team in Teams Manager met {value} als metadataveld {department}."
+                },
+                {
+                  "text": "Zoek naar het team in Teams Manager met {value} als metagegevensveld {customer}"
+                }
+              ],
+              "title": "Search by metadata",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "templates",
+        "governance",
+        "provisioning"
+      ],
+      "languageTag": "nl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_largeimage.png",
+      "lastUpdatedAt": "2025-02-12T16:08:23.0842351+00:00",
+      "longDescription": "**IT-beheerders** kunnen controle houden over hun Microsoft 365-omgeving met [Teams Manager](https://www.solutions2share.com/de/teams-manager/). Gebruik Teams Manager om het ongecontroleerd ontstaan van Teams en Groepen te voorkomen en automatiseer uw bestuursprocessen!\n\n**Key Features:**\n*   **Governance-dashboard en rapporten** – krijg een overzicht van uw Microsoft 365-omgeving (inactieve teams of teams zonder eigenaar, teams met gasten enz.)\n*   **Provisioning van nieuwe teams & SharePoint-sites** – met kanalen, tabbladen, mappen, bestanden, Planners met taken, OneNote met inhoud, vooraf ingestelde eigenaren en leden etc.\n*   **Workflow voor aanvragen en goedkeuring** – voor het inrichten van nieuwe teams en kanalen, Microsoft 365-groepen, SharePoint-sites en meer\n\n**Governance Regels en Functies:**\n*   **Levenscyclusbeheer** – teams die niet langer nodig zijn automatisch archiveren of verwijderen\n*   **Naamconventies** – stel regels in voor Teams-namen, OneNotes en Planners voor meer structuur\n*   **Metadata** – vraag om aanpasbare metadata voor nieuwe teams\n*   **Gasttoegang** – activeer of deactiveer de toegang voor externe gebruikers\n*   **Toegangscontrole** – voor teameigenaren en hun gebruikers\n*   **Governancebeleid** – combineer al het bovenstaande en meer in een krachtige governance-automatisering\n\n**Gebruikersadoptie:**\n*   **Beter overzicht** voor uw gebruikers\n*  Werkt met **Microsoft 365 Copilot** als agent voor Microsoft Copilot.Bijvoorbeeld:'I am looking for a team in Teams Manager with a name that starts with Project and with project number 125' \n*  **Botcommunicatie** voor verzoeken, workflow en levenscycli\n* **AI chatondersteuning** via intercom\n\n**Ga meteen aan de slag!**\nAls je klaar bent om controle te krijgen over je Microsoft 365-omgeving en je beheerprocessen te automatiseren, voeg je eenvoudig Teams Manager toe in de Microsoft Teams app store voor een gratis proefversie!\n\n**Over Solutions2Share**\n[Solutions2Share](https://www.solutions2share.com/de/) is de marktleider voor governance-applicaties voor Microsoft 365 met meer dan 40.000 installaties en meer dan 1,5 miljoen gebruikers wereldwijd. Onze klanten besparen tijd met volledige automatisering van het beheer en kunnen hun gebruikers een gestructureerde omgeving bieden in Microsoft 365 en Microsoft Teams.\n[Contacteer ons](https://support.solutions2share.com) om een verzoek in te dienen bij ons ondersteuningsteam als u aanstootgevende inhoud tegenkomt die is gegenereerd door AI.",
+      "mpnId": "3675805",
+      "officeAssetId": "WA200000764",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teams-manager.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "35836",
+        "status": "m365Certified"
+      },
+      "shortDescription": "Controle over teams met governance, levenscycli, sjablonen en meer!",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/TeamsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "2820bd53-f3b7-42ff-8604-23fb94c16b78",
+          "name": "Teams",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/RequestsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "d12c7518-3b2a-4a1f-a39b-56c7edad4a3a",
+          "name": "Aanvragen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/HelpTab/v2?loginHint={loginHint}&theme={theme}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "0ed581df-4e8d-4808-a35b-919e1116ee0c",
+          "name": "Help",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "solutions2sharegmbh.teamsmanager_flat"
+      },
+      "systemVersion": "2025071113175886",
+      "termsOfUseUrl": "https://www.teams-manager.com/terms-of-use/",
+      "validDomains": [
+        "teamsmanagerprod.azurewebsites.net",
+        "teamsmanagerprod.azurefd.net"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=F72-U9kSKQE",
+      "webApplicationInfo": {
+        "id": "15938b64-8ecd-4047-8d67-ced95c7a5c8f",
+        "resource": "api://teamsmanagerprod.azurefd.net/15938b64-8ecd-4047-8d67-ced95c7a5c8f"
+      }
+    },
+    {
+      "manifestVersion": "1.19",
+      "id": "87000000-3db9-bb44-5015-0b4a327a6597",
+      "version": "3.3.4",
+      "name": "Ekipler Müdürü",
+      "accentColor": "#5256AD",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Kullanıcı bir Talep hakkında yorum yaptı",
+            "templateText": "{user} {requestName} talebi hakkında yorum yaptı",
+            "type": "RequestCommentUpdated"
+          }
+        ]
+      },
+      "amsSellerAccountId": 60756500,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Teams Manager tarafından gönderilen bildirimleri etkinleştirir",
+                  "title": "Bildirimleri etkinleştirin"
+                },
+                {
+                  "description": "Teams Manager tarafından gönderilen bildirimleri devre dışı bırakır",
+                  "title": "Bildirimleri devre dışı bırakma"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Shows Team Information",
+                  "title": "Team Info"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "ContentManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Solutions2Share GmbH",
+      "developerUrl": "https://www.teams-manager.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://teamsmanagerprod.azurefd.net/TeamTabs/TabConfiguration/v2?loginHint={loginHint}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "commands": [
+            {
+              "description": "Searches for a team",
+              "fetchTask": false,
+              "id": "SearchTeamsTitle",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Displayname of the Team",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teamName",
+                  "title": "Enter the name of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Teams Manager'da adı {displayName} ile başlayan bir ekip arıyorum"
+                },
+                {
+                  "text": "Teams Manager'da adı {displayName} ile başlayan bir takım bulun"
+                },
+                {
+                  "text": "Teams Manager'da {displayName} içeren bir ada sahip bir takım bulabilir misiniz?"
+                }
+              ],
+              "title": "Search for a Team",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on the date it was managed by Teams Manager ",
+              "fetchTask": false,
+              "id": "SearchTeamsDate",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The date the Team was managed by Teams Manager",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "managedDate",
+                  "title": "Enter Team managed date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Teams Manager'da {date} tarihinde oluşturulmuş bir ekip arıyorum"
+                },
+                {
+                  "text": "Teams Manager'da {date} tarihinde oluşturulmuş bir ekip bulmam gerekiyor"
+                },
+                {
+                  "text": "Teams Manager'da etkinlik tarihi {date} olan herhangi bir ekibi bulun."
+                }
+              ],
+              "title": "Search by managed Date",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on Teams Manager metadata",
+              "fetchTask": false,
+              "id": "SearchTeamsMetadata",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The metadata value of the Team. Important: enter only the value, not the key!",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "metadata",
+                  "title": "Enter metadata value of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Teams Manager'da {value} meta veri alanı {project number} olan bir ekip arıyorum."
+                },
+                {
+                  "text": "Teams Manager'da {value} meta veri alanı {departmanı} olan bir ekip arıyorum."
+                },
+                {
+                  "text": "Teams Manager'da {value} meta veri alanı {customer} ile ekibi arayın."
+                }
+              ],
+              "title": "Search by metadata",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "templates",
+        "governance",
+        "provisioning"
+      ],
+      "languageTag": "tr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_largeimage.png",
+      "lastUpdatedAt": "2025-02-12T16:08:23.0842351+00:00",
+      "longDescription": "**BT yöneticileri** [Teams Manager](https://www.solutions2share.com/de/teams-manager/) ile Microsoft 365 ortamlarının kontrolünü ellerinde tutabilirler. Teams Manager ile ekiplerin ve grupların kontrolsüz oluşturulmasını önleyin ve yönetişim süreçlerinizi otomatikleştirin!\n\n**Anahtar özellikler:**\n*   **Yönetişim gösterge tablosu ve raporları** – Microsoft 365 ortamınıza genel bakış (etkin olmayan veya sahibi olmayan ekipler, misafirleri olan ekipler vb.)\n*   **Yeni ekiplerin ve SharePoint sitelerinin sağlanması** – kanallar, sekmeler, uygulamalar, klasörler, dosyalar, görevler içeren planlayıcılar, içerik içeren OneNote, önceden ayarlanmış sahipler ve üyeler vb.\n*   **Sorgulama ve onay iş akışı** – Yeni ekipler ve kanallar, Microsoft 365 grupları, SharePoint siteleri ve daha fazlasını sağlamak için\n\n**Yönetişim kuralları ve özellikleri:**\n*   **Yaşam döngüleri** – Artık gerekli olmayan ekipler otomatik olarak arşivlenebilir veya silinebilir\n*   **Adlandırma kuralları** – Ekip adları için kurallar, daha fazla yapı için OneNotes ve Planlayıcılar\n*   **Metadata** – Yeni ekipler için özelleştirilebilir meta veriler talep edin\n*   **Misafir erişimi** – Harici kullanıcılar için erişimi etkinleştirme veya devre dışı bırakma\n*   **Erişim kontrolü** – ekip sahipleri ve üyeleri için\n*   **Yönetişim kılavuzları** – Kapsamlı yönetişim otomasyonu oluşturmak için tüm işlevleri birleştirin\n\n**Evlat edinme:**\n*   Kullanıcılarınız için**Daha iyi genel bakış**\n*  Microsoft Copilot için bir aracı olarak **Microsoft 365 Copilot** ile çalışır. Örneğin: 'I am looking for a team in Teams Manager with a name that starts with Project and with project number 125' \n*  Talepler, iş akışları ve yaşam döngüleri için **bot iletişimi**\n* İnterkom ile **Yapay zeka sohbet desteği**\n\n**Bugün başlayın!**\nMicrosoft 365 ortamınızın kontrolünü elinize almaya ve yönetim süreçlerinizi otomatikleştirmeye hazırsanız, Microsoft Teams App Store'dan Teams Manager'ı edinin ve ücretsiz olarak deneyin!\n\n**Solutions2Share Hakkında**\n[Solutions2Share](https://www.solutions2share.com/de/) , dünya çapında 40.000'den fazla kurulum ve 1,5 milyondan fazla kullanıcıyla Microsoft 365 için yönetişim uygulamalarında pazar lideridir. Müşterilerimiz eksiksiz yönetişim otomasyonu sayesinde zamandan tasarruf eder ve kullanıcılarına Microsoft 365 ve Microsoft Teams'de yapılandırılmış bir ortam sunabilir.\nAI tarafından oluşturulan herhangi bir sakıncalı içerikle karşılaşırsanız destek ekibimize bir talepte bulunmak için [Bize Ulaşın](https://support.solutions2share.com)",
+      "mpnId": "3675805",
+      "officeAssetId": "WA200000764",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teams-manager.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "35836",
+        "status": "m365Certified"
+      },
+      "shortDescription": "Yönetişim, yaşam döngüsü ve onaylı şablonlar. Ekipler için yapı ve kontrol!",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/TeamsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "2820bd53-f3b7-42ff-8604-23fb94c16b78",
+          "name": "Takımlar",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/RequestsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "d12c7518-3b2a-4a1f-a39b-56c7edad4a3a",
+          "name": "Sorular",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/HelpTab/v2?loginHint={loginHint}&theme={theme}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "0ed581df-4e8d-4808-a35b-919e1116ee0c",
+          "name": "Yardım",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "solutions2sharegmbh.teamsmanager_flat"
+      },
+      "systemVersion": "2025071113175886",
+      "termsOfUseUrl": "https://www.teams-manager.com/terms-of-use/",
+      "validDomains": [
+        "teamsmanagerprod.azurewebsites.net",
+        "teamsmanagerprod.azurefd.net"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=F72-U9kSKQE",
+      "webApplicationInfo": {
+        "id": "15938b64-8ecd-4047-8d67-ced95c7a5c8f",
+        "resource": "api://teamsmanagerprod.azurefd.net/15938b64-8ecd-4047-8d67-ced95c7a5c8f"
+      }
+    },
+    {
+      "manifestVersion": "1.19",
+      "id": "87000000-3db9-bb44-5015-0b4a327a6597",
+      "version": "3.3.4",
+      "name": "团队经理",
+      "accentColor": "#5256AD",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "用户对请求发表评论",
+            "templateText": "{user} 对请求 {requestName} 发表了评论",
+            "type": "RequestCommentUpdated"
+          }
+        ]
+      },
+      "amsSellerAccountId": 60756500,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "激活团队管理器发送的通知",
+                  "title": "激活通知"
+                },
+                {
+                  "description": "停用团队管理器发送的通知",
+                  "title": "停用通知"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Shows Team Information",
+                  "title": "Team Info"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            }
+          ],
+          "id": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "Productivity",
+        "ContentManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Solutions2Share GmbH",
+      "developerUrl": "https://www.teams-manager.com",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://teamsmanagerprod.azurefd.net/TeamTabs/TabConfiguration/v2?loginHint={loginHint}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+          "commands": [
+            {
+              "description": "Searches for a team",
+              "fetchTask": false,
+              "id": "SearchTeamsTitle",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Displayname of the Team",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teamName",
+                  "title": "Enter the name of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "我正在Teams Manager器中查找一个名称以{displayName}开头的团队。"
+                },
+                {
+                  "text": "在Teams Manager器中查找名称以{displayName}开头的团队"
+                },
+                {
+                  "text": "您能否在Teams Manager器中找到名称包含{displayName}的团队？"
+                }
+              ],
+              "title": "Search for a Team",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on the date it was managed by Teams Manager ",
+              "fetchTask": false,
+              "id": "SearchTeamsDate",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The date the Team was managed by Teams Manager",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "managedDate",
+                  "title": "Enter Team managed date"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "我正在Teams Manager器中查找创建于{date}的团队。"
+                },
+                {
+                  "text": "我需要在Teams Manager器中找到一个在{date}创建的团队。"
+                },
+                {
+                  "text": "在Teams Manager器中查找活动日期为{date}的任何团队。"
+                }
+              ],
+              "title": "Search by managed Date",
+              "type": "query"
+            },
+            {
+              "description": "Searches for a team based on Teams Manager metadata",
+              "fetchTask": false,
+              "id": "SearchTeamsMetadata",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "The metadata value of the Team. Important: enter only the value, not the key!",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "metadata",
+                  "title": "Enter metadata value of the Team"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "我正在Teams Manager器中查找元数据字段为{value}的团队{project number}。"
+                },
+                {
+                  "text": "我正在Teams Manager器中查找元数据字段为{value}的团队{department}。"
+                },
+                {
+                  "text": "在Teams Manager中以{value}作为元数据字段{customer}搜索团队。"
+                }
+              ],
+              "title": "Search by metadata",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "templates",
+        "governance",
+        "provisioning"
+      ],
+      "languageTag": "zh",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_largeimage.png",
+      "lastUpdatedAt": "2025-02-12T16:08:23.0842351+00:00",
+      "longDescription": "**信息技术管理员**可以利用[Teams Manager](https://www.solutions2share.com/de/teams-manager/)控制其 Microsoft 365 环境。Teams Manager可防止不受控制地创建团队和群组，并自动执行管理流程！\n\n**主要功能:**\n*   **治理仪表板和报告** – Microsoft 365 环境概览（非活动或无所有者团队、有访客的团队等）\n*   **配置新团队和 SharePoint 网站** – 与频道、标签页、应用程序、文件夹、文件、任务计划、OneNote 内容、预设所有者和成员等。\n*   **查询和审批工作流程** – 用于配置新团队和频道、Microsoft 365 组、SharePoint 网站等\n\n**管理规则和特点:**\n*   **生命周期** – 不再需要的团队可自动存档或删除\n*   **命名规则** – 团队名称规则、OneNotes 和 Planners 使结构更加合理\n*   **元数据** – 为新团队申请可定制的元数据\n*   **访客访问** – 启用或禁用外部用户的访问权限\n*   **访问检查** – 团队所有者及其成员\n*   **治理准则** – 结合所有功能，创建全面的治理自动化\n\n**收养：**\n*   为用户**提供更好的概览**\n*  作为 Microsoft Copilot 的代理，可与 **Microsoft 365 Copilot**协同工作。 例如'我正在 Teams Manager 中寻找一个名称以项目开头、项目编号为 125 的团队。'\n*  针对请求、工作流程和生命周期的**机器人通信**\n* **AI chat support** by intercom\n* **人工智能聊天支持** intercom\n\n**立即开始!**\n如果您已准备好控制 Microsoft 365 环境并实现管理流程自动化，请从 Microsoft Teams 应用商店获取 Teams Manager 并免费试用！\n\n**关于 Solutions2Share**\n[Solutions2Share](https://www.solutions2share.com/de/) 是 Microsoft 365 管理应用程序的市场领导者，在全球安装了 40,000 多套应用程序，拥有 150 多万用户。我们的客户通过完全的自动化治理节省了时间，并能在 Microsoft 365 和 Microsoft Teams 中为用户提供结构化的环境。\n如果您发现任何由人工智能生成的令人反感的内容，请[联系我们](https://support.solutions2share.com)向我们的支持团队提出请求。",
+      "mpnId": "3675805",
+      "officeAssetId": "WA200000764",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.teams-manager.com/privacy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "35836",
+        "status": "m365Certified"
+      },
+      "shortDescription": "通过管理、生命周期、模板等对团队进行控制！",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/87000000-3db9-bb44-5015-0b4a327a6597/2025071113175886/87000000-3db9-bb44-5015-0b4a327a6597_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/TeamsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "2820bd53-f3b7-42ff-8604-23fb94c16b78",
+          "name": "团队",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/RequestsTab/v2?loginHint={loginHint}&theme={theme}&subEntityId={subEntityId}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "d12c7518-3b2a-4a1f-a39b-56c7edad4a3a",
+          "name": "咨询",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://teamsmanagerprod.azurefd.net/StaticTabs/HelpTab/v2?loginHint={loginHint}&theme={theme}&userObjectId={userObjectId}&userPrincipalName={userPrincipalName}&tenantId={tid}&locale={locale}&theme={theme}&userPrincipalName={userPrincipalName}",
+          "entityId": "0ed581df-4e8d-4808-a35b-919e1116ee0c",
+          "name": "帮助",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "solutions2sharegmbh.teamsmanager_flat"
+      },
+      "systemVersion": "2025071113175886",
+      "termsOfUseUrl": "https://www.teams-manager.com/terms-of-use/",
+      "validDomains": [
+        "teamsmanagerprod.azurewebsites.net",
+        "teamsmanagerprod.azurefd.net"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=F72-U9kSKQE",
+      "webApplicationInfo": {
+        "id": "15938b64-8ecd-4047-8d67-ced95c7a5c8f",
+        "resource": "api://teamsmanagerprod.azurefd.net/15938b64-8ecd-4047-8d67-ced95c7a5c8f"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Teams Manager Enable Notifications for project_updates team",
+      "description": "A user wants to enable notifications for a specific team.",
+      "command": "Enable Notifications"
+    },
+    {
+      "prompt": "@Teams Manager Disable Notifications for marketing team",
+      "description": "A user wants to stop receiving notifications from the marketing team.",
+      "command": "Disable Notifications"
+    },
+    {
+      "prompt": "@Teams Manager Team Info for development_team",
+      "description": "A user requests information about the development team, such as team members and recent activity.",
+      "command": "Team Info"
+    }
+  ]
+}

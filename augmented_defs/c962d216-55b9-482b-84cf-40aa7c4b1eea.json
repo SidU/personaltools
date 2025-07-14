@@ -1,0 +1,1285 @@
+{
+  "manifestVersion": "1.17",
+  "id": "c962d216-55b9-482b-84cf-40aa7c4b1eea",
+  "version": "1.7.2",
+  "name": "LawVu",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 77828100,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Raise a legal request in LawVu",
+              "title": "Create Matter"
+            },
+            {
+              "description": "Connect your LawVu account",
+              "title": "Sign in"
+            },
+            {
+              "description": "Disconnect your LawVu account",
+              "title": "Sign out"
+            },
+            {
+              "description": "View list of bot commands",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "ae509258-f73a-4e5e-8cf1-28269dcc41ef",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "HumanResourcesAndRecruiting",
+    "Productivity",
+    "ProjectManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "LawVu Limited",
+  "developerUrl": "https://lawvu.com",
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "ae509258-f73a-4e5e-8cf1-28269dcc41ef",
+      "commands": [
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Raise a legal request in LawVu",
+          "fetchTask": true,
+          "id": "CreateMatterFromMessage",
+          "initialRun": false,
+          "title": "Create matter in LawVu",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Raise a legal request in LawVu",
+          "fetchTask": true,
+          "id": "CreateMatterFromCompose",
+          "initialRun": false,
+          "title": "Create matter in LawVu",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Search for matters in LawVu",
+          "fetchTask": false,
+          "id": "searchMatters",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Name of the matter or what the matter is related to",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "matterNameParam",
+              "semanticDescription": "Name of the matter or what the matter is related to. It accepts the name or title of a matter as input, which corresponds to legal matters or requests within the system. It is utilized to identify and retrieve specific matters based on their title or relation to certain keywords or entities. The value for this parameter should directly correspond to the matter's known name or relevant legal term involved, such as \"NDA\" or a more detailed identification like \"Draft NDA - {Company Name}\". The input should clearly define the matter or the legal work associated, allowing for precise and efficient search results within the system. Output: Text",
+              "title": "matter name"
+            },
+            {
+              "description": "ID of the matter. Identifier for a matter",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "matterNumberParam",
+              "semanticDescription": "It represents the matter Id. It requires the input of a matter ID, a unique system-generated identifier assigned to each legal project or matter within the system. This identifier is crucial for accurately locating and referencing specific matters. Users should input the exact alphanumeric code associated with the matter they wish to access.\nUtilizing this parameter allows for precise retrieval of detailed information about a specific matter, facilitating efficient management and review of legal projects within the system. Output: Text",
+              "title": "matter number"
+            },
+            {
+              "description": "User name of the owner of the matter or the person matter is assigned to",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "matterOwnerParam",
+              "semanticDescription": "The name of the owner of the matter or the person matter is assigned to. It is used to input the name of the individual who owns or is responsible for a matter within the system. Typically, this is the person who initially uploads or creates the legal matter. Users should provide the full name of the matter owner to facilitate accurate and efficient searches of matters by ownership.\nThis parameter helps users quickly identify and access matters based on the owner's name, enhancing the ability to manage and review matters within the organizational workflow. Output: Text",
+              "title": "matter owner"
+            },
+            {
+              "description": "Status of the matter. Allowed values: \"OnHold\", \"Active\", \"Complete\"",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "matterStatusParam",
+              "semanticDescription": "Status of the matter. It is designed to specify the current status of a matter within the system. This parameter accepts one of three defined values that describe the progress or current state of a legal matter. It facilitates targeted searching and sorting of matters based on their operational status, which aids in workflow management and prioritization.\nAllowed Values are Active, OnHold and Complete.\n\"Active\": Use this to retrieve all matters that are currently ongoing and actively being worked on.\n\"OnHold\": Select this status to find matters that are temporarily paused or awaiting further action.\n\"Complete\": This value allows users to search for matters that have been fully resolved or closed.\nThis parameter enhances organizational efficiency by allowing users to filter and access matters based on their status, streamlining the management of legal projects within the system. Output: Text",
+              "title": "matter status"
+            },
+            {
+              "description": "Creation date for matter",
+              "inputType": "date",
+              "isRequired": false,
+              "name": "matterCreatedDateFromParam",
+              "semanticDescription": "Creation date for matter. It defines the creation date of a matter, which is determined by the date a matter is initially created or uploaded. It requires dates in the \"yyyy-mm-dd\" format, compliant with the ISO 8601 standard, to ensure clarity and global consistency. This is crucial for accurate data processing and seamless integration across systems.\nFormat:\nYear: Four digits (e.g., \"2021\").\nMonth: Two digits, from \"01\" (January) to \"12\" (December).\nDay: Two digits, ranging from \"01\" to \"31\", depending on the month.\nExample:\nSearch for matters created from June 2, 2021: value: \"2021-06-02\".\nShow me the matters uploaded since March 20 of this year: value: \"{year}-03-20\", where “{year}” is replaced by the current year.\nGive me the matters from 18/04/2024: value: \"2024-04-18\". \nSearch for matters since for date-oriented words, such as today, last month, last year, since February, must be translated to the format \"yyyy-mm-dd\":\nSearch for the matters for in the last month: value: \"{year}-{last month}-{day}\", \"last month\", where “{last month}” is replaced for the month prior to the current month. \"year\", and \"day\", will remain with the values of the current year and the current day.\nGive me today's matters: value: \"{year}-{month}-{today}\", where “{today}” is replaced by the current day. \"year\", and \"month\", will remain with the values of the current year and the current month.\nFind the matters from February: value: \"{year}-{February}-{today}\", where “{February}” is replaced by \"06\". \"year\", and \"today\", will remain with the values of the current year and the day.\nCompliance:\nAlways verify that the date input matches the \"yyyy-mm-dd\" format before submission.\nImplement input validation to ensure format accuracy. Output format: yyyy-mm-dd",
+              "title": "matter create date from"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Show me matters related to NDA"
+            },
+            {
+              "text": "Show me details of matter LV1893-00008"
+            },
+            {
+              "text": "Fetch matters owned by John Doe"
+            },
+            {
+              "text": "Give me all active matters"
+            },
+            {
+              "text": "Show matters created since June 2, 2023"
+            }
+          ],
+          "semanticDescription": "Search for matters. It is designed to enable users to conduct comprehensive searches of legal matters within their system. This command leverages a variety of pasameters that allow users to specify the criteria for their searches based on matter-specific attributes. These parameters include:\nMatter Name: Utilizes the title or keyword associated with a legal matter to locate relevant records.\nMatter Number: Employs a unique, system-generated identifier to pinpoint specific matters.\nMatter Owner: Searches for matters based on the individual responsible for or associated with the matter.\nMatter Status: Filters matters according to their current state within the operational or legal process.\nMatter Created Date: Identifies matters based on the date they were created or uploaded into the system, using a strict date format for precision.\n By combining different search parameters, users can create complex queries that allow for the detailed organization and retrieval of matter data, supporting effective legal operations and strategic decision-making\n",
+          "title": "Search Matters",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Search for contracts in LawVu",
+          "fetchTask": false,
+          "id": "searchContracts",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Name of the contract or what the contract is related to",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "contractNameParam",
+              "semanticDescription": "Name of the contract or what the contract is related to. Also known as a legal agreement. It accepts the name or title of a contract as input, which corresponds to legal contracts or requests within the system. It is utilized to identify and retrieve specific contracts based on their title or relation to certain keywords or entities. The value for this parameter should directly correspond to the contract's known name or relevant legal term involved, such as \"NDA\" or a more detailed identification like \"Draft NDA - {Company Name}\". The input should clearly define the contract or the legal work associated, allowing for precise and efficient search results within the system. Output: Text",
+              "title": "contract name"
+            },
+            {
+              "description": "User name of the owner of the contract or the person contract is assigned to",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "contractOwnerParam",
+              "semanticDescription": "The name of the owner of the contract or the person contract is assigned to. It is used to input the name of the individual who owns or is responsible for a contract within the system. Typically, this is the person who initially uploads or creates the contract. Users should provide the full name of the contract owner to facilitate accurate and efficient searches of contracts by ownership.\nThis parameter helps users quickly identify and access contracts based on the owner's name, enhancing the ability to manage and review contracts within the organizational workflow. Output: Text",
+              "title": "contract owner"
+            },
+            {
+              "description": "Status of the contract. Allowed values: \"Draft\", \"Negotiating\", \"Approval\", \"Signing\", \"Executed\", \"Expired\", \"Void\"",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "contractStatusParam",
+              "semanticDescription": "Status of the contract. It is designed to facilitate searches within the system based on the current stage of a contract. This parameter accepts specific predefined values that represent different phases in the contract lifecycle. Each status value corresponds to a particular stage in the progress of contract management, helping users to filter and identify contracts accurately according to their operational status.\nAllowed Values are Draft, Negotiating, Approval, Signing, Executed, Expired and Void.\nDraft: Indicates that the contract is in the initial drafting phase.\nNegotiating: Used when the contract is currently under negotiation between parties.\nApproval: Applies to contracts that are pending review and approval from relevant authorities.\nSigning: Denotes contracts that are in the process of being signed by all involved parties.\nExecuted: Refers to contracts that have been fully signed and are legally binding.\nExpired: For contracts that have surpassed their effective period and are no longer active.\nVoid: Identifies contracts that have been invalidated or cancelled.\nThis parameter is essential for managing the contract lifecycle effectively by allowing users to streamline their focus on contracts at a specific stage. Utilizing this parameter can greatly enhance the efficiency of contract administration processes within the system. Output: Text",
+              "title": "contract status"
+            },
+            {
+              "description": "Creation date for contract",
+              "inputType": "date",
+              "isRequired": false,
+              "name": "contractCreatedDateFromParam",
+              "semanticDescription": "Creation date for contract. It defines the creation date of a contract, which is determined by the date a contract is initially created or uploaded. It requires dates in the \"yyyy-mm-dd\" format, compliant with the ISO 8601 standard, to ensure clarity and global consistency. This is crucial for accurate data processing and seamless integration across systems.\nFormat:\nYear: Four digits (e.g., \"2021\").\nMonth: Two digits, from \"01\" (January) to \"12\" (December).\nDay: Two digits, ranging from \"01\" to \"31\", depending on the month.\nExample:\nSearch for contracts created from June 2, 2021: value: \"2021-06-02\".\nShow me the contracts uploaded since March 20 of this year: value: \"{year}-03-20\", where “{year}” is replaced by the current year.\nGive me the contracts from 18/04/2024: value: \"2024-04-18\". \nSearch for contracts since for date-oriented words, such as today, last month, last year, since February, must be translated to the format \"yyyy-mm-dd\":\nSearch for contracts in the last month: value: \"{year}-{last month}-{day}\",  \"last month\", where “{last month}” is replaced for the month prior to the current month. \"year\", and \"day\", will remain with the values of the current year and the current day.\nGive me today's contracts: value: \"{year}-{month}-{today}\", where “{today}” is replaced by the current day. \"year\", and \"month\", will remain with the values of the current year and the current month.\nFind the contracts from February: value: \"{year}-{February}-{today}\", where “{February}” is replaced by \"06\". \"year\", and \"today\", will remain with the values of the current year and the day.\nCompliance:\nAlways verify that the date input matches the \"yyyy-mm-dd\" format before submission.\nImplement input validation to ensure format accuracy. Output format: yyyy-mm-dd",
+              "title": "contract create date from"
+            },
+            {
+              "description": "Expiry date for contract",
+              "inputType": "date",
+              "isRequired": false,
+              "name": "contractExpiryDateParam",
+              "semanticDescription": "Expiry date for contract. Defined by the data a contract ceases to be in effect and must be renewed or terminated. This parameter must strictly follow the ISO 8601 format \"yyyy-mm-dd\", ensuring consistency and accuracy in date-based queries. This format helps prevent ambiguity and facilitates international standardization for date entries.\nFormat Requirement:\nyyyy-mm-dd: Year (four digits), Month (two digits), and Day (two digits).\nSearch for contracts expired since for date-oriented words, such as today, last month, last year, since February, must be translated to the format \"yyyy-mm-dd\":\nSearch for the contracts expired in the last month: value: \"{year}-{last month}-{day}\",  \"last month\", where “{last month}” is replaced for the month prior to the current month. \"year\", and \"day\", will remain with the values of the current year and the current day.\nGive me today's expired contracts: value: \"{year}-{month}-{today}\", where “{today}” is replaced by the current day. \"year\", and \"month\", will remain with the values of the current year and the current month.\nFind the contracts expired from February: value: \"{year}-{February}-{today}\", where “{February}” is replaced by \"06\". \"year\", and \"today\", will remain with the values of the current year and the day.\nBy using this parameter, users can effectively filter contracts based on their creation date, enhancing the ability to track the inception of legal contracts and manage them according to specific timelines within the system. Output format: yyyy-mm-dd",
+              "title": "contract expiry date from"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Show me contracts related to NDA"
+            },
+            {
+              "text": "Give me contracts owned by John Doe"
+            },
+            {
+              "text": "Give me contracts with the status draft"
+            },
+            {
+              "text": "Search for contracts created from June 2, 2021"
+            },
+            {
+              "text": "Search for all expired contracts since May 3, 2023"
+            }
+          ],
+          "semanticDescription": "Search for contracts. It enables users to efficiently search and manage contracts within the system. This command uses multiple parameters to define the search criteria, allowing users to query contracts based on specific attributes such as contract name, owner, status, creation date, and expiry date. Each parameter is crafted to accept precise input values that correspond to the attributes of the contracts being queried. These parameters include:\nContract Name: Accepts the title or relevant terms associated with a contract to facilitate the retrieval of contracts by their specific names or related terms.\nContract Owner: Allows searches based on the name of the individual who owns or is responsible for the contract, streamlining management and oversight of contractual obligations.\nContract Status: Enables filtering of contracts according to their current stage within the contractual lifecycle, such as draft, executed, or expired, helping users to monitor and manage the progress of contracts effectively.\nContract Created Date From: Supports searches for contracts based on the date they were created or uploaded, using a strict date format to ensure accuracy in temporal searches.\nContract Expiry Date: Facilitates queries based on the expiry date of contracts, critical for managing renewals, terminations, or follow-up actions as contracts approach or surpass their effective duration.\nThis command is integral for users requiring comprehensive contract management capabilities, providing robust tools for precise and effective querying, monitoring, and management of contracts. It enhances user productivity and efficiency by allowing detailed and targeted searches, crucial for effective contract administration within organizations.",
+          "title": "Search Contracts",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "In-House",
+    "Legal",
+    "LawVu"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c962d216-55b9-482b-84cf-40aa7c4b1eea/2025071114071442/c962d216-55b9-482b-84cf-40aa7c4b1eea_largeimage.png",
+  "lastUpdatedAt": "2025-01-29T00:37:10.3425059+00:00",
+  "longDescription": "\n**Raise legal requests inside Microsoft Teams to boost productivity**   \nLawVu for Microsoft Teams takes streamlined legal intake to the next level, making it easy to raise legal requests without leaving Microsoft Teams.   \nSwitching apps and learning new systems means more time and effort to engage Legal, which impacts relationships and quality of service. By bringing intake to your users, you create a more effective partnership between Legal and the business - driving efficiency across every team.   \n**How it works**   \nLawVu users can raise legal requests inside Microsoft Teams. The app captures all relevant fields, including content and attachments from the original Microsoft Teams message, and creates a matter in LawVu so it’s part of Legal’s system of record.   \nKey details of a matter created in Microsoft Teams are visible to all channel members, providing transparency and audit trails anytime.   \n**Capabilities**   \n* Create new matters from Microsoft Teams   \n* Retrieve details about a matter or contract into an Outlook email or a Microsoft Teams message using our search-based message extension   \n* Query records in your legal workspace using natural language interaction and Microsoft Copilot for Microsoft 365   \n**Copilot Prompts**   \n* Fetch matters related to ’NDA’   \n* Fetch matters currently with the status ’On Hold’   \n* Fetch contracts in the ’Draft’ status   \n* Fetch contracts created since ’June 2, 2023’   \n**Requirements**   \n* A subscription to LawVu is required. If you don’t have an account, visit [https://lawvu.com/getting-started](https://lawvu.com/getting-started).   \n**Known limitations**   \n* File attachments on a message may be included in the new matter, however Media files (such as inline images) are not currently supported.   \nLawVu is a cloud-based legal operations management software for enterprise businesses.   \n* [Sign up and get started with LawVu](https://lawvu.com/getting-started)   \n* [Get help using this app](https://help.lawvu.com/en/articles/5953276-microsoft-teams-integration)   \n* [Contact us](https://lawvu.com/contact-us)",
+  "mpnId": "6471570",
+  "officeAssetId": "WA200006956",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://lawvu.com/trust-center/privacy/privacy-policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c962d216-55b9-482b-84cf-40aa7c4b1eea/2025071114071442/c962d216-55b9-482b-84cf-40aa7c4b1eea_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c962d216-55b9-482b-84cf-40aa7c4b1eea/2025071114071442/c962d216-55b9-482b-84cf-40aa7c4b1eea_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c962d216-55b9-482b-84cf-40aa7c4b1eea/2025071114071442/c962d216-55b9-482b-84cf-40aa7c4b1eea_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c962d216-55b9-482b-84cf-40aa7c4b1eea/2025071114071442/c962d216-55b9-482b-84cf-40aa7c4b1eea_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c962d216-55b9-482b-84cf-40aa7c4b1eea/2025071114071442/c962d216-55b9-482b-84cf-40aa7c4b1eea_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Bring LawVu to where your users work to boost productivity across every team",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c962d216-55b9-482b-84cf-40aa7c4b1eea/2025071114071442/c962d216-55b9-482b-84cf-40aa7c4b1eea_smallimage.png",
+  "systemVersion": "2025071114071442",
+  "termsOfUseUrl": "https://lawvu.com/terms/saas-terms-and-conditions",
+  "validDomains": [
+    "*.lawvu.com"
+  ],
+  "webApplicationInfo": {
+    "id": "d3faa972-b376-4d1a-9922-05492ecd36ba",
+    "resource": "api://au-teams.lawvu.com/botid-d3faa972-b376-4d1a-9922-05492ecd36ba"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@LawVu Create Matter",
+      "description": "A user wants to initiate the process of creating a new matter in LawVu.",
+      "command": "Create Matter"
+    },
+    {
+      "prompt": "@LawVu Sign in",
+      "description": "A user needs to authenticate their session with LawVu to access features.",
+      "command": "Sign in"
+    },
+    {
+      "prompt": "@LawVu Help",
+      "description": "A user is seeking assistance or guidance on how to use LawVu's features within Teams.",
+      "command": "Help"
+    }
+  ]
+}
