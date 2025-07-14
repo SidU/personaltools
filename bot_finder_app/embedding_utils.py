@@ -1,7 +1,7 @@
 import json
 import os
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 
 import numpy as np
 from tqdm import tqdm
@@ -22,6 +22,9 @@ DEFS_DIR = Path(__file__).resolve().parent.parent / "augmented_defs"
 CACHE_PATH = Path(__file__).resolve().parent / "index_cache.json"
 # Embedding model for OpenAI
 EMBED_MODEL = "text-embedding-3-small"
+
+# increase when index schema changes
+CACHE_VERSION = 2
 
 _transformer = None
 
@@ -48,39 +51,64 @@ def get_embedding(text: str) -> List[float]:
         return _transformer.encode(text).tolist()
     raise RuntimeError("No embedding backend available")
 
+
+def extract_app_description(data: dict) -> str:
+    """Return the most useful description text for a bot."""
+    for key in ("description", "longDescription", "shortDescription"):
+        desc = data.get(key)
+        if isinstance(desc, str) and desc.strip():
+            return desc.strip()
+    return ""
+
+
+def extract_command_descriptions(data: dict) -> List[Tuple[str, Optional[str]]]:
+    """Return list of (title, description) command pairs."""
+    commands: List[Tuple[str, Optional[str]]] = []
+    for bot in data.get("bots", []):
+        for cl in bot.get("commandLists", []):
+            for cmd in cl.get("commands", []):
+                title = cmd.get("title")
+                if not title:
+                    continue
+                desc = cmd.get("description")
+                commands.append((title, desc))
+    return commands
+
 def build_index(bots: Dict[str, dict]) -> List[dict]:
-    """Build embedding index from example prompts."""
+    """Build embedding index from bot descriptions, commands and prompts."""
     index = []
     for bot_id, data in bots.items():
         bot_name = data.get("name", bot_id)
-        examples = data.get("examplePrompts") or []
-        for ex in examples:
-            prompt = ex.get("prompt")
-            if not prompt:
-                continue
-            vec = get_embedding(prompt)
-            entry = {
+
+        # app description
+        desc = extract_app_description(data)
+        if desc:
+            vec = get_embedding(desc)
+            index.append({
                 "bot_id": bot_id,
                 "bot_name": bot_name,
-                "prompt": prompt,
-                "description": ex.get("description"),
-                "command": ex.get("command"),
+                "prompt": desc,
+                "description": desc,
+                "command": None,
+                "kind": "app_description",
                 "embedding": vec,
-            }
-            index.append(entry)
-    return index
+            })
 
-def load_index(use_cache: bool = True) -> Tuple[List[dict], Dict[str, dict]]:
-    """Load bots and embedding index, optionally from cache."""
-    bots = load_bots()
-    if use_cache and CACHE_PATH.exists():
-        with open(CACHE_PATH, "r", encoding="utf-8") as f:
-            index = json.load(f)
-        return index, bots
+        # command descriptions
+        for title, c_desc in extract_command_descriptions(data):
+            text = f"{title}: {c_desc}" if c_desc else title
+            vec = get_embedding(text)
+            index.append({
+                "bot_id": bot_id,
+                "bot_name": bot_name,
+                "prompt": text,
+                "description": c_desc,
+                "command": title,
+                "kind": "command",
+                "embedding": vec,
+            })
 
-    index = []
-    for bot_id, data in tqdm(bots.items(), desc="Embedding prompts"):
-        bot_name = data.get("name", bot_id)
+        # example prompts
         for ex in data.get("examplePrompts") or []:
             prompt = ex.get("prompt")
             if not prompt:
@@ -92,11 +120,27 @@ def load_index(use_cache: bool = True) -> Tuple[List[dict], Dict[str, dict]]:
                 "prompt": prompt,
                 "description": ex.get("description"),
                 "command": ex.get("command"),
+                "kind": "example",
                 "embedding": vec,
             }
             index.append(entry)
+    return index
+
+def load_index(use_cache: bool = True) -> Tuple[List[dict], Dict[str, dict]]:
+    """Load bots and embedding index, optionally from cache."""
+    bots = load_bots()
+
+    if use_cache and CACHE_PATH.exists():
+        with open(CACHE_PATH, "r", encoding="utf-8") as f:
+            cached = json.load(f)
+        if isinstance(cached, dict) and cached.get("_version") == CACHE_VERSION:
+            return cached["index"], bots
+
+    index = build_index(bots)
+
     with open(CACHE_PATH, "w", encoding="utf-8") as f:
-        json.dump(index, f)
+        json.dump({"_version": CACHE_VERSION, "index": index}, f)
+
     return index, bots
 
 def cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
