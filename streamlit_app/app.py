@@ -1,5 +1,9 @@
 import json
 from pathlib import Path
+import sys
+
+# Ensure repo root is on sys.path for local module imports
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import streamlit as st
 
