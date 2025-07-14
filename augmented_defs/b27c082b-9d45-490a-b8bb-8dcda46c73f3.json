@@ -1,0 +1,542 @@
+{
+  "manifestVersion": "1.17",
+  "id": "b27c082b-9d45-490a-b8bb-8dcda46c73f3",
+  "version": "1.2.2",
+  "name": "Verto 365",
+  "accentColor": "#F9F9FA",
+  "amsSellerAccountId": 74741400,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Get help with Verto 365 and learn how to use features and perform tasks",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "d8843264-a57b-41e3-aea6-b83ea56f6bd6",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Productivity",
+    "ProjectManagement",
+    "WorkflowAndBusinessManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "TMI Systems Limited",
+  "developerUrl": "https://www.vertocloud.co.uk",
+  "industries": [
+    "Government",
+    "HealthCareAndLifeSciences"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "d8843264-a57b-41e3-aea6-b83ea56f6bd6",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Find Projects in Verto 365",
+          "fetchTask": false,
+          "id": "searchQuery",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Your Project search keyword. Requires at least 3 characters.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchProjectQuery",
+              "semanticDescription": "Project keyword to search for Projects in Verto 365. If searching for all projects the keyword should be 'PR0'",
+              "title": "Search Projects by keyword"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Search for all projects in Verto 365"
+            },
+            {
+              "text": "Find all projects in Verto 365"
+            },
+            {
+              "text": "Look for all projects in Verto 365"
+            }
+          ],
+          "semanticDescription": "Search for Projects in Verto 365 by keyword.",
+          "title": "Projects",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Find Cards in Verto 365",
+          "fetchTask": false,
+          "id": "cardQuery",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Your card search keyword. Searches Title, Description and Tags. Requires at least 3 characters.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchCardQuery",
+              "semanticDescription": "Card search keyword. Searches Title, Description and Tags. This is not a status. Requires at least 3 characters.",
+              "title": "Search Cards by keyword"
+            },
+            {
+              "description": "Enter a Date Range. Leave a blank for an open ended search. e.g. 01/30/2024-02/25/2024, 01/30/2024-, -02/05/2024",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "dueDateRange",
+              "title": "Card Due Date Range"
+            },
+            {
+              "description": "Enter the Status of cards to search for.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "cardStatus",
+              "title": "Card Status"
+            },
+            {
+              "description": "Enter the Priority of cards to search for.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "cardPriority",
+              "title": "Card Priority"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Find cards in Verto 365 due this month"
+            },
+            {
+              "text": "Find cards in Verto 365 where the status is green"
+            },
+            {
+              "text": "Find cards in Verto 365 where the status is green and the priority is important"
+            }
+          ],
+          "semanticDescription": "Search for Cards in Verto 365 by Keyword, Due Date Range, Status and Priority",
+          "title": "Cards",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Find Tasks or Milestones in Verto 365",
+          "fetchTask": false,
+          "id": "taskQuery",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Your task search keyword. Requires at least 3 characters.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchTaskQuery",
+              "semanticDescription": "Keyword to search for Tasks or Milestones in Verto 365. If searching for all Tasks/Milestones the keyword should be '000'",
+              "title": "Search Tasks by keyword"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Search for all Tasks in Verto 365"
+            },
+            {
+              "text": "Find all Tasks in Verto 365"
+            },
+            {
+              "text": "Look for all Tasks in Verto 365"
+            }
+          ],
+          "title": "Tasks/Milestones",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Find Risks in Verto 365",
+          "fetchTask": false,
+          "id": "riskQuery",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Enter risk keyword here",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchRiskQuery",
+              "semanticDescription": "Risk keyword to search for risks in Verto 365. Requires at least 3 characters",
+              "title": "Risks by keyword."
+            },
+            {
+              "description": "Enter a range of integers such as '0-10' (for scores between 0 and 10), '5-' (for scores above 5) or '-5' (for scores below 5)",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "scoreRange",
+              "title": "Score Range"
+            },
+            {
+              "description": "Enter if the risk is open or closed, possible values are 'open' and 'closed'.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "openClosed",
+              "semanticDescription": "Enter if the risk is open or closed, possible values are 'open' and 'closed'. This is not a status",
+              "title": "Risk Open or Closed"
+            },
+            {
+              "description": "Enter the status of this risk.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "riskStatus",
+              "title": "Risk Status"
+            },
+            {
+              "description": "Enter if the risk is key, possible values are 'yes' and 'no'.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "keyRisk",
+              "title": "Key Risk"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Search for all Risks in Verto 365"
+            },
+            {
+              "text": "Find Open Risks in Verto 365"
+            },
+            {
+              "text": "Find Open Risks in Verto 365 with a score between 5 and 10"
+            }
+          ],
+          "semanticDescription": "Search for Risks in Verto 365 by Keyword, Score Range, Open/Closed, Status and Key",
+          "title": "Risks",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Find Issues in Verto 365",
+          "fetchTask": false,
+          "id": "issueQuery",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Your issues search keyword. Requires at least 3 characters.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchIssueQuery",
+              "semanticDescription": "Keyword to search for issues in Verto 365. If searching for all issues the keyword should be '000'",
+              "title": "Search Issues by keyword"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Search for all issues in Verto 365"
+            },
+            {
+              "text": "Find all issues in Verto 365"
+            },
+            {
+              "text": "Look for all issues in Verto 365"
+            }
+          ],
+          "title": "Issues",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Find Actions in Verto 365",
+          "fetchTask": false,
+          "id": "actionQuery",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Your action search keyword. Requires at least 3 characters.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchActionQuery",
+              "semanticDescription": "Keyword to search for actions in Verto 365. If searching for all actions the keyword should be '000'",
+              "title": "Search Actions by keyword"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Search for all actions in Verto 365"
+            },
+            {
+              "text": "Find all actions in Verto 365"
+            },
+            {
+              "text": "Look for all actions in Verto 365"
+            }
+          ],
+          "title": "Actions",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Find Dependencies in Verto 365",
+          "fetchTask": false,
+          "id": "depQuery",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Your dependencies search keyword. Requires at least 3 characters.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "searchDepQuery",
+              "semanticDescription": "Keyword to search for dependencies in Verto 365. If searching for all dependencies the keyword should be '000'",
+              "title": "Search dependencies by keyword."
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Search for all dependencies in Verto 365"
+            },
+            {
+              "text": "Find all dependencies in Verto 365"
+            },
+            {
+              "text": "Look for all dependencies in Verto 365"
+            }
+          ],
+          "title": "Dependencies",
+          "type": "query"
+        },
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Fetch create card task module",
+          "fetchTask": true,
+          "id": "createcard",
+          "initialRun": false,
+          "title": "Create Card in Verto 365",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Project Management",
+    "Programme Management",
+    "Work Management"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b27c082b-9d45-490a-b8bb-8dcda46c73f3/2025071113212000/b27c082b-9d45-490a-b8bb-8dcda46c73f3_largeimage.png",
+  "lastUpdatedAt": "2024-07-12T09:22:01.0562392+00:00",
+  "longDescription": "**Flexible Project Management, including team collaboration and productivity tools, directly from within Microsoft 365, Microsoft Teams, Outlook and Copilot.**\n\nUsing Verto 365 within the Microsoft 365 platform allows you to streamline your day by managing all your project work within your chosen Microsoft tool, alongside related conversations, whether they are emails or Teams chats. Verto 365 can be used within Microsoft 365, Teams, and Outlook to help manage your day-to-day tasks, right through to tackling the end-to-end management of complex projects and programmes of work.\n\nFor individuals, project managers and those working in large project management offices, Verto 365 helps you manage what you do, directly from within Microsoft 365.\n\nVerto 365 is the solution for:\n- Organising and managing all your work tasks\n- Implementing consistent processes for your project approach\n- Providing visibility of information across your whole team\n- Empowering teams to collaborate more efficiently\n\n\n\nGet more with Copilot:\n\n- Search and view your project information in Copilot\n\n- Try asking Copilot: \"Find all my projects in Verto 365\"\n\n[Contact Us](https://vertocloud.co.uk/contact-us/)",
+  "mpnId": "6367082",
+  "officeAssetId": "WA200003230",
+  "permissions": [],
+  "privacyUrl": "https://vertocloud.co.uk/privacy-policy/",
+  "publisherDocsUrl": "https://knowledgehub.verto365.com/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b27c082b-9d45-490a-b8bb-8dcda46c73f3/2025071113212000/b27c082b-9d45-490a-b8bb-8dcda46c73f3_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b27c082b-9d45-490a-b8bb-8dcda46c73f3/2025071113212000/b27c082b-9d45-490a-b8bb-8dcda46c73f3_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b27c082b-9d45-490a-b8bb-8dcda46c73f3/2025071113212000/b27c082b-9d45-490a-b8bb-8dcda46c73f3_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b27c082b-9d45-490a-b8bb-8dcda46c73f3/2025071113212000/b27c082b-9d45-490a-b8bb-8dcda46c73f3_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b27c082b-9d45-490a-b8bb-8dcda46c73f3/2025071113212000/b27c082b-9d45-490a-b8bb-8dcda46c73f3_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Verto 365 is your work management solution for Microsoft 365 and Copilot",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/b27c082b-9d45-490a-b8bb-8dcda46c73f3/2025071113212000/b27c082b-9d45-490a-b8bb-8dcda46c73f3_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://www.vertocloud.com/login/teams/indexauth?ForwardPath=verto%3Ftbc%3D1",
+      "context": [
+        "personalTab"
+      ],
+      "entityId": "88e599b9-df20-4eba-bc8d-8535bbb79d56",
+      "name": "Verto",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://www.vertocloud.com/login/teams/preferencesauth/",
+      "context": [
+        "personalTab"
+      ],
+      "entityId": "359d4b70-9cf5-47dc-af97-ce172a6ff438",
+      "name": "Settings",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071113212000",
+  "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2041178",
+  "validDomains": [
+    "*.verto365.com"
+  ],
+  "webApplicationInfo": {
+    "id": "d8843264-a57b-41e3-aea6-b83ea56f6bd6",
+    "resource": "api://www.vertocloud.com/botid-d8843264-a57b-41e3-aea6-b83ea56f6bd6"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Verto 365 Can you show me how to get started with task management?",
+      "description": "The user is asking for guidance on using the bot for task management within Microsoft 365.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@Verto 365 I need assistance with setting up a new project. Where do I begin?",
+      "description": "The user needs help in setting up a new project using the bot's features.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@Verto 365 How can I integrate Copilot with my current workflow?",
+      "description": "The user is seeking information on integrating Copilot into their existing workflow.",
+      "command": "Help"
+    }
+  ]
+}

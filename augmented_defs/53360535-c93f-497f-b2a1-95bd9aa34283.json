@@ -1,0 +1,1417 @@
+{
+  "manifestVersion": "1.12",
+  "id": "53360535-c93f-497f-b2a1-95bd9aa34283",
+  "version": "2.0.0",
+  "name": "ahead",
+  "accentColor": "#3B5BDB",
+  "amsSellerAccountId": 80238660,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "53360535-c93f-497f-b2a1-95bd9aa34283",
+      "isNotificationOnly": true,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "Social"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "ahead AG",
+  "developerUrl": "https://www.aheadintranet.com",
+  "industries": [
+    "Manufacturing",
+    "Retail"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "53360535-c93f-497f-b2a1-95bd9aa34283",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Search news in ahead",
+          "fetchTask": false,
+          "id": "searchNews",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Your search term(s)",
+              "inputType": "text",
+              "name": "searchQuery",
+              "title": "Search"
+            }
+          ],
+          "title": "Search news",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Communication",
+    "Company News",
+    "Intranet"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_largeimage.png",
+  "lastUpdatedAt": "2025-03-20T07:13:08.8265693+00:00",
+  "longDescription": "ahead is the internal communications and employee experience platform that helps distributed workforces stay connected, engaged and inspired. Extend your organization’s communication channel with the ahead app for Microsoft Teams. Keep employees always informed by integrating ahead with the tools they already use.\n\n**Notifications bot**\nGet notifications in Microsoft Teams to keep up to date with the latest ahead News in your company. Stay focused and receive only news that are relevant to you.\n\n**Share ahead News to Microsoft Teams**\nAmplify ahead News by sharing them in Microsoft Teams. Now you can easily share content in Microsoft Teams chats: one-to-one, one-to-many and channels. Use the ahead app message extension included in the message compose box. Search for the title of the news you want to share, which will be displayed in a card. Or just paste a link to a news. Now you can easily share content between ahead and Microsoft Teams to maximize your communications across desk and non-desk workforces.\n\n**New - Access the ahead portal directly within Microsoft Teams**\nThe ahead for Microsoft Teams is integrated with the ahead app, allowing users to directly utilize ahead for accessing a range of content, including:\n - News\n - Knowledge Pages\n - Quicklinks\n - Search for People and ahead Content\n - People Directory\n - MyWork (Displays your latest documents and SharePoint Sites)\nUsers granted ahead Editor permissions can directly create and publish News and Knowledge Pages in the ahead app within Microsoft Teams.\n\nahead in Microsoft Teams requires an ahead license for access. If you don't already have one please visit [aheadintranet.com](https://aheadintranet.com) and request a trial or get in touch with us.",
+  "officeAssetId": "WA200004202",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.aheadintranet.com/data-security",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Get and share news from ahead.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://app.aheadintranet.com/?1828d1cb-cdee-427d-b324-5ba2ff009a4f=true",
+      "entityId": "ahead",
+      "name": "Home",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.aheadintranet.com"
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071114065976",
+  "termsOfUseUrl": "https://www.aheadintranet.com/terms-and-conditions",
+  "validDomains": [
+    "app.aheadintranet.com"
+  ],
+  "webApplicationInfo": {
+    "id": "53360535-c93f-497f-b2a1-95bd9aa34283",
+    "resource": "api://app.aheadintranet.com/botid-53360535-c93f-497f-b2a1-95bd9aa34283"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "es",
+    "de"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.12",
+      "id": "53360535-c93f-497f-b2a1-95bd9aa34283",
+      "version": "2.0.0",
+      "name": "ahead",
+      "accentColor": "#3B5BDB",
+      "amsSellerAccountId": 80238660,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "53360535-c93f-497f-b2a1-95bd9aa34283",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Social"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "ahead AG",
+      "developerUrl": "https://www.aheadintranet.com",
+      "industries": [
+        "Manufacturing",
+        "Retail"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "53360535-c93f-497f-b2a1-95bd9aa34283",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Suche News in ahead",
+              "fetchTask": false,
+              "id": "searchNews",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Dein(e) Suchbegriff(e)",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Suche"
+                }
+              ],
+              "title": "Suche News",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Communication",
+        "Company News",
+        "Intranet"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_largeimage.png",
+      "lastUpdatedAt": "2025-03-20T07:13:08.8265693+00:00",
+      "longDescription": "ahead ist die Plattform für interne Kommunikation, die es Mitarbeiter:Innen ermöglicht, über verschiedenen Standorte in Verbindung zu bleiben, sich zu engagieren und sich inspirieren zu lassen. Erweitere die Kommunikationskanäle ihres Unternehmens mit der ahead App für Microsoft Teams. Halte deine Mitarbeiter:Innen immer auf dem Laufenden, indem du ahead in die Tools integrierst, die du bereits nutzt.\n\n**Benachrichtigungs-Bot**\nErhalte Benachrichtigungen in Microsoft Teams, um über die neuesten ahead News in deinem Unternehmen auf dem Laufenden zu bleiben. Bleibe fokussiert und erhalten nur News, die für dich relevant sind.\n\n**Teilen von ahead News in Microsoft Teams**\nVerbessere ahead News, indem du sie in Microsoft Teams teilst. Jetzt kannst du Inhalte ganz einfach in Microsoft Teams-Chats teilen: one-to-one, one-to-many und in Kanälen. Verwende die ahead App Nachrichtenerweiterung, die in der Nachrichtenerstellungsbox enthalten ist. Suche nach dem Titel der News, die du mit anderen teilen möchten, die dann in einer Karte angezeigt wird. Oder füge einfach einen Link zu einer News ein. Jetzt kannst du ganz einfach Inhalte zwischen ahead und Microsoft Teams austauschen, um die Kommunikation zwischen Mitarbeiter:Innen am Arbeitsplatz und außerhalb des Arbeitsplatzes zu optimieren.\n\n**Neu - Greife auf das ahead Portal direkt von Microsoft Teams aus zu**\nDas ahead für Microsoft Teams ist in der ahead App integriert und erlaubt es Benutzern direkt auf diverse Inhalte zuzugreifen, einschliessend:\n - News\n - Wissensseiten\n - Quicklinks\n - Suche nach Personen und ahead Inhalten\n - Mitarbeiterverzeichnis\n - MyWork (Zeigt deine zuletzt verwendeten Dokumente und SharePoint Seiten)\nBenutzer mit Editor-Berechtigungen können direkt News und Wissensseiten veröffentlichen in der ahead App innerhalb von Microsoft Teams.\n\nFür den Zugriff auf ahead in Microsoft Teams ist eine ahead-Lizenz erforderlich. Falls du noch keine hast, besuche [aheadintranet.com](https://aheadintranet.com) und fordere eine Testversion an oder tritt mit uns in Kontakt.",
+      "officeAssetId": "WA200004202",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.aheadintranet.com/data-security",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Erhalte und teile News von ahead.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.aheadintranet.com/?1828d1cb-cdee-427d-b324-5ba2ff009a4f=true",
+          "entityId": "ahead",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.aheadintranet.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114065976",
+      "termsOfUseUrl": "https://www.aheadintranet.com/terms-and-conditions",
+      "validDomains": [
+        "app.aheadintranet.com"
+      ],
+      "webApplicationInfo": {
+        "id": "53360535-c93f-497f-b2a1-95bd9aa34283",
+        "resource": "api://app.aheadintranet.com/botid-53360535-c93f-497f-b2a1-95bd9aa34283"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "53360535-c93f-497f-b2a1-95bd9aa34283",
+      "version": "2.0.0",
+      "name": "ahead",
+      "accentColor": "#3B5BDB",
+      "amsSellerAccountId": 80238660,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "53360535-c93f-497f-b2a1-95bd9aa34283",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Social"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "ahead AG",
+      "developerUrl": "https://www.aheadintranet.com",
+      "industries": [
+        "Manufacturing",
+        "Retail"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "53360535-c93f-497f-b2a1-95bd9aa34283",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "commandBox"
+              ],
+              "description": "Buscar noticias en ahead",
+              "fetchTask": false,
+              "id": "searchNews",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Término(s) para la búsqueda",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Buscar"
+                }
+              ],
+              "title": "Buscar noticias",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Communication",
+        "Company News",
+        "Intranet"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_largeimage.png",
+      "lastUpdatedAt": "2025-03-20T07:13:08.8265693+00:00",
+      "longDescription": "ahead es la plataforma de comunicación interna y de experiencia del empleado que ayuda a plantillas ubicadas en distintos lugares a mantenerse conectadas, comprometidas e inspiradas. Amplía el canal de comunicación de tu organización con la app de ahead para Microsoft Teams. Mantenga a los empleados siempre informados integrando ahead con las herramientas que ya utilizan.\n\n**Bot de notificaciones**\nRecibe notificaciones en Microsoft Teams para estar al día de las últimas noticias de tu empresa. Sin distracciones; recibirás sólo aquellas noticias que son relevantes para ti.\n\n**Comparte noticias de ahead en Microsoft Teams**\nAmplifique las noticias de ahead compartiéndolas en Microsoft Teams. Ahora puede compartir contenidos fácilmente en los chats de Microsoft Teams: con otra persona, en grupos y en canales. Utiliza la extensión de mensajería de la app de ahead, ubicada en el área de redactar mensajes. Busca el título de la noticia que quieres compartir y ésta se mostrará en una tarjeta. O simplemente pegue un enlace a una noticia.Ahora puedes compartir fácilmente contenido entre ahead y Microsoft Teams para maximizar tus comunicaciones entre equipos, situados en oficinas o en primera línea.\n\n**Nuevo - Acceda a ahead directamente desde Microsoft Teams**\nahead para Microsoft Teams está conectada a la app de ahead, donde los usuarios pueden utilizar directamente ahead para acceder a una serie de contenidos, entre los que se incluyen:\n - Noticias\n - Páginas de conocimiento\n - Enlaces rápidos\n - Búsqueda de personas y contenido de ahead\n - Directorio de personas\n - Mi trabajo (muestra sus documentos y sitios de SharePoint más recientes)\nLos usuarios con permisos de editor de ahead pueden crear y publicar directamente Noticias y Páginas de conocimiento en ahead desde Microsoft Teams.\n\nahead en Microsoft Teams requiere una licencia de ahead para el acceso. Si aún no tiene una, visite [aheadintranet.com](https://aheadintranet.com) y solicite una prueba o póngase en contacto con nosotros.",
+      "officeAssetId": "WA200004202",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.aheadintranet.com/data-security",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Recibe y comparte noticias de ahead.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/53360535-c93f-497f-b2a1-95bd9aa34283/2025071114065976/53360535-c93f-497f-b2a1-95bd9aa34283_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.aheadintranet.com/?1828d1cb-cdee-427d-b324-5ba2ff009a4f=true",
+          "entityId": "ahead",
+          "name": "Home",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.aheadintranet.com"
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071114065976",
+      "termsOfUseUrl": "https://www.aheadintranet.com/terms-and-conditions",
+      "validDomains": [
+        "app.aheadintranet.com"
+      ],
+      "webApplicationInfo": {
+        "id": "53360535-c93f-497f-b2a1-95bd9aa34283",
+        "resource": "api://app.aheadintranet.com/botid-53360535-c93f-497f-b2a1-95bd9aa34283"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@ahead What's the latest news from ahead?",
+      "description": "User asks the bot to provide the latest news updates.",
+      "command": null
+    },
+    {
+      "prompt": "@ahead Can you share today's top headlines?",
+      "description": "User requests the bot to share the top news headlines for the day.",
+      "command": null
+    },
+    {
+      "prompt": "@ahead Share news about technology advancements.",
+      "description": "User instructs the bot to share news specifically related to technology advancements.",
+      "command": null
+    }
+  ]
+}

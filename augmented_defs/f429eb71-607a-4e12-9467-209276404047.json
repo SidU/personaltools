@@ -1,0 +1,1768 @@
+{
+  "manifestVersion": "1.11",
+  "id": "f429eb71-607a-4e12-9467-209276404047",
+  "version": "2.2.5",
+  "name": "ForceManager CRM",
+  "accentColor": "#F9F9FA",
+  "amsSellerAccountId": 14942810,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "920b0629-d8e6-402e-941a-772a282183d0",
+      "isNotificationOnly": false,
+      "scopes": [
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "CustomerAndContactManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Tritium Software SL",
+  "developerUrl": "https://www.forcemanager.com",
+  "devicePermissions": [
+    "OpenExternal"
+  ],
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://teams-side-panel-in-meeting.forcemanager.com/Configure",
+      "context": [
+        "meetingSidePanel",
+        "meetingDetailsTab",
+        "meetingChatTab"
+      ],
+      "scopes": [
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "24d2bb7e-da07-4cad-92b4-93304b1187f2",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Look for an account in ForceManager.",
+          "fetchTask": false,
+          "id": "searchAccount",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Write an account name...",
+              "inputType": "text",
+              "name": "searchQuery",
+              "title": "Search account query"
+            }
+          ],
+          "title": "Account",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Look for a contact in ForceManager.",
+          "fetchTask": false,
+          "id": "searchContact",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Write a contact name...",
+              "inputType": "text",
+              "name": "searchQuery",
+              "title": "Search contact query"
+            }
+          ],
+          "title": "Contact",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Look for an opportunity in ForceManager.",
+          "fetchTask": false,
+          "id": "searchOpportunity",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Write an opportunity name...",
+              "inputType": "text",
+              "name": "searchQuery",
+              "title": "Search opportunity query"
+            }
+          ],
+          "title": "Opportunity",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Sign out from authenticated services",
+          "fetchTask": true,
+          "id": "signOut",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Sign out",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "sales + marketing",
+    "customer + contact management (CRM)",
+    "productivity"
+  ],
+  "languageTag": "en-us",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_largeimage.png",
+  "lastUpdatedAt": "2023-04-14T08:14:28.7283125+00:00",
+  "longDescription": "ForceManager CRM helps build incredible customer relationships via video or in person, supercharging Sales Teams performances on the road, in the office and from home.\n\nOur Microsoft Teams integration allows you to\n-\tImprove the communication flow and collaboration within your sales team by allowing ForceManager CRM data regarding Accounts, Contacts and Business Opportunities to be searched and shared quickly through the Chat or Teams functionality straight from Microsoft Teams.\n\n-\tBetter prepare for each single customer meeting by searching and accessing CRM data instantly from anywhere in Microsoft Teams with our message widget.\n\n-\tHelp share with sales reps relevant information on the lead they are going to meet for the first time when somebody else in the sales team schedules the meeting in Microsoft Teams by attaching information with our message widget on the related chat.\n\n-\tShare information about Accounts, Contacts and Business Opportunities to better run internal meetings organized on Microsoft Teams between Sales Managers and their Sales Reps.\n\n-\tEfficiently organize and collaborate with your sales team and customers thanks to the personal and intelligent CRM dashboard integrated in Microsoft Teams. With a panoramic view of your business agenda, you will be able to track in real time your recent Activities, Goals, upcoming Tasks and Events, as well as joining your next Video Call in one click. All the data you and your sales rep create will be logged in ForceManager CRM automatically, and viceversa you will see all the data in your CRM magically appear in the dashboard to improve performance, generate more impacts and close more sales.\n\n\nOur Microsoft Teams integration works seamlessly both from web and mobile, allowing you to access ForceManager CRM data directly in our mobile app or web version depending on where you are working from.\n\nIn order to use this app users must have an active ForceManager CRM account, Please [contact our support team](https://www.forcemanager.com/contact/) for more details.",
+  "mpnId": "2875646",
+  "officeAssetId": "WA200002655",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.forcemanager.com/wp-content/uploads/2020-05-07_ForceManager-Privacy-Policy_EN.pdf",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "ForceManager CRM boosts Video Calls & improves Collaboration for Sales Teams.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://teams-personal-tab.forcemanager.com/dashboard",
+      "entityId": "dashboardTab",
+      "name": "Dashboard",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.forcemanager.net"
+    },
+    {
+      "contentUrl": "https://teams-personal-tab.forcemanager.com/events",
+      "entityId": "eventsTab",
+      "name": "Events",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.forcemanager.net/views/calendar.aspx"
+    },
+    {
+      "contentUrl": "https://teams-personal-tab.forcemanager.com/goals",
+      "entityId": "goalsTab",
+      "name": "Goals",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.forcemanager.net/page.aspx#/kpis"
+    },
+    {
+      "contentUrl": "https://teams-personal-tab.forcemanager.com/activities",
+      "entityId": "activitiesTab",
+      "name": "Activities",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.forcemanager.net/views/activitylist.aspx"
+    },
+    {
+      "contentUrl": "https://teams-personal-tab.forcemanager.com/tasks",
+      "entityId": "tasksTab",
+      "name": "Tasks",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://app.forcemanager.net/views/calendar.aspx"
+    },
+    {
+      "contentUrl": "https://teams-personal-tab.forcemanager.com/recently-viewed",
+      "entityId": "recentlyViewedTab",
+      "name": "Recently Viewed",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071112205138",
+  "termsOfUseUrl": "https://www.forcemanager.com/wp-content/uploads/2018-05-Terms-and-Conditions_EN.pdf",
+  "validDomains": [
+    "teams-side-panel-in-meeting.forcemanager.com",
+    "app.forcemanager.net",
+    "teams-personal-tab.forcemanager.com",
+    "getfm.io",
+    "*.forcemanager.com",
+    "*.forcemanager.net"
+  ],
+  "webApplicationInfo": {
+    "applicationPermissions": [
+      "OnlineMeeting.ReadBasic.Chat"
+    ],
+    "id": "920b0629-d8e6-402e-941a-772a282183d0",
+    "resource": "api://teams-side-panel-in-meeting.forcemanager.com/f429eb71-607a-4e12-9467-209276404047"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en-us",
+    "es",
+    "it"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.11",
+      "id": "f429eb71-607a-4e12-9467-209276404047",
+      "version": "2.2.5",
+      "name": "ForceManager CRM",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 14942810,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "920b0629-d8e6-402e-941a-772a282183d0",
+          "isNotificationOnly": false,
+          "scopes": [
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "CustomerAndContactManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Tritium Software SL",
+      "developerUrl": "https://www.forcemanager.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams-side-panel-in-meeting.forcemanager.com/Configure",
+          "context": [
+            "meetingSidePanel",
+            "meetingDetailsTab",
+            "meetingChatTab"
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "24d2bb7e-da07-4cad-92b4-93304b1187f2",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Busca una empresa en ForceManager",
+              "fetchTask": false,
+              "id": "searchAccount",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Escribe el nombre de una empresa...",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Busqueda de empresas"
+                }
+              ],
+              "title": "Empresas",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Busca un contacto en ForceManager",
+              "fetchTask": false,
+              "id": "searchContact",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Escribe el nombre del contacto...",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Busqueda de contactos"
+                }
+              ],
+              "title": "Contactos",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Busca una opportunidad en ForceManager",
+              "fetchTask": false,
+              "id": "searchOpportunity",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Escribe el nombre de una oportunidad...",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Busqueda de oportunidades"
+                }
+              ],
+              "title": "Oportunidades",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Desconectarse de los servicios autenticados.",
+              "fetchTask": true,
+              "id": "signOut",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Desconectar",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "sales + marketing",
+        "customer + contact management (CRM)",
+        "productivity"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_largeimage.png",
+      "lastUpdatedAt": "2023-04-14T08:14:28.7283125+00:00",
+      "longDescription": "El CRM de ForceManager ayuda a construir relaciones duraderas con los clientes en persona o por videollamada, potenciando el rendimiento de los equipos de ventas en la calle, en la oficina y desde casa.\n\nNuestra integración de Microsoft Teams te permite:\n-\tMejorar el flujo de comunicación y la colaboración de tu equipo de ventas, ya que permite que los datos del CRM de ForceManager sobre empresas, contactos y oportunidades comerciales, se puedan buscar y compartir rápidamente a través de la funcionalidad de Chat o Microsoft Teams.\n\n-\tPrepararte mejor las reuniones con tus clientes, gracias a la búsqueda y al acceso immediato a datos del CRM desde cualquier lugar de Microsoft Teams, con nuestro widget de mensajes.\n\n-\tCompartir con los representantes de ventas información relevante sobre los clientes potenciales que se van a encontrar por primera vez cuando otra persona del equipo comercial programe la reunión en Microsoft Teams, adjuntando información con nuestro widget de mensajes en el chat relacionado.\n\n-\tCompartir información de tus empresas, contactos y oportunidades para realizar mejores reuniones internas entre gerentes de ventas y representantes de ventas, organizadas en Microsoft Teams.\n\n-\tOrganiza y colabora de forma eficiente con tu equipo y los clientes gracias al dashboard personal e inteligente del CRM integrado en Microsoft Teams. Con una visión panorámica de tu agenda comercial, podrás hacer seguimiento en tiempo real de las Actividades recientes, los Objetivos, las próximas Tareas y Eventos, además de unirte en un solo clic a tu próxima Videollamada. Toda la información del CRM de ForceManager disponible de forma automática en Microsoft Teams y viceversa, con el objetivo de ayudarte a mejorar el rendimiento, generar más impactos y poder cerrar más ventas.\n\n-\tTomar notas, descargar documentos relacionados, ver oportunidades abiertas durante la llamada en la misma pantalla, gracias a nuestra reina de corazones, la experiencia en la reunión. Ten tu información de ForceManager en un clic, en la reunión, sin tener que cambiar de pantalla y estando 100% enfocado en tus clientes.\n\nNuestra integración con Microsoft Teams funciona a la perfección tanto desde la versión web como móvil de la aplicación, de manera que te permite acceder a los datos del CRM de ForceManager directamente desde tu versión móvil o web, según el dispositivo desde donde estés trabajando.\n\nPara utilizar esta aplicación, los usuarios deben tener una cuenta activa de ForceManager CRM. [Comuníquese con nuestro equipo de soporte] (https://www.forcemanager.com/es/contacto/) para obtener más detalles.",
+      "mpnId": "2875646",
+      "officeAssetId": "WA200002655",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.forcemanager.com/wp-content/uploads/2020-05-07_ForceManager-Privacy-Policy_EN.pdf",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "ForceManager impulsa las videollamadas y la colaboración de equipos de ventas.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/dashboard",
+          "entityId": "dashboardTab",
+          "name": "Dashboard",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.forcemanager.net"
+        },
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/events",
+          "entityId": "eventsTab",
+          "name": "Eventos",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.forcemanager.net/views/calendar.aspx"
+        },
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/goals",
+          "entityId": "goalsTab",
+          "name": "Objetivos",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.forcemanager.net/page.aspx#/kpis"
+        },
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/activities",
+          "entityId": "activitiesTab",
+          "name": "Actividades",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.forcemanager.net/views/activitylist.aspx"
+        },
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/tasks",
+          "entityId": "tasksTab",
+          "name": "Tareas",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.forcemanager.net/views/calendar.aspx"
+        },
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/recently-viewed",
+          "entityId": "recentlyViewedTab",
+          "name": "Visto recientemente",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112205138",
+      "termsOfUseUrl": "https://www.forcemanager.com/wp-content/uploads/2018-05-Terms-and-Conditions_EN.pdf",
+      "validDomains": [
+        "teams-side-panel-in-meeting.forcemanager.com",
+        "app.forcemanager.net",
+        "teams-personal-tab.forcemanager.com",
+        "getfm.io",
+        "*.forcemanager.com",
+        "*.forcemanager.net"
+      ],
+      "webApplicationInfo": {
+        "applicationPermissions": [
+          "OnlineMeeting.ReadBasic.Chat"
+        ],
+        "id": "920b0629-d8e6-402e-941a-772a282183d0",
+        "resource": "api://teams-side-panel-in-meeting.forcemanager.com/f429eb71-607a-4e12-9467-209276404047"
+      }
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "f429eb71-607a-4e12-9467-209276404047",
+      "version": "2.2.5",
+      "name": "ForceManager CRM",
+      "accentColor": "#F9F9FA",
+      "amsSellerAccountId": 14942810,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "920b0629-d8e6-402e-941a-772a282183d0",
+          "isNotificationOnly": false,
+          "scopes": [
+            "groupChat"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "CustomerAndContactManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Tritium Software SL",
+      "developerUrl": "https://www.forcemanager.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://teams-side-panel-in-meeting.forcemanager.com/Configure",
+          "context": [
+            "meetingSidePanel",
+            "meetingDetailsTab",
+            "meetingChatTab"
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "24d2bb7e-da07-4cad-92b4-93304b1187f2",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Cerca una azienda in ForceManager",
+              "fetchTask": false,
+              "id": "searchAccount",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Scrivi il nome di una azienda...",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Query ricerca aziende"
+                }
+              ],
+              "title": "Aziende",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Cerca un contatto in ForceManager",
+              "fetchTask": false,
+              "id": "searchContact",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Scrivi il nome di un contatto...",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Query ricerca contatti"
+                }
+              ],
+              "title": "Contatti",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Cerca una opportunità in ForceManager",
+              "fetchTask": false,
+              "id": "searchOpportunity",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Scrivi il nome di una opportunità...",
+                  "inputType": "text",
+                  "name": "searchQuery",
+                  "title": "Query ricerca opportunità"
+                }
+              ],
+              "title": "Opportunità",
+              "type": "query"
+            },
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Disconnetti dai servizi autenticati.",
+              "fetchTask": true,
+              "id": "signOut",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "",
+                  "inputType": "text",
+                  "name": "param",
+                  "title": "param"
+                }
+              ],
+              "title": "Disconnessione",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "sales + marketing",
+        "customer + contact management (CRM)",
+        "productivity"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_largeimage.png",
+      "lastUpdatedAt": "2023-04-14T08:14:28.7283125+00:00",
+      "longDescription": "ForceManager CRM aiuta a costruire relazioni durature con clienti in video conferenza o di persona, potenziando le performance dei responsabili commerciali in mobilità, in ufficio e in smart-working.\n\nLa nostra integrazione con Microsoft Teams permette di\n-\tMigliorare la comunicazione e collaborazione all'interno del team commerciale consentendo di ricercare e condividere rapidamente i dati di ForceManager CRM relativi ad aziende, contatti e opportunità commerciali tramite la funzionalità Chat o Teams direttamente da Microsoft Teams.\n\n-\tPrepararsi al meglio per ogni singolo incontro con clienti o lead accedendo istantaneamente ai dati CRM da qualsiasi punto di Microsoft Teams con il nostro widget messaggi.\n\n-\tCondividere con i responsabili commerciali informazioni importanti su lead che incontreranno per la prima volta quando qualcun altro nel team di vendita pianifica la riunione in Microsoft Teams allegando informazioni con il nostro widget messaggi sulla chat correlata.\n\n-\tCondividere informazioni su aziende, contatti e opportunità commerciali per organizzare al meglio riunioni interne su Microsoft Teams tra direttori commerciali e responsabili commerciali.\n\n-\tOrganizzarti e collaborare in modo efficiente con il tuo team di vendita e i clienti grazie alla dashboard CRM, personale e intelligente, integrata in Microsoft Teams. Con una vista panoramica della tua agenda aziendale, sarai in grado di monitorare in tempo reale le tue attività recenti, gli obiettivi, le attività e gli eventi imminenti, nonché partecipare alla tua prossima videochiamata con un clic. Tutti i dati creati da te e dai tuoi responsabili commerciali verranno registrati automaticamente in ForceManager CRM, e viceversa vedrai apparire magicamente tutti i dati nel tuo CRM, nella dashboard, per migliorare le prestazioni, generare più impatti e chiudere più vendite.\n\n-\tPrendere appunti, scaricare documenti correlati, visionare opportunità aperte durante la video chiamata, nella stessa schermata, grazie alla nostra regina di cuori, l'esperienza in-meeting. Recupera le tue informazioni presenti in ForceManager con un clic, durante la riunione, senza dover cambiare schermo e concentrandoti al 100% sui tuoi clienti.\n\nLa nostra integrazione con Microsoft Teams funziona perfettamente sia dal web che in mobilità, consentendoti di accedere ai dati di ForceManager CRM direttamente nella nostra app mobile o nella versione web a seconda di dove stai lavorando.\n\nPer poter utilizzare questa app, gli utenti devono avere un account ForceManager CRM attivo. Si prega di [contattare il nostro team di supporto] (https://www.forcemanager.com/it/contatto/) per maggiori dettagli.",
+      "mpnId": "2875646",
+      "officeAssetId": "WA200002655",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.forcemanager.com/wp-content/uploads/2020-05-07_ForceManager-Privacy-Policy_EN.pdf",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "ForceManager CRM migliora Videochiamate e Collaborazione per la Forza Vendita.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f429eb71-607a-4e12-9467-209276404047/2025071112205138/f429eb71-607a-4e12-9467-209276404047_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/dashboard",
+          "entityId": "dashboardTab",
+          "name": "Dashboard",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.forcemanager.net"
+        },
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/events",
+          "entityId": "eventsTab",
+          "name": "Eventi",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.forcemanager.net/views/calendar.aspx"
+        },
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/goals",
+          "entityId": "goalsTab",
+          "name": "Obiettivi",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.forcemanager.net/page.aspx#/kpis"
+        },
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/activities",
+          "entityId": "activitiesTab",
+          "name": "Attività",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.forcemanager.net/views/activitylist.aspx"
+        },
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/tasks",
+          "entityId": "tasksTab",
+          "name": "Promemoria",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://app.forcemanager.net/views/calendar.aspx"
+        },
+        {
+          "contentUrl": "https://teams-personal-tab.forcemanager.com/recently-viewed",
+          "entityId": "recentlyViewedTab",
+          "name": "Visti di recente",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071112205138",
+      "termsOfUseUrl": "https://www.forcemanager.com/wp-content/uploads/2018-05-Terms-and-Conditions_EN.pdf",
+      "validDomains": [
+        "teams-side-panel-in-meeting.forcemanager.com",
+        "app.forcemanager.net",
+        "teams-personal-tab.forcemanager.com",
+        "getfm.io",
+        "*.forcemanager.com",
+        "*.forcemanager.net"
+      ],
+      "webApplicationInfo": {
+        "applicationPermissions": [
+          "OnlineMeeting.ReadBasic.Chat"
+        ],
+        "id": "920b0629-d8e6-402e-941a-772a282183d0",
+        "resource": "api://teams-side-panel-in-meeting.forcemanager.com/f429eb71-607a-4e12-9467-209276404047"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@ForceManager CRM schedule a video call with the sales team for tomorrow at 10 AM",
+      "description": "The user wants to organize a video call with their sales team for the next day at 10 AM.",
+      "command": "boost Video Calls"
+    },
+    {
+      "prompt": "@ForceManager CRM collaborate with John and Sarah on the new client proposal",
+      "description": "The user is requesting the bot to facilitate collaboration with team members John and Sarah on a new client proposal.",
+      "command": "improve Collaboration"
+    },
+    {
+      "prompt": "@ForceManager CRM can you help me set up a video call for the quarterly sales review?",
+      "description": "The user needs assistance in setting up a video call for the upcoming quarterly sales review.",
+      "command": "boost Video Calls"
+    }
+  ]
+}

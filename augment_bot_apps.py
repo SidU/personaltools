@@ -39,6 +39,9 @@ for fname in os.listdir(INPUT_DIR):
     description = get_description(app)[:400]
     commands = get_commands(app)
 
+    # Write a trace message to show which bot is being augmented
+    print(f"Augmenting {bot_name}...")
+
     prompt = (
         "Bot name: {name}\n"
         "Description: {desc}\n"

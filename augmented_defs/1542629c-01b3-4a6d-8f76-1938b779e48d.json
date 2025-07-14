@@ -1,0 +1,1198 @@
+{
+  "manifestVersion": "1.21",
+  "id": "1542629c-01b3-4a6d-8f76-1938b779e48d",
+  "version": "2.0.7",
+  "name": "Polly",
+  "accentColor": "#0190F7",
+  "amsSellerAccountId": 33223430,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Start a quick poll",
+              "title": "Your question? Option1, Option2"
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "817c2506-de4a-4795-971e-371ea75a03ed",
+      "isNotificationOnly": false,
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": true,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "ProjectManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultGroupCapability": {
+    "groupchat": "tab",
+    "meetings": "tab",
+    "team": "tab"
+  },
+  "defaultInstallScope": "team",
+  "developerName": "Polly",
+  "developerUrl": "https://www.polly.ai",
+  "elementRelationshipSet": {
+    "mutualDependencies": [],
+    "oneWayDependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "b4d8f7a1-1c2b-4e3a-9f1b-2e8f5e5c9e5a",
+            "name": "configurableTabs"
+          },
+          {
+            "id": "3972bda4-858c-43de-b4a4-10d84087c723",
+            "name": "staticTabs"
+          }
+        ],
+        "element": {
+          "id": "817c2506-de4a-4795-971e-371ea75a03ed",
+          "name": "bots"
+        }
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "b4d8f7a1-1c2b-4e3a-9f1b-2e8f5e5c9e5a",
+            "name": "configurableTabs"
+          },
+          {
+            "id": "3972bda4-858c-43de-b4a4-10d84087c723",
+            "name": "staticTabs"
+          }
+        ],
+        "element": {
+          "id": "c6a7d7e2-2b3c-4d5e-8f1b-3e9f6e7d8e6b",
+          "name": "composeExtensions"
+        }
+      }
+    ]
+  },
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://teams.polly.ai/msteams/content/tabconfig?theme={theme}",
+      "context": [
+        "channelTab",
+        "privateChatTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel"
+      ],
+      "id": "b4d8f7a1-1c2b-4e3a-9f1b-2e8f5e5c9e5a",
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "817c2506-de4a-4795-971e-371ea75a03ed",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Customized to your needs",
+          "fetchTask": true,
+          "id": "survey/authoring",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "taskInfo": {
+            "height": "large",
+            "width": "700"
+          },
+          "title": "Create a new polly",
+          "type": "action"
+        },
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Create a polly from this message",
+          "fetchTask": true,
+          "id": "messageAction",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "title": "Create a Polly",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "id": "c6a7d7e2-2b3c-4d5e-8f1b-3e9f6e7d8e6b",
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "teams.polly.ai"
+            ],
+            "supportsAnonymousAccess": false
+          }
+        }
+      ],
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "survey",
+    "poll",
+    "quiz"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1542629c-01b3-4a6d-8f76-1938b779e48d/2025071115261175/1542629c-01b3-4a6d-8f76-1938b779e48d_largeimage.png",
+  "lastUpdatedAt": "2025-05-22T13:44:11.5533385+00:00",
+  "longDescription": "Polly is an engagement app that captures instant, contextual feedback from your team in seconds. Just about anyone can get started with Polly to quickly reach their colleagues and make data-driven decisions instantly.\r\nYou can use Polly to get meeting feedback, quiz your students, get a pulse on how your team is feeling, and so much more. Polly offers an array of advanced functionality such as templates, recurrence, scheduling, anonymity, and more all available to you in Microsoft Teams.\r\nTo get started, add Polly to a Team of your choice, and you can start creating your first polly by using the messaging extension or pinning Polly to the Team tab.\r\nFor Teams Meetings, just add Polly to the Meeting tab to start creating your polly ahead of when your meeting is scheduled, and you can send your polly on demand directly in the meeting to your attendees.\r\nAll of your results will live in your Polly tab that's pinned to the Team and you can share, delete, or close as needed. Not sure what types of questions to ask? We have 30+ templates available for you to use at any time if you need a bit of inspiration.",
+  "meetingExtensionDefinition": {
+    "isAnonymousAccessAllowed": true,
+    "supportsCustomShareToStage": false,
+    "supportsStreaming": false
+  },
+  "mpnId": "6142723",
+  "officeAssetId": "WA104381060",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.polly.ai/privacy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1542629c-01b3-4a6d-8f76-1938b779e48d/2025071115261175/1542629c-01b3-4a6d-8f76-1938b779e48d_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1542629c-01b3-4a6d-8f76-1938b779e48d/2025071115261175/1542629c-01b3-4a6d-8f76-1938b779e48d_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1542629c-01b3-4a6d-8f76-1938b779e48d/2025071115261175/1542629c-01b3-4a6d-8f76-1938b779e48d_screenshot/2.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "m365Certified"
+  },
+  "shortDescription": "Ask your team questions with Polly and get instant answers in Microsoft Teams",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1542629c-01b3-4a6d-8f76-1938b779e48d/2025071115261175/1542629c-01b3-4a6d-8f76-1938b779e48d_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://teams.polly.ai/msteams/content/personal/dashboard?theme={theme}",
+      "entityId": "3972bda4-858c-43de-b4a4-10d84087c723",
+      "name": "Dashboard",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115261175",
+  "termsOfUseUrl": "https://www.polly.ai/tos",
+  "validDomains": [
+    "*.polly.ai"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=7PK05mlvKTg",
+  "webApplicationInfo": {
+    "id": "228f3e22-92b5-4c6d-91e8-9dcc1757ad36",
+    "resource": "api://teams.polly.ai/228f3e22-92b5-4c6d-91e8-9dcc1757ad36"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Polly What's the preferred date for our next team meeting? June 10th, June 15th",
+      "description": "User is asking the team to choose a preferred date for the next team meeting.",
+      "command": "Your question? Option1, Option2"
+    },
+    {
+      "prompt": "@Polly Which project should we prioritize for Q1? Project A, Project B",
+      "description": "User is asking the team to decide on which project to prioritize for the first quarter.",
+      "command": "Your question? Option1, Option2"
+    },
+    {
+      "prompt": "@Polly What's the best platform for our online training? Zoom, Microsoft Teams",
+      "description": "User is asking the team to vote on the best platform for conducting online training sessions.",
+      "command": "Your question? Option1, Option2"
+    }
+  ]
+}
