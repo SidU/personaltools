@@ -1,5 +1,6 @@
 import os
 import json
+import argparse
 import openai
 
 INPUT_DIR = 'bot_apps'
@@ -26,16 +27,25 @@ def get_commands(app):
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
-for fname in os.listdir(INPUT_DIR):
+parser = argparse.ArgumentParser()
+parser.add_argument('--force', action='store_true', help='re-augment all bots')
+args = parser.parse_args()
+
+for fname in sorted(os.listdir(INPUT_DIR)):
     if not fname.endswith('.json'):
         continue
     in_path = os.path.join(INPUT_DIR, fname)
     out_path = os.path.join(OUTPUT_DIR, fname)
 
+    if not args.force and os.path.exists(out_path):
+        # already augmented
+        continue
+
     with open(in_path, 'r', encoding='utf-8') as f:
         app = json.load(f)
 
     bot_name = app.get('name', 'bot')
+    print('Augmenting', bot_name)
     description = get_description(app)[:400]
     commands = get_commands(app)
 
