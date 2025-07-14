@@ -22,10 +22,17 @@ if query:
         if desc:
             st.write(desc)
         for m in matches:
-            st.markdown(f"**Example:** {m['prompt']}")
-            if m.get('description'):
-                st.write(m['description'])
-            if m.get('command'):
+            kind = m.get('kind', 'example')
+            if kind == 'app_description':
+                st.markdown(f"**Description match:** {m['prompt']}")
+            elif kind == 'command':
+                st.markdown(f"**Command:** {m.get('command', '')}")
+                st.write(m['description'] or m['prompt'])
+            else:
+                st.markdown(f"**Example:** {m['prompt']}")
+                if m.get('description'):
+                    st.write(m['description'])
+            if kind != 'command' and m.get('command'):
                 st.caption(f"Suggested command: {m['command']}")
             st.caption(f"Score: {m['score']:.2f}")
             st.markdown('---')
