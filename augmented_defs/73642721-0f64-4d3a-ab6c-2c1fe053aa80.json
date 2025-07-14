@@ -1071,19 +1071,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Wanda can you help me with submitting my timesheet?",
-      "description": "User is asking Wanda for assistance with submitting a timesheet.",
+      "prompt": "@Wanda sign in",
+      "description": "The user wants to sign in to the ERP system using Wanda.",
+      "command": "sign in"
+    },
+    {
+      "prompt": "@Wanda help",
+      "description": "The user is requesting assistance or information on how to use Wanda's features.",
       "command": "help"
     },
     {
-      "prompt": "@Wanda please sign me out of my session now.",
-      "description": "User wants to end their current session with Wanda.",
+      "prompt": "@Wanda sign out",
+      "description": "The user is asking to sign out of the ERP system using Wanda.",
       "command": "sign out"
-    },
-    {
-      "prompt": "@Wanda how do I sign in to update my client invoices?",
-      "description": "User is asking for guidance on signing in to manage client invoices.",
-      "command": "sign in"
     }
   ]
 }

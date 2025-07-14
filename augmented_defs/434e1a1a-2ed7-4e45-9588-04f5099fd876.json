@@ -1079,18 +1079,18 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Retro Can you tell us when the next retrospective is scheduled?",
-      "description": "User wants to know the date and time of the next retrospective meeting.",
+      "prompt": "@Retro .retroWhen",
+      "description": "A user wants to know when the next retrospective meeting is scheduled.",
       "command": ".retroWhen"
     },
     {
-      "prompt": "@Retro What actions were decided in our last retrospective?",
-      "description": "User is asking for a summary of the actions that were agreed upon in the previous retrospective session.",
+      "prompt": "@Retro .retroActions",
+      "description": "A user wants to review the action items from the last retrospective meeting.",
       "command": ".retroActions"
     },
     {
-      "prompt": "@Retro I'm not sure how to use your features, can you help me out?",
-      "description": "User is requesting assistance with understanding the bot's available commands.",
+      "prompt": "@Retro .help",
+      "description": "A user needs assistance with how to use the Retro bot.",
       "command": ".help"
     }
   ]

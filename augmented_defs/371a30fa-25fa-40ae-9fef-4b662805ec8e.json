@@ -276,19 +276,19 @@
   ],
   "examplePrompts": [
     {
-      "prompt": "@Contatta Can you show me the current status of my work environment?",
-      "description": "The user wants to know the current status of their work environment.",
+      "prompt": "@Contatta Status",
+      "description": "A user asks the bot for their current status in the work environment.",
       "command": "Status"
     },
     {
-      "prompt": "@Contatta I'm stepping away for a break, can you pause my activities?",
-      "description": "The user needs to pause their activities temporarily.",
-      "command": "Pause"
+      "prompt": "@Contatta Can you make me Available?",
+      "description": "A user requests the bot to change their status to available so they can start receiving calls or messages.",
+      "command": "Available"
     },
     {
-      "prompt": "@Contatta I've finished my shift, could you log me out?",
-      "description": "The user wants to log out of the system after completing their shift.",
-      "command": "Logout"
+      "prompt": "@Contatta I need to take a break, can you Pause my activities?",
+      "description": "A user wants to pause their activities and informs the bot to update their status accordingly.",
+      "command": "Pause"
     }
   ]
 }

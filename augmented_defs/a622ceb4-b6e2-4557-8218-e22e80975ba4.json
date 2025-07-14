@@ -989,16 +989,19 @@
   },
   "examplePrompts": [
     {
-      "prompt": "@Text Can you send a message to John Doe letting him know I'll be late to the meeting?",
-      "description": "User wants the Text Bot to send a message to a contact named John Doe."
+      "prompt": "@Text can you send a message to my team about the meeting at 3 PM?",
+      "description": "User wants the bot to send a text message to their team about an upcoming meeting.",
+      "command": "send message"
     },
     {
-      "prompt": "@Text Please forward the latest project update to the team group chat.",
-      "description": "User requests the Text Bot to send a project update to a specified group chat."
+      "prompt": "@Text I need to update the team on the project status via text.",
+      "description": "User requests the bot to send an update on the project's status to their team through text.",
+      "command": "send message"
     },
     {
-      "prompt": "@Text Could you text me a reminder about the 3 PM deadline today?",
-      "description": "User asks the Text Bot to send a reminder message about an upcoming deadline."
+      "prompt": "@Text please forward the text I received from HR to the project group.",
+      "description": "User asks the bot to forward a text message received from HR to a specific group within Teams.",
+      "command": "forward message"
     }
   ]
 }

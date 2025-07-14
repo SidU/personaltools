@@ -1,0 +1,195 @@
+{
+  "manifestVersion": "1.12",
+  "id": "15065602-3e44-47f3-a8da-b7e00cfce367",
+  "version": "1.1.0",
+  "name": "Sembly",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 74000470,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "orgWide": [],
+      "resourceSpecific": [
+        {
+          "name": "TeamsActivity.Send.Group",
+          "type": "Application"
+        },
+        {
+          "name": "TeamsActivity.Send.Chat",
+          "type": "Application"
+        },
+        {
+          "name": "ChatMember.Read.Chat",
+          "type": "Application"
+        },
+        {
+          "name": "TeamMember.Read.Group",
+          "type": "Application"
+        },
+        {
+          "name": "Member.Read.Group",
+          "type": "Application"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "fb1a8cb4-308e-48c9-8eae-9d02f997b899",
+      "isNotificationOnly": true,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "ProjectManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Sembly AI, Inc.",
+  "developerUrl": "https://www.sembly.ai/",
+  "devicePermissions": [
+    "Notifications"
+  ],
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "project management",
+    "productivity",
+    "meeting minutes"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/15065602-3e44-47f3-a8da-b7e00cfce367/2025071113324411/15065602-3e44-47f3-a8da-b7e00cfce367_largeimage.png",
+  "lastUpdatedAt": "2024-02-15T09:15:56.5842878+00:00",
+  "longDescription": "Sembly — the AI teammate that takes meeting notes in over 40 languages, identifies tasks and integrates with popular CRM, task management, and knowledge management apps.\n\nSembly works with Microsoft Teams, available in English across Web, iOS & Android mobile apps.\n\nThe clear and comprehensive AI-generated meeting notes get at the central and most impactful items in your discussion, no matter what type of meeting you are on, from daily team standups to customer follow-up calls.\n\nSembly uses AI technology to generate content based on your meeting discussions. If you have any concerns about the content generated or your data privacy please visit our [Trust Center](https://trustcenter.sembly.ai).\n\nPlease report inappropriate content to our support team:  [support@sembly.ai](mailto:support@sembly.ai)\n\nPlease note, a valid user account on Sembly is required to use this app.\nNot signed up yet? [Sign up](https://webapp.sembly.ai/signup/with-calendar)",
+  "mpnId": "6250351",
+  "officeAssetId": "WA200004826",
+  "permissions": [],
+  "privacyUrl": "https://go.sembly.ai/privacy-policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/15065602-3e44-47f3-a8da-b7e00cfce367/2025071113324411/15065602-3e44-47f3-a8da-b7e00cfce367_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/15065602-3e44-47f3-a8da-b7e00cfce367/2025071113324411/15065602-3e44-47f3-a8da-b7e00cfce367_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/15065602-3e44-47f3-a8da-b7e00cfce367/2025071113324411/15065602-3e44-47f3-a8da-b7e00cfce367_screenshot/2.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/15065602-3e44-47f3-a8da-b7e00cfce367/2025071113324411/15065602-3e44-47f3-a8da-b7e00cfce367_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/15065602-3e44-47f3-a8da-b7e00cfce367/2025071113324411/15065602-3e44-47f3-a8da-b7e00cfce367_screenshot/4.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "m365Certified"
+  },
+  "shortDescription": "Sembly transcribes, takes meeting notes and generates insights for your meetings",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/15065602-3e44-47f3-a8da-b7e00cfce367/2025071113324411/15065602-3e44-47f3-a8da-b7e00cfce367_smallimage.png",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teamsapp.semblyai.com/my-meetings",
+      "entityId": "c4ca57f2-071e-42f6-85bc-ed55139d9c6b",
+      "name": "My Meetings",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teamsapp.semblyai.com/shared-with-me",
+      "entityId": "67681a2e-abb6-4545-89aa-fb46eea4a729",
+      "name": "Shared With Me",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://teamsapp.semblyai.com/help",
+      "entityId": "015d2794-25ac-4240-8931-a7fc3ecda0c3",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071113324411",
+  "termsOfUseUrl": "https://go.sembly.ai/terms-of-service",
+  "validDomains": [
+    "teamsapp.semblyai.com"
+  ],
+  "videoUrl": "https://youtu.be/pY9NdKV6760",
+  "webApplicationInfo": {
+    "id": "6fbc7944-c8bb-41c2-9628-c5b71150c290",
+    "resource": "api://teamsapp.semblyai.com/6fbc7944-c8bb-41c2-9628-c5b71150c290"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Sembly Can you transcribe today's meeting?",
+      "description": "User asks Sembly to transcribe the current meeting.",
+      "command": null
+    },
+    {
+      "prompt": "@Sembly I need a summary of the last meeting",
+      "description": "User requests a summary of the previous meeting.",
+      "command": null
+    },
+    {
+      "prompt": "@Sembly What insights can you offer from last week's meeting?",
+      "description": "User asks Sembly for insights from a meeting conducted last week.",
+      "command": null
+    }
+  ]
+}

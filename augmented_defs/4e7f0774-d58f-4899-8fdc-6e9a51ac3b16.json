@@ -1,0 +1,318 @@
+{
+  "manifestVersion": "1.12",
+  "id": "4e7f0774-d58f-4899-8fdc-6e9a51ac3b16",
+  "version": "1.0.3",
+  "name": "Pureservice",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 74101900,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Greets the user with information and instructions",
+              "title": "Hello"
+            },
+            {
+              "description": "Information about the app and how to use it",
+              "title": "Help"
+            },
+            {
+              "description": "Starts the signin to Pureservice process",
+              "title": "Signin"
+            },
+            {
+              "description": "Signs user out",
+              "title": "Signout"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "ff65ed79-c3ca-400a-a8a2-e5fc6ef68318",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "groupChat",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ITAdmin",
+    "HumanResourcesAndRecruiting"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultInstallScope": "personal",
+  "developerName": "Pureservice",
+  "developerUrl": "https://www.pureservice.com",
+  "devicePermissions": [
+    "OpenExternal"
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "ff65ed79-c3ca-400a-a8a2-e5fc6ef68318",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Create a ticket with Pureservice based on this comment. The ticket can bed edited before creation",
+          "fetchTask": true,
+          "id": "CreateTicket",
+          "initialRun": true,
+          "taskInfo": {
+            "title": "Create ticket"
+          },
+          "title": "Create ticket with Pureservice",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "helpdesk",
+    "servicedesk"
+  ],
+  "languageTag": "nb-no",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_largeimage.png",
+  "lastUpdatedAt": "2024-08-06T05:32:53.4022332+00:00",
+  "longDescription": "Pureservice app brings Pureservice's ease of use closer to your everyday workflow. Create tickets directly from within Microsoft Teams based on user messages.\n **What is Pureservice?**\nAn elegant and simple platform for IT and employee service management. Track and solve tickets, cases and requests - with the best user experience. From day one, we have worked to ensure that you, as a Pureservice user, can get your job done faster and better every day. That's why user experience is what we excel at. We help IT service desks, HR, finance, facility services and other service functions help employees get their job done.\nTo use the Microsoft Teams Pureservice app you need to have a subscription with Pureservice. [Learn how to sign up.](https://Pureservice.com/kontakt-oss)\n",
+  "mpnId": "6146717",
+  "officeAssetId": "WA200007030",
+  "permissions": [
+    "Identity"
+  ],
+  "privacyUrl": "https://www.pureservice.com/personvernerklaering",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_screenshot/2.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_screenshot/3.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Create tickets directly from Microsoft Teams and track them in Pureservice.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_smallimage.png",
+  "staticTabs": [],
+  "systemVersion": "2025071112570899",
+  "termsOfUseUrl": "https://www.pureservice.com/betingelser",
+  "validDomains": [
+    "*.pureservice.com"
+  ],
+  "webApplicationInfo": {
+    "id": "9c6ad7ea-477d-4fd8-acd2-456e1dbcc634",
+    "resource": "https://notapplicable"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "nb-no",
+    "en-us"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.12",
+      "id": "4e7f0774-d58f-4899-8fdc-6e9a51ac3b16",
+      "version": "1.0.3",
+      "name": "Pureservice",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 74101900,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Greets the user with information and instructions",
+                  "title": "Hello"
+                },
+                {
+                  "description": "Information about the app and how to use it",
+                  "title": "Help"
+                },
+                {
+                  "description": "Starts the signin to Pureservice process",
+                  "title": "Signin"
+                },
+                {
+                  "description": "Signs user out",
+                  "title": "Signout"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "ff65ed79-c3ca-400a-a8a2-e5fc6ef68318",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "groupChat",
+            "team"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "ITAdmin",
+        "HumanResourcesAndRecruiting"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "defaultInstallScope": "personal",
+      "developerName": "Pureservice",
+      "developerUrl": "https://www.pureservice.com",
+      "devicePermissions": [
+        "OpenExternal"
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "ff65ed79-c3ca-400a-a8a2-e5fc6ef68318",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "message"
+              ],
+              "description": "Create a ticket with Pureservice based on this comment. The ticket can bed edited before creation",
+              "fetchTask": true,
+              "id": "CreateTicket",
+              "initialRun": true,
+              "taskInfo": {
+                "title": "Create ticket"
+              },
+              "title": "Create ticket with Pureservice",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "helpdesk",
+        "servicedesk"
+      ],
+      "languageTag": "en-us",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_largeimage.png",
+      "lastUpdatedAt": "2024-08-06T05:32:53.4022332+00:00",
+      "longDescription": "Pureservice app brings Pureservice's ease of use closer to your everyday workflow. Create tickets directly from within Microsoft Teams based on user messages.\n **What is Pureservice?**\nAn elegant and simple platform for IT and employee service management. Track and solve tickets, cases and requests - with the best user experience. From day one, we have worked to ensure that you, as a Pureservice user, can get your job done faster and better every day. That's why user experience is what we excel at. We help IT service desks, HR, finance, facility services and other service functions help employees get their job done.\nTo use the Microsoft Teams Pureservice app you need to have a subscription with Pureservice. [Learn how to sign up.](https://Pureservice.com/kontakt-oss)\n",
+      "mpnId": "6146717",
+      "officeAssetId": "WA200007030",
+      "permissions": [
+        "Identity"
+      ],
+      "privacyUrl": "https://www.pureservice.com/personvernerklaering",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_screenshot/1.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_screenshot/3.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Create tickets directly from Microsoft Teams and track them in Pureservice.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16/2025071112570899/4e7f0774-d58f-4899-8fdc-6e9a51ac3b16_smallimage.png",
+      "staticTabs": [],
+      "systemVersion": "2025071112570899",
+      "termsOfUseUrl": "https://www.pureservice.com/betingelser",
+      "validDomains": [
+        "*.pureservice.com"
+      ],
+      "webApplicationInfo": {
+        "id": "9c6ad7ea-477d-4fd8-acd2-456e1dbcc634",
+        "resource": "https://notapplicable"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Pureservice Hello, I need help with my account issue.",
+      "description": "User greets the bot and mentions needing assistance with an account issue.",
+      "command": "Hello"
+    },
+    {
+      "prompt": "@Pureservice Can you help me with the available commands?",
+      "description": "User asks the bot to provide a list of available commands.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@Pureservice I am having trouble signing in. Can you assist?",
+      "description": "User requests assistance with signing into the service.",
+      "command": "Signin"
+    }
+  ]
+}

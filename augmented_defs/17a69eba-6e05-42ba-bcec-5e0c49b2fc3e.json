@@ -3229,19 +3229,19 @@
   ],
   "examplePrompts": [
     {
-      "prompt": "@AT&T Office@Hand Can you check my recent calls?",
-      "description": "The user wants to review their call history.",
-      "command": "getRecentCalls"
+      "prompt": "@AT&T Office@Hand Can you help me send a fax to our supplier?",
+      "description": "The user wants to use the bot to send a fax to a supplier.",
+      "command": "fax"
     },
     {
-      "prompt": "@AT&T Office@Hand Send a fax to this number: 123-456-7890.",
-      "description": "The user needs to send a fax to a specified number.",
-      "command": "sendFax"
+      "prompt": "@AT&T Office@Hand I need to send an SMS to the project team. Can you do that?",
+      "description": "The user is requesting the bot to send an SMS to the project team.",
+      "command": "SMS"
     },
     {
-      "prompt": "@AT&T Office@Hand Show me my unread SMS messages.",
-      "description": "The user is requesting to view their unread SMS messages.",
-      "command": "getUnreadSMS"
+      "prompt": "@AT&T Office@Hand Could you assist me in making a call to the client regarding the contract?",
+      "description": "The user requests the bot to help make a call to the client about the contract.",
+      "command": "calling"
     }
   ]
 }

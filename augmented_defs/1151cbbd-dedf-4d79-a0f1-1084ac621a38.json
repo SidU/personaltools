@@ -2854,19 +2854,19 @@
   ],
   "examplePrompts": [
     {
-      "prompt": "@Qlik show me the available apps",
-      "description": "The user wants to see a list of all available apps in Qlik.",
+      "prompt": "@Qlik Can you show me the available apps?",
+      "description": "User is asking the bot to list all available apps.",
       "command": "apps"
     },
     {
-      "prompt": "@Qlik can you change the language to Spanish?",
-      "description": "The user is asking the bot to switch the interface language to Spanish.",
-      "command": "language"
+      "prompt": "@Qlik I'm curious about the sales data. What dimensions can I explore?",
+      "description": "User wants to know which dimensions are available for exploring sales data.",
+      "command": "dimensions"
     },
     {
-      "prompt": "@Qlik I need help with using dimensions",
-      "description": "The user is seeking assistance regarding the usage of dimensions in Qlik.",
-      "command": "help"
+      "prompt": "@Qlik I need to log out of my session.",
+      "description": "User is requesting to log out from their current session.",
+      "command": "logout"
     }
   ]
 }

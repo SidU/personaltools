@@ -1,0 +1,122 @@
+{
+  "manifestVersion": "1.19",
+  "id": "f6b6afea-4de2-4f6b-8bdb-bb02bdcc686c",
+  "version": "1.0.0",
+  "name": "Cobrief",
+  "accentColor": "#9a66ff",
+  "amsSellerAccountId": 85916960,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": []
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "204c7f2c-1da9-4e23-b5ee-3ebdd026776c",
+      "isNotificationOnly": true,
+      "scopes": [
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "ProjectManagement",
+    "SalesAndMarketing"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultGroupCapability": {
+    "groupchat": "bot",
+    "meetings": "bot",
+    "team": "bot"
+  },
+  "developerName": "Cobrief",
+  "developerUrl": "https://www.cobrief.no/",
+  "industries": [
+    "Other"
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "languageTag": "no",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f6b6afea-4de2-4f6b-8bdb-bb02bdcc686c/2025071112440662/f6b6afea-4de2-4f6b-8bdb-bb02bdcc686c_largeimage.png",
+  "lastUpdatedAt": "2025-02-14T09:13:46.8355481+00:00",
+  "longDescription": "Cobrief gir deg varsler for offentlige anbud rett inn i Microsoft Teams, så du slipper å søke opp offentlige anbudskunngjøringer manuelt. Produktet er laget for norske bedrifter som vil levere til det offentlige i Norge og Europa.\n\nAppen tilbyr følgende funksjonalitet:\n- Varsler på anbud i en eller flere Teams-kanaler basert på ditt oppsett i Cobrief-webapplikasjonen.\n- Varsler både for planlagte konkurranser, pågående konkurranser, samt for endringer i disse.\n- Et kort sammendrag av hvert anbud, samt utvalgt informasjon som navn på innkjøper, konkurransetype, tjenesteområde og lokasjon.\n- Mulighet for å se den fulle konkurransen ved å trykke på «Åpne i Cobrief».\n\nBegrensninger og avhengigheter:\n\n- For å bruke appen må du ha et aktivt abonnement i Cobrief.\n- En administrator i Microsoft-leieren må logge inn i Cobrief og konfigurere koblingen mellom Cobrief og Microsoft før dere kan bruke denne Teams-applikasjonen.\n- Appen er kun tilgjengelig i Norge og på norsk.\n\nVil du lære mer? Gå til [cobrief.no](https://cobrief.no/) for informasjon og for å starte et abonnement.",
+  "mpnId": "6778323",
+  "officeAssetId": "WA200008152",
+  "permissions": [],
+  "privacyUrl": "https://www.cobrief.no/juridisk/personvern",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f6b6afea-4de2-4f6b-8bdb-bb02bdcc686c/2025071112440662/f6b6afea-4de2-4f6b-8bdb-bb02bdcc686c_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f6b6afea-4de2-4f6b-8bdb-bb02bdcc686c/2025071112440662/f6b6afea-4de2-4f6b-8bdb-bb02bdcc686c_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f6b6afea-4de2-4f6b-8bdb-bb02bdcc686c/2025071112440662/f6b6afea-4de2-4f6b-8bdb-bb02bdcc686c_screenshot/2.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Varsler for offentlige anbud rett i Microsoft Teams",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f6b6afea-4de2-4f6b-8bdb-bb02bdcc686c/2025071112440662/f6b6afea-4de2-4f6b-8bdb-bb02bdcc686c_smallimage.png",
+  "systemVersion": "2025071112440662",
+  "termsOfUseUrl": "https://www.cobrief.no/juridisk/sluttbrukeravtale",
+  "validDomains": [],
+  "webApplicationInfo": {
+    "id": "204c7f2c-1da9-4e23-b5ee-3ebdd026776c",
+    "resource": "https://app.cobrief.no"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "no"
+  ],
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Cobrief vis meg de nyeste offentlige anbudene",
+      "description": "User asks the bot to display the latest public tenders.",
+      "command": "show_latest_tenders"
+    },
+    {
+      "prompt": "@Cobrief sett opp varsling for nye anbud i bygg- og anleggsbransjen",
+      "description": "User requests the bot to set up alerts for new tenders in the construction industry.",
+      "command": "setup_alerts"
+    },
+    {
+      "prompt": "@Cobrief hvordan kan jeg få varsler om anbud?",
+      "description": "User inquires how to receive alerts about tenders.",
+      "command": "get_alert_instructions"
+    }
+  ]
+}

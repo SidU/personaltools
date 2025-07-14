@@ -1082,19 +1082,18 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Mercuri SMS & WhatsApp send a message to John Doe on WhatsApp saying 'Meeting rescheduled to 3 PM.'",
-      "description": "User wants to send a WhatsApp message to a contact with a specific text.",
-      "command": null
+      "prompt": "@Mercuri SMS & WhatsApp send a message to John Doe via WhatsApp saying 'Meeting rescheduled to 3 PM.'",
+      "description": "The user wants to send a WhatsApp message to a contact named John Doe to inform them about a change in meeting time.",
+      "command": "send a message"
     },
     {
-      "prompt": "@Mercuri SMS & WhatsApp show me the recent SMS messages from Jane Smith.",
-      "description": "User requests to view recent SMS messages from a specific contact.",
-      "command": null
+      "prompt": "@Mercuri SMS & WhatsApp send SMS to +1234567890: 'Don't forget the team lunch tomorrow!'",
+      "description": "The user is sending an SMS reminder about a team lunch to a specific phone number.",
+      "command": "send a message"
     },
     {
-      "prompt": "@Mercuri SMS & WhatsApp initiate a group chat on WhatsApp with the team regarding the project update.",
-      "description": "User wants to start a group chat on WhatsApp with team members to discuss project updates.",
-      "command": null
+      "prompt": "@Mercuri SMS & WhatsApp check if there are any unread messages on WhatsApp from the past hour.",
+      "description": "The user wants to see if there are any unread WhatsApp messages received in the last hour."
     }
   ]
 }

@@ -1,0 +1,2965 @@
+{
+  "manifestVersion": "1.7",
+  "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+  "version": "1.9.8",
+  "name": "Karma",
+  "accentColor": "#F2AE43",
+  "amsSellerAccountId": 52310960,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Give karma points",
+              "title": "++"
+            },
+            {
+              "description": "Show leaderboard",
+              "title": "top"
+            },
+            {
+              "description": "Recommendations on karma giveaways and deductions",
+              "title": "rules"
+            },
+            {
+              "description": "Current company values",
+              "title": "values"
+            },
+            {
+              "description": "List of available rewards",
+              "title": "rewards"
+            },
+            {
+              "description": "Show help",
+              "title": "help"
+            },
+            {
+              "description": "My karma score",
+              "title": "me"
+            },
+            {
+              "description": "Interactive tour",
+              "title": "tour"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Show help",
+              "title": "help"
+            },
+            {
+              "description": "Interactive tour",
+              "title": "tour"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal"
+      ],
+      "supportsFiles": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "HumanResourcesAndRecruiting",
+    "Productivity",
+    "Education"
+  ],
+  "creatorId": "",
+  "developerName": "Sliday LTD",
+  "developerUrl": "https://karmabot.chat/ms",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://ms.karmabot.chat/tabs/dashboard/config?entityId={entityId}&subEntityId={subEntityId}&name={upn}&tenant={tid}&group={groupId}&theme={theme}",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "Education",
+    "ProfessionalServices"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose",
+            "message"
+          ],
+          "description": "Give a karma",
+          "fetchTask": true,
+          "id": "karma",
+          "initialRun": true,
+          "parameters": [
+            {
+              "inputType": "text",
+              "name": "name",
+              "title": "title"
+            }
+          ],
+          "title": "Send Karma",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "recognition",
+    "microfeedback",
+    "remote team"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_largeimage.png",
+  "lastUpdatedAt": "2023-08-03T10:06:42.2713448+00:00",
+  "longDescription": "Karma is an employee recognition product.\nNowadays, people that are working remotely often feel unappreciated. Karma is on the mission to end that.\n**We simply help people to say ‘thank you’ more often and connect with each other.**\n- Share micro-feedback instantly\n- Set real-life perks and rewards\n- Engage with your team and gain valuable insights\n- Analyse appreciation and praise activity through reports\n- Reinforce long-term vision and goals\n- Enable and propagate your company values\n1,000+ teams who use Karma for daily appreciation, recognition and rewards. **100,000+** happy customers, **1M+** karma sent to date.\nNotable clients: VMWare, Twitter, Expedia, Toyota, Capgemini, SalesforceIQ, Deloitte Digital, Nintendo, AMD Team, Washington Post, SignalCo, Smartsheet, Red Hat, Inc., Walmart, BuzzFeed, Dropbox, PwC ICC, Hi5 Studios, TLC.",
+  "mpnId": "6002027",
+  "officeAssetId": "WA104381640",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://help.karmabot.chat/en/article/privacy-policy-for-microsoft-teams-nbhd1c",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "High-performing culture in remote teams",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://ms.karmabot.chat/tabs/leaderboard?locale={locale}&tenant={tid}&theme={theme}",
+      "entityId": "leaderboard",
+      "name": "Feed",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://ms.karmabot.chat/tabs/rewards?locale={locale}&tenant={tid}&theme={theme}",
+      "entityId": "rewards",
+      "name": "Rewards",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://ms.karmabot.chat/tabs/statistics?locale={locale}&tenant={tid}&theme={theme}",
+      "entityId": "stats",
+      "name": "Reports",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://ms.karmabot.chat/tabs/options?locale={locale}&tenant={tid}&theme={theme}",
+      "entityId": "options",
+      "name": "Settings",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://ms.karmabot.chat/tabs/help?locale={locale}&tenant={tid}&theme={theme}",
+      "entityId": "help",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://ms.karmabot.chat"
+    }
+  ],
+  "systemVersion": "2025071114415769",
+  "termsOfUseUrl": "https://help.karmabot.chat/en/article/end-user-license-agreement-eula-x2esav/",
+  "validDomains": [
+    "*.sliday.com",
+    "*.ms.karmabot.chat",
+    "karmabot.readme.io"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=OZZWp1DJ1eo",
+  "webApplicationInfo": {
+    "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+    "resource": "https://ms.karmabot.chat"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "ru",
+    "es",
+    "fr",
+    "de",
+    "vi",
+    "th",
+    "it",
+    "hu"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.7",
+      "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+      "version": "1.9.8",
+      "name": "Karma",
+      "accentColor": "#F2AE43",
+      "amsSellerAccountId": 52310960,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Gib Karma",
+                  "title": "++"
+                },
+                {
+                  "description": "Rangliste anzeigen",
+                  "title": "top"
+                },
+                {
+                  "description": "Empfehlungen zur Verteilung von Karma",
+                  "title": "rules"
+                },
+                {
+                  "description": "Unternehmenswerte",
+                  "title": "values"
+                },
+                {
+                  "description": "Verfügbare Belohnungen",
+                  "title": "rewards"
+                },
+                {
+                  "description": "Hilfe",
+                  "title": "help"
+                },
+                {
+                  "description": "Mein Karma",
+                  "title": "me"
+                },
+                {
+                  "description": "Interaktive Tour",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Hilfe",
+                  "title": "help"
+                },
+                {
+                  "description": "Interaktive Tour",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Education"
+      ],
+      "creatorId": "",
+      "developerName": "Sliday LTD",
+      "developerUrl": "https://karmabot.chat/ms",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://ms.karmabot.chat/tabs/dashboard/config?entityId={entityId}&subEntityId={subEntityId}&name={upn}&tenant={tid}&group={groupId}&theme={theme}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Give a karma",
+              "fetchTask": true,
+              "id": "karma",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "inputType": "text",
+                  "name": "name",
+                  "title": "title"
+                }
+              ],
+              "title": "Send Karma",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "recognition",
+        "microfeedback",
+        "remote team"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_largeimage.png",
+      "lastUpdatedAt": "2023-08-03T10:06:42.2713448+00:00",
+      "longDescription": "Karma ist ein Produkt der Anerkennung von Mitarbeitern.\nВ Menschen, die remote arbeiten, fühlen sich heutzutage oft unterbewertet. Karma soll dies beenden.\n** Wir helfen den Leuten nur, öfter «Danke» zu sagen und miteinander zu kommunizieren. **\n- Teilen Sie Mikro-Feedback sofort\n- Setze echte Vorteile und Belohnungen\n- Interagiere mit deinem Team und erhalte wertvolle Einblicke\n- Analysieren Sie die Bewertung und die Lobleistung anhand von Berichten\n- Stärkung der langfristigen Vision und Ziele\n- Integrieren und verbreiten Sie die Werte Ihres Unternehmens\nÜber 1000 Teams, die Karma für die tägliche Anerkennung, Anerkennung und Belohnung verwenden. ** 100 000 + ** zufriedene Kunden, ** 1M + ** Karma bis heute gesendet.\nBemerkenswerte Kunden: VMWare, Twitter, Expedia, Toyota, Capgemini, SalesforceIQ, Deloitte Digital, Nintendo, AMD Team, Washington Post, SignalCo, Smartsheet, Red Hat, Inc., Walmart, BuzzFeed, Dropbox, PwC ICC, Hi5 Studios, TLC.",
+      "mpnId": "6002027",
+      "officeAssetId": "WA104381640",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://help.karmabot.chat/en/article/privacy-policy-for-microsoft-teams-nbhd1c",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Hochleistungskultur in Remote-Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/leaderboard?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "leaderboard",
+          "name": "Feed",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/rewards?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "rewards",
+          "name": "Auszeichnungen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/statistics?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "stats",
+          "name": "Berichte",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/options?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "options",
+          "name": "die Einstellungen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/help?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "help",
+          "name": "Hilfe",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://ms.karmabot.chat"
+        }
+      ],
+      "systemVersion": "2025071114415769",
+      "termsOfUseUrl": "https://help.karmabot.chat/en/article/end-user-license-agreement-eula-x2esav/",
+      "validDomains": [
+        "*.sliday.com",
+        "*.ms.karmabot.chat",
+        "karmabot.readme.io"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=OZZWp1DJ1eo",
+      "webApplicationInfo": {
+        "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+        "resource": "https://ms.karmabot.chat"
+      }
+    },
+    {
+      "manifestVersion": "1.7",
+      "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+      "version": "1.9.8",
+      "name": "Karma",
+      "accentColor": "#F2AE43",
+      "amsSellerAccountId": 52310960,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Dar puntos de karma",
+                  "title": "++"
+                },
+                {
+                  "description": "Mostrar tabla de clasificación",
+                  "title": "top"
+                },
+                {
+                  "description": "Recomendaciones para repartir karma",
+                  "title": "rules"
+                },
+                {
+                  "description": "Valores actuales de la compañía",
+                  "title": "values"
+                },
+                {
+                  "description": "Lista de recompensas disponibles",
+                  "title": "rewards"
+                },
+                {
+                  "description": "Ayuda",
+                  "title": "help"
+                },
+                {
+                  "description": "Mi puntaje de karma",
+                  "title": "me"
+                },
+                {
+                  "description": "Tour interactivo",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Ayuda",
+                  "title": "help"
+                },
+                {
+                  "description": "Tour interactivo",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Education"
+      ],
+      "creatorId": "",
+      "developerName": "Sliday LTD",
+      "developerUrl": "https://karmabot.chat/ms",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://ms.karmabot.chat/tabs/dashboard/config?entityId={entityId}&subEntityId={subEntityId}&name={upn}&tenant={tid}&group={groupId}&theme={theme}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Give a karma",
+              "fetchTask": true,
+              "id": "karma",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "inputType": "text",
+                  "name": "name",
+                  "title": "title"
+                }
+              ],
+              "title": "Send Karma",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "recognition",
+        "microfeedback",
+        "remote team"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_largeimage.png",
+      "lastUpdatedAt": "2023-08-03T10:06:42.2713448+00:00",
+      "longDescription": "Karma es un producto de reconocimiento de empleados.\nHoy en día, las personas que trabajan de forma remota a menudo se sienten poco apreciadas. Karma está en la misión de terminar con eso.\n** Simplemente ayudamos a las personas a decir \"gracias\" más a menudo y conectarse entre sí. **\n- Comparta micro-feedback al instante\n- Establecer ventajas y recompensas de la vida real\n- Interactúa con tu equipo y obtén información valiosa\n- Analice la actividad de apreciación y elogio a través de informes\n- Reforzar la visión y los objetivos a largo plazo.\n- Habilite y propague los valores de su empresa\nMás de 1,000 equipos que usan Karma para apreciación diaria, reconocimiento y recompensas. ** 100,000 + ** clientes satisfechos, ** 1M + ** karma enviado hasta la fecha.\nClientes notables: VMWare, Twitter, Expedia, Toyota, Capgemini, SalesforceIQ, Deloitte Digital, Nintendo, AMD Team, Washington Post, SignalCo, Smartsheet, Red Hat, Inc., Walmart, BuzzFeed, Dropbox, PwC ICC, Hi5 Studios, TLC.",
+      "mpnId": "6002027",
+      "officeAssetId": "WA104381640",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://help.karmabot.chat/en/article/privacy-policy-for-microsoft-teams-nbhd1c",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Cultura de alto rendimiento en equipos remotos.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/leaderboard?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "leaderboard",
+          "name": "Feed",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/rewards?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "rewards",
+          "name": "Recompensas",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/statistics?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "stats",
+          "name": "Reportes",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/options?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "options",
+          "name": "Ajustes",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/help?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "help",
+          "name": "Ayuda",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://ms.karmabot.chat"
+        }
+      ],
+      "systemVersion": "2025071114415769",
+      "termsOfUseUrl": "https://help.karmabot.chat/en/article/end-user-license-agreement-eula-x2esav/",
+      "validDomains": [
+        "*.sliday.com",
+        "*.ms.karmabot.chat",
+        "karmabot.readme.io"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=OZZWp1DJ1eo",
+      "webApplicationInfo": {
+        "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+        "resource": "https://ms.karmabot.chat"
+      }
+    },
+    {
+      "manifestVersion": "1.7",
+      "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+      "version": "1.9.8",
+      "name": "Karma",
+      "accentColor": "#F2AE43",
+      "amsSellerAccountId": 52310960,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Donner du karma",
+                  "title": "++"
+                },
+                {
+                  "description": "Afficher le classement",
+                  "title": "top"
+                },
+                {
+                  "description": "Recommandations pour la distribution du karma",
+                  "title": "rules"
+                },
+                {
+                  "description": "Les valeurs de l'entreprise",
+                  "title": "values"
+                },
+                {
+                  "description": "Récompenses disponibles",
+                  "title": "rewards"
+                },
+                {
+                  "description": "Aidez",
+                  "title": "help"
+                },
+                {
+                  "description": "Mon karma",
+                  "title": "me"
+                },
+                {
+                  "description": "Visite interactive",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Aidez",
+                  "title": "help"
+                },
+                {
+                  "description": "Visite interactive",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Education"
+      ],
+      "creatorId": "",
+      "developerName": "Sliday LTD",
+      "developerUrl": "https://karmabot.chat/ms",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://ms.karmabot.chat/tabs/dashboard/config?entityId={entityId}&subEntityId={subEntityId}&name={upn}&tenant={tid}&group={groupId}&theme={theme}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Give a karma",
+              "fetchTask": true,
+              "id": "karma",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "inputType": "text",
+                  "name": "name",
+                  "title": "title"
+                }
+              ],
+              "title": "Send Karma",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "recognition",
+        "microfeedback",
+        "remote team"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_largeimage.png",
+      "lastUpdatedAt": "2023-08-03T10:06:42.2713448+00:00",
+      "longDescription": "Karma est un produit de la reconnaissance des employés.\nDe nos jours, les personnes qui travaillent à distance se sentent souvent sous-évaluées. Le karma est destiné à mettre fin à cela.\n** Nous aidons simplement les gens à dire «merci» plus souvent et à communiquer entre eux. **\n- Partagez instantanément des micro-commentaires\n- Définissez de vrais avantages et récompenses\n- Interagissez avec votre équipe et obtenez des informations précieuses\n- Analyser l'évaluation et valoriser la performance à l'aide de rapports\n- Renforcer la vision et les objectifs à long terme\n- Intégrez et diffusez les valeurs de votre entreprise\nPlus de 1000 équipes qui utilisent le karma pour la reconnaissance, la reconnaissance et les récompenses quotidiennes. ** 100 000 + ** clients satisfaits, ** 1M + ** karma envoyé à ce jour.\nClients notables: VMWare, Twitter, Expedia, Toyota, Capgemini, SalesforceIQ, Deloitte Digital, Nintendo, AMD Team, Washington Post, SignalCo, Smartsheet, Red Hat, Inc., Walmart, BuzzFeed, Dropbox, PwC ICC, Hi5 Studios, TLC.",
+      "mpnId": "6002027",
+      "officeAssetId": "WA104381640",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://help.karmabot.chat/en/article/privacy-policy-for-microsoft-teams-nbhd1c",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Culture de haute performance dans les équipes distantes",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/leaderboard?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "leaderboard",
+          "name": "Fil d'actualités",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/rewards?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "rewards",
+          "name": "Récompenses",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/statistics?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "stats",
+          "name": "Rapports",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/options?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "options",
+          "name": "Paramètres",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/help?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "help",
+          "name": "Aidez",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://ms.karmabot.chat"
+        }
+      ],
+      "systemVersion": "2025071114415769",
+      "termsOfUseUrl": "https://help.karmabot.chat/en/article/end-user-license-agreement-eula-x2esav/",
+      "validDomains": [
+        "*.sliday.com",
+        "*.ms.karmabot.chat",
+        "karmabot.readme.io"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=OZZWp1DJ1eo",
+      "webApplicationInfo": {
+        "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+        "resource": "https://ms.karmabot.chat"
+      }
+    },
+    {
+      "manifestVersion": "1.7",
+      "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+      "version": "1.9.8",
+      "name": "Karma",
+      "accentColor": "#F2AE43",
+      "amsSellerAccountId": 52310960,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "karma adni",
+                  "title": "++"
+                },
+                {
+                  "description": "Ranglista megjelenítése",
+                  "title": "top"
+                },
+                {
+                  "description": "Ajánlások a karma elosztásához",
+                  "title": "rules"
+                },
+                {
+                  "description": "Vállalati értékek",
+                  "title": "values"
+                },
+                {
+                  "description": "Elérhető jutalmak",
+                  "title": "rewards"
+                },
+                {
+                  "description": "Segítség",
+                  "title": "help"
+                },
+                {
+                  "description": "A karma",
+                  "title": "me"
+                },
+                {
+                  "description": "Interaktív túra",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Segítség",
+                  "title": "help"
+                },
+                {
+                  "description": "Interaktív túra",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Education"
+      ],
+      "creatorId": "",
+      "developerName": "Sliday LTD",
+      "developerUrl": "https://karmabot.chat/ms",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://ms.karmabot.chat/tabs/dashboard/config?entityId={entityId}&subEntityId={subEntityId}&name={upn}&tenant={tid}&group={groupId}&theme={theme}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Give a karma",
+              "fetchTask": true,
+              "id": "karma",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "inputType": "text",
+                  "name": "name",
+                  "title": "title"
+                }
+              ],
+              "title": "Send Karma",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "recognition",
+        "microfeedback",
+        "remote team"
+      ],
+      "languageTag": "hu",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_largeimage.png",
+      "lastUpdatedAt": "2023-08-03T10:06:42.2713448+00:00",
+      "longDescription": "A Karma az alkalmazottak elismerésének terméke.\nManapság a távmunkát végző emberek gyakran alulértékeltnek érzik magukat. A Karma célja, hogy véget vessen ennek.\n** Csak abban segítünk az embereknek, hogy gyakrabban mondják el a «köszönömet» és kommunikáljanak egymással. **\n- Ossza meg azonnal a mikro-visszajelzést\n- Állítson be valódi jutalmakat és jutalmakat\n- Lépjen kapcsolatba csapatával, és szerezzen értékes betekintést\n- Elemezze az értékelési és dicsérő tevékenységeket jelentések segítségével\n- A hosszú távú elképzelések és célok erősítése\n- Magába foglalja és terjessze vállalata értékeit\nTöbb mint 1000 csapat, akik a karma napi elismerésre, elismerésre és jutalomra használják. ** 100 000 + ** boldog ügyfelek, ** 1M + ** ma küldött karma.\nNevezetes ügyfelek: VMWare, Twitter, Expedia, Toyota, Capgemini, SalesforceIQ, Deloitte Digital, Nintendo, AMD Team, Washington Post, SignalCo, Smartsheet, Red Hat, Inc., Walmart, BuzzFeed, Dropbox, PwC ICC, Hi5 Studios, TLC.",
+      "mpnId": "6002027",
+      "officeAssetId": "WA104381640",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://help.karmabot.chat/en/article/privacy-policy-for-microsoft-teams-nbhd1c",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Nagy teljesítményű kultúra távoli csapatokban",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/leaderboard?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "leaderboard",
+          "name": "Hírfolyam",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/rewards?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "rewards",
+          "name": "Díjak",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/statistics?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "stats",
+          "name": "Jelentések",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/options?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "options",
+          "name": "Beállítások",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/help?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "help",
+          "name": "Segítség",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://ms.karmabot.chat"
+        }
+      ],
+      "systemVersion": "2025071114415769",
+      "termsOfUseUrl": "https://help.karmabot.chat/en/article/end-user-license-agreement-eula-x2esav/",
+      "validDomains": [
+        "*.sliday.com",
+        "*.ms.karmabot.chat",
+        "karmabot.readme.io"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=OZZWp1DJ1eo",
+      "webApplicationInfo": {
+        "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+        "resource": "https://ms.karmabot.chat"
+      }
+    },
+    {
+      "manifestVersion": "1.7",
+      "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+      "version": "1.9.8",
+      "name": "Karma",
+      "accentColor": "#F2AE43",
+      "amsSellerAccountId": 52310960,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Dai karma",
+                  "title": "++"
+                },
+                {
+                  "description": "Mostra classifica",
+                  "title": "top"
+                },
+                {
+                  "description": "Raccomandazioni per la distribuzione del karma",
+                  "title": "rules"
+                },
+                {
+                  "description": "Valori aziendali",
+                  "title": "values"
+                },
+                {
+                  "description": "Ricompense disponibili",
+                  "title": "rewards"
+                },
+                {
+                  "description": "Aiuto",
+                  "title": "help"
+                },
+                {
+                  "description": "Il mio karma",
+                  "title": "me"
+                },
+                {
+                  "description": "Il mio karma",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Aiuto",
+                  "title": "help"
+                },
+                {
+                  "description": "Il mio karma",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Education"
+      ],
+      "creatorId": "",
+      "developerName": "Sliday LTD",
+      "developerUrl": "https://karmabot.chat/ms",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://ms.karmabot.chat/tabs/dashboard/config?entityId={entityId}&subEntityId={subEntityId}&name={upn}&tenant={tid}&group={groupId}&theme={theme}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Give a karma",
+              "fetchTask": true,
+              "id": "karma",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "inputType": "text",
+                  "name": "name",
+                  "title": "title"
+                }
+              ],
+              "title": "Send Karma",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "recognition",
+        "microfeedback",
+        "remote team"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_largeimage.png",
+      "lastUpdatedAt": "2023-08-03T10:06:42.2713448+00:00",
+      "longDescription": "Il karma è un prodotto del riconoscimento dei dipendenti.\nAl giorno d'oggi, le persone che lavorano da remoto spesso si sentono sottovalutate. Il karma ha lo scopo di porre fine a questo.\n** Aiutiamo le persone a dire 'grazie' più spesso ea comunicare tra loro. **\n- Condividi istantaneamente micro-feedback\n- Установите реальные льготы и награды\n- Взаимодействовать с вашей командой и получить ценные идеи\n- Анализировать оценку и хвалить деятельность с помощью отчетов\n- Укрепить долгосрочное видение и цели\n- Incorporare e diffondere i valori della tua azienda\nOltre 1000 squadre che usano il karma per il riconoscimento, il riconoscimento e le ricompense quotidiane. ** 100.000 + ** clienti soddisfatti, ** 1M + ** di karma inviati fino ad oggi.\nClienti notevoli: VMWare, Twitter, Expedia, Toyota, Capgemini, SalesforceIQ, Deloitte Digital, Nintendo, AMD Team, Washington Post, SignalCo, Smartsheet, Red Hat, Inc., Walmart, BuzzFeed, Dropbox, PwC ICC, Hi5 Studios, TLC.",
+      "mpnId": "6002027",
+      "officeAssetId": "WA104381640",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://help.karmabot.chat/en/article/privacy-policy-for-microsoft-teams-nbhd1c",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Cultura ad alte prestazioni in team remoti",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/leaderboard?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "leaderboard",
+          "name": "Feed",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/rewards?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "rewards",
+          "name": "Premi",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/statistics?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "stats",
+          "name": "Rapporti",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/options?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "options",
+          "name": "impostazioni",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/help?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "help",
+          "name": "Aiuto",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://ms.karmabot.chat"
+        }
+      ],
+      "systemVersion": "2025071114415769",
+      "termsOfUseUrl": "https://help.karmabot.chat/en/article/end-user-license-agreement-eula-x2esav/",
+      "validDomains": [
+        "*.sliday.com",
+        "*.ms.karmabot.chat",
+        "karmabot.readme.io"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=OZZWp1DJ1eo",
+      "webApplicationInfo": {
+        "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+        "resource": "https://ms.karmabot.chat"
+      }
+    },
+    {
+      "manifestVersion": "1.7",
+      "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+      "version": "1.9.8",
+      "name": "Карма",
+      "accentColor": "#F2AE43",
+      "amsSellerAccountId": 52310960,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Дать карму",
+                  "title": "++"
+                },
+                {
+                  "description": "Показать лидерборд",
+                  "title": "top"
+                },
+                {
+                  "description": "Рекомендации по раздаче кармы",
+                  "title": "rules"
+                },
+                {
+                  "description": "Ценности компании",
+                  "title": "values"
+                },
+                {
+                  "description": "Доступные награды",
+                  "title": "rewards"
+                },
+                {
+                  "description": "Помощь",
+                  "title": "help"
+                },
+                {
+                  "description": "Моя карма",
+                  "title": "me"
+                },
+                {
+                  "description": "Интерактивный тур",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Помощь",
+                  "title": "help"
+                },
+                {
+                  "description": "Интерактивный тур",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Education"
+      ],
+      "creatorId": "",
+      "developerName": "Sliday LTD",
+      "developerUrl": "https://karmabot.chat/ms",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://ms.karmabot.chat/tabs/dashboard/config?entityId={entityId}&subEntityId={subEntityId}&name={upn}&tenant={tid}&group={groupId}&theme={theme}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Give a karma",
+              "fetchTask": true,
+              "id": "karma",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "inputType": "text",
+                  "name": "name",
+                  "title": "title"
+                }
+              ],
+              "title": "Send Karma",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "recognition",
+        "microfeedback",
+        "remote team"
+      ],
+      "languageTag": "ru",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_largeimage.png",
+      "lastUpdatedAt": "2023-08-03T10:06:42.2713448+00:00",
+      "longDescription": "Карма является продуктом признания сотрудников.\nВ настоящее время люди, которые работают удаленно, часто чувствуют себя недооцененными. Карма призвана положить этому конец.\n** Мы просто помогаем людям чаще говорить «спасибо» и общаться друг с другом. **\n- Делитесь микро-обратной связью мгновенно\n- Установите реальные льготы и награды\n- Взаимодействовать с вашей командой и получить ценные идеи\n- Анализировать оценку и хвалить деятельность с помощью отчетов\n- Укрепить долгосрочное видение и цели\n- Включить и распространять ценности вашей компании\nБолее 1000 команд, которые используют карму для ежедневного признания, признания и вознаграждений. ** 100 000 + ** счастливых клиентов, ** 1M + ** карма отправлена на сегодняшний день.\nИзвестные клиенты: VMWare, Twitter, Expedia, Toyota, Capgemini, SalesforceIQ, Deloitte Digital, Nintendo, AMD Team, Washington Post, SignalCo, Smartsheet, Red Hat, Inc., Walmart, BuzzFeed, Dropbox, PwC ICC, Hi5 Studios, TLC.",
+      "mpnId": "6002027",
+      "officeAssetId": "WA104381640",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://help.karmabot.chat/en/article/privacy-policy-for-microsoft-teams-nbhd1c",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Высокоэффективная культура в удаленных командах",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/leaderboard?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "leaderboard",
+          "name": "Лента",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/rewards?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "rewards",
+          "name": "Награды",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/statistics?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "stats",
+          "name": "Отчеты",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/options?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "options",
+          "name": "Настройки",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/help?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "help",
+          "name": "Помощь",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://ms.karmabot.chat"
+        }
+      ],
+      "systemVersion": "2025071114415769",
+      "termsOfUseUrl": "https://help.karmabot.chat/en/article/end-user-license-agreement-eula-x2esav/",
+      "validDomains": [
+        "*.sliday.com",
+        "*.ms.karmabot.chat",
+        "karmabot.readme.io"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=OZZWp1DJ1eo",
+      "webApplicationInfo": {
+        "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+        "resource": "https://ms.karmabot.chat"
+      }
+    },
+    {
+      "manifestVersion": "1.7",
+      "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+      "version": "1.9.8",
+      "name": "Karma",
+      "accentColor": "#F2AE43",
+      "amsSellerAccountId": 52310960,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "ให้กรรม",
+                  "title": "++"
+                },
+                {
+                  "description": "แสดงลีดเดอร์บอร์ด",
+                  "title": "top"
+                },
+                {
+                  "description": "คำแนะนำในการกระจายกรรม",
+                  "title": "rules"
+                },
+                {
+                  "description": "ค่านิยมของ บริษัท",
+                  "title": "values"
+                },
+                {
+                  "description": "รางวัลที่มี",
+                  "title": "rewards"
+                },
+                {
+                  "description": "ช่วยด้วย",
+                  "title": "help"
+                },
+                {
+                  "description": "กรรมของฉัน",
+                  "title": "me"
+                },
+                {
+                  "description": "ทัวร์แบบโต้ตอบ",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "ช่วยด้วย",
+                  "title": "help"
+                },
+                {
+                  "description": "ทัวร์แบบโต้ตอบ",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Education"
+      ],
+      "creatorId": "",
+      "developerName": "Sliday LTD",
+      "developerUrl": "https://karmabot.chat/ms",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://ms.karmabot.chat/tabs/dashboard/config?entityId={entityId}&subEntityId={subEntityId}&name={upn}&tenant={tid}&group={groupId}&theme={theme}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Give a karma",
+              "fetchTask": true,
+              "id": "karma",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "inputType": "text",
+                  "name": "name",
+                  "title": "title"
+                }
+              ],
+              "title": "Send Karma",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "recognition",
+        "microfeedback",
+        "remote team"
+      ],
+      "languageTag": "th",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_largeimage.png",
+      "lastUpdatedAt": "2023-08-03T10:06:42.2713448+00:00",
+      "longDescription": "Karma เป็นผลผลิตจากการรับรู้ของพนักงาน.\nปัจจุบันคนที่ทำงานจากระยะไกลมักจะรู้สึกไม่คุ้ม กรรมมีไว้เพื่อยุติสิ่งนี้\n** เราแค่ช่วยให้คนอื่นพูด «ขอบคุณ» บ่อยขึ้นและสื่อสารกัน **\n- แบ่งปันข้อเสนอแนะขนาดเล็กทันที\n- กำหนดสิทธิประโยชน์และรางวัลจริง\n- โต้ตอบกับทีมของคุณและรับข้อมูลเชิงลึกที่มีค่า\n- วิเคราะห์ประสิทธิภาพการให้คะแนนและการยกย่องโดยใช้รายงาน\n- เสริมสร้างวิสัยทัศน์และเป้าหมายในระยะยาว\n- รวมและเผยแพร่คุณค่าของ บริษัท ของคุณ\nทีมงานกว่า 1,000 ทีมที่ใช้กรรมในการรับรู้รับรู้และให้รางวัลทุกวัน ** 100,000 + ** ลูกค้ามีความสุข ** 1M + ** กรรมส่งถึงวันที่.\nลูกค้าที่มีชื่อเสียง: VMWare, Twitter, Expedia, Toyota, Capgemini, SalesforceIQ, Deloitte Digital, Nintendo, AMD Team, Washington Post, SignalCo, Smartsheet, Red Hat, Inc., Walmart, BuzzFeed, Dropbox, PwC ICC, Hi5 Studios, TLC.",
+      "mpnId": "6002027",
+      "officeAssetId": "WA104381640",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://help.karmabot.chat/en/article/privacy-policy-for-microsoft-teams-nbhd1c",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "วัฒนธรรมประสิทธิภาพสูงในทีมระยะไกล",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/leaderboard?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "leaderboard",
+          "name": "ฟีด",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/rewards?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "rewards",
+          "name": "รางวัล",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/statistics?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "stats",
+          "name": "รายงาน",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/options?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "options",
+          "name": "การตั้งค่า",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/help?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "help",
+          "name": "ช่วยด้วย",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://ms.karmabot.chat"
+        }
+      ],
+      "systemVersion": "2025071114415769",
+      "termsOfUseUrl": "https://help.karmabot.chat/en/article/end-user-license-agreement-eula-x2esav/",
+      "validDomains": [
+        "*.sliday.com",
+        "*.ms.karmabot.chat",
+        "karmabot.readme.io"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=OZZWp1DJ1eo",
+      "webApplicationInfo": {
+        "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+        "resource": "https://ms.karmabot.chat"
+      }
+    },
+    {
+      "manifestVersion": "1.7",
+      "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+      "version": "1.9.8",
+      "name": "Karma",
+      "accentColor": "#F2AE43",
+      "amsSellerAccountId": 52310960,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Tạo karma",
+                  "title": "++"
+                },
+                {
+                  "description": "Hiển thị bảng thành tích",
+                  "title": "top"
+                },
+                {
+                  "description": "Khuyến nghị phân phối karma",
+                  "title": "rules"
+                },
+                {
+                  "description": "Giá trị công ty",
+                  "title": "values"
+                },
+                {
+                  "description": "Phần thưởng có sẵn",
+                  "title": "rewards"
+                },
+                {
+                  "description": "Cứu giúp",
+                  "title": "help"
+                },
+                {
+                  "description": "Моя карма",
+                  "title": "me"
+                },
+                {
+                  "description": "Chuyến tham quan tương tác",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "team"
+              ]
+            },
+            {
+              "commands": [
+                {
+                  "description": "Cứu giúp",
+                  "title": "help"
+                },
+                {
+                  "description": "Chuyến tham quan tương tác",
+                  "title": "tour"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "isNotificationOnly": false,
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "HumanResourcesAndRecruiting",
+        "Productivity",
+        "Education"
+      ],
+      "creatorId": "",
+      "developerName": "Sliday LTD",
+      "developerUrl": "https://karmabot.chat/ms",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://ms.karmabot.chat/tabs/dashboard/config?entityId={entityId}&subEntityId={subEntityId}&name={upn}&tenant={tid}&group={groupId}&theme={theme}",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Education",
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose",
+                "message"
+              ],
+              "description": "Give a karma",
+              "fetchTask": true,
+              "id": "karma",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "inputType": "text",
+                  "name": "name",
+                  "title": "title"
+                }
+              ],
+              "title": "Send Karma",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "recognition",
+        "microfeedback",
+        "remote team"
+      ],
+      "languageTag": "vi",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_largeimage.png",
+      "lastUpdatedAt": "2023-08-03T10:06:42.2713448+00:00",
+      "longDescription": "Karma là sản phẩm của sự công nhận của nhân viên.\nNgày nay, những người làm việc từ xa thường cảm thấy bị đánh giá thấp. Karma là để kết thúc điều này.\n** Chúng tôi chỉ giúp mọi người nói «cảm ơn» thường xuyên hơn và giao tiếp với nhau. **\n- Chia sẻ phản hồi vi mô ngay lập tức\n- Đặt các đặc quyền và phần thưởng thực sự\n- Tương tác với nhóm của bạn và nhận thông tin chi tiết có giá trị\n- Phân tích xếp hạng và khen ngợi hiệu suất bằng các báo cáo\n- Tăng cường tầm nhìn và mục tiêu dài hạn\n- Kết hợp và truyền bá các giá trị của công ty bạn\nHơn 1000 đội sử dụng karma chướng để được ghi nhận, công nhận và phần thưởng hàng ngày. ** 100 000 + ** khách hàng hạnh phúc, ** 1M + ** karma gửi đến ngày.\nKhách hàng đáng chú ý: VMWare, Twitter, Expedia, Toyota, Capgemini, SalesforceIQ, Deloitte Digital, Nintendo, AMD Team, Washington Post, SignalCo, Smartsheet, Red Hat, Inc., Walmart, BuzzFeed, Dropbox, PwC ICC, Hi5 Studios, TLC.",
+      "mpnId": "6002027",
+      "officeAssetId": "WA104381640",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://help.karmabot.chat/en/article/privacy-policy-for-microsoft-teams-nbhd1c",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Văn hóa thành tích cao trong các đội ở xa",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/9ff28b02-ccc5-4cac-9d17-4cf6987c371f/2025071114415769/9ff28b02-ccc5-4cac-9d17-4cf6987c371f_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/leaderboard?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "leaderboard",
+          "name": "Bản tin",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/rewards?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "rewards",
+          "name": "Giải thưởng",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/statistics?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "stats",
+          "name": "Báo cáo",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/options?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "options",
+          "name": "Cài đặt",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://ms.karmabot.chat/tabs/help?locale={locale}&tenant={tid}&theme={theme}",
+          "entityId": "help",
+          "name": "Cứu giúp",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://ms.karmabot.chat"
+        }
+      ],
+      "systemVersion": "2025071114415769",
+      "termsOfUseUrl": "https://help.karmabot.chat/en/article/end-user-license-agreement-eula-x2esav/",
+      "validDomains": [
+        "*.sliday.com",
+        "*.ms.karmabot.chat",
+        "karmabot.readme.io"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=OZZWp1DJ1eo",
+      "webApplicationInfo": {
+        "id": "9ff28b02-ccc5-4cac-9d17-4cf6987c371f",
+        "resource": "https://ms.karmabot.chat"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Karma ++ Thanks for helping out with the project, you really saved the day!",
+      "description": "A user gives positive feedback to a team member to contribute to the team's high-performing culture.",
+      "command": "++"
+    },
+    {
+      "prompt": "@Karma top",
+      "description": "A user requests to see the leaderboard or top contributors in the team based on the feedback system.",
+      "command": "top"
+    },
+    {
+      "prompt": "@Karma help",
+      "description": "A user asks for assistance on how to use the bot and its features.",
+      "command": "help"
+    }
+  ]
+}

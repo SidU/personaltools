@@ -1,0 +1,2025 @@
+{
+  "manifestVersion": "1.7",
+  "id": "f46ad259-0fe5-4f12-872d-c737b174bcb4",
+  "version": "2.7.0",
+  "name": "Adobe Creative Cloud",
+  "accentColor": "#fa0f00",
+  "amsSellerAccountId": 10100310,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Stop receiving Creative Cloud notifications",
+              "title": "Notifications Off"
+            },
+            {
+              "description": "Start receiving Creative Cloud notifications",
+              "title": "Notifications On"
+            },
+            {
+              "description": "To sign into your Creative Cloud account",
+              "title": "Sign In"
+            },
+            {
+              "description": "To sign out of your Creative Cloud account",
+              "title": "Sign Out"
+            },
+            {
+              "description": "To give us feedback on Creative Cloud in Teams",
+              "title": "Feedback"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsFiles": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "Utilities"
+  ],
+  "connectors": [
+    {
+      "configurationUrl": "https://ccmsteams.integrations.adobe.com/connector/activity/config?enableSSO=true",
+      "connectorId": "2402bfbb-f952-4a68-aaad-a474daa44412",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "creatorId": "",
+  "developerName": "Adobe",
+  "developerUrl": "https://www.adobe.com/",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://ccmsteams.integrations.adobe.com/tab/ccx/config?enableSSO=true",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "db3ffd5a-6293-4175-8917-43c24e972c19",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "description": "Search through your Creative Cloud assets",
+          "fetchTask": false,
+          "id": "searchAsset",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search files & libraries",
+              "inputType": "text",
+              "name": "assetName",
+              "title": "Query"
+            }
+          ],
+          "title": "Search Creative Cloud",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "xd.adobe.com",
+              "lightroom.adobe.com",
+              "assets.adobe.com",
+              "shared-assets.adobe.com",
+              "adobe.ly"
+            ],
+            "supportsAnonymousAccess": false
+          }
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "adobeApps"
+  ],
+  "languageTag": "en-us",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_largeimage.png",
+  "lastUpdatedAt": "2018-01-18T00:00:00+00:00",
+  "longDescription": "Content creators and collaborators can now find, view, and share Adobe Creative Cloud assets within Microsoft Teams.\n *If you are working on Edge, turn off Tracking Prevention for better experience.",
+  "mpnId": "5281517",
+  "officeAssetId": "WA104381222",
+  "permissions": [],
+  "privacyUrl": "https://www.adobe.com/privacy.html",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/2.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/4.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "View and share your assets from Creative Cloud.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://www.adobe.com/go/CCMsTeamsTabHelp",
+      "entityId": "cc_msteams_ui_tab_static_help",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://www.adobe.com/go/ccmsteamshelp"
+    }
+  ],
+  "systemVersion": "2025071113094065",
+  "termsOfUseUrl": "https://www.adobe.com/legal/terms.html",
+  "validDomains": [
+    "*.adobe.com",
+    "*.services.adobe.com",
+    "*.okta.com",
+    "*.live-elements.com",
+    "*.integrations.adobe.com"
+  ],
+  "webApplicationInfo": {
+    "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+    "resource": "api://ccmsteams.integrations.adobe.com/db3ffd5a-6293-4175-8917-43c24e972c19"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en-us",
+    "fr-fr",
+    "de-de",
+    "ja-jp",
+    "es-es",
+    "ko-kr"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.7",
+      "id": "f46ad259-0fe5-4f12-872d-c737b174bcb4",
+      "version": "2.7.0",
+      "name": "Adobe Creative Cloud",
+      "accentColor": "#fa0f00",
+      "amsSellerAccountId": 10100310,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Keine Creative Cloud-Benachrichtigungen mehr empfangen",
+                  "title": "Benachrichtigungen aus"
+                },
+                {
+                  "description": "Mit dem Empfangen von Creative Cloud-Benachrichtigungen beginnen",
+                  "title": "Benachrichtigungen an"
+                },
+                {
+                  "description": "Bei Ihrem Creative Cloud-Konto anmelden",
+                  "title": "Anmelden"
+                },
+                {
+                  "description": "Bei Ihrem Creative Cloud-Konto abmelden",
+                  "title": "Abmelden"
+                },
+                {
+                  "description": "Feedback zu Creative Cloud in Teams abgeben",
+                  "title": "Feedback"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "connectors": [
+        {
+          "configurationUrl": "https://ccmsteams.integrations.adobe.com/connector/activity/config?enableSSO=true",
+          "connectorId": "2402bfbb-f952-4a68-aaad-a474daa44412",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "creatorId": "",
+      "developerName": "Adobe",
+      "developerUrl": "https://www.adobe.com/",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://ccmsteams.integrations.adobe.com/tab/ccx/config?enableSSO=true",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "db3ffd5a-6293-4175-8917-43c24e972c19",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "description": "Creative Cloud-Kreativelemente durchsuchen",
+              "fetchTask": false,
+              "id": "searchAsset",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Dateien und Bibliotheken durchsuchen",
+                  "inputType": "text",
+                  "name": "assetName",
+                  "title": "Abfrage"
+                }
+              ],
+              "title": "Creative Cloud durchsuchen",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "xd.adobe.com",
+                  "lightroom.adobe.com",
+                  "assets.adobe.com",
+                  "shared-assets.adobe.com",
+                  "adobe.ly"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "adobeApps"
+      ],
+      "languageTag": "de-de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_largeimage.png",
+      "lastUpdatedAt": "2018-01-18T00:00:00+00:00",
+      "longDescription": "Content-Ersteller und Mitwirkende können jetzt in Microsoft Teams nach Adobe Creative Cloud-Kreativelementen suchen und sie dort anzeigen und freigeben.",
+      "mpnId": "5281517",
+      "officeAssetId": "WA104381222",
+      "permissions": [],
+      "privacyUrl": "https://www.adobe.com/privacy.html",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Kreativelemente aus Creative Cloud anzeigen und freigeben",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://www.adobe.com/go/CCMsTeamsTabHelp",
+          "entityId": "cc_msteams_ui_tab_static_help",
+          "name": "Hilfe",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://www.adobe.com/go/ccmsteamshelp"
+        }
+      ],
+      "systemVersion": "2025071113094065",
+      "termsOfUseUrl": "https://www.adobe.com/legal/terms.html",
+      "validDomains": [
+        "*.adobe.com",
+        "*.services.adobe.com",
+        "*.okta.com",
+        "*.live-elements.com",
+        "*.integrations.adobe.com"
+      ],
+      "webApplicationInfo": {
+        "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+        "resource": "api://ccmsteams.integrations.adobe.com/db3ffd5a-6293-4175-8917-43c24e972c19"
+      }
+    },
+    {
+      "manifestVersion": "1.7",
+      "id": "f46ad259-0fe5-4f12-872d-c737b174bcb4",
+      "version": "2.7.0",
+      "name": "Adobe Creative Cloud",
+      "accentColor": "#fa0f00",
+      "amsSellerAccountId": 10100310,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Dejar de recibir notificaciones de Creative Cloud",
+                  "title": "Desactivar notificaciones"
+                },
+                {
+                  "description": "Comenzar a recibir notificaciones de Creative Cloud",
+                  "title": "Activar notificaciones"
+                },
+                {
+                  "description": "Para iniciar sesión en la cuenta de Creative Cloud",
+                  "title": "Iniciar sesión"
+                },
+                {
+                  "description": "Para cerrar sesión en la cuenta de Creative Cloud",
+                  "title": "Cerrar sesión"
+                },
+                {
+                  "description": "Para facilitarnos comentarios sobre Creative Cloud en Teams",
+                  "title": "Comentarios"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "connectors": [
+        {
+          "configurationUrl": "https://ccmsteams.integrations.adobe.com/connector/activity/config?enableSSO=true",
+          "connectorId": "2402bfbb-f952-4a68-aaad-a474daa44412",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "creatorId": "",
+      "developerName": "Adobe",
+      "developerUrl": "https://www.adobe.com/",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://ccmsteams.integrations.adobe.com/tab/ccx/config?enableSSO=true",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "db3ffd5a-6293-4175-8917-43c24e972c19",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "description": "Buscar en los activos de Creative Cloud",
+              "fetchTask": false,
+              "id": "searchAsset",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Buscar archivos y bibliotecas",
+                  "inputType": "text",
+                  "name": "assetName",
+                  "title": "Consulta"
+                }
+              ],
+              "title": "Buscar en Creative Cloud",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "xd.adobe.com",
+                  "lightroom.adobe.com",
+                  "assets.adobe.com",
+                  "shared-assets.adobe.com",
+                  "adobe.ly"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "adobeApps"
+      ],
+      "languageTag": "es-es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_largeimage.png",
+      "lastUpdatedAt": "2018-01-18T00:00:00+00:00",
+      "longDescription": "Los creadores de contenido y los colaboradores ya pueden encontrar, ver y compartir los activos de Adobe Creative Cloud en Microsoft Teams.",
+      "mpnId": "5281517",
+      "officeAssetId": "WA104381222",
+      "permissions": [],
+      "privacyUrl": "https://www.adobe.com/privacy.html",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Mira y comparte tus activos desde Creative Cloud.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://www.adobe.com/go/CCMsTeamsTabHelp",
+          "entityId": "cc_msteams_ui_tab_static_help",
+          "name": "Ayuda",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://www.adobe.com/go/ccmsteamshelp"
+        }
+      ],
+      "systemVersion": "2025071113094065",
+      "termsOfUseUrl": "https://www.adobe.com/legal/terms.html",
+      "validDomains": [
+        "*.adobe.com",
+        "*.services.adobe.com",
+        "*.okta.com",
+        "*.live-elements.com",
+        "*.integrations.adobe.com"
+      ],
+      "webApplicationInfo": {
+        "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+        "resource": "api://ccmsteams.integrations.adobe.com/db3ffd5a-6293-4175-8917-43c24e972c19"
+      }
+    },
+    {
+      "manifestVersion": "1.7",
+      "id": "f46ad259-0fe5-4f12-872d-c737b174bcb4",
+      "version": "2.7.0",
+      "name": "Adobe Creative Cloud",
+      "accentColor": "#fa0f00",
+      "amsSellerAccountId": 10100310,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Ne plus recevoir de notifications Creative Cloud",
+                  "title": "Notifications désactivées"
+                },
+                {
+                  "description": "Commencer à recevoir des notifications Creative Cloud",
+                  "title": "Notifications activées"
+                },
+                {
+                  "description": "Se connecter à son compte Creative Cloud",
+                  "title": "Connexion"
+                },
+                {
+                  "description": "Se déconnecter de son compte Creative Cloud",
+                  "title": "Se déconnecter"
+                },
+                {
+                  "description": "Pour nous faire part de vos commentaires sur Creative Cloud dans Teams",
+                  "title": "Commentaires"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "connectors": [
+        {
+          "configurationUrl": "https://ccmsteams.integrations.adobe.com/connector/activity/config?enableSSO=true",
+          "connectorId": "2402bfbb-f952-4a68-aaad-a474daa44412",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "creatorId": "",
+      "developerName": "Adobe",
+      "developerUrl": "https://www.adobe.com/",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://ccmsteams.integrations.adobe.com/tab/ccx/config?enableSSO=true",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "db3ffd5a-6293-4175-8917-43c24e972c19",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "description": "Effectuez une recherche parmi vos actifs Creative Cloud",
+              "fetchTask": false,
+              "id": "searchAsset",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Rechercher dans les fichiers et bibliothèques",
+                  "inputType": "text",
+                  "name": "assetName",
+                  "title": "Requête"
+                }
+              ],
+              "title": "Recherches dans Creative Cloud",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "xd.adobe.com",
+                  "lightroom.adobe.com",
+                  "assets.adobe.com",
+                  "shared-assets.adobe.com",
+                  "adobe.ly"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "adobeApps"
+      ],
+      "languageTag": "fr-fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_largeimage.png",
+      "lastUpdatedAt": "2018-01-18T00:00:00+00:00",
+      "longDescription": "Les créateurs de contenu et les collaborateurs peuvent désormais rechercher, afficher et partager des actifs Adobe Creative Cloud dans Microsoft Teams.",
+      "mpnId": "5281517",
+      "officeAssetId": "WA104381222",
+      "permissions": [],
+      "privacyUrl": "https://www.adobe.com/privacy.html",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Affichez et partagez vos actifs depuis Creative Cloud.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://www.adobe.com/go/CCMsTeamsTabHelp",
+          "entityId": "cc_msteams_ui_tab_static_help",
+          "name": "Aide",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://www.adobe.com/go/ccmsteamshelp"
+        }
+      ],
+      "systemVersion": "2025071113094065",
+      "termsOfUseUrl": "https://www.adobe.com/legal/terms.html",
+      "validDomains": [
+        "*.adobe.com",
+        "*.services.adobe.com",
+        "*.okta.com",
+        "*.live-elements.com",
+        "*.integrations.adobe.com"
+      ],
+      "webApplicationInfo": {
+        "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+        "resource": "api://ccmsteams.integrations.adobe.com/db3ffd5a-6293-4175-8917-43c24e972c19"
+      }
+    },
+    {
+      "manifestVersion": "1.7",
+      "id": "f46ad259-0fe5-4f12-872d-c737b174bcb4",
+      "version": "2.7.0",
+      "name": "Adobe Creative Cloud",
+      "accentColor": "#fa0f00",
+      "amsSellerAccountId": 10100310,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Creative Cloud 通知の受け取りを停止",
+                  "title": "通知オフ"
+                },
+                {
+                  "description": "Creative Cloud 通知の受け取りを開始",
+                  "title": "通知オン"
+                },
+                {
+                  "description": "Creative Cloud アカウントにログイン",
+                  "title": "サインイン"
+                },
+                {
+                  "description": "Creative Cloud アカウントからログアウト",
+                  "title": "ログアウト"
+                },
+                {
+                  "description": "Creative Cloud に関するフィードバックを送信",
+                  "title": "フィードバック"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "connectors": [
+        {
+          "configurationUrl": "https://ccmsteams.integrations.adobe.com/connector/activity/config?enableSSO=true",
+          "connectorId": "2402bfbb-f952-4a68-aaad-a474daa44412",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "creatorId": "",
+      "developerName": "Adobe",
+      "developerUrl": "https://www.adobe.com/",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://ccmsteams.integrations.adobe.com/tab/ccx/config?enableSSO=true",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "db3ffd5a-6293-4175-8917-43c24e972c19",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "description": "Creative Cloud アセットを検索する",
+              "fetchTask": false,
+              "id": "searchAsset",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "ファイルとライブラリを検索",
+                  "inputType": "text",
+                  "name": "assetName",
+                  "title": "クエリ"
+                }
+              ],
+              "title": "Creative Cloud を検索",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "xd.adobe.com",
+                  "lightroom.adobe.com",
+                  "assets.adobe.com",
+                  "shared-assets.adobe.com",
+                  "adobe.ly"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "adobeApps"
+      ],
+      "languageTag": "ja-jp",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_largeimage.png",
+      "lastUpdatedAt": "2018-01-18T00:00:00+00:00",
+      "longDescription": "コンテンツ作成者と共同作業者が、Microsoft Teams 内で Adobe Creative Cloud アセットを検索、表示、共有できるようになりました。",
+      "mpnId": "5281517",
+      "officeAssetId": "WA104381222",
+      "permissions": [],
+      "privacyUrl": "https://www.adobe.com/privacy.html",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Creative Cloud からアセットを表示して共有します。",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://www.adobe.com/go/CCMsTeamsTabHelp",
+          "entityId": "cc_msteams_ui_tab_static_help",
+          "name": "ヘルプ",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://www.adobe.com/go/ccmsteamshelp"
+        }
+      ],
+      "systemVersion": "2025071113094065",
+      "termsOfUseUrl": "https://www.adobe.com/legal/terms.html",
+      "validDomains": [
+        "*.adobe.com",
+        "*.services.adobe.com",
+        "*.okta.com",
+        "*.live-elements.com",
+        "*.integrations.adobe.com"
+      ],
+      "webApplicationInfo": {
+        "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+        "resource": "api://ccmsteams.integrations.adobe.com/db3ffd5a-6293-4175-8917-43c24e972c19"
+      }
+    },
+    {
+      "manifestVersion": "1.7",
+      "id": "f46ad259-0fe5-4f12-872d-c737b174bcb4",
+      "version": "2.7.0",
+      "name": "Adobe Creative Cloud",
+      "accentColor": "#fa0f00",
+      "amsSellerAccountId": 10100310,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Creative Cloud 알림 수신 중지",
+                  "title": "알림 끄기"
+                },
+                {
+                  "description": "Creative Cloud 알림을 수신",
+                  "title": "알림 켜기"
+                },
+                {
+                  "description": "Creative Cloud 계정에 로그인합니다.",
+                  "title": "로그인"
+                },
+                {
+                  "description": "Creative Cloud 계정에서 로그아웃",
+                  "title": "로그아웃"
+                },
+                {
+                  "description": "Teams에서의 Creative Cloud에 대한 피드백 제공",
+                  "title": "피드백"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "supportsFiles": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity",
+        "Utilities"
+      ],
+      "connectors": [
+        {
+          "configurationUrl": "https://ccmsteams.integrations.adobe.com/connector/activity/config?enableSSO=true",
+          "connectorId": "2402bfbb-f952-4a68-aaad-a474daa44412",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "creatorId": "",
+      "developerName": "Adobe",
+      "developerUrl": "https://www.adobe.com/",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://ccmsteams.integrations.adobe.com/tab/ccx/config?enableSSO=true",
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "db3ffd5a-6293-4175-8917-43c24e972c19",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "description": "Creative Cloud 에셋을 통해 검색",
+              "fetchTask": false,
+              "id": "searchAsset",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "파일 및 라이브러리 검색",
+                  "inputType": "text",
+                  "name": "assetName",
+                  "title": "쿼리"
+                }
+              ],
+              "title": "Creative Cloud 검색",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "xd.adobe.com",
+                  "lightroom.adobe.com",
+                  "assets.adobe.com",
+                  "shared-assets.adobe.com",
+                  "adobe.ly"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "adobeApps"
+      ],
+      "languageTag": "ko-kr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_largeimage.png",
+      "lastUpdatedAt": "2018-01-18T00:00:00+00:00",
+      "longDescription": "콘텐츠 제작자와 공동 작업자는 이제 Microsoft Teams 내에서 Adobe Creative Cloud 에셋을 찾고, 보고, 공유할 수 있습니다.",
+      "mpnId": "5281517",
+      "officeAssetId": "WA104381222",
+      "permissions": [],
+      "privacyUrl": "https://www.adobe.com/privacy.html",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/2.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/3.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_screenshot/4.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Creative Cloud에서 에셋을 조회하고 공유합니다.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/f46ad259-0fe5-4f12-872d-c737b174bcb4/2025071113094065/f46ad259-0fe5-4f12-872d-c737b174bcb4_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://www.adobe.com/go/CCMsTeamsTabHelp",
+          "entityId": "cc_msteams_ui_tab_static_help",
+          "name": "도움말",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://www.adobe.com/go/ccmsteamshelp"
+        }
+      ],
+      "systemVersion": "2025071113094065",
+      "termsOfUseUrl": "https://www.adobe.com/legal/terms.html",
+      "validDomains": [
+        "*.adobe.com",
+        "*.services.adobe.com",
+        "*.okta.com",
+        "*.live-elements.com",
+        "*.integrations.adobe.com"
+      ],
+      "webApplicationInfo": {
+        "id": "db3ffd5a-6293-4175-8917-43c24e972c19",
+        "resource": "api://ccmsteams.integrations.adobe.com/db3ffd5a-6293-4175-8917-43c24e972c19"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Adobe Creative Cloud, can you help me access my design files?",
+      "description": "A user asking the bot to help them view their design files stored in Creative Cloud."
+    },
+    {
+      "prompt": "@Adobe Creative Cloud, please turn on notifications.",
+      "description": "A user requesting the bot to enable notifications for updates or changes in Creative Cloud assets.",
+      "command": "Notifications On"
+    },
+    {
+      "prompt": "@Adobe Creative Cloud, how do I sign out?",
+      "description": "A user asking the bot for assistance with signing out of their Creative Cloud account.",
+      "command": "Sign Out"
+    }
+  ]
+}

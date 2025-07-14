@@ -1,0 +1,379 @@
+{
+  "manifestVersion": "1.12",
+  "id": "a0971308-23f7-47e4-99d5-8859001a1795",
+  "version": "1.0.26",
+  "name": "Ideas (Australia)",
+  "accentColor": "#FFFFFF",
+  "activities": {
+    "activityTypes": [
+      {
+        "description": "Idea related notifications",
+        "templateText": "{content}",
+        "type": "ideaActivity"
+      },
+      {
+        "description": "Campaign related notifications",
+        "templateText": "{content}",
+        "type": "campaignActivity"
+      },
+      {
+        "description": "User related notifications",
+        "templateText": "{content}",
+        "type": "userActivity"
+      }
+    ]
+  },
+  "amsSellerAccountId": 67076480,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "TeamsActivity.Send.User",
+          "type": "Application"
+        },
+        {
+          "name": "InAppPurchase.Allow.User",
+          "type": "Delegated"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "d80eebeb-46fe-4a5c-8697-a33d498687a0",
+      "isNotificationOnly": true,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Social",
+    "WorkflowAndBusinessManagement"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor",
+    "privacyUrl",
+    "termsOfUseUrl"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Sideways 6",
+  "developerUrl": "https://www.sideways6.com/integrations/microsoft-teams-idea-management-software",
+  "galleryTabs": [],
+  "industries": [
+    "Manufacturing",
+    "Retail"
+  ],
+  "inputExtensions": [],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "idea management",
+    "innovation",
+    "employee engagement"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_largeimage.png",
+  "lastUpdatedAt": "2025-03-11T10:16:45.6854992+00:00",
+  "longDescription": "Turn collaboration into innovation in three steps, all from right within Microsoft Teams:\n**Solve challenges with employee ideas**\nRun campaigns to collect ideas from employees - the people who know the organisation best.\n**Identify your best ideas**\nVote and collaborate on ideas as a team. Go from many ideas to those with the greatest potential.\n**Turn ideas into solutions**\nCreate project teams around winning ideas. Collaborate, develop and bring ideas to life.\nTo start using the application, Install the app and start your free trial. After your free trial, you can create your subscription from the user management screen or the Teams App Store. If you are an enterprise customer with more than 500 users please contact us at [teams@sideways6.com](mailto:teams@sideways6.com)\nThis application is only available in Australia.",
+  "mpnId": "4813605",
+  "officeAssetId": "WA200008277",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.sideways6.com/terms-and-policies/privacy-notice-for-ideas-by-sideways-6",
+  "publisherDocsUrl": "https://help.sideways6.com/en/articles/4854749-installing-ideas-app-in-microsoft-teams",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Capture, shortlist and bring ideas to life all in one place.",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://cdn-au.sideways6.com/apps/teams",
+      "entityId": "index",
+      "name": "Campaigns",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://cdn-au.sideways6.com/apps/teams/settings",
+      "entityId": "settings",
+      "name": "Settings",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://cdn-au.sideways6.com/apps/teams/help",
+      "entityId": "help",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "subscriptionOffer": {
+    "isEligibleForAzureBenefits": false,
+    "offerId": "sideways6.sidewayssix_australia"
+  },
+  "systemVersion": "2025071113425331",
+  "termsOfUseUrl": "https://www.sideways6.com/terms-and-policies/terms-of-service",
+  "validDomains": [
+    "cdn-au.sideways6.com",
+    "au.sideways6.com"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=_mTBAtwBjAY",
+  "webApplicationInfo": {
+    "id": "aeb3e270-bbba-411b-8820-058db42f9b68",
+    "resource": "api://cdn-au.sideways6.com/aeb3e270-bbba-411b-8820-058db42f9b68"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "fr"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.12",
+      "id": "a0971308-23f7-47e4-99d5-8859001a1795",
+      "version": "1.0.26",
+      "name": "Idées (Australie)",
+      "accentColor": "#FFFFFF",
+      "activities": {
+        "activityTypes": [
+          {
+            "description": "Notifications liées aux idées",
+            "templateText": "{content}",
+            "type": "ideaActivity"
+          },
+          {
+            "description": "Notifications liées à la campagne",
+            "templateText": "{content}",
+            "type": "campaignActivity"
+          },
+          {
+            "description": "Notifications liées à l'utilisateur",
+            "templateText": "{content}",
+            "type": "userActivity"
+          }
+        ]
+      },
+      "amsSellerAccountId": 67076480,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": [
+            {
+              "name": "TeamsActivity.Send.User",
+              "type": "Application"
+            },
+            {
+              "name": "InAppPurchase.Allow.User",
+              "type": "Delegated"
+            }
+          ]
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "d80eebeb-46fe-4a5c-8697-a33d498687a0",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Social",
+        "WorkflowAndBusinessManagement"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Sideways 6",
+      "developerUrl": "https://www.sideways6.com/integrations/microsoft-teams-idea-management-software",
+      "galleryTabs": [],
+      "industries": [
+        "Manufacturing",
+        "Retail"
+      ],
+      "inputExtensions": [],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "idea management",
+        "innovation",
+        "employee engagement"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_largeimage.png",
+      "lastUpdatedAt": "2025-03-11T10:16:45.6854992+00:00",
+      "longDescription": "Transformez la collaboration en innovation en trois étapes, directement depuis Microsoft Teams:\n**Résolvez les défis grâce aux idées des employés**\nMenez des campagnes pour recueillir les idées des employés, ceux qui connaissent le mieux l'organisation.\n**Identifiez vos meilleures idées**\nVotez et collaborez sur des idées en équipe. Passez des nombreuses idées à celles qui ont le plus grand potentiel.\n**Transformez vos idées en solutions**\nCréez des équipes projets autour d’idées gagnantes. Collaborer, développer et donner vie à des idées.\nPour commencer à utiliser l'application, installez l'application et démarrez votre essai gratuit. Après votre essai gratuit, vous pouvez créer votre abonnement depuis l'écran de gestion des utilisateurs ou depuis l'App Store Teams. Si vous êtes une entreprise cliente comptant plus de 500 utilisateurs, veuillez nous contacter à [teams@sideways6.com](mailto:teams@sideways6.com)\nCette application est uniquement disponible en Australie.",
+      "mpnId": "4813605",
+      "officeAssetId": "WA200008277",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.sideways6.com/terms-and-policies/privacy-notice-for-ideas-by-sideways-6",
+      "publisherDocsUrl": "https://help.sideways6.com/en/articles/4854749-installing-ideas-app-in-microsoft-teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Capturez, présélectionnez et donnez vie à vos idées en un seul endroit.",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/a0971308-23f7-47e4-99d5-8859001a1795/2025071113425331/a0971308-23f7-47e4-99d5-8859001a1795_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://cdn-au.sideways6.com/apps/teams",
+          "entityId": "index",
+          "name": "Campagnes",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://cdn-au.sideways6.com/apps/teams/settings",
+          "entityId": "settings",
+          "name": "Paramètres",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://cdn-au.sideways6.com/apps/teams/help",
+          "entityId": "help",
+          "name": "Aide",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": false,
+        "offerId": "sideways6.sidewayssix_australia"
+      },
+      "systemVersion": "2025071113425331",
+      "termsOfUseUrl": "https://www.sideways6.com/terms-and-policies/terms-of-service",
+      "validDomains": [
+        "cdn-au.sideways6.com",
+        "au.sideways6.com"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=_mTBAtwBjAY",
+      "webApplicationInfo": {
+        "id": "aeb3e270-bbba-411b-8820-058db42f9b68",
+        "resource": "api://cdn-au.sideways6.com/aeb3e270-bbba-411b-8820-058db42f9b68"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Ideas (Australia) capture new idea: Develop a mobile app for remote team collaboration with seamless integration.",
+      "description": "User wants to capture a new idea for a mobile app that enhances remote team collaboration."
+    },
+    {
+      "prompt": "@Ideas (Australia) shortlist ideas from last week's brainstorming session.",
+      "description": "User requests the bot to shortlist the ideas generated during the previous week's brainstorming session."
+    },
+    {
+      "prompt": "@Ideas (Australia) bring to life the idea of creating an eco-friendly packaging solution.",
+      "description": "User instructs the bot to initiate the process of implementing an idea focused on developing an eco-friendly packaging solution."
+    }
+  ]
+}

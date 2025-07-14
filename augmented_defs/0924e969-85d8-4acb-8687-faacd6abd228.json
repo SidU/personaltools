@@ -1,0 +1,3637 @@
+{
+  "manifestVersion": "1.12",
+  "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+  "version": "2.7",
+  "name": "Cisco Call",
+  "accentColor": "#3376d0",
+  "amsSellerAccountId": 69405440,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+      "isNotificationOnly": true,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor",
+    "developerUrl",
+    "privacyUrl",
+    "termsOfUseUrl"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Cisco",
+  "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "",
+          "fetchTask": false,
+          "id": "call",
+          "initialRun": false,
+          "taskInfo": {
+            "height": "440",
+            "url": "https://msteams-calling.webex.com/message-extension",
+            "width": "600"
+          },
+          "title": " ",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+  "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+  "longDescription": "With Cisco Call for Microsoft Teams, users now have access to the enterprise-grade Cisco Calling experience directly in the Teams desktop app. Accessible with a single click from the Microsoft Teams interface, users have access to a complete suite of Cisco Calling features including directory search, PSTN dialing, speed dial, access to voicemail and call history, and our award-winning artificial intelligence-powered background noise removal.\r\n Cisco Call for Microsoft Teams is seamless and eliminates the need to switch between apps to make and receive voice or video calls. This integrated app works with Cisco Unified Communications Manager (UCM) call-control solution and any Cisco Cloud Calling solution, including Webex Calling multi-tenant and Dedicated Instance. In order to use Cisco Call for Microsoft Teams, users must have an active Cisco Webex account. For more information please visit [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+  "mpnId": "2332068",
+  "officeAssetId": "WA200001495",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+  "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Harness the powerful, enterprise-grade Cisco Calling within Microsoft Teams",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://msteams-calling.webex.com/",
+      "entityId": "webexCallTab",
+      "name": "Call",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115294286",
+  "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+  "validDomains": [
+    "*.wbx2.com",
+    "*.webex.com"
+  ],
+  "webApplicationInfo": {
+    "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+    "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "cy",
+    "da",
+    "de",
+    "es",
+    "fr",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "no",
+    "pl",
+    "pt-br",
+    "pt",
+    "ru",
+    "sv",
+    "tr",
+    "zh-cn",
+    "zh-tw"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "cy",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Gyda Cisco Call ar gyfer Microsoft Teams, mae gan ddefnyddwyr bellach fynediad at brofiad Cisco Calling o safon fenter yn uniongyrchol yn ap bwrdd gwaith Teams. Yn hygyrch gydag un clic o ryngwyneb Timau Microsoft, mae gan ddefnyddwyr fynediad i gyfres gyflawn o nodweddion Cisco Calling gan gynnwys chwilio cyfeiriadur, deialu PSTN, deialu cyflym, mynediad at negeseuon llais a hanes galwadau, a'n system tynnu sŵn cefndir arobryn sydd wedi'i bweru gan ddeallusrwydd artiffisial.\r\n Mae Cisco Call for Microsoft Teams yn ddidrafferth ac yn dileu'r angen i newid rhwng apiau i wneud a derbyn galwadau llais neu fideo. Mae'r ap integredig hwn yn gweithio gyda datrysiad rheoli galwadau Cisco Unified Communications Manager (UCM) ac unrhyw ddatrysiad Cisco Cloud Calling, gan gynnwys aml-denant Webex Calling ac Instance Dedicated. Er mwyn defnyddio Cisco Call ar gyfer Microsoft Teams, mae'n hanfodol i ddefnyddwyr feddu ar gyfrif Cisco Webex gweithredol. Am ragor o wybodaeth ewch i [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Manteisiwch ar bwerau safon-menter Cisco Calling o fewn Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Ffonio",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco-opkald",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "da",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Med Cisco Call til Microsoft Teams har brugere nu adgang til den professionelle Cisco Calling-oplevelse direkte i Teams-desktopappen. Brugerne har adgang til en hel pakke af Webex Calling-funktioner i Microsoft Teams med et enkelt klik i brugergrænsefladen, herunder katalogsøgning, PSTN-opkald, hurtigopkald, adgang til voicemail og opkaldshistorik samt vores prisbelønnede kunstige intelligens, der kan fjerne baggrundsstøj.\r\n Cisco Call til Microsoft Teams er problemfrit og fjerner behovet for at skifte mellem apps for at foretage og modtage tale- eller videoopkald. Denne integrerede app fungerer sammen med UCM-løsningen (Cisco Unified Communications Manager) til opkaldskontrol og alle Cisco Cloud Calling-løsning, herunder Webex Calling til flere lejere og dedikerede forekomster. For at bruge Cisco Call til Microsoft Teams er det vigtigt, at brugerne har en aktiv Cisco Webex-konto. Hvis du ønsker yderligere oplysninger, kan du gå til [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Administrer det effektive Cisco Calling til professionel brug i Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Ring",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Mit Cisco Calling für Microsoft Teams haben die Benutzer nun direkt in der Teams-Desktop-App Zugriff auf die Cisco Calling-Erfahrung für Unternehmen. Sie können über die Benutzeroberfläche von Microsoft Teams auf eine vollständige Suite von Cisco Calling-Funktionen wie Verzeichnissuche, Festnetz-Wahl, Kurzwahl, Zugriff auf Voicemail und Anrufprotokoll sowie unsere preisgekrönte KI-gesteuerte Entfernung von Hintergrundgeräuschen.\r\nCisco Calling für Microsoft Teams ist nahtlos, denn Sie müssen nicht zwischen Apps wechseln, um Sprach- oder Videoanrufe zu tätigen und zu empfangen. Diese integrierte App funktioniert mit der Anrufsteuerungslösung Cisco Unified Communications Manager (UCM) und allen Cisco Cloud Calling-Lösungen, einschließlich dem mehrinstanzfähigen Webex Calling und der dedizierten Instanz. Um Cisco Call für Microsoft Teams nutzen zu können, müssen die Benutzer über ein aktives Cisco Webex-Konto verfügen. Weitere Informationen finden Sie unter https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Nutzen Sie das leistungsstarke Cisco Calling für Unternehmen in Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Anrufen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Con Cisco Call para Microsoft Teams, los usuarios ahora tienen acceso a la experiencia de Cisco Calling de nivel empresarial directamente en la aplicación de escritorio de Teams. Con un solo clic desde la interfaz de Microsoft Teams, los usuarios tienen acceso a un conjunto completo de funciones de Cisco Calling, entre las que se incluyen la búsqueda en directorios, la marcación RTC, la marcación rápida, el acceso al buzón de voz y al historial de llamadas, y nuestra galardonada eliminación del ruido de fondo impulsada por inteligencia artificial.\r\nCisco Call para Microsoft Teams se integra perfectamente y elimina la necesidad de cambiar entre aplicaciones para realizar y recibir llamadas de voz o vídeo. Esta aplicación integrada funciona con la solución de control de llamadas Cisco Unified Communications Manager (UCM) y cualquier solución de llamadas en la nube de Cisco, incluyendo Webex Calling multiinquilino y la instancia dedicada. Para poder utilizar Cisco Call para Microsoft Teams, es imprescindible que los usuarios dispongan de una cuenta activa de Cisco Webex. Para obtener más información, visite [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Aproveche el eficaz software Cisco Calling empresarial dentro de Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Llamar",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Avec Cisco Call pour Microsoft Teams, les utilisateurs bénéficient désormais de l'expérience d'appels Cisco de niveau entreprise directement au sein de l'application de bureau Teams. D'un simple clic depuis l'interface Microsoft Teams, ils accèdent à un ensemble complet de fonctionnalités Cisco Calling : recherche dans l'annuaire, numérotation RTC, numérotation rapide, accès à la messagerie vocale et à l'historique des appels, ainsi qu'à notre technologie de suppression des bruits de fond primée, alimentée par l'intelligence artificielle.\r\nCisco Call pour Microsoft Teams s'intègre de manière fluide, évitant ainsi aux utilisateurs de jongler entre différentes applications pour émettre ou recevoir des appels vocaux ou vidéo. Cette application intégrée est compatible avec la solution de contrôle des appels Cisco Unified Communications Manager (UCM) ainsi que toutes les solutions Cisco Cloud Calling, y compris Webex Calling en mode multi-locataire et Dedicated Instance. Pour pouvoir utiliser Cisco Call pour Microsoft Teams, les utilisateurs doivent disposer d'un compte Cisco Webex actif. Pour plus d'informations, visitez le site suivant : [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Exploitez la puissance professionnelle de Cisco Calling dans Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Appeler",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "id",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Dengan Cisco Call for Microsoft Teams, pengguna kini memiliki akses ke pengalaman Cisco Calling tingkat perusahaan langsung di aplikasi desktop Teams. Dapat diakses dengan satu klik dari antarmuka Microsoft Teams, pengguna memiliki akses ke rangkaian lengkap fitur Cisco Calling termasuk pencarian direktori, panggilan PSTN, panggilan cepat, akses ke pesan suara dan riwayat panggilan, serta penghilang kebisingan latar belakang yang didukung kecerdasan buatan pemenang penghargaan.\r\nCisco Call for Microsoft Teams berjalan lancar dan menghilangkan kebutuhan untuk beralih antara aplikasi untuk melakukan dan menerima panggilan suara atau video. Aplikasi terintegrasi ini bekerja dengan solusi kontrol panggilan Cisco Unified Communications Manager (UCM) dan solusi Cisco Cloud Calling apa pun, termasuk Webex Calling multi-tenant dan Dedicated Instance. Untuk menggunakan Cisco Call for Microsoft Teams, pengguna harus memiliki akun Cisco Webex yang aktif. Untuk informasi lebih lanjut, [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Manfaatkan keunggulan Cisco Calling untuk perusahaan di Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Panggil",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Con Cisco Call per Microsoft Teams, gli utenti hanno ora accesso all'esperienza Cisco Calling di livello enterprise direttamente nell'app desktop di Teams. Accessibile con un solo clic dall'interfaccia di Microsoft Teams, gli utenti hanno accesso a una suite completa di funzionalità di Cisco Calling, tra cui la ricerca nella rubrica, la composizione PSTN, le chiamate rapide, l'accesso alla casella vocale e alla cronologia chiamate e la nostra pluripremiata rimozione del rumore di fondo basata sull'intelligenza artificiale. L'integrazione di Cisco Call per Microsoft Teams è perfetta ed elimina la necessità di passare da un'app all'altra per effettuare e ricevere chiamate vocali o video. \r\nQuesta app integrata funziona con la soluzione di controllo delle chiamate Cisco Unified Communications Manager (UCM) e con qualsiasi soluzione Cisco Cloud Calling, compresa Webex Calling multi-tenant e Dedicated Instance. Per utilizzare Cisco Call per Microsoft Teams, è essenziale che gli utenti posseggano un account Cisco Webex attivo. Per ulteriori informazioni, visitare [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Sfrutta l'avanzato Cisco Calling aziendale all'interno di Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Chiama",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "ja",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Microsoft Teams 向け Cisco Call により、ユーザーは Teams デスクトップアプリからエンタープライズグレードの Cisco Calling エクスペリエンスに直接アクセスできるようになりました。ユーザーは Microsoft Teams インターフェイスからワンクリックでアクセスでき、ディレクトリの検索、PSTN ダイヤル、短縮ダイヤル、ボイスメールと通話履歴へのアクセス、そして受賞歴のある人工知能を活用したバックグラウンドノイズ除去などを含む Cisco Calling の一連の機能にアクセスできます。\r\n Microsoft Teams 向け Cisco Call はシームレスに統合され、音声通話やビデオコールを受発信するためにアプリを切り替える必要がなくなります。この統合アプリは、Cisco Unified Communications Manager（UCM）呼制御ソリューション、Webex Calling マルチテナントと専用インスタンスを含むあらゆる Cisco Cloud Calling ソリューションと連携します。Microsoft Teams 向け Cisco Call 使用するには、アクティブな Cisco Webex アカウントを保有している必要があります。詳細については、[https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams]（https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams）を参照してください。",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Microsoft Teams でエンタープライズクラスの強力な Cisco Calling を活用する",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "発信",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "ko",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Microsoft Teams용 Cisco 통화를 사용하면 사용자가 Teams 데스크톱 앱에서 직접 엔터프라이즈급의 Cisco 통화 환경에 액세스할 수 있습니다. Microsoft Teams 인터페이스에서 한 번의 클릭으로 액세스할 수 있으며, 사용자는 디렉터리 검색, PSTN 전화걸기, 단축 다이얼, 음성 메일 및 통화 기록에 대한 액세스, 수상 경력에 빛나는 인공 지능 지원 배경 소음 제거 등을 포함한 전체 Cisco 통화 제품군 기능에 액세스할 수 있습니다.\r\nMicrosoft Teams용 Cisco 통화 통합은 원활하게 작동하며 음성 또는 영상 통화를 걸고 받기 위해 앱 간에 전환할 필요가 없습니다. 이 통합 앱은 Cisco Unified Communications Manager(UCM) 통화 제어 솔루션 및 Webex Calling 멀티테넌트 및 전용 인스턴스를 포함한 모든 Cisco Cloud Calling 솔루션과 함께 작동합니다. Microsoft Teams용 Cisco 통화를 사용하려면 사용자가 활성 Cisco Webex 계정을 보유하고 있어야 합니다. 자세한 내용은 [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams)를 방문하십시오.",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Microsoft Teams 내에서 강력한 엔터프라이즈급 Cisco Calling 사용",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "통화",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "nl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Met Cisco Call voor Microsoft Teams hebben gebruikers nu rechtstreeks vanuit de Teams-desktopapp toegang tot de professionele Cisco Calling-ervaring. Vanuit de Microsoft Teams-interface heeft de gebruiker met één klik toegang tot een volledige suite aan Cisco Calling-functies, zoals zoeken in telefoonlijst, PSTN-kiezen, snelkeuze, toegang tot voicemail en gespreksgeschiedenis en onze bekroonde functie voor het onderdrukken van achtergrondgeluiden met ondersteuning via AI.\r\nCisco Call voor Microsoft Teams is naadloos en voorkomt dat u tussen toepassingen moet schakelen om spraak- of videogesprekken te plaatsen en te ontvangen. Deze geïntegreerde app werkt met de Cisco Unified Communications Manager-oplossing voor gespreksbeheer (UCM) en met alle Cisco Cloud Calling-oplossingen, inclusief Webex Calling voor meerdere tenanten of het Specifieke exemplaar-aanbod. Gebruikers moeten een actieve Cisco Webex-account hebben om Cisco Call voor Microsoft Teams te kunnen gebruiken. Ga voor meer informatie naar [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Profiteer van het krachtige, professionele Cisco Calling binnen Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Bellen",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "no",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Med Cisco Call for Microsoft Teams har brukere nå tilgang til Cisco Calling-opplevelsen på bedriftsnivå direkte i Teams skrivebordsapp. Den er Tilgjengelig med ett klikk fra Microsoft teams-grensesnittet og brukere har tilgang til en komplett pakke med Cisco Calling-funksjoner, inkludert katalogsøk, PSTN-oppringing, kortnummer, tilgang til talepost og anropshistorikk samt vår prisbelønte kunstig intelligensdrevne reduksjon av bakgrunnsstøy.\r\n Cisco Call for Microsoft Teams er sømløst og eliminerer behovet for å veksle mellom apper for å foreta og motta tale- eller videosamtaler. Denne integrerte appen fungerer med Cisco Unified Communications Manager (UCM) samtalestyringsløsning, og enhver Cisco Cloud Calling-løsning, inkludert Webex Calling multileier og dedikert forekomst. For å kunne bruke Cisco Call for Microsoft Teams, er det viktig at brukere har en aktiv Cisco Webex-konto. For mer informasjon, se [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams] (https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Utnytt kraftige Cisco Calling i bedriftsklasse i Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Ring",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "pl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Dzięki Cisco Call dla Microsoft Teams użytkownicy mają teraz dostęp do środowiska Cisco Calling – rozwiązania klasy korporacyjnej – bezpośrednio w aplikacji na komputery stacjonarne Teams. Wystarczy wykonać jedno kliknięcie z poziomu interfejsu Microsoft Teams. Użytkownicy mają dostęp do pełnego zestawu funkcji Cisco Calling, w tym wyszukiwania w książce telefonicznej, wybierania PSTN, szybkiego wybierania, dostępu do poczty głosowej i historii połączeń oraz naszego wielokrotnie nagradzanego, opartego na sztucznej inteligencji rozwiązania umożliwiającego usuwanie szumów tła.\r\n Integracja Cisco Call dla Microsoft Teams jest płynna i eliminuje potrzebę przełączania się między aplikacjami w celu nawiązywania i odbierania połączeń głosowych lub wideo. Ta zintegrowana aplikacja współpracuje z rozwiązaniem do kontroli połączeń Cisco Unified Communications Manager (UCM), Webex Calling do wdrożenia w chmurze i dowolnym rozwiązaniem Cisco Cloud Calling, w tym Webex Calling z wieloma dzierżawami i ofertą Dedicated Instance. Aby korzystać z Cisco Call dla Microsoft Teams, użytkownicy muszą posiadać aktywne konto Cisco Webex. Więcej informacji można znaleźć na stronie [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Potężne, korporacyjnej klasy rozwiązanie Cisco Calling w Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Połącz",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Com o Cisco Call para Microsoft Teams, os usuários agora têm acesso à experiência Cisco Calling de nível empresarial diretamente no aplicativo de área de trabalho do Teams. Acessível com um único clique a partir da interface do Microsoft Teams, os usuários têm acesso a um conjunto completo de recursos do Webex Calling, incluindo pesquisa de diretório, discagem de PSTN, discagem rápida, acesso ao correio de voz e ao histórico de chamadas e a nossa premiada remoção de ruído de fundo alimentada por inteligência artificial.\r\n O Cisco Call para Microsoft Teams é perfeito e elimina a necessidade de alternar entre aplicativos para fazer e receber chamadas de voz ou de vídeo. Esse aplicativo integrado funciona com a solução de controle de chamadas Cisco Unified Communications Manager (UCM) e qualquer solução Cisco Cloud Calling, incluindo o Webex Calling para vários usuários e instância dedicada. Para usar o Cisco Call para Microsoft Teams, os usuários devem ter uma conta ativa do Cisco Webex. Para obter mais informações, acesse [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Aproveite o poderoso Cisco Calling de nível empresarial no Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Chamada",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "pt-br",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Com o Cisco Call para Microsoft Teams, os usuários agora têm acesso à experiência Cisco Calling de nível empresarial diretamente no aplicativo de área de trabalho do Teams. Acessível com um único clique a partir da interface do Microsoft Teams, os usuários têm acesso a um conjunto completo de recursos do Webex Calling, incluindo pesquisa de diretório, discagem de PSTN, discagem rápida, acesso ao correio de voz e ao histórico de chamadas e a nossa premiada remoção de ruído de fundo alimentada por inteligência artificial.\r\n O Cisco Call para Microsoft Teams é perfeito e elimina a necessidade de alternar entre aplicativos para fazer e receber chamadas de voz ou de vídeo. Esse aplicativo integrado funciona com a solução de controle de chamadas Cisco Unified Communications Manager (UCM) e qualquer solução Cisco Cloud Calling, incluindo o Webex Calling para vários usuários e instância dedicada. Para usar o Cisco Call para Microsoft Teams, os usuários devem ter uma conta ativa do Cisco Webex. Para obter mais informações, acesse [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Aproveite o poderoso Cisco Calling de nível empresarial no Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Chamada",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "ru",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Cisco Call for Microsoft Teams предоставляет широкие возможности корпоративной телефонии Cisco Calling прямо в классическом приложении Teams. Достаточно нажать всего одну кнопку в интерфейсе Microsoft Teams, и у вас под рукой окажутся все функции Cisco Calling, включая поиск абонента, вызовы в ТСОП, быстрый набор, голосовую почту, журнал вызовов и нашу технологию удаления фонового шума с помощью ИИ, получившую множество наград.\r\nТесная интеграция Cisco Call for Microsoft Teams избавляет от необходимости переключаться между приложениями для голосовых и видеовызовов. Это интегрированное приложение работает с решением для управления вызовами Cisco Unified Communications Manager (UCM) и всеми решениями Cisco Cloud Calling, включая многоклиентские и выделенные экземпляры Webex Calling. Чтобы общаться в Cisco Call for Microsoft Teams, пользователям необходима активная учетная запись Cisco Webex. Дополнительную информацию см. на странице [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Получите все возможности корпоративной телефонии Cisco Calling в Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Вызов",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "sv",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Med Cisco Call för Microsoft Teams har användarna nu åtkomst till företagets Cisco Calling‑upplevelse direkt i Teams skrivbordsapp. Med ett enda klick från gränssnittet i Microsoft Teams har användarna åtkomst till en komplett svit med Cisco Calling‑funktioner, inklusive katalogsökning, PSTN-uppringning, snabbval, åtkomst till röstmeddelanden och samtalshistorik samt vår prisbelönta funktion för borttagning av bakgrundsljud, som bygger på artificiell intelligens.\r\n Vår integration av Cisco Call med Microsoft Teams är sömlös och eliminerar behovet av att växla mellan appar för att ringa och ta emot röst- eller videosamtal. Den här integrerade appen fungerar med Cisco Unified Communications Managers (UCM) funktion för samtalskontroll och alla Cisco Cloud Calling‑lösningar, inklusive Webex Calling för flera klienter och Dedicated Instance‑erbjudandet. För att använda Cisco Call för Microsoft Teams, måste användare ha ett aktivt Cisco Webex‑konto. Mer information finns på [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams).",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Utnyttja den kraftfulla Cisco Calling i företagskvalitet inom Microsoft Teams",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Ring",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "tr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "Microsoft Teams için Cisco Call sayesinde kullanıcılar artık kurumsal düzeyde Cisco Calling deneyimine doğrudan Teams masaüstü uygulamasından erişebilir. Microsoft Teams arayüzünden tek bir tıklamayla erişim sayesinde kullanıcılar; dizin arama, PSTN arama, hızlı arama, sesli mesaja ve çağrı geçmişine erişim ve ödüllü yapay zeka destekli arka plan gürültüsü giderme özelliğimiz gibi Cisco Calling özelliklerinin tamamına erişebilir.\r\nMicrosoft Teams için Cisco Call, sorunsuz bir şekilde çalışır ve sesli veya görüntülü arama yapmak ve almak için uygulamalar arasında geçiş yapma ihtiyacını ortadan kaldırır. Bu entegre uygulama, Cisco Unified Communications Manager (UCM) çağrı kontrol çözümü ve Webex Calling çoklu kiracı ile Dedicated Instance dâhil tüm Cisco Cloud Calling çözümleriyle çalışır. Microsoft Teams için Cisco Call'u kullanabilmek için kullanıcıların aktif bir Cisco Webex hesabına sahip olmaları gerekmektedir. Daha fazla bilgi için lütfen [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams) adresini ziyaret edin.",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Microsoft Teams'de güçlü, kurumsal düzeydeki Cisco Calling'den yararlanın",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "Ara",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "zh-cn",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "借助适用于 Microsoft Teams 的 Cisco Call，用户现在可以直接在 Teams 桌面应用程序中获得企业级 Cisco Calling 体验。用户只需在 Microsoft Teams 界面单击一下，即可访问一整套 Cisco Calling 功能，包括目录搜索、PSTN 拨号、快速拨号、访问语音信箱和呼叫历史记录，以及我们屡获殊荣并采用人工智能技术的背景噪音消除功能。\r\nCisco Call for Microsoft Teams 可实现无缝连接，无需在不同应用程序之间切换，即可拨打和接听语音或视频呼叫。此集成应用程序可与 Cisco Unified Communications Manager (UCM) 呼叫控制解决方案和任何 Cisco Cloud Calling 解决方案（包括 Webex Calling 多租户和专用实例）配合使用。要使用 Cisco Call for Microsoft Teams，用户必须拥有一个处于活动状态的 Cisco Webex 帐户。有关详细信息，请访问 [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams)。",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "在 Microsoft Teams 内利用强大的企业级 Cisco Calling",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "呼叫",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    },
+    {
+      "manifestVersion": "1.12",
+      "id": "0924e969-85d8-4acb-8687-faacd6abd228",
+      "version": "2.7",
+      "name": "Cisco Call",
+      "accentColor": "#3376d0",
+      "amsSellerAccountId": 69405440,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "isNotificationOnly": true,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Cisco",
+      "developerUrl": "https://www.cisco.com/c/en/us/solutions/collaboration/webex-teams.html",
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "263d10a3-85d9-493b-9593-984d0e28a895",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "",
+              "fetchTask": false,
+              "id": "call",
+              "initialRun": false,
+              "taskInfo": {
+                "height": "440",
+                "url": "https://msteams-calling.webex.com/message-extension",
+                "width": "600"
+              },
+              "title": " ",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "languageTag": "zh-tw",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_largeimage.png",
+      "lastUpdatedAt": "2025-05-23T11:46:40.8589557+00:00",
+      "longDescription": "有了 Microsoft Teams 專屬的 Cisco Call，使用者現在可以直接透過 Teams 桌面應用程式存取企業級的 Cisco Call 體驗。只需從 Microsoft Teams 介面點擊一下，使用者就可以存取完整的 Cisco Call 功能，包括目錄搜尋、PSTN 撥號、快速撥號、存取語音信箱和通話歷史記錄，以及我們屢獲殊榮的人工智慧背景消噪功能。\r\n我們的 Cisco Call for Microsoft Teams 整合流暢無縫，無需在應用程式之間切換也可撥打和接聽語音或視訊通話。該整合應用程式可與 Cisco Unified Communications Manager (UCM) 通話控制解決方案以及任何 Cisco Cloud Call 解決方案，包括 Webex Calling 多租使用者及專用實例產品搭配使用。為了使用 Microsoft Teams 專屬的 Cisco Call，使用者必須擁有一個有效的 Cisco Webex 帳戶。有關更多資訊，請瀏覽 [https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams](https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams)。",
+      "mpnId": "2332068",
+      "officeAssetId": "WA200001495",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+      "publisherDocsUrl": "https://help.webex.com/en-us/article/ngmx08cb/Webex-Calling-for-Microsoft-Teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "善用 Microsoft Teams 強大的企業級 Cisco Call",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/0924e969-85d8-4acb-8687-faacd6abd228/2025071115294286/0924e969-85d8-4acb-8687-faacd6abd228_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://msteams-calling.webex.com/",
+          "entityId": "webexCallTab",
+          "name": "通話",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115294286",
+      "termsOfUseUrl": "https://www.cisco.com/c/en/us/products/universal-cloud-agreement.html",
+      "validDomains": [
+        "*.wbx2.com",
+        "*.webex.com"
+      ],
+      "webApplicationInfo": {
+        "id": "263d10a3-85d9-493b-9593-984d0e28a895",
+        "resource": "api://msteams-calling.webex.com/263d10a3-85d9-493b-9593-984d0e28a895"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Cisco Call start a new call with John Doe",
+      "description": "The user wants to initiate a new call through Cisco Calling with a contact named John Doe."
+    },
+    {
+      "prompt": "@Cisco Call schedule a conference call for tomorrow at 10 AM with the sales team",
+      "description": "The user is looking to schedule a conference call at a specified time with a group labeled as the sales team."
+    },
+    {
+      "prompt": "@Cisco Call end my current call",
+      "description": "The user wants to terminate their ongoing call using Cisco Calling within Teams."
+    }
+  ]
+}

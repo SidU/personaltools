@@ -1172,19 +1172,19 @@
   ],
   "examplePrompts": [
     {
-      "prompt": "@360Learning Can you simplify the workflow for our next project?",
-      "description": "The user is asking the bot for assistance in streamlining processes for an upcoming project.",
-      "command": null
+      "prompt": "@360Learning Create a new course on Project Management",
+      "description": "User requests the bot to initiate the creation of a new course within the 360Learning platform.",
+      "command": "create_course"
     },
     {
-      "prompt": "@360Learning How do I integrate 360Learning with Teams for better collaboration?",
-      "description": "The user is seeking guidance on integrating 360Learning into Microsoft Teams to enhance team collaboration.",
-      "command": null
+      "prompt": "@360Learning Show my current learning progress",
+      "description": "User wants to check their learning progress and completed courses within 360Learning.",
+      "command": "show_progress"
     },
     {
-      "prompt": "@360Learning What are some tips to improve our training programs using 360Learning?",
-      "description": "The user is asking for suggestions on how to enhance their training programs by utilizing 360Learning features.",
-      "command": null
+      "prompt": "@360Learning Notify me about upcoming deadlines",
+      "description": "User asks the bot to provide reminders for upcoming deadlines related to their courses and tasks.",
+      "command": "set_notifications"
     }
   ]
 }

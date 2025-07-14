@@ -1138,18 +1138,18 @@
   "examplePrompts": [
     {
       "prompt": "@Cisco Webex Meetings help",
-      "description": "The user wants assistance with the available commands and functionalities of the Cisco Webex Meetings bot.",
+      "description": "User asks for help with the Cisco Webex Meetings bot.",
       "command": "help"
     },
     {
       "prompt": "@Cisco Webex Meetings join 123456789",
-      "description": "The user wants to join a Webex meeting directly using the meeting number.",
+      "description": "User wants to join a Webex meeting using a specific meeting number.",
       "command": "join [Meeting Number]"
     },
     {
-      "prompt": "@Cisco Webex Meetings site https://mycompany.webex.com",
-      "description": "The user is setting up their Webex site URL for integration with the Teams bot.",
-      "command": "site [siteurl]"
+      "prompt": "@Cisco Webex Meetings site reset",
+      "description": "User wants to reset the Webex site URL to its default setting.",
+      "command": "site reset"
     }
   ]
 }

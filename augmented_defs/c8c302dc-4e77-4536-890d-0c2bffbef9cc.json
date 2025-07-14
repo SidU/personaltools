@@ -1200,19 +1200,19 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@PagerDuty authorize 12345abcde",
-      "description": "User wants to authorize the bot with a specific API key.",
+      "prompt": "@PagerDuty authorize 12345-abcde-67890-fghij",
+      "description": "User is authorizing the bot with a specific key to access PagerDuty services.",
       "command": "authorize"
     },
     {
-      "prompt": "@PagerDuty open incident 67890",
-      "description": "User requests the bot to open a specific incident using its ID.",
-      "command": "open"
+      "prompt": "@PagerDuty help",
+      "description": "User is requesting help to understand how to use the PagerDuty bot and its features.",
+      "command": "help"
     },
     {
-      "prompt": "@PagerDuty help",
-      "description": "User needs assistance or a list of available commands from the bot.",
-      "command": "help"
+      "prompt": "@PagerDuty open",
+      "description": "User wants to open and view the current incidents in PagerDuty.",
+      "command": "open"
     }
   ]
 }

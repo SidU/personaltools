@@ -1125,18 +1125,18 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@Short URL Create Short URL https://www.example.com myExample",
-      "description": "User is requesting to create a custom named short URL for the given link.",
+      "prompt": "@Short URL Create Short URL",
+      "description": "A user wants to create a new short URL with a custom name and start tracking its click analytics.",
       "command": "Create Short URL"
     },
     {
-      "prompt": "@Short URL Edit Short URL myExample newExample",
-      "description": "User wants to edit the custom name of an existing short URL from 'myExample' to 'newExample'.",
+      "prompt": "@Short URL Edit Short URL",
+      "description": "A user needs to update the destination or custom name of an existing short URL.",
       "command": "Edit Short URL"
     },
     {
-      "prompt": "@Short URL Delete Short URL newExample",
-      "description": "User is requesting to delete the short URL with the custom name 'newExample'.",
+      "prompt": "@Short URL Delete Short URL",
+      "description": "A user decides to remove a short URL from their list and stop tracking its analytics.",
       "command": "Delete Short URL"
     }
   ]

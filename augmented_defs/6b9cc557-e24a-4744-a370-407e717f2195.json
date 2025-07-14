@@ -1,0 +1,1476 @@
+{
+  "manifestVersion": "1.17",
+  "id": "6b9cc557-e24a-4744-a370-407e717f2195",
+  "version": "1.1.33",
+  "name": "ALVAO",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 21245650,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": []
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Explore what ALVAO Bot can do for you",
+              "title": "Help"
+            },
+            {
+              "description": "Search tickets in ALVAO Service Desk",
+              "title": "Search tickets"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "ef5fa233-c0bb-424e-b9dc-0466d46bade2",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "ITAdmin",
+    "WorkflowAndBusinessManagement"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "ALVAO s.r.o.",
+  "developerUrl": "https://www.alvao.com/en/",
+  "industries": [
+    "Finance",
+    "Retail"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "ef5fa233-c0bb-424e-b9dc-0466d46bade2",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Find any tickets by name, status or solver.",
+          "fetchTask": false,
+          "id": "searchQuery",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Ticket or request name as keyword",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "Name",
+              "title": "Name"
+            },
+            {
+              "description": "Status of ticket. Acceptable values are: New, Solution, Approval, Closed, etc.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "Status",
+              "title": "Status"
+            },
+            {
+              "description": "Ticket solver name. Solver is the person who is assigned to resolve the ticket.",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "Solver",
+              "title": "Solver"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Search for computer tickets in solution status"
+            },
+            {
+              "text": "Search for tickets assigned to me"
+            },
+            {
+              "text": "Search for tickets in New status that have no solver"
+            }
+          ],
+          "title": "Search tickets",
+          "type": "query"
+        },
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Create new ticket from message in ALVAO",
+          "fetchTask": true,
+          "id": "createTicket",
+          "initialRun": false,
+          "title": "Create ticket in ALVAO",
+          "type": "action"
+        },
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Save message to a ticket in ALVAO",
+          "fetchTask": true,
+          "id": "saveMessage",
+          "initialRun": false,
+          "title": "Save message in ALVAO",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "*.alvao.com",
+              "*.onalvao.com",
+              "alvaoaddinswebapp.azurewebsites.net",
+              "alvaodev-app-cert.azurewebsites.net"
+            ],
+            "supportsAnonymousAccess": false
+          }
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "helpdesk",
+    "service desk",
+    "Microsoft Teams"
+  ],
+  "languageTag": "en-us",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_largeimage.png",
+  "lastUpdatedAt": "2024-11-18T14:41:17.2171397+00:00",
+  "longDescription": "<h1>ALVAO IT Service Management for Microsoft Teams</h1>\n<b>Automate routine processes, boost productivity, and focus on key projects.</b>\n\n\n<h3>Enhance Team Collaboration with ALVAO for Microsoft Teams</h3>\nBy integrating ALVAO with Microsoft Teams, you can enhance collaboration across departments, improve IT services, increase user satisfaction, and expedite ticket resolution with powerful features.\n<br />\n<br />\n<br />\nKey Features:\n<ul><li>\n<b>Create Tickets and Save Messages in Existing Tickets within Chat</b><br />\nAgents can create tickets directly from messages received in Microsoft Teams and seamlessly save chat messages to existing tickets.\n</li>\n<li>\n<b>Look for Existing Tickets and Share Them in Chat</b> <br />\nEasily find and share relevant tickets in chat, providing context and insights for effective request resolution.\n</li>\n<li>\n<b>ALVAO Ticket Dashboard for Agents</b><br />\nManage tickets seamlessly with the integrated ticket dashboard in Microsoft Teams, without leaving the platform.\n</li>\n<li>\n<b>ALVAO Bot Support for Users and Agents</b><br />\nThe ALVAO Bot assists users with submitting tickets through the ALVAO Service Desk self-service portal within Microsoft Teams, reducing IT workload and streamlining user support.\n</li>\n</ul>\nThe ALVAO bot helps users with:\n<ul>\n<li>Creating tickets in chat and selecting the appropriate IT service.</li>\n<li>Finding solutions to issues by entering relevant keywords in chat, with the bot providing information from the ALVAO Service Desk knowledge base.</li>\n<li>Receiving alerts about ticket status changes and incoming messages directly in the ALVAO bot chat.</li>\n</ul>\n<h3>Use ALVAO in Microsoft 365 Copilot</h3>\nFind and filter tickets by status or solver, e.g., “Find printer problem tickets in a solution status solved by Joe Doe.”\n<br />\n<br />\n<i>Note: Ensure your account is registered with ALVAO before using the app. For assistance with signing up, please <a href=\"https://www.alvao.com/en/contact/\">contact us<a/>.</i>",
+  "mpnId": "1631599",
+  "officeAssetId": "WA200002488",
+  "permissions": [],
+  "privacyUrl": "https://www.alvao.com/en/privacystatement",
+  "publisherDocsUrl": "https://doc.alvao.com/en/teams",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "mcasId": "36558",
+    "status": "attested"
+  },
+  "shortDescription": "Connect agents and users within one workspace with ALVAO for Microsoft Teams.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://alvaowebaddins.azurewebsites.net/teams/#/tickets",
+      "context": [
+        "personalTab"
+      ],
+      "entityId": "a5b98bd6-f976-4f5a-9556-d7713c08d8cf",
+      "name": "Tickets",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "subscriptionOffer": {
+    "isEligibleForAzureBenefits": true,
+    "offerId": "alvao.alvao_service_desk"
+  },
+  "systemVersion": "2025071115135972",
+  "termsOfUseUrl": "https://www.alvao.com/en/licensing",
+  "validDomains": [
+    "alvaowebaddins.azurewebsites.net",
+    "*.alvao.com",
+    "token.botframework.com",
+    "*.onalvao.com",
+    "alvaodev-app-cert.azurewebsites.net",
+    "alvaodev-app-cert-wa-copilot-ms.azurewebsites.net"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=VqeLosvxgjU",
+  "webApplicationInfo": {
+    "id": "ef5fa233-c0bb-424e-b9dc-0466d46bade2",
+    "resource": "api://alvaowebaddins.azurewebsites.net/ef5fa233-c0bb-424e-b9dc-0466d46bade2"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en-us",
+    "cs"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.17",
+      "id": "6b9cc557-e24a-4744-a370-407e717f2195",
+      "version": "1.1.33",
+      "name": "ALVAO",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 21245650,
+      "appMetadata": {},
+      "authorization": {
+        "permissions": {
+          "resourceSpecific": []
+        }
+      },
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Prozkoumejte, co pro vás ALVAO Bot může udělat",
+                  "title": "Nápověda"
+                },
+                {
+                  "description": "Vyhledejte požadavky v ALVAO Service Desk",
+                  "title": "Vyhledat požadavek"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "ef5fa233-c0bb-424e-b9dc-0466d46bade2",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ITAdmin",
+        "WorkflowAndBusinessManagement"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "ALVAO s.r.o.",
+      "developerUrl": "https://www.alvao.com/en/",
+      "industries": [
+        "Finance",
+        "Retail"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "ef5fa233-c0bb-424e-b9dc-0466d46bade2",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "commandBox",
+                "compose"
+              ],
+              "description": "Vyhledat požadavek v ALVAO Service Desk",
+              "fetchTask": false,
+              "id": "searchQuery",
+              "initialRun": true,
+              "parameters": [
+                {
+                  "description": "Název požadavku jako klíčové slovo",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "Name",
+                  "title": "Název požadavku"
+                },
+                {
+                  "description": "Stav požadavku. Přípustné hodnoty jsou: Nový, Řešení, Schválování, Uzavřeno atd.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "Status",
+                  "title": "Stav požadavku"
+                },
+                {
+                  "description": "Jméno řešitele požadavku. Řešitel je osoba, které je požadavek přiřazen k řešení.",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "Solver",
+                  "title": "Řešitel požadavku"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Vyhledej požadavky počítač ve stavu Řešení"
+                },
+                {
+                  "text": "Vyhledej požadavky, které jsou přiřazené mně"
+                },
+                {
+                  "text": "Vyhledej požadavky ve stavu Nový, které nemají přiřazeného řešitele"
+                }
+              ],
+              "title": "Vyhledat požadavek",
+              "type": "query"
+            },
+            {
+              "context": [
+                "message"
+              ],
+              "description": "Vytvořit požadavek ze zprávy do ALVAO",
+              "fetchTask": true,
+              "id": "createTicket",
+              "initialRun": false,
+              "title": "Vytvořit požadavek v ALVAO",
+              "type": "action"
+            },
+            {
+              "context": [
+                "message"
+              ],
+              "description": "Uložit zprávu do požadavku v ALVAO",
+              "fetchTask": true,
+              "id": "saveMessage",
+              "initialRun": false,
+              "title": "Uložit zprávu do ALVAO",
+              "type": "action"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.alvao.com",
+                  "*.onalvao.com",
+                  "alvaoaddinswebapp.azurewebsites.net",
+                  "alvaodev-app-cert.azurewebsites.net"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "helpdesk",
+        "service desk",
+        "Microsoft Teams"
+      ],
+      "languageTag": "cs",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_largeimage.png",
+      "lastUpdatedAt": "2024-11-18T14:41:17.2171397+00:00",
+      "longDescription": "<h1>ALVAO IT Service Management pro Microsoft Teams</h1>  <b>Automatizujte rutinní procesy, zvyšte produktivitu a získejte tak čas na klíčové projekty.</b>  <h3>Vylepšete týmovou spolupráci s ALVAO pro Microsoft Teams</h3>  Integrací ALVAO Service Desk s aplikací Microsoft Teams zjednodušíte jednotlivým oddělením spolupráci, zlepšíte řízení IT služeb, zvýšíte spokojenost zaměstnanců a urychlíte řešení požadavků díky  pokročilým funkcím.<br />  <br /> <br />  Klíčové funkce:  <ul> <li><b>Vytváření požadavků/tiketů a ukládání zpráv do tiketů přímo z konverzace</b>  <br />Vytváření tiketů přímo ze zpráv přijatých prostřednictvím komunkace v chatu v Microsoft Teams a možnost ukládat celou nebo část konverzace rovnou do otevřených požadavků/tiketů.</li>  <li><b>Vyhledávání otevřených tiketů a jejich sdílení v teamsové konverzaci</b>  <br />Snadná orientace a sdílení souvisejících požadavků přímo v rámci existující teamsové konverzace, okamžitě dostupný kontext a přehled pro efektivnější řešení požadavků.</li>  <li><b>Přehled otevřených požadavků přímo v ALVAO pro Microsoft Teams</b>  <br />Správa požadavů/tiketů je takto jednoduchá díky integraci,  všechny kroky můžete provádět přímo v aplikaci, bez nutnosti opouštět Microsoft Teams.</li>  <li><b> ALVAO Bot jako podpora pro uživatele i agenty</b><br />  ALVAO Bot pomáhá uživatelům s podáváním tiketů prostřednictvím samoobslužného portálu ALVAO Service Desk v Microsoft Teams. Snižuje tak pracovní zátěž IT týmu a zjednodušuje podporu uživatelů.</li> </ul>  ALVAO bot pomáhá uživatelům s:  <ul> <li>Vytvářením tiketů v chatu a s výběrem příslušné IT služby.</li>  <li>Hledáním řešení problémů zadáním relevantních klíčových slov v chatu, přičemž bot poskytuje informace z databáze znalostí ALVAO Service Desk.</li>  <li>Přijímáním upozornění na změny stavu tiketů a příchozí zprávy přímo v chatu ALVAO bot.</li> </ul>  <h3>Využití ALVAO s  Microsoft 365 Copilot</h3>  Jednouše hledejte a filtrujte tikety podle stavu nebo řešitele, např. „Najdi tikety s problémem s tiskárnou ve stavu vyřešeno řešitelem Jan Novák.“ <br /> <br />     <i>Poznámka: Před použitím aplikace se ujistěte, že máte zřízený ALVAO účet. Pro pomoc s registrací nás prosím kontaktujte <a href=\"https://www.alvao.com/en/contact/\"><a/>.</i>",
+      "mpnId": "1631599",
+      "officeAssetId": "WA200002488",
+      "permissions": [],
+      "privacyUrl": "https://www.alvao.com/en/privacystatement",
+      "publisherDocsUrl": "https://doc.alvao.com/en/teams",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_screenshot/3.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_screenshot/4.jpe"
+      ],
+      "securityComplianceInfo": {
+        "mcasId": "36558",
+        "status": "attested"
+      },
+      "shortDescription": "Propojte řešitele a uživatele na jedno místo – pomocí ALVAO for Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/6b9cc557-e24a-4744-a370-407e717f2195/2025071115135972/6b9cc557-e24a-4744-a370-407e717f2195_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://alvaowebaddins.azurewebsites.net/teams/#/tickets",
+          "context": [
+            "personalTab"
+          ],
+          "entityId": "a5b98bd6-f976-4f5a-9556-d7713c08d8cf",
+          "name": "Požadavky",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": true,
+        "offerId": "alvao.alvao_service_desk"
+      },
+      "systemVersion": "2025071115135972",
+      "termsOfUseUrl": "https://www.alvao.com/en/licensing",
+      "validDomains": [
+        "alvaowebaddins.azurewebsites.net",
+        "*.alvao.com",
+        "token.botframework.com",
+        "*.onalvao.com",
+        "alvaodev-app-cert.azurewebsites.net",
+        "alvaodev-app-cert-wa-copilot-ms.azurewebsites.net"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=VqeLosvxgjU",
+      "webApplicationInfo": {
+        "id": "ef5fa233-c0bb-424e-b9dc-0466d46bade2",
+        "resource": "api://alvaowebaddins.azurewebsites.net/ef5fa233-c0bb-424e-b9dc-0466d46bade2"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@ALVAO can you help me with using the ticketing system?",
+      "description": "The user is asking for assistance with the ticketing system.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@ALVAO I need to find all open tickets related to the network issue.",
+      "description": "The user is looking to locate tickets related to a specific issue.",
+      "command": "Search tickets"
+    },
+    {
+      "prompt": "@ALVAO how do I search for resolved tickets?",
+      "description": "The user is requesting guidance on how to search for tickets that have been resolved.",
+      "command": "Help"
+    }
+  ]
+}

@@ -1,0 +1,2404 @@
+{
+  "manifestVersion": "1.20",
+  "id": "1d041f16-ab49-4627-bfda-6b60ad2cab6a",
+  "version": "2.1.2",
+  "name": "Waldo Booking",
+  "accentColor": "#0D048B",
+  "amsSellerAccountId": 75660490,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "id": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+      "isNotificationOnly": false,
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity"
+  ],
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Moffi",
+  "developerUrl": "https://hellowaldo.app",
+  "elementRelationshipSet": {
+    "mutualDependencies": [],
+    "oneWayDependencies": []
+  },
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://app.hellowaldo.app/client/team-settings-tab?tenant={tid}",
+      "context": [
+        "channelTab",
+        "privateChatTab"
+      ],
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "commandBox"
+          ],
+          "description": "Find teammate's location by name",
+          "fetchTask": false,
+          "id": "findTeammateLocationByName",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Teammate's name",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "teammateName",
+              "semanticDescription": "Teammate's name. If teammate's name is not present in the query, use \"Any\" as teammate name.",
+              "title": "Teammate's name"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Using Waldo Booking, find out where my teammates are located."
+            },
+            {
+              "text": "Using Waldo Booking, can you tell me if my colleagues are at the office?"
+            },
+            {
+              "text": "With Waldo Booking, find the work location of my teammates"
+            }
+          ],
+          "semanticDescription": "Search a teammate's location by name",
+          "title": "Find Teammate's Location by name",
+          "type": "query"
+        },
+        {
+          "context": [
+            "commandBox"
+          ],
+          "description": "Find teammate's location with advanced search options",
+          "fetchTask": false,
+          "id": "findTeammateLocation",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Teammate's name",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "teammateName",
+              "semanticDescription": "Teammate's name. If teammate's name is not present in the query, use \"Any\" as teammate name.",
+              "title": "Teammate's name"
+            },
+            {
+              "description": "Name of the Building where a user can work",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "buildingName",
+              "semanticDescription": "Name of the Building where a user can work",
+              "title": "Building Name"
+            },
+            {
+              "description": "Start date for which you want to know the location",
+              "inputType": "date",
+              "isRequired": false,
+              "name": "startDate",
+              "semanticDescription": "Start date for which you want to know the location",
+              "title": "Start Date"
+            },
+            {
+              "description": "End date for which you want to know the location",
+              "inputType": "date",
+              "isRequired": false,
+              "name": "endDate",
+              "semanticDescription": "End date for which you want to know the location",
+              "title": "End Date"
+            },
+            {
+              "description": "Teammate's email",
+              "inputType": "text",
+              "isRequired": false,
+              "name": "teammateEmail",
+              "semanticDescription": "Teammate's email",
+              "title": "Teammate's email"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Using Waldo Booking, where my teammates are working next week?"
+            },
+            {
+              "text": "With Waldo Booking, check if one of my teammates is at the office tomorrow?"
+            },
+            {
+              "text": "Using Waldo Booking, List all the teammates that are working remotely"
+            }
+          ],
+          "semanticDescription": "Search for one or several teammate's location with advanced search options like email, building name or even a date range to know where they will be working",
+          "title": "Find Teammate's Location",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "desk booking",
+    "desk reservation",
+    "parking reservation"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_largeimage.png",
+  "lastUpdatedAt": "2025-06-24T11:03:41.3640631+00:00",
+  "longDescription": "Waldo is a desk booking and parking reservation solution, a simple-to-use flex office occupancy management tool, for Microsoft Teams, Outlook, Microsoft 365 and Microsoft 365 Copilot.\n\r\n\rWaldo helps you decide where to work at any given time: either at home or at the office. Always one step ahead, Waldo anticipates your next move by booking a desk, booking a parking space, a meeting room or any places, for you, based on your habits and preferences: near your workmates, at your usual times, and in your favorite spots. You can also step in and ask Waldo to reserve a specific desk, parking space or meeting room.\n\r\n\rUltimately, Waldo helps companies optimize their space, making the workplace more pleasant and collaborative for everyone.\n\r\n\r**Functionalities**\n- Reserve / book a desk \n- Reserve / book a parking spot \n- Reserve / book a meeting room \n- With Copilot, simply ask where is Emma today? \n- Display the office and parking occupancy (gauge) \n- Keep tabs on your workmates \n- Manage your flex office strategy \r\n\r\nContact us at [https://customer.hellowaldo.app](https://customer.hellowaldo.app)",
+  "mpnId": "4116628",
+  "officeAssetId": "WA200003139",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://customer.hellowaldo.app/hc/en-us/articles/25140857108882-Privacy-statements-and-GDPR",
+  "publisherDocsUrl": "https://customer.hellowaldo.app/",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Desk booking, parking booking, places, meeting rooms booking",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://app.hellowaldo.app/client/calendar?tenant={tid}",
+      "entityId": "calendar",
+      "name": "Calendar",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://app.hellowaldo.app/client/map?tenant={tid}",
+      "entityId": "map",
+      "name": "Map",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://app.hellowaldo.app/client/settings?tenant={tid}",
+      "entityId": "settings",
+      "name": "Settings",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "requirementSet": {
+        "hostMustSupportFunctionalities": []
+      },
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "subscriptionOffer": {
+    "isEligibleForAzureBenefits": true,
+    "offerId": "kickle1624888674861.waldo"
+  },
+  "systemVersion": "2025071115385725",
+  "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2041178",
+  "validDomains": [
+    "app.hellowaldo.app",
+    "token.botframework.com"
+  ],
+  "videoUrl": "https://vimeo.com/1088105653",
+  "webApplicationInfo": {
+    "id": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+    "resource": "api://app.hellowaldo.app/botid-c71a6f53-cf0c-426d-a826-cedae8b073f7"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.20",
+      "id": "1d041f16-ab49-4627-bfda-6b60ad2cab6a",
+      "version": "2.1.2",
+      "name": "Waldo Booking",
+      "accentColor": "#0D048B",
+      "amsSellerAccountId": 75660490,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Moffi",
+      "developerUrl": "https://hellowaldo.app",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://app.hellowaldo.app/client/team-settings-tab?tenant={tid}",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "commandBox"
+              ],
+              "description": "Finden Sie den Standort eines Teamkollegen nach Name",
+              "fetchTask": false,
+              "id": "findTeammateLocationByName",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Name des Teamkollegen",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateName",
+                  "semanticDescription": "Teammate's name. If teammate's name is not present in the query, use \"Any\" as teammate name.",
+                  "title": "Name des Teamkollegen"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Mit Waldo Booking, wo sich meine Teamkollegen befinden?"
+                },
+                {
+                  "text": "Mit Waldo Booking, können Sie mir sagen, ob meine Kollegen im Büro sind?"
+                },
+                {
+                  "text": "Mit Waldo Booking, finden Sie den Arbeitsort meiner Teamkollegen"
+                }
+              ],
+              "semanticDescription": "Search a teammate's location by name",
+              "title": "Kollegen finden",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox"
+              ],
+              "description": "Finden Sie den Standort eines Teamkollegen mit erweiterten Suchoptionen",
+              "fetchTask": false,
+              "id": "findTeammateLocation",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Name des Teamkollegen",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateName",
+                  "semanticDescription": "Teammate's name. If teammate's name is not present in the query, use \"Any\" as teammate name.",
+                  "title": "Name des Teamkollegen"
+                },
+                {
+                  "description": "Name des Gebäudes, in dem ein Benutzer arbeiten kann",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "buildingName",
+                  "semanticDescription": "Name of the Building where a user can work",
+                  "title": "Gebäudename"
+                },
+                {
+                  "description": "Anfangsdatum, für das Sie den Standort wissen möchten",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "startDate",
+                  "semanticDescription": "Start date for which you want to know the location",
+                  "title": "Anfangsdatum"
+                },
+                {
+                  "description": "Enddatum, für das Sie den Standort wissen möchten",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "endDate",
+                  "semanticDescription": "End date for which you want to know the location",
+                  "title": "Enddatum"
+                },
+                {
+                  "description": "E-Mail des Teamkollegen",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateEmail",
+                  "semanticDescription": "Teammate's email",
+                  "title": "E-Mail des Teamkollegen"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Mit Waldo Booking, wo meine Teamkollegen nächste Woche arbeiten?"
+                },
+                {
+                  "text": "Mit Waldo Booking, können Sie überprüfen, ob einer meiner Teamkollegen morgen im Büro ist?"
+                },
+                {
+                  "text": "Mit Waldo Booking, listen Sie alle Teamkollegen auf, die remote arbeiten"
+                }
+              ],
+              "semanticDescription": "Search for one or several teammate's location with advanced search options like email, building name or even a date range to know where they will be working",
+              "title": "Kollegen finden",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "desk booking",
+        "desk reservation",
+        "parking reservation"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_largeimage.png",
+      "lastUpdatedAt": "2025-06-24T11:03:41.3640631+00:00",
+      "longDescription": "**Flexible Arbeitsplatzgestaltung mit Desk-Sharing und Parkplatzreservierung über Waldo.**\n\n \n\nSie bestimmen selbst, wo Sie heute am liebsten arbeiten: zu Hause oder im Büro!\n\n Waldo gibt Ihnen in Windeseile eine Übersicht über die Arbeitsorte Ihrer Kollegen (Homeoffice oder Büro) sowie über die Büro- und Parkplatzbelegung.\n\n Jetzt kompatibel mit Microsoft 365 Copilot!  \n\n \n\n**Wie funktioniert das?**\n\n \n\nIn einem ersten Schritt analysiert Waldo Ihre letzten Interaktionen, um herauszufinden, wer Ihre Kollegen sind.\n\n Dann legt Waldo auf Basis Ihres Kalenders den Ort fest, an dem Sie für gewöhnlich arbeiten (zu Hause oder im Büro).\n\n Und schließlich berechnet Waldo basierend auf der Anzahl der verfügbaren Plätze die Belegungsrate der Arbeitstische und Parkplätze. \n\n \n\nSie können Waldo als App für Teams oder über den Chat nutzen. \n\n \n\n**Funktionen**\n\n- Einen Arbeitsplatz reservieren \n\n- Einen Parkplatz reservieren \n\n- Mit Copilot fragen Sie einfach: Frag Waldo, wo Emma heute ist. \n\n- Die Büro- und Parkplatzbelegung anzeigen (Messung) \n\n- Sehen, wo Ihre Kollegen arbeiten. \n\n Mit Copilot fragen Sie einfach: Wo arbeitet Emma heute? \r\n\r\nKontaktieren Sie uns unter : [https://customer.hellowaldo.app](https://customer.hellowaldo.app)",
+      "mpnId": "4116628",
+      "officeAssetId": "WA200003139",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://customer.hellowaldo.app/hc/en-us/articles/25140857108882-Privacy-statements-and-GDPR",
+      "publisherDocsUrl": "https://customer.hellowaldo.app/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Messung der Arbeitsplatz - und Parkplatzauslastung.  Flex Office leicht gemacht!",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/calendar?tenant={tid}",
+          "entityId": "calendar",
+          "name": "Kalender",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/map?tenant={tid}",
+          "entityId": "map",
+          "name": "Plan",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/settings?tenant={tid}",
+          "entityId": "settings",
+          "name": "Einstellungen",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": true,
+        "offerId": "kickle1624888674861.waldo"
+      },
+      "systemVersion": "2025071115385725",
+      "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2041178",
+      "validDomains": [
+        "app.hellowaldo.app",
+        "token.botframework.com"
+      ],
+      "videoUrl": "https://vimeo.com/1088105653",
+      "webApplicationInfo": {
+        "id": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+        "resource": "api://app.hellowaldo.app/botid-c71a6f53-cf0c-426d-a826-cedae8b073f7"
+      }
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "1d041f16-ab49-4627-bfda-6b60ad2cab6a",
+      "version": "2.1.2",
+      "name": "Waldo Booking",
+      "accentColor": "#0D048B",
+      "amsSellerAccountId": 75660490,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Moffi",
+      "developerUrl": "https://hellowaldo.app",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://app.hellowaldo.app/client/team-settings-tab?tenant={tid}",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "commandBox"
+              ],
+              "description": "Encontrar la ubicación de un compañero por nombre",
+              "fetchTask": false,
+              "id": "findTeammateLocationByName",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Nombre o dirección de correo electrónico de su colega",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateName",
+                  "semanticDescription": "Teammate's name. If teammate's name is not present in the query, use \"Any\" as teammate name.",
+                  "title": "Nombre de su colega"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Usando Waldo Booking,  ¿dónde están ubicados mis compañeros de equipo?"
+                },
+                {
+                  "text": "Usando Waldo Booking, ¿puedes decirme si mis colegas están en la oficina?"
+                },
+                {
+                  "text": "Con Waldo Booking, encuentra la ubicación de trabajo de mis compañeros de equipo"
+                }
+              ],
+              "semanticDescription": "Search a teammate's location by name",
+              "title": "Encontrar a un colega",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox"
+              ],
+              "description": "Encontrar la ubicación de un compañero con opciones de búsqueda avanzadas",
+              "fetchTask": false,
+              "id": "findTeammateLocation",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Nombre o dirección de correo electrónico de su colega",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateName",
+                  "semanticDescription": "Teammate's name. If teammate's name is not present in the query, use \"Any\" as teammate name.",
+                  "title": "Nombre de su colega"
+                },
+                {
+                  "description": "Nombre del edificio donde un colega puede trabajar",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "buildingName",
+                  "semanticDescription": "Name of the Building where a user can work",
+                  "title": "Nombre del edificio"
+                },
+                {
+                  "description": "Fecha de inicio para la cual desea saber la ubicación",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "startDate",
+                  "semanticDescription": "Start date for which you want to know the location",
+                  "title": "Fecha de inicio"
+                },
+                {
+                  "description": "Fecha de finalización para la cual desea saber la ubicación",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "endDate",
+                  "semanticDescription": "End date for which you want to know the location",
+                  "title": "Fecha de finalización"
+                },
+                {
+                  "description": "Correo electrónico del compañero",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateEmail",
+                  "semanticDescription": "Teammate's email",
+                  "title": "Correo electrónico del compañero"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Usando Waldo Booking, ¿dónde están trabajando mis compañeros de equipo la próxima semana?"
+                },
+                {
+                  "text": "Con Waldo Booking, ¿puedes verificar si uno de mis compañeros de equipo está en la oficina mañana?"
+                },
+                {
+                  "text": "Usando Waldo Booking, lista todos los compañeros de equipo que están trabajando de forma remota"
+                }
+              ],
+              "semanticDescription": "Search for one or several teammate's location with advanced search options like email, building name or even a date range to know where they will be working",
+              "title": "Encontrar a un colega",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "desk booking",
+        "desk reservation",
+        "parking reservation"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_largeimage.png",
+      "lastUpdatedAt": "2025-06-24T11:03:41.3640631+00:00",
+      "longDescription": "**Flexibliza tu espacio de trabajo compartiendo tu oficina y reservando tu aparcamiento con Waldo.**\n\n \n\nTú decides el mejor lugar para trabajar hoy: ¡en casa o en la oficina!\n\n De un vistazo, Waldo te muestra dónde trabajan tu colegas (en casa o en la oficina), la tasa de ocupación de la oficina así como la del aparcamiento.\n\n Compatible con Microsoft 365 Copilot, simplemente pregunta: 'Pregúntale a Waldo dónde está Emma hoy' \n\n \n\n**¿Cómo funciona?**\n\n \n\nEn primer lugar, Waldo examina tus últimas interacciones para ver quiénes son tus colegas.\n\n Luego, Waldo analiza el lugar dónde sueles trabajar según tu calendario (en casa o en la oficina).\n\n Y finalmente, Waldo calcula la tasa de ocupación de la oficina y del aparcamiento en función de la quantidad de lugares disponibles. \n\n \n\nPuedes utilizar Waldo como aplicación Teams o a través del chat. \n\n \n\n**Funciones**\n\n- Reservar un escritorio \n\n- Reservar una plaza de aparcamiento \n\n- Visualizar la ocupación de la oficina y del aparcamiento (tasa) \n\n- Ver dónde trabajan tus colegas. \n\n Con Copilot, solo pregunte: ¿Dónde trabaja Emma hoy?. \r\n\r\nContacta con nosotros en : [https://customer.hellowaldo.app](https://customer.hellowaldo.app)",
+      "mpnId": "4116628",
+      "officeAssetId": "WA200003139",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://customer.hellowaldo.app/hc/en-us/articles/25140857108882-Privacy-statements-and-GDPR",
+      "publisherDocsUrl": "https://customer.hellowaldo.app/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Reserva de escritorio, reserva de aparcamiento, salas de reuniones",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/calendar?tenant={tid}",
+          "entityId": "calendar",
+          "name": "Calendario",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/map?tenant={tid}",
+          "entityId": "map",
+          "name": "Mapa",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/settings?tenant={tid}",
+          "entityId": "settings",
+          "name": "Configuración",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": true,
+        "offerId": "kickle1624888674861.waldo"
+      },
+      "systemVersion": "2025071115385725",
+      "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2041178",
+      "validDomains": [
+        "app.hellowaldo.app",
+        "token.botframework.com"
+      ],
+      "videoUrl": "https://vimeo.com/1088105653",
+      "webApplicationInfo": {
+        "id": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+        "resource": "api://app.hellowaldo.app/botid-c71a6f53-cf0c-426d-a826-cedae8b073f7"
+      }
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "1d041f16-ab49-4627-bfda-6b60ad2cab6a",
+      "version": "2.1.2",
+      "name": "Waldo Booking",
+      "accentColor": "#0D048B",
+      "amsSellerAccountId": 75660490,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Moffi",
+      "developerUrl": "https://hellowaldo.app",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://app.hellowaldo.app/client/team-settings-tab?tenant={tid}",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "commandBox"
+              ],
+              "description": "Trouver l'emplacement d'un collègue par nom",
+              "fetchTask": false,
+              "id": "findTeammateLocationByName",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Nom de votre collègue",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateName",
+                  "semanticDescription": "Teammate's name. If teammate's name is not present in the query, use \"Any\" as teammate name.",
+                  "title": "Nom de votre collègue"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "En utilisant Waldo Booking, découvre où se trouvent mes collègues."
+                },
+                {
+                  "text": "En utilisant Waldo Booking, pouvez-vous me dire si mes collègues sont au bureau ?"
+                },
+                {
+                  "text": "Avec Waldo Booking, trouvez le lieu de travail de mes collègues"
+                }
+              ],
+              "semanticDescription": "Search a teammate's location by name",
+              "title": "Trouver un collègue",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox"
+              ],
+              "description": "Trouver l'emplacement d'un collègue avec des options de recherche avancées",
+              "fetchTask": false,
+              "id": "findTeammateLocation",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Nom de votre collègue",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateName",
+                  "semanticDescription": "Teammate's name. If teammate's name is not present in the query, use \"Any\" as teammate name.",
+                  "title": "Nom de votre collègue"
+                },
+                {
+                  "description": "Nom du bâtiment où un collègue peut travailler",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "buildingName",
+                  "semanticDescription": "Name of the Building where a user can work",
+                  "title": "Nom du bâtiment"
+                },
+                {
+                  "description": "Date de début à laquelle vous souhaitez savoir où travaille votre collègue",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "startDate",
+                  "semanticDescription": "Start date for which you want to know the location",
+                  "title": "Date de début"
+                },
+                {
+                  "description": "Date de fin à laquelle vous souhaitez savoir où travaille votre collègue",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "endDate",
+                  "semanticDescription": "End date for which you want to know the location",
+                  "title": "Date de fin"
+                },
+                {
+                  "description": "Adresse email de votre collègue",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateEmail",
+                  "semanticDescription": "Teammate's email",
+                  "title": "Adresse email de votre collègue"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "En utilisant Waldo Booking, où mes coéquipiers travaillent la semaine prochaine ?"
+                },
+                {
+                  "text": "Avec Waldo Booking, vérifiez si l'un de mes coéquipiers est au bureau demain ?"
+                },
+                {
+                  "text": "En utilisant Waldo Booking, listez tous les coéquipiers qui travaillent à distance"
+                }
+              ],
+              "semanticDescription": "Search for one or several teammate's location with advanced search options like email, building name or even a date range to know where they will be working",
+              "title": "Trouver un collègue",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "desk booking",
+        "desk reservation",
+        "parking reservation"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_largeimage.png",
+      "lastUpdatedAt": "2025-06-24T11:03:41.3640631+00:00",
+      "longDescription": "**Elue startup de l'année par Microsoft, Waldo est une application de flex office, de reservation de bureau, de reservation de parking et de salle de réunion. Waldo est compatible avec Microsoft Teams, Microsoft Outlook et Microsoft 365 Copilot. Le design des plans est inclus dans l'abonnement. Sinon, vous pouvez utiliser la version totalement gratuite de Waldo**\n\n \n\nA vous de décider du meilleur endroit pour travailler aujourd'hui: à la maison ou au bureau!\n\n En un coup d'oeil, Waldo vous indique le lieu de travail de vos collègues (à la maison ou au bureau), le taux d'occupation du bureau ainsi que celui du parking. \n\n \n\n**Comment ça marche ?**\n\n \n\nTout d'abord, Waldo étudie vos interactions récentes pour savoir qui sont vos collègues.\n\n Ensuite, Waldo analyse l'endroit où vous travaillez habituellement en fonction de votre calendrier (à la maison ou au bureau).\n\n Enfin, Waldo calcule le taux d'occupation des bureaux et du parking en fonction du nombre de places disponibles. \n\n \n\nVous pouvez utiliser Waldo en tant qu'application Teams, Outlook, Copilot ou via le chat. \n\n \n\n**Fonctionnalités**\n\n- Design des plans \n\n- Réserver un bureau \n\n- Réserver une place de parking \n\n- Afficher l'occupation du bureau et du parking (jauge) \n\n- Voir où travaillent vos collègues \n\n- Gestion de votre politique de flex office (nb de jours au bureau max, nb de jours à la maison max, etc.) \n\n- Avec Copilot, demandez simplement où travaille Emma aujourd'hui?. \r\n\r\nPour nous contacter : [https://customer.hellowaldo.app](https://customer.hellowaldo.app)",
+      "mpnId": "4116628",
+      "officeAssetId": "WA200003139",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://customer.hellowaldo.app/hc/en-us/articles/25140857108882-Privacy-statements-and-GDPR",
+      "publisherDocsUrl": "https://customer.hellowaldo.app/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Reservation de bureau, parking, flex office, salle de réunion",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/calendar?tenant={tid}",
+          "entityId": "calendar",
+          "name": "Calendrier",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/map?tenant={tid}",
+          "entityId": "map",
+          "name": "Carte",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/settings?tenant={tid}",
+          "entityId": "settings",
+          "name": "Paramètres",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": true,
+        "offerId": "kickle1624888674861.waldo"
+      },
+      "systemVersion": "2025071115385725",
+      "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2041178",
+      "validDomains": [
+        "app.hellowaldo.app",
+        "token.botframework.com"
+      ],
+      "videoUrl": "https://vimeo.com/1088105653",
+      "webApplicationInfo": {
+        "id": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+        "resource": "api://app.hellowaldo.app/botid-c71a6f53-cf0c-426d-a826-cedae8b073f7"
+      }
+    },
+    {
+      "manifestVersion": "1.20",
+      "id": "1d041f16-ab49-4627-bfda-6b60ad2cab6a",
+      "version": "2.1.2",
+      "name": "Waldo Booking",
+      "accentColor": "#0D048B",
+      "amsSellerAccountId": 75660490,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "id": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+          "isNotificationOnly": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "Productivity"
+      ],
+      "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Moffi",
+      "developerUrl": "https://hellowaldo.app",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": false,
+          "configurationUrl": "https://app.hellowaldo.app/client/team-settings-tab?tenant={tid}",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "commandBox"
+              ],
+              "description": "Trova la posizione di un collega per nome",
+              "fetchTask": false,
+              "id": "findTeammateLocationByName",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Nome del tuo collega",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateName",
+                  "semanticDescription": "Teammate's name. If teammate's name is not present in the query, use \"Any\" as teammate name.",
+                  "title": "Nome del tuo collega"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Utilizzando Waldo Booking, scopri dove si trovano i miei colleghi."
+                },
+                {
+                  "text": "Utilizzando Waldo Booking, puoi dirmi se i miei colleghi sono in ufficio?"
+                },
+                {
+                  "text": "Con Waldo Booking, trova il luogo di lavoro dei miei colleghi"
+                }
+              ],
+              "semanticDescription": "Search a teammate's location by name",
+              "title": "Trova un collega",
+              "type": "query"
+            },
+            {
+              "context": [
+                "commandBox"
+              ],
+              "description": "Trova la posizione di un collega con opzioni di ricerca avanzate",
+              "fetchTask": false,
+              "id": "findTeammateLocation",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Nome del tuo collega",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateName",
+                  "semanticDescription": "Teammate's name. If teammate's name is not present in the query, use \"Any\" as teammate name.",
+                  "title": "Nome del tuo collega"
+                },
+                {
+                  "description": "Nome dell'edificio dove un collega potrebbe lavorare",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "buildingName",
+                  "semanticDescription": "Name of the Building where a user can work",
+                  "title": "Nome dell'edificio"
+                },
+                {
+                  "description": "Data di inizio in cui vuoi sapere dove lavora il tuo collega",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "startDate",
+                  "semanticDescription": "Start date for which you want to know the location",
+                  "title": "Data di inizio"
+                },
+                {
+                  "description": "Data di fine in cui vuoi sapere dove lavora il tuo collega",
+                  "inputType": "date",
+                  "isRequired": false,
+                  "name": "endDate",
+                  "semanticDescription": "End date for which you want to know the location",
+                  "title": "Data di fine"
+                },
+                {
+                  "description": "Indirizzo email del tuo collega",
+                  "inputType": "text",
+                  "isRequired": false,
+                  "name": "teammateEmail",
+                  "semanticDescription": "Teammate's email",
+                  "title": "Indirizzo email del tuo collega"
+                }
+              ],
+              "samplePrompts": [
+                {
+                  "text": "Utilizzando Waldo Booking, dove lavorano i miei colleghi la prossima settimana?"
+                },
+                {
+                  "text": "Con Waldo Booking, verifica se uno dei miei colleghi è in ufficio domani?"
+                },
+                {
+                  "text": "Utilizzando Waldo Booking, elenca tutti i colleghi che lavorano da remoto"
+                }
+              ],
+              "semanticDescription": "Search for one or several teammate's location with advanced search options like email, building name or even a date range to know where they will be working",
+              "title": "Trova un collega",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "team",
+            "personal",
+            "groupChat"
+          ]
+        }
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": true,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "desk booking",
+        "desk reservation",
+        "parking reservation"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_largeimage.png",
+      "lastUpdatedAt": "2025-06-24T11:03:41.3640631+00:00",
+      "longDescription": "**Eletta startup dell'anno da Microsoft, Waldo è un'applicazione per uffici flessibili, prenotazione di uffici, parcheggi e sale riunioni. Waldo è compatibile con Microsoft Teams, Microsoft Outlook e Microsoft 365 Copilot. Il design delle mappe è incluso nell'abbonamento. In alternativa, puoi utilizzare la versione completamente gratuita di Waldo**\n\n \n\nDecidi tu il miglior posto per lavorare oggi: a casa o in ufficio!\n\n In un colpo d'occhio, Waldo ti mostra la posizione lavorativa dei tuoi colleghi (a casa o in ufficio), il tasso di occupazione dell'ufficio e del parcheggio. \n\n \n\n**Come funziona?**\n\n \n\nPrima di tutto, Waldo analizza le tue interazioni recenti per sapere chi sono i tuoi colleghi.\n\n Successivamente, Waldo analizza dove lavori abitualmente in base al tuo calendario (a casa o in ufficio).\n\n Infine, Waldo calcola il tasso di occupazione degli uffici e del parcheggio in base al numero di posti disponibili. \n\n \n\nPuoi utilizzare Waldo come applicazione su Teams, Outlook, Copilot o tramite chat. \n\n \n\n**Funzionalità**\n\n- Design delle mappe \n\n- Prenotare un ufficio \n\n- Prenotare un posto auto \n\n- Visualizzare l'occupazione dell'ufficio e del parcheggio (indicatore) \n\n- Vedere dove lavorano i tuoi colleghi \n\n- Gestione della tua politica di ufficio flessibile (numero massimo di giorni in ufficio, numero massimo di giorni a casa, ecc.) \n\n- Con Copilot, chiedi semplicemente: Dove lavora oggi Emma?. \r\n\r\nPer contattarci: [https://customer.hellowaldo.app](https://customer.hellowaldo.app)",
+      "mpnId": "4116628",
+      "officeAssetId": "WA200003139",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://customer.hellowaldo.app/hc/en-us/articles/25140857108882-Privacy-statements-and-GDPR",
+      "publisherDocsUrl": "https://customer.hellowaldo.app/",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/0.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Prenotazione ufficio, parcheggio, ufficio flessibile, sala riunioni",
+      "showLoadingIndicator": true,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/1d041f16-ab49-4627-bfda-6b60ad2cab6a/2025071115385725/1d041f16-ab49-4627-bfda-6b60ad2cab6a_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/calendar?tenant={tid}",
+          "entityId": "calendar",
+          "name": "Calendario",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "conversations",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/map?tenant={tid}",
+          "entityId": "map",
+          "name": "Mappa",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.hellowaldo.app/client/settings?tenant={tid}",
+          "entityId": "settings",
+          "name": "Impostazioni",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "entityId": "about",
+          "requirementSet": {
+            "hostMustSupportFunctionalities": []
+          },
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "subscriptionOffer": {
+        "isEligibleForAzureBenefits": true,
+        "offerId": "kickle1624888674861.waldo"
+      },
+      "systemVersion": "2025071115385725",
+      "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2041178",
+      "validDomains": [
+        "app.hellowaldo.app",
+        "token.botframework.com"
+      ],
+      "videoUrl": "https://vimeo.com/1088105653",
+      "webApplicationInfo": {
+        "id": "c71a6f53-cf0c-426d-a826-cedae8b073f7",
+        "resource": "api://app.hellowaldo.app/botid-c71a6f53-cf0c-426d-a826-cedae8b073f7"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Waldo Booking Can you book a desk for me tomorrow?",
+      "description": "User wants to reserve a desk for the following day.",
+      "command": "desk booking"
+    },
+    {
+      "prompt": "@Waldo Booking I need to book a meeting room for a team meeting on Friday morning",
+      "description": "User is requesting to book a meeting room for a specific day and time.",
+      "command": "meeting rooms booking"
+    },
+    {
+      "prompt": "@Waldo Booking Reserve a parking spot for my car on Wednesday",
+      "description": "User wants to book a parking space for their vehicle on a given day.",
+      "command": "parking booking"
+    }
+  ]
+}

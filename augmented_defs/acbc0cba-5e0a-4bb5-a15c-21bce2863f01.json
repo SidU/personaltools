@@ -1,0 +1,2464 @@
+{
+  "manifestVersion": "1.11",
+  "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+  "version": "2.1.0",
+  "name": "Expensya",
+  "accentColor": "#3366ff",
+  "amsSellerAccountId": 62007690,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Sign in to your Expensya account",
+              "title": "Connect"
+            },
+            {
+              "description": "Sign out from your Expensya account",
+              "title": "Disconnect"
+            },
+            {
+              "description": "Learn more about Expensya",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "FinancialManagement",
+    "Productivity",
+    "WorkflowAndBusinessManagement"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Expensya",
+  "developerUrl": "https://www.expensya.com",
+  "industries": [
+    "Finance",
+    "ProfessionalServices"
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Expenses",
+    "Expensya",
+    "Payment"
+  ],
+  "languageTag": "en",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+  "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+  "longDescription": "Expensya, now available on Microsoft Teams, offers a powerful set of features designed to revolutionize your team's expense management process. With new tabs, enhanced search capabilities, instant notifications, and seamless integration with Expensya web and mobile applications, Expensya simplifies expense tracking, verification, and approval, empowering both managers and employees.\n**New Tabs: My Expenses and Manager**\nThe My Expenses tab empowers all employees to effortlessly add, review, submit, and track their own expenses. Use advanced search options to quickly find specific expenses by amount or expense title. The Manager tab provides managers with comprehensive visibility and effortless management of their team's expense reports and advance requests.\n**Seamless Cross-Platform Tracking**\nExpensya on Microsoft Teams ensures a seamless experience across platforms. Every expense created on the web or mobile app is instantly reflected in the Teams app, providing a unified view of expenses and effortless tracking across devices. Discover the power of Expensya for Microsoft Teams and unlock streamlined expense management, enhanced collaboration, and improved team efficiency. Don't have an Expensya account yet? [Sign up](https://app.expensya.com/)!",
+  "mpnId": "5049534",
+  "officeAssetId": "WA200003924",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.expensya.com/en/legal",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Expensya: Streamline expenses, boost efficiency, power up your Microsoft Teams.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://app.expensya.com/teams#/Expenses",
+      "entityId": "myExpenses_entityId",
+      "name": "My Expenses",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://app.expensya.com/teams#/Reports",
+      "entityId": "manager_entityId",
+      "name": "Manager",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071113032454",
+  "termsOfUseUrl": "https://www.expensya.com/en/tou",
+  "validDomains": [
+    "token.botframework.com"
+  ],
+  "webApplicationInfo": {
+    "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+    "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "pl",
+    "pt",
+    "nl",
+    "it",
+    "sv",
+    "fi",
+    "da",
+    "nb-no"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.11",
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "version": "2.1.0",
+      "name": "Expensya",
+      "accentColor": "#3366ff",
+      "amsSellerAccountId": 62007690,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Log på din Expensya-konto",
+                  "title": "Connect"
+                },
+                {
+                  "description": "Log ud af din Expensya-konto",
+                  "title": "Disconnect"
+                },
+                {
+                  "description": "Lær mere om Expensya",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "FinancialManagement",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Expensya",
+      "developerUrl": "https://www.expensya.com",
+      "industries": [
+        "Finance",
+        "ProfessionalServices"
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Expenses",
+        "Expensya",
+        "Payment"
+      ],
+      "languageTag": "da",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+      "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+      "longDescription": "Expensya tilbyder en stærk samling af funktioner designet til at revolutionere dit teams udgiftsstyringsproces. Med nye faner, forbedret søgekapacitet, øjeblikkelige notifikationer og sømløs integration med Expensya's web- og mobilapplikationer, forenkler Expensya sporing, kontrol og godkendelse af omkostninger, hvilket giver større autonomi til både ledere og ansatte\n**Nye faner: Mine Udgifter og Manager**\nFanen Mine Udgifter giver alle medarbejdere mulighed for nemt at tilføje, kontrollere, indsende og spore deres egne udgifter. Brug avancerede søgemuligheder til hurtigt at finde specifikke udgifter efter beløb eller udgiftstitel.\nFanen Manager giver ledere fuld synlighed og let håndtering af deres teams udgiftsrapporter og forskud.\n**Hold dig informeret med forenklede notifikationer**\nBliv straks informeret om udgiftsprocessen. Expensya sender realtidsnotifikationer til ledere, når en udgift kræver godkendelse. Kommunikationen mellem ledere og deres medarbejdere styrkes gennem dedikerede notifikationer om opdatering af udgifternes status.\n**Transparent sporing på tværs af flere platforme**\nExpensya på Microsoft Teams tilbyder en synkroniseret oplevelse. Hver udgift oprettet i web- eller mobilapplikationen afspejles øjeblikkeligt i Teams-applikationen, hvilket giver en samlet visning af udgifterne og ubesværet sporing på alle enheder.\nOplev kraften i Expensya for Microsoft Teams og skift til en forenklet udgiftsstyring, øget samarbejde og bedre team effektivitet.\nHar du ikke en Expensya konto endnu? [Tilmeld dig!](https://app.expensya.com) nu!",
+      "mpnId": "5049534",
+      "officeAssetId": "WA200003924",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.expensya.com/en/legal",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Expensya: Forenkling af udgiftsstyring i Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Expenses",
+          "entityId": "myExpenses_entityId",
+          "name": "Mine udgifter",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Reports",
+          "entityId": "manager_entityId",
+          "name": "Manager",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113032454",
+      "termsOfUseUrl": "https://www.expensya.com/en/tou",
+      "validDomains": [
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+        "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+      }
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "version": "2.1.0",
+      "name": "Expensya",
+      "accentColor": "#3366ff",
+      "amsSellerAccountId": 62007690,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Melden Sie sich bei Ihrem Expensya-Konto an",
+                  "title": "Connect"
+                },
+                {
+                  "description": "Von Ihrem Expensya-Konto abmelden",
+                  "title": "Disconnect"
+                },
+                {
+                  "description": "Mehr über Expensya erfahren",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "FinancialManagement",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Expensya",
+      "developerUrl": "https://www.expensya.com",
+      "industries": [
+        "Finance",
+        "ProfessionalServices"
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Expenses",
+        "Expensya",
+        "Payment"
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+      "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+      "longDescription": "Expensya bietet eine leistungsstarke Reihe von Funktionen, die darauf abzielen, den Ausgabenverwaltungsprozess Ihres Teams zu revolutionieren. Mit neuen Tabs, verbesserten Suchfunktionen, sofortigen Benachrichtigungen und nahtloser Integration mit den Web- und Mobilanwendungen von Expensya vereinfacht Expensya das Verfolgen, Überprüfen und Genehmigen von Ausgaben und bietet sowohl Managern als auch Mitarbeitern mehr Autonomie.\n**Neue Tabs: Meine Ausgaben und Manager**\nDer Tab Meine Ausgaben ermöglicht es allen Mitarbeitern, ihre eigenen Ausgaben einfach hinzuzufügen, zu überprüfen, einzureichen und zu verfolgen. Nutzen Sie erweiterte Suchfunktionen, um schnell spezifische Ausgaben nach Betrag oder Ausgabentitel zu finden.\nDer Manager-Tab bietet Managern eine umfassende Sichtbarkeit und mühelose Verwaltung der Abrechnungen und Vorschussanträge ihres Teams.\n**Bleiben Sie mit vereinfachten Benachrichtigungen auf dem Laufenden**\nSeien Sie sofort über den Fortschritt der Ausgaben informiert. Expensya sendet Echtzeit-Benachrichtigungen an Manager, wenn Ausgaben genehmigt werden müssen. Die Kommunikation zwischen Managern und ihren Mitarbeitern wird durch dedizierte Benachrichtigungen über den Status der Ausgaben verbessert.\n**Transparentes Tracking auf mehreren Plattformen**\nExpensya auf Microsoft Teams bietet ein synchronisiertes Erlebnis. Jede Ausgabe, die in der Web- oder Mobilanwendung erstellt wird, wird sofort in der Teams-Anwendung widergespiegelt und bietet eine einheitliche Sicht auf die Ausgaben und ein müheloses Tracking auf allen Geräten.\nEntdecken Sie die Leistung von Expensya für Microsoft Teams und entscheiden Sie sich für eine vereinfachte Ausgabenverwaltung, verbesserte Zusammenarbeit und verbesserte Teamleistung.\nHaben Sie noch kein Expensya-Konto? [Melden Sie sich an!](https://app.expensya.com) jetzt!",
+      "mpnId": "5049534",
+      "officeAssetId": "WA200003924",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.expensya.com/en/legal",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Expensya: Vereinfachen Sie die Ausgabenverwaltung von Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Expenses",
+          "entityId": "myExpenses_entityId",
+          "name": "Meine Ausgaben",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Reports",
+          "entityId": "manager_entityId",
+          "name": "Manager",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113032454",
+      "termsOfUseUrl": "https://www.expensya.com/en/tou",
+      "validDomains": [
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+        "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+      }
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "version": "2.1.0",
+      "name": "Expensya",
+      "accentColor": "#3366ff",
+      "amsSellerAccountId": 62007690,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Conéctese a su cuenta Expensya",
+                  "title": "Connect"
+                },
+                {
+                  "description": "Desconéctese de su cuenta Expensya",
+                  "title": "Disconnect"
+                },
+                {
+                  "description": "Aprenda más sobre Expensya",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "FinancialManagement",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Expensya",
+      "developerUrl": "https://www.expensya.com",
+      "industries": [
+        "Finance",
+        "ProfessionalServices"
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Expenses",
+        "Expensya",
+        "Payment"
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+      "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+      "longDescription": "Expensya ofrece un conjunto potente de características diseñadas para revolucionar el proceso de gestión de gastos de tu equipo. Con nuevas pestañas, capacidades de búsqueda mejoradas, notificaciones instantáneas e integración fluida con las aplicaciones web y móviles de Expensya, Expensya simplifica el seguimiento, la verificación y la aprobación de gastos, ofreciendo así una mayor autonomía tanto a los gerentes como a los empleados\n**Nuevas pestañas: Mis Gastos y Gerente**\nLa pestaña Mis Gastos permite a todos los empleados agregar, verificar, enviar y seguir fácilmente sus propios gastos. Utilice opciones de búsqueda avanzadas para encontrar rápidamente gastos específicos por cantidad o título de gasto.\nLa pestaña Manager ofrece a los gerentes una visibilidad completa y una gestión fácil de los informes de gastos y avances de su equipo.\n**Manténgase informado con notificaciones simplificadas**\nSea informado inmediatamente del progreso de los gastos. Expensya envía notificaciones en tiempo real a los gerentes cuando los gastos requieren aprobación. La comunicación entre los gerentes y sus empleados se refuerza con notificaciones dedicadas sobre la actualización del estado de los gastos.\n**Seguimiento transparente en varias plataformas**\nExpensya en Microsoft Teams ofrece una experiencia sincronizada. Cada gasto creado en la aplicación web o móvil se refleja instantáneamente en la aplicación Teams, ofreciendo una vista unificada de los gastos y un seguimiento sin esfuerzo en todos los dispositivos.\nDescubra el poder de Expensya para Microsoft Teams y opte por una gestión simplificada de gastos, una colaboración reforzada y una mayor eficiencia del equipo.\n¿Aún no tienes una cuenta de Expensya? [¡Regístrate!](https://app.expensya.com) ¡ahora mismo!",
+      "mpnId": "5049534",
+      "officeAssetId": "WA200003924",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.expensya.com/en/legal",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Expensya: Simplifica la gestión de gastos de Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Expenses",
+          "entityId": "myExpenses_entityId",
+          "name": "Mis gastos",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Reports",
+          "entityId": "manager_entityId",
+          "name": "Mánager",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113032454",
+      "termsOfUseUrl": "https://www.expensya.com/en/tou",
+      "validDomains": [
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+        "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+      }
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "version": "2.1.0",
+      "name": "Expensya",
+      "accentColor": "#3366ff",
+      "amsSellerAccountId": 62007690,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Kirjaudu sisään Expensya-tilillesi",
+                  "title": "Connect"
+                },
+                {
+                  "description": "Kirjaudu ulos Expensya-tililtäsi",
+                  "title": "Disconnect"
+                },
+                {
+                  "description": "Lue lisää Expensya:sta",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "FinancialManagement",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Expensya",
+      "developerUrl": "https://www.expensya.com",
+      "industries": [
+        "Finance",
+        "ProfessionalServices"
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Expenses",
+        "Expensya",
+        "Payment"
+      ],
+      "languageTag": "fi",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+      "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+      "longDescription": "Expensya tarjoaa tehokkaan ominaisuuspaketin, jonka avulla voit mullistaa tiimisi kulujen hallinnan. Uusien välilehtien, parannettujen hakutoimintojen, välittömien ilmoitusten ja saumattoman integraation avulla Expensyan web- ja mobiilisovelluksiin, Expensya yksinkertaistaa kulujen seurantaa, tarkastusta ja hyväksymistä, mikä tarjoaa suuremman itsenäisyyden sekä johtajille että työntekijöille\n**Uudet välilehdet: Omat Kulut ja Manageri**\nOmat Kulut -välilehti mahdollistaa kaikille työntekijöille omien kulujensa lisäämisen, tarkistamisen, lähettämisen ja seurannan helposti. Käytä kehittyneitä hakuvaihtoehtoja löytääksesi nopeasti tiettyjä kuluja määrän tai kulutuksen nimen perusteella.\nManageri-välilehti tarjoaa johtajille täydellisen näkyvyyden ja vaivattoman hallinnan tiiminsä kuluraporteista ja ennakoista.\n**Pidä itsesi ajan tasalla yksinkertaistettujen ilmoitusten avulla**\nSaa välittömästi tietoasi kuluista. Expensya lähettää reaaliaikaisia ilmoituksia johtajille, kun kulut vaativat hyväksynnän. Viestintä johtajien ja heidän työntekijöidensä välillä vahvistuu kuluja koskevien päivitysten omistettujen ilmoitusten kautta.\n**Seuranta saumaton useilla alustoilla**\nExpensya Microsoft Teamsissa tarjoaa synkronoidun kokemuksen. Jokainen web- tai mobiilisovelluksella luotu kulu heijastuu välittömästi Teams-sovelluksessa, tarjoten yhtenäisen näkymän kuluihin ja vaivattoman seurannan kaikilla laitteilla.\nTutustu Expensyan voimaan Microsoft Teamsille ja valitse yksinkertaistettu kulujen hallinta, parannettu yhteistyö ja parempi tiimin tehokkuus.\nEtkö ole vielä Expensyan jäsen? [Rekisteröidy!](https://app.expensya.com) heti!",
+      "mpnId": "5049534",
+      "officeAssetId": "WA200003924",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.expensya.com/en/legal",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Expensya: Yksinkertaista Microsoft Teamsin kulujen hallintaa",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Expenses",
+          "entityId": "myExpenses_entityId",
+          "name": "Omat kulut",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Reports",
+          "entityId": "manager_entityId",
+          "name": "Manageri",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113032454",
+      "termsOfUseUrl": "https://www.expensya.com/en/tou",
+      "validDomains": [
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+        "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+      }
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "version": "2.1.0",
+      "name": "Expensya",
+      "accentColor": "#3366ff",
+      "amsSellerAccountId": 62007690,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Se connecter à votre compte Expensya",
+                  "title": "Connect"
+                },
+                {
+                  "description": "Se déconnecter de votre compte Expensya",
+                  "title": "Disconnect"
+                },
+                {
+                  "description": "En savoir plus sur Expensya",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "FinancialManagement",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Expensya",
+      "developerUrl": "https://www.expensya.com",
+      "industries": [
+        "Finance",
+        "ProfessionalServices"
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Expenses",
+        "Expensya",
+        "Payment"
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+      "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+      "longDescription": "Expensya propose un ensemble puissant de fonctionnalités conçues pour révolutionner le processus de gestion des dépenses de votre équipe. Avec de nouveaux onglets, des capacités de recherche améliorées, des notifications instantanées et une intégration transparente avec les applications web et mobiles d'Expensya, Expensya simplifie le suivi, la vérification et l'approbation des dépenses, offrant ainsi une plus grande autonomie tant aux managers qu'aux employés\n**Nouveaux onglets : Mes Dépenses et Manager**\nL'onglet Mes Dépenses permet à tous les employés d'ajouter, de vérifier, de soumettre et de suivre facilement leurs propres dépenses. Utilisez des options de recherche avancées pour trouver rapidement des dépenses spécifiques par montant ou titre de dépense.\nL'onglet Manager offre aux managers une visibilité complète et une gestion aisée des rapports de dépenses et des avances de leur équipe.\n**Restez informé grâce à des notifications simplifiées**\nSoyez immédiatement informé de l'avancement des dépenses. Expensya envoie des notifications en temps réel aux managers lorsque des dépenses nécessitent une approbation. La communication entre les managers et leurs employés est renforcée grâce à des notifications dédiées sur la mise à jour du statut des dépenses.\n**Suivi transparent sur plusieurs plateformes**\nExpensya sur Microsoft Teams offre une expérience synchronisée. Chaque dépense créée sur l'application web ou mobile est instantanément reflétée dans l'application Teams, offrant une vue unifiée des dépenses et un suivi sans effort sur tous les appareils.\nDécouvrez la puissance d'Expensya pour Microsoft Teams et optez pour une gestion simplifiée des dépenses, une collaboration renforcée et une meilleure efficacité d'équipe.\nVous n'avez pas encore de compte Expensya ? [Inscrivez-vous!](https://app.expensya.com) dès maintenant !",
+      "mpnId": "5049534",
+      "officeAssetId": "WA200003924",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.expensya.com/en/legal",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Expensya: Simplifiez la gestion des dépenses Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Expenses",
+          "entityId": "myExpenses_entityId",
+          "name": "Mes dépenses",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Reports",
+          "entityId": "manager_entityId",
+          "name": "Manager",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113032454",
+      "termsOfUseUrl": "https://www.expensya.com/en/tou",
+      "validDomains": [
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+        "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+      }
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "version": "2.1.0",
+      "name": "Expensya",
+      "accentColor": "#3366ff",
+      "amsSellerAccountId": 62007690,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Connettersi al tuo account Expensya",
+                  "title": "Connect"
+                },
+                {
+                  "description": "Disconnettersi dal tuo account Expensya",
+                  "title": "Disconnect"
+                },
+                {
+                  "description": "Per saperne di più su Expensya",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "FinancialManagement",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Expensya",
+      "developerUrl": "https://www.expensya.com",
+      "industries": [
+        "Finance",
+        "ProfessionalServices"
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Expenses",
+        "Expensya",
+        "Payment"
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+      "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+      "longDescription": "Expensya offre un potente insieme di funzionalità progettate per rivoluzionare il processo di gestione delle spese del tuo team. Con nuove schede, capacità di ricerca migliorate, notifiche istantanee e un'integrazione senza soluzione di continuità con le applicazioni web e mobili di Expensya, Expensya semplifica il monitoraggio, la verifica e l'approvazione delle spese, offrendo così una maggiore autonomia sia ai manager che ai dipendenti.\n**Nuove schede: Le mie spese e Manager**\nLa scheda Le mie spese consente a tutti i dipendenti di aggiungere, verificare, inviare e monitorare facilmente le proprie spese. Utilizza opzioni di ricerca avanzate per trovare rapidamente spese specifiche per importo o titolo di spesa. La scheda Manager offre ai manager una visibilità completa e una facile gestione dei rapporti di spese e degli anticipi del loro team.\n**Rimani informato con notifiche semplificate**\nSii immediatamente informato sull'avanzamento delle spese. Expensya invia notifiche in tempo reale ai manager quando le spese richiedono un'approvazione. La comunicazione tra i manager e i loro dipendenti è rafforzata da notifiche dedicate sull'aggiornamento dello stato delle spese.\n**Monitoraggio trasparente su più piattaforme**\nExpensya su Microsoft Teams offre un'esperienza sincronizzata. Ogni spesa creata sull'applicazione web o mobile è immediatamente riflessa nell'applicazione Teams, offrendo una vista unificata delle spese e un monitoraggio senza sforzo su tutti i dispositivi. Scopri la potenza di Expensya per Microsoft Teams e scegli una gestione semplificata delle spese, una collaborazione rafforzata e una maggiore efficienza del team. Non hai ancora un account Expensya? [Iscriviti!](https://app.expensya.com) ora!",
+      "mpnId": "5049534",
+      "officeAssetId": "WA200003924",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.expensya.com/en/legal",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Expensya: Semplifica la gestione delle spese Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Expenses",
+          "entityId": "myExpenses_entityId",
+          "name": "Le mie spese",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Reports",
+          "entityId": "manager_entityId",
+          "name": "Manager",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113032454",
+      "termsOfUseUrl": "https://www.expensya.com/en/tou",
+      "validDomains": [
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+        "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+      }
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "version": "2.1.0",
+      "name": "Expensya",
+      "accentColor": "#3366ff",
+      "amsSellerAccountId": 62007690,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Logg på Expensya-kontoen din",
+                  "title": "Connect"
+                },
+                {
+                  "description": "Logg av Expensya-kontoen din",
+                  "title": "Disconnect"
+                },
+                {
+                  "description": "Lær mer om Expensya",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "FinancialManagement",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Expensya",
+      "developerUrl": "https://www.expensya.com",
+      "industries": [
+        "Finance",
+        "ProfessionalServices"
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Expenses",
+        "Expensya",
+        "Payment"
+      ],
+      "languageTag": "nb-no",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+      "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+      "longDescription": "Expensya tilbyr et kraftig sett med funksjoner designet for å revolusjonere kostnadsstyringsprosessen i teamet ditt. Med nye faner, forbedrede søkefunksjoner, umiddelbare varsler og sømløs integrasjon med Expensyas web- og mobilapper, forenkler Expensya sporing, sjekking og godkjenning av utgifter, og gir større autonomi både til ledere og ansatte\n**Nye faner: Mine Utgifter og Manager**\nFanen Mine Utgifter lar alle ansatte legge til, sjekke, sende inn og enkelt spore egne utgifter. Bruk avanserte søkealternativer for raskt å finne spesifikke utgifter etter beløp eller utgiftstittel.\nManager-fanen gir ledere full oversikt og enkel styring av utgiftsrapporter og forskudd fra teamet deres.\n**Hold deg oppdatert med forenklede varslinger**\nBli umiddelbart informert om fremdriften av utgifter. Expensya sender varsler i sanntid til ledere når utgifter krever godkjenning. Kommunikasjonen mellom ledere og deres ansatte er forbedret med dedikerte varsler om oppdatering av utgiftsstatus.\n**Sømløs sporing på flere plattformer**\nExpensya på Microsoft Teams tilbyr en synkronisert opplevelse. Hver utgift som opprettes på web- eller mobilappen, gjenspeiles umiddelbart i Teams-appen, og gir en forent visning av utgifter og ubesværet sporing på alle enheter.\nOppdag kraften i Expensya for Microsoft Teams og velg en forenklet styring av utgifter, forbedret samarbeid og bedre teameffektivitet.\nHar du ikke en Expensya-konto ennå? [Registrer deg!](https://app.expensya.com) nå!",
+      "mpnId": "5049534",
+      "officeAssetId": "WA200003924",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.expensya.com/en/legal",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Expensya: Forenkle styringen av utgiftene Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Expenses",
+          "entityId": "myExpenses_entityId",
+          "name": "Mine utgifter",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Reports",
+          "entityId": "manager_entityId",
+          "name": "Manager",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113032454",
+      "termsOfUseUrl": "https://www.expensya.com/en/tou",
+      "validDomains": [
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+        "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+      }
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "version": "2.1.0",
+      "name": "Expensya",
+      "accentColor": "#3366ff",
+      "amsSellerAccountId": 62007690,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Inloggen op uw Expensya-account",
+                  "title": "Connect"
+                },
+                {
+                  "description": "Afmelden van uw Expensya-account",
+                  "title": "Disconnect"
+                },
+                {
+                  "description": "Meer weten over Expensya",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "FinancialManagement",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Expensya",
+      "developerUrl": "https://www.expensya.com",
+      "industries": [
+        "Finance",
+        "ProfessionalServices"
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Expenses",
+        "Expensya",
+        "Payment"
+      ],
+      "languageTag": "nl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+      "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+      "longDescription": "Expensya, nu beschikbaar op Microsoft Teams, biedt een krachtige set functies ontworpen om het uitgavenbeheerproces van uw team te revolutioneren. Met nieuwe tabbladen, verbeterde zoekmogelijkheden, directe meldingen en naadloze integratie met Expensya web- en mobiele applicaties, vereenvoudigt Expensya het volgen, verifiëren en goedkeuren van uitgaven, waardoor zowel managers als medewerkers worden versterkt.\n**Nieuwe tabbladen: Mijn uitgaven en Manager**\nHet tabblad Mijn uitgaven stelt alle medewerkers in staat om moeiteloos hun eigen uitgaven toe te voegen, te beoordelen, in te dienen en te volgen. Gebruik geavanceerde zoekopties om specifieke uitgaven snel te vinden op bedrag of uitgaventitel. Het tabblad Manager biedt managers een uitgebreid overzicht en moeiteloos beheer van de onkostenrapporten en voorschot aanvragen van hun team.\n**Blijf op de hoogte met gestroomlijnde meldingen**\nWees direct op de hoogte van de voortgang van uw en uw medewerkers' uitgaven. Expensya stuurt tijdige meldingen naar managers wanneer uitgaven moeten worden goedgekeurd. Communicatie tussen managers en hun medewerkers wordt versterkt met specifieke meldingen over updates van de uitgavenstatus.\n**Naadloze Cross-Platform Tracking**\nExpensya op Microsoft Teams zorgt voor een naadloze ervaring op verschillende platforms. Elke uitgave die op de web- of mobiele app wordt gemaakt, wordt direct weerspiegeld in de Teams-app, waardoor een uniform overzicht van uitgaven en moeiteloze tracking op verschillende apparaten mogelijk is. Ontdek de kracht van Expensya voor Microsoft Teams en ontgrendel gestroomlijnd uitgavenbeheer, verbeterde samenwerking en verbeterde team-efficiëntie. Heb je nog geen Expensya-account? [Meld je aan](https://app.expensya.com/)!",
+      "mpnId": "5049534",
+      "officeAssetId": "WA200003924",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.expensya.com/en/legal",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Expensya: Stroomlijn uitgaven, verhoog efficiëntie, versterk uw Microsoft Teams.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Expenses",
+          "entityId": "myExpenses_entityId",
+          "name": "Mijn uitgaven",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Reports",
+          "entityId": "manager_entityId",
+          "name": "Manager",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113032454",
+      "termsOfUseUrl": "https://www.expensya.com/en/tou",
+      "validDomains": [
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+        "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+      }
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "version": "2.1.0",
+      "name": "Expensya",
+      "accentColor": "#3366ff",
+      "amsSellerAccountId": 62007690,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Zaloguj się do swojego konta Expensya",
+                  "title": "Connect"
+                },
+                {
+                  "description": "Wyloguj się ze swojego konta Expensya",
+                  "title": "Disconnect"
+                },
+                {
+                  "description": "Dowiedz się więcej o Expensya",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "FinancialManagement",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Expensya",
+      "developerUrl": "https://www.expensya.com",
+      "industries": [
+        "Finance",
+        "ProfessionalServices"
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Expenses",
+        "Expensya",
+        "Payment"
+      ],
+      "languageTag": "pl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+      "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+      "longDescription": "Expensya, teraz dostępna na Microsoft Teams, oferuje potężny zestaw funkcji zaprojektowanych, aby zrewolucjonizować proces zarządzania wydatkami w Twoim zespole. Dzięki nowym zakładkom, zaawansowanym możliwościom wyszukiwania, natychmiastowym powiadomieniom i bezproblemowej integracji z aplikacjami internetowymi i mobilnymi Expensya, Expensya upraszcza śledzenie wydatków, weryfikację i zatwierdzanie, wzmacniając zarówno menedżerów, jak i pracowników.\n**Nowe zakładki: Moje wydatki i Menedżer**\nZakładka Moje wydatki umożliwia wszystkim pracownikom bezproblemowe dodawanie, przeglądanie, wysyłanie i śledzenie własnych wydatków. Użyj zaawansowanych opcji wyszukiwania, aby szybko znaleźć konkretne wydatki według kwoty lub tytułu wydatku. Zakładka Menedżer zapewnia menedżerom pełną widoczność i bezproblemowe zarządzanie raportami wydatków ich zespołu i wnioskami o zaliczki.\n**Bądź na bieżąco dzięki usprawnionym powiadomieniom**\nBądź natychmiast informowany o postępach Twoich i wydatków Twoich pracowników. Expensya wysyła menedżerom terminowe powiadomienia, gdy wydatki muszą być zatwierdzone. Komunikacja między menedżerami a ich pracownikami jest wzmacniana dzięki dedykowanym powiadomieniom o aktualizacjach statusu wydatków.\n**Bezproblemowe śledzenie na różnych platformach**\nExpensya na Microsoft Teams zapewnia bezproblemowe doświadczenie na różnych platformach. Każdy wydatek utworzony w aplikacji internetowej lub mobilnej jest natychmiast odzwierciedlany w aplikacji Teams, zapewniając jednolity widok wydatków i bezproblemowe śledzenie na różnych urządzeniach. Odkryj moc Expensya dla Microsoft Teams i odblokuj usprawnione zarządzanie wydatkami, lepszą współpracę i poprawę efektywności zespołu. Nie masz jeszcze konta Expensya? [Zarejestruj się](https://app.expensya.com/)!",
+      "mpnId": "5049534",
+      "officeAssetId": "WA200003924",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.expensya.com/en/legal",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Expensya:Usprawnij wydatki, zwiększ efektywność, wzmocnij swoje Microsoft Teams.",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Expenses",
+          "entityId": "myExpenses_entityId",
+          "name": "Moje wydatki",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Reports",
+          "entityId": "manager_entityId",
+          "name": "Menedżer",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113032454",
+      "termsOfUseUrl": "https://www.expensya.com/en/tou",
+      "validDomains": [
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+        "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+      }
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "version": "2.1.0",
+      "name": "Expensya",
+      "accentColor": "#3366ff",
+      "amsSellerAccountId": 62007690,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Conectar à sua conta Expensya",
+                  "title": "Connect"
+                },
+                {
+                  "description": "Desconectar da sua conta Expensya",
+                  "title": "Disconnect"
+                },
+                {
+                  "description": "Saiba mais sobre Expensya",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "FinancialManagement",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Expensya",
+      "developerUrl": "https://www.expensya.com",
+      "industries": [
+        "Finance",
+        "ProfessionalServices"
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Expenses",
+        "Expensya",
+        "Payment"
+      ],
+      "languageTag": "pt",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+      "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+      "longDescription": "Expensya oferece um conjunto poderoso de recursos projetados para revolucionar o processo de gerenciamento de despesas de sua equipe. Com novas abas, capacidades de pesquisa aprimoradas, notificações instantâneas e integração perfeita com os aplicativos web e móveis da Expensya, a Expensya simplifica o rastreamento, verificação e aprovação de despesas, oferecendo maior autonomia tanto para gerentes quanto para funcionários\n**Novas abas: Minhas Despesas e Gerente**\nA aba Minhas Despesas permite que todos os funcionários adicionem, verifiquem, enviem e acompanhem facilmente suas próprias despesas. Use opções de pesquisa avançadas para encontrar rapidamente despesas específicas por valor ou título de despesa.\nA aba Gerente oferece aos gerentes uma visibilidade completa e uma gestão fácil dos relatórios de despesas e adiantamentos de sua equipe.\n**Mantenha-se informado com notificações simplificadas**\nSeja imediatamente informado sobre o progresso das despesas. A Expensya envia notificações em tempo real aos gerentes quando as despesas precisam de aprovação. A comunicação entre os gerentes e seus funcionários é reforçada por notificações dedicadas sobre a atualização do status das despesas.\n**Acompanhamento transparente em várias plataformas**\nExpensya no Microsoft Teams oferece uma experiência sincronizada. Cada despesa criada no aplicativo web ou móvel é instantaneamente refletida no aplicativo Teams, oferecendo uma visão unificada das despesas e um acompanhamento sem esforço em todos os dispositivos.\nDescubra o poder da Expensya para Microsoft Teams e opte por um gerenciamento simplificado de despesas, colaboração reforçada e maior eficiência da equipe.\nAinda não tem uma conta Expensya? [Inscreva-se!](https://app.expensya.com) agora mesmo!",
+      "mpnId": "5049534",
+      "officeAssetId": "WA200003924",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.expensya.com/en/legal",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Expensya: Simplifique a gestão de despesas do Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Expenses",
+          "entityId": "myExpenses_entityId",
+          "name": "As minhas despesas",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Reports",
+          "entityId": "manager_entityId",
+          "name": "Aprovador",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113032454",
+      "termsOfUseUrl": "https://www.expensya.com/en/tou",
+      "validDomains": [
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+        "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+      }
+    },
+    {
+      "manifestVersion": "1.11",
+      "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+      "version": "2.1.0",
+      "name": "Expensya",
+      "accentColor": "#3366ff",
+      "amsSellerAccountId": 62007690,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Ansluta till ditt Expensya konto",
+                  "title": "Connect"
+                },
+                {
+                  "description": "Logga ut från ditt Expensya konto",
+                  "title": "Disconnect"
+                },
+                {
+                  "description": "Lär dig mer om Expensya",
+                  "title": "Help"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "acbc0cba-5e0a-4bb5-a15c-21bce2863f01",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "FinancialManagement",
+        "Productivity",
+        "WorkflowAndBusinessManagement"
+      ],
+      "creatorId": "",
+      "defaultBlockUntilAdminAction": false,
+      "developerName": "Expensya",
+      "developerUrl": "https://www.expensya.com",
+      "industries": [
+        "Finance",
+        "ProfessionalServices"
+      ],
+      "isAppIOSAcquirable": true,
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "Expenses",
+        "Expensya",
+        "Payment"
+      ],
+      "languageTag": "sv",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_largeimage.png",
+      "lastUpdatedAt": "2024-03-27T09:31:49.2966294+00:00",
+      "longDescription": "Expensya erbjuder en kraftfull uppsättning funktioner konstruerade för att revolutionera er teams utgiftshanteringsprocess. Med nya flikar, förbättrade sökmöjligheter, omedelbara notifieringar och sömlös sammanfogning med Expensyas webb och mobil applikationer förändrar Expensya uppföljning, verifiering och godkännande av utgifter och tillhandahåller därmed större självständighet till såväl chefer som anställda \n**Nya flikar: Mina Utgifter och Administratör** \nFliken Mina Utgifter gör det möjligt för alla anställda att enkelt lägga till, kontrollera, skicka in och följa upp sina egna utgifter, använda avancerade sökoptions för att snabbt hitta specifika utgifter med mängd eller utgiftstitel. Administratörsfliken tillhandahåller chefer med genomgående insyn och enkel hantering av deras teams utgiftsrapporter och förskott. \n**Håll dig uppdaterad med förenklade notifieringar** \n Få omedelbar information om utgifts framsteg, Expensya sänder realtidsnotifieringar till chefer när utgifter behöver godkännas. Kommunikationen mellan chefer och deras anställda förstärks med unika notifieringar om uppdatering av utgifternas status. \n**Genomskinlig uppföljning på flera plattformar** \nExpensya på Microsoft Teams tillför en synkroniserad upplevelse. Var utgift skapad på webben eller mobilapplikationen reflekteras omedelbart på Teams tillämpningen, som bidrar med en enhetlig vy av utgifterna och en ansträngningslös uppföljning på alla enheter. \nUpplev blandningen av Expensyas styrka för Microsoft Teams och njut av en förenklad hantering av utgifter, förstärkt samverkning och en bättre team effektivitet. \n Har du inte ett Expensya konto än? [Skriv upp dig!](https://app.expensya.com) nu!",
+      "mpnId": "5049534",
+      "officeAssetId": "WA200003924",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.expensya.com/en/legal",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/1.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/2.jpe",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_screenshot/3.jpe"
+      ],
+      "securityComplianceInfo": {
+        "status": "attested"
+      },
+      "shortDescription": "Expensya: Förenkla hanteringen av utgifterna för Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/acbc0cba-5e0a-4bb5-a15c-21bce2863f01/2025071113032454/acbc0cba-5e0a-4bb5-a15c-21bce2863f01_smallimage.png",
+      "staticTabs": [
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Expenses",
+          "entityId": "myExpenses_entityId",
+          "name": "Mina utgifter",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://app.expensya.com/teams#/Reports",
+          "entityId": "manager_entityId",
+          "name": "Manager",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071113032454",
+      "termsOfUseUrl": "https://www.expensya.com/en/tou",
+      "validDomains": [
+        "token.botframework.com"
+      ],
+      "webApplicationInfo": {
+        "id": "6ce7c411-d7c9-4c4f-882e-164447c9b44a",
+        "resource": "api://app.expensya.com/botid-acbc0cba-5e0a-4bb5-a15c-21bce2863f01"
+      }
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Expensya Can you help me with understanding how to streamline my expenses?",
+      "description": "The user is asking for help regarding expense management.",
+      "command": "Help"
+    },
+    {
+      "prompt": "@Expensya I need to disconnect my account from your service.",
+      "description": "The user wants to disconnect their account from the Expensya service.",
+      "command": "Disconnect"
+    },
+    {
+      "prompt": "@Expensya Please connect my account to the system to start managing my expenses.",
+      "description": "The user is requesting to connect their account to start using the Expensya services.",
+      "command": "Connect"
+    }
+  ]
+}

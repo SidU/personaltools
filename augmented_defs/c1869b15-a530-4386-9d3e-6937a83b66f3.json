@@ -1,0 +1,2225 @@
+{
+  "manifestVersion": "1.9",
+  "id": "c1869b15-a530-4386-9d3e-6937a83b66f3",
+  "version": "2.0.11",
+  "name": "Datto Workplace",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 70074600,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "View list of supported commands",
+              "title": "help"
+            },
+            {
+              "description": "Connect your Datto Workplace account",
+              "title": "login"
+            },
+            {
+              "description": "Disconnect your Datto Workplace account",
+              "title": "logout"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "ContentManagement",
+    "Productivity"
+  ],
+  "creatorId": "",
+  "developerName": "Datto, Inc.",
+  "developerUrl": "https://www.datto.com/file-backup-and-sync/datto-workplace",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://dwp-trafficmanager.workplace.datto.com/platforms/msteams-tab/?theme={theme}#/setup/selectFolder",
+      "context": [
+        "channelTab",
+        "privateChatTab"
+      ],
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "ProfessionalServices"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Enter filename",
+          "fetchTask": false,
+          "id": "fileSearch",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Name of file to search for",
+              "inputType": "text",
+              "name": "query",
+              "title": "File name"
+            }
+          ],
+          "title": "Search for file",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "*.workplace.datto.com"
+            ],
+            "supportsAnonymousAccess": false
+          }
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "collaboration "
+  ],
+  "languageTag": "en-us",
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_largeimage.png",
+  "lastUpdatedAt": "2023-10-02T13:31:04.4486908+00:00",
+  "longDescription": "Workplace provides the security, mobility, and control that businesses need to access, share, and collaborate on files internally and externally.\nSecure Collaboration, Built for Business\nWorkplace is purpose-built for the needs of today’s digital and mobile workforce and is designed to ensure secure collaboration and protect you from the risks associated with file sharing.\nWork Anywhere, On Any Device\nWith support for Windows, MacOS, Windows Server, iOS, and Android; Workplace eliminates the need for costly legacy tools such as VPN and FTP to enable business productivity. File locking and conflict management ensure collaboration without frustration. An easy-to-use permission structure for internal and external sharing allows Workplace users to securely collaborate, leveraging integrations with core business tools such as Microsoft Office and G Suite.\nEase of Use\nWorkplace is built with usability in mind. Administrators can manage and monitor Workplace usage with minimal effort. Tight integrations with Windows Explorer and MacOS Finder and intuitive Online and Mobile interfaces ensure rapid adoption into users existing workflow. Workplace simply works!\nSecurity and Compliance\nOver 99.99% uptime alongside HIPAA, GDPR, and SOC 2 compliance means Datto Workplace has a proven track record of keeping business data safe and available 24/7.\nData is encrypted in transit and at rest with 265 bit AES encryption. Data centers are geo-redundant, with regions based in the USA, Canada, Europe, and Australia. Advanced policies and device management ensure data access is controlled and managed. 180-day versioning ensures that you can quickly recover accidentally deleted files or revert to a previous version. \nGetting started\nSee [www.datto.com/products/workplace](https://www.datto.com/products/workplace/)",
+  "mpnId": "6083457",
+  "officeAssetId": "WA200001987",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.datto.com/legal/privacy-policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/1.png"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Access your Datto Workplace files directly from Microsoft Teams platform",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_smallimage.png",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm",
+      "entityId": "HelpTab",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm"
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "systemVersion": "2025071115135977",
+  "termsOfUseUrl": "https://www.datto.com/legal/terms-of-use",
+  "validDomains": [
+    "dwp-trafficmanager.workplace.datto.com",
+    "workplace.datto.com",
+    "*.workplace.datto.com"
+  ],
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ER",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ET",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "JP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ME",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ML",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MQ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NP",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "OM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "QA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ST",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SX",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TD",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TJ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "UZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "VU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WF",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "WS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "YT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZW",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "supportedLanguages": [
+    "en-us",
+    "de",
+    "sv",
+    "it",
+    "fr",
+    "nl",
+    "es"
+  ],
+  "localizedDefinitions": [
+    {
+      "manifestVersion": "1.9",
+      "id": "c1869b15-a530-4386-9d3e-6937a83b66f3",
+      "version": "2.0.11",
+      "name": "Datto Workplace",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 70074600,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Liste der unterstützten Befehle anzeigen",
+                  "title": "help"
+                },
+                {
+                  "description": "Verbinden Sie Ihr Datto Workplace-Konto",
+                  "title": "login"
+                },
+                {
+                  "description": "Trennen Sie Ihr Datto Workplace-Konto",
+                  "title": "logout"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "Datto, Inc.",
+      "developerUrl": "https://www.datto.com/file-backup-and-sync/datto-workplace",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://dwp-trafficmanager.workplace.datto.com/platforms/msteams-tab/?theme={theme}#/setup/selectFolder",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Enter filename",
+              "fetchTask": false,
+              "id": "fileSearch",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Name of file to search for",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "File name"
+                }
+              ],
+              "title": "Search for file",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.workplace.datto.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "collaboration "
+      ],
+      "languageTag": "de",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_largeimage.png",
+      "lastUpdatedAt": "2023-10-02T13:31:04.4486908+00:00",
+      "longDescription": "Workplace bietet die Sicherheit, Mobilität und Kontrolle, die Unternehmen benötigen, um intern und extern auf Dateien zuzugreifen, diese freizugeben und zusammenzuarbeiten.\nSichere Zusammenarbeit für Unternehmen\nWorkplace wurde speziell für die Anforderungen der heutigen digitalen und mobilen Belegschaft entwickelt und soll eine sichere Zusammenarbeit gewährleisten und Sie vor den mit der Dateifreigabe verbundenen Risiken schützen.\nÜberall und auf jedem Gerät arbeiten\nDurch die Unterstützung von Windows, MacOS, Windows Server, iOS und Android macht Workplace kostspielige Legacy-Tools wie VPN und FTP überflüssig, um die geschäftliche Produktivität zu steigern. Dateisperrung und Konfliktmanagement gewährleisten die Zusammenarbeit ohne Frustration. Eine benutzerfreundliche Berechtigungsstruktur für die interne und externe Freigabe ermöglicht es Workplace-Benutzern, sicher zusammenzuarbeiten und die Integration mit zentralen Geschäftstools wie Microsoft Office und G Suite zu nutzen.\nBenutzerfreundlichkeit\nWorkplace ist auf Benutzerfreundlichkeit ausgelegt. Administratoren können die Nutzung von Workplace mit minimalem Aufwand verwalten und überwachen. Enge Integrationen mit Windows Explorer und MacOS Finder sowie intuitive Online- und Mobile-Schnittstellen gewährleisten eine schnelle Übernahme in den vorhandenen Workflow des Benutzers. Workplace funktioniert einwandfrei!\nSicherheit und Konformität\nMit einer Verfügbarkeit von über 99,99% und der Einhaltung von HIPAA, GDPR und SOC 2 verfügt Datto Workplace über eine nachgewiesene Erfolgsbilanz bei der Sicherheit und Verfügbarkeit von Geschäftsdaten rund um die Uhr.\nDie Daten werden während der Übertragung und im Ruhezustand mit 265-Bit-AES-Verschlüsselung verschlüsselt. Rechenzentren sind geo-redundant mit regionalen Stellungen in den USA, Kanada, Europa und Australien. Erweiterte Richtlinien und Geräteverwaltung stellen sicher, dass der Datenzugriff gesteuert und verwaltet wird. Die 180-Tage-Versionierung stellt sicher, dass Sie versehentlich gelöschte Dateien schnell wiederherstellen oder zu einer früheren Version Zurücksetzen können.\nLoslegen\nBitte sehe [www.datto.com/products/workplace](https://www.datto.com/products/workplace/)",
+      "mpnId": "6083457",
+      "officeAssetId": "WA200001987",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.datto.com/legal/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/1.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Greifen Sie direkt über Microsoft Teams auf Ihre Datto Workplace-Dateien zu",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm",
+          "entityId": "HelpTab",
+          "name": "Help",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115135977",
+      "termsOfUseUrl": "https://www.datto.com/legal/terms-of-use",
+      "validDomains": [
+        "dwp-trafficmanager.workplace.datto.com",
+        "workplace.datto.com",
+        "*.workplace.datto.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "c1869b15-a530-4386-9d3e-6937a83b66f3",
+      "version": "2.0.11",
+      "name": "Datto Workplace",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 70074600,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Visualiza la lista de comandos admitidos",
+                  "title": "help"
+                },
+                {
+                  "description": "Conecta tu cuenta Datto Workplace",
+                  "title": "login"
+                },
+                {
+                  "description": "Desconecta tu cuenta Datto Workplace",
+                  "title": "logout"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "Datto, Inc.",
+      "developerUrl": "https://www.datto.com/file-backup-and-sync/datto-workplace",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://dwp-trafficmanager.workplace.datto.com/platforms/msteams-tab/?theme={theme}#/setup/selectFolder",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Enter filename",
+              "fetchTask": false,
+              "id": "fileSearch",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Name of file to search for",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "File name"
+                }
+              ],
+              "title": "Search for file",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.workplace.datto.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "collaboration "
+      ],
+      "languageTag": "es",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_largeimage.png",
+      "lastUpdatedAt": "2023-10-02T13:31:04.4486908+00:00",
+      "longDescription": "Workplace te ofrece la seguridad, la movilidad y el control que necesitan las empresas para acceder y compartir archivos, colaborando interna y externamente.\nColaboración segura, diseñada para la empresa\nWorkplace ha sido diseñado a medida para cubrir las necesidades de la mano de obra digital y móvil de hoy con el fin de garantizar una colaboración segura y protegerte de los riesgos asociados al uso compartido de archivos.\nTrabaja en cualquier lugar y desde cualquier dispositivo\nCon soporte para Windows, MacOS, Windows Server, iOS, y Android; Workplace elimina la necesidad de costosas herramientas heredadas como VPN y FTP, promoviendo la productividad del negocio. El bloqueo de archivos y la gestión de conflictos garantizan una colaboración sin frustraciones. Una estructura de permisos de fácil uso para compartir recursos interna y externamente permite a los usuarios de Workplace colaborar de forma segura, beneficiándose de integraciones con herramientas profesionales principales como Microsoft Office y G Suite.\nFacilidad de uso\nWorkplace ha sido diseñado pensando en la facilidad de uso. Los administradores pueden gestionar y monitorizar el uso de Workplace con un esfuerzo mínimo. Las estrechas integraciones con Windows Explorer y MacOS Finder e intuitivas interfaces móviles y online facilitan su rápida adaptación al flujo de trabajo existente del usuario. ¡Workplace simplemente funciona!\nSeguridad y cumplimiento normativo\nCon un tiempo de actividad del 99,99 % y el cumplimiento de las normativas HIPPA, RGPD y SOC 2, Datto Workplace cuenta con una trayectoria probada en términos de seguridad y disponibilidad ininterrumpida de datos empresariales.\nLos datos son cifrados en tránsito y protegidos en reposo con un cifrado AES de 265 bits. Los centros de datos regionales son georedundantes y están ubicados en EE. UU., Canadá, Europa y Australia. Unas políticas y gestión de dispositivos avanzadas aseguran el control y la administración del acceso a los datos. Un control de versiones de 180 días garantiza que puedas recuperar rápidamente archivos eliminados accidentalmente o revertirlos a la versión anterior.\nEmpezando\nPor favor mira [www.datto.com/products/workplace](https://www.datto.com/products/workplace/)",
+      "mpnId": "6083457",
+      "officeAssetId": "WA200001987",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.datto.com/legal/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/1.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Accede a tus archivos de Datto Workplace directamente desde  Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm",
+          "entityId": "HelpTab",
+          "name": "Help",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115135977",
+      "termsOfUseUrl": "https://www.datto.com/legal/terms-of-use",
+      "validDomains": [
+        "dwp-trafficmanager.workplace.datto.com",
+        "workplace.datto.com",
+        "*.workplace.datto.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "c1869b15-a530-4386-9d3e-6937a83b66f3",
+      "version": "2.0.11",
+      "name": "Datto Workplace",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 70074600,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Afficher la liste des commandes prises en charge",
+                  "title": "help"
+                },
+                {
+                  "description": "Connectez votre compte Datto Workplace",
+                  "title": "login"
+                },
+                {
+                  "description": "Déconnectez votre compte Datto Workplace",
+                  "title": "logout"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "Datto, Inc.",
+      "developerUrl": "https://www.datto.com/file-backup-and-sync/datto-workplace",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://dwp-trafficmanager.workplace.datto.com/platforms/msteams-tab/?theme={theme}#/setup/selectFolder",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Enter filename",
+              "fetchTask": false,
+              "id": "fileSearch",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Name of file to search for",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "File name"
+                }
+              ],
+              "title": "Search for file",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.workplace.datto.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "collaboration "
+      ],
+      "languageTag": "fr",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_largeimage.png",
+      "lastUpdatedAt": "2023-10-02T13:31:04.4486908+00:00",
+      "longDescription": "Workplace fournit la sécurité, la mobilité et le contrôle dont les entreprises ont besoin pour accéder, partager et collaborer sur des fichiers interne et externe.\nCollaboration sécurisée, conçue pour les entreprises\nWorkplace est spécialement conçu pour les besoins de la main-d'œuvre numérique et mobile d'aujourd'hui, conçu pour assurer une collaboration sécurisée en vous protégeant contre les risques associés au partage de fichiers.\nTravaillez n'importe où, sur n'importe quel appareil\nAvec une prise en charge de Windows, MacOS, Windows Server, iOS et Android; Workplace élimine le besoin d'outils utilisés et coûteux tels que VPN et FTP pour permettre la productivité de l'entreprise. Le verrouillage des fichiers et la gestion des conflits garantissent une collaboration sans frustration. Une structure d'autorisation facile à utiliser pour le partage interne et externe, permet aux utilisateurs de Workplace de collaborer en toute sécurité, en tirant parti et intégrant des outils essentiels de base tels que Microsoft Office et G Suite.\nFacilité d'utilisation\nWorkplace est conçu avec la convivialité à l'esprit. Les administrateurs peuvent gérer et surveiller l'utilisation de Workplace avec un minimum d'effort. Des intégrations étroites avec Windows Explorer et MacOS Finder, avec une des interfaces intuitives en ligne ainsi que mobiles garantissent une adoption rapide dans le flux de travail existant des utilisateurs. Workplace fonctionne tout simplement!\nSécurité et conformité\nAvec plus de 99,99% ,depuis sa disponibilité, aux côtés des normes et conformités HIPAA, GDPR et SOC 2 signifie que Datto Workplace a fait ses preuves en matière de sécurité et de disponibilité des données en entreprise 24/7.\nLes données sont cryptées en transit ainsi qu'au repos avec un cryptage AES 265 bits. Les centres de données sont géo-redondants, avec des régions basées aux États-Unis, au Canada, en Europe et en Australie. Des termes et conditions avancées pour une gestion des appareils, garantissent un accès aux données contrôlé et géré. La gestion des versions sur 180 jours vous permet de récupérer rapidement des fichiers supprimés accidentellement ou de revenir à une version précédente.\nCommencer\nS'il te plait regarde [www.datto.com/products/workplace](https://www.datto.com/products/workplace/)",
+      "mpnId": "6083457",
+      "officeAssetId": "WA200001987",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.datto.com/legal/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/1.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Accédez à vos fichiers Datto Workplace directement depuis Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm",
+          "entityId": "HelpTab",
+          "name": "Help",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115135977",
+      "termsOfUseUrl": "https://www.datto.com/legal/terms-of-use",
+      "validDomains": [
+        "dwp-trafficmanager.workplace.datto.com",
+        "workplace.datto.com",
+        "*.workplace.datto.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "c1869b15-a530-4386-9d3e-6937a83b66f3",
+      "version": "2.0.11",
+      "name": "Datto Workplace",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 70074600,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Visualizza l'elenco dei comandi supportati",
+                  "title": "help"
+                },
+                {
+                  "description": "Connetti il tuo account Datto Workplace",
+                  "title": "login"
+                },
+                {
+                  "description": "Sconnetti il tuo account Datto Workplace",
+                  "title": "logout"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "Datto, Inc.",
+      "developerUrl": "https://www.datto.com/file-backup-and-sync/datto-workplace",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://dwp-trafficmanager.workplace.datto.com/platforms/msteams-tab/?theme={theme}#/setup/selectFolder",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Enter filename",
+              "fetchTask": false,
+              "id": "fileSearch",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Name of file to search for",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "File name"
+                }
+              ],
+              "title": "Search for file",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.workplace.datto.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "collaboration "
+      ],
+      "languageTag": "it",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_largeimage.png",
+      "lastUpdatedAt": "2023-10-02T13:31:04.4486908+00:00",
+      "longDescription": "Workplace fornisce la sicurezza, la mobilità e il controllo di cui le aziende hanno bisogno per accedere ai file, condividerli e utilizzarli in collaborazione con altri internamente ed esternamente all’azienda.\nCollaborazione sicura, progettata per il mondo del lavoro\nWorkplace è progettato appositamente per le esigenze della forza lavoro digitale e mobile di oggi ed è pensato per garantire la collaborazione in sicurezza e per proteggere dai rischi associati alla condivisione dei file.\nLavoro ovunque, su qualsiasi dispositivo\nFornendo supporto per Windows, MacOS, Windows Server, iOS e Android, Workplace elimina la necessità di costosi strumenti legacy come VPN e FTP per agevolare la produttività aziendale. Il blocco dei file e la gestione dei conflitti garantiscono la collaborazione senza problemi. Una struttura di autorizzazioni di facile utilizzo per la condivisione interna ed esterna all’azienda consente agli utenti di Workplace di collaborare in modo sicuro, sfruttando le integrazioni con strumenti aziendali fondamentali come Microsoft Office e G Suite.\nFacile da usare\nWorkplace è costruito pensando alla facilità di utilizzo. Gli amministratori possono gestire e monitorare l'utilizzo di Workplace con il minimo sforzo. L’integrazione con Windows Explorer e MacOS Finder e le interfacce online e mobili intuitive assicurano un rapido inserimento nel lavoro preesistente degli utenti. Workplace funziona!\nSicurezza e Conformità\nCon oltre il 99,99% di tempo di attività e la conformità a HIPAA, GDPR e SOC 2, Datto Workplace garantisce il mantenimento dei dati aziendali al sicuro e con una disponibilità di 24 ore su 24, 7 giorni su 7.\nI dati vengono crittografati in transito e quando inattivi con crittografia AES a 265 bit. I centri dati sono geo-ridondanti con sedi regionali negli Stati Uniti, Canada, Europa e Australia. Criteri avanzati e gestione dei dispositivi assicurano che l'accesso ai dati sia controllato e gestito. La preservazione delle versioni per 180 giorni garantisce il ripristino rapido dei file cancellati accidentalmente o il ripristino di una versione precedente.\nIniziare\nPerfavore guarda [www.datto.com/products/workplace](https://www.datto.com/products/workplace/)",
+      "mpnId": "6083457",
+      "officeAssetId": "WA200001987",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.datto.com/legal/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/1.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Accedi ai tuoi file Datto Workplace direttamente da Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm",
+          "entityId": "HelpTab",
+          "name": "Help",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115135977",
+      "termsOfUseUrl": "https://www.datto.com/legal/terms-of-use",
+      "validDomains": [
+        "dwp-trafficmanager.workplace.datto.com",
+        "workplace.datto.com",
+        "*.workplace.datto.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "c1869b15-a530-4386-9d3e-6937a83b66f3",
+      "version": "2.0.11",
+      "name": "Datto Workplace",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 70074600,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Lijst met ondersteunde opdrachten weergeven",
+                  "title": "help"
+                },
+                {
+                  "description": "Uw Datto Workplace-account koppelen",
+                  "title": "login"
+                },
+                {
+                  "description": "Uw Datto Workplace-account loskoppelen",
+                  "title": "logout"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "Datto, Inc.",
+      "developerUrl": "https://www.datto.com/file-backup-and-sync/datto-workplace",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://dwp-trafficmanager.workplace.datto.com/platforms/msteams-tab/?theme={theme}#/setup/selectFolder",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Enter filename",
+              "fetchTask": false,
+              "id": "fileSearch",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Name of file to search for",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "File name"
+                }
+              ],
+              "title": "Search for file",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.workplace.datto.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "collaboration "
+      ],
+      "languageTag": "nl",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_largeimage.png",
+      "lastUpdatedAt": "2023-10-02T13:31:04.4486908+00:00",
+      "longDescription": "Workplace biedt de beveiliging, mobiliteit en controle die bedrijven nodig hebben om intern en extern toegang te krijgen tot bestanden, deze te delen en hier samen aan te werken.\nVeilige samenwerking, gebouwd voor bedrijven\nWorkplace is speciaal gebouwd om te voldoen aan de behoeften van de huidige digitale en mobiele werknemer. Het is ontworpen om een veilige samenwerking te garanderen en u te beschermen tegen de risico's die verbonden zijn aan het delen van bestanden.\nWerk overal en op elk apparaat \nMet ondersteuning voor Windows, MacOS, Windows Server, iOS en Android maakt Workplace het gebruik van dure legacy-tools, zoals VPN en FTP om bedrijfsproductiviteit mogelijk te maken, overbodig. Bestandsvergrendeling en conflictbeheer zorgen voor een frustratieloze samenwerking. En dankzij de gebruiksvriendelijke machtigingsstructuur voor het intern en extern delen kunnen Workplace-gebruikers veilig samenwerken en gebruikmaken van belangrijke zakelijke geïntegreerde tools, zoals Microsoft Office en G Suite.\nEenvoudig in gebruik\nWorkplace is gebouwd met het oog op bruikbaarheid. Beheerders kunnen het gebruik van Workplace zonder moeite beheren en monitoren. De naadloze integraties met Windows Explorer en MacOS Finder en de intuïtieve online en mobiele interfaces zorgen ervoor dat het snel geïmplementeerd kan worden in de bestaande workflow van gebruikers. Workplace werkt gewoon!\nBeveiliging en naleving wetgeving\nEen actieve tijdsduur van meer dan 99,99% en de naleving van de HIPAA-, AVG- en SOC 2-wetgeving betekent dat Datto Workplace een bewezen topkwaliteit levert bij het veilig houden van bedrijfsgegevens en 24/7 beschikbaar is.\nGegevens worden tijdens de overdracht en wanneer ze inactief zijn, vergrendeld met een 265 bit AES-encryptie. Datacenters zijn geografisch redundant met regio's in de VS, Canada, Europa en Australië. Het geavanceerde beleid en apparaatbeheer zorgen ervoor dat de toegang tot gegevens wordt gecontroleerd en beheerd. En met het 180-dagen versiebeheer kunt u per-ongeluk verwijderde bestanden snel terugzetten of bestanden naar een vorige versie terugdraaien.\nBeginnen\nAlsjeblieft zie [www.datto.com/products/workplace](https://www.datto.com/products/workplace/)",
+      "mpnId": "6083457",
+      "officeAssetId": "WA200001987",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.datto.com/legal/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/1.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Krijg direct toegang tot je bestanden in Datto Workplace via Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm",
+          "entityId": "HelpTab",
+          "name": "Help",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115135977",
+      "termsOfUseUrl": "https://www.datto.com/legal/terms-of-use",
+      "validDomains": [
+        "dwp-trafficmanager.workplace.datto.com",
+        "workplace.datto.com",
+        "*.workplace.datto.com"
+      ]
+    },
+    {
+      "manifestVersion": "1.9",
+      "id": "c1869b15-a530-4386-9d3e-6937a83b66f3",
+      "version": "2.0.11",
+      "name": "Datto Workplace",
+      "accentColor": "#FFFFFF",
+      "amsSellerAccountId": 70074600,
+      "appMetadata": {},
+      "bots": [
+        {
+          "allowBotMessageDeleteByUser": false,
+          "commandLists": [
+            {
+              "commands": [
+                {
+                  "description": "Se lista med åtgärder som stöds",
+                  "title": "help"
+                },
+                {
+                  "description": "Anslut ditt Datto Workplace-konto",
+                  "title": "login"
+                },
+                {
+                  "description": "Koppla ifrån ditt Datto Worplace-konto",
+                  "title": "logout"
+                }
+              ],
+              "scopes": [
+                "personal"
+              ]
+            }
+          ],
+          "id": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "isNotificationOnly": false,
+          "scopes": [
+            "personal"
+          ],
+          "supportsCalling": false,
+          "supportsFiles": false,
+          "supportsVideo": false
+        }
+      ],
+      "categories": [
+        "Communication",
+        "ContentManagement",
+        "Productivity"
+      ],
+      "creatorId": "",
+      "developerName": "Datto, Inc.",
+      "developerUrl": "https://www.datto.com/file-backup-and-sync/datto-workplace",
+      "galleryTabs": [
+        {
+          "canUpdateConfiguration": true,
+          "configurationUrl": "https://dwp-trafficmanager.workplace.datto.com/platforms/msteams-tab/?theme={theme}#/setup/selectFolder",
+          "context": [
+            "channelTab",
+            "privateChatTab"
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "industries": [
+        "ProfessionalServices"
+      ],
+      "inputExtensions": [
+        {
+          "botId": "dce5eb33-b081-43c8-8bad-aeb14d818012",
+          "canUpdateConfiguration": false,
+          "commands": [
+            {
+              "context": [
+                "compose"
+              ],
+              "description": "Enter filename",
+              "fetchTask": false,
+              "id": "fileSearch",
+              "initialRun": false,
+              "parameters": [
+                {
+                  "description": "Name of file to search for",
+                  "inputType": "text",
+                  "name": "query",
+                  "title": "File name"
+                }
+              ],
+              "title": "Search for file",
+              "type": "query"
+            }
+          ],
+          "fetchCommands": false,
+          "messageHandlers": [
+            {
+              "type": "link",
+              "value": {
+                "domains": [
+                  "*.workplace.datto.com"
+                ],
+                "supportsAnonymousAccess": false
+              }
+            }
+          ],
+          "scopes": [
+            "team",
+            "personal"
+          ]
+        }
+      ],
+      "isBlockable": true,
+      "isCoreApp": false,
+      "isFullScreen": false,
+      "isFullTrust": false,
+      "isMetaOSApp": false,
+      "isPinnable": true,
+      "isPreinstallable": true,
+      "isTeamsOwned": false,
+      "isTenantConfigurable": true,
+      "keywords": [
+        "collaboration "
+      ],
+      "languageTag": "sv",
+      "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_largeimage.png",
+      "lastUpdatedAt": "2023-10-02T13:31:04.4486908+00:00",
+      "longDescription": "Workplace ger företag den säkerhet, mobilitet och kontroll som de behöver för att få åtkomst till, dela och samarbeta kring filer både internt och externt.\nSäkra, mobila samarbeten\nWorkplace är specialbyggt för att täcka behoven hos dagens digitala och mobila arbetsstyrka och är designat för att underlätta säkra samarbeten och skydda dig från riskerna med fildelning.\nArbeta var som helst, på vilken enhet som helst\nMed stöd för Windows, MacOS, Windows Server, iOS och Android eliminerar Workplace behovet av kostsamma äldre verktyg som VPN och FTP för att säkra företagets produktivitet. Fillåsning och konflikthantering underlättar samarbeten utan frustration. Den lättanvända behörighetsstrukturen för intern och extern delning gör att Workplace-användare kan samarbeta säkert, och utnyttja integrationer med viktiga arbetsverktyg som Microsoft Office och G Suite.\nAnvändarvänlighet\nWorkplace är byggt för att vara enkelt att använda. Administratörer kan hantera och övervaka användningen av Workplace med minimal ansträngning. Täta integrationer med Windows Explorer och MacOS Finder samt intuitiva gränssnitt online och mobilt gör det enkelt för användare att snabbt integrera Workplace i sina arbetsflöden. Workplace fungerar helt enkelt!\nSäkerhet och efterlevnad\nMed mer än 99,99 % drifttid och anpassning för HIPAA, GDPR och SOC 2 har Datto Workplace dokumenterad erfarenhet av att hålla affärsdata säkra och tillgängliga dygnet runt, året runt.\nData krypteras under transport och i vila med 265 bitars AES-kryptering.  Våra datacentra är geo-redundanta, med regioner baserade i USA, Kanada, Europa och Australien. Avancerade principer och enhetshantering ser till att dataåtkomst kan anpassas och hanteras. 180-dagars versionshantering säkerställer att du snabbt kan återställa oavsiktligt borttagna filer eller återgå till en tidigare version.\nKomma igång\nSnälla se [www.datto.com/products/workplace](https://www.datto.com/products/workplace/)",
+      "mpnId": "6083457",
+      "officeAssetId": "WA200001987",
+      "permissions": [
+        "Identity",
+        "MessageTeamMembers"
+      ],
+      "privacyUrl": "https://www.datto.com/legal/privacy-policy",
+      "screenshotUrls": [
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/0.png",
+        "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_screenshot/1.png"
+      ],
+      "securityComplianceInfo": {
+        "status": "unattested"
+      },
+      "shortDescription": "Få åtkomst till dina Datto Workplace-filer direkt via Microsoft Teams",
+      "showLoadingIndicator": false,
+      "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/c1869b15-a530-4386-9d3e-6937a83b66f3/2025071115135977/c1869b15-a530-4386-9d3e-6937a83b66f3_smallimage.png",
+      "staticTabs": [
+        {
+          "entityId": "conversations",
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "contentUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm",
+          "entityId": "HelpTab",
+          "name": "Help",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https://workplace.datto.com/help/Content/9_INTEGRATIONS/MS_Teams_Integration.htm"
+        },
+        {
+          "entityId": "about",
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "systemVersion": "2025071115135977",
+      "termsOfUseUrl": "https://www.datto.com/legal/terms-of-use",
+      "validDomains": [
+        "dwp-trafficmanager.workplace.datto.com",
+        "workplace.datto.com",
+        "*.workplace.datto.com"
+      ]
+    }
+  ],
+  "examplePrompts": [
+    {
+      "prompt": "@Datto Workplace help",
+      "description": "User is seeking assistance on how to use the Datto Workplace bot within Microsoft Teams.",
+      "command": "help"
+    },
+    {
+      "prompt": "@Datto Workplace login",
+      "description": "User wants to log into their Datto Workplace account through the Teams bot.",
+      "command": "login"
+    },
+    {
+      "prompt": "@Datto Workplace logout",
+      "description": "User intends to log out from their Datto Workplace account.",
+      "command": "logout"
+    }
+  ]
+}

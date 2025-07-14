@@ -1090,18 +1090,18 @@
   "localizedDefinitions": [],
   "examplePrompts": [
     {
-      "prompt": "@TaskCall create-incident Critical server outage in region 3. Please investigate immediately.",
-      "description": "User wants to create a new incident alerting the team to a critical server outage.",
+      "prompt": "@TaskCall create-incident The server is down and causing disruptions across multiple departments. Please prioritize this.",
+      "description": "User reports a critical server issue and requests the bot to create an incident for immediate attention.",
       "command": "create-incident"
     },
     {
-      "prompt": "@TaskCall verify-user Can you confirm the access level for user john.doe?",
-      "description": "User needs to verify the access level or authorization status of a specific user.",
+      "prompt": "@TaskCall verify-user Can you confirm if user JohnDoe123 has the necessary permissions for accessing the incident dashboard?",
+      "description": "User wants to verify the permissions of another team member regarding access to a specific tool.",
       "command": "verify-user"
     },
     {
-      "prompt": "@TaskCall help",
-      "description": "User requests a list of available commands and assistance using the bot.",
+      "prompt": "@TaskCall help I'm new here and need guidance on how to manage incidents using TaskCall.",
+      "description": "A new team member requests assistance on how to use the bot for managing incidents.",
       "command": "help"
     }
   ]

@@ -1,0 +1,188 @@
+{
+  "manifestVersion": "1.11",
+  "id": "cf18043b-d29a-458a-82f6-f56440fa02a3",
+  "version": "1.0.3",
+  "name": "Envisio",
+  "accentColor": "#FFFFFF",
+  "amsSellerAccountId": 81192950,
+  "appMetadata": {},
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Change notification settings",
+              "title": "notification settings"
+            },
+            {
+              "description": "Display all supported commands",
+              "title": "help"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "e5de08c7-069d-4394-830c-1fbe03c2421b",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Productivity",
+    "ProjectManagement",
+    "Education"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "developerName": "Envisio",
+  "developerUrl": "https://envisio.com",
+  "galleryTabs": [],
+  "industries": [
+    "Education",
+    "Government"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "e5de08c7-069d-4394-830c-1fbe03c2421b",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Search Envisio for plan elements",
+          "fetchTask": false,
+          "id": "searchCmd",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Enter your search keywords",
+              "inputType": "text",
+              "name": "searchKeyword",
+              "title": "Keywords"
+            }
+          ],
+          "title": "Search",
+          "type": "query"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Switch Plan to Search",
+          "fetchTask": true,
+          "id": "settings",
+          "initialRun": false,
+          "title": "Switch Plan",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "strategy execution",
+    "performance measurement software"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cf18043b-d29a-458a-82f6-f56440fa02a3/2025071112284578/cf18043b-d29a-458a-82f6-f56440fa02a3_largeimage.png",
+  "lastUpdatedAt": "2023-04-04T14:58:24.6366752+00:00",
+  "longDescription": "Envisio's performance management software helps you move from strategy to action by operationalizing your plan, aligning your people, tracking performance, and sharing results.\n\nThe Envisio app on Microsoft Teams allows your team to:\n- Receive Envisio update and assignment notifications\n- Collaborate with colleagues on deliverables\n- Celebrate completed deliverables in a team environment\n- Act on deliverables with disruption\n- Share reports to increase visibility and team alignment\n- Access Envisio 'Help' directly through chat\n\nNote: An active Envisio license is required to use this app.\n\nTo learn more about Envisio or create an account, visit Envisio's [website](https://envisio.com/) or contact us at [support@envisio.com](mailto:support@envisio.com).",
+  "officeAssetId": "WA200005229",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://envisio.com/privacy-policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cf18043b-d29a-458a-82f6-f56440fa02a3/2025071112284578/cf18043b-d29a-458a-82f6-f56440fa02a3_screenshot/0.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cf18043b-d29a-458a-82f6-f56440fa02a3/2025071112284578/cf18043b-d29a-458a-82f6-f56440fa02a3_screenshot/1.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cf18043b-d29a-458a-82f6-f56440fa02a3/2025071112284578/cf18043b-d29a-458a-82f6-f56440fa02a3_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cf18043b-d29a-458a-82f6-f56440fa02a3/2025071112284578/cf18043b-d29a-458a-82f6-f56440fa02a3_screenshot/3.png",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cf18043b-d29a-458a-82f6-f56440fa02a3/2025071112284578/cf18043b-d29a-458a-82f6-f56440fa02a3_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "unattested"
+  },
+  "shortDescription": "Strategy execution, performance management and reporting software.",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/cf18043b-d29a-458a-82f6-f56440fa02a3/2025071112284578/cf18043b-d29a-458a-82f6-f56440fa02a3_smallimage.png",
+  "staticTabs": [],
+  "systemVersion": "2025071112284578",
+  "termsOfUseUrl": "https://envisio.com/terms-of-service",
+  "validDomains": [
+    "app.envisio.com",
+    "token.botframework.com"
+  ],
+  "videoUrl": "https://youtu.be/96uM7HGd1Hs",
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@Envisio Can you help me understand how to adjust my notification settings?",
+      "description": "User is asking for guidance on changing notification settings.",
+      "command": "help"
+    },
+    {
+      "prompt": "@Envisio I need assistance with setting up my notification preferences.",
+      "description": "User requests assistance with configuring notification settings.",
+      "command": "notification settings"
+    },
+    {
+      "prompt": "@Envisio help",
+      "description": "User needs general help with using the Envisio bot.",
+      "command": "help"
+    }
+  ]
+}
