@@ -27,7 +27,6 @@ def get_commands(app):
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
-
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--force', action='store_true',
