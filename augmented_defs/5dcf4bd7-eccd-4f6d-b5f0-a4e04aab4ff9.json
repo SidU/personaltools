@@ -1,0 +1,414 @@
+{
+  "manifestVersion": "1.12",
+  "id": "5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9",
+  "version": "4.0",
+  "name": "SkillScape",
+  "accentColor": "#10D0D9",
+  "amsSellerAccountId": 75860370,
+  "appMetadata": {},
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "InAppPurchase.Allow.User",
+          "type": "Delegated"
+        }
+      ]
+    }
+  },
+  "bots": [
+    {
+      "allowBotMessageDeleteByUser": false,
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Create a new request in SkillScape",
+              "title": "New SkillScape request"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "id": "5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "Social"
+  ],
+  "creatorId": "",
+  "defaultBlockUntilAdminAction": false,
+  "defaultInstallScope": "team",
+  "developerName": "Friendly Flows",
+  "developerUrl": "https://friendlyflows.com",
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "commandBox",
+            "compose",
+            "message"
+          ],
+          "description": "",
+          "fetchTask": true,
+          "id": "3.1",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "",
+              "inputType": "text",
+              "name": "requestTitle",
+              "title": "Request Title"
+            }
+          ],
+          "title": "Create a SkillScape request",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": false,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "culture",
+    "employee engagement",
+    "skills management"
+  ],
+  "largeImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9/2025071112351861/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9_largeimage.png",
+  "lastUpdatedAt": "2023-02-09T19:44:51.4213869+00:00",
+  "longDescription": "Build a powerful knowledge and skills community on Microsoft Teams together with your colleagues! SkillScape is here to help you develop new skills, enrich your network, and get work done faster.\n **What is SkillScape?** \n SkillScape is a virtual assistant that that helps organizations improve employees’ engagement in a hybrid working environment by creating meaningful people connections based on skills and career development ambitions.\n Anyone can submit a collaboration initiative through a SkillScape request form. From looking for a mentor or a job shadowing opportunity to finding subject matter experts to help out on a client project, SkillScape automatically matches people to requests through its skills-based ML model. \n Therefore, through SkillScape, employees can build more meaningful connections, accelerate their career development journey and get work done faster with the help of a strong employee community that goes beyond boarders and organizational silos. \n **Key Benefits** \n - Elevated internal networking \n - Enhanced employee autonomy \n - Accelerated career development \n - Increased employee engagement \n **Get started with SkillScape** \nFind the app in the Teams Store. Add SkillScape to a private chat or a team, create your profile and start collaborating. Voila!\n **Have any questions?**\nThe Friendly Flows team is excited to meet you and learn more about your business processes. Don't hesitate to get in contact if you have any questions or want to request a demo.\n[www.friendlyflows.com/support/](https://friendlyflows.com/support/)",
+  "mpnId": "6414903",
+  "officeAssetId": "WA200003480",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://friendlyflows.com/privacy-policy",
+  "screenshotUrls": [
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9/2025071112351861/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9_screenshot/0.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9/2025071112351861/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9_screenshot/1.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9/2025071112351861/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9_screenshot/2.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9/2025071112351861/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9_screenshot/3.jpe",
+    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9/2025071112351861/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9_screenshot/4.jpe"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Build a powerful knowledge and skills community together with your colleagues",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://res.cdn.office.net/teamsappdata/ais_prod_v1/evergreen-assets/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9/2025071112351861/5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9_smallimage.png",
+  "staticTabs": [
+    {
+      "contentUrl": "https://loop.azurewebsites.net/tabs/overview",
+      "context": [
+        "personalTab"
+      ],
+      "entityId": "overviewTab",
+      "name": "Dashboard",
+      "scopes": [
+        "personal"
+      ],
+      "searchUrl": "https://loop.azurewebsites.net/tabs/overview",
+      "websiteUrl": "https://loop.azurewebsites.net/tabs/overview"
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "subscriptionOffer": {
+    "isEligibleForAzureBenefits": false,
+    "offerId": "friendlyflows1622710710804.friendlyflows_loop_offer"
+  },
+  "systemVersion": "2025071112351861",
+  "termsOfUseUrl": "https://friendlyflows.com/terms-of-use",
+  "validDomains": [
+    "loop.azurewebsites.net"
+  ],
+  "videoUrl": "https://vimeo.com/784578341?embedded=true&source=vimeo_logo&owner=191517940",
+  "webApplicationInfo": {
+    "id": "5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9",
+    "resource": "api://loop.azurewebsites.net/botid-5dcf4bd7-eccd-4f6d-b5f0-a4e04aab4ff9"
+  },
+  "publishingPolicy": {
+    "isFlaggedForViolations": false,
+    "releaseType": "standard",
+    "audienceConfiguration": {
+      "allowedCountryAudience": {
+        "countrySelectionMode": "specificCountries",
+        "specificCountryAudiences": [
+          {
+            "countryCode": "AE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AM",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "AU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "BY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "CZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "DK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "EE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ES",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "FR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GB",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "GR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "HU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ID",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IN",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "IT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "KR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "LV",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MC",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MT",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "MY",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "NZ",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PL",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "PR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RO",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RS",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "RU",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SA",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SE",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SG",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SI",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "SK",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TH",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TR",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "TW",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "US",
+            "stateAudienceSelectionMode": "allStates"
+          },
+          {
+            "countryCode": "ZA",
+            "stateAudienceSelectionMode": "allStates"
+          }
+        ]
+      }
+    }
+  },
+  "localizedDefinitions": [],
+  "examplePrompts": [
+    {
+      "prompt": "@SkillScape Can you help me start a New SkillScape request to learn about data analysis?",
+      "description": "User wants to initiate a request for learning the skill of data analysis.",
+      "command": "New SkillScape request"
+    },
+    {
+      "prompt": "@SkillScape I'd like to submit a New SkillScape request to improve our team's project management skills.",
+      "description": "User wants to create a new request to enhance project management skills for their team.",
+      "command": "New SkillScape request"
+    },
+    {
+      "prompt": "@SkillScape How do I make a New SkillScape request for a workshop on advanced Excel techniques?",
+      "description": "User is asking for assistance in initiating a request for a workshop on advanced Excel techniques.",
+      "command": "New SkillScape request"
+    }
+  ]
+}
