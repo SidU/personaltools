@@ -236,9 +236,16 @@ with col_right:
     if bot_id:
         bot_data = BOTS.get(bot_id, {})
         st.markdown(
-            f"<div class='bot-title'><h2>{bot_data.get('name', bot_id)} ({bot_id})"
-            f"<span class='bot-title-link' title='Copy link' "
-            f"onclick=\"navigator.clipboard.writeText(window.location.origin + window.location.pathname + '?bot={bot_id}');\">\ud83d\udd17</span></h2></div>",
+            f"""
+            <div class='bot-title'>
+                <h2>{bot_data.get('name', bot_id)} ({bot_id})
+                    <span class='bot-title-link' title='Copy link'
+                        onclick=\"navigator.clipboard.writeText(window.location.origin + window.location.pathname + '?bot={bot_id}');\">
+                        &#128279;
+                    </span>
+                </h2>
+            </div>
+            """,
             unsafe_allow_html=True,
         )
         st.write(get_description(bot_data))
