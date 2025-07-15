@@ -1,6 +1,7 @@
 import streamlit as st
 
 from embedding_utils import load_index, search
+from invocation_utils import build_suggested_invocation
 
 st.set_page_config(page_title="Bot Finder")
 
@@ -21,6 +22,11 @@ if query:
         desc = bot_data.get('description') or bot_data.get('shortDescription') or ''
         if desc:
             st.write(desc)
+        suggestion = build_suggested_invocation(query, bot_id, bot_data)
+        if suggestion:
+            st.caption(f"Suggested Invocation: {suggestion}")
+        else:
+            st.caption("No valid invocation found for this bot.")
         for m in matches:
             kind = m.get('kind', 'example')
             if kind == 'app_description':

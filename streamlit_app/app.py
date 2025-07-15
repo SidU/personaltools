@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import streamlit as st
 
 from bot_finder_app.embedding_utils import load_index, search
+from invocation_utils import build_suggested_invocation
 
 
 @st.cache_resource(show_spinner=False)
@@ -121,6 +122,8 @@ def filter_by_notification(bot_ids: list, option: str) -> list:
     return filtered
 
 
+
+
 st.set_page_config(page_title="Teams Bot Explorer", layout="wide")
 
 if "selected_bot" not in st.session_state:
@@ -209,6 +212,15 @@ with col_right:
             for cmd in commands:
                 with st.expander(cmd["title"]):
                     st.write(cmd["description"] or "No description")
+
+        suggestion = build_suggested_invocation(
+            st.session_state.get("msg_query", ""), bot_id, bot_data
+        )
+        if suggestion:
+            st.subheader("Suggested Invocation")
+            st.code(suggestion)
+        else:
+            st.info("No valid invocation could be generated for this bot.")
 
         examples = bot_data.get("examplePrompts") or []
         if examples:
