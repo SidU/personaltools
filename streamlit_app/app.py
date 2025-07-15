@@ -144,7 +144,7 @@ st.markdown(
         font-size: 0.8em;
     }
     .bot-title-link::after {
-        content: "\1F517"; /* link emoji */
+        content: "\\01F517"; /* link emoji */
     }
     .bot-title:hover .bot-title-link {
         visibility: visible;
