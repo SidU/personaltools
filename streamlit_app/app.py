@@ -141,10 +141,12 @@ st.markdown(
         visibility: hidden;
         cursor: pointer;
         margin-left: 0.3em;
-        font-size: 0.8em;
-    }
-    .bot-title-link::after {
-        content: "\\01F517"; /* link emoji */
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iY3VycmVudENvbG9yIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1zbG90PSJpY29uIj4KICA8cGF0aCBkPSJNMTIuMjMyIDQuMjMyYTIuNSAyLjUgMCAwIDEgMy41MzYgMy41MzZsLTEuMjI1IDEuMjI0YS43NS43NSAwIDAgMCAxLjA2MSAxLjA2bDEuMjI0LTEuMjI0YTQgNCAwIDAgMC01LjY1Ni01LjY1NmwtMyAzYTQgNCAwIDAgMCAuMjI1IDUuODY1Ljc1Ljc1IDAgMCAwIC45NzctMS4xMzggMi41IDIuNSAwIDAgMS0uMTQyLTMuNjY3bDMtM1oiLz4KICA8cGF0aCBkPSJNMTEuNjAzIDcuOTYzYS43NS43NSAwIDAgMC0uOTc3IDEuMTM4IDIuNSAyLjUgMCAwIDEgLjE0MiAzLjY2N2wtMyAzYTIuNSAyLjUgMCAwIDEtMy41MzYtMy41MzZsMS4yMjUtMS4yMjRhLjc1Ljc1IDAgMCAwLTEuMDYxLTEuMDZsLTEuMjI0IDEuMjI0YTQgNCAwIDEgMCA1LjY1NiA1LjY1NmwzLTNhNCA0IDAgMCAwLS4yMjUtNS44NjVaIi8+Cjwvc3ZnPgo=');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .bot-title:hover .bot-title-link {
         visibility: visible;
