@@ -143,6 +143,9 @@ st.markdown(
         margin-left: 0.3em;
         font-size: 0.8em;
     }
+    .bot-title-link::after {
+        content: "\1F517"; /* link emoji */
+    }
     .bot-title:hover .bot-title-link {
         visibility: visible;
     }
@@ -241,7 +244,6 @@ with col_right:
                 <h2>{bot_data.get('name', bot_id)} ({bot_id})
                     <span class='bot-title-link' title='Copy link'
                         onclick=\"navigator.clipboard.writeText(window.location.origin + window.location.pathname + '?bot={bot_id}');\">
-                        &#128279;
                     </span>
                 </h2>
             </div>
