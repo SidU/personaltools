@@ -7,11 +7,15 @@ except Exception:  # pragma: no cover - optional dependency
     openai = None
 
 
-def _get_commands(bot_data: dict) -> list[str]:
-    """Return a list of command titles extracted from bot metadata."""
+def _get_commands(bot_data: dict, scopes: Iterable[str] | None = None) -> list[str]:
+    """Return command titles filtered by scope from bot metadata."""
+    selected = set(s.lower() for s in (scopes or []))
     commands: list[str] = []
     for bot in bot_data.get("bots", []):
         for cl in bot.get("commandLists", []):
+            cl_scopes = [s.lower() for s in (cl.get("scopes") or [])]
+            if selected and cl_scopes and not (set(cl_scopes) & selected):
+                continue
             for cmd in cl.get("commands", []):
                 title = cmd.get("title")
                 if isinstance(title, str) and title.strip():
@@ -34,13 +38,28 @@ def _join_items(items: Iterable[str], limit: int) -> str:
     return ", ".join(list(items)[:limit])
 
 
-def build_suggested_invocation(query: str, bot_id: str, bot_data: dict) -> str | None:
-    """Return a suggested invocation string for the given query and bot."""
+def build_suggested_invocation(
+    query: str, bot_id: str, bot_data: dict, scopes: Iterable[str] | None = None
+) -> str | None:
+    """Return a suggested invocation string for the given query and bot.
+
+    Parameters
+    ----------
+    query
+        User's search query.
+    bot_id
+        Identifier of the bot.
+    bot_data
+        Manifest data for the bot.
+    scopes
+        Optional list of scopes (e.g. "personal", "team", "groupchat") to
+        filter the bot commands passed to the language model.
+    """
     if not query:
         return None
 
     bot_name = bot_data.get("name", bot_id)
-    commands = _get_commands(bot_data)
+    commands = _get_commands(bot_data, scopes)
     examples = _get_examples(bot_data)
 
     if openai and os.getenv("OPENAI_API_KEY"):
