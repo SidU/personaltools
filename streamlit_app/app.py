@@ -219,6 +219,8 @@ with col_right:
         if suggestion:
             st.subheader("Suggested Invocation")
             st.code(suggestion)
+        else:
+            st.info("No valid invocation could be generated for this bot.")
 
         examples = bot_data.get("examplePrompts") or []
         if examples:

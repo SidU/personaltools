@@ -49,8 +49,11 @@ def build_suggested_invocation(query: str, bot_id: str, bot_data: dict) -> str |
                 {
                     "role": "system",
                     "content": (
-                        "You suggest how to invoke a Teams bot. "
-                        "Only return a single-line invocation."
+                        "You help users invoke Teams bots. "
+                        "If the bot exposes commands, ensure your suggestion uses one of "
+                        "those commands. If you cannot form a valid invocation, respond "
+                        "with the exact text 'NO_VALID_INVOCATION'. "
+                        "Return a single-line invocation only."
                     ),
                 },
                 {
@@ -69,6 +72,8 @@ def build_suggested_invocation(query: str, bot_id: str, bot_data: dict) -> str |
                 max_tokens=60,
             )
             suggestion = resp.choices[0].message.content.strip()
+            if suggestion.upper() == "NO_VALID_INVOCATION":
+                return None
             if not suggestion.startswith("@"):  # ensure mention prefix
                 suggestion = f"@{bot_name} " + suggestion
             return suggestion
@@ -78,4 +83,6 @@ def build_suggested_invocation(query: str, bot_id: str, bot_data: dict) -> str |
     # Fallback heuristics if OpenAI is unavailable or errors
     if examples:
         return examples[0]
-    return f"@{bot_name} {query.strip()}"
+    if not commands:
+        return f"@{bot_name} {query.strip()}"
+    return None
