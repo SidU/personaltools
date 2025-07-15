@@ -214,7 +214,10 @@ with col_right:
                     st.write(cmd["description"] or "No description")
 
         suggestion = build_suggested_invocation(
-            st.session_state.get("msg_query", ""), bot_id, bot_data
+            st.session_state.get("msg_query", ""),
+            bot_id,
+            bot_data,
+            st.session_state.get("scope_filter", []),
         )
         if suggestion:
             st.subheader("Suggested Invocation")
