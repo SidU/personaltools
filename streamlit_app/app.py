@@ -134,6 +134,23 @@ def filter_by_notification(bot_ids: list, option: str) -> list:
 
 st.set_page_config(page_title="Teams Bot Explorer", layout="wide")
 
+st.markdown(
+    """
+    <style>
+    .bot-title-link {
+        visibility: hidden;
+        cursor: pointer;
+        margin-left: 0.3em;
+        font-size: 0.8em;
+    }
+    .bot-title:hover .bot-title-link {
+        visibility: visible;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 if "selected_bot" not in st.session_state:
     st.session_state.selected_bot = None
 if "search_results" not in st.session_state:
@@ -149,6 +166,8 @@ if link_bot in BOTS:
     st.session_state.selected_bot = link_bot
     st.session_state.search_results = [link_bot]
     st.session_state.last_action = "link"
+    st.session_state.dropdown = link_bot
+    st.session_state.name_query = BOTS[link_bot].get("name", link_bot)
 
 col_left, col_center, col_right = st.columns([1, 2, 2])
 
@@ -216,10 +235,12 @@ with col_right:
     bot_id = st.session_state.selected_bot
     if bot_id:
         bot_data = BOTS.get(bot_id, {})
-        st.subheader(f"{bot_data.get('name', bot_id)} ({bot_id})")
-        link = f"?bot={bot_id}"
-        st.caption("Link to this bot:")
-        st.code(link, language="")
+        st.markdown(
+            f"<div class='bot-title'><h2>{bot_data.get('name', bot_id)} ({bot_id})"
+            f"<span class='bot-title-link' title='Copy link' "
+            f"onclick=\"navigator.clipboard.writeText(window.location.origin + window.location.pathname + '?bot={bot_id}');\">\ud83d\udd17</span></h2></div>",
+            unsafe_allow_html=True,
+        )
         st.write(get_description(bot_data))
 
         tags = bot_data.get("categories") or bot_data.get("tags")
