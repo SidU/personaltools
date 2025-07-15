@@ -141,6 +141,15 @@ if "search_results" not in st.session_state:
 if "last_action" not in st.session_state:
     st.session_state.last_action = "dropdown"
 
+# Handle deep links via URL query parameters
+link_bot = st.query_params.get("bot")
+if isinstance(link_bot, list):
+    link_bot = link_bot[0] if link_bot else None
+if link_bot in BOTS:
+    st.session_state.selected_bot = link_bot
+    st.session_state.search_results = [link_bot]
+    st.session_state.last_action = "link"
+
 col_left, col_center, col_right = st.columns([1, 2, 2])
 
 with col_left:
@@ -155,18 +164,23 @@ with col_left:
         st.session_state.selected_bot = dd_value
         st.session_state.search_results = [dd_value]
         st.session_state.last_action = "dropdown"
+        st.query_params["bot"] = dd_value
 
     name_query = st.text_input("Name search", key="name_query")
     if st.button("Search by name", key="name_btn"):
         st.session_state.search_results = fuzzy_search(name_query)
         st.session_state.selected_bot = None
         st.session_state.last_action = "name"
+        if "bot" in st.query_params:
+            del st.query_params["bot"]
 
     message_query = st.text_input("Semantic search", key="msg_query")
     if st.button("Search message", key="msg_btn"):
         st.session_state.search_results = semantic_search(message_query)
         st.session_state.selected_bot = None
         st.session_state.last_action = "semantic"
+        if "bot" in st.query_params:
+            del st.query_params["bot"]
 
     scope_filter = st.multiselect(
         "Filter by scope",
@@ -194,6 +208,7 @@ with col_center:
         if st.button(name, key=f"res_{bot_id}"):
             st.session_state.selected_bot = bot_id
             st.session_state.last_action = "select"
+            st.query_params["bot"] = bot_id
         st.caption(bot_id)
 
 
@@ -202,6 +217,9 @@ with col_right:
     if bot_id:
         bot_data = BOTS.get(bot_id, {})
         st.subheader(f"{bot_data.get('name', bot_id)} ({bot_id})")
+        link = f"?bot={bot_id}"
+        st.caption("Link to this bot:")
+        st.code(link, language="")
         st.write(get_description(bot_data))
 
         tags = bot_data.get("categories") or bot_data.get("tags")
