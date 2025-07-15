@@ -28,14 +28,22 @@ def get_description(app):
 
 
 def get_commands(app):
+    """Return list of commands with their descriptions and scopes."""
     commands = []
     for bot in app.get("bots", []):
         for cl in bot.get("commandLists", []):
+            scopes = cl.get("scopes") or []
             for cmd in cl.get("commands", []):
                 title = cmd.get("title")
                 desc = cmd.get("description", "")
                 if title:
-                    commands.append({"title": title, "description": desc})
+                    commands.append(
+                        {
+                            "title": title,
+                            "description": desc,
+                            "scopes": scopes,
+                        }
+                    )
     return commands
 
 
@@ -207,10 +215,19 @@ with col_right:
                 st.json(metadata)
 
         commands = get_commands(bot_data)
+        selected_scopes = st.session_state.get("scope_filter", [])
+        if selected_scopes:
+            commands = [
+                c
+                for c in commands
+                if not c["scopes"] or set(c["scopes"]) & set(selected_scopes)
+            ]
         if commands:
             st.subheader("Commands")
             for cmd in commands:
                 with st.expander(cmd["title"]):
+                    if cmd["scopes"]:
+                        st.caption("Scopes: " + ", ".join(cmd["scopes"]))
                     st.write(cmd["description"] or "No description")
 
         suggestion = build_suggested_invocation(
