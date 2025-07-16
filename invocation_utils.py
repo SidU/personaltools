@@ -105,3 +105,32 @@ def build_suggested_invocation(
     if not commands:
         return f"@{bot_name} {query.strip()}"
     return None
+
+
+def expand_query_with_ai(query: str) -> str:
+    """Return an expanded version of the query using GPT-4o if available."""
+    if not query:
+        return query
+
+    if openai and os.getenv("OPENAI_API_KEY"):
+        prompt = (
+            "You are helping expand a user's vague search query into a richer, "
+            "more descriptive version suitable for use in semantic search against app descriptions.\n\n"
+            f"The original user query is:\n\"{query}\"\n\n"
+            "Expand this into a detailed search query that includes various types of enterprise teams (e.g., marketing, sales, HR, product, engineering) "
+            "and the kinds of apps they might use to collaborate in Microsoft Teams channels. Include examples such as task management, scheduling, approvals, document sharing, and integrations.\n\n"
+            "The result should be a single paragraph, concise but semantically rich, using natural language - not just a list of keywords - so that it works well with embedding-based semantic similarity. Avoid adding app names.\n\n"
+            "Output only the expanded query."
+        )
+        try:
+            resp = openai.chat.completions.create(
+                model="gpt-4o",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.3,
+                max_tokens=950,
+            )
+            return resp.choices[0].message.content.strip()
+        except Exception:
+            pass
+
+    return query
