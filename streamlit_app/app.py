@@ -194,15 +194,18 @@ with col_left:
         key="ai_expand",
         disabled=not message_query.strip(),
     )
-    if st.button("Find", key="msg_btn"):
-        query = message_query
-        if ai_expand:
+    def _run_semantic_search() -> None:
+        """Perform semantic search and update session state."""
+        query = st.session_state.msg_query
+        if st.session_state.ai_expand:
             query = expand_query_with_ai(query)
         st.session_state.expanded_query = query
         st.session_state.msg_query = query
         st.session_state.search_results = semantic_search(query)
         st.session_state.selected_bot = None
         st.session_state.last_action = "semantic"
+
+    st.button("Find", key="msg_btn", on_click=_run_semantic_search)
 
     scope_filter = st.multiselect(
         "Filter by scope",
