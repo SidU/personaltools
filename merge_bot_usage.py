@@ -4,6 +4,11 @@ import sys
 from pathlib import Path
 from typing import Dict, Iterable
 
+try:  # optional import used for Excel files
+    from openpyxl.utils.exceptions import InvalidFileException
+except Exception:  # pragma: no cover - openpyxl may not be installed
+    InvalidFileException = Exception
+
 
 
 def read_shortlist(path: Path) -> list[dict]:
@@ -91,7 +96,21 @@ def read_usage(path: Path, scope: str) -> Dict[str, float]:
     suffix = path.suffix.lower()
     if suffix in {".csv", ".tsv", ".txt"}:
         return _read_usage_csv(path, scope)
-    return _read_usage_excel(path, scope)
+
+    # sniff first bytes to detect CSV disguised with another extension
+    try:
+        with path.open("rb") as f:
+            magic = f.read(4)
+    except FileNotFoundError:
+        raise
+    if magic[:2] != b"PK":  # XLSX files are zip archives starting with PK
+        return _read_usage_csv(path, scope)
+
+    try:
+        return _read_usage_excel(path, scope)
+    except InvalidFileException:
+        # not a valid Excel file, fall back to CSV
+        return _read_usage_csv(path, scope)
 
 
 def merge_data(shortlist: Iterable[dict], usage: Dict[str, float]) -> list[dict]:
