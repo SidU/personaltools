@@ -246,16 +246,28 @@ with col_center:
                 "App ID": results,
             }
         )
-        st.table(df)
-        selected_res = st.selectbox(
-            "View details",
+        default_idx = (
+            results.index(st.session_state.selected_bot)
+            if st.session_state.selected_bot in results
+            else 0
+        )
+        selected_res = st.radio(
+            "Select a bot",
             results,
             format_func=lambda x: BOTS[x].get("name", x),
+            index=default_idx,
             key="result_select",
         )
-        if st.button("Open", key="open_result"):
+        if selected_res != st.session_state.selected_bot:
             st.session_state.selected_bot = selected_res
             st.session_state.last_action = "select"
+
+        def _highlight(row):
+            if row["App ID"] == st.session_state.selected_bot:
+                return ["background-color: #ffeeba"] * len(row)
+            return [""] * len(row)
+
+        st.table(df.style.apply(_highlight, axis=1))
     else:
         st.write("No bots found")
 
