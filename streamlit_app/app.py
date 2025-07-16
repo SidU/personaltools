@@ -134,14 +134,13 @@ def filter_by_notification(bot_ids: list, option: str) -> list:
 
 def generate_csv(bot_ids: list) -> str:
     """Return CSV string for the given bot app IDs."""
-    lines = ["App Name,App ID,Bot ID,Description"]
+    lines = ["App Name,App ID,Bot ID"]
     for app_id in bot_ids:
         app = BOTS.get(app_id, {})
         app_name = app.get("name", app_id)
-        description = get_description(app).replace('"', '""')
         for bot in app.get("bots", []):
             bot_id = bot.get("id", "")
-            lines.append(f"{app_name},{app_id},{bot_id},\"{description}\"")
+            lines.append(f"{app_name},{app_id},{bot_id}")
     return "\n".join(lines)
 
 
