@@ -1,13 +1,9 @@
 import argparse
 import csv
+import sys
 from pathlib import Path
 from typing import Dict, Iterable
-import sys
 
-try:
-    from openpyxl import load_workbook
-except Exception as exc:  # pragma: no cover - optional dependency
-    raise SystemExit("openpyxl is required to read Excel files. Install it via pip.") from exc
 
 
 def read_shortlist(path: Path) -> list[dict]:
@@ -21,8 +17,15 @@ def read_shortlist(path: Path) -> list[dict]:
     return rows
 
 
-def read_usage(path: Path, scope: str) -> Dict[str, float]:
-    """Return mapping of AppId to Active Users filtered by scope."""
+def _read_usage_excel(path: Path, scope: str) -> Dict[str, float]:
+    """Return usage data from an Excel file filtered by scope."""
+    try:  # pragma: no cover - optional dependency
+        from openpyxl import load_workbook
+    except Exception as exc:  # pragma: no cover - optional dependency
+        raise SystemExit(
+            "openpyxl is required to read Excel files. Install it via pip."
+        ) from exc
+
     wb = load_workbook(filename=path, read_only=True, data_only=True)
     ws = wb.active
     rows = list(ws.iter_rows(values_only=True))
@@ -49,6 +52,46 @@ def read_usage(path: Path, scope: str) -> Dict[str, float]:
         if app_id not in usage or usage[app_id] < val:
             usage[app_id] = val
     return usage
+
+
+def _read_usage_csv(path: Path, scope: str) -> Dict[str, float]:
+    """Return usage data from a CSV file filtered by scope."""
+    with path.open(newline="", encoding="utf-8-sig") as f:
+        sample = f.read(1024)
+        f.seek(0)
+        dialect = csv.Sniffer().sniff(sample, delimiters=",\t")
+        reader = csv.DictReader(f, dialect=dialect)
+
+        required = {"AppId", "Active Users", "App Scope"}
+        if not required <= set(reader.fieldnames or []):
+            missing = required - set(reader.fieldnames or [])
+            raise ValueError(
+                f"Missing columns in usage data: {', '.join(missing)}"
+            )
+
+        usage: Dict[str, float] = {}
+        for row in reader:
+            if row.get("App Scope") != scope:
+                continue
+            app_id = row.get("AppId")
+            active_users = row.get("Active Users")
+            if not app_id or not active_users:
+                continue
+            try:
+                val = float(active_users)
+            except (TypeError, ValueError):
+                continue
+            if app_id not in usage or usage[app_id] < val:
+                usage[app_id] = val
+    return usage
+
+
+def read_usage(path: Path, scope: str) -> Dict[str, float]:
+    """Return mapping of AppId to Active Users filtered by scope."""
+    suffix = path.suffix.lower()
+    if suffix in {".csv", ".tsv", ".txt"}:
+        return _read_usage_csv(path, scope)
+    return _read_usage_excel(path, scope)
 
 
 def merge_data(shortlist: Iterable[dict], usage: Dict[str, float]) -> list[dict]:
@@ -79,7 +122,11 @@ def write_csv(rows: Iterable[dict], path: Path | None) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Merge bot shortlist with usage data")
     parser.add_argument("botshortlist", type=Path, help="Path to shortlist CSV")
-    parser.add_argument("usagedata", type=Path, help="Path to usage XLSX file")
+    parser.add_argument(
+        "usagedata",
+        type=Path,
+        help="Path to usage data (CSV or XLSX)"
+    )
     parser.add_argument("--rankby", choices=["Teams", "Group", "Meetings", "Personal"], default="Teams", help="Scope to rank by")
     parser.add_argument("-o", "--output", type=Path, help="Output CSV path")
     args = parser.parse_args()
