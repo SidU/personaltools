@@ -2,6 +2,7 @@ import json
 import difflib
 from pathlib import Path
 import sys
+import pandas as pd
 
 # Ensure repo root is on sys.path for local module imports
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # noqa: E402
@@ -185,6 +186,7 @@ with col_left:
         if ai_expand:
             query = expand_query_with_ai(query)
         st.session_state.expanded_query = query
+        st.session_state.msg_query = query
         st.session_state.search_results = semantic_search(query)
         st.session_state.selected_bot = None
         st.session_state.last_action = "semantic"
@@ -201,22 +203,34 @@ with col_left:
         key="notif_filter",
     )
 
+    if st.button("Reset", key="reset_btn"):
+        st.session_state.selected_bot = None
+        st.session_state.search_results = BOT_NAMES
+        st.session_state.last_action = "dropdown"
+        st.session_state.name_query = ""
+        st.session_state.msg_query = ""
+        st.session_state.ai_expand = False
+        st.session_state.scope_filter = []
+        st.session_state.notif_filter = NOTIF_OPTIONS[0]
+        st.session_state.dropdown = BOT_NAMES[0]
+        st.session_state.sort_alpha = False
+
 
 with col_center:
     selected_scopes = st.session_state.get("scope_filter", [])
     notif_option = st.session_state.get("notif_filter", "Any")
-    sort_alpha = st.checkbox("Sort alphabetically", key="sort_alpha")
     results = filter_by_scopes(
         st.session_state.search_results,
         selected_scopes,
     )
     results = filter_by_notification(results, notif_option)
+    st.header(f"Results ({len(results)})")
+    sort_alpha = st.checkbox("Sort alphabetically", key="sort_alpha")
     if sort_alpha:
         results = sorted(
             results,
             key=lambda b: BOTS[b].get("name", b).lower(),
         )
-    st.header(f"Results ({len(results)})")
     if results:
         csv_str = generate_csv(results)
         st.download_button(
@@ -225,14 +239,25 @@ with col_center:
             file_name="bot-results.csv",
             mime="text/csv",
         )
+        st.divider()
+        df = pd.DataFrame(
+            {
+                "App Name": [BOTS[b].get("name", b) for b in results],
+                "App ID": results,
+            }
+        )
+        st.table(df)
+        selected_res = st.selectbox(
+            "View details",
+            results,
+            format_func=lambda x: BOTS[x].get("name", x),
+            key="result_select",
+        )
+        if st.button("Open", key="open_result"):
+            st.session_state.selected_bot = selected_res
+            st.session_state.last_action = "select"
     else:
         st.write("No bots found")
-    for bot_id in results:
-        name = BOTS[bot_id].get("name", bot_id)
-        if st.button(name, key=f"res_{bot_id}"):
-            st.session_state.selected_bot = bot_id
-            st.session_state.last_action = "select"
-        st.caption(bot_id)
 
 
 with col_right:
