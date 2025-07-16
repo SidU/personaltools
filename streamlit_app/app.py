@@ -9,7 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import streamlit as st
 
 from bot_finder_app.embedding_utils import load_index, search
-from invocation_utils import build_suggested_invocation
+from invocation_utils import build_suggested_invocation, expand_query_with_ai
 
 
 @st.cache_resource(show_spinner=False)
@@ -163,8 +163,17 @@ with col_left:
         st.session_state.last_action = "name"
 
     message_query = st.text_input("Semantic search", key="msg_query")
-    if st.button("Search message", key="msg_btn"):
-        st.session_state.search_results = semantic_search(message_query)
+    ai_expand = st.checkbox(
+        "Enhance with AI",
+        key="ai_expand",
+        disabled=not message_query.strip(),
+    )
+    if st.button("Find", key="msg_btn"):
+        query = message_query
+        if ai_expand:
+            query = expand_query_with_ai(query)
+        st.session_state.expanded_query = query
+        st.session_state.search_results = semantic_search(query)
         st.session_state.selected_bot = None
         st.session_state.last_action = "semantic"
 
