@@ -40,7 +40,13 @@ def _read_usage_excel(path: Path, scope: str) -> Dict[str, float]:
     header = [str(c).strip() if c is not None else "" for c in rows[0]]
     col_idx = {h: i for i, h in enumerate(header)}
 
-    required = {"AppId", "Active Users", "App Scope"}
+    # Accept both 'AppId' and 'AppID' as valid keys for app id
+    app_id_key = None
+    for key in ("AppId", "AppID"):
+        if key in col_idx:
+            app_id_key = key
+            break
+    required = {app_id_key, "Active Users", "App Scope"}
     if not required <= set(col_idx):
         missing = required - set(col_idx)
         raise ValueError(f"Missing columns in usage data: {', '.join(missing)}")
@@ -49,7 +55,7 @@ def _read_usage_excel(path: Path, scope: str) -> Dict[str, float]:
     for row in rows[1:]:
         if row[col_idx["App Scope"]] != scope:
             continue
-        app_id = row[col_idx["AppId"]]
+        app_id = row[col_idx[app_id_key]]
         active_users = row[col_idx["Active Users"]]
         if app_id is None or active_users is None:
             continue
@@ -70,9 +76,16 @@ def _read_usage_csv(path: Path, scope: str) -> Dict[str, float]:
         dialect = csv.Sniffer().sniff(sample, delimiters=",\t")
         reader = csv.DictReader(f, dialect=dialect)
 
-        required = {"AppId", "Active Users", "App Scope"}
-        if not required <= set(reader.fieldnames or []):
-            missing = required - set(reader.fieldnames or [])
+        # Accept both 'AppId' and 'AppID' as valid keys for app id
+        fieldnames = set(reader.fieldnames or [])
+        app_id_key = None
+        for key in ("AppId", "AppID"):
+            if key in fieldnames:
+                app_id_key = key
+                break
+        required = {app_id_key, "Active Users", "App Scope"}
+        if not required <= fieldnames:
+            missing = required - fieldnames
             raise ValueError(
                 f"Missing columns in usage data: {', '.join(missing)}"
             )
@@ -82,7 +95,7 @@ def _read_usage_csv(path: Path, scope: str) -> Dict[str, float]:
             row = {k: v for k, v in row.items() if k is not None}
             if row.get("App Scope") != scope:
                 continue
-            app_id = row.get("AppId")
+            app_id = row.get(app_id_key)
             active_users = row.get("Active Users")
             if not app_id or not active_users:
                 continue
@@ -92,6 +105,11 @@ def _read_usage_csv(path: Path, scope: str) -> Dict[str, float]:
                 continue
             if app_id not in usage or usage[app_id] < val:
                 usage[app_id] = val
+
+            # If app-id == 5be2b320-a5b7-4221-893c-dee506e4e365 then print the usage
+            if app_id == "5be2b320-a5b7-4221-893c-dee506e4e365":
+                print(f"Usage for {app_id}: {val}")
+
     return usage
 
 
@@ -130,17 +148,19 @@ def merge_data(shortlist: Iterable[dict], usage: Dict[str, float]) -> list[dict]
 
 
 def write_csv(rows: Iterable[dict], path: Path | None) -> None:
-    """Write rows as CSV to the given path or stdout."""
+    """Write rows as CSV to the given path or stdout, excluding app descriptions."""
     if not rows:
         return
-    fieldnames = sorted({k for row in rows for k in row.keys() if k is not None})
+    # Exclude description fields
+    exclude_fields = {"Description", "description", "longDescription", "shortDescription"}
+    fieldnames = sorted({k for row in rows for k in row.keys() if k is not None and k not in exclude_fields})
     out_file = open(path, "w", newline="", encoding="utf-8") if path else None
     writer = csv.DictWriter(
         out_file or sys.stdout, fieldnames=fieldnames, extrasaction="ignore"
     )
     writer.writeheader()
     for row in rows:
-        clean = {k: v for k, v in row.items() if k is not None}
+        clean = {k: v for k, v in row.items() if k is not None and k not in exclude_fields}
         writer.writerow(clean)
     if out_file:
         out_file.close()
@@ -155,7 +175,7 @@ def main() -> None:
         help="Path to usage data (CSV or XLSX)"
     )
     parser.add_argument("--rankby", choices=["Teams", "Group", "Meetings", "Personal"], default="Teams", help="Scope to rank by")
-    parser.add_argument("-o", "--output", type=Path, help="Output CSV path")
+    parser.add_argument("-o", "--output", type=Path, help="Output CSV path", default=Path("merged_output.csv"))
     args = parser.parse_args()
 
     shortlist = read_shortlist(args.botshortlist)
