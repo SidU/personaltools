@@ -184,8 +184,11 @@ with col_left:
 with col_center:
     selected_scopes = st.session_state.get("scope_filter", [])
     notif_option = st.session_state.get("notif_filter", "Any")
+    sort_alpha = st.checkbox("Sort alphabetically", key="sort_alpha")
     results = filter_by_scopes(st.session_state.search_results, selected_scopes)
     results = filter_by_notification(results, notif_option)
+    if sort_alpha:
+        results = sorted(results, key=lambda b: BOTS[b].get("name", b).lower())
     st.header(f"Results ({len(results)})")
     if not results:
         st.write("No bots found")
