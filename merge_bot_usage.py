@@ -75,8 +75,6 @@ def _read_usage_excel(path: Path, scope: str) -> Dict[str, float]:
 
 def _read_usage_csv(path: Path, scope: str) -> Dict[str, float]:
 
-    print(f"Reading usage CSV data from {path}")
-
     """Return usage data from a CSV file filtered by scope."""
     with path.open(newline="", encoding="utf-8-sig") as f:
         sample = f.read(1024)
