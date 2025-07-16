@@ -18,7 +18,10 @@ def read_shortlist(path: Path) -> list[dict]:
         f.seek(0)
         dialect = csv.Sniffer().sniff(sample, delimiters=",\t")
         reader = csv.DictReader(f, dialect=dialect)
-        rows = [dict(row) for row in reader]
+        rows = []
+        for row in reader:
+            row = {k: v for k, v in row.items() if k is not None}
+            rows.append(row)
     return rows
 
 
@@ -76,6 +79,7 @@ def _read_usage_csv(path: Path, scope: str) -> Dict[str, float]:
 
         usage: Dict[str, float] = {}
         for row in reader:
+            row = {k: v for k, v in row.items() if k is not None}
             if row.get("App Scope") != scope:
                 continue
             app_id = row.get("AppId")
@@ -117,8 +121,8 @@ def merge_data(shortlist: Iterable[dict], usage: Dict[str, float]) -> list[dict]
     """Return merged rows with Active Users column sorted by usage."""
     merged = []
     for row in shortlist:
+        row = {k: v for k, v in row.items() if k is not None}
         app_id = row.get("App ID") or row.get("AppId")
-        row = dict(row)
         row["Active Users"] = usage.get(app_id, 0)
         merged.append(row)
     merged.sort(key=lambda r: r.get("Active Users", 0) or 0, reverse=True)
@@ -129,11 +133,15 @@ def write_csv(rows: Iterable[dict], path: Path | None) -> None:
     """Write rows as CSV to the given path or stdout."""
     if not rows:
         return
-    fieldnames = list(rows[0].keys())
+    fieldnames = sorted({k for row in rows for k in row.keys() if k is not None})
     out_file = open(path, "w", newline="", encoding="utf-8") if path else None
-    writer = csv.DictWriter(out_file or sys.stdout, fieldnames=fieldnames)
+    writer = csv.DictWriter(
+        out_file or sys.stdout, fieldnames=fieldnames, extrasaction="ignore"
+    )
     writer.writeheader()
-    writer.writerows(rows)
+    for row in rows:
+        clean = {k: v for k, v in row.items() if k is not None}
+        writer.writerow(clean)
     if out_file:
         out_file.close()
 
