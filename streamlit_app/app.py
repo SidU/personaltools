@@ -145,6 +145,20 @@ def generate_csv(bot_ids: list) -> str:
     return "\n".join(lines)
 
 
+def reset_filters():
+    """Clear all search fields and filters."""
+    st.session_state.selected_bot = None
+    st.session_state.search_results = BOT_NAMES
+    st.session_state.last_action = "dropdown"
+    st.session_state.name_query = ""
+    st.session_state.msg_query = ""
+    st.session_state.ai_expand = False
+    st.session_state.scope_filter = []
+    st.session_state.notif_filter = NOTIF_OPTIONS[0]
+    st.session_state.dropdown = BOT_NAMES[0]
+    st.session_state.sort_alpha = False
+
+
 st.set_page_config(page_title="Teams Bot Explorer", layout="wide")
 
 if "selected_bot" not in st.session_state:
@@ -203,17 +217,7 @@ with col_left:
         key="notif_filter",
     )
 
-    if st.button("Reset", key="reset_btn"):
-        st.session_state.selected_bot = None
-        st.session_state.search_results = BOT_NAMES
-        st.session_state.last_action = "dropdown"
-        st.session_state.name_query = ""
-        st.session_state.msg_query = ""
-        st.session_state.ai_expand = False
-        st.session_state.scope_filter = []
-        st.session_state.notif_filter = NOTIF_OPTIONS[0]
-        st.session_state.dropdown = BOT_NAMES[0]
-        st.session_state.sort_alpha = False
+    st.button("Reset", key="reset_btn", on_click=reset_filters)
 
 
 with col_center:
