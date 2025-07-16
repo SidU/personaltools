@@ -4,12 +4,12 @@ from pathlib import Path
 import sys
 
 # Ensure repo root is on sys.path for local module imports
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # noqa: E402
 
-import streamlit as st
+import streamlit as st  # noqa: E402
 
-from bot_finder_app.embedding_utils import load_index, search
-from invocation_utils import build_suggested_invocation, expand_query_with_ai
+from bot_finder_app.embedding_utils import load_index, search  # noqa: E402
+from invocation_utils import build_suggested_invocation, expand_query_with_ai  # noqa: E402,E501
 
 
 @st.cache_resource(show_spinner=False)
@@ -84,7 +84,8 @@ def fuzzy_search(query: str) -> list:
         else:
             score = max(
                 difflib.SequenceMatcher(None, query, name.lower()).ratio(),
-                difflib.SequenceMatcher(None, query, desc.lower()).ratio() if desc else 0,
+                difflib.SequenceMatcher(None, query, desc.lower()).ratio()
+                if desc else 0,
             )
         if score > 0.3:
             scored.append((score, bot_id))
@@ -130,6 +131,17 @@ def filter_by_notification(bot_ids: list, option: str) -> list:
     return filtered
 
 
+def generate_csv(bot_ids: list) -> str:
+    """Return CSV string for the given bot app IDs."""
+    lines = ["App Name,App ID,Bot ID,Description"]
+    for app_id in bot_ids:
+        app = BOTS.get(app_id, {})
+        app_name = app.get("name", app_id)
+        description = get_description(app).replace('"', '""')
+        for bot in app.get("bots", []):
+            bot_id = bot.get("id", "")
+            lines.append(f"{app_name},{app_id},{bot_id},\"{description}\"")
+    return "\n".join(lines)
 
 
 st.set_page_config(page_title="Teams Bot Explorer", layout="wide")
@@ -194,12 +206,26 @@ with col_center:
     selected_scopes = st.session_state.get("scope_filter", [])
     notif_option = st.session_state.get("notif_filter", "Any")
     sort_alpha = st.checkbox("Sort alphabetically", key="sort_alpha")
-    results = filter_by_scopes(st.session_state.search_results, selected_scopes)
+    results = filter_by_scopes(
+        st.session_state.search_results,
+        selected_scopes,
+    )
     results = filter_by_notification(results, notif_option)
     if sort_alpha:
-        results = sorted(results, key=lambda b: BOTS[b].get("name", b).lower())
+        results = sorted(
+            results,
+            key=lambda b: BOTS[b].get("name", b).lower(),
+        )
     st.header(f"Results ({len(results)})")
-    if not results:
+    if results:
+        csv_str = generate_csv(results)
+        st.download_button(
+            "Export as CSV",
+            csv_str,
+            file_name="bot-results.csv",
+            mime="text/csv",
+        )
+    else:
         st.write("No bots found")
     for bot_id in results:
         name = BOTS[bot_id].get("name", bot_id)
