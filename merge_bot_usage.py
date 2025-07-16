@@ -60,15 +60,23 @@ def _read_usage_excel(path: Path, scope: str) -> Dict[str, float]:
         if app_id is None or active_users is None:
             continue
         try:
+            # Remove commas from active_users if it's a string
+            if isinstance(active_users, str):
+                active_users = active_users.replace(",", "")
             val = float(active_users)
         except (TypeError, ValueError):
             continue
         if app_id not in usage or usage[app_id] < val:
             usage[app_id] = val
+
+
     return usage
 
 
 def _read_usage_csv(path: Path, scope: str) -> Dict[str, float]:
+
+    print(f"Reading usage CSV data from {path}")
+
     """Return usage data from a CSV file filtered by scope."""
     with path.open(newline="", encoding="utf-8-sig") as f:
         sample = f.read(1024)
@@ -100,15 +108,14 @@ def _read_usage_csv(path: Path, scope: str) -> Dict[str, float]:
             if not app_id or not active_users:
                 continue
             try:
+                # Remove commas from active_users if it's a string
+                if isinstance(active_users, str):
+                    active_users = active_users.replace(",", "")
                 val = float(active_users)
             except (TypeError, ValueError):
                 continue
             if app_id not in usage or usage[app_id] < val:
                 usage[app_id] = val
-
-            # If app-id == 5be2b320-a5b7-4221-893c-dee506e4e365 then print the usage
-            if app_id == "5be2b320-a5b7-4221-893c-dee506e4e365":
-                print(f"Usage for {app_id}: {val}")
 
     return usage
 
